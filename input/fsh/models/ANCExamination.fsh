@@ -42,17 +42,17 @@ Parent: Base
   * ^code[+] = Dhis2DataElementsCS#MqZDsOZm4yD
 * repeatSystolicBloodPressure 0..1 positiveInt "ANC - ANC.B8. Repeat systolic blood pressure"
   * ^code[+] = Dhis2DataElementsCS#ZkCYYlI4xe7
-* symphysisFundalHeightSfh 0..1 positiveInt "ANC - ANC.B8. Symphysis-fundal height (SFH)"
+* symphysisFundalHeight 0..1 positiveInt "ANC - ANC.B8. Symphysis-fundal height (SFH)"
   * ^code[+] = Dhis2DataElementsCS#fjZ4KQpS1QS
 * systolicBloodPressure 0..1 positiveInt "ANC - ANC.B8. Systolic blood pressure"
   * ^code[+] = Dhis2DataElementsCS#M4HEOoEFTAT
 * signsConditionsForGbv 0..1 boolean "ANC - ANC.B8. Signs/conditions for GBV"
   * ^code[+] = Dhis2DataElementsCS#VEFV1QayfzE
-* otherAbnormalPelvicVisualResultSpecify 0..1 string "ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"
+* otherAbnormalPelvicResult 0..1 string "ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"
   * ^code[+] = Dhis2DataElementsCS#d8vfOWb6SPd
 * previousScar1 0..1 boolean "ANC - Previous scar 1"
   * ^code[+] = Dhis2DataElementsCS#vMVLu4hlDqx
-* otherFetalPresentationSpecify 0..1 string "ANC - ANC.B8. Other fetal presentation (specify)"
+* otherFetalPresentation 0..1 string "ANC - ANC.B8. Other fetal presentation (specify)"
   * ^code[+] = Dhis2DataElementsCS#tsaVZFUAgkD
 * previousScarYear1 0..1 code "ANC - Previous scar year 1"
 * previousScarYear1 from YearVS (required)
@@ -109,7 +109,7 @@ Parent: Base
   * ^code[+] = Dhis2DataElementsCS#xa10dHKgRWa
 * hasAbnormalVaginalDischargePhysiological 0..1 boolean "ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"
   * ^code[+] = Dhis2DataElementsCS#cPOXL8JV8Ee
-* ancGestationalAgeAtVisitAnc 0..1 positiveInt "ANC - ANC.B8. Gestational age at today's visit_ANC"
+* gestationalAgeAtVisitAnc 0..1 positiveInt "ANC - ANC.B8. Gestational age at today's visit_ANC"
   * ^code[+] = Dhis2DataElementsCS#syAvZ78FCls
 * currentWeight 0..1 positiveInt "ANC - ANC.B8. Current  weight"
   * ^code[+] = Dhis2DataElementsCS#H90qsZViPcS
@@ -125,7 +125,7 @@ Parent: Base
   * ^code[+] = Dhis2DataElementsCS#Kyw7NtFeW3B
 * otherCurrentPhysiologicalSymptomsSpecify 0..1 string "ANC - ANC.B7. Other current physiological symptoms (specify)"
   * ^code[+] = Dhis2DataElementsCS#KZT7yfzeP08
-* 1stAncOrAScheduledVisit 1..1 boolean "ANC - ANC.B5. Regular ANC / Scheduled visit?"
+* firstAncOrAScheduledVisit 1..1 boolean "ANC - ANC.B5. Regular ANC / Scheduled visit?"
   * ^code[+] = Dhis2DataElementsCS#xb4Z245Bnej
 * fetalMovement 0..1 code "ANC - ANC.B7. Fetal movement"
 * fetalMovement from ANC.B7.FetalMovementVS (required)
