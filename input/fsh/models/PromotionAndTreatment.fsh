@@ -183,5 +183,5 @@ Description: "Data elements for the counselling and treatment task of the workfl
   * ^code[+] = Dhis2DataElementsCS#V90TnwOPzNm
 * referredToHigherLevelClinicOnIndication 0..1 boolean "ANC - ANC.B11. Referred to higher level clinic on indication"
   * ^code[+] = Dhis2DataElementsCS#G1smYf2TE5w
-* ancGestationalAgeAtVisitCat 0..1 positiveInt "ANC - ANC.B8. Gestational age at todays visit_CAT"
+* gestationalAgeAtVisitCat 0..1 positiveInt "ANC - ANC.B8. Gestational age at todays visit_CAT"
   * ^code[+] = Dhis2DataElementsCS#KjLdMpXvJNm

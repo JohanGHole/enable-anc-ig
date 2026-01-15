@@ -1,5 +1,5 @@
 Logical: LaboratoryTestsAndImaging
-Title: "Laboratory Tests and Imaging "
+Title: "Laboratory Tests and Imaging"
 Parent: Base
 Description: "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "
 * randomBloodSugarResult 0..1 decimal "ANC - ANC.B9. Random blood sugar result"
@@ -23,11 +23,11 @@ Description: "Information regarding various laboratory tests and  imaging conduc
   * ^code[+] = Dhis2DataElementsCS#zo8VyJRKcmi
 * tbScreeningIncompleteSymptomsOnly 0..1 boolean "ANC - ANC.B9.  TB screening incomplete (symptoms only)"
   * ^code[+] = Dhis2DataElementsCS#liA7cL3lyMp
-* otherTestSDate 0..1 date "ANC - ANC.B9.  Other test(s) date"
+* otherTestsDate 0..1 date "ANC - ANC.B9.  Other test(s) date"
   * ^code[+] = Dhis2DataElementsCS#xXuuXz5xfh6
-* otherTestSName 0..1 string "ANC - ANC.B9.  Other test(s) name"
+* otherTestsName 0..1 string "ANC - ANC.B9.  Other test(s) name"
   * ^code[+] = Dhis2DataElementsCS#HjA9hp3NCFA
-* otherTestSResultS 0..1 string "ANC - ANC.B9.   Other test(s) result(s)"
+* otherTestsResults 0..1 string "ANC - ANC.B9.   Other test(s) result(s)"
   * ^code[+] = Dhis2DataElementsCS#UsM907MWnA5
 * partnerHivTestDate 0..1 date "ANC -ANC.B9.  Partner HIV test date"
   * ^code[+] = Dhis2DataElementsCS#ox8s78VJC1R
@@ -91,10 +91,10 @@ Description: "Information regarding various laboratory tests and  imaging conduc
   * ^code[+] = Dhis2DataElementsCS#PpxBOihc1Y6
 * bloodGlucoseTestDate 0..1 date "ANC - ANC.B9.  Blood glucose test date"
   * ^code[+] = Dhis2DataElementsCS#EnLWXRgiimk
-* ancLabSickleCell 0..1 code "ANC - ANC LAB Sickle cell"
-* ancLabSickleCell from ANCSickleCellVS (required)
+* labSickleCell 0..1 code "ANC - ANC LAB Sickle cell"
+* labSickleCell from ANCSickleCellVS (required)
   * ^code[+] = Dhis2DataElementsCS#pV0OABcFZCu
-* ancB6UltrasoundGa 0..1 positiveInt "ANC - ANC.B6 Ultrasound GA"
+* ultrasoundGa 0..1 positiveInt "ANC - ANC.B6 Ultrasound GA"
   * ^code[+] = Dhis2DataElementsCS#Juv31inY35a
 * partnerArtNumber 0..1 decimal "ANC - ANC LAB Partner ART Number"
   * ^code[+] = Dhis2DataElementsCS#pMYNlTxqieX
@@ -107,7 +107,7 @@ Description: "Information regarding various laboratory tests and  imaging conduc
 * partnerSyphilisTestResult 0..1 code "ANC - ANC.B9.  Partner Syphilis test result"
 * partnerSyphilisTestResult from ANCSyphilisHepatitisResultsVS (required)
   * ^code[+] = Dhis2DataElementsCS#dN6k6agVKUu
-* ancB9DeUrineDipstickTestDate 0..1 date "ANC - ANC B9.DE Urine dipstick test date"
+* urineDipstickTestDate 0..1 date "ANC - ANC B9.DE Urine dipstick test date"
   * ^code[+] = Dhis2DataElementsCS#bUQy6eZfqFR
 * malariaBS 0..1 code "ANC - ANC LAB Malaria B/S for MPs"
 * malariaBS from ANCLABMalariaMpsVS (required)
@@ -126,7 +126,7 @@ Description: "Information regarding various laboratory tests and  imaging conduc
   * ^code[+] = Dhis2DataElementsCS#HJZAwP1vt7T
 * malariaTestDate 0..1 date "ANC - ANC LAB Malaria test date"
   * ^code[+] = Dhis2DataElementsCS#g2BFjUIJ5G9
-* ancGestationalAgeAtVisitLab 0..1 positiveInt "ANC - ANC.B8. Gestational age at todays visit_LAB"
+* gestationalAgeAtVisitLab 0..1 positiveInt "ANC - ANC.B8. Gestational age at todays visit_LAB"
   * ^code[+] = Dhis2DataElementsCS#CzjBxEJ6HrQ
 * hivTestRecommended 0..1 boolean "ANC - ANC.B9.  HIV test recommended"
   * ^code[+] = Dhis2DataElementsCS#e7cIfEBpsZb

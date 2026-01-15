@@ -1,8 +1,8 @@
 Logical: PregnancyOutcome
 Title: "Pregnancy outcome"
 Parent: Base
-* ancEnd1PregnancyOutcome 1..1 code "ANC - ANC.End1. Pregnancy outcome"
-* ancEnd1PregnancyOutcome from ANC.ReasonForPregnancyOutcomeVS (required)
+* pregnancyOutcome 1..1 code "ANC - ANC.End1. Pregnancy outcome"
+* pregnancyOutcome from ANC.ReasonForPregnancyOutcomeVS (required)
   * ^code[+] = Dhis2DataElementsCS#VIEg1M2z5Vs
 * termOrPreterm 0..1 code "ANC - ANC.BD. Term or Preterm"
 * termOrPreterm from TermOrPretermVS (required)
@@ -26,32 +26,32 @@ Parent: Base
 * childVitalStatus 0..1 code "ANC - ANC.BD Child vital status"
 * childVitalStatus from VitalStatusOfChildVS (required)
   * ^code[+] = Dhis2DataElementsCS#Gk5vKpilJJq
-* ancOutArvRxForMothersByType 0..1 string "ANC - ANC.BD ARV Rx for Mothers (by type)"
+* arvRxForMothersByType 0..1 string "ANC - ANC.BD ARV Rx for Mothers (by type)"
   * ^code[+] = Dhis2DataElementsCS#dxH6wzY9ll4
-* ancOutObstProlgLabour 0..1 boolean "ANC - ANC.BD Obst/prolg labour"
+* obstProlgLabour 0..1 boolean "ANC - ANC.BD Obst/prolg labour"
   * ^code[+] = Dhis2DataElementsCS#dSeYEled4tX
-* ancOutHysterectomy 0..1 boolean "ANC - ANC.BD Hysterectomy "
+* hysterectomy 0..1 boolean "ANC - ANC.BD Hysterectomy "
   * ^code[+] = Dhis2DataElementsCS#z2YaIoUs5eV
-* ancOutManaged 0..1 boolean "ANC - ANC.BD Managed"
+* managed 0..1 boolean "ANC - ANC.BD Managed"
   * ^code[+] = Dhis2DataElementsCS#sYgW1IM4Gn5
-* ancOutPromSepsis 0..1 boolean "ANC - ANC.BD PROM/Sepsis"
+* promSepsis 0..1 boolean "ANC - ANC.BD PROM/Sepsis"
   * ^code[+] = Dhis2DataElementsCS#c975NCuATNP
-* ancOutReferred 0..1 boolean "ANC - ANC.BD Referred"
+* referred 0..1 boolean "ANC - ANC.BD Referred"
   * ^code[+] = Dhis2DataElementsCS#tQ4Sv6kQks9
-* ancOutRepaired 0..1 boolean "ANC - ANC.BD Repaired"
+* repaired 0..1 boolean "ANC - ANC.BD Repaired"
   * ^code[+] = Dhis2DataElementsCS#hGXAH0H7oKs
-* bdOtherReasonForPregnancyOutcome 0..1 code "ANC - AND.BD-Other Reason for Pregnancy Outcome"
-* bdOtherReasonForPregnancyOutcome from BDOtherReasonForPregnancyOutcomeVS (required)
+* otherReasonForPregnancyOutcome 0..1 code "ANC - AND.BD-Other Reason for Pregnancy Outcome"
+* otherReasonForPregnancyOutcome from BDOtherReasonForPregnancyOutcomeVS (required)
   * ^code[+] = Dhis2DataElementsCS#ROgwm1UaUjW
-* ancOutEclampsiaPostpartumHemorrhage 0..1 boolean "ANC - ANC.BD Eclampsia postpartum hemorrhage "
+* eclampsiaPostpartumHemorrhage 0..1 boolean "ANC - ANC.BD Eclampsia postpartum hemorrhage "
   * ^code[+] = Dhis2DataElementsCS#JrSzUmBfKnO
-* ancOutRupturedUx 0..1 boolean "ANC - ANC.BD Ruptured Ux"
+* rupturedUx 0..1 boolean "ANC - ANC.BD Ruptured Ux"
   * ^code[+] = Dhis2DataElementsCS#Mv4z2Sd5s8E
-* ancOutEclampsiaAntepartumHemorrhage 0..1 boolean "ANC - ANC.BD Eclampsia antepartum hemorrhage "
+* eclampsiaAntepartumHemorrhage 0..1 boolean "ANC - ANC.BD Eclampsia antepartum hemorrhage "
   * ^code[+] = Dhis2DataElementsCS#fvnZ3zRQUdQ
 * 0pvVaccine 0..1 date "ANC - ANC.BD 0PV Vaccine"
   * ^code[+] = Dhis2DataElementsCS#KQ34Vol6R3J
-* arvPxForNewBortn 0..1 string "ANC - ANC.BD ARV Px for New Born (By type, HIV)"
+* pxForNewBortn 0..1 string "ANC - ANC.BD ARV Px for New Born (By type, HIV)"
   * ^code[+] = Dhis2DataElementsCS#U58bt6XckRq
 * apgarScore 0..1 boolean "ANC - ANC.BD Apgar Score"
   * ^code[+] = Dhis2DataElementsCS#p7e9CE7Hc0t
