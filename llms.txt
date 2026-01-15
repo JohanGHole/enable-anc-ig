@@ -230,7 +230,7 @@
 * [Postpartum](StructureDefinition-Postpartum.md)
 * [Pregnancy outcome](StructureDefinition-PregnancyOutcome.md)
 * [Promotion and Treatment ](StructureDefinition-PromotionAndTreatment.md)
-* [Woman's Profile and History](StructureDefinition-WomanSProfileAndHistory.md)
+* [Woman's Profile and History](StructureDefinition-WomansProfileAndHistory.md)
 
 ### ImplementationGuides
 

@@ -62,7 +62,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+      "StructureDefinition-WomansProfileAndHistory.html" : "Woman's Profile and History"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS",
@@ -112,7 +112,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+      "StructureDefinition-WomansProfileAndHistory.html" : "Woman's Profile and History"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS",
@@ -249,7 +249,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+      "StructureDefinition-WomansProfileAndHistory.html" : "Woman's Profile and History"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS",
@@ -962,7 +962,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+      "StructureDefinition-WomansProfileAndHistory.html" : "Woman's Profile and History"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/IptpDose112VS",

@@ -31,7 +31,7 @@ Code system for 315 unique DHIS2 data elements from all selected programs
   "name" : "Dhis2DataElementsCS",
   "title" : "DHIS2 Data Elements",
   "status" : "draft",
-  "date" : "2026-01-15T12:19:16+00:00",
+  "date" : "2026-01-15T13:05:29+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {

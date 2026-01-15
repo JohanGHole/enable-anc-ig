@@ -55,8 +55,8 @@
 "ANCRegistry.smsMobileNumber","ANCRegistry.smsMobileNumber","","","",0,1,"","","","string {[]} {[]}
 ","Client's SMS mobile phone number","Client's SMS mobile phone number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#RJxLa3nITB3
 ",,,,"ANCRegistry.smsMobileNumber",0,1,"",""
-"ANCRegistry.womanSProfileAndHistory","ANCRegistry.womanSProfileAndHistory","","","",0,1,"","","","https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory {[]} {[]}
-","Woman's Profile and History","Woman's Profile and History","","","","","","","","","",,,,,"",,,,"ANCRegistry.womanSProfileAndHistory",0,1,"",""
+"ANCRegistry.womansProfileAndHistory","ANCRegistry.womansProfileAndHistory","","","",0,1,"","","","https://hispethiopia.org/enable/StructureDefinition/WomansProfileAndHistory {[]} {[]}
+","Woman's Profile and History","Woman's Profile and History","","","","","","","","","",,,,,"",,,,"ANCRegistry.womansProfileAndHistory",0,1,"",""
 "ANCRegistry.ancExamination","ANCRegistry.ancExamination","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/ANCExamination {[]} {[]}
 ","ANC Examination","ANC Examination","","","","","","","","","",,,,,"",,,,"ANCRegistry.ancExamination",0,*,"",""
 "ANCRegistry.laboratoryTestsAndImaging","ANCRegistry.laboratoryTestsAndImaging","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging {[]} {[]}

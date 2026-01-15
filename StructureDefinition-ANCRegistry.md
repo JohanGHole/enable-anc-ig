@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ANCRegistry.csv), [E
   "name" : "ANCRegistry",
   "title" : "ANC - RMNCAH - Antenatal care registry (ANC)",
   "status" : "draft",
-  "date" : "2026-01-15T12:19:16+00:00",
+  "date" : "2026-01-15T13:05:29+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -424,15 +424,15 @@ Other representations of profile: [CSV](StructureDefinition-ANCRegistry.csv), [E
         ]
       },
       {
-        "id" : "ANCRegistry.womanSProfileAndHistory",
-        "path" : "ANCRegistry.womanSProfileAndHistory",
+        "id" : "ANCRegistry.womansProfileAndHistory",
+        "path" : "ANCRegistry.womansProfileAndHistory",
         "short" : "Woman's Profile and History",
         "definition" : "Woman's Profile and History",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
-            "code" : "https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory"
+            "code" : "https://hispethiopia.org/enable/StructureDefinition/WomansProfileAndHistory"
           }
         ]
       },

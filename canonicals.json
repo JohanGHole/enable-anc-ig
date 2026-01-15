@@ -463,11 +463,11 @@
     "name" : "PromotionAndTreatment"
   },
   {
-    "id" : "WomanSProfileAndHistory",
+    "id" : "WomansProfileAndHistory",
     "type" : "StructureDefinition",
-    "url" : "https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/WomansProfileAndHistory",
     "version" : "0.1.0",
-    "name" : "WomanSProfileAndHistory"
+    "name" : "WomansProfileAndHistory"
   },
   {
     "id" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",

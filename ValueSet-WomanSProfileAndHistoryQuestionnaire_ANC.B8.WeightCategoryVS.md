@@ -14,7 +14,7 @@
 
  **References** 
 
-* [Woman's Profile and History](StructureDefinition-WomanSProfileAndHistory.md)
+* [Woman's Profile and History](StructureDefinition-WomansProfileAndHistory.md)
 
 ### Logical Definition (CLD)
 

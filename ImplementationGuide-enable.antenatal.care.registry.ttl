@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ANCRMNCAHAntenatalcareregistryANC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-15T12:19:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-15T13:05:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HISP Ethiopia" ] ;
@@ -3567,8 +3567,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory> ;
-         fhir:reference [ fhir:v "StructureDefinition/WomanSProfileAndHistory" ]
+         fhir:l <https://hispethiopia.org/enable/StructureDefinition/WomansProfileAndHistory> ;
+         fhir:reference [ fhir:v "StructureDefinition/WomansProfileAndHistory" ]
        ] ;
        fhir:name [ fhir:v "Woman's Profile and History" ] ;
        fhir:example [

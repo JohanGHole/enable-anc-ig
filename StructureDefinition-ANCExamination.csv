@@ -55,24 +55,24 @@
 "ANCExamination.repeatSystolicBloodPressure","ANCExamination.repeatSystolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC.B8. Repeat systolic blood pressure","ANC - ANC.B8. Repeat systolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZkCYYlI4xe7
 ",,,,"ANCExamination.repeatSystolicBloodPressure",0,1,"",""
-"ANCExamination.symphysisFundalHeightSfh","ANCExamination.symphysisFundalHeightSfh","","","",0,1,"","","","positiveInt {[]} {[]}
+"ANCExamination.symphysisFundalHeight","ANCExamination.symphysisFundalHeight","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC.B8. Symphysis-fundal height (SFH)","ANC - ANC.B8. Symphysis-fundal height (SFH)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fjZ4KQpS1QS
-",,,,"ANCExamination.symphysisFundalHeightSfh",0,1,"",""
+",,,,"ANCExamination.symphysisFundalHeight",0,1,"",""
 "ANCExamination.systolicBloodPressure","ANCExamination.systolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC.B8. Systolic blood pressure","ANC - ANC.B8. Systolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#M4HEOoEFTAT
 ",,,,"ANCExamination.systolicBloodPressure",0,1,"",""
 "ANCExamination.signsConditionsForGbv","ANCExamination.signsConditionsForGbv","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.B8. Signs/conditions for GBV","ANC - ANC.B8. Signs/conditions for GBV","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VEFV1QayfzE
 ",,,,"ANCExamination.signsConditionsForGbv",0,1,"",""
-"ANCExamination.otherAbnormalPelvicVisualResultSpecify","ANCExamination.otherAbnormalPelvicVisualResultSpecify","","","",0,1,"","","","string {[]} {[]}
+"ANCExamination.otherAbnormalPelvicResult","ANCExamination.otherAbnormalPelvicResult","","","",0,1,"","","","string {[]} {[]}
 ","ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)","ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#d8vfOWb6SPd
-",,,,"ANCExamination.otherAbnormalPelvicVisualResultSpecify",0,1,"",""
+",,,,"ANCExamination.otherAbnormalPelvicResult",0,1,"",""
 "ANCExamination.previousScar1","ANCExamination.previousScar1","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - Previous scar 1","ANC - Previous scar 1","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vMVLu4hlDqx
 ",,,,"ANCExamination.previousScar1",0,1,"",""
-"ANCExamination.otherFetalPresentationSpecify","ANCExamination.otherFetalPresentationSpecify","","","",0,1,"","","","string {[]} {[]}
+"ANCExamination.otherFetalPresentation","ANCExamination.otherFetalPresentation","","","",0,1,"","","","string {[]} {[]}
 ","ANC - ANC.B8. Other fetal presentation (specify)","ANC - ANC.B8. Other fetal presentation (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#tsaVZFUAgkD
-",,,,"ANCExamination.otherFetalPresentationSpecify",0,1,"",""
+",,,,"ANCExamination.otherFetalPresentation",0,1,"",""
 "ANCExamination.previousScarYear1","ANCExamination.previousScarYear1","","","",0,1,"","","","code {[]} {[]}
 ","ANC - Previous scar year 1","ANC - Previous scar year 1","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fDdSgAwUbtS
 ",,,,"ANCExamination.previousScarYear1",0,1,"",""
@@ -145,9 +145,9 @@
 "ANCExamination.hasAbnormalVaginalDischargePhysiological","ANCExamination.hasAbnormalVaginalDischargePhysiological","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)","ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cPOXL8JV8Ee
 ",,,,"ANCExamination.hasAbnormalVaginalDischargePhysiological",0,1,"",""
-"ANCExamination.ancGestationalAgeAtVisitAnc","ANCExamination.ancGestationalAgeAtVisitAnc","","","",0,1,"","","","positiveInt {[]} {[]}
+"ANCExamination.gestationalAgeAtVisitAnc","ANCExamination.gestationalAgeAtVisitAnc","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC.B8. Gestational age at today's visit_ANC","ANC - ANC.B8. Gestational age at today's visit_ANC","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#syAvZ78FCls
-",,,,"ANCExamination.ancGestationalAgeAtVisitAnc",0,1,"",""
+",,,,"ANCExamination.gestationalAgeAtVisitAnc",0,1,"",""
 "ANCExamination.currentWeight","ANCExamination.currentWeight","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC.B8. Current  weight","ANC - ANC.B8. Current  weight","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#H90qsZViPcS
 ",,,,"ANCExamination.currentWeight",0,1,"",""
@@ -169,9 +169,9 @@
 "ANCExamination.otherCurrentPhysiologicalSymptomsSpecify","ANCExamination.otherCurrentPhysiologicalSymptomsSpecify","","","",0,1,"","","","string {[]} {[]}
 ","ANC - ANC.B7. Other current physiological symptoms (specify)","ANC - ANC.B7. Other current physiological symptoms (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KZT7yfzeP08
 ",,,,"ANCExamination.otherCurrentPhysiologicalSymptomsSpecify",0,1,"",""
-"ANCExamination.1stAncOrAScheduledVisit","ANCExamination.1stAncOrAScheduledVisit","","","",1,1,"","","","boolean {[]} {[]}
+"ANCExamination.firstAncOrAScheduledVisit","ANCExamination.firstAncOrAScheduledVisit","","","",1,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.B5. Regular ANC / Scheduled visit?","ANC - ANC.B5. Regular ANC / Scheduled visit?","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xb4Z245Bnej
-",,,,"ANCExamination.1stAncOrAScheduledVisit",1,1,"",""
+",,,,"ANCExamination.firstAncOrAScheduledVisit",1,1,"",""
 "ANCExamination.fetalMovement","ANCExamination.fetalMovement","","","",0,1,"","","","code {[]} {[]}
 ","ANC - ANC.B7. Fetal movement","ANC - ANC.B7. Fetal movement","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CORtBqRWjMG
 ",,,,"ANCExamination.fetalMovement",0,1,"",""

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
   "name" : "LaboratoryTestsAndImaging",
   "title" : "Laboratory Tests and Imaging ",
   "status" : "draft",
-  "date" : "2026-01-15T12:19:16+00:00",
+  "date" : "2026-01-15T13:05:29+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {

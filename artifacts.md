@@ -19,7 +19,7 @@ These define data models that represent the domain covered by this implementatio
 | [Postpartum](StructureDefinition-Postpartum.md) |  |
 | [Pregnancy outcome](StructureDefinition-PregnancyOutcome.md) |  |
 | [Promotion and Treatment](StructureDefinition-PromotionAndTreatment.md) | Data elements for the counselling and treatment task of the workflow |
-| [Woman's Profile and History](StructureDefinition-WomanSProfileAndHistory.md) |  |
+| [Woman's Profile and History](StructureDefinition-WomansProfileAndHistory.md) |  |
 
 ### Structures: Questionnaires 
 

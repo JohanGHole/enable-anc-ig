@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
   "name" : "ANCExamination",
   "title" : "ANC Examination",
   "status" : "draft",
-  "date" : "2026-01-15T12:19:16+00:00",
+  "date" : "2026-01-15T13:05:29+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -428,8 +428,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
         ]
       },
       {
-        "id" : "ANCExamination.symphysisFundalHeightSfh",
-        "path" : "ANCExamination.symphysisFundalHeightSfh",
+        "id" : "ANCExamination.symphysisFundalHeight",
+        "path" : "ANCExamination.symphysisFundalHeight",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -485,8 +485,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
         ]
       },
       {
-        "id" : "ANCExamination.otherAbnormalPelvicVisualResultSpecify",
-        "path" : "ANCExamination.otherAbnormalPelvicVisualResultSpecify",
+        "id" : "ANCExamination.otherAbnormalPelvicResult",
+        "path" : "ANCExamination.otherAbnormalPelvicResult",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -523,8 +523,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
         ]
       },
       {
-        "id" : "ANCExamination.otherFetalPresentationSpecify",
-        "path" : "ANCExamination.otherFetalPresentationSpecify",
+        "id" : "ANCExamination.otherFetalPresentation",
+        "path" : "ANCExamination.otherFetalPresentation",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -1026,8 +1026,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
         ]
       },
       {
-        "id" : "ANCExamination.ancGestationalAgeAtVisitAnc",
-        "path" : "ANCExamination.ancGestationalAgeAtVisitAnc",
+        "id" : "ANCExamination.gestationalAgeAtVisitAnc",
+        "path" : "ANCExamination.gestationalAgeAtVisitAnc",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -1178,8 +1178,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
         ]
       },
       {
-        "id" : "ANCExamination.1stAncOrAScheduledVisit",
-        "path" : "ANCExamination.1stAncOrAScheduledVisit",
+        "id" : "ANCExamination.firstAncOrAScheduledVisit",
+        "path" : "ANCExamination.firstAncOrAScheduledVisit",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",

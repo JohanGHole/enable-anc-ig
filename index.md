@@ -26,7 +26,7 @@ Feel free to modify this index page with your own content.
   "version" : "0.1.0",
   "name" : "ANCRMNCAHAntenatalcareregistryANC",
   "status" : "draft",
-  "date" : "2026-01-15T12:19:16+00:00",
+  "date" : "2026-01-15T13:05:29+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -2216,7 +2216,7 @@ Feel free to modify this index page with your own content.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/WomanSProfileAndHistory"
+          "reference" : "StructureDefinition/WomansProfileAndHistory"
         },
         "name" : "Woman's Profile and History",
         "exampleBoolean" : false

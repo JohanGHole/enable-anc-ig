@@ -1,0 +1,1663 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "WomansProfileAndHistory",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition WomansProfileAndHistory</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory\" title=\"Woman's Profile and History\">WomansProfileAndHistory</a><a name=\"WomansProfileAndHistory\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Woman's Profile and History</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.alcohol\" title=\"ANC - ANC.B6. Alcohol\">alcohol</a><a name=\"WomansProfileAndHistory.alcohol\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Alcohol</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth\" title=\"ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)\">historyEarlyNeonatalDeathBtwn07daysofbirth</a><a name=\"WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.diabetes\" title=\"ANC - ANC.B6. Diabetes\">diabetes</a><a name=\"WomansProfileAndHistory.diabetes\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Diabetes</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.eclampsiaConvulsions\" title=\"ANC - ANC.B6. Eclampsia/Convulsions\">eclampsiaConvulsions</a><a name=\"WomansProfileAndHistory.eclampsiaConvulsions\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Eclampsia/Convulsions</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.expectedDateOfDeliveryEdd\" title=\"ANC - ANC.B6. Expected date of delivery (EDD)\">expectedDateOfDeliveryEdd</a><a name=\"WomansProfileAndHistory.expectedDateOfDeliveryEdd\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Expected date of delivery (EDD)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.ancGestationalAge\" title=\"ANC - ANC.B6. Gestational age\">ancGestationalAge</a><a name=\"WomansProfileAndHistory.ancGestationalAge\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Gestational age</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.historyOfBigBabyDelivery4Kg\" title=\"ANC - ANC History of big baby delivery ( &gt; 4 kg)\">historyOfBigBabyDelivery4Kg</a><a name=\"WomansProfileAndHistory.historyOfBigBabyDelivery4Kg\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC History of big baby delivery ( &gt; 4 kg)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.hivStatusProfile\" title=\"ANC - ANC.B6. HIV status profile\">hivStatusProfile</a><a name=\"WomansProfileAndHistory.hivStatusProfile\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. HIV status profile<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIVStatusProfileVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS\" class=\"binding\">HIV status Profile value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.myomectomy\" title=\"ANC - ANC Myomectomy\">myomectomy</a><a name=\"WomansProfileAndHistory.myomectomy\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC Myomectomy</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.hypertension\" title=\"ANC - ANC.B6. Hypertension\">hypertension</a><a name=\"WomansProfileAndHistory.hypertension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Hypertension</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.cardiacCondition\" title=\"ANC - ANC Cardiac condition\">cardiacCondition</a><a name=\"WomansProfileAndHistory.cardiacCondition\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC Cardiac condition</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure\" title=\"ANC - ANC.B6. Kidney disease (Chronic Renal Failure)\">kidneyDiseaseChronicRenalFailure</a><a name=\"WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Kidney disease (Chronic Renal Failure)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.lnmpDate\" title=\"ANC - ANC.B6. Last normal menstrual period (LNMP) date\">lnmpDate</a><a name=\"WomansProfileAndHistory.lnmpDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Last normal menstrual period (LNMP) date</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate\" title=\"ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date\">clinicalEstimationPalpationFundalHeightDate</a><a name=\"WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine\" title=\"ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)\">malariaMedicationSulfadoxinePyrimethamine</a><a name=\"WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.ancPara\" title=\"ANC - ANC.B6. Para\">ancPara</a><a name=\"WomansProfileAndHistory.ancPara\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Para</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.numberOfPregnanciesGravida\" title=\"ANC - ANC.B6. Number of pregnancies (gravida)\">numberOfPregnanciesGravida</a><a name=\"WomansProfileAndHistory.numberOfPregnanciesGravida\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of pregnancies (gravida)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.ultrasoundGa\" title=\"ANC - ANC.B6 Ultrasound GA\">ultrasoundGa</a><a name=\"WomansProfileAndHistory.ultrasoundGa\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6 Ultrasound GA</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.noAlcoholAndOrSubstances\" title=\"ANC - ANC.B6. No alcohol and/or substances\">noAlcoholAndOrSubstances</a><a name=\"WomansProfileAndHistory.noAlcoholAndOrSubstances\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No alcohol and/or substances</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.noChronicOrPastHealthConditions\" title=\"ANC - ANC.B6. No chronic or past health conditions\">noChronicOrPastHealthConditions</a><a name=\"WomansProfileAndHistory.noChronicOrPastHealthConditions\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No chronic or past health conditions</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.noKnownAllergies\" title=\"ANC - ANC.B6. No known allergies\">noKnownAllergies</a><a name=\"WomansProfileAndHistory.noKnownAllergies\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No known allergies</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.noKnownPastSurgeries\" title=\"ANC - ANC.B6. No known past surgeries\">noKnownPastSurgeries</a><a name=\"WomansProfileAndHistory.noKnownPastSurgeries\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No known past surgeries</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.noMedications\" title=\"ANC - ANC.B6. No medications\">noMedications</a><a name=\"WomansProfileAndHistory.noMedications\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No medications</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.noPastPregnancyComplications\" title=\"ANC - ANC.B6. No past pregnancy complications\">noPastPregnancyComplications</a><a name=\"WomansProfileAndHistory.noPastPregnancyComplications\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No past pregnancy complications</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.numberOfCaesareanSections\" title=\"ANC - ANC.B6. Number of caesarean sections\">numberOfCaesareanSections</a><a name=\"WomansProfileAndHistory.numberOfCaesareanSections\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of caesarean sections</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.numberOfAbortions\" title=\"ANC - ANC.B6. Number of abortions\">numberOfAbortions</a><a name=\"WomansProfileAndHistory.numberOfAbortions\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of abortions</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd\" title=\"ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)\">numberOfStillbirthsFsdAndOrMsd</a><a name=\"WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.otherAllergiesSpecify\" title=\"ANC - ANC.B6. Other allergies (specify)\">otherAllergiesSpecify</a><a name=\"WomansProfileAndHistory.otherAllergiesSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other allergies (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.otherGynecologicalProceduresSpecify\" title=\"ANC - ANC.B6. Other gynecological procedures (specify)\">otherGynecologicalProceduresSpecify</a><a name=\"WomansProfileAndHistory.otherGynecologicalProceduresSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other gynecological procedures (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.medicationsSpecify\" title=\"ANC - ANC.B6. Medications (specify)\">medicationsSpecify</a><a name=\"WomansProfileAndHistory.medicationsSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Medications (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.otherPastPregnancyProblemsSpecify\" title=\"ANC - ANC.B6. Other past pregnancy problems (specify)\">otherPastPregnancyProblemsSpecify</a><a name=\"WomansProfileAndHistory.otherPastPregnancyProblemsSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other past pregnancy problems (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.otherConditionsSpecify\" title=\"ANC - ANC.B6. Other (specify)\">otherConditionsSpecify</a><a name=\"WomansProfileAndHistory.otherConditionsSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.otherSubstanceUseSpecify\" title=\"ANC - ANC.B6. Other substance use (specify)\">otherSubstanceUseSpecify</a><a name=\"WomansProfileAndHistory.otherSubstanceUseSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other substance use (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.otherSurgeriesSpecify\" title=\"ANC - ANC.B6. Other surgeries (specify)\">otherSurgeriesSpecify</a><a name=\"WomansProfileAndHistory.otherSurgeriesSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other surgeries (specify)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.preEclampsia\" title=\"ANC - ANC.B6. Pre-eclampsia\">preEclampsia</a><a name=\"WomansProfileAndHistory.preEclampsia\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Pre-eclampsia</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.sourceOfGestationalAge\" title=\"ANC - ANC.B6. Source of gestational age\">sourceOfGestationalAge</a><a name=\"WomansProfileAndHistory.sourceOfGestationalAge\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Source of gestational age<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.B6.SourceOfGestationalAgeVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS\" class=\"binding\">ANC.B6. Source of gestational age value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.tobaccoUse\" title=\"ANC - ANC.B6. Tobacco use\">tobaccoUse</a><a name=\"WomansProfileAndHistory.tobaccoUse\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Tobacco use</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.ultrasoundDate\" title=\"ANC - ANC.B6. Ultrasound date\">ultrasoundDate</a><a name=\"WomansProfileAndHistory.ultrasoundDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Ultrasound date</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.clinicallyEstimatedGestationalAge\" title=\"ANC.B6. Clinically estimated gestational age\">clinicallyEstimatedGestationalAge</a><a name=\"WomansProfileAndHistory.clinicallyEstimatedGestationalAge\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC.B6. Clinically estimated gestational age</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.height\" title=\"ANC - ANC.B8. Height\">height</a><a name=\"WomansProfileAndHistory.height\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Height</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.preGestationalWeight\" title=\"ANC - ANC.B8. Pre-gestational weight\">preGestationalWeight</a><a name=\"WomansProfileAndHistory.preGestationalWeight\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Pre-gestational weight</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.bmi\" title=\"ANC - ANC.B8. BMI\">bmi</a><a name=\"WomansProfileAndHistory.bmi\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. BMI</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.weightCategory\" title=\"ANC - ANC.B8. Weight category\">weightCategory</a><a name=\"WomansProfileAndHistory.weightCategory\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Weight category<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.B8.WeightCategoryVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS\" class=\"binding\">ANC.B8. Weight category value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.reviewAndConfirmComputedBmi\" title=\"ANC - ANC.B8a. Review and confirm computed BMI\">reviewAndConfirmComputedBmi</a><a name=\"WomansProfileAndHistory.reviewAndConfirmComputedBmi\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8a. Review and confirm computed BMI</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomansProfileAndHistory-definitions.html#WomansProfileAndHistory.expectedWeightGain\" title=\"ANC - ANC.B8. Expected weight gain\">expectedWeightGain</a><a name=\"WomansProfileAndHistory.expectedWeightGain\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Expected weight gain<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.B8.ExpectedWeightGainVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS\" class=\"binding\">ANC.B8. Expected weight gain value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/StructureDefinition/WomansProfileAndHistory",
+  "version" : "0.1.0",
+  "name" : "WomansProfileAndHistory",
+  "title" : "Woman's Profile and History",
+  "status" : "draft",
+  "date" : "2026-01-15T13:05:29+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://hispethiopia.org/enable/StructureDefinition/WomansProfileAndHistory",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
+    "element" : [{
+      "id" : "WomansProfileAndHistory",
+      "path" : "WomansProfileAndHistory",
+      "short" : "Woman's Profile and History",
+      "definition" : "Woman's Profile and History",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "WomansProfileAndHistory.alcohol",
+      "path" : "WomansProfileAndHistory.alcohol",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "w1XaGkyql1u"
+      }],
+      "short" : "ANC - ANC.B6. Alcohol",
+      "definition" : "ANC - ANC.B6. Alcohol",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.alcohol",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth",
+      "path" : "WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "xSKiFlohuQd"
+      }],
+      "short" : "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)",
+      "definition" : "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.diabetes",
+      "path" : "WomansProfileAndHistory.diabetes",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "cCp43HMY3br"
+      }],
+      "short" : "ANC - ANC.B6. Diabetes",
+      "definition" : "ANC - ANC.B6. Diabetes",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.diabetes",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.eclampsiaConvulsions",
+      "path" : "WomansProfileAndHistory.eclampsiaConvulsions",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "oeojmvdEY9S"
+      }],
+      "short" : "ANC - ANC.B6. Eclampsia/Convulsions",
+      "definition" : "ANC - ANC.B6. Eclampsia/Convulsions",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.eclampsiaConvulsions",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.expectedDateOfDeliveryEdd",
+      "path" : "WomansProfileAndHistory.expectedDateOfDeliveryEdd",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "Ru01omP2WCQ"
+      }],
+      "short" : "ANC - ANC.B6. Expected date of delivery (EDD)",
+      "definition" : "ANC - ANC.B6. Expected date of delivery (EDD)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.expectedDateOfDeliveryEdd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ancGestationalAge",
+      "path" : "WomansProfileAndHistory.ancGestationalAge",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "w9p8MQDRyMr"
+      }],
+      "short" : "ANC - ANC.B6. Gestational age",
+      "definition" : "ANC - ANC.B6. Gestational age",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.ancGestationalAge",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.historyOfBigBabyDelivery4Kg",
+      "path" : "WomansProfileAndHistory.historyOfBigBabyDelivery4Kg",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "XhGh2s0tPTr"
+      }],
+      "short" : "ANC - ANC History of big baby delivery ( > 4 kg)",
+      "definition" : "ANC - ANC History of big baby delivery ( > 4 kg)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.historyOfBigBabyDelivery4Kg",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.hivStatusProfile",
+      "path" : "WomansProfileAndHistory.hivStatusProfile",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "lYE2KzWQGkW"
+      }],
+      "short" : "ANC - ANC.B6. HIV status profile",
+      "definition" : "ANC - ANC.B6. HIV status profile",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.hivStatusProfile",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS"
+      }
+    },
+    {
+      "id" : "WomansProfileAndHistory.myomectomy",
+      "path" : "WomansProfileAndHistory.myomectomy",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "iboAokLxCIh"
+      }],
+      "short" : "ANC - ANC Myomectomy",
+      "definition" : "ANC - ANC Myomectomy",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.myomectomy",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.hypertension",
+      "path" : "WomansProfileAndHistory.hypertension",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "QqTuhQQgpcp"
+      }],
+      "short" : "ANC - ANC.B6. Hypertension",
+      "definition" : "ANC - ANC.B6. Hypertension",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.hypertension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.cardiacCondition",
+      "path" : "WomansProfileAndHistory.cardiacCondition",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "fuEUJqslhPb"
+      }],
+      "short" : "ANC - ANC Cardiac condition",
+      "definition" : "ANC - ANC Cardiac condition",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.cardiacCondition",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure",
+      "path" : "WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "KPN571DvV4D"
+      }],
+      "short" : "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)",
+      "definition" : "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.lnmpDate",
+      "path" : "WomansProfileAndHistory.lnmpDate",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "w4ky6EkVahL"
+      }],
+      "short" : "ANC - ANC.B6. Last normal menstrual period (LNMP) date",
+      "definition" : "ANC - ANC.B6. Last normal menstrual period (LNMP) date",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.lnmpDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate",
+      "path" : "WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "joirdYETe8d"
+      }],
+      "short" : "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date",
+      "definition" : "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine",
+      "path" : "WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "l7Jh3IoeEIa"
+      }],
+      "short" : "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)",
+      "definition" : "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ancPara",
+      "path" : "WomansProfileAndHistory.ancPara",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "I7dvwZGNgE8"
+      }],
+      "short" : "ANC - ANC.B6. Para",
+      "definition" : "ANC - ANC.B6. Para",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.ancPara",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfPregnanciesGravida",
+      "path" : "WomansProfileAndHistory.numberOfPregnanciesGravida",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "PuiTfPfSf86"
+      }],
+      "short" : "ANC - ANC.B6. Number of pregnancies (gravida)",
+      "definition" : "ANC - ANC.B6. Number of pregnancies (gravida)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.numberOfPregnanciesGravida",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ultrasoundGa",
+      "path" : "WomansProfileAndHistory.ultrasoundGa",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "Juv31inY35a"
+      }],
+      "short" : "ANC - ANC.B6 Ultrasound GA",
+      "definition" : "ANC - ANC.B6 Ultrasound GA",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.ultrasoundGa",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noAlcoholAndOrSubstances",
+      "path" : "WomansProfileAndHistory.noAlcoholAndOrSubstances",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "DPZ6kIgtiIA"
+      }],
+      "short" : "ANC - ANC.B6. No alcohol and/or substances",
+      "definition" : "ANC - ANC.B6. No alcohol and/or substances",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.noAlcoholAndOrSubstances",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noChronicOrPastHealthConditions",
+      "path" : "WomansProfileAndHistory.noChronicOrPastHealthConditions",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "snqxJUEWgkb"
+      }],
+      "short" : "ANC - ANC.B6. No chronic or past health conditions",
+      "definition" : "ANC - ANC.B6. No chronic or past health conditions",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.noChronicOrPastHealthConditions",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noKnownAllergies",
+      "path" : "WomansProfileAndHistory.noKnownAllergies",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "V16g2TRV7MB"
+      }],
+      "short" : "ANC - ANC.B6. No known allergies",
+      "definition" : "ANC - ANC.B6. No known allergies",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.noKnownAllergies",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noKnownPastSurgeries",
+      "path" : "WomansProfileAndHistory.noKnownPastSurgeries",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "DSAooZSxopi"
+      }],
+      "short" : "ANC - ANC.B6. No known past surgeries",
+      "definition" : "ANC - ANC.B6. No known past surgeries",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.noKnownPastSurgeries",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noMedications",
+      "path" : "WomansProfileAndHistory.noMedications",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "hpXvhGzaVld"
+      }],
+      "short" : "ANC - ANC.B6. No medications",
+      "definition" : "ANC - ANC.B6. No medications",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.noMedications",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noPastPregnancyComplications",
+      "path" : "WomansProfileAndHistory.noPastPregnancyComplications",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "GWxtXap1Guk"
+      }],
+      "short" : "ANC - ANC.B6. No past pregnancy complications",
+      "definition" : "ANC - ANC.B6. No past pregnancy complications",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.noPastPregnancyComplications",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfCaesareanSections",
+      "path" : "WomansProfileAndHistory.numberOfCaesareanSections",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "j3lxVBnaXmy"
+      }],
+      "short" : "ANC - ANC.B6. Number of caesarean sections",
+      "definition" : "ANC - ANC.B6. Number of caesarean sections",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.numberOfCaesareanSections",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfAbortions",
+      "path" : "WomansProfileAndHistory.numberOfAbortions",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "p4e5Y0GQIxv"
+      }],
+      "short" : "ANC - ANC.B6. Number of abortions",
+      "definition" : "ANC - ANC.B6. Number of abortions",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.numberOfAbortions",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd",
+      "path" : "WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "fpPtP8xrU1s"
+      }],
+      "short" : "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)",
+      "definition" : "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherAllergiesSpecify",
+      "path" : "WomansProfileAndHistory.otherAllergiesSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "vpxAELVdkqn"
+      }],
+      "short" : "ANC - ANC.B6. Other allergies (specify)",
+      "definition" : "ANC - ANC.B6. Other allergies (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.otherAllergiesSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherGynecologicalProceduresSpecify",
+      "path" : "WomansProfileAndHistory.otherGynecologicalProceduresSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "hz94MekJLYe"
+      }],
+      "short" : "ANC - ANC.B6. Other gynecological procedures (specify)",
+      "definition" : "ANC - ANC.B6. Other gynecological procedures (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.otherGynecologicalProceduresSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.medicationsSpecify",
+      "path" : "WomansProfileAndHistory.medicationsSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "kyOjlg4co4z"
+      }],
+      "short" : "ANC - ANC.B6. Medications (specify)",
+      "definition" : "ANC - ANC.B6. Medications (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.medicationsSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherPastPregnancyProblemsSpecify",
+      "path" : "WomansProfileAndHistory.otherPastPregnancyProblemsSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "rF7OJIP7fhp"
+      }],
+      "short" : "ANC - ANC.B6. Other past pregnancy problems (specify)",
+      "definition" : "ANC - ANC.B6. Other past pregnancy problems (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.otherPastPregnancyProblemsSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherConditionsSpecify",
+      "path" : "WomansProfileAndHistory.otherConditionsSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "lbmrnYizavt"
+      }],
+      "short" : "ANC - ANC.B6. Other (specify)",
+      "definition" : "ANC - ANC.B6. Other (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.otherConditionsSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherSubstanceUseSpecify",
+      "path" : "WomansProfileAndHistory.otherSubstanceUseSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "UZ6Re4zVePj"
+      }],
+      "short" : "ANC - ANC.B6. Other substance use (specify)",
+      "definition" : "ANC - ANC.B6. Other substance use (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.otherSubstanceUseSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherSurgeriesSpecify",
+      "path" : "WomansProfileAndHistory.otherSurgeriesSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "S6O8strHi1p"
+      }],
+      "short" : "ANC - ANC.B6. Other surgeries (specify)",
+      "definition" : "ANC - ANC.B6. Other surgeries (specify)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.otherSurgeriesSpecify",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.preEclampsia",
+      "path" : "WomansProfileAndHistory.preEclampsia",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "TGcfgzv8mQA"
+      }],
+      "short" : "ANC - ANC.B6. Pre-eclampsia",
+      "definition" : "ANC - ANC.B6. Pre-eclampsia",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.preEclampsia",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.sourceOfGestationalAge",
+      "path" : "WomansProfileAndHistory.sourceOfGestationalAge",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "RPSgZF1i0hk"
+      }],
+      "short" : "ANC - ANC.B6. Source of gestational age",
+      "definition" : "ANC - ANC.B6. Source of gestational age",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.sourceOfGestationalAge",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS"
+      }
+    },
+    {
+      "id" : "WomansProfileAndHistory.tobaccoUse",
+      "path" : "WomansProfileAndHistory.tobaccoUse",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "HvfStK1Mfo5"
+      }],
+      "short" : "ANC - ANC.B6. Tobacco use",
+      "definition" : "ANC - ANC.B6. Tobacco use",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.tobaccoUse",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ultrasoundDate",
+      "path" : "WomansProfileAndHistory.ultrasoundDate",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "PrDdlt8U65H"
+      }],
+      "short" : "ANC - ANC.B6. Ultrasound date",
+      "definition" : "ANC - ANC.B6. Ultrasound date",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.ultrasoundDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.clinicallyEstimatedGestationalAge",
+      "path" : "WomansProfileAndHistory.clinicallyEstimatedGestationalAge",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "YKXci7Sm0Zq"
+      }],
+      "short" : "ANC.B6. Clinically estimated gestational age",
+      "definition" : "ANC.B6. Clinically estimated gestational age",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.clinicallyEstimatedGestationalAge",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.height",
+      "path" : "WomansProfileAndHistory.height",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "TcOkQ8Qqmlt"
+      }],
+      "short" : "ANC - ANC.B8. Height",
+      "definition" : "ANC - ANC.B8. Height",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.height",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.preGestationalWeight",
+      "path" : "WomansProfileAndHistory.preGestationalWeight",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "kFwQfziJLEt"
+      }],
+      "short" : "ANC - ANC.B8. Pre-gestational weight",
+      "definition" : "ANC - ANC.B8. Pre-gestational weight",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.preGestationalWeight",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.bmi",
+      "path" : "WomansProfileAndHistory.bmi",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "UZnz5QLRvcr"
+      }],
+      "short" : "ANC - ANC.B8. BMI",
+      "definition" : "ANC - ANC.B8. BMI",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.bmi",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.weightCategory",
+      "path" : "WomansProfileAndHistory.weightCategory",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "UsYtsHtuvwQ"
+      }],
+      "short" : "ANC - ANC.B8. Weight category",
+      "definition" : "ANC - ANC.B8. Weight category",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.weightCategory",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS"
+      }
+    },
+    {
+      "id" : "WomansProfileAndHistory.reviewAndConfirmComputedBmi",
+      "path" : "WomansProfileAndHistory.reviewAndConfirmComputedBmi",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "bzupYCgg4m6"
+      }],
+      "short" : "ANC - ANC.B8a. Review and confirm computed BMI",
+      "definition" : "ANC - ANC.B8a. Review and confirm computed BMI",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.reviewAndConfirmComputedBmi",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.expectedWeightGain",
+      "path" : "WomansProfileAndHistory.expectedWeightGain",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "ztZwHRN9iPM"
+      }],
+      "short" : "ANC - ANC.B8. Expected weight gain",
+      "definition" : "ANC - ANC.B8. Expected weight gain",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "WomansProfileAndHistory.expectedWeightGain",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS"
+      }
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "WomansProfileAndHistory",
+      "path" : "WomansProfileAndHistory",
+      "short" : "Woman's Profile and History",
+      "definition" : "Woman's Profile and History"
+    },
+    {
+      "id" : "WomansProfileAndHistory.alcohol",
+      "path" : "WomansProfileAndHistory.alcohol",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "w1XaGkyql1u"
+      }],
+      "short" : "ANC - ANC.B6. Alcohol",
+      "definition" : "ANC - ANC.B6. Alcohol",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth",
+      "path" : "WomansProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "xSKiFlohuQd"
+      }],
+      "short" : "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)",
+      "definition" : "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.diabetes",
+      "path" : "WomansProfileAndHistory.diabetes",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "cCp43HMY3br"
+      }],
+      "short" : "ANC - ANC.B6. Diabetes",
+      "definition" : "ANC - ANC.B6. Diabetes",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.eclampsiaConvulsions",
+      "path" : "WomansProfileAndHistory.eclampsiaConvulsions",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "oeojmvdEY9S"
+      }],
+      "short" : "ANC - ANC.B6. Eclampsia/Convulsions",
+      "definition" : "ANC - ANC.B6. Eclampsia/Convulsions",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.expectedDateOfDeliveryEdd",
+      "path" : "WomansProfileAndHistory.expectedDateOfDeliveryEdd",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "Ru01omP2WCQ"
+      }],
+      "short" : "ANC - ANC.B6. Expected date of delivery (EDD)",
+      "definition" : "ANC - ANC.B6. Expected date of delivery (EDD)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ancGestationalAge",
+      "path" : "WomansProfileAndHistory.ancGestationalAge",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "w9p8MQDRyMr"
+      }],
+      "short" : "ANC - ANC.B6. Gestational age",
+      "definition" : "ANC - ANC.B6. Gestational age",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.historyOfBigBabyDelivery4Kg",
+      "path" : "WomansProfileAndHistory.historyOfBigBabyDelivery4Kg",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "XhGh2s0tPTr"
+      }],
+      "short" : "ANC - ANC History of big baby delivery ( > 4 kg)",
+      "definition" : "ANC - ANC History of big baby delivery ( > 4 kg)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.hivStatusProfile",
+      "path" : "WomansProfileAndHistory.hivStatusProfile",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "lYE2KzWQGkW"
+      }],
+      "short" : "ANC - ANC.B6. HIV status profile",
+      "definition" : "ANC - ANC.B6. HIV status profile",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS"
+      }
+    },
+    {
+      "id" : "WomansProfileAndHistory.myomectomy",
+      "path" : "WomansProfileAndHistory.myomectomy",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "iboAokLxCIh"
+      }],
+      "short" : "ANC - ANC Myomectomy",
+      "definition" : "ANC - ANC Myomectomy",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.hypertension",
+      "path" : "WomansProfileAndHistory.hypertension",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "QqTuhQQgpcp"
+      }],
+      "short" : "ANC - ANC.B6. Hypertension",
+      "definition" : "ANC - ANC.B6. Hypertension",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.cardiacCondition",
+      "path" : "WomansProfileAndHistory.cardiacCondition",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "fuEUJqslhPb"
+      }],
+      "short" : "ANC - ANC Cardiac condition",
+      "definition" : "ANC - ANC Cardiac condition",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure",
+      "path" : "WomansProfileAndHistory.kidneyDiseaseChronicRenalFailure",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "KPN571DvV4D"
+      }],
+      "short" : "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)",
+      "definition" : "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.lnmpDate",
+      "path" : "WomansProfileAndHistory.lnmpDate",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "w4ky6EkVahL"
+      }],
+      "short" : "ANC - ANC.B6. Last normal menstrual period (LNMP) date",
+      "definition" : "ANC - ANC.B6. Last normal menstrual period (LNMP) date",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate",
+      "path" : "WomansProfileAndHistory.clinicalEstimationPalpationFundalHeightDate",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "joirdYETe8d"
+      }],
+      "short" : "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date",
+      "definition" : "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine",
+      "path" : "WomansProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "l7Jh3IoeEIa"
+      }],
+      "short" : "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)",
+      "definition" : "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ancPara",
+      "path" : "WomansProfileAndHistory.ancPara",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "I7dvwZGNgE8"
+      }],
+      "short" : "ANC - ANC.B6. Para",
+      "definition" : "ANC - ANC.B6. Para",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfPregnanciesGravida",
+      "path" : "WomansProfileAndHistory.numberOfPregnanciesGravida",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "PuiTfPfSf86"
+      }],
+      "short" : "ANC - ANC.B6. Number of pregnancies (gravida)",
+      "definition" : "ANC - ANC.B6. Number of pregnancies (gravida)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ultrasoundGa",
+      "path" : "WomansProfileAndHistory.ultrasoundGa",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "Juv31inY35a"
+      }],
+      "short" : "ANC - ANC.B6 Ultrasound GA",
+      "definition" : "ANC - ANC.B6 Ultrasound GA",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noAlcoholAndOrSubstances",
+      "path" : "WomansProfileAndHistory.noAlcoholAndOrSubstances",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "DPZ6kIgtiIA"
+      }],
+      "short" : "ANC - ANC.B6. No alcohol and/or substances",
+      "definition" : "ANC - ANC.B6. No alcohol and/or substances",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noChronicOrPastHealthConditions",
+      "path" : "WomansProfileAndHistory.noChronicOrPastHealthConditions",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "snqxJUEWgkb"
+      }],
+      "short" : "ANC - ANC.B6. No chronic or past health conditions",
+      "definition" : "ANC - ANC.B6. No chronic or past health conditions",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noKnownAllergies",
+      "path" : "WomansProfileAndHistory.noKnownAllergies",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "V16g2TRV7MB"
+      }],
+      "short" : "ANC - ANC.B6. No known allergies",
+      "definition" : "ANC - ANC.B6. No known allergies",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noKnownPastSurgeries",
+      "path" : "WomansProfileAndHistory.noKnownPastSurgeries",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "DSAooZSxopi"
+      }],
+      "short" : "ANC - ANC.B6. No known past surgeries",
+      "definition" : "ANC - ANC.B6. No known past surgeries",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noMedications",
+      "path" : "WomansProfileAndHistory.noMedications",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "hpXvhGzaVld"
+      }],
+      "short" : "ANC - ANC.B6. No medications",
+      "definition" : "ANC - ANC.B6. No medications",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.noPastPregnancyComplications",
+      "path" : "WomansProfileAndHistory.noPastPregnancyComplications",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "GWxtXap1Guk"
+      }],
+      "short" : "ANC - ANC.B6. No past pregnancy complications",
+      "definition" : "ANC - ANC.B6. No past pregnancy complications",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfCaesareanSections",
+      "path" : "WomansProfileAndHistory.numberOfCaesareanSections",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "j3lxVBnaXmy"
+      }],
+      "short" : "ANC - ANC.B6. Number of caesarean sections",
+      "definition" : "ANC - ANC.B6. Number of caesarean sections",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfAbortions",
+      "path" : "WomansProfileAndHistory.numberOfAbortions",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "p4e5Y0GQIxv"
+      }],
+      "short" : "ANC - ANC.B6. Number of abortions",
+      "definition" : "ANC - ANC.B6. Number of abortions",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd",
+      "path" : "WomansProfileAndHistory.numberOfStillbirthsFsdAndOrMsd",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "fpPtP8xrU1s"
+      }],
+      "short" : "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)",
+      "definition" : "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherAllergiesSpecify",
+      "path" : "WomansProfileAndHistory.otherAllergiesSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "vpxAELVdkqn"
+      }],
+      "short" : "ANC - ANC.B6. Other allergies (specify)",
+      "definition" : "ANC - ANC.B6. Other allergies (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherGynecologicalProceduresSpecify",
+      "path" : "WomansProfileAndHistory.otherGynecologicalProceduresSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "hz94MekJLYe"
+      }],
+      "short" : "ANC - ANC.B6. Other gynecological procedures (specify)",
+      "definition" : "ANC - ANC.B6. Other gynecological procedures (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.medicationsSpecify",
+      "path" : "WomansProfileAndHistory.medicationsSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "kyOjlg4co4z"
+      }],
+      "short" : "ANC - ANC.B6. Medications (specify)",
+      "definition" : "ANC - ANC.B6. Medications (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherPastPregnancyProblemsSpecify",
+      "path" : "WomansProfileAndHistory.otherPastPregnancyProblemsSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "rF7OJIP7fhp"
+      }],
+      "short" : "ANC - ANC.B6. Other past pregnancy problems (specify)",
+      "definition" : "ANC - ANC.B6. Other past pregnancy problems (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherConditionsSpecify",
+      "path" : "WomansProfileAndHistory.otherConditionsSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "lbmrnYizavt"
+      }],
+      "short" : "ANC - ANC.B6. Other (specify)",
+      "definition" : "ANC - ANC.B6. Other (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherSubstanceUseSpecify",
+      "path" : "WomansProfileAndHistory.otherSubstanceUseSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "UZ6Re4zVePj"
+      }],
+      "short" : "ANC - ANC.B6. Other substance use (specify)",
+      "definition" : "ANC - ANC.B6. Other substance use (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.otherSurgeriesSpecify",
+      "path" : "WomansProfileAndHistory.otherSurgeriesSpecify",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "S6O8strHi1p"
+      }],
+      "short" : "ANC - ANC.B6. Other surgeries (specify)",
+      "definition" : "ANC - ANC.B6. Other surgeries (specify)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.preEclampsia",
+      "path" : "WomansProfileAndHistory.preEclampsia",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "TGcfgzv8mQA"
+      }],
+      "short" : "ANC - ANC.B6. Pre-eclampsia",
+      "definition" : "ANC - ANC.B6. Pre-eclampsia",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.sourceOfGestationalAge",
+      "path" : "WomansProfileAndHistory.sourceOfGestationalAge",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "RPSgZF1i0hk"
+      }],
+      "short" : "ANC - ANC.B6. Source of gestational age",
+      "definition" : "ANC - ANC.B6. Source of gestational age",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS"
+      }
+    },
+    {
+      "id" : "WomansProfileAndHistory.tobaccoUse",
+      "path" : "WomansProfileAndHistory.tobaccoUse",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "HvfStK1Mfo5"
+      }],
+      "short" : "ANC - ANC.B6. Tobacco use",
+      "definition" : "ANC - ANC.B6. Tobacco use",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.ultrasoundDate",
+      "path" : "WomansProfileAndHistory.ultrasoundDate",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "PrDdlt8U65H"
+      }],
+      "short" : "ANC - ANC.B6. Ultrasound date",
+      "definition" : "ANC - ANC.B6. Ultrasound date",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.clinicallyEstimatedGestationalAge",
+      "path" : "WomansProfileAndHistory.clinicallyEstimatedGestationalAge",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "YKXci7Sm0Zq"
+      }],
+      "short" : "ANC.B6. Clinically estimated gestational age",
+      "definition" : "ANC.B6. Clinically estimated gestational age",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.height",
+      "path" : "WomansProfileAndHistory.height",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "TcOkQ8Qqmlt"
+      }],
+      "short" : "ANC - ANC.B8. Height",
+      "definition" : "ANC - ANC.B8. Height",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.preGestationalWeight",
+      "path" : "WomansProfileAndHistory.preGestationalWeight",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "kFwQfziJLEt"
+      }],
+      "short" : "ANC - ANC.B8. Pre-gestational weight",
+      "definition" : "ANC - ANC.B8. Pre-gestational weight",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.bmi",
+      "path" : "WomansProfileAndHistory.bmi",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "UZnz5QLRvcr"
+      }],
+      "short" : "ANC - ANC.B8. BMI",
+      "definition" : "ANC - ANC.B8. BMI",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.weightCategory",
+      "path" : "WomansProfileAndHistory.weightCategory",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "UsYtsHtuvwQ"
+      }],
+      "short" : "ANC - ANC.B8. Weight category",
+      "definition" : "ANC - ANC.B8. Weight category",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS"
+      }
+    },
+    {
+      "id" : "WomansProfileAndHistory.reviewAndConfirmComputedBmi",
+      "path" : "WomansProfileAndHistory.reviewAndConfirmComputedBmi",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "bzupYCgg4m6"
+      }],
+      "short" : "ANC - ANC.B8a. Review and confirm computed BMI",
+      "definition" : "ANC - ANC.B8a. Review and confirm computed BMI",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "WomansProfileAndHistory.expectedWeightGain",
+      "path" : "WomansProfileAndHistory.expectedWeightGain",
+      "code" : [{
+        "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+        "code" : "ztZwHRN9iPM"
+      }],
+      "short" : "ANC - ANC.B8. Expected weight gain",
+      "definition" : "ANC - ANC.B8. Expected weight gain",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS"
+      }
+    }]
+  }
+}

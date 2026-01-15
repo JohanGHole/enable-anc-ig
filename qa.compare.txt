@@ -1,7 +1,7 @@
 ANCRMNCAHAntenatalcareregistryANC : Validation Results
 =========================================
 
-err = 206, warn = 363, info = 670
+err = 206, warn = 361, info = 670
 $--
 Generated $--. FHIR version $-- for enable.antenatal.care.registry#$-- (canonical = https://hispethiopia.org/enable)
  Build Errors : 0 / 116 / 0
@@ -66,13 +66,13 @@ Generated $--. FHIR version $-- for enable.antenatal.care.registry#$-- (canonica
  /github/workspace/fsh-generated/resources/Questionnaire-PregnancyOutcomeQuestionnaire : 20 / 7 / 41
  /github/workspace/fsh-generated/resources/Questionnaire-PromotionAndTreatmentQuestionnaire : 14 / 6 / 29
  /github/workspace/fsh-generated/resources/Questionnaire-WomanSProfileAndHistoryQuestionnaire : 8 / 3 / 17
- /github/workspace/fsh-generated/resources/StructureDefinition-ANCExamination : 0 / 2 / 119
+ /github/workspace/fsh-generated/resources/StructureDefinition-ANCExamination : 0 / 0 / 119
  /github/workspace/fsh-generated/resources/StructureDefinition-ANCRegistry : 0 / 4 / 37
  /github/workspace/fsh-generated/resources/StructureDefinition-LaboratoryTestsAndImaging : 0 / 5 / 129
  /github/workspace/fsh-generated/resources/StructureDefinition-Postpartum : 0 / 10 / 51
  /github/workspace/fsh-generated/resources/StructureDefinition-PregnancyOutcome : 0 / 8 / 73
  /github/workspace/fsh-generated/resources/StructureDefinition-PromotionAndTreatment : 0 / 5 / 175
- /github/workspace/fsh-generated/resources/StructureDefinition-WomanSProfileAndHistory : 0 / 0 / 91
+ /github/workspace/fsh-generated/resources/StructureDefinition-WomansProfileAndHistory : 0 / 0 / 91
  /github/workspace/fsh-generated/resources/ValueSet-ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS : 1 / 2 / 6
  /github/workspace/fsh-generated/resources/ValueSet-ANC.B6.EducationLevelVS : 1 / 2 / 6
  /github/workspace/fsh-generated/resources/ValueSet-ANC.B6.SourceOfGestationalAgeVS : 1 / 2 / 6
@@ -130,7 +130,7 @@ Generated $--. FHIR version $-- for enable.antenatal.care.registry#$-- (canonica
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ANCExamination.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Postpartum.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PregnancyOutcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/WomanSProfileAndHistory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/WomansProfileAndHistory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/ANCExaminationQuestionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/PostpartumQuestionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/PregnancyOutcomeQuestionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -658,7 +658,6 @@ INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.snapshot.el
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.snapshot.element[55].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.snapshot.element[56].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.snapshot.element[57].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-WARNING: StructureDefinition/ANCExamination: StructureDefinition.snapshot.element[57]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.snapshot.element[58].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.snapshot.element[59].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differential.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
@@ -718,7 +717,6 @@ INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differentia
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differential.element[55].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differential.element[56].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differential.element[57].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-WARNING: StructureDefinition/ANCExamination: StructureDefinition.differential.element[57]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differential.element[58].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/ANCExamination: StructureDefinition.differential.element[59].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 == fsh-generated/resources/StructureDefinition-ANCRegistry.json ==
@@ -1218,97 +1216,97 @@ INFORMATION: StructureDefinition/PromotionAndTreatment: StructureDefinition.diff
 INFORMATION: StructureDefinition/PromotionAndTreatment: StructureDefinition.differential.element[85].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/PromotionAndTreatment: StructureDefinition.differential.element[86].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/PromotionAndTreatment: StructureDefinition.differential.element[87].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-== fsh-generated/resources/StructureDefinition-WomanSProfileAndHistory.json ==
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[2].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[3].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[4].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[5].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[6].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[7].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[8].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[9].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[10].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[11].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[12].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[13].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[14].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[15].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[16].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[17].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[18].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[19].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[20].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[21].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[22].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[23].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[24].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[25].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[26].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[27].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[28].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[29].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[30].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[31].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[32].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[33].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[34].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[35].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[36].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[37].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[38].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[39].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[40].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[41].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[42].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[43].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[44].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.snapshot.element[45].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[2].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[3].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[4].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[5].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[6].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[7].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[8].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[9].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[10].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[11].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[12].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[13].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[14].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[15].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[16].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[17].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[18].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[19].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[20].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[21].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[22].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[23].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[24].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[25].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[26].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[27].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[28].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[29].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[30].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[31].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[32].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[33].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[34].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[35].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[36].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[37].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[38].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[39].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[40].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[41].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[42].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[43].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[44].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-INFORMATION: StructureDefinition/WomanSProfileAndHistory: StructureDefinition.differential.element[45].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+== fsh-generated/resources/StructureDefinition-WomansProfileAndHistory.json ==
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[2].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[3].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[4].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[5].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[6].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[7].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[8].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[9].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[10].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[11].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[12].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[13].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[14].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[15].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[16].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[17].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[18].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[19].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[20].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[21].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[22].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[23].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[24].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[25].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[26].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[27].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[28].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[29].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[30].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[31].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[32].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[33].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[34].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[35].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[36].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[37].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[38].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[39].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[40].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[41].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[42].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[43].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[44].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.snapshot.element[45].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[2].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[3].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[4].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[5].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[6].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[7].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[8].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[9].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[10].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[11].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[12].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[13].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[14].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[15].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[16].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[17].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[18].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[19].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[20].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[21].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[22].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[23].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[24].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[25].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[26].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[27].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[28].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[29].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[30].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[31].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[32].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[33].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[34].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[35].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[36].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[37].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[38].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[39].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[40].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[41].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[42].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[43].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[44].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
+INFORMATION: StructureDefinition/WomansProfileAndHistory: StructureDefinition.differential.element[45].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 == fsh-generated/resources/ValueSet-ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS.json ==
 ERROR: ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 WARNING: ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS: ValueSet: Constraint failed: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))' (defined in http://hl7.org/fhir/StructureDefinition/ValueSet)
