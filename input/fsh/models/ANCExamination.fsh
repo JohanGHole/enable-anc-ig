@@ -119,7 +119,7 @@ Parent: Base
   * ^code[+] = Dhis2DataElementsCS#J3ijwQYXVSV
 * painOther 0..1 string "ANC - ANC.B5. Pain –Other"
   * ^code[+] = Dhis2DataElementsCS#WWGGsY8l88G
-* ancVisitNumber 0..1 positiveInt "ANC - ANC Visit Number"
+* visitNumber 0..1 positiveInt "ANC - ANC Visit Number"
   * ^code[+] = Dhis2DataElementsCS#bXVD2EMF7UW
 * noCurrentSymptomsOrComplications 0..1 boolean "ANC - ANC.B7. No physiological symptoms"
   * ^code[+] = Dhis2DataElementsCS#Kyw7NtFeW3B
