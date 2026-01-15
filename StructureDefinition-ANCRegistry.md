@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hispethiopia.org/enable/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC | *Version*:0.1.0 |
-| Draft as of 2026-01-15 | *Computable Name*:ANCRMNCAHAntenatalCareRegistryANC |
+| *Official URL*:https://hispethiopia.org/enable/StructureDefinition/ANCRegistry | *Version*:0.1.0 |
+| Draft as of 2026-01-15 | *Computable Name*:ANCRegistry |
 
  
 Mother program 
@@ -18,7 +18,7 @@ Mother program
 
 * This Logical Model is not used by any profiles in this Implementation Guide
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/enable.antenatal.care.registry|current/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/enable.antenatal.care.registry|current/StructureDefinition/ANCRegistry)
 
 ### Formal Views of Profile Content
 
@@ -26,7 +26,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.csv), [Excel](StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.xlsx) 
+Other representations of profile: [CSV](StructureDefinition-ANCRegistry.csv), [Excel](StructureDefinition-ANCRegistry.xlsx) 
 
 
 
@@ -35,13 +35,13 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "ANCRMNCAHAntenatalCareRegistryANC",
-  "url" : "https://hispethiopia.org/enable/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC",
+  "id" : "ANCRegistry",
+  "url" : "https://hispethiopia.org/enable/StructureDefinition/ANCRegistry",
   "version" : "0.1.0",
-  "name" : "ANCRMNCAHAntenatalCareRegistryANC",
+  "name" : "ANCRegistry",
   "title" : "ANC - RMNCAH - Antenatal care registry (ANC)",
   "status" : "draft",
-  "date" : "2026-01-15T10:57:51+00:00",
+  "date" : "2026-01-15T12:19:16+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -58,20 +58,20 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
-  "type" : "https://hispethiopia.org/enable/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC",
+  "type" : "https://hispethiopia.org/enable/StructureDefinition/ANCRegistry",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
     "element" : [
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC",
+        "id" : "ANCRegistry",
+        "path" : "ANCRegistry",
         "short" : "ANC - RMNCAH - Antenatal care registry (ANC)",
         "definition" : "Mother program"
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.ancUid",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.ancUid",
+        "id" : "ANCRegistry.ancUid",
+        "path" : "ANCRegistry.ancUid",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -89,16 +89,16 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.clientMrn",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.clientMrn",
+        "id" : "ANCRegistry.ancEtMrn",
+        "path" : "ANCRegistry.ancEtMrn",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
             "code" : "OYuDdqr2MvX"
           }
         ],
-        "short" : "ANC ET MRN",
-        "definition" : "ANC ET MRN",
+        "short" : "Client MRN",
+        "definition" : "Client MRN",
         "min" : 1,
         "max" : "1",
         "type" : [
@@ -108,8 +108,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName",
+        "id" : "ANCRegistry.grandfathersName",
+        "path" : "ANCRegistry.grandfathersName",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -127,8 +127,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.firstName",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.firstName",
+        "id" : "ANCRegistry.firstName",
+        "path" : "ANCRegistry.firstName",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -146,8 +146,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth",
+        "id" : "ANCRegistry.ageDateOfBirth",
+        "path" : "ANCRegistry.ageDateOfBirth",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -165,8 +165,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.ageYears",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.ageYears",
+        "id" : "ANCRegistry.ageYears",
+        "path" : "ANCRegistry.ageYears",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -184,16 +184,16 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber",
+        "id" : "ANCRegistry.faydaNationalAliasNumber",
+        "path" : "ANCRegistry.faydaNationalAliasNumber",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
             "code" : "Amopa1NFvJy"
           }
         ],
-        "short" : "Fayda National Alias Number",
-        "definition" : "Fayda National Alias Number",
+        "short" : "Fayda National Alias Number (FAN/FCN)",
+        "definition" : "Fayda National Alias Number (FAN/FCN)",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -203,8 +203,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.mobileNumber",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.mobileNumber",
+        "id" : "ANCRegistry.mobileNumber",
+        "path" : "ANCRegistry.mobileNumber",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -222,8 +222,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation",
+        "id" : "ANCRegistry.occupation",
+        "path" : "ANCRegistry.occupation",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -245,16 +245,16 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         }
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.educationLevel",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.educationLevel",
+        "id" : "ANCRegistry.educationLevel",
+        "path" : "ANCRegistry.educationLevel",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
             "code" : "rLeZyocx3Zg"
           }
         ],
-        "short" : "Education level\n",
-        "definition" : "Education level\n",
+        "short" : "Education level",
+        "definition" : "Education level",
         "min" : 0,
         "max" : "1",
         "type" : [
@@ -268,8 +268,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         }
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel",
+        "id" : "ANCRegistry.specifyOtherEducationLevel",
+        "path" : "ANCRegistry.specifyOtherEducationLevel",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -287,8 +287,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.maritalStatus",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.maritalStatus",
+        "id" : "ANCRegistry.maritalStatus",
+        "path" : "ANCRegistry.maritalStatus",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -310,8 +310,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         }
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.addressDistrict",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.addressDistrict",
+        "id" : "ANCRegistry.addressDistrict",
+        "path" : "ANCRegistry.addressDistrict",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -329,8 +329,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.addressParish",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.addressParish",
+        "id" : "ANCRegistry.addressParish",
+        "path" : "ANCRegistry.addressParish",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -348,8 +348,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.addressVillage",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.addressVillage",
+        "id" : "ANCRegistry.addressVillage",
+        "path" : "ANCRegistry.addressVillage",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -367,8 +367,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.fatherSName",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.fatherSName",
+        "id" : "ANCRegistry.fathersName",
+        "path" : "ANCRegistry.fathersName",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -386,8 +386,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.otherNames",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.otherNames",
+        "id" : "ANCRegistry.otherNames",
+        "path" : "ANCRegistry.otherNames",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -405,8 +405,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber",
+        "id" : "ANCRegistry.smsMobileNumber",
+        "path" : "ANCRegistry.smsMobileNumber",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
@@ -424,8 +424,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory",
+        "id" : "ANCRegistry.womanSProfileAndHistory",
+        "path" : "ANCRegistry.womanSProfileAndHistory",
         "short" : "Woman's Profile and History",
         "definition" : "Woman's Profile and History",
         "min" : 0,
@@ -437,8 +437,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.ancExamination",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.ancExamination",
+        "id" : "ANCRegistry.ancExamination",
+        "path" : "ANCRegistry.ancExamination",
         "short" : "ANC Examination",
         "definition" : "ANC Examination",
         "min" : 0,
@@ -450,8 +450,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging",
+        "id" : "ANCRegistry.laboratoryTestsAndImaging",
+        "path" : "ANCRegistry.laboratoryTestsAndImaging",
         "short" : "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy ",
         "definition" : "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy ",
         "min" : 0,
@@ -463,8 +463,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment",
+        "id" : "ANCRegistry.promotionAndTreatment",
+        "path" : "ANCRegistry.promotionAndTreatment",
         "short" : "Data elements for the counselling and treatment task of the workflow\t\t\t\t\t\t\t",
         "definition" : "Data elements for the counselling and treatment task of the workflow\t\t\t\t\t\t\t",
         "min" : 0,
@@ -476,8 +476,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome",
+        "id" : "ANCRegistry.pregnancyOutcome",
+        "path" : "ANCRegistry.pregnancyOutcome",
         "short" : "Pregnancy outcome",
         "definition" : "Pregnancy outcome",
         "min" : 0,
@@ -489,8 +489,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCRMNCAHAntenatalCa
         ]
       },
       {
-        "id" : "ANCRMNCAHAntenatalCareRegistryANC.postpartum",
-        "path" : "ANCRMNCAHAntenatalCareRegistryANC.postpartum",
+        "id" : "ANCRegistry.postpartum",
+        "path" : "ANCRegistry.postpartum",
         "short" : "Postpartum",
         "definition" : "Postpartum",
         "min" : 0,

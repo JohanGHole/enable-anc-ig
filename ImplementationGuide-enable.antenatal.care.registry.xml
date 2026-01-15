@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="ANCRMNCAHAntenatalcareregistryANC"/>
   <status value="draft"/>
-  <date value="2026-01-15T10:57:51+00:00"/>
+  <date value="2026-01-15T12:19:16+00:00"/>
   <publisher value="HISP Ethiopia"/>
   <contact>
     <name value="HISP Ethiopia"/>
@@ -491,7 +491,7 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC"/>
+        <reference value="StructureDefinition/ANCRegistry"/>
       </reference>
       <name value="ANC - RMNCAH - Antenatal care registry (ANC)"/>
       <description value="Mother program"/>

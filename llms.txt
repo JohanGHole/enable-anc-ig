@@ -225,7 +225,7 @@
 ### Logicals
 
 * [ANC Examination](StructureDefinition-ANCExamination.md)
-* [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.md)
+* [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRegistry.md)
 * [Laboratory Tests and Imaging ](StructureDefinition-LaboratoryTestsAndImaging.md)
 * [Postpartum](StructureDefinition-Postpartum.md)
 * [Pregnancy outcome](StructureDefinition-PregnancyOutcome.md)

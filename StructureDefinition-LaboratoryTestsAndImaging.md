@@ -16,7 +16,7 @@ Information regarding various laboratory tests and imaging conducted for diagnos
 
 **Usages:**
 
-* Use this Logical Model: [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.md)
+* Use this Logical Model: [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRegistry.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/enable.antenatal.care.registry|current/StructureDefinition/LaboratoryTestsAndImaging)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
   "name" : "LaboratoryTestsAndImaging",
   "title" : "Laboratory Tests and Imaging ",
   "status" : "draft",
-  "date" : "2026-01-15T10:57:51+00:00",
+  "date" : "2026-01-15T12:19:16+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {

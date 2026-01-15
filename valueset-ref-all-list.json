@@ -37,7 +37,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
+      "StructureDefinition-ANCRegistry.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS",
@@ -1020,7 +1020,7 @@
       "systems" : ["https://hispethiopia.org/enable/CodeSystem/MaritalStatusCS"],
       "uses" : {
       },
-      "StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
+      "StructureDefinition-ANCRegistry.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS",
@@ -1057,7 +1057,7 @@
       "systems" : ["https://hispethiopia.org/enable/CodeSystem/OccupationCS"],
       "uses" : {
       },
-      "StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
+      "StructureDefinition-ANCRegistry.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS",

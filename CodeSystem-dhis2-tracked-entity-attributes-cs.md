@@ -31,7 +31,7 @@ Code system for 18 unique DHIS2 tracked entity attributes
   "name" : "Dhis2TrackedEntityAttributesCS",
   "title" : "DHIS2 Tracked Entity Attributes",
   "status" : "draft",
-  "date" : "2026-01-15T10:57:51+00:00",
+  "date" : "2026-01-15T12:19:16+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {

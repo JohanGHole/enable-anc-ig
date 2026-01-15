@@ -13,7 +13,7 @@
 
 **Usages:**
 
-* Use this Logical Model: [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.md)
+* Use this Logical Model: [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRegistry.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/enable.antenatal.care.registry|current/StructureDefinition/PregnancyOutcome)
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
   "name" : "PregnancyOutcome",
   "title" : "Pregnancy outcome",
   "status" : "draft",
-  "date" : "2026-01-15T10:57:51+00:00",
+  "date" : "2026-01-15T12:19:16+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {

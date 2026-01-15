@@ -13,7 +13,7 @@ These define data models that represent the domain covered by this implementatio
 
 | | |
 | :--- | :--- |
-| [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.md) | Mother program |
+| [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRegistry.md) | Mother program |
 | [ANC Examination](StructureDefinition-ANCExamination.md) |  |
 | [Laboratory Tests and Imaging](StructureDefinition-LaboratoryTestsAndImaging.md) | Information regarding various laboratory tests and imaging conducted for diagnostic and curative services the current pregnancy |
 | [Postpartum](StructureDefinition-Postpartum.md) |  |
