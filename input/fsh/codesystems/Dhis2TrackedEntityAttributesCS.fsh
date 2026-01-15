@@ -1,0 +1,23 @@
+CodeSystem: Dhis2TrackedEntityAttributesCS
+Id: dhis2-tracked-entity-attributes-cs
+Title: "DHIS2 Tracked Entity Attributes"
+Description: "Code system for 18 unique DHIS2 tracked entity attributes"
+* #eKyHEXO8dbK "ANC UID" "Unique Identifier for ANC record"
+* #OYuDdqr2MvX "ANC ET MRN" "ANC ET MRN"
+* #ENRjVGxVL6l "Grandfather&#x27;s Name" "Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)"
+* #sB1IHYu2xQT "First Name" "First Name (in other countries, this may be Given Name)"
+* #Fgf497oYvSC "Age/Date of birth" "Age/Date of birth"
+* #B6TnnFMgmCk "Age (years)" "Age in years"
+* #Amopa1NFvJy "ANC Fayda National Alias Number" "Fayda National Alias Number"
+* #ciCR6BBvIT4 "Mobile phone number" "Client's mobile phone number"
+* #pmhJhfpSkvR "ANC.B6. Occupation" "ANC.B6. Occupation"
+* #rLeZyocx3Zg "ANC.B6. Education level" "Education level
+"
+* #oZTIMpuQN3Z "Specify other education level" "Specify other education level"
+* #wW9OmWfCBnx "Marital Status" "Marital Status"
+* #A6Hb0Kvg4vb "Address District" "District of current address of the patient or case."
+* #fzCzJ1yJaoR "Address Parish" "Kebele of current address of the patient"
+* #D9DHLcCh5YX "Address Village" "Village of current address of the patient"
+* #ZtQqOYot5ut "Father&#x27;s Name" "Father's name (in other countries, this may also refer to a woman's Maiden Names)"
+* #ugxTfREw8iV "Other names" "Other names"
+* #RJxLa3nITB3 "SMS phone number" "Client's SMS mobile phone number"
