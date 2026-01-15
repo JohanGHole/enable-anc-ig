@@ -41,7 +41,7 @@ Description: "Mother program"
   * ^code[+] = Dhis2TrackedEntityAttributesCS#ugxTfREw8iV
 * smsMobileNumber 0..1 string "Client's SMS mobile phone number"
   * ^code[+] = Dhis2TrackedEntityAttributesCS#RJxLa3nITB3
-* womanSProfileAndHistory 0..1 WomanSProfileAndHistory "Woman's Profile and History"
+* womansProfileAndHistory 0..1 WomansProfileAndHistory "Woman's Profile and History"
 * ancExamination 0..* ANCExamination "ANC Examination"
 * laboratoryTestsAndImaging 0..* LaboratoryTestsAndImaging "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "
 * promotionAndTreatment 0..* PromotionAndTreatment "Data elements for the counselling and treatment task of the workflow							"

@@ -1,4 +1,4 @@
-Logical: WomanSProfileAndHistory
+Logical: WomansProfileAndHistory
 Title: "Woman's Profile and History"
 Parent: Base
 * alcohol 0..1 boolean "ANC - ANC.B6. Alcohol"
@@ -36,7 +36,7 @@ Parent: Base
   * ^code[+] = Dhis2DataElementsCS#I7dvwZGNgE8
 * numberOfPregnanciesGravida 0..1 positiveInt "ANC - ANC.B6. Number of pregnancies (gravida)"
   * ^code[+] = Dhis2DataElementsCS#PuiTfPfSf86
-* ancB6UltrasoundGa 0..1 positiveInt "ANC - ANC.B6 Ultrasound GA"
+* ultrasoundGa 0..1 positiveInt "ANC - ANC.B6 Ultrasound GA"
   * ^code[+] = Dhis2DataElementsCS#Juv31inY35a
 * noAlcoholAndOrSubstances 0..1 boolean "ANC - ANC.B6. No alcohol and/or substances"
   * ^code[+] = Dhis2DataElementsCS#DPZ6kIgtiIA
@@ -81,7 +81,7 @@ Parent: Base
   * ^code[+] = Dhis2DataElementsCS#PrDdlt8U65H
 * clinicallyEstimatedGestationalAge 0..1 positiveInt "ANC.B6. Clinically estimated gestational age"
   * ^code[+] = Dhis2DataElementsCS#YKXci7Sm0Zq
-* ancHeight 0..1 decimal "ANC - ANC.B8. Height"
+* height 0..1 decimal "ANC - ANC.B8. Height"
   * ^code[+] = Dhis2DataElementsCS#TcOkQ8Qqmlt
 * preGestationalWeight 0..1 decimal "ANC - ANC.B8. Pre-gestational weight"
   * ^code[+] = Dhis2DataElementsCS#kFwQfziJLEt
