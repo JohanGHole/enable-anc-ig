@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ANCLABMalariaDiagnosisCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ANCLABMalariaDiagnosisCS</b></p><a name="ANCLABMalariaDiagnosisCS"> </a><a name="hcANCLABMalariaDiagnosisCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Simple<a name="ANCLABMalariaDiagnosisCS-Simple"> </a></td><td>Simple malaria</td></tr><tr><td style="white-space:nowrap">Complicated<a name="ANCLABMalariaDiagnosisCS-Complicated"> </a></td><td>Complicated malaria</td></tr><tr><td style="white-space:nowrap">Positive (RDT)<a name="ANCLABMalariaDiagnosisCS-Positive.40RDT.41"> </a></td><td>Positive (RDT)</td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS"/>
+  <version value="0.1.0"/>
+  <name value="ANCLABMalariaDiagnosisCS"/>
+  <title value="ANC LAB Malaria diagnosis"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Simple"/>
+    <display value="Simple malaria"/>
+  </concept>
+  <concept>
+    <code value="Complicated"/>
+    <display value="Complicated malaria"/>
+  </concept>
+  <concept>
+    <code value="Positive (RDT)"/>
+    <display value="Positive (RDT)"/>
+  </concept>
+</CodeSystem>

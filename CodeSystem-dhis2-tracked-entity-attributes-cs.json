@@ -1,0 +1,115 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "dhis2-tracked-entity-attributes-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem dhis2-tracked-entity-attributes-cs</b></p><a name=\"dhis2-tracked-entity-attributes-cs\"> </a><a name=\"hcdhis2-tracked-entity-attributes-cs\"> </a><p>This  code system <code>https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">eKyHEXO8dbK<a name=\"dhis2-tracked-entity-attributes-cs-eKyHEXO8dbK\"> </a></td><td>ANC UID</td><td><div><p>Unique Identifier for ANC record</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">OYuDdqr2MvX<a name=\"dhis2-tracked-entity-attributes-cs-OYuDdqr2MvX\"> </a></td><td>ANC ET MRN</td><td><div><p>ANC ET MRN</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">ENRjVGxVL6l<a name=\"dhis2-tracked-entity-attributes-cs-ENRjVGxVL6l\"> </a></td><td>Grandfather&amp;#x27;s Name</td><td><div><p>Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">sB1IHYu2xQT<a name=\"dhis2-tracked-entity-attributes-cs-sB1IHYu2xQT\"> </a></td><td>First Name</td><td><div><p>First Name (in other countries, this may be Given Name)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">Fgf497oYvSC<a name=\"dhis2-tracked-entity-attributes-cs-Fgf497oYvSC\"> </a></td><td>Age/Date of birth</td><td><div><p>Age/Date of birth</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">B6TnnFMgmCk<a name=\"dhis2-tracked-entity-attributes-cs-B6TnnFMgmCk\"> </a></td><td>Age (years)</td><td><div><p>Age in years</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">Amopa1NFvJy<a name=\"dhis2-tracked-entity-attributes-cs-Amopa1NFvJy\"> </a></td><td>ANC Fayda National Alias Number</td><td><div><p>Fayda National Alias Number</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">ciCR6BBvIT4<a name=\"dhis2-tracked-entity-attributes-cs-ciCR6BBvIT4\"> </a></td><td>Mobile phone number</td><td><div><p>Client's mobile phone number</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">pmhJhfpSkvR<a name=\"dhis2-tracked-entity-attributes-cs-pmhJhfpSkvR\"> </a></td><td>ANC.B6. Occupation</td><td><div><p>ANC.B6. Occupation</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">rLeZyocx3Zg<a name=\"dhis2-tracked-entity-attributes-cs-rLeZyocx3Zg\"> </a></td><td>ANC.B6. Education level</td><td><div><p>Education level</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">oZTIMpuQN3Z<a name=\"dhis2-tracked-entity-attributes-cs-oZTIMpuQN3Z\"> </a></td><td>Specify other education level</td><td><div><p>Specify other education level</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">wW9OmWfCBnx<a name=\"dhis2-tracked-entity-attributes-cs-wW9OmWfCBnx\"> </a></td><td>Marital Status</td><td><div><p>Marital Status</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">A6Hb0Kvg4vb<a name=\"dhis2-tracked-entity-attributes-cs-A6Hb0Kvg4vb\"> </a></td><td>Address District</td><td><div><p>District of current address of the patient or case.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">fzCzJ1yJaoR<a name=\"dhis2-tracked-entity-attributes-cs-fzCzJ1yJaoR\"> </a></td><td>Address Parish</td><td><div><p>Kebele of current address of the patient</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">D9DHLcCh5YX<a name=\"dhis2-tracked-entity-attributes-cs-D9DHLcCh5YX\"> </a></td><td>Address Village</td><td><div><p>Village of current address of the patient</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">ZtQqOYot5ut<a name=\"dhis2-tracked-entity-attributes-cs-ZtQqOYot5ut\"> </a></td><td>Father&amp;#x27;s Name</td><td><div><p>Father's name (in other countries, this may also refer to a woman's Maiden Names)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">ugxTfREw8iV<a name=\"dhis2-tracked-entity-attributes-cs-ugxTfREw8iV\"> </a></td><td>Other names</td><td><div><p>Other names</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">RJxLa3nITB3<a name=\"dhis2-tracked-entity-attributes-cs-RJxLa3nITB3\"> </a></td><td>SMS phone number</td><td><div><p>Client's SMS mobile phone number</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
+  "version" : "0.1.0",
+  "name" : "Dhis2TrackedEntityAttributesCS",
+  "title" : "DHIS2 Tracked Entity Attributes",
+  "status" : "draft",
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "description" : "Code system for 18 unique DHIS2 tracked entity attributes",
+  "content" : "complete",
+  "count" : 18,
+  "concept" : [{
+    "code" : "eKyHEXO8dbK",
+    "display" : "ANC UID",
+    "definition" : "Unique Identifier for ANC record"
+  },
+  {
+    "code" : "OYuDdqr2MvX",
+    "display" : "ANC ET MRN",
+    "definition" : "ANC ET MRN"
+  },
+  {
+    "code" : "ENRjVGxVL6l",
+    "display" : "Grandfather&#x27;s Name",
+    "definition" : "Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)"
+  },
+  {
+    "code" : "sB1IHYu2xQT",
+    "display" : "First Name",
+    "definition" : "First Name (in other countries, this may be Given Name)"
+  },
+  {
+    "code" : "Fgf497oYvSC",
+    "display" : "Age/Date of birth",
+    "definition" : "Age/Date of birth"
+  },
+  {
+    "code" : "B6TnnFMgmCk",
+    "display" : "Age (years)",
+    "definition" : "Age in years"
+  },
+  {
+    "code" : "Amopa1NFvJy",
+    "display" : "ANC Fayda National Alias Number",
+    "definition" : "Fayda National Alias Number"
+  },
+  {
+    "code" : "ciCR6BBvIT4",
+    "display" : "Mobile phone number",
+    "definition" : "Client's mobile phone number"
+  },
+  {
+    "code" : "pmhJhfpSkvR",
+    "display" : "ANC.B6. Occupation",
+    "definition" : "ANC.B6. Occupation"
+  },
+  {
+    "code" : "rLeZyocx3Zg",
+    "display" : "ANC.B6. Education level",
+    "definition" : "Education level\n"
+  },
+  {
+    "code" : "oZTIMpuQN3Z",
+    "display" : "Specify other education level",
+    "definition" : "Specify other education level"
+  },
+  {
+    "code" : "wW9OmWfCBnx",
+    "display" : "Marital Status",
+    "definition" : "Marital Status"
+  },
+  {
+    "code" : "A6Hb0Kvg4vb",
+    "display" : "Address District",
+    "definition" : "District of current address of the patient or case."
+  },
+  {
+    "code" : "fzCzJ1yJaoR",
+    "display" : "Address Parish",
+    "definition" : "Kebele of current address of the patient"
+  },
+  {
+    "code" : "D9DHLcCh5YX",
+    "display" : "Address Village",
+    "definition" : "Village of current address of the patient"
+  },
+  {
+    "code" : "ZtQqOYot5ut",
+    "display" : "Father&#x27;s Name",
+    "definition" : "Father's name (in other countries, this may also refer to a woman's Maiden Names)"
+  },
+  {
+    "code" : "ugxTfREw8iV",
+    "display" : "Other names",
+    "definition" : "Other names"
+  },
+  {
+    "code" : "RJxLa3nITB3",
+    "display" : "SMS phone number",
+    "definition" : "Client's SMS mobile phone number"
+  }]
+}

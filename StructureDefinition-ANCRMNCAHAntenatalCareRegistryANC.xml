@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCRMNCAHAntenatalCareRegistryANC"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ANCRMNCAHAntenatalCareRegistryANC</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC" title="Mother program">ANCRMNCAHAntenatalCareRegistryANC</a><a name="ANCRMNCAHAntenatalCareRegistryANC"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - RMNCAH - Antenatal care registry (ANC)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.ancUid" title="Unique Identifier for ANC record">ancUid</a><a name="ANCRMNCAHAntenatalCareRegistryANC.ancUid"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique Identifier for ANC record</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.clientMrn" title="ANC ET MRN">clientMrn</a><a name="ANCRMNCAHAntenatalCareRegistryANC.clientMrn"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC ET MRN</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName" title="Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)">grandfatherSName</a><a name="ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.firstName" title="First Name (in other countries, this may be Given Name)">firstName</a><a name="ANCRMNCAHAntenatalCareRegistryANC.firstName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">First Name (in other countries, this may be Given Name)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth" title="Age/Date of birth">ancAgeDateOfBirth</a><a name="ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age/Date of birth</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.ageYears" title="Age in years">ageYears</a><a name="ANCRMNCAHAntenatalCareRegistryANC.ageYears"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age in years</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber" title="Fayda National Alias Number">ancFaydaNationalAliasNumber</a><a name="ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fayda National Alias Number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.mobileNumber" title="Client's mobile phone number">mobileNumber</a><a name="ANCRMNCAHAntenatalCareRegistryANC.mobileNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's mobile phone number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation" title="ANC.B6. Occupation">ancB6Occupation</a><a name="ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC.B6. Occupation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-OccupationVS.html" title="https://hispethiopia.org/enable/ValueSet/OccupationVS" class="binding">Occupation value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.educationLevel" title="Education level
+">educationLevel</a><a name="ANCRMNCAHAntenatalCareRegistryANC.educationLevel"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Education level
+<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B6.EducationLevelVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B6.EducationLevelVS" class="binding">ANC.B6. Education level value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel" title="Specify other education level">specifyOtherEducationLevel</a><a name="ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specify other education level</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.maritalStatus" title="Marital Status">maritalStatus</a><a name="ANCRMNCAHAntenatalCareRegistryANC.maritalStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Marital Status<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-MaritalStatusVS.html" title="https://hispethiopia.org/enable/ValueSet/MaritalStatusVS" class="binding">Marital Status value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.addressDistrict" title="District of current address of the patient or case.">addressDistrict</a><a name="ANCRMNCAHAntenatalCareRegistryANC.addressDistrict"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">District of current address of the patient or case.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.addressParish" title="Kebele of current address of the patient">addressParish</a><a name="ANCRMNCAHAntenatalCareRegistryANC.addressParish"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kebele of current address of the patient</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.addressVillage" title="Village of current address of the patient">addressVillage</a><a name="ANCRMNCAHAntenatalCareRegistryANC.addressVillage"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Village of current address of the patient</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.fatherSName" title="Father's name (in other countries, this may also refer to a woman's Maiden Names)">fatherSName</a><a name="ANCRMNCAHAntenatalCareRegistryANC.fatherSName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Father's name (in other countries, this may also refer to a woman's Maiden Names)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.otherNames" title="Other names">otherNames</a><a name="ANCRMNCAHAntenatalCareRegistryANC.otherNames"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other names</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber" title="Client's SMS mobile phone number">smsMobileNumber</a><a name="ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's SMS mobile phone number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory" title="Woman's Profile and History">womanSProfileAndHistory</a><a name="ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-WomanSProfileAndHistory.html">WomanSProfileAndHistory</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Woman's Profile and History</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.ancExamination" title="ANC Examination">ancExamination</a><a name="ANCRMNCAHAntenatalCareRegistryANC.ancExamination"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ANCExamination.html">ANCExamination</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC Examination<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging" title="Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy ">laboratoryTestsAndImaging</a><a name="ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-LaboratoryTestsAndImaging.html">LaboratoryTestsAndImaging</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy <br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment" title="Data elements for the counselling and treatment task of the workflow							">promotionAndTreatment</a><a name="ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-PromotionAndTreatment.html">PromotionAndTreatment</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data elements for the counselling and treatment task of the workflow							<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome" title="Pregnancy outcome">pregnancyOutcome</a><a name="ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-PregnancyOutcome.html">PregnancyOutcome</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pregnancy outcome<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC-definitions.html#ANCRMNCAHAntenatalCareRegistryANC.postpartum" title="Postpartum">postpartum</a><a name="ANCRMNCAHAntenatalCareRegistryANC.postpartum"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Postpartum.html">Postpartum</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Postpartum<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC"/>
+  <version value="0.1.0"/>
+  <name value="ANCRMNCAHAntenatalCareRegistryANC"/>
+  <title value="ANC - RMNCAH - Antenatal care registry (ANC)"/>
+  <status value="draft"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <description value="Mother program"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://hispethiopia.org/enable/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC"/>
+      <short value="ANC - RMNCAH - Antenatal care registry (ANC)"/>
+      <definition value="Mother program"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancUid">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancUid"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="eKyHEXO8dbK"/>
+      </code>
+      <short value="Unique Identifier for ANC record"/>
+      <definition value="Unique Identifier for ANC record"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.ancUid"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.clientMrn">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.clientMrn"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="OYuDdqr2MvX"/>
+      </code>
+      <short value="ANC ET MRN"/>
+      <definition value="ANC ET MRN"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.clientMrn"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ENRjVGxVL6l"/>
+      </code>
+      <short value="Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)"/>
+      <definition value="Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.firstName">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.firstName"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="sB1IHYu2xQT"/>
+      </code>
+      <short value="First Name (in other countries, this may be Given Name)"/>
+      <definition value="First Name (in other countries, this may be Given Name)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.firstName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="Fgf497oYvSC"/>
+      </code>
+      <short value="Age/Date of birth"/>
+      <definition value="Age/Date of birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Age"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ageYears">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ageYears"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="B6TnnFMgmCk"/>
+      </code>
+      <short value="Age in years"/>
+      <definition value="Age in years"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.ageYears"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="Amopa1NFvJy"/>
+      </code>
+      <short value="Fayda National Alias Number"/>
+      <definition value="Fayda National Alias Number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.mobileNumber">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.mobileNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ciCR6BBvIT4"/>
+      </code>
+      <short value="Client's mobile phone number"/>
+      <definition value="Client's mobile phone number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.mobileNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="pmhJhfpSkvR"/>
+      </code>
+      <short value="ANC.B6. Occupation"/>
+      <definition value="ANC.B6. Occupation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/OccupationVS"/>
+      </binding>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.educationLevel">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.educationLevel"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="rLeZyocx3Zg"/>
+      </code>
+      <short value="Education level&#xA;"/>
+      <definition value="Education level"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.educationLevel"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B6.EducationLevelVS"/>
+      </binding>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="oZTIMpuQN3Z"/>
+      </code>
+      <short value="Specify other education level"/>
+      <definition value="Specify other education level"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.maritalStatus">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.maritalStatus"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="wW9OmWfCBnx"/>
+      </code>
+      <short value="Marital Status"/>
+      <definition value="Marital Status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.maritalStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/MaritalStatusVS"/>
+      </binding>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.addressDistrict">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.addressDistrict"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="A6Hb0Kvg4vb"/>
+      </code>
+      <short value="District of current address of the patient or case."/>
+      <definition value="District of current address of the patient or case."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.addressDistrict"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.addressParish">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.addressParish"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="fzCzJ1yJaoR"/>
+      </code>
+      <short value="Kebele of current address of the patient"/>
+      <definition value="Kebele of current address of the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.addressParish"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.addressVillage">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.addressVillage"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="D9DHLcCh5YX"/>
+      </code>
+      <short value="Village of current address of the patient"/>
+      <definition value="Village of current address of the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.addressVillage"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.fatherSName">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.fatherSName"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ZtQqOYot5ut"/>
+      </code>
+      <short value="Father's name (in other countries, this may also refer to a woman's Maiden Names)"/>
+      <definition value="Father's name (in other countries, this may also refer to a woman's Maiden Names)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.fatherSName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.otherNames">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.otherNames"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ugxTfREw8iV"/>
+      </code>
+      <short value="Other names"/>
+      <definition value="Other names"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.otherNames"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="RJxLa3nITB3"/>
+      </code>
+      <short value="Client's SMS mobile phone number"/>
+      <definition value="Client's SMS mobile phone number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory"/>
+      <short value="Woman's Profile and History"/>
+      <definition value="Woman's Profile and History"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancExamination">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancExamination"/>
+      <short value="ANC Examination"/>
+      <definition value="ANC Examination"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.ancExamination"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/ANCExamination"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging"/>
+      <short value="Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "/>
+      <definition value="Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment"/>
+      <short value="Data elements for the counselling and treatment task of the workflow&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      <definition value="Data elements for the counselling and treatment task of the workflow"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/PromotionAndTreatment"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome"/>
+      <short value="Pregnancy outcome"/>
+      <definition value="Pregnancy outcome"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/PregnancyOutcome"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.postpartum">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.postpartum"/>
+      <short value="Postpartum"/>
+      <definition value="Postpartum"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ANCRMNCAHAntenatalCareRegistryANC.postpartum"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/Postpartum"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC"/>
+      <short value="ANC - RMNCAH - Antenatal care registry (ANC)"/>
+      <definition value="Mother program"/>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancUid">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancUid"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="eKyHEXO8dbK"/>
+      </code>
+      <short value="Unique Identifier for ANC record"/>
+      <definition value="Unique Identifier for ANC record"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.clientMrn">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.clientMrn"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="OYuDdqr2MvX"/>
+      </code>
+      <short value="ANC ET MRN"/>
+      <definition value="ANC ET MRN"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ENRjVGxVL6l"/>
+      </code>
+      <short value="Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)"/>
+      <definition value="Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.firstName">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.firstName"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="sB1IHYu2xQT"/>
+      </code>
+      <short value="First Name (in other countries, this may be Given Name)"/>
+      <definition value="First Name (in other countries, this may be Given Name)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="Fgf497oYvSC"/>
+      </code>
+      <short value="Age/Date of birth"/>
+      <definition value="Age/Date of birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Age"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ageYears">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ageYears"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="B6TnnFMgmCk"/>
+      </code>
+      <short value="Age in years"/>
+      <definition value="Age in years"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="Amopa1NFvJy"/>
+      </code>
+      <short value="Fayda National Alias Number"/>
+      <definition value="Fayda National Alias Number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.mobileNumber">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.mobileNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ciCR6BBvIT4"/>
+      </code>
+      <short value="Client's mobile phone number"/>
+      <definition value="Client's mobile phone number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="pmhJhfpSkvR"/>
+      </code>
+      <short value="ANC.B6. Occupation"/>
+      <definition value="ANC.B6. Occupation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/OccupationVS"/>
+      </binding>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.educationLevel">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.educationLevel"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="rLeZyocx3Zg"/>
+      </code>
+      <short value="Education level&#xA;"/>
+      <definition value="Education level&#xA;"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B6.EducationLevelVS"/>
+      </binding>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="oZTIMpuQN3Z"/>
+      </code>
+      <short value="Specify other education level"/>
+      <definition value="Specify other education level"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.maritalStatus">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.maritalStatus"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="wW9OmWfCBnx"/>
+      </code>
+      <short value="Marital Status"/>
+      <definition value="Marital Status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/MaritalStatusVS"/>
+      </binding>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.addressDistrict">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.addressDistrict"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="A6Hb0Kvg4vb"/>
+      </code>
+      <short value="District of current address of the patient or case."/>
+      <definition value="District of current address of the patient or case."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.addressParish">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.addressParish"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="fzCzJ1yJaoR"/>
+      </code>
+      <short value="Kebele of current address of the patient"/>
+      <definition value="Kebele of current address of the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.addressVillage">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.addressVillage"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="D9DHLcCh5YX"/>
+      </code>
+      <short value="Village of current address of the patient"/>
+      <definition value="Village of current address of the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.fatherSName">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.fatherSName"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ZtQqOYot5ut"/>
+      </code>
+      <short value="Father's name (in other countries, this may also refer to a woman's Maiden Names)"/>
+      <definition value="Father's name (in other countries, this may also refer to a woman's Maiden Names)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.otherNames">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.otherNames"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="ugxTfREw8iV"/>
+      </code>
+      <short value="Other names"/>
+      <definition value="Other names"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs"/>
+        <code value="RJxLa3nITB3"/>
+      </code>
+      <short value="Client's SMS mobile phone number"/>
+      <definition value="Client's SMS mobile phone number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory"/>
+      <short value="Woman's Profile and History"/>
+      <definition value="Woman's Profile and History"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.ancExamination">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.ancExamination"/>
+      <short value="ANC Examination"/>
+      <definition value="ANC Examination"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/ANCExamination"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging"/>
+      <short value="Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "/>
+      <definition value="Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment"/>
+      <short value="Data elements for the counselling and treatment task of the workflow&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      <definition value="Data elements for the counselling and treatment task of the workflow&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/PromotionAndTreatment"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome"/>
+      <short value="Pregnancy outcome"/>
+      <definition value="Pregnancy outcome"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/PregnancyOutcome"/>
+      </type>
+    </element>
+    <element id="ANCRMNCAHAntenatalCareRegistryANC.postpartum">
+      <path value="ANCRMNCAHAntenatalCareRegistryANC.postpartum"/>
+      <short value="Postpartum"/>
+      <definition value="Postpartum"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://hispethiopia.org/enable/StructureDefinition/Postpartum"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

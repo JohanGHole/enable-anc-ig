@@ -1,0 +1,74 @@
+# Mode of delivery - v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Mode of delivery**
+
+## CodeSystem: Mode of delivery 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS | *Version*:0.1.0 |
+| Draft as of 2026-01-15 | *Computable Name*:ModeOfDeliveryCS |
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [ModeOfDeliveryVS](ValueSet-ModeOfDeliveryVS.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ModeOfDeliveryCS",
+  "meta" : {
+    "profile" : [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
+    ]
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS",
+  "version" : "0.1.0",
+  "name" : "ModeOfDeliveryCS",
+  "title" : "Mode of delivery",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [
+    {
+      "name" : "HISP Ethiopia",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://hispethiopia.org/"
+        }
+      ]
+    }
+  ],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [
+    {
+      "code" : "Normal",
+      "display" : "Normal"
+    },
+    {
+      "code" : "Assisted vaginal - forceps",
+      "display" : "Assisted vaginal - forceps"
+    },
+    {
+      "code" : "Assisted vaginal - ventouse",
+      "display" : "Assisted vaginal - ventouse"
+    },
+    {
+      "code" : "Cesarean section",
+      "display" : "Cesarean section"
+    }
+  ]
+}
+
+```

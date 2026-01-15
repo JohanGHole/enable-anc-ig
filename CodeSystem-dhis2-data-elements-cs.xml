@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dhis2-data-elements-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem dhis2-data-elements-cs</b></p><a name="dhis2-data-elements-cs"> </a><a name="hcdhis2-data-elements-cs"> </a><p>This  code system <code>https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">w1XaGkyql1u<a name="dhis2-data-elements-cs-w1XaGkyql1u"> </a></td><td>ANC - ANC.B6. Alcohol</td><td>ANC - ANC.B6. Alcohol</td></tr><tr><td style="white-space:nowrap">xSKiFlohuQd<a name="dhis2-data-elements-cs-xSKiFlohuQd"> </a></td><td>ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)</td><td>ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)</td></tr><tr><td style="white-space:nowrap">cCp43HMY3br<a name="dhis2-data-elements-cs-cCp43HMY3br"> </a></td><td>ANC - ANC.B6. Diabetes</td><td>ANC - ANC.B6. Diabetes</td></tr><tr><td style="white-space:nowrap">oeojmvdEY9S<a name="dhis2-data-elements-cs-oeojmvdEY9S"> </a></td><td>ANC - ANC.B6. Eclampsia/Convulsions</td><td>ANC - ANC.B6. Eclampsia/Convulsions</td></tr><tr><td style="white-space:nowrap">Ru01omP2WCQ<a name="dhis2-data-elements-cs-Ru01omP2WCQ"> </a></td><td>ANC - ANC.B6. Expected date of delivery (EDD)</td><td>ANC - ANC.B6. Expected date of delivery (EDD)</td></tr><tr><td style="white-space:nowrap">w9p8MQDRyMr<a name="dhis2-data-elements-cs-w9p8MQDRyMr"> </a></td><td>ANC - ANC.B6. Gestational age</td><td>ANC - ANC.B6. Gestational age</td></tr><tr><td style="white-space:nowrap">XhGh2s0tPTr<a name="dhis2-data-elements-cs-XhGh2s0tPTr"> </a></td><td>ANC - ANC History of big baby delivery ( &amp;gt; 4 kg)</td><td>ANC - ANC History of big baby delivery ( &gt; 4 kg)</td></tr><tr><td style="white-space:nowrap">lYE2KzWQGkW<a name="dhis2-data-elements-cs-lYE2KzWQGkW"> </a></td><td>ANC - ANC.B6. HIV status profile</td><td>ANC - ANC.B6. HIV status profile</td></tr><tr><td style="white-space:nowrap">iboAokLxCIh<a name="dhis2-data-elements-cs-iboAokLxCIh"> </a></td><td>ANC - ANC Myomectomy</td><td>ANC - ANC Myomectomy</td></tr><tr><td style="white-space:nowrap">QqTuhQQgpcp<a name="dhis2-data-elements-cs-QqTuhQQgpcp"> </a></td><td>ANC - ANC.B6. Hypertension</td><td>ANC - ANC.B6. Hypertension</td></tr><tr><td style="white-space:nowrap">fuEUJqslhPb<a name="dhis2-data-elements-cs-fuEUJqslhPb"> </a></td><td>ANC - ANC Cardiac condition</td><td>ANC - ANC Cardiac condition</td></tr><tr><td style="white-space:nowrap">KPN571DvV4D<a name="dhis2-data-elements-cs-KPN571DvV4D"> </a></td><td>ANC - ANC.B6. Kidney disease (Chronic Renal Failure)</td><td>ANC - ANC.B6. Kidney disease (Chronic Renal Failure)</td></tr><tr><td style="white-space:nowrap">w4ky6EkVahL<a name="dhis2-data-elements-cs-w4ky6EkVahL"> </a></td><td>ANC - ANC.B6. Last normal menstrual period (LNMP) date</td><td>ANC - ANC.B6. Last normal menstrual period (LNMP) date</td></tr><tr><td style="white-space:nowrap">joirdYETe8d<a name="dhis2-data-elements-cs-joirdYETe8d"> </a></td><td>ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date</td><td>ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date</td></tr><tr><td style="white-space:nowrap">l7Jh3IoeEIa<a name="dhis2-data-elements-cs-l7Jh3IoeEIa"> </a></td><td>ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)</td><td>ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)</td></tr><tr><td style="white-space:nowrap">I7dvwZGNgE8<a name="dhis2-data-elements-cs-I7dvwZGNgE8"> </a></td><td>ANC - ANC.B6. Para</td><td>ANC - ANC.B6. Para</td></tr><tr><td style="white-space:nowrap">PuiTfPfSf86<a name="dhis2-data-elements-cs-PuiTfPfSf86"> </a></td><td>ANC - ANC.B6. Number of pregnancies (gravida)</td><td>ANC - ANC.B6. Number of pregnancies (gravida)</td></tr><tr><td style="white-space:nowrap">Juv31inY35a<a name="dhis2-data-elements-cs-Juv31inY35a"> </a></td><td>ANC - ANC.B6 Ultrasound GA</td><td>ANC - ANC.B6 Ultrasound GA</td></tr><tr><td style="white-space:nowrap">DPZ6kIgtiIA<a name="dhis2-data-elements-cs-DPZ6kIgtiIA"> </a></td><td>ANC - ANC.B6. No alcohol and/or substances</td><td>ANC - ANC.B6. No alcohol and/or substances</td></tr><tr><td style="white-space:nowrap">snqxJUEWgkb<a name="dhis2-data-elements-cs-snqxJUEWgkb"> </a></td><td>ANC - ANC.B6. No chronic or past health conditions</td><td>ANC - ANC.B6. No chronic or past health conditions</td></tr><tr><td style="white-space:nowrap">V16g2TRV7MB<a name="dhis2-data-elements-cs-V16g2TRV7MB"> </a></td><td>ANC - ANC.B6. No known allergies</td><td>ANC - ANC.B6. No known allergies</td></tr><tr><td style="white-space:nowrap">DSAooZSxopi<a name="dhis2-data-elements-cs-DSAooZSxopi"> </a></td><td>ANC - ANC.B6. No known past surgeries</td><td>ANC - ANC.B6. No known past surgeries</td></tr><tr><td style="white-space:nowrap">hpXvhGzaVld<a name="dhis2-data-elements-cs-hpXvhGzaVld"> </a></td><td>ANC - ANC.B6. No medications</td><td>ANC - ANC.B6. No medications</td></tr><tr><td style="white-space:nowrap">GWxtXap1Guk<a name="dhis2-data-elements-cs-GWxtXap1Guk"> </a></td><td>ANC - ANC.B6. No past pregnancy complications</td><td>ANC - ANC.B6. No past pregnancy complications</td></tr><tr><td style="white-space:nowrap">j3lxVBnaXmy<a name="dhis2-data-elements-cs-j3lxVBnaXmy"> </a></td><td>ANC - ANC.B6. Number of caesarean sections</td><td>ANC - ANC.B6. Number of caesarean sections</td></tr><tr><td style="white-space:nowrap">p4e5Y0GQIxv<a name="dhis2-data-elements-cs-p4e5Y0GQIxv"> </a></td><td>ANC - ANC.B6. Number of abortions</td><td>ANC - ANC.B6. Number of abortions</td></tr><tr><td style="white-space:nowrap">fpPtP8xrU1s<a name="dhis2-data-elements-cs-fpPtP8xrU1s"> </a></td><td>ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)</td><td>ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)</td></tr><tr><td style="white-space:nowrap">vpxAELVdkqn<a name="dhis2-data-elements-cs-vpxAELVdkqn"> </a></td><td>ANC - ANC.B6. Other allergies (specify)</td><td>ANC - ANC.B6. Other allergies (specify)</td></tr><tr><td style="white-space:nowrap">hz94MekJLYe<a name="dhis2-data-elements-cs-hz94MekJLYe"> </a></td><td>ANC - ANC.B6. Other gynecological procedures (specify)</td><td>ANC - ANC.B6. Other gynecological procedures (specify)</td></tr><tr><td style="white-space:nowrap">kyOjlg4co4z<a name="dhis2-data-elements-cs-kyOjlg4co4z"> </a></td><td>ANC - ANC.B6. Medications (specify)</td><td>ANC - ANC.B6. Medications (specify)</td></tr><tr><td style="white-space:nowrap">rF7OJIP7fhp<a name="dhis2-data-elements-cs-rF7OJIP7fhp"> </a></td><td>ANC - ANC.B6. Other past pregnancy problems (specify)</td><td>ANC - ANC.B6. Other past pregnancy problems (specify)</td></tr><tr><td style="white-space:nowrap">lbmrnYizavt<a name="dhis2-data-elements-cs-lbmrnYizavt"> </a></td><td>ANC - ANC.B6. Other (specify)</td><td>ANC - ANC.B6. Other (specify)</td></tr><tr><td style="white-space:nowrap">UZ6Re4zVePj<a name="dhis2-data-elements-cs-UZ6Re4zVePj"> </a></td><td>ANC - ANC.B6. Other substance use (specify)</td><td>ANC - ANC.B6. Other substance use (specify)</td></tr><tr><td style="white-space:nowrap">S6O8strHi1p<a name="dhis2-data-elements-cs-S6O8strHi1p"> </a></td><td>ANC - ANC.B6. Other surgeries (specify)</td><td>ANC - ANC.B6. Other surgeries (specify)</td></tr><tr><td style="white-space:nowrap">TGcfgzv8mQA<a name="dhis2-data-elements-cs-TGcfgzv8mQA"> </a></td><td>ANC - ANC.B6. Pre-eclampsia</td><td>ANC - ANC.B6. Pre-eclampsia</td></tr><tr><td style="white-space:nowrap">RPSgZF1i0hk<a name="dhis2-data-elements-cs-RPSgZF1i0hk"> </a></td><td>ANC - ANC.B6. Source of gestational age</td><td>ANC - ANC.B6. Source of gestational age</td></tr><tr><td style="white-space:nowrap">HvfStK1Mfo5<a name="dhis2-data-elements-cs-HvfStK1Mfo5"> </a></td><td>ANC - ANC.B6. Tobacco use</td><td>ANC - ANC.B6. Tobacco use</td></tr><tr><td style="white-space:nowrap">PrDdlt8U65H<a name="dhis2-data-elements-cs-PrDdlt8U65H"> </a></td><td>ANC - ANC.B6. Ultrasound date</td><td>ANC - ANC.B6. Ultrasound date</td></tr><tr><td style="white-space:nowrap">YKXci7Sm0Zq<a name="dhis2-data-elements-cs-YKXci7Sm0Zq"> </a></td><td>ANC.B6. Clinically estimated gestational age</td><td>ANC.B6. Clinically estimated gestational age</td></tr><tr><td style="white-space:nowrap">TcOkQ8Qqmlt<a name="dhis2-data-elements-cs-TcOkQ8Qqmlt"> </a></td><td>ANC - ANC.B8. Height</td><td>ANC - ANC.B8. Height</td></tr><tr><td style="white-space:nowrap">kFwQfziJLEt<a name="dhis2-data-elements-cs-kFwQfziJLEt"> </a></td><td>ANC - ANC.B8. Pre-gestational weight</td><td>ANC - ANC.B8. Pre-gestational weight</td></tr><tr><td style="white-space:nowrap">UZnz5QLRvcr<a name="dhis2-data-elements-cs-UZnz5QLRvcr"> </a></td><td>ANC - ANC.B8. BMI</td><td>ANC - ANC.B8. BMI</td></tr><tr><td style="white-space:nowrap">UsYtsHtuvwQ<a name="dhis2-data-elements-cs-UsYtsHtuvwQ"> </a></td><td>ANC - ANC.B8. Weight category</td><td>ANC - ANC.B8. Weight category</td></tr><tr><td style="white-space:nowrap">bzupYCgg4m6<a name="dhis2-data-elements-cs-bzupYCgg4m6"> </a></td><td>ANC - ANC.B8a. Review and confirm computed BMI</td><td>ANC - ANC.B8a. Review and confirm computed BMI</td></tr><tr><td style="white-space:nowrap">ztZwHRN9iPM<a name="dhis2-data-elements-cs-ztZwHRN9iPM"> </a></td><td>ANC - ANC.B8. Expected weight gain</td><td>ANC - ANC.B8. Expected weight gain</td></tr><tr><td style="white-space:nowrap">L6Toy2TrHHq<a name="dhis2-data-elements-cs-L6Toy2TrHHq"> </a></td><td>ANC - ANC.B8. Body temperature</td><td>ANC - ANC.B8. Body temperature</td></tr><tr><td style="white-space:nowrap">dyYdfamSY2Z<a name="dhis2-data-elements-cs-dyYdfamSY2Z"> </a></td><td>ANC - ANC.B8. Diastolic blood pressure</td><td>ANC - ANC.B8. Diastolic blood pressure</td></tr><tr><td style="white-space:nowrap">c6Cg8KgNu77<a name="dhis2-data-elements-cs-c6Cg8KgNu77"> </a></td><td>ANC - ANC.B8. Fetal heartbeat present</td><td>ANC - ANC.B8. Fetal heartbeat present</td></tr><tr><td style="white-space:nowrap">cY03odVgQqq<a name="dhis2-data-elements-cs-cY03odVgQqq"> </a></td><td>ANC - ANC.B8. Fetal heart rate</td><td>ANC - ANC.B8. Fetal heart rate</td></tr><tr><td style="white-space:nowrap">vPdXnmGWzfy<a name="dhis2-data-elements-cs-vPdXnmGWzfy"> </a></td><td>ANC - ANC.B8. Fetal presentation</td><td>ANC - ANC.B8. Fetal presentation</td></tr><tr><td style="white-space:nowrap">rC2RDuM8wb2<a name="dhis2-data-elements-cs-rC2RDuM8wb2"> </a></td><td>ANC - ANC.B8. Oedema Leg swelling</td><td>ANC - ANC.B8. Oedema Leg swelling</td></tr><tr><td style="white-space:nowrap">YrtUVQtPngs<a name="dhis2-data-elements-cs-YrtUVQtPngs"> </a></td><td>ANC - ANC.B8. Symptoms of severe pre-eclampsia present</td><td>ANC - ANC.B8. Symptoms of severe pre-eclampsia present</td></tr><tr><td style="white-space:nowrap">PN6HcGjTraL<a name="dhis2-data-elements-cs-PN6HcGjTraL"> </a></td><td>ANC - ANC.B8. Number of fetuses</td><td>ANC - ANC.B8. Number of fetuses</td></tr><tr><td style="white-space:nowrap">jETdi1M2DY9<a name="dhis2-data-elements-cs-jETdi1M2DY9"> </a></td><td>ANC - ANC.B8. Oedema of the hands and feet</td><td>ANC - ANC.B8. Oedema of the hands and feet</td></tr><tr><td style="white-space:nowrap">ULV28awvMXH<a name="dhis2-data-elements-cs-ULV28awvMXH"> </a></td><td>ANC - ANC.B8. Oedema present</td><td>ANC - ANC.B8. Oedema present</td></tr><tr><td style="white-space:nowrap">SrpLUqMjW97<a name="dhis2-data-elements-cs-SrpLUqMjW97"> </a></td><td>ANC - ANC.B8. Oedema severity</td><td>ANC - ANC.B8. Oedema severity</td></tr><tr><td style="white-space:nowrap">EyfTU3ibMmJ<a name="dhis2-data-elements-cs-EyfTU3ibMmJ"> </a></td><td>ANC - ANC.B8. Pallor present</td><td>ANC - ANC.B8. Pallor present</td></tr><tr><td style="white-space:nowrap">Q3s82wdeOZg<a name="dhis2-data-elements-cs-Q3s82wdeOZg"> </a></td><td>ANC - ANC.B8. Pelvic exam result (visual)</td><td>ANC - ANC.B8. Pelvic exam result (visual)</td></tr><tr><td style="white-space:nowrap">kNrTQqC1bgg<a name="dhis2-data-elements-cs-kNrTQqC1bgg"> </a></td><td>ANC - ANC.B8. Pitting ankle oedema</td><td>ANC - ANC.B8. Pitting ankle oedema</td></tr><tr><td style="white-space:nowrap">yQyFSrY3S0q<a name="dhis2-data-elements-cs-yQyFSrY3S0q"> </a></td><td>ANC - ANC.B8. Pitting lower back oedema</td><td>ANC - ANC.B8. Pitting lower back oedema</td></tr><tr><td style="white-space:nowrap">C47wV4EBLaS<a name="dhis2-data-elements-cs-C47wV4EBLaS"> </a></td><td>ANC - ANC.B8. Pulse rate</td><td>ANC - ANC.B8. Pulse rate</td></tr><tr><td style="white-space:nowrap">MqZDsOZm4yD<a name="dhis2-data-elements-cs-MqZDsOZm4yD"> </a></td><td>ANC - ANC.B8. Repeat diastolic blood pressure</td><td>ANC - ANC.B8. Repeat diastolic blood pressure</td></tr><tr><td style="white-space:nowrap">ZkCYYlI4xe7<a name="dhis2-data-elements-cs-ZkCYYlI4xe7"> </a></td><td>ANC - ANC.B8. Repeat systolic blood pressure</td><td>ANC - ANC.B8. Repeat systolic blood pressure</td></tr><tr><td style="white-space:nowrap">fjZ4KQpS1QS<a name="dhis2-data-elements-cs-fjZ4KQpS1QS"> </a></td><td>ANC - ANC.B8. Symphysis-fundal height (SFH)</td><td>ANC - ANC.B8. Symphysis-fundal height (SFH)</td></tr><tr><td style="white-space:nowrap">M4HEOoEFTAT<a name="dhis2-data-elements-cs-M4HEOoEFTAT"> </a></td><td>ANC - ANC.B8. Systolic blood pressure</td><td>ANC - ANC.B8. Systolic blood pressure</td></tr><tr><td style="white-space:nowrap">VEFV1QayfzE<a name="dhis2-data-elements-cs-VEFV1QayfzE"> </a></td><td>ANC - ANC.B8. Signs/conditions for GBV</td><td>ANC - ANC.B8. Signs/conditions for GBV</td></tr><tr><td style="white-space:nowrap">d8vfOWb6SPd<a name="dhis2-data-elements-cs-d8vfOWb6SPd"> </a></td><td>ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)</td><td>ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)</td></tr><tr><td style="white-space:nowrap">vMVLu4hlDqx<a name="dhis2-data-elements-cs-vMVLu4hlDqx"> </a></td><td>ANC - Previous scar 1</td><td>ANC - Previous scar 1</td></tr><tr><td style="white-space:nowrap">tsaVZFUAgkD<a name="dhis2-data-elements-cs-tsaVZFUAgkD"> </a></td><td>ANC - ANC.B8. Other fetal presentation (specify)</td><td>ANC - ANC.B8. Other fetal presentation (specify)</td></tr><tr><td style="white-space:nowrap">fDdSgAwUbtS<a name="dhis2-data-elements-cs-fDdSgAwUbtS"> </a></td><td>ANC - Previous scar year 1</td><td>ANC - Previous scar year 1</td></tr><tr><td style="white-space:nowrap">UAwQzN7SMAi<a name="dhis2-data-elements-cs-UAwQzN7SMAi"> </a></td><td>ANC - Previous Scar Indication 1</td><td>ANC - Previous Scar Indication 1</td></tr><tr><td style="white-space:nowrap">nN3JSNtFAo8<a name="dhis2-data-elements-cs-nN3JSNtFAo8"> </a></td><td>ANC - Previous scar 2</td><td>ANC - Previous scar 2</td></tr><tr><td style="white-space:nowrap">b3qArrNwpz0<a name="dhis2-data-elements-cs-b3qArrNwpz0"> </a></td><td>ANC - Previous scar year 2</td><td>ANC - Previous scar year 2</td></tr><tr><td style="white-space:nowrap">wha8HRwqFtD<a name="dhis2-data-elements-cs-wha8HRwqFtD"> </a></td><td>ANC - Previous Scar Indication 2</td><td>ANC - Previous Scar Indication 2</td></tr><tr><td style="white-space:nowrap">hITbUr6ufTz<a name="dhis2-data-elements-cs-hITbUr6ufTz"> </a></td><td>ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks</td><td>ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks</td></tr><tr><td style="white-space:nowrap">a7gTKszpdVp<a name="dhis2-data-elements-cs-a7gTKszpdVp"> </a></td><td>ANC - Previous scar 3</td><td>ANC - Previous scar 3</td></tr><tr><td style="white-space:nowrap">WBBaer7NTFJ<a name="dhis2-data-elements-cs-WBBaer7NTFJ"> </a></td><td>ANC - ANC.B7. Hospitalisation for what</td><td>ANC - ANC.B7. Hospitalisation for what</td></tr><tr><td style="white-space:nowrap">LSIsLB6epXX<a name="dhis2-data-elements-cs-LSIsLB6epXX"> </a></td><td>ANC - Previous scar year 3</td><td>ANC - Previous scar year 3</td></tr><tr><td style="white-space:nowrap">ydqILDGfoRp<a name="dhis2-data-elements-cs-ydqILDGfoRp"> </a></td><td>ANC - ANC.B8. MUAC</td><td>ANC - ANC.B8. MUAC</td></tr><tr><td style="white-space:nowrap">ytarRo3GlhD<a name="dhis2-data-elements-cs-ytarRo3GlhD"> </a></td><td>ANC - Previous Scar Indication 3</td><td>ANC - Previous Scar Indication 3</td></tr><tr><td style="white-space:nowrap">EFKE1hMUpkM<a name="dhis2-data-elements-cs-EFKE1hMUpkM"> </a></td><td>ANC - Previous scar 4</td><td>ANC - Previous scar 4</td></tr><tr><td style="white-space:nowrap">jhv8rdTd1sf<a name="dhis2-data-elements-cs-jhv8rdTd1sf"> </a></td><td>ANC - ANC.B8. MUAC Color code</td><td>ANC - ANC.B8. MUAC Color code</td></tr><tr><td style="white-space:nowrap">PIIZ3ngYzxf<a name="dhis2-data-elements-cs-PIIZ3ngYzxf"> </a></td><td>ANC - Previous scar year 4</td><td>ANC - Previous scar year 4</td></tr><tr><td style="white-space:nowrap">N2MadZlBXiJ<a name="dhis2-data-elements-cs-N2MadZlBXiJ"> </a></td><td>ANC - ANC.B8. Nutritional status</td><td>ANC - ANC.B8. Nutritional status</td></tr><tr><td style="white-space:nowrap">gnZ35nEqJmI<a name="dhis2-data-elements-cs-gnZ35nEqJmI"> </a></td><td>ANC - ANC.B8. Relation presenting part</td><td>ANC - ANC.B8. Relation presenting part</td></tr><tr><td style="white-space:nowrap">xZ2QZYotcKT<a name="dhis2-data-elements-cs-xZ2QZYotcKT"> </a></td><td>ANC - Previous Scar Indication 4</td><td>ANC - Previous Scar Indication 4</td></tr><tr><td style="white-space:nowrap">zZzZazs1DGi<a name="dhis2-data-elements-cs-zZzZazs1DGi"> </a></td><td>ANC - ANC.B7. Experiencing Contractions</td><td>ANC - ANC.B7. Experiencing Contractions</td></tr><tr><td style="white-space:nowrap">eF3VGluAlcm<a name="dhis2-data-elements-cs-eF3VGluAlcm"> </a></td><td>ANC - ANC.B7. Experiencing Fever</td><td>ANC - ANC.B7. Experiencing Fever</td></tr><tr><td style="white-space:nowrap">QhijDzMdFNq<a name="dhis2-data-elements-cs-QhijDzMdFNq"> </a></td><td>ANC - ANC.B7. Experiencing Severe Headache</td><td>ANC - ANC.B7. Experiencing Severe Headache</td></tr><tr><td style="white-space:nowrap">VLcb1WBMTIH<a name="dhis2-data-elements-cs-VLcb1WBMTIH"> </a></td><td>ANC - ANC.B8. Second fetal heart rate</td><td>ANC - ANC.B8. Second fetal heart rate</td></tr><tr><td style="white-space:nowrap">SM7dVOLQD8j<a name="dhis2-data-elements-cs-SM7dVOLQD8j"> </a></td><td>ANC - ANC.B7. Experiencing Vaginal bleeding</td><td>ANC - ANC.B7. Experiencing Vaginal bleeding</td></tr><tr><td style="white-space:nowrap">xa10dHKgRWa<a name="dhis2-data-elements-cs-xa10dHKgRWa"> </a></td><td>ANC - ANC.B7. Experiencing Excessive Vomiting</td><td>ANC - ANC.B7. Experiencing Excessive Vomiting</td></tr><tr><td style="white-space:nowrap">cPOXL8JV8Ee<a name="dhis2-data-elements-cs-cPOXL8JV8Ee"> </a></td><td>ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)</td><td>ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)</td></tr><tr><td style="white-space:nowrap">syAvZ78FCls<a name="dhis2-data-elements-cs-syAvZ78FCls"> </a></td><td>ANC - ANC.B8. Gestational age at today&amp;#x27;s visit_ANC</td><td>ANC - ANC.B8. Gestational age at today's visit_ANC</td></tr><tr><td style="white-space:nowrap">H90qsZViPcS<a name="dhis2-data-elements-cs-H90qsZViPcS"> </a></td><td>ANC - ANC.B8. Current  weight</td><td>ANC - ANC.B8. Current  weight</td></tr><tr><td style="white-space:nowrap">qmgotDEO8YI<a name="dhis2-data-elements-cs-qmgotDEO8YI"> </a></td><td>ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)</td><td>ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)</td></tr><tr><td style="white-space:nowrap">J3ijwQYXVSV<a name="dhis2-data-elements-cs-J3ijwQYXVSV"> </a></td><td>ANC - ANC.B8. Total weight gain (kg)</td><td>ANC - ANC.B8. Total weight gain (kg)</td></tr><tr><td style="white-space:nowrap">WWGGsY8l88G<a name="dhis2-data-elements-cs-WWGGsY8l88G"> </a></td><td>ANC - ANC.B5. Pain –Other</td><td>ANC - ANC.B5. Pain –Other</td></tr><tr><td style="white-space:nowrap">bXVD2EMF7UW<a name="dhis2-data-elements-cs-bXVD2EMF7UW"> </a></td><td>ANC - ANC Visit Number</td><td>ANC - ANC Visit Number</td></tr><tr><td style="white-space:nowrap">Kyw7NtFeW3B<a name="dhis2-data-elements-cs-Kyw7NtFeW3B"> </a></td><td>ANC - ANC.B7. No physiological symptoms</td><td>ANC - ANC.B7. No physiological symptoms</td></tr><tr><td style="white-space:nowrap">KZT7yfzeP08<a name="dhis2-data-elements-cs-KZT7yfzeP08"> </a></td><td>ANC - ANC.B7. Other current physiological symptoms (specify)</td><td>ANC - ANC.B7. Other current physiological symptoms (specify)</td></tr><tr><td style="white-space:nowrap">xb4Z245Bnej<a name="dhis2-data-elements-cs-xb4Z245Bnej"> </a></td><td>ANC - ANC.B5. Regular ANC / Scheduled visit?</td><td>ANC - ANC.B5. Regular ANC / Scheduled visit?</td></tr><tr><td style="white-space:nowrap">CORtBqRWjMG<a name="dhis2-data-elements-cs-CORtBqRWjMG"> </a></td><td>ANC - ANC.B7. Fetal movement</td><td>ANC - ANC.B7. Fetal movement</td></tr><tr><td style="white-space:nowrap">LI3bLtFxT8h<a name="dhis2-data-elements-cs-LI3bLtFxT8h"> </a></td><td>ANC - ANC.B5. Specify health concern</td><td>ANC - ANC.B5. Specify health concern</td></tr><tr><td style="white-space:nowrap">wi3jkKJNjr7<a name="dhis2-data-elements-cs-wi3jkKJNjr7"> </a></td><td>ANC - ANC.B9. Random blood sugar result</td><td>ANC - ANC.B9. Random blood sugar result</td></tr><tr><td style="white-space:nowrap">S3bsJ9ogxeN<a name="dhis2-data-elements-cs-S3bsJ9ogxeN"> </a></td><td>ANC - ANC.B9.  Blood haemoglobin test date</td><td>ANC - ANC.B9.  Blood haemoglobin test date</td></tr><tr><td style="white-space:nowrap">eddQQbyYaEv<a name="dhis2-data-elements-cs-eddQQbyYaEv"> </a></td><td>ANC - ANC.B9.  Blood group</td><td>ANC - ANC.B9.  Blood group</td></tr><tr><td style="white-space:nowrap">Dp1hN6EwLnh<a name="dhis2-data-elements-cs-Dp1hN6EwLnh"> </a></td><td>ANC - ANC.B9.  Blood screening test date</td><td>ANC - ANC.B9.  Blood screening test date</td></tr><tr><td style="white-space:nowrap">rEAO5q6BnSJ<a name="dhis2-data-elements-cs-rEAO5q6BnSJ"> </a></td><td>ANC - ANC.B9.  Hepatitis B test date</td><td>ANC - ANC.B9.  Hepatitis B test date</td></tr><tr><td style="white-space:nowrap">vDkIpVMAYPU<a name="dhis2-data-elements-cs-vDkIpVMAYPU"> </a></td><td>ANC - ANC.B9.  Hepatitis B test result</td><td>ANC - ANC.B9.  Hepatitis B test result</td></tr><tr><td style="white-space:nowrap">YREFGI3SapQ<a name="dhis2-data-elements-cs-YREFGI3SapQ"> </a></td><td>ANC - ANC.B9. eMTCT test date</td><td>ANC - ANC.B9. eMTCT test date</td></tr><tr><td style="white-space:nowrap">zo8VyJRKcmi<a name="dhis2-data-elements-cs-zo8VyJRKcmi"> </a></td><td>ANC - ANC.B9.  eMTCT HIV test result</td><td>ANC - ANC.B9.  eMTCT HIV test result</td></tr><tr><td style="white-space:nowrap">liA7cL3lyMp<a name="dhis2-data-elements-cs-liA7cL3lyMp"> </a></td><td>ANC - ANC.B9.  TB screening incomplete (symptoms only)</td><td>ANC - ANC.B9.  TB screening incomplete (symptoms only)</td></tr><tr><td style="white-space:nowrap">xXuuXz5xfh6<a name="dhis2-data-elements-cs-xXuuXz5xfh6"> </a></td><td>ANC - ANC.B9.  Other test(s) date</td><td>ANC - ANC.B9.  Other test(s) date</td></tr><tr><td style="white-space:nowrap">HjA9hp3NCFA<a name="dhis2-data-elements-cs-HjA9hp3NCFA"> </a></td><td>ANC - ANC.B9.  Other test(s) name</td><td>ANC - ANC.B9.  Other test(s) name</td></tr><tr><td style="white-space:nowrap">UsM907MWnA5<a name="dhis2-data-elements-cs-UsM907MWnA5"> </a></td><td>ANC - ANC.B9.   Other test(s) result(s)</td><td>ANC - ANC.B9.   Other test(s) result(s)</td></tr><tr><td style="white-space:nowrap">ox8s78VJC1R<a name="dhis2-data-elements-cs-ox8s78VJC1R"> </a></td><td>ANC -ANC.B9.  Partner HIV test date</td><td>ANC -ANC.B9.  Partner HIV test date</td></tr><tr><td style="white-space:nowrap">ODqCU8tNjq5<a name="dhis2-data-elements-cs-ODqCU8tNjq5"> </a></td><td>ANC - LAB CD4 results</td><td>ANC - LAB CD4 results</td></tr><tr><td style="white-space:nowrap">ZtpsckiEhGB<a name="dhis2-data-elements-cs-ZtpsckiEhGB"> </a></td><td>ANC - LAB Viral load results</td><td>ANC - LAB Viral load results</td></tr><tr><td style="white-space:nowrap">MhC6OCNIFOZ<a name="dhis2-data-elements-cs-MhC6OCNIFOZ"> </a></td><td>ANC - ANC.B9.  Partner HIV test result</td><td>ANC - ANC.B9.  Partner HIV test result</td></tr><tr><td style="white-space:nowrap">OAVexurF9i0<a name="dhis2-data-elements-cs-OAVexurF9i0"> </a></td><td>ANC - LAB WHO Clinical stage</td><td>ANC - LAB WHO Clinical stage</td></tr><tr><td style="white-space:nowrap">cBuumo9jGRc<a name="dhis2-data-elements-cs-cBuumo9jGRc"> </a></td><td>ANC - ANC Platelets</td><td>ANC - ANC Platelets</td></tr><tr><td style="white-space:nowrap">fixliM4mt3T<a name="dhis2-data-elements-cs-fixliM4mt3T"> </a></td><td>ANC - ANC LAB Pregnant woman linked to ART</td><td>ANC - ANC LAB Pregnant woman linked to ART</td></tr><tr><td style="white-space:nowrap">SuC9foMX1Ea<a name="dhis2-data-elements-cs-SuC9foMX1Ea"> </a></td><td>ANC - ANC LAB Pregnant woman ART number</td><td>ANC - ANC LAB Pregnant woman ART number</td></tr><tr><td style="white-space:nowrap">Yycea04JKAR<a name="dhis2-data-elements-cs-Yycea04JKAR"> </a></td><td>ANC - ANC Lab Pregnant woman ART location</td><td>ANC - ANC Lab Pregnant woman ART location</td></tr><tr><td style="white-space:nowrap">I4OPKBwhGQ0<a name="dhis2-data-elements-cs-I4OPKBwhGQ0"> </a></td><td>ANC - ANC LAB Date Viral load sample collected</td><td>ANC - ANC LAB Date Viral load sample collected</td></tr><tr><td style="white-space:nowrap">noAWcXSpCaP<a name="dhis2-data-elements-cs-noAWcXSpCaP"> </a></td><td>ANC - ANC LAB Date Viral load sample returned</td><td>ANC - ANC LAB Date Viral load sample returned</td></tr><tr><td style="white-space:nowrap">GLFICGeB5Ap<a name="dhis2-data-elements-cs-GLFICGeB5Ap"> </a></td><td>ANC - ANC LAB Viral load status</td><td>ANC - ANC LAB Viral load status</td></tr><tr><td style="white-space:nowrap">D40sUAJilcj<a name="dhis2-data-elements-cs-D40sUAJilcj"> </a></td><td>ANC - ANC LAB Date CD4 sample collected</td><td>ANC - ANC LAB Date CD4 sample collected</td></tr><tr><td style="white-space:nowrap">SnHImni1u5k<a name="dhis2-data-elements-cs-SnHImni1u5k"> </a></td><td>ANC - LAB Symptoms of complicated malaria</td><td>ANC - LAB Symptoms of complicated malaria</td></tr><tr><td style="white-space:nowrap">xem63QqjPNK<a name="dhis2-data-elements-cs-xem63QqjPNK"> </a></td><td>ANC - ANC LAB Date CD4 sample returned</td><td>ANC - ANC LAB Date CD4 sample returned</td></tr><tr><td style="white-space:nowrap">p6wWb8I2jyo<a name="dhis2-data-elements-cs-p6wWb8I2jyo"> </a></td><td>ANC - ANC.B9.  Rh factor</td><td>ANC - ANC.B9.  Rh factor</td></tr><tr><td style="white-space:nowrap">XST9vCca14R<a name="dhis2-data-elements-cs-XST9vCca14R"> </a></td><td>ANC - ANC.B9.  Syphilis test date</td><td>ANC - ANC.B9.  Syphilis test date</td></tr><tr><td style="white-space:nowrap">gueCJt1Cjru<a name="dhis2-data-elements-cs-gueCJt1Cjru"> </a></td><td>ANC - ANC.B9.  Syphilis test result</td><td>ANC - ANC.B9.  Syphilis test result</td></tr><tr><td style="white-space:nowrap">jORfSq3dc0Z<a name="dhis2-data-elements-cs-jORfSq3dc0Z"> </a></td><td>ANC - ANC.B9.  TB test date</td><td>ANC - ANC.B9.  TB test date</td></tr><tr><td style="white-space:nowrap">vB0KLtHeSft<a name="dhis2-data-elements-cs-vB0KLtHeSft"> </a></td><td>ANC - ANC.B9.  TB test result</td><td>ANC - ANC.B9.  TB test result</td></tr><tr><td style="white-space:nowrap">P0WhE9bsD1E<a name="dhis2-data-elements-cs-P0WhE9bsD1E"> </a></td><td>ANC - ANC.B9.  Ultrasound scan date</td><td>ANC - ANC.B9.  Ultrasound scan date</td></tr><tr><td style="white-space:nowrap">ZP8aN3M1U51<a name="dhis2-data-elements-cs-ZP8aN3M1U51"> </a></td><td>ANC - ANC.B9.  Urine dipstick result –glucose</td><td>ANC - ANC.B9.  Urine dipstick result –glucose</td></tr><tr><td style="white-space:nowrap">n7ITb3GsUNi<a name="dhis2-data-elements-cs-n7ITb3GsUNi"> </a></td><td>ANC - ANC.B9.  Urine dipstick result –leukocytes</td><td>ANC - ANC.B9.  Urine dipstick result –leukocytes</td></tr><tr><td style="white-space:nowrap">z1iDiVtSw43<a name="dhis2-data-elements-cs-z1iDiVtSw43"> </a></td><td>ANC - ANC.B9.  Urine dipstick result –nitrites</td><td>ANC - ANC.B9.  Urine dipstick result –nitrites</td></tr><tr><td style="white-space:nowrap">PpxBOihc1Y6<a name="dhis2-data-elements-cs-PpxBOihc1Y6"> </a></td><td>ANC - ANC.B9.  Urine dipstick result –protein</td><td>ANC - ANC.B9.  Urine dipstick result –protein</td></tr><tr><td style="white-space:nowrap">EnLWXRgiimk<a name="dhis2-data-elements-cs-EnLWXRgiimk"> </a></td><td>ANC - ANC.B9.  Blood glucose test date</td><td>ANC - ANC.B9.  Blood glucose test date</td></tr><tr><td style="white-space:nowrap">pV0OABcFZCu<a name="dhis2-data-elements-cs-pV0OABcFZCu"> </a></td><td>ANC - ANC LAB Sickle cell</td><td>ANC - ANC LAB Sickle cell</td></tr><tr><td style="white-space:nowrap">pMYNlTxqieX<a name="dhis2-data-elements-cs-pMYNlTxqieX"> </a></td><td>ANC - ANC LAB Partner ART Number</td><td>ANC - ANC LAB Partner ART Number</td></tr><tr><td style="white-space:nowrap">jHwhKRgeemY<a name="dhis2-data-elements-cs-jHwhKRgeemY"> </a></td><td>ANC - ANC LAB Partner age</td><td>ANC - ANC LAB Partner age</td></tr><tr><td style="white-space:nowrap">mXYhBhAPXJL<a name="dhis2-data-elements-cs-mXYhBhAPXJL"> </a></td><td>ANC - ANC LAB Partner linked to ART </td><td>ANC - ANC LAB Partner linked to ART </td></tr><tr><td style="white-space:nowrap">ccy0efIWFb8<a name="dhis2-data-elements-cs-ccy0efIWFb8"> </a></td><td>ANC - ANC Lab Partner ART location</td><td>ANC - ANC Lab Partner ART location</td></tr><tr><td style="white-space:nowrap">dN6k6agVKUu<a name="dhis2-data-elements-cs-dN6k6agVKUu"> </a></td><td>ANC - ANC.B9.  Partner Syphilis test result</td><td>ANC - ANC.B9.  Partner Syphilis test result</td></tr><tr><td style="white-space:nowrap">bUQy6eZfqFR<a name="dhis2-data-elements-cs-bUQy6eZfqFR"> </a></td><td>ANC - ANC B9.DE Urine dipstick test date</td><td>ANC - ANC B9.DE Urine dipstick test date</td></tr><tr><td style="white-space:nowrap">pnR1TFOb4xU<a name="dhis2-data-elements-cs-pnR1TFOb4xU"> </a></td><td>ANC - ANC LAB Malaria B/S for MPs</td><td>ANC - ANC LAB Malaria B/S for MPs</td></tr><tr><td style="white-space:nowrap">VrSrCgpxTT3<a name="dhis2-data-elements-cs-VrSrCgpxTT3"> </a></td><td>ANC - ANC LAB Pus cells</td><td>ANC - ANC LAB Pus cells</td></tr><tr><td style="white-space:nowrap">NUzZqwCQcms<a name="dhis2-data-elements-cs-NUzZqwCQcms"> </a></td><td>ANC - ANC.B9. Fasting blood sugar result</td><td>ANC - ANC.B9. Fasting blood sugar result</td></tr><tr><td style="white-space:nowrap">qNSSCV58TD2<a name="dhis2-data-elements-cs-qNSSCV58TD2"> </a></td><td>ANC - ANC.B9.  Blood haemoglobin result</td><td>ANC - ANC.B9.  Blood haemoglobin result</td></tr><tr><td style="white-space:nowrap">CqOqQVk2Vqw<a name="dhis2-data-elements-cs-CqOqQVk2Vqw"> </a></td><td>ANC - ANC LAB Urine Microscopy date</td><td>ANC - ANC LAB Urine Microscopy date</td></tr><tr><td style="white-space:nowrap">HJZAwP1vt7T<a name="dhis2-data-elements-cs-HJZAwP1vt7T"> </a></td><td>ANC - ANC LAB Malaria RDT</td><td>ANC - ANC LAB Malaria RDT</td></tr><tr><td style="white-space:nowrap">g2BFjUIJ5G9<a name="dhis2-data-elements-cs-g2BFjUIJ5G9"> </a></td><td>ANC - ANC LAB Malaria test date</td><td>ANC - ANC LAB Malaria test date</td></tr><tr><td style="white-space:nowrap">CzjBxEJ6HrQ<a name="dhis2-data-elements-cs-CzjBxEJ6HrQ"> </a></td><td>ANC - ANC.B8. Gestational age at todays visit_LAB</td><td>ANC - ANC.B8. Gestational age at todays visit_LAB</td></tr><tr><td style="white-space:nowrap">e7cIfEBpsZb<a name="dhis2-data-elements-cs-e7cIfEBpsZb"> </a></td><td>ANC - ANC.B9.  HIV test recommended</td><td>ANC - ANC.B9.  HIV test recommended</td></tr><tr><td style="white-space:nowrap">RKjAsZ2EKa7<a name="dhis2-data-elements-cs-RKjAsZ2EKa7"> </a></td><td>ANC - ANC.B9.  Hepatitis B test recommended</td><td>ANC - ANC.B9.  Hepatitis B test recommended</td></tr><tr><td style="white-space:nowrap">KYxA0A2j8DB<a name="dhis2-data-elements-cs-KYxA0A2j8DB"> </a></td><td>ANC - ANC.B9.  Syphilis test recommended</td><td>ANC - ANC.B9.  Syphilis test recommended</td></tr><tr><td style="white-space:nowrap">aKJK1ZXz2GP<a name="dhis2-data-elements-cs-aKJK1ZXz2GP"> </a></td><td>ANC - ANC.B9.  Ultrasound recommended</td><td>ANC - ANC.B9.  Ultrasound recommended</td></tr><tr><td style="white-space:nowrap">rqMrshNZgg8<a name="dhis2-data-elements-cs-rqMrshNZgg8"> </a></td><td>ANC - ANC.B9. Urine test recommended</td><td>ANC - ANC.B9. Urine test recommended</td></tr><tr><td style="white-space:nowrap">oOQvM7ZPnTj<a name="dhis2-data-elements-cs-oOQvM7ZPnTj"> </a></td><td>ANC - ANC.B9.  TB screening recommended</td><td>ANC - ANC.B9.  TB screening recommended</td></tr><tr><td style="white-space:nowrap">Y0MfiRhxr1a<a name="dhis2-data-elements-cs-Y0MfiRhxr1a"> </a></td><td>ANC - ANC.B9.  Haemoglobin test recommended</td><td>ANC - ANC.B9.  Haemoglobin test recommended</td></tr><tr><td style="white-space:nowrap">Uxcgpc4oTCf<a name="dhis2-data-elements-cs-Uxcgpc4oTCf"> </a></td><td>ANC - ANC.B9.  Blood screening recommended</td><td>ANC - ANC.B9.  Blood screening recommended</td></tr><tr><td style="white-space:nowrap">XJeRbkSaC1J<a name="dhis2-data-elements-cs-XJeRbkSaC1J"> </a></td><td>ANC - ANC.B9. Malaria test recommended</td><td>ANC - ANC.B9. Malaria test recommended</td></tr><tr><td style="white-space:nowrap">lkrEe3MT5KK<a name="dhis2-data-elements-cs-lkrEe3MT5KK"> </a></td><td>ANC - LAB Ultrasound comments</td><td>ANC - LAB Ultrasound comments</td></tr><tr><td style="white-space:nowrap">qlR1FedtJRq<a name="dhis2-data-elements-cs-qlR1FedtJRq"> </a></td><td>ANC - ANC.B10. Counselling conducted on birth preparedness and complications readiness</td><td>ANC - ANC.B10. Counselling conducted on birth preparedness and complications readiness</td></tr><tr><td style="white-space:nowrap">T2bfkalL2LC<a name="dhis2-data-elements-cs-T2bfkalL2LC"> </a></td><td>ANC - ANC.B10. Counselling conducted on breastfeeding</td><td>ANC - ANC.B10. Counselling conducted on breastfeeding</td></tr><tr><td style="white-space:nowrap">jRo4KlnCKeX<a name="dhis2-data-elements-cs-jRo4KlnCKeX"> </a></td><td>ANC - ANC.B10. Counselling conducted on HIV risk</td><td>ANC - ANC.B10. Counselling conducted on HIV risk</td></tr><tr><td style="white-space:nowrap">l066A1HPqRU<a name="dhis2-data-elements-cs-l066A1HPqRU"> </a></td><td>ANC - ANC.B10. Counselling conducted on Rh factor negative</td><td>ANC - ANC.B10. Counselling conducted on Rh factor negative</td></tr><tr><td style="white-space:nowrap">B2vmUDbtn9u<a name="dhis2-data-elements-cs-B2vmUDbtn9u"> </a></td><td>ANC - ANC.B10. Counselling conducted on seeking care when danger signs occur</td><td>ANC - ANC.B10. Counselling conducted on seeking care when danger signs occur</td></tr><tr><td style="white-space:nowrap">QZ00NKZNNHf<a name="dhis2-data-elements-cs-QZ00NKZNNHf"> </a></td><td>ANC - ANC.B10. Counselling on ANC contact schedule conducted</td><td>ANC - ANC.B10. Counselling on ANC contact schedule conducted</td></tr><tr><td style="white-space:nowrap">vI7Bj0uD9rO<a name="dhis2-data-elements-cs-vI7Bj0uD9rO"> </a></td><td>ANC - ANC.B10. Counselling on postpartum family planning conducted</td><td>ANC - ANC.B10. Counselling on postpartum family planning conducted</td></tr><tr><td style="white-space:nowrap">hGRDCZ9eyEK<a name="dhis2-data-elements-cs-hGRDCZ9eyEK"> </a></td><td>ANC - ANC.B10. Hepatitis B-1 immunization Date</td><td>ANC - ANC.B10. Hepatitis B-1 immunization Date</td></tr><tr><td style="white-space:nowrap">fQcLrBqBS40<a name="dhis2-data-elements-cs-fQcLrBqBS40"> </a></td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization Date</td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization Date</td></tr><tr><td style="white-space:nowrap">mkH2mlYqWqB<a name="dhis2-data-elements-cs-mkH2mlYqWqB"> </a></td><td>ANC - ANC.B10. Date IPTp-SP dose was provided</td><td>ANC - ANC.B10. Date IPTp-SP dose was provided</td></tr><tr><td style="white-space:nowrap">maAtPdJhov5<a name="dhis2-data-elements-cs-maAtPdJhov5"> </a></td><td>ANC - ANC.B10. Counselling on risk of gestational diabetes mellitus (GDM)</td><td>ANC - ANC.B10. Counselling on risk of gestational diabetes mellitus (GDM)</td></tr><tr><td style="white-space:nowrap">cwUiNQdsXCd<a name="dhis2-data-elements-cs-cwUiNQdsXCd"> </a></td><td>ANC - PAT. Simple Malaria Treatment Provided</td><td>ANC - PAT. Simple Malaria Treatment Provided</td></tr><tr><td style="white-space:nowrap">tSzje3cW2hQ<a name="dhis2-data-elements-cs-tSzje3cW2hQ"> </a></td><td>ANC - ANC.B10. Counselling on risk of pre-eclampsia</td><td>ANC - ANC.B10. Counselling on risk of pre-eclampsia</td></tr><tr><td style="white-space:nowrap">pBclCe2kriA<a name="dhis2-data-elements-cs-pBclCe2kriA"> </a></td><td>ANC - ANC.B7. Folic acid (FA) provided. Atleast 30 tablets</td><td>ANC - ANC.B7. Folic acid (FA) provided. Atleast 30 tablets</td></tr><tr><td style="white-space:nowrap">BEcBoTxdJxW<a name="dhis2-data-elements-cs-BEcBoTxdJxW"> </a></td><td>ANC -  Refer to HCIV or Hospital for Severe Anaemia treatment due to haemoglobin</td><td>ANC -  Refer to HCIV or Hospital for Severe Anaemia treatment due to haemoglobin</td></tr><tr><td style="white-space:nowrap">HM1Gwr6X8M3<a name="dhis2-data-elements-cs-HM1Gwr6X8M3"> </a></td><td>ANC -  Refer to HCIV or Hospital for complicated malaria treatment</td><td>ANC -  Refer to HCIV or Hospital for complicated malaria treatment</td></tr><tr><td style="white-space:nowrap">Euy7gjx9HQQ<a name="dhis2-data-elements-cs-Euy7gjx9HQQ"> </a></td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization provided</td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization provided</td></tr><tr><td style="white-space:nowrap">g9g5XVMRMhg<a name="dhis2-data-elements-cs-g9g5XVMRMhg"> </a></td><td>ANC - Refer to HCIV or Hospital for Hepatitis B treatment</td><td>ANC - Refer to HCIV or Hospital for Hepatitis B treatment</td></tr><tr><td style="white-space:nowrap">gGcxEhV4uET<a name="dhis2-data-elements-cs-gGcxEhV4uET"> </a></td><td>ANC - PAT Diabetes in Pregnancy Diagnosis</td><td>ANC - PAT Diabetes in Pregnancy Diagnosis</td></tr><tr><td style="white-space:nowrap">v2vCvy9JR71<a name="dhis2-data-elements-cs-v2vCvy9JR71"> </a></td><td>ANC - PAT Refer to HCIV or Hospital for follow-up and medication due to Hyperglycemia</td><td>ANC - PAT Refer to HCIV or Hospital for follow-up and medication due to Hyperglycemia</td></tr><tr><td style="white-space:nowrap">ZJ1mIPM587W<a name="dhis2-data-elements-cs-ZJ1mIPM587W"> </a></td><td>ANC - PAT Elevated fasting blood sugar Diagnosis</td><td>ANC - PAT Elevated fasting blood sugar Diagnosis</td></tr><tr><td style="white-space:nowrap">zKHV3Gf8lf0<a name="dhis2-data-elements-cs-zKHV3Gf8lf0"> </a></td><td>ANC - PAT Refer for treatment and support according to findings of GBV</td><td>ANC - PAT Refer for treatment and support according to findings of GBV</td></tr><tr><td style="white-space:nowrap">XH5mvacs4fh<a name="dhis2-data-elements-cs-XH5mvacs4fh"> </a></td><td>ANC - PAT Syphilis Treatment Provided</td><td>ANC - PAT Syphilis Treatment Provided</td></tr><tr><td style="white-space:nowrap">cLaqvVnoNQW<a name="dhis2-data-elements-cs-cLaqvVnoNQW"> </a></td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization Date</td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization Date</td></tr><tr><td style="white-space:nowrap">QljEpD4ZXqQ<a name="dhis2-data-elements-cs-QljEpD4ZXqQ"> </a></td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization provided</td><td>ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization provided</td></tr><tr><td style="white-space:nowrap">LwXs0S8eD64<a name="dhis2-data-elements-cs-LwXs0S8eD64"> </a></td><td>ANC - PAM Counselling on hospital delivery due to previous assisted delivery</td><td>ANC - PAM Counselling on hospital delivery due to previous assisted delivery</td></tr><tr><td style="white-space:nowrap">vcFw7qq0EyN<a name="dhis2-data-elements-cs-vcFw7qq0EyN"> </a></td><td>ANC - PAT Counselling on risk of eclampsia</td><td>ANC - PAT Counselling on risk of eclampsia</td></tr><tr><td style="white-space:nowrap">RmYIDSTh06Y<a name="dhis2-data-elements-cs-RmYIDSTh06Y"> </a></td><td>ANC - PAT Counselling on hospital delivery due to previous perineal tear (3rd or 4th degree) </td><td>ANC - PAT Counselling on hospital delivery due to previous perineal tear (3rd or 4th degree) </td></tr><tr><td style="white-space:nowrap">LWDjK29CquZ<a name="dhis2-data-elements-cs-LWDjK29CquZ"> </a></td><td>ANC - PAT Counselling on hospital delivery due to previous neonatal death</td><td>ANC - PAT Counselling on hospital delivery due to previous neonatal death</td></tr><tr><td style="white-space:nowrap">ID6RhUJutpq<a name="dhis2-data-elements-cs-ID6RhUJutpq"> </a></td><td>ANC - PAT Refer to CEMONC facility for labour</td><td>ANC - PAT Refer to CEMONC facility for labour</td></tr><tr><td style="white-space:nowrap">CuCWAVnu94F<a name="dhis2-data-elements-cs-CuCWAVnu94F"> </a></td><td>ANC - ANC Kidney disease (Chronic Renal Failure) Diagnosis</td><td>ANC - ANC Kidney disease (Chronic Renal Failure) Diagnosis</td></tr><tr><td style="white-space:nowrap">nskowTcgnS3<a name="dhis2-data-elements-cs-nskowTcgnS3"> </a></td><td>ANC - ANC.B10. Counselling conducted on anaemia</td><td>ANC - ANC.B10. Counselling conducted on anaemia</td></tr><tr><td style="white-space:nowrap">HDQ8F5bQ5GB<a name="dhis2-data-elements-cs-HDQ8F5bQ5GB"> </a></td><td>ANC - PAT Counsel on the increased risk of developing pre-eclampsia due to CRF</td><td>ANC - PAT Counsel on the increased risk of developing pre-eclampsia due to CRF</td></tr><tr><td style="white-space:nowrap">ZgVJiTpBIAa<a name="dhis2-data-elements-cs-ZgVJiTpBIAa"> </a></td><td>ANC - ANC.B10. Counselling conducted on diabetes mellitus (DM)</td><td>ANC - ANC.B10. Counselling conducted on diabetes mellitus (DM)</td></tr><tr><td style="white-space:nowrap">GKRmoIpVWBV<a name="dhis2-data-elements-cs-GKRmoIpVWBV"> </a></td><td>ANC - ANC Cardiac condition Diagnosis</td><td>ANC - ANC Cardiac condition Diagnosis</td></tr><tr><td style="white-space:nowrap">Lzfcin802uv<a name="dhis2-data-elements-cs-Lzfcin802uv"> </a></td><td>ANC - ANC Chronic asthma Diagnosis</td><td>ANC - ANC Chronic asthma Diagnosis</td></tr><tr><td style="white-space:nowrap">hnUK7METcNT<a name="dhis2-data-elements-cs-hnUK7METcNT"> </a></td><td>ANC - ANC.B10. Counselling conducted on gestational diabetes mellitus (GDM)</td><td>ANC - ANC.B10. Counselling conducted on gestational diabetes mellitus (GDM)</td></tr><tr><td style="white-space:nowrap">kpNsJv2MJgQ<a name="dhis2-data-elements-cs-kpNsJv2MJgQ"> </a></td><td>ANC - PAM Thrombocytopenia Diagnosis</td><td>ANC - PAM Thrombocytopenia Diagnosis</td></tr><tr><td style="white-space:nowrap">FlYho8YA6gK<a name="dhis2-data-elements-cs-FlYho8YA6gK"> </a></td><td>ANC - ANC.B10. Counselling conducted on hepatitis B positive</td><td>ANC - ANC.B10. Counselling conducted on hepatitis B positive</td></tr><tr><td style="white-space:nowrap">CceCy8lgwJr<a name="dhis2-data-elements-cs-CceCy8lgwJr"> </a></td><td>ANC - PAT Refer to HC IV/Hospital for follow-up of elevated fasting blood sugar</td><td>ANC - PAT Refer to HC IV/Hospital for follow-up of elevated fasting blood sugar</td></tr><tr><td style="white-space:nowrap">ONaCQGKKt0u<a name="dhis2-data-elements-cs-ONaCQGKKt0u"> </a></td><td>ANC - PAT Refer to HCIV or Hospital due to no Fetal Heart beat present</td><td>ANC - PAT Refer to HCIV or Hospital due to no Fetal Heart beat present</td></tr><tr><td style="white-space:nowrap">zO1T2OyE5nV<a name="dhis2-data-elements-cs-zO1T2OyE5nV"> </a></td><td>ANC - ANC.B10. Counselling conducted on HIV positive</td><td>ANC - ANC.B10. Counselling conducted on HIV positive</td></tr><tr><td style="white-space:nowrap">pdogMM7UXWz<a name="dhis2-data-elements-cs-pdogMM7UXWz"> </a></td><td>ANC - Refer to HC IV/Hospital for follow-up of elevated random blood sugar</td><td>ANC - Refer to HC IV/Hospital for follow-up of elevated random blood sugar</td></tr><tr><td style="white-space:nowrap">msP5WbYKajH<a name="dhis2-data-elements-cs-msP5WbYKajH"> </a></td><td>ANC - ANC.B10. Counselling conducted on hypertension</td><td>ANC - ANC.B10. Counselling conducted on hypertension</td></tr><tr><td style="white-space:nowrap">Llteev2Flio<a name="dhis2-data-elements-cs-Llteev2Flio"> </a></td><td>ANC - ANC.B10. Counselling conducted on TB screening positive</td><td>ANC - ANC.B10. Counselling conducted on TB screening positive</td></tr><tr><td style="white-space:nowrap">sWoYKdJWtLO<a name="dhis2-data-elements-cs-sWoYKdJWtLO"> </a></td><td>ANC - PAM Sickle cell screening Folic acid 5mg/daily</td><td>ANC - PAM Sickle cell screening Folic acid 5mg/daily</td></tr><tr><td style="white-space:nowrap">qMWTQTWNm0K<a name="dhis2-data-elements-cs-qMWTQTWNm0K"> </a></td><td>ANC - ANC.B10. Counselling on alcohol use</td><td>ANC - ANC.B10. Counselling on alcohol use</td></tr><tr><td style="white-space:nowrap">M7xOHyaG1XR<a name="dhis2-data-elements-cs-M7xOHyaG1XR"> </a></td><td>ANC - PAM Sickle cell screening Refer to a sickle-cell clinic, if not yet registered</td><td>ANC - PAM Sickle cell screening Refer to a sickle-cell clinic, if not yet registered</td></tr><tr><td style="white-space:nowrap">YOjc3CiFMku<a name="dhis2-data-elements-cs-YOjc3CiFMku"> </a></td><td>ANC - PAM Counselling on Sickle cell screening based on findings; monitor Hb at every visit</td><td>ANC - PAM Counselling on Sickle cell screening based on findings; monitor Hb at every visit</td></tr><tr><td style="white-space:nowrap">YU9wbp4XiOO<a name="dhis2-data-elements-cs-YU9wbp4XiOO"> </a></td><td>ANC - PAM Sickle cell screening Admit to hospital if complications develop</td><td>ANC - PAM Sickle cell screening Admit to hospital if complications develop</td></tr><tr><td style="white-space:nowrap">YFu1oMAst5N<a name="dhis2-data-elements-cs-YFu1oMAst5N"> </a></td><td>ANC - ANC.B10. Counselling on condom use</td><td>ANC - ANC.B10. Counselling on condom use</td></tr><tr><td style="white-space:nowrap">EcAoMGJs9BB<a name="dhis2-data-elements-cs-EcAoMGJs9BB"> </a></td><td>ANC - ANC.B10. Hepatitis B-2 immunization Date</td><td>ANC - ANC.B10. Hepatitis B-2 immunization Date</td></tr><tr><td style="white-space:nowrap">sw43UG2v6Wk<a name="dhis2-data-elements-cs-sw43UG2v6Wk"> </a></td><td>ANC - ANC.B10a. IPTp-CTX dose provided</td><td>ANC - ANC.B10a. IPTp-CTX dose provided</td></tr><tr><td style="white-space:nowrap">Jnlp0lDaPSe<a name="dhis2-data-elements-cs-Jnlp0lDaPSe"> </a></td><td>ANC - ANC.B10a. Date IPTp-CTX dose was provided</td><td>ANC - ANC.B10a. Date IPTp-CTX dose was provided</td></tr><tr><td style="white-space:nowrap">G6qtfHN4Vy1<a name="dhis2-data-elements-cs-G6qtfHN4Vy1"> </a></td><td>ANC - ANC.B10. Counselling on healthy eating and keeping physically active</td><td>ANC - ANC.B10. Counselling on healthy eating and keeping physically active</td></tr><tr><td style="white-space:nowrap">O2SnmbwvwOb<a name="dhis2-data-elements-cs-O2SnmbwvwOb"> </a></td><td>ANC - PAT ARV prophylaxis for the un born infants provided</td><td>ANC - PAT ARV prophylaxis for the un born infants provided</td></tr><tr><td style="white-space:nowrap">pB9VLth3i2W<a name="dhis2-data-elements-cs-pB9VLth3i2W"> </a></td><td>ANC - ANC LAB Male partner self testing kit provided</td><td>ANC - ANC LAB Male partner self testing kit provided</td></tr><tr><td style="white-space:nowrap">GjOg2r7Wvm1<a name="dhis2-data-elements-cs-GjOg2r7Wvm1"> </a></td><td>ANC - ANC LAB Male Partner self testing kit results</td><td>ANC - ANC LAB Male Partner self testing kit results</td></tr><tr><td style="white-space:nowrap">MXOfQmqSgS8<a name="dhis2-data-elements-cs-MXOfQmqSgS8"> </a></td><td>ANC - PAT Hepatitis B Treatment Provided</td><td>ANC - PAT Hepatitis B Treatment Provided</td></tr><tr><td style="white-space:nowrap">VhlH1sYU9fv<a name="dhis2-data-elements-cs-VhlH1sYU9fv"> </a></td><td>ANC - ANC.B10. Counselling on maternal nutrition</td><td>ANC - ANC.B10. Counselling on maternal nutrition</td></tr><tr><td style="white-space:nowrap">zfF0dZSKfvj<a name="dhis2-data-elements-cs-zfF0dZSKfvj"> </a></td><td>ANC - ANC.B10. Counselling infant feeding</td><td>ANC - ANC.B10. Counselling infant feeding</td></tr><tr><td style="white-space:nowrap">Ok9OQpitjQr<a name="dhis2-data-elements-cs-Ok9OQpitjQr"> </a></td><td>ANC - ANC.B10. Counselling on tobacco cessation</td><td>ANC - ANC.B10. Counselling on tobacco cessation</td></tr><tr><td style="white-space:nowrap">VJh6Dw6KcfB<a name="dhis2-data-elements-cs-VJh6Dw6KcfB"> </a></td><td>ANC - ANC.B10. Hypertension diagnosis</td><td>ANC - ANC.B10. Hypertension diagnosis</td></tr><tr><td style="white-space:nowrap">LKNervGK4jq<a name="dhis2-data-elements-cs-LKNervGK4jq"> </a></td><td>ANC - ANC.B10. Pre-eclampsia diagnosis</td><td>ANC - ANC.B10. Pre-eclampsia diagnosis</td></tr><tr><td style="white-space:nowrap">a0ZYAtqVHCx<a name="dhis2-data-elements-cs-a0ZYAtqVHCx"> </a></td><td>ANC - ANC.B10. IPTp-SP dose provided</td><td>ANC - ANC.B10. IPTp-SP dose provided</td></tr><tr><td style="white-space:nowrap">W5AuILld5eW<a name="dhis2-data-elements-cs-W5AuILld5eW"> </a></td><td>ANC - ANC.B9.  Anaemia diagnosis</td><td>ANC - ANC.B9.  Anaemia diagnosis</td></tr><tr><td style="white-space:nowrap">gmbQ72pvjVd<a name="dhis2-data-elements-cs-gmbQ72pvjVd"> </a></td><td>ANC - ANC. Malaria diagnosis</td><td>ANC - ANC. Malaria diagnosis</td></tr><tr><td style="white-space:nowrap">xYKSnQRs6Fq<a name="dhis2-data-elements-cs-xYKSnQRs6Fq"> </a></td><td>ANC - ANC Admit and Deliver</td><td>ANC - ANC Admit and Deliver</td></tr><tr><td style="white-space:nowrap">rMyGldvXWsQ<a name="dhis2-data-elements-cs-rMyGldvXWsQ"> </a></td><td>ANC - CAT Magnesium Sulphate provided</td><td>ANC - CAT Magnesium Sulphate provided</td></tr><tr><td style="white-space:nowrap">e2bRsC2xpto<a name="dhis2-data-elements-cs-e2bRsC2xpto"> </a></td><td>ANC - PAT Hypertensive Treatment Provided</td><td>ANC - PAT Hypertensive Treatment Provided</td></tr><tr><td style="white-space:nowrap">gwytRk2Uwr6<a name="dhis2-data-elements-cs-gwytRk2Uwr6"> </a></td><td>ANC - CAT Follow up provided</td><td>ANC - CAT Follow up provided</td></tr><tr><td style="white-space:nowrap">yoyL0k3CfgO<a name="dhis2-data-elements-cs-yoyL0k3CfgO"> </a></td><td>ANC - CAT Follow up frequency specify</td><td>ANC - CAT Follow up frequency specify</td></tr><tr><td style="white-space:nowrap">xZvctiDTfmn<a name="dhis2-data-elements-cs-xZvctiDTfmn"> </a></td><td>ANC -ANC.B10. Preventive deworming antihelminthic treatment provided</td><td>ANC -ANC.B10. Preventive deworming antihelminthic treatment provided</td></tr><tr><td style="white-space:nowrap">f1KQDCMUyno<a name="dhis2-data-elements-cs-f1KQDCMUyno"> </a></td><td>ANC - ANC.B7. Prophylactic Iron and folic acid (IFA) provided. At least 30 tablets</td><td>ANC - ANC.B7. Prophylactic Iron and folic acid (IFA) provided. At least 30 tablets</td></tr><tr><td style="white-space:nowrap">ppiuaHJLXhv<a name="dhis2-data-elements-cs-ppiuaHJLXhv"> </a></td><td>ANC - ANC.B9.  Hepatitis B diagnosis</td><td>ANC - ANC.B9.  Hepatitis B diagnosis</td></tr><tr><td style="white-space:nowrap">lja34jS4kHc<a name="dhis2-data-elements-cs-lja34jS4kHc"> </a></td><td>ANC - ANC.B9.  Syphilis diagnosis</td><td>ANC - ANC.B9.  Syphilis diagnosis</td></tr><tr><td style="white-space:nowrap">vdPettzpAjK<a name="dhis2-data-elements-cs-vdPettzpAjK"> </a></td><td>ANC - ANC.B10. Counselling on balanced energy and protein dietary supplementation</td><td>ANC - ANC.B10. Counselling on balanced energy and protein dietary supplementation</td></tr><tr><td style="white-space:nowrap">G8eAMYZaXnH<a name="dhis2-data-elements-cs-G8eAMYZaXnH"> </a></td><td>ANC - ANC.B9.  High risk for HIV</td><td>ANC - ANC.B9.  High risk for HIV</td></tr><tr><td style="white-space:nowrap">jDoejOIyb3a<a name="dhis2-data-elements-cs-jDoejOIyb3a"> </a></td><td>ANC - ANC CAT Admit and Monitor</td><td>ANC - ANC CAT Admit and Monitor</td></tr><tr><td style="white-space:nowrap">RrkI8hPNjmb<a name="dhis2-data-elements-cs-RrkI8hPNjmb"> </a></td><td>ANC - ANC.B11. Received as Referral</td><td>ANC - ANC.B11. Received as Referral</td></tr><tr><td style="white-space:nowrap">LRwXvqpnLAb<a name="dhis2-data-elements-cs-LRwXvqpnLAb"> </a></td><td>ANC - ANC.B11. If yes, received as referral from</td><td>ANC - ANC.B11. If yes, received as referral from</td></tr><tr><td style="white-space:nowrap">Izr0L8qbpax<a name="dhis2-data-elements-cs-Izr0L8qbpax"> </a></td><td>ANC - ANC.B10. LLINs provided</td><td>ANC - ANC.B10. LLINs provided</td></tr><tr><td style="white-space:nowrap">C04Rrelub1N<a name="dhis2-data-elements-cs-C04Rrelub1N"> </a></td><td>ANC - ANC.B10. Counselling conducted on syphilis</td><td>ANC - ANC.B10. Counselling conducted on syphilis</td></tr><tr><td style="white-space:nowrap">HBFvfu6dT1k<a name="dhis2-data-elements-cs-HBFvfu6dT1k"> </a></td><td>ANC - AN27c. Male Partner syphilis treatment provided</td><td>ANC - AN27c. Male Partner syphilis treatment provided</td></tr><tr><td style="white-space:nowrap">V90TnwOPzNm<a name="dhis2-data-elements-cs-V90TnwOPzNm"> </a></td><td>ANC - ANC.B10. Counselling on malaria prevention</td><td>ANC - ANC.B10. Counselling on malaria prevention</td></tr><tr><td style="white-space:nowrap">G1smYf2TE5w<a name="dhis2-data-elements-cs-G1smYf2TE5w"> </a></td><td>ANC - ANC.B11. Referred to higher level clinic on indication</td><td>ANC - ANC.B11. Referred to higher level clinic on indication</td></tr><tr><td style="white-space:nowrap">KjLdMpXvJNm<a name="dhis2-data-elements-cs-KjLdMpXvJNm"> </a></td><td>ANC - ANC.B8. Gestational age at todays visit_CAT</td><td>ANC - ANC.B8. Gestational age at todays visit_CAT</td></tr><tr><td style="white-space:nowrap">VIEg1M2z5Vs<a name="dhis2-data-elements-cs-VIEg1M2z5Vs"> </a></td><td>ANC - ANC.End1. Pregnancy outcome</td><td>ANC - ANC.End1. Pregnancy outcome</td></tr><tr><td style="white-space:nowrap">CfVBzICA1og<a name="dhis2-data-elements-cs-CfVBzICA1og"> </a></td><td>ANC - ANC.BD. Term or Preterm</td><td>ANC - ANC.BD. Term or Preterm</td></tr><tr><td style="white-space:nowrap">DfHmC0s6JqV<a name="dhis2-data-elements-cs-DfHmC0s6JqV"> </a></td><td>ANC - ANC.BD-Date and time of admission</td><td>ANC - ANC.BD-Date and time of admission</td></tr><tr><td style="white-space:nowrap">zvJl9DSRNl7<a name="dhis2-data-elements-cs-zvJl9DSRNl7"> </a></td><td>ANC - ANC.BD Single or Multiple Specify number</td><td>ANC - ANC.BD Single or Multiple Specify number</td></tr><tr><td style="white-space:nowrap">h2xGlXziLV6<a name="dhis2-data-elements-cs-h2xGlXziLV6"> </a></td><td>ANC - BD-Gestation of delivery (weeks)</td><td>ANC - BD-Gestation of delivery (weeks)</td></tr><tr><td style="white-space:nowrap">elQef67mAgb<a name="dhis2-data-elements-cs-elQef67mAgb"> </a></td><td>ANC - ANC.BD-Mode of delivery</td><td>ANC - ANC.BD-Mode of delivery</td></tr><tr><td style="white-space:nowrap">cCDntJeM21e<a name="dhis2-data-elements-cs-cCDntJeM21e"> </a></td><td>ANC - ANC.BD-Sex of child</td><td>ANC - ANC.BD-Sex of child</td></tr><tr><td style="white-space:nowrap">G38Z5FR4sv7<a name="dhis2-data-elements-cs-G38Z5FR4sv7"> </a></td><td>ANC - ANC.BD-Date and time of birth (Child)</td><td>ANC - ANC.BD-Date and time of birth (Child)</td></tr><tr><td style="white-space:nowrap">quFsdF0GLrm<a name="dhis2-data-elements-cs-quFsdF0GLrm"> </a></td><td>ANC - ANC.BD Weight at birth</td><td>ANC - ANC.BD Weight at birth</td></tr><tr><td style="white-space:nowrap">Gk5vKpilJJq<a name="dhis2-data-elements-cs-Gk5vKpilJJq"> </a></td><td>ANC - ANC.BD Child vital status</td><td>ANC - ANC.BD Child vital status</td></tr><tr><td style="white-space:nowrap">dxH6wzY9ll4<a name="dhis2-data-elements-cs-dxH6wzY9ll4"> </a></td><td>ANC - ANC.BD ARV Rx for Mothers (by type)</td><td>ANC - ANC.BD ARV Rx for Mothers (by type)</td></tr><tr><td style="white-space:nowrap">dSeYEled4tX<a name="dhis2-data-elements-cs-dSeYEled4tX"> </a></td><td>ANC - ANC.BD Obst/prolg labour</td><td>ANC - ANC.BD Obst/prolg labour</td></tr><tr><td style="white-space:nowrap">z2YaIoUs5eV<a name="dhis2-data-elements-cs-z2YaIoUs5eV"> </a></td><td>ANC - ANC.BD Hysterectomy </td><td>ANC - ANC.BD Hysterectomy </td></tr><tr><td style="white-space:nowrap">sYgW1IM4Gn5<a name="dhis2-data-elements-cs-sYgW1IM4Gn5"> </a></td><td>ANC - ANC.BD Managed</td><td>ANC - ANC.BD Managed</td></tr><tr><td style="white-space:nowrap">c975NCuATNP<a name="dhis2-data-elements-cs-c975NCuATNP"> </a></td><td>ANC - ANC.BD PROM/Sepsis</td><td>ANC - ANC.BD PROM/Sepsis</td></tr><tr><td style="white-space:nowrap">tQ4Sv6kQks9<a name="dhis2-data-elements-cs-tQ4Sv6kQks9"> </a></td><td>ANC - ANC.BD Referred</td><td>ANC - ANC.BD Referred</td></tr><tr><td style="white-space:nowrap">hGXAH0H7oKs<a name="dhis2-data-elements-cs-hGXAH0H7oKs"> </a></td><td>ANC - ANC.BD Repaired</td><td>ANC - ANC.BD Repaired</td></tr><tr><td style="white-space:nowrap">ROgwm1UaUjW<a name="dhis2-data-elements-cs-ROgwm1UaUjW"> </a></td><td>ANC - AND.BD-Other Reason for Pregnancy Outcome</td><td>ANC - AND.BD-Other Reason for Pregnancy Outcome</td></tr><tr><td style="white-space:nowrap">JrSzUmBfKnO<a name="dhis2-data-elements-cs-JrSzUmBfKnO"> </a></td><td>ANC - ANC.BD Eclampsia postpartum hemorrhage </td><td>ANC - ANC.BD Eclampsia postpartum hemorrhage </td></tr><tr><td style="white-space:nowrap">Mv4z2Sd5s8E<a name="dhis2-data-elements-cs-Mv4z2Sd5s8E"> </a></td><td>ANC - ANC.BD Ruptured Ux</td><td>ANC - ANC.BD Ruptured Ux</td></tr><tr><td style="white-space:nowrap">fvnZ3zRQUdQ<a name="dhis2-data-elements-cs-fvnZ3zRQUdQ"> </a></td><td>ANC - ANC.BD Eclampsia antepartum hemorrhage </td><td>ANC - ANC.BD Eclampsia antepartum hemorrhage </td></tr><tr><td style="white-space:nowrap">KQ34Vol6R3J<a name="dhis2-data-elements-cs-KQ34Vol6R3J"> </a></td><td>ANC - ANC.BD 0PV Vaccine</td><td>ANC - ANC.BD 0PV Vaccine</td></tr><tr><td style="white-space:nowrap">U58bt6XckRq<a name="dhis2-data-elements-cs-U58bt6XckRq"> </a></td><td>ANC - ANC.BD ARV Px for New Born (By type, HIV)</td><td>ANC - ANC.BD ARV Px for New Born (By type, HIV)</td></tr><tr><td style="white-space:nowrap">p7e9CE7Hc0t<a name="dhis2-data-elements-cs-p7e9CE7Hc0t"> </a></td><td>ANC - ANC.BD Apgar Score</td><td>ANC - ANC.BD Apgar Score</td></tr><tr><td style="white-space:nowrap">oMjZ429k9Fd<a name="dhis2-data-elements-cs-oMjZ429k9Fd"> </a></td><td>ANC - ANC.BD BCG Vaccine</td><td>ANC - ANC.BD BCG Vaccine</td></tr><tr><td style="white-space:nowrap">lWDnMWYvjm8<a name="dhis2-data-elements-cs-lWDnMWYvjm8"> </a></td><td>ANC - ANC.BD Feeding option</td><td>ANC - ANC.BD Feeding option</td></tr><tr><td style="white-space:nowrap">qw4RPXf7cvO<a name="dhis2-data-elements-cs-qw4RPXf7cvO"> </a></td><td>ANC - ANC.BD HBV birth dose</td><td>ANC - ANC.BD HBV birth dose</td></tr><tr><td style="white-space:nowrap">GIdnxfQDAFp<a name="dhis2-data-elements-cs-GIdnxfQDAFp"> </a></td><td>ANC - ANC.BD Placenta</td><td>ANC - ANC.BD Placenta</td></tr><tr><td style="white-space:nowrap">IdElg7sFPAN<a name="dhis2-data-elements-cs-IdElg7sFPAN"> </a></td><td>ANC - ANC.BD Single or Multiple</td><td>ANC - ANC.BD Single or Multiple</td></tr><tr><td style="white-space:nowrap">x5AQxjEagnn<a name="dhis2-data-elements-cs-x5AQxjEagnn"> </a></td><td>ANC - ANC.BD Skin to Skin contact</td><td>ANC - ANC.BD Skin to Skin contact</td></tr><tr><td style="white-space:nowrap">iAZ4RM1pdpk<a name="dhis2-data-elements-cs-iAZ4RM1pdpk"> </a></td><td>ANC - ANC.BD TTC</td><td>ANC - ANC.BD TTC</td></tr><tr><td style="white-space:nowrap">dC098c6csBv<a name="dhis2-data-elements-cs-dC098c6csBv"> </a></td><td>ANC - ANC.BD Vit K</td><td>ANC - ANC.BD Vit K</td></tr><tr><td style="white-space:nowrap">i5LaKr2e845<a name="dhis2-data-elements-cs-i5LaKr2e845"> </a></td><td>ANC - ANC.BD length at birth</td><td>ANC - ANC.BD length at birth</td></tr><tr><td style="white-space:nowrap">Og2D0fsxko1<a name="dhis2-data-elements-cs-Og2D0fsxko1"> </a></td><td>ANC - ANC.BD-Delivered by (Name)</td><td>ANC - ANC.BD-Delivered by (Name)</td></tr><tr><td style="white-space:nowrap">QtETpPKw3Sa<a name="dhis2-data-elements-cs-QtETpPKw3Sa"> </a></td><td>ANC - ANC.BD-Delivered by (Signature)</td><td>ANC - ANC.BD-Delivered by (Signature)</td></tr><tr><td style="white-space:nowrap">af54ISxXZEB<a name="dhis2-data-elements-cs-af54ISxXZEB"> </a></td><td>ANC - ANC.BD Still Birth</td><td>ANC - ANC.BD Still Birth</td></tr><tr><td style="white-space:nowrap">Vyok96daapr<a name="dhis2-data-elements-cs-Vyok96daapr"> </a></td><td>ANC - OUT_POST - Date of postpartum care </td><td>ANC - OUT_POST - Date of postpartum care </td></tr><tr><td style="white-space:nowrap">iySWXP9NB26<a name="dhis2-data-elements-cs-iySWXP9NB26"> </a></td><td>ANC - OUT_POST - Blood pressure</td><td>ANC - OUT_POST - Blood pressure</td></tr><tr><td style="white-space:nowrap">jBAsZaO4oEt<a name="dhis2-data-elements-cs-jBAsZaO4oEt"> </a></td><td>ANC - OUT_POST - Temperature</td><td>ANC - OUT_POST - Temperature</td></tr><tr><td style="white-space:nowrap">YSVwVatx6JR<a name="dhis2-data-elements-cs-YSVwVatx6JR"> </a></td><td>ANC - OUT_POST - Pulse Rate</td><td>ANC - OUT_POST - Pulse Rate</td></tr><tr><td style="white-space:nowrap">u4E2vVGtxc5<a name="dhis2-data-elements-cs-u4E2vVGtxc5"> </a></td><td>ANC - OUT_POST -  PPH</td><td>ANC - OUT_POST -  PPH</td></tr><tr><td style="white-space:nowrap">Q2iOrrIs8RO<a name="dhis2-data-elements-cs-Q2iOrrIs8RO"> </a></td><td>ANC - OUT_POST - Dribbling/leaking urine </td><td>ANC - OUT_POST - Dribbling/leaking urine </td></tr><tr><td style="white-space:nowrap">dNdQy42gyNN<a name="dhis2-data-elements-cs-dNdQy42gyNN"> </a></td><td>ANC - OUT_POST - Anemia</td><td>ANC - OUT_POST - Anemia</td></tr><tr><td style="white-space:nowrap">ONFttMEHeed<a name="dhis2-data-elements-cs-ONFttMEHeed"> </a></td><td>ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery</td><td>ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery</td></tr><tr><td style="white-space:nowrap">wVsbNnQVjuX<a name="dhis2-data-elements-cs-wVsbNnQVjuX"> </a></td><td>ANC - OUT_POST - Pelvic exam </td><td>ANC - OUT_POST - Pelvic exam </td></tr><tr><td style="white-space:nowrap">xqC5R16ID4N<a name="dhis2-data-elements-cs-xqC5R16ID4N"> </a></td><td>ANC - OUT_POST - Breast exam </td><td>ANC - OUT_POST - Breast exam </td></tr><tr><td style="white-space:nowrap">oOENq0HVqnV<a name="dhis2-data-elements-cs-oOENq0HVqnV"> </a></td><td>ANC - OUT_POST - Iron &amp;amp; Folic Acid (IFA) supplementation</td><td>ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation</td></tr><tr><td style="white-space:nowrap">dDD0M9NxRiE<a name="dhis2-data-elements-cs-dDD0M9NxRiE"> </a></td><td>ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given</td><td>ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given</td></tr><tr><td style="white-space:nowrap">N9NypL64c5O<a name="dhis2-data-elements-cs-N9NypL64c5O"> </a></td><td>ANC - OUT_POST - Baby breathing</td><td>ANC - OUT_POST - Baby breathing</td></tr><tr><td style="white-space:nowrap">c1M2JMkm3En<a name="dhis2-data-elements-cs-c1M2JMkm3En"> </a></td><td>ANC - OUT_POST - Baby breastfeeding</td><td>ANC - OUT_POST - Baby breastfeeding</td></tr><tr><td style="white-space:nowrap">bNwTnOIQpxB<a name="dhis2-data-elements-cs-bNwTnOIQpxB"> </a></td><td>ANC - OUT_POST - Baby wt (gm)</td><td>ANC - OUT_POST - Baby wt (gm)</td></tr><tr><td style="white-space:nowrap">UE5eXlAess0<a name="dhis2-data-elements-cs-UE5eXlAess0"> </a></td><td>ANC - OUT_POST -  Immunization</td><td>ANC - OUT_POST -  Immunization</td></tr><tr><td style="white-space:nowrap">TFOKxMR2T5A<a name="dhis2-data-elements-cs-TFOKxMR2T5A"> </a></td><td>ANC - OUT_POST -  HIV tested (Y/N)</td><td>ANC - OUT_POST -  HIV tested (Y/N)</td></tr><tr><td style="white-space:nowrap">V6LHFJ2Kv9l<a name="dhis2-data-elements-cs-V6LHFJ2Kv9l"> </a></td><td>ANC - OUT_POST -  HIV test result</td><td>ANC - OUT_POST -  HIV test result</td></tr><tr><td style="white-space:nowrap">mSjUMNDx0Z2<a name="dhis2-data-elements-cs-mSjUMNDx0Z2"> </a></td><td>ANC - OUT_POST - ARV Rx for mother (By type)</td><td>ANC - OUT_POST - ARV Rx for mother (By type)</td></tr><tr><td style="white-space:nowrap">TlkMcrKmlIa<a name="dhis2-data-elements-cs-TlkMcrKmlIa"> </a></td><td>ANC - OUT_POST - ARV PX</td><td>ANC - OUT_POST - ARV PX</td></tr><tr><td style="white-space:nowrap">OpRMziOVS8e<a name="dhis2-data-elements-cs-OpRMziOVS8e"> </a></td><td>ANC - OUT_POST -  Feeding option: EBF/ERF</td><td>ANC - OUT_POST -  Feeding option: EBF/ERF</td></tr><tr><td style="white-space:nowrap">ghEssGDk4nx<a name="dhis2-data-elements-cs-ghEssGDk4nx"> </a></td><td>ANC - OUT_POST - Newborn referred to chronic HIV infant care </td><td>ANC - OUT_POST - Newborn referred to chronic HIV infant care </td></tr><tr><td style="white-space:nowrap">YeXm1Vvny9O<a name="dhis2-data-elements-cs-YeXm1Vvny9O"> </a></td><td>ANC - OUT_POST - FP counseled and provided (by method)</td><td>ANC - OUT_POST - FP counseled and provided (by method)</td></tr><tr><td style="white-space:nowrap">KcFAQvkTXrW<a name="dhis2-data-elements-cs-KcFAQvkTXrW"> </a></td><td>ANC - OUT_POST - Actions taken</td><td>ANC - OUT_POST - Actions taken</td></tr><tr><td style="white-space:nowrap">eCoVjkdihM9<a name="dhis2-data-elements-cs-eCoVjkdihM9"> </a></td><td>ANC - OUT_Post - Type of Stay</td><td>ANC - OUT_Post - Type of Stay</td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+  <version value="0.1.0"/>
+  <name value="Dhis2DataElementsCS"/>
+  <title value="DHIS2 Data Elements"/>
+  <status value="draft"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <description value="Code system for 315 unique DHIS2 data elements from all selected programs"/>
+  <content value="complete"/>
+  <count value="315"/>
+  <concept>
+    <code value="w1XaGkyql1u"/>
+    <display value="ANC - ANC.B6. Alcohol"/>
+    <definition value="ANC - ANC.B6. Alcohol"/>
+  </concept>
+  <concept>
+    <code value="xSKiFlohuQd"/>
+    <display value="ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)"/>
+    <definition value="ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)"/>
+  </concept>
+  <concept>
+    <code value="cCp43HMY3br"/>
+    <display value="ANC - ANC.B6. Diabetes"/>
+    <definition value="ANC - ANC.B6. Diabetes"/>
+  </concept>
+  <concept>
+    <code value="oeojmvdEY9S"/>
+    <display value="ANC - ANC.B6. Eclampsia/Convulsions"/>
+    <definition value="ANC - ANC.B6. Eclampsia/Convulsions"/>
+  </concept>
+  <concept>
+    <code value="Ru01omP2WCQ"/>
+    <display value="ANC - ANC.B6. Expected date of delivery (EDD)"/>
+    <definition value="ANC - ANC.B6. Expected date of delivery (EDD)"/>
+  </concept>
+  <concept>
+    <code value="w9p8MQDRyMr"/>
+    <display value="ANC - ANC.B6. Gestational age"/>
+    <definition value="ANC - ANC.B6. Gestational age"/>
+  </concept>
+  <concept>
+    <code value="XhGh2s0tPTr"/>
+    <display value="ANC - ANC History of big baby delivery ( &amp;gt; 4 kg)"/>
+    <definition value="ANC - ANC History of big baby delivery ( &gt; 4 kg)"/>
+  </concept>
+  <concept>
+    <code value="lYE2KzWQGkW"/>
+    <display value="ANC - ANC.B6. HIV status profile"/>
+    <definition value="ANC - ANC.B6. HIV status profile"/>
+  </concept>
+  <concept>
+    <code value="iboAokLxCIh"/>
+    <display value="ANC - ANC Myomectomy"/>
+    <definition value="ANC - ANC Myomectomy"/>
+  </concept>
+  <concept>
+    <code value="QqTuhQQgpcp"/>
+    <display value="ANC - ANC.B6. Hypertension"/>
+    <definition value="ANC - ANC.B6. Hypertension"/>
+  </concept>
+  <concept>
+    <code value="fuEUJqslhPb"/>
+    <display value="ANC - ANC Cardiac condition"/>
+    <definition value="ANC - ANC Cardiac condition"/>
+  </concept>
+  <concept>
+    <code value="KPN571DvV4D"/>
+    <display value="ANC - ANC.B6. Kidney disease (Chronic Renal Failure)"/>
+    <definition value="ANC - ANC.B6. Kidney disease (Chronic Renal Failure)"/>
+  </concept>
+  <concept>
+    <code value="w4ky6EkVahL"/>
+    <display value="ANC - ANC.B6. Last normal menstrual period (LNMP) date"/>
+    <definition value="ANC - ANC.B6. Last normal menstrual period (LNMP) date"/>
+  </concept>
+  <concept>
+    <code value="joirdYETe8d"/>
+    <display value="ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date"/>
+    <definition value="ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date"/>
+  </concept>
+  <concept>
+    <code value="l7Jh3IoeEIa"/>
+    <display value="ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)"/>
+    <definition value="ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)"/>
+  </concept>
+  <concept>
+    <code value="I7dvwZGNgE8"/>
+    <display value="ANC - ANC.B6. Para"/>
+    <definition value="ANC - ANC.B6. Para"/>
+  </concept>
+  <concept>
+    <code value="PuiTfPfSf86"/>
+    <display value="ANC - ANC.B6. Number of pregnancies (gravida)"/>
+    <definition value="ANC - ANC.B6. Number of pregnancies (gravida)"/>
+  </concept>
+  <concept>
+    <code value="Juv31inY35a"/>
+    <display value="ANC - ANC.B6 Ultrasound GA"/>
+    <definition value="ANC - ANC.B6 Ultrasound GA"/>
+  </concept>
+  <concept>
+    <code value="DPZ6kIgtiIA"/>
+    <display value="ANC - ANC.B6. No alcohol and/or substances"/>
+    <definition value="ANC - ANC.B6. No alcohol and/or substances"/>
+  </concept>
+  <concept>
+    <code value="snqxJUEWgkb"/>
+    <display value="ANC - ANC.B6. No chronic or past health conditions"/>
+    <definition value="ANC - ANC.B6. No chronic or past health conditions"/>
+  </concept>
+  <concept>
+    <code value="V16g2TRV7MB"/>
+    <display value="ANC - ANC.B6. No known allergies"/>
+    <definition value="ANC - ANC.B6. No known allergies"/>
+  </concept>
+  <concept>
+    <code value="DSAooZSxopi"/>
+    <display value="ANC - ANC.B6. No known past surgeries"/>
+    <definition value="ANC - ANC.B6. No known past surgeries"/>
+  </concept>
+  <concept>
+    <code value="hpXvhGzaVld"/>
+    <display value="ANC - ANC.B6. No medications"/>
+    <definition value="ANC - ANC.B6. No medications"/>
+  </concept>
+  <concept>
+    <code value="GWxtXap1Guk"/>
+    <display value="ANC - ANC.B6. No past pregnancy complications"/>
+    <definition value="ANC - ANC.B6. No past pregnancy complications"/>
+  </concept>
+  <concept>
+    <code value="j3lxVBnaXmy"/>
+    <display value="ANC - ANC.B6. Number of caesarean sections"/>
+    <definition value="ANC - ANC.B6. Number of caesarean sections"/>
+  </concept>
+  <concept>
+    <code value="p4e5Y0GQIxv"/>
+    <display value="ANC - ANC.B6. Number of abortions"/>
+    <definition value="ANC - ANC.B6. Number of abortions"/>
+  </concept>
+  <concept>
+    <code value="fpPtP8xrU1s"/>
+    <display value="ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)"/>
+    <definition value="ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)"/>
+  </concept>
+  <concept>
+    <code value="vpxAELVdkqn"/>
+    <display value="ANC - ANC.B6. Other allergies (specify)"/>
+    <definition value="ANC - ANC.B6. Other allergies (specify)"/>
+  </concept>
+  <concept>
+    <code value="hz94MekJLYe"/>
+    <display value="ANC - ANC.B6. Other gynecological procedures (specify)"/>
+    <definition value="ANC - ANC.B6. Other gynecological procedures (specify)"/>
+  </concept>
+  <concept>
+    <code value="kyOjlg4co4z"/>
+    <display value="ANC - ANC.B6. Medications (specify)"/>
+    <definition value="ANC - ANC.B6. Medications (specify)"/>
+  </concept>
+  <concept>
+    <code value="rF7OJIP7fhp"/>
+    <display value="ANC - ANC.B6. Other past pregnancy problems (specify)"/>
+    <definition value="ANC - ANC.B6. Other past pregnancy problems (specify)"/>
+  </concept>
+  <concept>
+    <code value="lbmrnYizavt"/>
+    <display value="ANC - ANC.B6. Other (specify)"/>
+    <definition value="ANC - ANC.B6. Other (specify)"/>
+  </concept>
+  <concept>
+    <code value="UZ6Re4zVePj"/>
+    <display value="ANC - ANC.B6. Other substance use (specify)"/>
+    <definition value="ANC - ANC.B6. Other substance use (specify)"/>
+  </concept>
+  <concept>
+    <code value="S6O8strHi1p"/>
+    <display value="ANC - ANC.B6. Other surgeries (specify)"/>
+    <definition value="ANC - ANC.B6. Other surgeries (specify)"/>
+  </concept>
+  <concept>
+    <code value="TGcfgzv8mQA"/>
+    <display value="ANC - ANC.B6. Pre-eclampsia"/>
+    <definition value="ANC - ANC.B6. Pre-eclampsia"/>
+  </concept>
+  <concept>
+    <code value="RPSgZF1i0hk"/>
+    <display value="ANC - ANC.B6. Source of gestational age"/>
+    <definition value="ANC - ANC.B6. Source of gestational age"/>
+  </concept>
+  <concept>
+    <code value="HvfStK1Mfo5"/>
+    <display value="ANC - ANC.B6. Tobacco use"/>
+    <definition value="ANC - ANC.B6. Tobacco use"/>
+  </concept>
+  <concept>
+    <code value="PrDdlt8U65H"/>
+    <display value="ANC - ANC.B6. Ultrasound date"/>
+    <definition value="ANC - ANC.B6. Ultrasound date"/>
+  </concept>
+  <concept>
+    <code value="YKXci7Sm0Zq"/>
+    <display value="ANC.B6. Clinically estimated gestational age"/>
+    <definition value="ANC.B6. Clinically estimated gestational age"/>
+  </concept>
+  <concept>
+    <code value="TcOkQ8Qqmlt"/>
+    <display value="ANC - ANC.B8. Height"/>
+    <definition value="ANC - ANC.B8. Height"/>
+  </concept>
+  <concept>
+    <code value="kFwQfziJLEt"/>
+    <display value="ANC - ANC.B8. Pre-gestational weight"/>
+    <definition value="ANC - ANC.B8. Pre-gestational weight"/>
+  </concept>
+  <concept>
+    <code value="UZnz5QLRvcr"/>
+    <display value="ANC - ANC.B8. BMI"/>
+    <definition value="ANC - ANC.B8. BMI"/>
+  </concept>
+  <concept>
+    <code value="UsYtsHtuvwQ"/>
+    <display value="ANC - ANC.B8. Weight category"/>
+    <definition value="ANC - ANC.B8. Weight category"/>
+  </concept>
+  <concept>
+    <code value="bzupYCgg4m6"/>
+    <display value="ANC - ANC.B8a. Review and confirm computed BMI"/>
+    <definition value="ANC - ANC.B8a. Review and confirm computed BMI"/>
+  </concept>
+  <concept>
+    <code value="ztZwHRN9iPM"/>
+    <display value="ANC - ANC.B8. Expected weight gain"/>
+    <definition value="ANC - ANC.B8. Expected weight gain"/>
+  </concept>
+  <concept>
+    <code value="L6Toy2TrHHq"/>
+    <display value="ANC - ANC.B8. Body temperature"/>
+    <definition value="ANC - ANC.B8. Body temperature"/>
+  </concept>
+  <concept>
+    <code value="dyYdfamSY2Z"/>
+    <display value="ANC - ANC.B8. Diastolic blood pressure"/>
+    <definition value="ANC - ANC.B8. Diastolic blood pressure"/>
+  </concept>
+  <concept>
+    <code value="c6Cg8KgNu77"/>
+    <display value="ANC - ANC.B8. Fetal heartbeat present"/>
+    <definition value="ANC - ANC.B8. Fetal heartbeat present"/>
+  </concept>
+  <concept>
+    <code value="cY03odVgQqq"/>
+    <display value="ANC - ANC.B8. Fetal heart rate"/>
+    <definition value="ANC - ANC.B8. Fetal heart rate"/>
+  </concept>
+  <concept>
+    <code value="vPdXnmGWzfy"/>
+    <display value="ANC - ANC.B8. Fetal presentation"/>
+    <definition value="ANC - ANC.B8. Fetal presentation"/>
+  </concept>
+  <concept>
+    <code value="rC2RDuM8wb2"/>
+    <display value="ANC - ANC.B8. Oedema Leg swelling"/>
+    <definition value="ANC - ANC.B8. Oedema Leg swelling"/>
+  </concept>
+  <concept>
+    <code value="YrtUVQtPngs"/>
+    <display value="ANC - ANC.B8. Symptoms of severe pre-eclampsia present"/>
+    <definition value="ANC - ANC.B8. Symptoms of severe pre-eclampsia present"/>
+  </concept>
+  <concept>
+    <code value="PN6HcGjTraL"/>
+    <display value="ANC - ANC.B8. Number of fetuses"/>
+    <definition value="ANC - ANC.B8. Number of fetuses"/>
+  </concept>
+  <concept>
+    <code value="jETdi1M2DY9"/>
+    <display value="ANC - ANC.B8. Oedema of the hands and feet"/>
+    <definition value="ANC - ANC.B8. Oedema of the hands and feet"/>
+  </concept>
+  <concept>
+    <code value="ULV28awvMXH"/>
+    <display value="ANC - ANC.B8. Oedema present"/>
+    <definition value="ANC - ANC.B8. Oedema present"/>
+  </concept>
+  <concept>
+    <code value="SrpLUqMjW97"/>
+    <display value="ANC - ANC.B8. Oedema severity"/>
+    <definition value="ANC - ANC.B8. Oedema severity"/>
+  </concept>
+  <concept>
+    <code value="EyfTU3ibMmJ"/>
+    <display value="ANC - ANC.B8. Pallor present"/>
+    <definition value="ANC - ANC.B8. Pallor present"/>
+  </concept>
+  <concept>
+    <code value="Q3s82wdeOZg"/>
+    <display value="ANC - ANC.B8. Pelvic exam result (visual)"/>
+    <definition value="ANC - ANC.B8. Pelvic exam result (visual)"/>
+  </concept>
+  <concept>
+    <code value="kNrTQqC1bgg"/>
+    <display value="ANC - ANC.B8. Pitting ankle oedema"/>
+    <definition value="ANC - ANC.B8. Pitting ankle oedema"/>
+  </concept>
+  <concept>
+    <code value="yQyFSrY3S0q"/>
+    <display value="ANC - ANC.B8. Pitting lower back oedema"/>
+    <definition value="ANC - ANC.B8. Pitting lower back oedema"/>
+  </concept>
+  <concept>
+    <code value="C47wV4EBLaS"/>
+    <display value="ANC - ANC.B8. Pulse rate"/>
+    <definition value="ANC - ANC.B8. Pulse rate"/>
+  </concept>
+  <concept>
+    <code value="MqZDsOZm4yD"/>
+    <display value="ANC - ANC.B8. Repeat diastolic blood pressure"/>
+    <definition value="ANC - ANC.B8. Repeat diastolic blood pressure"/>
+  </concept>
+  <concept>
+    <code value="ZkCYYlI4xe7"/>
+    <display value="ANC - ANC.B8. Repeat systolic blood pressure"/>
+    <definition value="ANC - ANC.B8. Repeat systolic blood pressure"/>
+  </concept>
+  <concept>
+    <code value="fjZ4KQpS1QS"/>
+    <display value="ANC - ANC.B8. Symphysis-fundal height (SFH)"/>
+    <definition value="ANC - ANC.B8. Symphysis-fundal height (SFH)"/>
+  </concept>
+  <concept>
+    <code value="M4HEOoEFTAT"/>
+    <display value="ANC - ANC.B8. Systolic blood pressure"/>
+    <definition value="ANC - ANC.B8. Systolic blood pressure"/>
+  </concept>
+  <concept>
+    <code value="VEFV1QayfzE"/>
+    <display value="ANC - ANC.B8. Signs/conditions for GBV"/>
+    <definition value="ANC - ANC.B8. Signs/conditions for GBV"/>
+  </concept>
+  <concept>
+    <code value="d8vfOWb6SPd"/>
+    <display value="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"/>
+    <definition value="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"/>
+  </concept>
+  <concept>
+    <code value="vMVLu4hlDqx"/>
+    <display value="ANC - Previous scar 1"/>
+    <definition value="ANC - Previous scar 1"/>
+  </concept>
+  <concept>
+    <code value="tsaVZFUAgkD"/>
+    <display value="ANC - ANC.B8. Other fetal presentation (specify)"/>
+    <definition value="ANC - ANC.B8. Other fetal presentation (specify)"/>
+  </concept>
+  <concept>
+    <code value="fDdSgAwUbtS"/>
+    <display value="ANC - Previous scar year 1"/>
+    <definition value="ANC - Previous scar year 1"/>
+  </concept>
+  <concept>
+    <code value="UAwQzN7SMAi"/>
+    <display value="ANC - Previous Scar Indication 1"/>
+    <definition value="ANC - Previous Scar Indication 1"/>
+  </concept>
+  <concept>
+    <code value="nN3JSNtFAo8"/>
+    <display value="ANC - Previous scar 2"/>
+    <definition value="ANC - Previous scar 2"/>
+  </concept>
+  <concept>
+    <code value="b3qArrNwpz0"/>
+    <display value="ANC - Previous scar year 2"/>
+    <definition value="ANC - Previous scar year 2"/>
+  </concept>
+  <concept>
+    <code value="wha8HRwqFtD"/>
+    <display value="ANC - Previous Scar Indication 2"/>
+    <definition value="ANC - Previous Scar Indication 2"/>
+  </concept>
+  <concept>
+    <code value="hITbUr6ufTz"/>
+    <display value="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks"/>
+    <definition value="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks"/>
+  </concept>
+  <concept>
+    <code value="a7gTKszpdVp"/>
+    <display value="ANC - Previous scar 3"/>
+    <definition value="ANC - Previous scar 3"/>
+  </concept>
+  <concept>
+    <code value="WBBaer7NTFJ"/>
+    <display value="ANC - ANC.B7. Hospitalisation for what"/>
+    <definition value="ANC - ANC.B7. Hospitalisation for what"/>
+  </concept>
+  <concept>
+    <code value="LSIsLB6epXX"/>
+    <display value="ANC - Previous scar year 3"/>
+    <definition value="ANC - Previous scar year 3"/>
+  </concept>
+  <concept>
+    <code value="ydqILDGfoRp"/>
+    <display value="ANC - ANC.B8. MUAC"/>
+    <definition value="ANC - ANC.B8. MUAC"/>
+  </concept>
+  <concept>
+    <code value="ytarRo3GlhD"/>
+    <display value="ANC - Previous Scar Indication 3"/>
+    <definition value="ANC - Previous Scar Indication 3"/>
+  </concept>
+  <concept>
+    <code value="EFKE1hMUpkM"/>
+    <display value="ANC - Previous scar 4"/>
+    <definition value="ANC - Previous scar 4"/>
+  </concept>
+  <concept>
+    <code value="jhv8rdTd1sf"/>
+    <display value="ANC - ANC.B8. MUAC Color code"/>
+    <definition value="ANC - ANC.B8. MUAC Color code"/>
+  </concept>
+  <concept>
+    <code value="PIIZ3ngYzxf"/>
+    <display value="ANC - Previous scar year 4"/>
+    <definition value="ANC - Previous scar year 4"/>
+  </concept>
+  <concept>
+    <code value="N2MadZlBXiJ"/>
+    <display value="ANC - ANC.B8. Nutritional status"/>
+    <definition value="ANC - ANC.B8. Nutritional status"/>
+  </concept>
+  <concept>
+    <code value="gnZ35nEqJmI"/>
+    <display value="ANC - ANC.B8. Relation presenting part"/>
+    <definition value="ANC - ANC.B8. Relation presenting part"/>
+  </concept>
+  <concept>
+    <code value="xZ2QZYotcKT"/>
+    <display value="ANC - Previous Scar Indication 4"/>
+    <definition value="ANC - Previous Scar Indication 4"/>
+  </concept>
+  <concept>
+    <code value="zZzZazs1DGi"/>
+    <display value="ANC - ANC.B7. Experiencing Contractions"/>
+    <definition value="ANC - ANC.B7. Experiencing Contractions"/>
+  </concept>
+  <concept>
+    <code value="eF3VGluAlcm"/>
+    <display value="ANC - ANC.B7. Experiencing Fever"/>
+    <definition value="ANC - ANC.B7. Experiencing Fever"/>
+  </concept>
+  <concept>
+    <code value="QhijDzMdFNq"/>
+    <display value="ANC - ANC.B7. Experiencing Severe Headache"/>
+    <definition value="ANC - ANC.B7. Experiencing Severe Headache"/>
+  </concept>
+  <concept>
+    <code value="VLcb1WBMTIH"/>
+    <display value="ANC - ANC.B8. Second fetal heart rate"/>
+    <definition value="ANC - ANC.B8. Second fetal heart rate"/>
+  </concept>
+  <concept>
+    <code value="SM7dVOLQD8j"/>
+    <display value="ANC - ANC.B7. Experiencing Vaginal bleeding"/>
+    <definition value="ANC - ANC.B7. Experiencing Vaginal bleeding"/>
+  </concept>
+  <concept>
+    <code value="xa10dHKgRWa"/>
+    <display value="ANC - ANC.B7. Experiencing Excessive Vomiting"/>
+    <definition value="ANC - ANC.B7. Experiencing Excessive Vomiting"/>
+  </concept>
+  <concept>
+    <code value="cPOXL8JV8Ee"/>
+    <display value="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"/>
+    <definition value="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"/>
+  </concept>
+  <concept>
+    <code value="syAvZ78FCls"/>
+    <display value="ANC - ANC.B8. Gestational age at today&amp;#x27;s visit_ANC"/>
+    <definition value="ANC - ANC.B8. Gestational age at today's visit_ANC"/>
+  </concept>
+  <concept>
+    <code value="H90qsZViPcS"/>
+    <display value="ANC - ANC.B8. Current  weight"/>
+    <definition value="ANC - ANC.B8. Current  weight"/>
+  </concept>
+  <concept>
+    <code value="qmgotDEO8YI"/>
+    <display value="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"/>
+    <definition value="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"/>
+  </concept>
+  <concept>
+    <code value="J3ijwQYXVSV"/>
+    <display value="ANC - ANC.B8. Total weight gain (kg)"/>
+    <definition value="ANC - ANC.B8. Total weight gain (kg)"/>
+  </concept>
+  <concept>
+    <code value="WWGGsY8l88G"/>
+    <display value="ANC - ANC.B5. Pain –Other"/>
+    <definition value="ANC - ANC.B5. Pain –Other"/>
+  </concept>
+  <concept>
+    <code value="bXVD2EMF7UW"/>
+    <display value="ANC - ANC Visit Number"/>
+    <definition value="ANC - ANC Visit Number"/>
+  </concept>
+  <concept>
+    <code value="Kyw7NtFeW3B"/>
+    <display value="ANC - ANC.B7. No physiological symptoms"/>
+    <definition value="ANC - ANC.B7. No physiological symptoms"/>
+  </concept>
+  <concept>
+    <code value="KZT7yfzeP08"/>
+    <display value="ANC - ANC.B7. Other current physiological symptoms (specify)"/>
+    <definition value="ANC - ANC.B7. Other current physiological symptoms (specify)"/>
+  </concept>
+  <concept>
+    <code value="xb4Z245Bnej"/>
+    <display value="ANC - ANC.B5. Regular ANC / Scheduled visit?"/>
+    <definition value="ANC - ANC.B5. Regular ANC / Scheduled visit?"/>
+  </concept>
+  <concept>
+    <code value="CORtBqRWjMG"/>
+    <display value="ANC - ANC.B7. Fetal movement"/>
+    <definition value="ANC - ANC.B7. Fetal movement"/>
+  </concept>
+  <concept>
+    <code value="LI3bLtFxT8h"/>
+    <display value="ANC - ANC.B5. Specify health concern"/>
+    <definition value="ANC - ANC.B5. Specify health concern"/>
+  </concept>
+  <concept>
+    <code value="wi3jkKJNjr7"/>
+    <display value="ANC - ANC.B9. Random blood sugar result"/>
+    <definition value="ANC - ANC.B9. Random blood sugar result"/>
+  </concept>
+  <concept>
+    <code value="S3bsJ9ogxeN"/>
+    <display value="ANC - ANC.B9.  Blood haemoglobin test date"/>
+    <definition value="ANC - ANC.B9.  Blood haemoglobin test date"/>
+  </concept>
+  <concept>
+    <code value="eddQQbyYaEv"/>
+    <display value="ANC - ANC.B9.  Blood group"/>
+    <definition value="ANC - ANC.B9.  Blood group"/>
+  </concept>
+  <concept>
+    <code value="Dp1hN6EwLnh"/>
+    <display value="ANC - ANC.B9.  Blood screening test date"/>
+    <definition value="ANC - ANC.B9.  Blood screening test date"/>
+  </concept>
+  <concept>
+    <code value="rEAO5q6BnSJ"/>
+    <display value="ANC - ANC.B9.  Hepatitis B test date"/>
+    <definition value="ANC - ANC.B9.  Hepatitis B test date"/>
+  </concept>
+  <concept>
+    <code value="vDkIpVMAYPU"/>
+    <display value="ANC - ANC.B9.  Hepatitis B test result"/>
+    <definition value="ANC - ANC.B9.  Hepatitis B test result"/>
+  </concept>
+  <concept>
+    <code value="YREFGI3SapQ"/>
+    <display value="ANC - ANC.B9. eMTCT test date"/>
+    <definition value="ANC - ANC.B9. eMTCT test date"/>
+  </concept>
+  <concept>
+    <code value="zo8VyJRKcmi"/>
+    <display value="ANC - ANC.B9.  eMTCT HIV test result"/>
+    <definition value="ANC - ANC.B9.  eMTCT HIV test result"/>
+  </concept>
+  <concept>
+    <code value="liA7cL3lyMp"/>
+    <display value="ANC - ANC.B9.  TB screening incomplete (symptoms only)"/>
+    <definition value="ANC - ANC.B9.  TB screening incomplete (symptoms only)"/>
+  </concept>
+  <concept>
+    <code value="xXuuXz5xfh6"/>
+    <display value="ANC - ANC.B9.  Other test(s) date"/>
+    <definition value="ANC - ANC.B9.  Other test(s) date"/>
+  </concept>
+  <concept>
+    <code value="HjA9hp3NCFA"/>
+    <display value="ANC - ANC.B9.  Other test(s) name"/>
+    <definition value="ANC - ANC.B9.  Other test(s) name"/>
+  </concept>
+  <concept>
+    <code value="UsM907MWnA5"/>
+    <display value="ANC - ANC.B9.   Other test(s) result(s)"/>
+    <definition value="ANC - ANC.B9.   Other test(s) result(s)"/>
+  </concept>
+  <concept>
+    <code value="ox8s78VJC1R"/>
+    <display value="ANC -ANC.B9.  Partner HIV test date"/>
+    <definition value="ANC -ANC.B9.  Partner HIV test date"/>
+  </concept>
+  <concept>
+    <code value="ODqCU8tNjq5"/>
+    <display value="ANC - LAB CD4 results"/>
+    <definition value="ANC - LAB CD4 results"/>
+  </concept>
+  <concept>
+    <code value="ZtpsckiEhGB"/>
+    <display value="ANC - LAB Viral load results"/>
+    <definition value="ANC - LAB Viral load results"/>
+  </concept>
+  <concept>
+    <code value="MhC6OCNIFOZ"/>
+    <display value="ANC - ANC.B9.  Partner HIV test result"/>
+    <definition value="ANC - ANC.B9.  Partner HIV test result"/>
+  </concept>
+  <concept>
+    <code value="OAVexurF9i0"/>
+    <display value="ANC - LAB WHO Clinical stage"/>
+    <definition value="ANC - LAB WHO Clinical stage"/>
+  </concept>
+  <concept>
+    <code value="cBuumo9jGRc"/>
+    <display value="ANC - ANC Platelets"/>
+    <definition value="ANC - ANC Platelets"/>
+  </concept>
+  <concept>
+    <code value="fixliM4mt3T"/>
+    <display value="ANC - ANC LAB Pregnant woman linked to ART"/>
+    <definition value="ANC - ANC LAB Pregnant woman linked to ART"/>
+  </concept>
+  <concept>
+    <code value="SuC9foMX1Ea"/>
+    <display value="ANC - ANC LAB Pregnant woman ART number"/>
+    <definition value="ANC - ANC LAB Pregnant woman ART number"/>
+  </concept>
+  <concept>
+    <code value="Yycea04JKAR"/>
+    <display value="ANC - ANC Lab Pregnant woman ART location"/>
+    <definition value="ANC - ANC Lab Pregnant woman ART location"/>
+  </concept>
+  <concept>
+    <code value="I4OPKBwhGQ0"/>
+    <display value="ANC - ANC LAB Date Viral load sample collected"/>
+    <definition value="ANC - ANC LAB Date Viral load sample collected"/>
+  </concept>
+  <concept>
+    <code value="noAWcXSpCaP"/>
+    <display value="ANC - ANC LAB Date Viral load sample returned"/>
+    <definition value="ANC - ANC LAB Date Viral load sample returned"/>
+  </concept>
+  <concept>
+    <code value="GLFICGeB5Ap"/>
+    <display value="ANC - ANC LAB Viral load status"/>
+    <definition value="ANC - ANC LAB Viral load status"/>
+  </concept>
+  <concept>
+    <code value="D40sUAJilcj"/>
+    <display value="ANC - ANC LAB Date CD4 sample collected"/>
+    <definition value="ANC - ANC LAB Date CD4 sample collected"/>
+  </concept>
+  <concept>
+    <code value="SnHImni1u5k"/>
+    <display value="ANC - LAB Symptoms of complicated malaria"/>
+    <definition value="ANC - LAB Symptoms of complicated malaria"/>
+  </concept>
+  <concept>
+    <code value="xem63QqjPNK"/>
+    <display value="ANC - ANC LAB Date CD4 sample returned"/>
+    <definition value="ANC - ANC LAB Date CD4 sample returned"/>
+  </concept>
+  <concept>
+    <code value="p6wWb8I2jyo"/>
+    <display value="ANC - ANC.B9.  Rh factor"/>
+    <definition value="ANC - ANC.B9.  Rh factor"/>
+  </concept>
+  <concept>
+    <code value="XST9vCca14R"/>
+    <display value="ANC - ANC.B9.  Syphilis test date"/>
+    <definition value="ANC - ANC.B9.  Syphilis test date"/>
+  </concept>
+  <concept>
+    <code value="gueCJt1Cjru"/>
+    <display value="ANC - ANC.B9.  Syphilis test result"/>
+    <definition value="ANC - ANC.B9.  Syphilis test result"/>
+  </concept>
+  <concept>
+    <code value="jORfSq3dc0Z"/>
+    <display value="ANC - ANC.B9.  TB test date"/>
+    <definition value="ANC - ANC.B9.  TB test date"/>
+  </concept>
+  <concept>
+    <code value="vB0KLtHeSft"/>
+    <display value="ANC - ANC.B9.  TB test result"/>
+    <definition value="ANC - ANC.B9.  TB test result"/>
+  </concept>
+  <concept>
+    <code value="P0WhE9bsD1E"/>
+    <display value="ANC - ANC.B9.  Ultrasound scan date"/>
+    <definition value="ANC - ANC.B9.  Ultrasound scan date"/>
+  </concept>
+  <concept>
+    <code value="ZP8aN3M1U51"/>
+    <display value="ANC - ANC.B9.  Urine dipstick result –glucose"/>
+    <definition value="ANC - ANC.B9.  Urine dipstick result –glucose"/>
+  </concept>
+  <concept>
+    <code value="n7ITb3GsUNi"/>
+    <display value="ANC - ANC.B9.  Urine dipstick result –leukocytes"/>
+    <definition value="ANC - ANC.B9.  Urine dipstick result –leukocytes"/>
+  </concept>
+  <concept>
+    <code value="z1iDiVtSw43"/>
+    <display value="ANC - ANC.B9.  Urine dipstick result –nitrites"/>
+    <definition value="ANC - ANC.B9.  Urine dipstick result –nitrites"/>
+  </concept>
+  <concept>
+    <code value="PpxBOihc1Y6"/>
+    <display value="ANC - ANC.B9.  Urine dipstick result –protein"/>
+    <definition value="ANC - ANC.B9.  Urine dipstick result –protein"/>
+  </concept>
+  <concept>
+    <code value="EnLWXRgiimk"/>
+    <display value="ANC - ANC.B9.  Blood glucose test date"/>
+    <definition value="ANC - ANC.B9.  Blood glucose test date"/>
+  </concept>
+  <concept>
+    <code value="pV0OABcFZCu"/>
+    <display value="ANC - ANC LAB Sickle cell"/>
+    <definition value="ANC - ANC LAB Sickle cell"/>
+  </concept>
+  <concept>
+    <code value="pMYNlTxqieX"/>
+    <display value="ANC - ANC LAB Partner ART Number"/>
+    <definition value="ANC - ANC LAB Partner ART Number"/>
+  </concept>
+  <concept>
+    <code value="jHwhKRgeemY"/>
+    <display value="ANC - ANC LAB Partner age"/>
+    <definition value="ANC - ANC LAB Partner age"/>
+  </concept>
+  <concept>
+    <code value="mXYhBhAPXJL"/>
+    <display value="ANC - ANC LAB Partner linked to ART "/>
+    <definition value="ANC - ANC LAB Partner linked to ART "/>
+  </concept>
+  <concept>
+    <code value="ccy0efIWFb8"/>
+    <display value="ANC - ANC Lab Partner ART location"/>
+    <definition value="ANC - ANC Lab Partner ART location"/>
+  </concept>
+  <concept>
+    <code value="dN6k6agVKUu"/>
+    <display value="ANC - ANC.B9.  Partner Syphilis test result"/>
+    <definition value="ANC - ANC.B9.  Partner Syphilis test result"/>
+  </concept>
+  <concept>
+    <code value="bUQy6eZfqFR"/>
+    <display value="ANC - ANC B9.DE Urine dipstick test date"/>
+    <definition value="ANC - ANC B9.DE Urine dipstick test date"/>
+  </concept>
+  <concept>
+    <code value="pnR1TFOb4xU"/>
+    <display value="ANC - ANC LAB Malaria B/S for MPs"/>
+    <definition value="ANC - ANC LAB Malaria B/S for MPs"/>
+  </concept>
+  <concept>
+    <code value="VrSrCgpxTT3"/>
+    <display value="ANC - ANC LAB Pus cells"/>
+    <definition value="ANC - ANC LAB Pus cells"/>
+  </concept>
+  <concept>
+    <code value="NUzZqwCQcms"/>
+    <display value="ANC - ANC.B9. Fasting blood sugar result"/>
+    <definition value="ANC - ANC.B9. Fasting blood sugar result"/>
+  </concept>
+  <concept>
+    <code value="qNSSCV58TD2"/>
+    <display value="ANC - ANC.B9.  Blood haemoglobin result"/>
+    <definition value="ANC - ANC.B9.  Blood haemoglobin result"/>
+  </concept>
+  <concept>
+    <code value="CqOqQVk2Vqw"/>
+    <display value="ANC - ANC LAB Urine Microscopy date"/>
+    <definition value="ANC - ANC LAB Urine Microscopy date"/>
+  </concept>
+  <concept>
+    <code value="HJZAwP1vt7T"/>
+    <display value="ANC - ANC LAB Malaria RDT"/>
+    <definition value="ANC - ANC LAB Malaria RDT"/>
+  </concept>
+  <concept>
+    <code value="g2BFjUIJ5G9"/>
+    <display value="ANC - ANC LAB Malaria test date"/>
+    <definition value="ANC - ANC LAB Malaria test date"/>
+  </concept>
+  <concept>
+    <code value="CzjBxEJ6HrQ"/>
+    <display value="ANC - ANC.B8. Gestational age at todays visit_LAB"/>
+    <definition value="ANC - ANC.B8. Gestational age at todays visit_LAB"/>
+  </concept>
+  <concept>
+    <code value="e7cIfEBpsZb"/>
+    <display value="ANC - ANC.B9.  HIV test recommended"/>
+    <definition value="ANC - ANC.B9.  HIV test recommended"/>
+  </concept>
+  <concept>
+    <code value="RKjAsZ2EKa7"/>
+    <display value="ANC - ANC.B9.  Hepatitis B test recommended"/>
+    <definition value="ANC - ANC.B9.  Hepatitis B test recommended"/>
+  </concept>
+  <concept>
+    <code value="KYxA0A2j8DB"/>
+    <display value="ANC - ANC.B9.  Syphilis test recommended"/>
+    <definition value="ANC - ANC.B9.  Syphilis test recommended"/>
+  </concept>
+  <concept>
+    <code value="aKJK1ZXz2GP"/>
+    <display value="ANC - ANC.B9.  Ultrasound recommended"/>
+    <definition value="ANC - ANC.B9.  Ultrasound recommended"/>
+  </concept>
+  <concept>
+    <code value="rqMrshNZgg8"/>
+    <display value="ANC - ANC.B9. Urine test recommended"/>
+    <definition value="ANC - ANC.B9. Urine test recommended"/>
+  </concept>
+  <concept>
+    <code value="oOQvM7ZPnTj"/>
+    <display value="ANC - ANC.B9.  TB screening recommended"/>
+    <definition value="ANC - ANC.B9.  TB screening recommended"/>
+  </concept>
+  <concept>
+    <code value="Y0MfiRhxr1a"/>
+    <display value="ANC - ANC.B9.  Haemoglobin test recommended"/>
+    <definition value="ANC - ANC.B9.  Haemoglobin test recommended"/>
+  </concept>
+  <concept>
+    <code value="Uxcgpc4oTCf"/>
+    <display value="ANC - ANC.B9.  Blood screening recommended"/>
+    <definition value="ANC - ANC.B9.  Blood screening recommended"/>
+  </concept>
+  <concept>
+    <code value="XJeRbkSaC1J"/>
+    <display value="ANC - ANC.B9. Malaria test recommended"/>
+    <definition value="ANC - ANC.B9. Malaria test recommended"/>
+  </concept>
+  <concept>
+    <code value="lkrEe3MT5KK"/>
+    <display value="ANC - LAB Ultrasound comments"/>
+    <definition value="ANC - LAB Ultrasound comments"/>
+  </concept>
+  <concept>
+    <code value="qlR1FedtJRq"/>
+    <display value="ANC - ANC.B10. Counselling conducted on birth preparedness and complications readiness"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on birth preparedness and complications readiness"/>
+  </concept>
+  <concept>
+    <code value="T2bfkalL2LC"/>
+    <display value="ANC - ANC.B10. Counselling conducted on breastfeeding"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on breastfeeding"/>
+  </concept>
+  <concept>
+    <code value="jRo4KlnCKeX"/>
+    <display value="ANC - ANC.B10. Counselling conducted on HIV risk"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on HIV risk"/>
+  </concept>
+  <concept>
+    <code value="l066A1HPqRU"/>
+    <display value="ANC - ANC.B10. Counselling conducted on Rh factor negative"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on Rh factor negative"/>
+  </concept>
+  <concept>
+    <code value="B2vmUDbtn9u"/>
+    <display value="ANC - ANC.B10. Counselling conducted on seeking care when danger signs occur"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on seeking care when danger signs occur"/>
+  </concept>
+  <concept>
+    <code value="QZ00NKZNNHf"/>
+    <display value="ANC - ANC.B10. Counselling on ANC contact schedule conducted"/>
+    <definition value="ANC - ANC.B10. Counselling on ANC contact schedule conducted"/>
+  </concept>
+  <concept>
+    <code value="vI7Bj0uD9rO"/>
+    <display value="ANC - ANC.B10. Counselling on postpartum family planning conducted"/>
+    <definition value="ANC - ANC.B10. Counselling on postpartum family planning conducted"/>
+  </concept>
+  <concept>
+    <code value="hGRDCZ9eyEK"/>
+    <display value="ANC - ANC.B10. Hepatitis B-1 immunization Date"/>
+    <definition value="ANC - ANC.B10. Hepatitis B-1 immunization Date"/>
+  </concept>
+  <concept>
+    <code value="fQcLrBqBS40"/>
+    <display value="ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization Date"/>
+    <definition value="ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization Date"/>
+  </concept>
+  <concept>
+    <code value="mkH2mlYqWqB"/>
+    <display value="ANC - ANC.B10. Date IPTp-SP dose was provided"/>
+    <definition value="ANC - ANC.B10. Date IPTp-SP dose was provided"/>
+  </concept>
+  <concept>
+    <code value="maAtPdJhov5"/>
+    <display value="ANC - ANC.B10. Counselling on risk of gestational diabetes mellitus (GDM)"/>
+    <definition value="ANC - ANC.B10. Counselling on risk of gestational diabetes mellitus (GDM)"/>
+  </concept>
+  <concept>
+    <code value="cwUiNQdsXCd"/>
+    <display value="ANC - PAT. Simple Malaria Treatment Provided"/>
+    <definition value="ANC - PAT. Simple Malaria Treatment Provided"/>
+  </concept>
+  <concept>
+    <code value="tSzje3cW2hQ"/>
+    <display value="ANC - ANC.B10. Counselling on risk of pre-eclampsia"/>
+    <definition value="ANC - ANC.B10. Counselling on risk of pre-eclampsia"/>
+  </concept>
+  <concept>
+    <code value="pBclCe2kriA"/>
+    <display value="ANC - ANC.B7. Folic acid (FA) provided. Atleast 30 tablets"/>
+    <definition value="ANC - ANC.B7. Folic acid (FA) provided. Atleast 30 tablets"/>
+  </concept>
+  <concept>
+    <code value="BEcBoTxdJxW"/>
+    <display value="ANC -  Refer to HCIV or Hospital for Severe Anaemia treatment due to haemoglobin"/>
+    <definition value="ANC -  Refer to HCIV or Hospital for Severe Anaemia treatment due to haemoglobin"/>
+  </concept>
+  <concept>
+    <code value="HM1Gwr6X8M3"/>
+    <display value="ANC -  Refer to HCIV or Hospital for complicated malaria treatment"/>
+    <definition value="ANC -  Refer to HCIV or Hospital for complicated malaria treatment"/>
+  </concept>
+  <concept>
+    <code value="Euy7gjx9HQQ"/>
+    <display value="ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization provided"/>
+    <definition value="ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization provided"/>
+  </concept>
+  <concept>
+    <code value="g9g5XVMRMhg"/>
+    <display value="ANC - Refer to HCIV or Hospital for Hepatitis B treatment"/>
+    <definition value="ANC - Refer to HCIV or Hospital for Hepatitis B treatment"/>
+  </concept>
+  <concept>
+    <code value="gGcxEhV4uET"/>
+    <display value="ANC - PAT Diabetes in Pregnancy Diagnosis"/>
+    <definition value="ANC - PAT Diabetes in Pregnancy Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="v2vCvy9JR71"/>
+    <display value="ANC - PAT Refer to HCIV or Hospital for follow-up and medication due to Hyperglycemia"/>
+    <definition value="ANC - PAT Refer to HCIV or Hospital for follow-up and medication due to Hyperglycemia"/>
+  </concept>
+  <concept>
+    <code value="ZJ1mIPM587W"/>
+    <display value="ANC - PAT Elevated fasting blood sugar Diagnosis"/>
+    <definition value="ANC - PAT Elevated fasting blood sugar Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="zKHV3Gf8lf0"/>
+    <display value="ANC - PAT Refer for treatment and support according to findings of GBV"/>
+    <definition value="ANC - PAT Refer for treatment and support according to findings of GBV"/>
+  </concept>
+  <concept>
+    <code value="XH5mvacs4fh"/>
+    <display value="ANC - PAT Syphilis Treatment Provided"/>
+    <definition value="ANC - PAT Syphilis Treatment Provided"/>
+  </concept>
+  <concept>
+    <code value="cLaqvVnoNQW"/>
+    <display value="ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization Date"/>
+    <definition value="ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization Date"/>
+  </concept>
+  <concept>
+    <code value="QljEpD4ZXqQ"/>
+    <display value="ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization provided"/>
+    <definition value="ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization provided"/>
+  </concept>
+  <concept>
+    <code value="LwXs0S8eD64"/>
+    <display value="ANC - PAM Counselling on hospital delivery due to previous assisted delivery"/>
+    <definition value="ANC - PAM Counselling on hospital delivery due to previous assisted delivery"/>
+  </concept>
+  <concept>
+    <code value="vcFw7qq0EyN"/>
+    <display value="ANC - PAT Counselling on risk of eclampsia"/>
+    <definition value="ANC - PAT Counselling on risk of eclampsia"/>
+  </concept>
+  <concept>
+    <code value="RmYIDSTh06Y"/>
+    <display value="ANC - PAT Counselling on hospital delivery due to previous perineal tear (3rd or 4th degree) "/>
+    <definition value="ANC - PAT Counselling on hospital delivery due to previous perineal tear (3rd or 4th degree) "/>
+  </concept>
+  <concept>
+    <code value="LWDjK29CquZ"/>
+    <display value="ANC - PAT Counselling on hospital delivery due to previous neonatal death"/>
+    <definition value="ANC - PAT Counselling on hospital delivery due to previous neonatal death"/>
+  </concept>
+  <concept>
+    <code value="ID6RhUJutpq"/>
+    <display value="ANC - PAT Refer to CEMONC facility for labour"/>
+    <definition value="ANC - PAT Refer to CEMONC facility for labour"/>
+  </concept>
+  <concept>
+    <code value="CuCWAVnu94F"/>
+    <display value="ANC - ANC Kidney disease (Chronic Renal Failure) Diagnosis"/>
+    <definition value="ANC - ANC Kidney disease (Chronic Renal Failure) Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="nskowTcgnS3"/>
+    <display value="ANC - ANC.B10. Counselling conducted on anaemia"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on anaemia"/>
+  </concept>
+  <concept>
+    <code value="HDQ8F5bQ5GB"/>
+    <display value="ANC - PAT Counsel on the increased risk of developing pre-eclampsia due to CRF"/>
+    <definition value="ANC - PAT Counsel on the increased risk of developing pre-eclampsia due to CRF"/>
+  </concept>
+  <concept>
+    <code value="ZgVJiTpBIAa"/>
+    <display value="ANC - ANC.B10. Counselling conducted on diabetes mellitus (DM)"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on diabetes mellitus (DM)"/>
+  </concept>
+  <concept>
+    <code value="GKRmoIpVWBV"/>
+    <display value="ANC - ANC Cardiac condition Diagnosis"/>
+    <definition value="ANC - ANC Cardiac condition Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="Lzfcin802uv"/>
+    <display value="ANC - ANC Chronic asthma Diagnosis"/>
+    <definition value="ANC - ANC Chronic asthma Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="hnUK7METcNT"/>
+    <display value="ANC - ANC.B10. Counselling conducted on gestational diabetes mellitus (GDM)"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on gestational diabetes mellitus (GDM)"/>
+  </concept>
+  <concept>
+    <code value="kpNsJv2MJgQ"/>
+    <display value="ANC - PAM Thrombocytopenia Diagnosis"/>
+    <definition value="ANC - PAM Thrombocytopenia Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="FlYho8YA6gK"/>
+    <display value="ANC - ANC.B10. Counselling conducted on hepatitis B positive"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on hepatitis B positive"/>
+  </concept>
+  <concept>
+    <code value="CceCy8lgwJr"/>
+    <display value="ANC - PAT Refer to HC IV/Hospital for follow-up of elevated fasting blood sugar"/>
+    <definition value="ANC - PAT Refer to HC IV/Hospital for follow-up of elevated fasting blood sugar"/>
+  </concept>
+  <concept>
+    <code value="ONaCQGKKt0u"/>
+    <display value="ANC - PAT Refer to HCIV or Hospital due to no Fetal Heart beat present"/>
+    <definition value="ANC - PAT Refer to HCIV or Hospital due to no Fetal Heart beat present"/>
+  </concept>
+  <concept>
+    <code value="zO1T2OyE5nV"/>
+    <display value="ANC - ANC.B10. Counselling conducted on HIV positive"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on HIV positive"/>
+  </concept>
+  <concept>
+    <code value="pdogMM7UXWz"/>
+    <display value="ANC - Refer to HC IV/Hospital for follow-up of elevated random blood sugar"/>
+    <definition value="ANC - Refer to HC IV/Hospital for follow-up of elevated random blood sugar"/>
+  </concept>
+  <concept>
+    <code value="msP5WbYKajH"/>
+    <display value="ANC - ANC.B10. Counselling conducted on hypertension"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on hypertension"/>
+  </concept>
+  <concept>
+    <code value="Llteev2Flio"/>
+    <display value="ANC - ANC.B10. Counselling conducted on TB screening positive"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on TB screening positive"/>
+  </concept>
+  <concept>
+    <code value="sWoYKdJWtLO"/>
+    <display value="ANC - PAM Sickle cell screening Folic acid 5mg/daily"/>
+    <definition value="ANC - PAM Sickle cell screening Folic acid 5mg/daily"/>
+  </concept>
+  <concept>
+    <code value="qMWTQTWNm0K"/>
+    <display value="ANC - ANC.B10. Counselling on alcohol use"/>
+    <definition value="ANC - ANC.B10. Counselling on alcohol use"/>
+  </concept>
+  <concept>
+    <code value="M7xOHyaG1XR"/>
+    <display value="ANC - PAM Sickle cell screening Refer to a sickle-cell clinic, if not yet registered"/>
+    <definition value="ANC - PAM Sickle cell screening Refer to a sickle-cell clinic, if not yet registered"/>
+  </concept>
+  <concept>
+    <code value="YOjc3CiFMku"/>
+    <display value="ANC - PAM Counselling on Sickle cell screening based on findings; monitor Hb at every visit"/>
+    <definition value="ANC - PAM Counselling on Sickle cell screening based on findings; monitor Hb at every visit"/>
+  </concept>
+  <concept>
+    <code value="YU9wbp4XiOO"/>
+    <display value="ANC - PAM Sickle cell screening Admit to hospital if complications develop"/>
+    <definition value="ANC - PAM Sickle cell screening Admit to hospital if complications develop"/>
+  </concept>
+  <concept>
+    <code value="YFu1oMAst5N"/>
+    <display value="ANC - ANC.B10. Counselling on condom use"/>
+    <definition value="ANC - ANC.B10. Counselling on condom use"/>
+  </concept>
+  <concept>
+    <code value="EcAoMGJs9BB"/>
+    <display value="ANC - ANC.B10. Hepatitis B-2 immunization Date"/>
+    <definition value="ANC - ANC.B10. Hepatitis B-2 immunization Date"/>
+  </concept>
+  <concept>
+    <code value="sw43UG2v6Wk"/>
+    <display value="ANC - ANC.B10a. IPTp-CTX dose provided"/>
+    <definition value="ANC - ANC.B10a. IPTp-CTX dose provided"/>
+  </concept>
+  <concept>
+    <code value="Jnlp0lDaPSe"/>
+    <display value="ANC - ANC.B10a. Date IPTp-CTX dose was provided"/>
+    <definition value="ANC - ANC.B10a. Date IPTp-CTX dose was provided"/>
+  </concept>
+  <concept>
+    <code value="G6qtfHN4Vy1"/>
+    <display value="ANC - ANC.B10. Counselling on healthy eating and keeping physically active"/>
+    <definition value="ANC - ANC.B10. Counselling on healthy eating and keeping physically active"/>
+  </concept>
+  <concept>
+    <code value="O2SnmbwvwOb"/>
+    <display value="ANC - PAT ARV prophylaxis for the un born infants provided"/>
+    <definition value="ANC - PAT ARV prophylaxis for the un born infants provided"/>
+  </concept>
+  <concept>
+    <code value="pB9VLth3i2W"/>
+    <display value="ANC - ANC LAB Male partner self testing kit provided"/>
+    <definition value="ANC - ANC LAB Male partner self testing kit provided"/>
+  </concept>
+  <concept>
+    <code value="GjOg2r7Wvm1"/>
+    <display value="ANC - ANC LAB Male Partner self testing kit results"/>
+    <definition value="ANC - ANC LAB Male Partner self testing kit results"/>
+  </concept>
+  <concept>
+    <code value="MXOfQmqSgS8"/>
+    <display value="ANC - PAT Hepatitis B Treatment Provided"/>
+    <definition value="ANC - PAT Hepatitis B Treatment Provided"/>
+  </concept>
+  <concept>
+    <code value="VhlH1sYU9fv"/>
+    <display value="ANC - ANC.B10. Counselling on maternal nutrition"/>
+    <definition value="ANC - ANC.B10. Counselling on maternal nutrition"/>
+  </concept>
+  <concept>
+    <code value="zfF0dZSKfvj"/>
+    <display value="ANC - ANC.B10. Counselling infant feeding"/>
+    <definition value="ANC - ANC.B10. Counselling infant feeding"/>
+  </concept>
+  <concept>
+    <code value="Ok9OQpitjQr"/>
+    <display value="ANC - ANC.B10. Counselling on tobacco cessation"/>
+    <definition value="ANC - ANC.B10. Counselling on tobacco cessation"/>
+  </concept>
+  <concept>
+    <code value="VJh6Dw6KcfB"/>
+    <display value="ANC - ANC.B10. Hypertension diagnosis"/>
+    <definition value="ANC - ANC.B10. Hypertension diagnosis"/>
+  </concept>
+  <concept>
+    <code value="LKNervGK4jq"/>
+    <display value="ANC - ANC.B10. Pre-eclampsia diagnosis"/>
+    <definition value="ANC - ANC.B10. Pre-eclampsia diagnosis"/>
+  </concept>
+  <concept>
+    <code value="a0ZYAtqVHCx"/>
+    <display value="ANC - ANC.B10. IPTp-SP dose provided"/>
+    <definition value="ANC - ANC.B10. IPTp-SP dose provided"/>
+  </concept>
+  <concept>
+    <code value="W5AuILld5eW"/>
+    <display value="ANC - ANC.B9.  Anaemia diagnosis"/>
+    <definition value="ANC - ANC.B9.  Anaemia diagnosis"/>
+  </concept>
+  <concept>
+    <code value="gmbQ72pvjVd"/>
+    <display value="ANC - ANC. Malaria diagnosis"/>
+    <definition value="ANC - ANC. Malaria diagnosis"/>
+  </concept>
+  <concept>
+    <code value="xYKSnQRs6Fq"/>
+    <display value="ANC - ANC Admit and Deliver"/>
+    <definition value="ANC - ANC Admit and Deliver"/>
+  </concept>
+  <concept>
+    <code value="rMyGldvXWsQ"/>
+    <display value="ANC - CAT Magnesium Sulphate provided"/>
+    <definition value="ANC - CAT Magnesium Sulphate provided"/>
+  </concept>
+  <concept>
+    <code value="e2bRsC2xpto"/>
+    <display value="ANC - PAT Hypertensive Treatment Provided"/>
+    <definition value="ANC - PAT Hypertensive Treatment Provided"/>
+  </concept>
+  <concept>
+    <code value="gwytRk2Uwr6"/>
+    <display value="ANC - CAT Follow up provided"/>
+    <definition value="ANC - CAT Follow up provided"/>
+  </concept>
+  <concept>
+    <code value="yoyL0k3CfgO"/>
+    <display value="ANC - CAT Follow up frequency specify"/>
+    <definition value="ANC - CAT Follow up frequency specify"/>
+  </concept>
+  <concept>
+    <code value="xZvctiDTfmn"/>
+    <display value="ANC -ANC.B10. Preventive deworming antihelminthic treatment provided"/>
+    <definition value="ANC -ANC.B10. Preventive deworming antihelminthic treatment provided"/>
+  </concept>
+  <concept>
+    <code value="f1KQDCMUyno"/>
+    <display value="ANC - ANC.B7. Prophylactic Iron and folic acid (IFA) provided. At least 30 tablets"/>
+    <definition value="ANC - ANC.B7. Prophylactic Iron and folic acid (IFA) provided. At least 30 tablets"/>
+  </concept>
+  <concept>
+    <code value="ppiuaHJLXhv"/>
+    <display value="ANC - ANC.B9.  Hepatitis B diagnosis"/>
+    <definition value="ANC - ANC.B9.  Hepatitis B diagnosis"/>
+  </concept>
+  <concept>
+    <code value="lja34jS4kHc"/>
+    <display value="ANC - ANC.B9.  Syphilis diagnosis"/>
+    <definition value="ANC - ANC.B9.  Syphilis diagnosis"/>
+  </concept>
+  <concept>
+    <code value="vdPettzpAjK"/>
+    <display value="ANC - ANC.B10. Counselling on balanced energy and protein dietary supplementation"/>
+    <definition value="ANC - ANC.B10. Counselling on balanced energy and protein dietary supplementation"/>
+  </concept>
+  <concept>
+    <code value="G8eAMYZaXnH"/>
+    <display value="ANC - ANC.B9.  High risk for HIV"/>
+    <definition value="ANC - ANC.B9.  High risk for HIV"/>
+  </concept>
+  <concept>
+    <code value="jDoejOIyb3a"/>
+    <display value="ANC - ANC CAT Admit and Monitor"/>
+    <definition value="ANC - ANC CAT Admit and Monitor"/>
+  </concept>
+  <concept>
+    <code value="RrkI8hPNjmb"/>
+    <display value="ANC - ANC.B11. Received as Referral"/>
+    <definition value="ANC - ANC.B11. Received as Referral"/>
+  </concept>
+  <concept>
+    <code value="LRwXvqpnLAb"/>
+    <display value="ANC - ANC.B11. If yes, received as referral from"/>
+    <definition value="ANC - ANC.B11. If yes, received as referral from"/>
+  </concept>
+  <concept>
+    <code value="Izr0L8qbpax"/>
+    <display value="ANC - ANC.B10. LLINs provided"/>
+    <definition value="ANC - ANC.B10. LLINs provided"/>
+  </concept>
+  <concept>
+    <code value="C04Rrelub1N"/>
+    <display value="ANC - ANC.B10. Counselling conducted on syphilis"/>
+    <definition value="ANC - ANC.B10. Counselling conducted on syphilis"/>
+  </concept>
+  <concept>
+    <code value="HBFvfu6dT1k"/>
+    <display value="ANC - AN27c. Male Partner syphilis treatment provided"/>
+    <definition value="ANC - AN27c. Male Partner syphilis treatment provided"/>
+  </concept>
+  <concept>
+    <code value="V90TnwOPzNm"/>
+    <display value="ANC - ANC.B10. Counselling on malaria prevention"/>
+    <definition value="ANC - ANC.B10. Counselling on malaria prevention"/>
+  </concept>
+  <concept>
+    <code value="G1smYf2TE5w"/>
+    <display value="ANC - ANC.B11. Referred to higher level clinic on indication"/>
+    <definition value="ANC - ANC.B11. Referred to higher level clinic on indication"/>
+  </concept>
+  <concept>
+    <code value="KjLdMpXvJNm"/>
+    <display value="ANC - ANC.B8. Gestational age at todays visit_CAT"/>
+    <definition value="ANC - ANC.B8. Gestational age at todays visit_CAT"/>
+  </concept>
+  <concept>
+    <code value="VIEg1M2z5Vs"/>
+    <display value="ANC - ANC.End1. Pregnancy outcome"/>
+    <definition value="ANC - ANC.End1. Pregnancy outcome"/>
+  </concept>
+  <concept>
+    <code value="CfVBzICA1og"/>
+    <display value="ANC - ANC.BD. Term or Preterm"/>
+    <definition value="ANC - ANC.BD. Term or Preterm"/>
+  </concept>
+  <concept>
+    <code value="DfHmC0s6JqV"/>
+    <display value="ANC - ANC.BD-Date and time of admission"/>
+    <definition value="ANC - ANC.BD-Date and time of admission"/>
+  </concept>
+  <concept>
+    <code value="zvJl9DSRNl7"/>
+    <display value="ANC - ANC.BD Single or Multiple Specify number"/>
+    <definition value="ANC - ANC.BD Single or Multiple Specify number"/>
+  </concept>
+  <concept>
+    <code value="h2xGlXziLV6"/>
+    <display value="ANC - BD-Gestation of delivery (weeks)"/>
+    <definition value="ANC - BD-Gestation of delivery (weeks)"/>
+  </concept>
+  <concept>
+    <code value="elQef67mAgb"/>
+    <display value="ANC - ANC.BD-Mode of delivery"/>
+    <definition value="ANC - ANC.BD-Mode of delivery"/>
+  </concept>
+  <concept>
+    <code value="cCDntJeM21e"/>
+    <display value="ANC - ANC.BD-Sex of child"/>
+    <definition value="ANC - ANC.BD-Sex of child"/>
+  </concept>
+  <concept>
+    <code value="G38Z5FR4sv7"/>
+    <display value="ANC - ANC.BD-Date and time of birth (Child)"/>
+    <definition value="ANC - ANC.BD-Date and time of birth (Child)"/>
+  </concept>
+  <concept>
+    <code value="quFsdF0GLrm"/>
+    <display value="ANC - ANC.BD Weight at birth"/>
+    <definition value="ANC - ANC.BD Weight at birth"/>
+  </concept>
+  <concept>
+    <code value="Gk5vKpilJJq"/>
+    <display value="ANC - ANC.BD Child vital status"/>
+    <definition value="ANC - ANC.BD Child vital status"/>
+  </concept>
+  <concept>
+    <code value="dxH6wzY9ll4"/>
+    <display value="ANC - ANC.BD ARV Rx for Mothers (by type)"/>
+    <definition value="ANC - ANC.BD ARV Rx for Mothers (by type)"/>
+  </concept>
+  <concept>
+    <code value="dSeYEled4tX"/>
+    <display value="ANC - ANC.BD Obst/prolg labour"/>
+    <definition value="ANC - ANC.BD Obst/prolg labour"/>
+  </concept>
+  <concept>
+    <code value="z2YaIoUs5eV"/>
+    <display value="ANC - ANC.BD Hysterectomy "/>
+    <definition value="ANC - ANC.BD Hysterectomy "/>
+  </concept>
+  <concept>
+    <code value="sYgW1IM4Gn5"/>
+    <display value="ANC - ANC.BD Managed"/>
+    <definition value="ANC - ANC.BD Managed"/>
+  </concept>
+  <concept>
+    <code value="c975NCuATNP"/>
+    <display value="ANC - ANC.BD PROM/Sepsis"/>
+    <definition value="ANC - ANC.BD PROM/Sepsis"/>
+  </concept>
+  <concept>
+    <code value="tQ4Sv6kQks9"/>
+    <display value="ANC - ANC.BD Referred"/>
+    <definition value="ANC - ANC.BD Referred"/>
+  </concept>
+  <concept>
+    <code value="hGXAH0H7oKs"/>
+    <display value="ANC - ANC.BD Repaired"/>
+    <definition value="ANC - ANC.BD Repaired"/>
+  </concept>
+  <concept>
+    <code value="ROgwm1UaUjW"/>
+    <display value="ANC - AND.BD-Other Reason for Pregnancy Outcome"/>
+    <definition value="ANC - AND.BD-Other Reason for Pregnancy Outcome"/>
+  </concept>
+  <concept>
+    <code value="JrSzUmBfKnO"/>
+    <display value="ANC - ANC.BD Eclampsia postpartum hemorrhage "/>
+    <definition value="ANC - ANC.BD Eclampsia postpartum hemorrhage "/>
+  </concept>
+  <concept>
+    <code value="Mv4z2Sd5s8E"/>
+    <display value="ANC - ANC.BD Ruptured Ux"/>
+    <definition value="ANC - ANC.BD Ruptured Ux"/>
+  </concept>
+  <concept>
+    <code value="fvnZ3zRQUdQ"/>
+    <display value="ANC - ANC.BD Eclampsia antepartum hemorrhage "/>
+    <definition value="ANC - ANC.BD Eclampsia antepartum hemorrhage "/>
+  </concept>
+  <concept>
+    <code value="KQ34Vol6R3J"/>
+    <display value="ANC - ANC.BD 0PV Vaccine"/>
+    <definition value="ANC - ANC.BD 0PV Vaccine"/>
+  </concept>
+  <concept>
+    <code value="U58bt6XckRq"/>
+    <display value="ANC - ANC.BD ARV Px for New Born (By type, HIV)"/>
+    <definition value="ANC - ANC.BD ARV Px for New Born (By type, HIV)"/>
+  </concept>
+  <concept>
+    <code value="p7e9CE7Hc0t"/>
+    <display value="ANC - ANC.BD Apgar Score"/>
+    <definition value="ANC - ANC.BD Apgar Score"/>
+  </concept>
+  <concept>
+    <code value="oMjZ429k9Fd"/>
+    <display value="ANC - ANC.BD BCG Vaccine"/>
+    <definition value="ANC - ANC.BD BCG Vaccine"/>
+  </concept>
+  <concept>
+    <code value="lWDnMWYvjm8"/>
+    <display value="ANC - ANC.BD Feeding option"/>
+    <definition value="ANC - ANC.BD Feeding option"/>
+  </concept>
+  <concept>
+    <code value="qw4RPXf7cvO"/>
+    <display value="ANC - ANC.BD HBV birth dose"/>
+    <definition value="ANC - ANC.BD HBV birth dose"/>
+  </concept>
+  <concept>
+    <code value="GIdnxfQDAFp"/>
+    <display value="ANC - ANC.BD Placenta"/>
+    <definition value="ANC - ANC.BD Placenta"/>
+  </concept>
+  <concept>
+    <code value="IdElg7sFPAN"/>
+    <display value="ANC - ANC.BD Single or Multiple"/>
+    <definition value="ANC - ANC.BD Single or Multiple"/>
+  </concept>
+  <concept>
+    <code value="x5AQxjEagnn"/>
+    <display value="ANC - ANC.BD Skin to Skin contact"/>
+    <definition value="ANC - ANC.BD Skin to Skin contact"/>
+  </concept>
+  <concept>
+    <code value="iAZ4RM1pdpk"/>
+    <display value="ANC - ANC.BD TTC"/>
+    <definition value="ANC - ANC.BD TTC"/>
+  </concept>
+  <concept>
+    <code value="dC098c6csBv"/>
+    <display value="ANC - ANC.BD Vit K"/>
+    <definition value="ANC - ANC.BD Vit K"/>
+  </concept>
+  <concept>
+    <code value="i5LaKr2e845"/>
+    <display value="ANC - ANC.BD length at birth"/>
+    <definition value="ANC - ANC.BD length at birth"/>
+  </concept>
+  <concept>
+    <code value="Og2D0fsxko1"/>
+    <display value="ANC - ANC.BD-Delivered by (Name)"/>
+    <definition value="ANC - ANC.BD-Delivered by (Name)"/>
+  </concept>
+  <concept>
+    <code value="QtETpPKw3Sa"/>
+    <display value="ANC - ANC.BD-Delivered by (Signature)"/>
+    <definition value="ANC - ANC.BD-Delivered by (Signature)"/>
+  </concept>
+  <concept>
+    <code value="af54ISxXZEB"/>
+    <display value="ANC - ANC.BD Still Birth"/>
+    <definition value="ANC - ANC.BD Still Birth"/>
+  </concept>
+  <concept>
+    <code value="Vyok96daapr"/>
+    <display value="ANC - OUT_POST - Date of postpartum care "/>
+    <definition value="ANC - OUT_POST - Date of postpartum care "/>
+  </concept>
+  <concept>
+    <code value="iySWXP9NB26"/>
+    <display value="ANC - OUT_POST - Blood pressure"/>
+    <definition value="ANC - OUT_POST - Blood pressure"/>
+  </concept>
+  <concept>
+    <code value="jBAsZaO4oEt"/>
+    <display value="ANC - OUT_POST - Temperature"/>
+    <definition value="ANC - OUT_POST - Temperature"/>
+  </concept>
+  <concept>
+    <code value="YSVwVatx6JR"/>
+    <display value="ANC - OUT_POST - Pulse Rate"/>
+    <definition value="ANC - OUT_POST - Pulse Rate"/>
+  </concept>
+  <concept>
+    <code value="u4E2vVGtxc5"/>
+    <display value="ANC - OUT_POST -  PPH"/>
+    <definition value="ANC - OUT_POST -  PPH"/>
+  </concept>
+  <concept>
+    <code value="Q2iOrrIs8RO"/>
+    <display value="ANC - OUT_POST - Dribbling/leaking urine "/>
+    <definition value="ANC - OUT_POST - Dribbling/leaking urine "/>
+  </concept>
+  <concept>
+    <code value="dNdQy42gyNN"/>
+    <display value="ANC - OUT_POST - Anemia"/>
+    <definition value="ANC - OUT_POST - Anemia"/>
+  </concept>
+  <concept>
+    <code value="ONFttMEHeed"/>
+    <display value="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery"/>
+    <definition value="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery"/>
+  </concept>
+  <concept>
+    <code value="wVsbNnQVjuX"/>
+    <display value="ANC - OUT_POST - Pelvic exam "/>
+    <definition value="ANC - OUT_POST - Pelvic exam "/>
+  </concept>
+  <concept>
+    <code value="xqC5R16ID4N"/>
+    <display value="ANC - OUT_POST - Breast exam "/>
+    <definition value="ANC - OUT_POST - Breast exam "/>
+  </concept>
+  <concept>
+    <code value="oOENq0HVqnV"/>
+    <display value="ANC - OUT_POST - Iron &amp;amp; Folic Acid (IFA) supplementation"/>
+    <definition value="ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation"/>
+  </concept>
+  <concept>
+    <code value="dDD0M9NxRiE"/>
+    <display value="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given"/>
+    <definition value="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given"/>
+  </concept>
+  <concept>
+    <code value="N9NypL64c5O"/>
+    <display value="ANC - OUT_POST - Baby breathing"/>
+    <definition value="ANC - OUT_POST - Baby breathing"/>
+  </concept>
+  <concept>
+    <code value="c1M2JMkm3En"/>
+    <display value="ANC - OUT_POST - Baby breastfeeding"/>
+    <definition value="ANC - OUT_POST - Baby breastfeeding"/>
+  </concept>
+  <concept>
+    <code value="bNwTnOIQpxB"/>
+    <display value="ANC - OUT_POST - Baby wt (gm)"/>
+    <definition value="ANC - OUT_POST - Baby wt (gm)"/>
+  </concept>
+  <concept>
+    <code value="UE5eXlAess0"/>
+    <display value="ANC - OUT_POST -  Immunization"/>
+    <definition value="ANC - OUT_POST -  Immunization"/>
+  </concept>
+  <concept>
+    <code value="TFOKxMR2T5A"/>
+    <display value="ANC - OUT_POST -  HIV tested (Y/N)"/>
+    <definition value="ANC - OUT_POST -  HIV tested (Y/N)"/>
+  </concept>
+  <concept>
+    <code value="V6LHFJ2Kv9l"/>
+    <display value="ANC - OUT_POST -  HIV test result"/>
+    <definition value="ANC - OUT_POST -  HIV test result"/>
+  </concept>
+  <concept>
+    <code value="mSjUMNDx0Z2"/>
+    <display value="ANC - OUT_POST - ARV Rx for mother (By type)"/>
+    <definition value="ANC - OUT_POST - ARV Rx for mother (By type)"/>
+  </concept>
+  <concept>
+    <code value="TlkMcrKmlIa"/>
+    <display value="ANC - OUT_POST - ARV PX"/>
+    <definition value="ANC - OUT_POST - ARV PX"/>
+  </concept>
+  <concept>
+    <code value="OpRMziOVS8e"/>
+    <display value="ANC - OUT_POST -  Feeding option: EBF/ERF"/>
+    <definition value="ANC - OUT_POST -  Feeding option: EBF/ERF"/>
+  </concept>
+  <concept>
+    <code value="ghEssGDk4nx"/>
+    <display value="ANC - OUT_POST - Newborn referred to chronic HIV infant care "/>
+    <definition value="ANC - OUT_POST - Newborn referred to chronic HIV infant care "/>
+  </concept>
+  <concept>
+    <code value="YeXm1Vvny9O"/>
+    <display value="ANC - OUT_POST - FP counseled and provided (by method)"/>
+    <definition value="ANC - OUT_POST - FP counseled and provided (by method)"/>
+  </concept>
+  <concept>
+    <code value="KcFAQvkTXrW"/>
+    <display value="ANC - OUT_POST - Actions taken"/>
+    <definition value="ANC - OUT_POST - Actions taken"/>
+  </concept>
+  <concept>
+    <code value="eCoVjkdihM9"/>
+    <display value="ANC - OUT_Post - Type of Stay"/>
+    <definition value="ANC - OUT_Post - Type of Stay"/>
+  </concept>
+</CodeSystem>

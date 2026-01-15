@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="VitalStatusOfChildCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem VitalStatusOfChildCS</b></p><a name="VitalStatusOfChildCS"> </a><a name="hcVitalStatusOfChildCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Live Birth<a name="VitalStatusOfChildCS-LiveBirth"> </a></td></tr><tr><td style="white-space:nowrap">Fetal Death - Antepartum<a name="VitalStatusOfChildCS-FetalDeath-Antepartum"> </a></td></tr><tr><td style="white-space:nowrap">Fetal Death - Intrapartum<a name="VitalStatusOfChildCS-FetalDeath-Intrapartum"> </a></td></tr><tr><td style="white-space:nowrap">Miscarriage / abortion<a name="VitalStatusOfChildCS-Miscarriage.47abortion"> </a></td></tr><tr><td style="white-space:nowrap">Terminated<a name="VitalStatusOfChildCS-Terminated"> </a></td></tr><tr><td style="white-space:nowrap">Ectopic pregnancy<a name="VitalStatusOfChildCS-Ectopicpregnancy"> </a></td></tr><tr><td style="white-space:nowrap">Not pregnant/other<a name="VitalStatusOfChildCS-Notpregnant.47other"> </a></td></tr><tr><td style="white-space:nowrap">Lost to follow up<a name="VitalStatusOfChildCS-Losttofollowup"> </a></td></tr><tr><td style="white-space:nowrap">Unknown<a name="VitalStatusOfChildCS-Unknown"> </a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS"/>
+  <version value="0.1.0"/>
+  <name value="VitalStatusOfChildCS"/>
+  <title value="Vital status of child"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="Live Birth"/>
+    <display value="Live Birth"/>
+  </concept>
+  <concept>
+    <code value="Fetal Death - Antepartum"/>
+    <display value="Fetal Death - Antepartum"/>
+  </concept>
+  <concept>
+    <code value="Fetal Death - Intrapartum"/>
+    <display value="Fetal Death - Intrapartum"/>
+  </concept>
+  <concept>
+    <code value="Miscarriage / abortion"/>
+    <display value="Miscarriage / abortion"/>
+  </concept>
+  <concept>
+    <code value="Terminated"/>
+    <display value="Terminated"/>
+  </concept>
+  <concept>
+    <code value="Ectopic pregnancy"/>
+    <display value="Ectopic pregnancy"/>
+  </concept>
+  <concept>
+    <code value="Not pregnant/other"/>
+    <display value="Not pregnant/other"/>
+  </concept>
+  <concept>
+    <code value="Lost to follow up"/>
+    <display value="Lost to follow up"/>
+  </concept>
+  <concept>
+    <code value="Unknown"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

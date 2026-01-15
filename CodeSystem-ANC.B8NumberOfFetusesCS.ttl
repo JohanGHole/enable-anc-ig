@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ANC.B8NumberOfFetusesCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANC.B8NumberOfFetusesCS</b></p><a name=\"ANC.B8NumberOfFetusesCS\"> </a><a name=\"hcANC.B8NumberOfFetusesCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Unknown<a name=\"ANC.B8NumberOfFetusesCS-Unknown\"> </a></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ANC.B8NumberOfFetusesCS-1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ANC.B8NumberOfFetusesCS-2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ANC.B8NumberOfFetusesCS-3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ANC.B8NumberOfFetusesCS-4\"> </a></td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ANC.B8NumberOfFetusesCS-5\"> </a></td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"ANC.B8NumberOfFetusesCS-6\"> </a></td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"ANC.B8NumberOfFetusesCS-7\"> </a></td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"ANC.B8NumberOfFetusesCS-8\"> </a></td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"ANC.B8NumberOfFetusesCS-9\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ANC.B8NumberOfFetusesCS"] ; # 
+  fhir:title [ fhir:v "ANC.B8 Number of fetuses"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "1" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "2" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "3" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "4" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "5" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "6" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "7" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "8" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "9" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

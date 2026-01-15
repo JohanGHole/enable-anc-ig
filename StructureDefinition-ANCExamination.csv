@@ -1,0 +1,180 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ANCExamination","ANCExamination","","","",0,*,"","","","null {[]} {[]}
+","ANC Examination","ANC Examination","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ANCExamination.bodyTemperature","ANCExamination.bodyTemperature","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. Body temperature","ANC - ANC.B8. Body temperature","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#L6Toy2TrHHq
+",,,,"ANCExamination.bodyTemperature",0,1,"",""
+"ANCExamination.diastolicBloodPressure","ANCExamination.diastolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Diastolic blood pressure","ANC - ANC.B8. Diastolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dyYdfamSY2Z
+",,,,"ANCExamination.diastolicBloodPressure",0,1,"",""
+"ANCExamination.fetalHeartbeatPresent","ANCExamination.fetalHeartbeatPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Fetal heartbeat present","ANC - ANC.B8. Fetal heartbeat present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#c6Cg8KgNu77
+",,,,"ANCExamination.fetalHeartbeatPresent",0,1,"",""
+"ANCExamination.fetalHeartRate","ANCExamination.fetalHeartRate","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Fetal heart rate","ANC - ANC.B8. Fetal heart rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cY03odVgQqq
+",,,,"ANCExamination.fetalHeartRate",0,1,"",""
+"ANCExamination.fetalPresentation","ANCExamination.fetalPresentation","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Fetal presentation","ANC - ANC.B8. Fetal presentation","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vPdXnmGWzfy
+",,,,"ANCExamination.fetalPresentation",0,1,"",""
+"ANCExamination.oedemaLegSwelling","ANCExamination.oedemaLegSwelling","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Oedema Leg swelling","ANC - ANC.B8. Oedema Leg swelling","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rC2RDuM8wb2
+",,,,"ANCExamination.oedemaLegSwelling",0,1,"",""
+"ANCExamination.symptomsOfPreEclampsiaPresent","ANCExamination.symptomsOfPreEclampsiaPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Symptoms of severe pre-eclampsia present","ANC - ANC.B8. Symptoms of severe pre-eclampsia present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YrtUVQtPngs
+",,,,"ANCExamination.symptomsOfPreEclampsiaPresent",0,1,"",""
+"ANCExamination.numberOfFetuses","ANCExamination.numberOfFetuses","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Number of fetuses","ANC - ANC.B8. Number of fetuses","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PN6HcGjTraL
+",,,,"ANCExamination.numberOfFetuses",0,1,"",""
+"ANCExamination.oedemaOfTheHandsAndFeet","ANCExamination.oedemaOfTheHandsAndFeet","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Oedema of the hands and feet","ANC - ANC.B8. Oedema of the hands and feet","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jETdi1M2DY9
+",,,,"ANCExamination.oedemaOfTheHandsAndFeet",0,1,"",""
+"ANCExamination.oedemaPresent","ANCExamination.oedemaPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Oedema present","ANC - ANC.B8. Oedema present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ULV28awvMXH
+",,,,"ANCExamination.oedemaPresent",0,1,"",""
+"ANCExamination.oedemaSeverity","ANCExamination.oedemaSeverity","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Oedema severity","ANC - ANC.B8. Oedema severity","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SrpLUqMjW97
+",,,,"ANCExamination.oedemaSeverity",0,1,"",""
+"ANCExamination.pallorPresent","ANCExamination.pallorPresent","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Pallor present","ANC - ANC.B8. Pallor present","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EyfTU3ibMmJ
+",,,,"ANCExamination.pallorPresent",0,1,"",""
+"ANCExamination.pelvicExamResultVisual","ANCExamination.pelvicExamResultVisual","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Pelvic exam result (visual)","ANC - ANC.B8. Pelvic exam result (visual)","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Q3s82wdeOZg
+",,,,"ANCExamination.pelvicExamResultVisual",0,1,"",""
+"ANCExamination.pittingAnkleOedema","ANCExamination.pittingAnkleOedema","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Pitting ankle oedema","ANC - ANC.B8. Pitting ankle oedema","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#kNrTQqC1bgg
+",,,,"ANCExamination.pittingAnkleOedema",0,1,"",""
+"ANCExamination.pittingLowerBackOedema","ANCExamination.pittingLowerBackOedema","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Pitting lower back oedema","ANC - ANC.B8. Pitting lower back oedema","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#yQyFSrY3S0q
+",,,,"ANCExamination.pittingLowerBackOedema",0,1,"",""
+"ANCExamination.pulseRate","ANCExamination.pulseRate","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Pulse rate","ANC - ANC.B8. Pulse rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#C47wV4EBLaS
+",,,,"ANCExamination.pulseRate",0,1,"",""
+"ANCExamination.repeatDiastolicBloodPressure","ANCExamination.repeatDiastolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Repeat diastolic blood pressure","ANC - ANC.B8. Repeat diastolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#MqZDsOZm4yD
+",,,,"ANCExamination.repeatDiastolicBloodPressure",0,1,"",""
+"ANCExamination.repeatSystolicBloodPressure","ANCExamination.repeatSystolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Repeat systolic blood pressure","ANC - ANC.B8. Repeat systolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZkCYYlI4xe7
+",,,,"ANCExamination.repeatSystolicBloodPressure",0,1,"",""
+"ANCExamination.symphysisFundalHeightSfh","ANCExamination.symphysisFundalHeightSfh","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Symphysis-fundal height (SFH)","ANC - ANC.B8. Symphysis-fundal height (SFH)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fjZ4KQpS1QS
+",,,,"ANCExamination.symphysisFundalHeightSfh",0,1,"",""
+"ANCExamination.systolicBloodPressure","ANCExamination.systolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Systolic blood pressure","ANC - ANC.B8. Systolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#M4HEOoEFTAT
+",,,,"ANCExamination.systolicBloodPressure",0,1,"",""
+"ANCExamination.signsConditionsForGbv","ANCExamination.signsConditionsForGbv","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Signs/conditions for GBV","ANC - ANC.B8. Signs/conditions for GBV","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VEFV1QayfzE
+",,,,"ANCExamination.signsConditionsForGbv",0,1,"",""
+"ANCExamination.otherAbnormalPelvicVisualResultSpecify","ANCExamination.otherAbnormalPelvicVisualResultSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)","ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#d8vfOWb6SPd
+",,,,"ANCExamination.otherAbnormalPelvicVisualResultSpecify",0,1,"",""
+"ANCExamination.previousScar1","ANCExamination.previousScar1","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 1","ANC - Previous scar 1","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vMVLu4hlDqx
+",,,,"ANCExamination.previousScar1",0,1,"",""
+"ANCExamination.otherFetalPresentationSpecify","ANCExamination.otherFetalPresentationSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B8. Other fetal presentation (specify)","ANC - ANC.B8. Other fetal presentation (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#tsaVZFUAgkD
+",,,,"ANCExamination.otherFetalPresentationSpecify",0,1,"",""
+"ANCExamination.previousScarYear1","ANCExamination.previousScarYear1","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 1","ANC - Previous scar year 1","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fDdSgAwUbtS
+",,,,"ANCExamination.previousScarYear1",0,1,"",""
+"ANCExamination.previousScarIndication1","ANCExamination.previousScarIndication1","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 1","ANC - Previous Scar Indication 1","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UAwQzN7SMAi
+",,,,"ANCExamination.previousScarIndication1",0,1,"",""
+"ANCExamination.previousScar2","ANCExamination.previousScar2","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 2","ANC - Previous scar 2","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#nN3JSNtFAo8
+",,,,"ANCExamination.previousScar2",0,1,"",""
+"ANCExamination.previousScarYear2","ANCExamination.previousScarYear2","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 2","ANC - Previous scar year 2","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#b3qArrNwpz0
+",,,,"ANCExamination.previousScarYear2",0,1,"",""
+"ANCExamination.previousScarIndication2","ANCExamination.previousScarIndication2","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 2","ANC - Previous Scar Indication 2","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#wha8HRwqFtD
+",,,,"ANCExamination.previousScarIndication2",0,1,"",""
+"ANCExamination.experiencingCoughLastingMoreThan2Weeks","ANCExamination.experiencingCoughLastingMoreThan2Weeks","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks","ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hITbUr6ufTz
+",,,,"ANCExamination.experiencingCoughLastingMoreThan2Weeks",0,1,"",""
+"ANCExamination.previousScar3","ANCExamination.previousScar3","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 3","ANC - Previous scar 3","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#a7gTKszpdVp
+",,,,"ANCExamination.previousScar3",0,1,"",""
+"ANCExamination.hospitalisationForWhat","ANCExamination.hospitalisationForWhat","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B7. Hospitalisation for what","ANC - ANC.B7. Hospitalisation for what","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#WBBaer7NTFJ
+",,,,"ANCExamination.hospitalisationForWhat",0,1,"",""
+"ANCExamination.previousScarYear3","ANCExamination.previousScarYear3","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 3","ANC - Previous scar year 3","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LSIsLB6epXX
+",,,,"ANCExamination.previousScarYear3",0,1,"",""
+"ANCExamination.muac","ANCExamination.muac","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. MUAC","ANC - ANC.B8. MUAC","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ydqILDGfoRp
+",,,,"ANCExamination.muac",0,1,"",""
+"ANCExamination.previousScarIndication3","ANCExamination.previousScarIndication3","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 3","ANC - Previous Scar Indication 3","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ytarRo3GlhD
+",,,,"ANCExamination.previousScarIndication3",0,1,"",""
+"ANCExamination.previousScar4","ANCExamination.previousScar4","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 4","ANC - Previous scar 4","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EFKE1hMUpkM
+",,,,"ANCExamination.previousScar4",0,1,"",""
+"ANCExamination.muacColorCode","ANCExamination.muacColorCode","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. MUAC Color code","ANC - ANC.B8. MUAC Color code","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jhv8rdTd1sf
+",,,,"ANCExamination.muacColorCode",0,1,"",""
+"ANCExamination.previousScarYear4","ANCExamination.previousScarYear4","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 4","ANC - Previous scar year 4","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PIIZ3ngYzxf
+",,,,"ANCExamination.previousScarYear4",0,1,"",""
+"ANCExamination.nutritionalStatus","ANCExamination.nutritionalStatus","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Nutritional status","ANC - ANC.B8. Nutritional status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#N2MadZlBXiJ
+",,,,"ANCExamination.nutritionalStatus",0,1,"",""
+"ANCExamination.relationPresentingPart","ANCExamination.relationPresentingPart","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Relation presenting part","ANC - ANC.B8. Relation presenting part","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gnZ35nEqJmI
+",,,,"ANCExamination.relationPresentingPart",0,1,"",""
+"ANCExamination.previousScarIndication4","ANCExamination.previousScarIndication4","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 4","ANC - Previous Scar Indication 4","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xZ2QZYotcKT
+",,,,"ANCExamination.previousScarIndication4",0,1,"",""
+"ANCExamination.experiencingContractions","ANCExamination.experiencingContractions","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Contractions","ANC - ANC.B7. Experiencing Contractions","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zZzZazs1DGi
+",,,,"ANCExamination.experiencingContractions",0,1,"",""
+"ANCExamination.experiencingFever","ANCExamination.experiencingFever","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Fever","ANC - ANC.B7. Experiencing Fever","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#eF3VGluAlcm
+",,,,"ANCExamination.experiencingFever",0,1,"",""
+"ANCExamination.experiencingSevereHeadache","ANCExamination.experiencingSevereHeadache","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Severe Headache","ANC - ANC.B7. Experiencing Severe Headache","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#QhijDzMdFNq
+",,,,"ANCExamination.experiencingSevereHeadache",0,1,"",""
+"ANCExamination.secondFetalHeartRate","ANCExamination.secondFetalHeartRate","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Second fetal heart rate","ANC - ANC.B8. Second fetal heart rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VLcb1WBMTIH
+",,,,"ANCExamination.secondFetalHeartRate",0,1,"",""
+"ANCExamination.experiencingVaginalBleeding","ANCExamination.experiencingVaginalBleeding","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Vaginal bleeding","ANC - ANC.B7. Experiencing Vaginal bleeding","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SM7dVOLQD8j
+",,,,"ANCExamination.experiencingVaginalBleeding",0,1,"",""
+"ANCExamination.experiencingExcessiveVomiting","ANCExamination.experiencingExcessiveVomiting","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Excessive Vomiting","ANC - ANC.B7. Experiencing Excessive Vomiting","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xa10dHKgRWa
+",,,,"ANCExamination.experiencingExcessiveVomiting",0,1,"",""
+"ANCExamination.hasAbnormalVaginalDischargePhysiological","ANCExamination.hasAbnormalVaginalDischargePhysiological","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)","ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cPOXL8JV8Ee
+",,,,"ANCExamination.hasAbnormalVaginalDischargePhysiological",0,1,"",""
+"ANCExamination.ancGestationalAgeAtVisitAnc","ANCExamination.ancGestationalAgeAtVisitAnc","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Gestational age at today's visit_ANC","ANC - ANC.B8. Gestational age at today's visit_ANC","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#syAvZ78FCls
+",,,,"ANCExamination.ancGestationalAgeAtVisitAnc",0,1,"",""
+"ANCExamination.currentWeight","ANCExamination.currentWeight","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Current  weight","ANC - ANC.B8. Current  weight","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#H90qsZViPcS
+",,,,"ANCExamination.currentWeight",0,1,"",""
+"ANCExamination.painExtremePelvicPainCannotWalk","ANCExamination.painExtremePelvicPainCannotWalk","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)","ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qmgotDEO8YI
+",,,,"ANCExamination.painExtremePelvicPainCannotWalk",0,1,"",""
+"ANCExamination.totalWeightGainKg","ANCExamination.totalWeightGainKg","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. Total weight gain (kg)","ANC - ANC.B8. Total weight gain (kg)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#J3ijwQYXVSV
+",,,,"ANCExamination.totalWeightGainKg",0,1,"",""
+"ANCExamination.painOther","ANCExamination.painOther","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B5. Pain –Other","ANC - ANC.B5. Pain –Other","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#WWGGsY8l88G
+",,,,"ANCExamination.painOther",0,1,"",""
+"ANCExamination.ancVisitNumber","ANCExamination.ancVisitNumber","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC Visit Number","ANC - ANC Visit Number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bXVD2EMF7UW
+",,,,"ANCExamination.ancVisitNumber",0,1,"",""
+"ANCExamination.noCurrentSymptomsOrComplications","ANCExamination.noCurrentSymptomsOrComplications","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. No physiological symptoms","ANC - ANC.B7. No physiological symptoms","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Kyw7NtFeW3B
+",,,,"ANCExamination.noCurrentSymptomsOrComplications",0,1,"",""
+"ANCExamination.otherCurrentPhysiologicalSymptomsSpecify","ANCExamination.otherCurrentPhysiologicalSymptomsSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B7. Other current physiological symptoms (specify)","ANC - ANC.B7. Other current physiological symptoms (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KZT7yfzeP08
+",,,,"ANCExamination.otherCurrentPhysiologicalSymptomsSpecify",0,1,"",""
+"ANCExamination.1stAncOrAScheduledVisit","ANCExamination.1stAncOrAScheduledVisit","","","",1,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B5. Regular ANC / Scheduled visit?","ANC - ANC.B5. Regular ANC / Scheduled visit?","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xb4Z245Bnej
+",,,,"ANCExamination.1stAncOrAScheduledVisit",1,1,"",""
+"ANCExamination.fetalMovement","ANCExamination.fetalMovement","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B7. Fetal movement","ANC - ANC.B7. Fetal movement","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CORtBqRWjMG
+",,,,"ANCExamination.fetalMovement",0,1,"",""
+"ANCExamination.specifyHealthConcern","ANCExamination.specifyHealthConcern","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B5. Specify health concern","ANC - ANC.B5. Specify health concern","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LI3bLtFxT8h
+",,,,"ANCExamination.specifyHealthConcern",0,1,"",""

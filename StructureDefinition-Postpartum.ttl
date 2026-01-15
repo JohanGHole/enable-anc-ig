@@ -1,0 +1,1276 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/StructureDefinition/Postpartum> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Postpartum"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition Postpartum</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum\" title=\"Postpartum\">Postpartum</a><a name=\"Postpartum\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Postpartum</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.dateOfPostpartumCare\" title=\"ANC - OUT_POST - Date of postpartum care \">dateOfPostpartumCare</a><a name=\"Postpartum.dateOfPostpartumCare\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Date of postpartum care </td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.bloodPressure\" title=\"ANC - OUT_POST - Blood pressure\">bloodPressure</a><a name=\"Postpartum.bloodPressure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Blood pressure</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.temperature\" title=\"ANC - OUT_POST - Temperature\">temperature</a><a name=\"Postpartum.temperature\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Temperature</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.pulseRate\" title=\"ANC - OUT_POST - Pulse Rate\">pulseRate</a><a name=\"Postpartum.pulseRate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Pulse Rate</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.pph\" title=\"ANC - OUT_POST -  PPH\">pph</a><a name=\"Postpartum.pph\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST -  PPH</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.dribblingLeakingUrine\" title=\"ANC - OUT_POST - Dribbling/leaking urine \">dribblingLeakingUrine</a><a name=\"Postpartum.dribblingLeakingUrine\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Dribbling/leaking urine </td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.anemia\" title=\"ANC - OUT_POST - Anemia\">anemia</a><a name=\"Postpartum.anemia\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Anemia</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.vaginalDischargeAfter4WeeksOfDelivery\" title=\"ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery\">vaginalDischargeAfter4WeeksOfDelivery</a><a name=\"Postpartum.vaginalDischargeAfter4WeeksOfDelivery\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.pelvicExam\" title=\"ANC - OUT_POST - Pelvic exam \">pelvicExam</a><a name=\"Postpartum.pelvicExam\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Pelvic exam </td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.breastExam\" title=\"ANC - OUT_POST - Breast exam \">breastExam</a><a name=\"Postpartum.breastExam\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Breast exam </td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.ironFolicAcidIfaSupplementation\" title=\"ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation\">ironFolicAcidIfaSupplementation</a><a name=\"Postpartum.ironFolicAcidIfaSupplementation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.counselingDangerSignsSymptoms\" title=\"ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given\">counselingDangerSignsSymptoms</a><a name=\"Postpartum.counselingDangerSignsSymptoms\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.babyBreathing\" title=\"ANC - OUT_POST - Baby breathing\">babyBreathing</a><a name=\"Postpartum.babyBreathing\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Baby breathing</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.babyBreastfeeding\" title=\"ANC - OUT_POST - Baby breastfeeding\">babyBreastfeeding</a><a name=\"Postpartum.babyBreastfeeding\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Baby breastfeeding</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.babyWtGm\" title=\"ANC - OUT_POST - Baby wt (gm)\">babyWtGm</a><a name=\"Postpartum.babyWtGm\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Baby wt (gm)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.immunization\" title=\"ANC - OUT_POST -  Immunization\">immunization</a><a name=\"Postpartum.immunization\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST -  Immunization</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.hivTestedYN\" title=\"ANC - OUT_POST -  HIV tested (Y/N)\">hivTestedYN</a><a name=\"Postpartum.hivTestedYN\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST -  HIV tested (Y/N)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.hivTestResult\" title=\"ANC - OUT_POST -  HIV test result\">hivTestResult</a><a name=\"Postpartum.hivTestResult\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST -  HIV test result<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-PositiveNegativeUnknownVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS\" class=\"binding\">Positive/Negative/Unknown value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.arvRxForMotherByType\" title=\"ANC - OUT_POST - ARV Rx for mother (By type)\">arvRxForMotherByType</a><a name=\"Postpartum.arvRxForMotherByType\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - ARV Rx for mother (By type)<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANCARVRxForMotherVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS\" class=\"binding\">ANC ARV Rx for Mother value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.arvPx\" title=\"ANC - OUT_POST - ARV PX\">arvPx</a><a name=\"Postpartum.arvPx\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - ARV PX</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.feedingOptionEbfErf\" title=\"ANC - OUT_POST -  Feeding option: EBF/ERF\">feedingOptionEbfErf</a><a name=\"Postpartum.feedingOptionEbfErf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST -  Feeding option: EBF/ERF<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.BD.FeedingOptionVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS\" class=\"binding\">ANC. BD. Feeding Option value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.newbornReferredToChronicHivInfantCare\" title=\"ANC - OUT_POST - Newborn referred to chronic HIV infant care \">newbornReferredToChronicHivInfantCare</a><a name=\"Postpartum.newbornReferredToChronicHivInfantCare\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Newborn referred to chronic HIV infant care </td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.familyPlanningCounseledAndProvidedByMethod\" title=\"ANC - OUT_POST - FP counseled and provided (by method)\">familyPlanningCounseledAndProvidedByMethod</a><a name=\"Postpartum.familyPlanningCounseledAndProvidedByMethod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - FP counseled and provided (by method)<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANCOUTPOSTFamilyPlanningVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS\" class=\"binding\">ANC - OUT_POST - Family Planning value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.actionsTaken\" title=\"ANC - OUT_POST - Actions taken\">actionsTaken</a><a name=\"Postpartum.actionsTaken\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_POST - Actions taken</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-Postpartum-definitions.html#Postpartum.typeOfStay\" title=\"ANC - OUT_Post - Type of Stay\">typeOfStay</a><a name=\"Postpartum.typeOfStay\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - OUT_Post - Type of Stay<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANCPostpartumCheckTimingVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS\" class=\"binding\">ANC - postpartum check timing value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/StructureDefinition/Postpartum"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/StructureDefinition/Postpartum>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Postpartum"] ; # 
+  fhir:title [ fhir:v "Postpartum"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v false] ; # 
+  fhir:type [
+     fhir:v "https://hispethiopia.org/enable/StructureDefinition/Postpartum"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/StructureDefinition/Postpartum>
+  ] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "4.0.1"
+       ]
+     ] ) ;
+     fhir:element ( [
+       fhir:id [ fhir:v "Postpartum" ] ;
+       fhir:path [ fhir:v "Postpartum" ] ;
+       fhir:short [ fhir:v "Postpartum" ] ;
+       fhir:definition [ fhir:v "Postpartum" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v false ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.dateOfPostpartumCare" ] ;
+       fhir:path [ fhir:v "Postpartum.dateOfPostpartumCare" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Vyok96daapr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Date of postpartum care " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Date of postpartum care" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.dateOfPostpartumCare" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.bloodPressure" ] ;
+       fhir:path [ fhir:v "Postpartum.bloodPressure" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "iySWXP9NB26" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Blood pressure" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Blood pressure" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.bloodPressure" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.temperature" ] ;
+       fhir:path [ fhir:v "Postpartum.temperature" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "jBAsZaO4oEt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Temperature" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Temperature" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.temperature" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.pulseRate" ] ;
+       fhir:path [ fhir:v "Postpartum.pulseRate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "YSVwVatx6JR" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Pulse Rate" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Pulse Rate" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.pulseRate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.pph" ] ;
+       fhir:path [ fhir:v "Postpartum.pph" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "u4E2vVGtxc5" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  PPH" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  PPH" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.pph" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.dribblingLeakingUrine" ] ;
+       fhir:path [ fhir:v "Postpartum.dribblingLeakingUrine" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Q2iOrrIs8RO" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Dribbling/leaking urine " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Dribbling/leaking urine" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.dribblingLeakingUrine" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.anemia" ] ;
+       fhir:path [ fhir:v "Postpartum.anemia" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "dNdQy42gyNN" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Anemia" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Anemia" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.anemia" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.vaginalDischargeAfter4WeeksOfDelivery" ] ;
+       fhir:path [ fhir:v "Postpartum.vaginalDischargeAfter4WeeksOfDelivery" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "ONFttMEHeed" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.vaginalDischargeAfter4WeeksOfDelivery" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.pelvicExam" ] ;
+       fhir:path [ fhir:v "Postpartum.pelvicExam" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "wVsbNnQVjuX" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Pelvic exam " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Pelvic exam" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.pelvicExam" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.breastExam" ] ;
+       fhir:path [ fhir:v "Postpartum.breastExam" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "xqC5R16ID4N" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Breast exam " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Breast exam" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.breastExam" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.ironFolicAcidIfaSupplementation" ] ;
+       fhir:path [ fhir:v "Postpartum.ironFolicAcidIfaSupplementation" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "oOENq0HVqnV" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.ironFolicAcidIfaSupplementation" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.counselingDangerSignsSymptoms" ] ;
+       fhir:path [ fhir:v "Postpartum.counselingDangerSignsSymptoms" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "dDD0M9NxRiE" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.counselingDangerSignsSymptoms" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.babyBreathing" ] ;
+       fhir:path [ fhir:v "Postpartum.babyBreathing" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "N9NypL64c5O" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Baby breathing" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Baby breathing" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.babyBreathing" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.babyBreastfeeding" ] ;
+       fhir:path [ fhir:v "Postpartum.babyBreastfeeding" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "c1M2JMkm3En" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Baby breastfeeding" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Baby breastfeeding" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.babyBreastfeeding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.babyWtGm" ] ;
+       fhir:path [ fhir:v "Postpartum.babyWtGm" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "bNwTnOIQpxB" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Baby wt (gm)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Baby wt (gm)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.babyWtGm" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.immunization" ] ;
+       fhir:path [ fhir:v "Postpartum.immunization" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UE5eXlAess0" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  Immunization" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  Immunization" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.immunization" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.hivTestedYN" ] ;
+       fhir:path [ fhir:v "Postpartum.hivTestedYN" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TFOKxMR2T5A" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  HIV tested (Y/N)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  HIV tested (Y/N)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.hivTestedYN" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.hivTestResult" ] ;
+       fhir:path [ fhir:v "Postpartum.hivTestResult" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "V6LHFJ2Kv9l" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  HIV test result" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  HIV test result" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.hivTestResult" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.arvRxForMotherByType" ] ;
+       fhir:path [ fhir:v "Postpartum.arvRxForMotherByType" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "mSjUMNDx0Z2" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - ARV Rx for mother (By type)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - ARV Rx for mother (By type)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.arvRxForMotherByType" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.arvPx" ] ;
+       fhir:path [ fhir:v "Postpartum.arvPx" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TlkMcrKmlIa" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - ARV PX" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - ARV PX" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.arvPx" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.feedingOptionEbfErf" ] ;
+       fhir:path [ fhir:v "Postpartum.feedingOptionEbfErf" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "OpRMziOVS8e" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  Feeding option: EBF/ERF" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  Feeding option: EBF/ERF" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.feedingOptionEbfErf" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.newbornReferredToChronicHivInfantCare" ] ;
+       fhir:path [ fhir:v "Postpartum.newbornReferredToChronicHivInfantCare" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "ghEssGDk4nx" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Newborn referred to chronic HIV infant care " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Newborn referred to chronic HIV infant care" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.newbornReferredToChronicHivInfantCare" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.familyPlanningCounseledAndProvidedByMethod" ] ;
+       fhir:path [ fhir:v "Postpartum.familyPlanningCounseledAndProvidedByMethod" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "YeXm1Vvny9O" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - FP counseled and provided (by method)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - FP counseled and provided (by method)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.familyPlanningCounseledAndProvidedByMethod" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.actionsTaken" ] ;
+       fhir:path [ fhir:v "Postpartum.actionsTaken" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "KcFAQvkTXrW" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Actions taken" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Actions taken" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.actionsTaken" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.typeOfStay" ] ;
+       fhir:path [ fhir:v "Postpartum.typeOfStay" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "eCoVjkdihM9" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_Post - Type of Stay" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_Post - Type of Stay" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Postpartum.typeOfStay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS>
+         ]
+       ]
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "Postpartum" ] ;
+       fhir:path [ fhir:v "Postpartum" ] ;
+       fhir:short [ fhir:v "Postpartum" ] ;
+       fhir:definition [ fhir:v "Postpartum" ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.dateOfPostpartumCare" ] ;
+       fhir:path [ fhir:v "Postpartum.dateOfPostpartumCare" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Vyok96daapr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Date of postpartum care " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Date of postpartum care " ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.bloodPressure" ] ;
+       fhir:path [ fhir:v "Postpartum.bloodPressure" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "iySWXP9NB26" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Blood pressure" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Blood pressure" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.temperature" ] ;
+       fhir:path [ fhir:v "Postpartum.temperature" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "jBAsZaO4oEt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Temperature" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Temperature" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.pulseRate" ] ;
+       fhir:path [ fhir:v "Postpartum.pulseRate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "YSVwVatx6JR" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Pulse Rate" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Pulse Rate" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.pph" ] ;
+       fhir:path [ fhir:v "Postpartum.pph" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "u4E2vVGtxc5" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  PPH" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  PPH" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.dribblingLeakingUrine" ] ;
+       fhir:path [ fhir:v "Postpartum.dribblingLeakingUrine" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Q2iOrrIs8RO" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Dribbling/leaking urine " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Dribbling/leaking urine " ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.anemia" ] ;
+       fhir:path [ fhir:v "Postpartum.anemia" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "dNdQy42gyNN" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Anemia" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Anemia" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.vaginalDischargeAfter4WeeksOfDelivery" ] ;
+       fhir:path [ fhir:v "Postpartum.vaginalDischargeAfter4WeeksOfDelivery" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "ONFttMEHeed" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.pelvicExam" ] ;
+       fhir:path [ fhir:v "Postpartum.pelvicExam" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "wVsbNnQVjuX" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Pelvic exam " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Pelvic exam " ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.breastExam" ] ;
+       fhir:path [ fhir:v "Postpartum.breastExam" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "xqC5R16ID4N" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Breast exam " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Breast exam " ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.ironFolicAcidIfaSupplementation" ] ;
+       fhir:path [ fhir:v "Postpartum.ironFolicAcidIfaSupplementation" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "oOENq0HVqnV" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.counselingDangerSignsSymptoms" ] ;
+       fhir:path [ fhir:v "Postpartum.counselingDangerSignsSymptoms" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "dDD0M9NxRiE" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.babyBreathing" ] ;
+       fhir:path [ fhir:v "Postpartum.babyBreathing" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "N9NypL64c5O" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Baby breathing" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Baby breathing" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.babyBreastfeeding" ] ;
+       fhir:path [ fhir:v "Postpartum.babyBreastfeeding" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "c1M2JMkm3En" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Baby breastfeeding" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Baby breastfeeding" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.babyWtGm" ] ;
+       fhir:path [ fhir:v "Postpartum.babyWtGm" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "bNwTnOIQpxB" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Baby wt (gm)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Baby wt (gm)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.immunization" ] ;
+       fhir:path [ fhir:v "Postpartum.immunization" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UE5eXlAess0" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  Immunization" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  Immunization" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.hivTestedYN" ] ;
+       fhir:path [ fhir:v "Postpartum.hivTestedYN" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TFOKxMR2T5A" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  HIV tested (Y/N)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  HIV tested (Y/N)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.hivTestResult" ] ;
+       fhir:path [ fhir:v "Postpartum.hivTestResult" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "V6LHFJ2Kv9l" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  HIV test result" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  HIV test result" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.arvRxForMotherByType" ] ;
+       fhir:path [ fhir:v "Postpartum.arvRxForMotherByType" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "mSjUMNDx0Z2" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - ARV Rx for mother (By type)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - ARV Rx for mother (By type)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.arvPx" ] ;
+       fhir:path [ fhir:v "Postpartum.arvPx" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TlkMcrKmlIa" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - ARV PX" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - ARV PX" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.feedingOptionEbfErf" ] ;
+       fhir:path [ fhir:v "Postpartum.feedingOptionEbfErf" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "OpRMziOVS8e" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST -  Feeding option: EBF/ERF" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST -  Feeding option: EBF/ERF" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.newbornReferredToChronicHivInfantCare" ] ;
+       fhir:path [ fhir:v "Postpartum.newbornReferredToChronicHivInfantCare" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "ghEssGDk4nx" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Newborn referred to chronic HIV infant care " ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Newborn referred to chronic HIV infant care " ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.familyPlanningCounseledAndProvidedByMethod" ] ;
+       fhir:path [ fhir:v "Postpartum.familyPlanningCounseledAndProvidedByMethod" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "YeXm1Vvny9O" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - FP counseled and provided (by method)" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - FP counseled and provided (by method)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Postpartum.actionsTaken" ] ;
+       fhir:path [ fhir:v "Postpartum.actionsTaken" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "KcFAQvkTXrW" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_POST - Actions taken" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_POST - Actions taken" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Postpartum.typeOfStay" ] ;
+       fhir:path [ fhir:v "Postpartum.typeOfStay" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "eCoVjkdihM9" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - OUT_Post - Type of Stay" ] ;
+       fhir:definition [ fhir:v "ANC - OUT_Post - Type of Stay" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS>
+         ]
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

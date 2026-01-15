@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "FollowUpFrequencyCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FollowUpFrequencyCS</b></p><a name=\"FollowUpFrequencyCS\"> </a><a name=\"hcFollowUpFrequencyCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1 week<a name=\"FollowUpFrequencyCS-1week\"> </a></td><td>Every week</td></tr><tr><td style=\"white-space:nowrap\">2 week<a name=\"FollowUpFrequencyCS-2week\"> </a></td><td>Every 2 weeks</td></tr><tr><td style=\"white-space:nowrap\">1 month<a name=\"FollowUpFrequencyCS-1month\"> </a></td><td>Every month</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"FollowUpFrequencyCS-Other\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS",
+  "version" : "0.1.0",
+  "name" : "FollowUpFrequencyCS",
+  "title" : "Follow-up frequency",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "1 week",
+    "display" : "Every week"
+  },
+  {
+    "code" : "2 week",
+    "display" : "Every 2 weeks"
+  },
+  {
+    "code" : "1 month",
+    "display" : "Every month"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

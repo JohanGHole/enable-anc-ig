@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ANCARVRxForMotherCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANCARVRxForMotherCS</b></p><a name=\"ANCARVRxForMotherCS\"> </a><a name=\"hcANCARVRxForMotherCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AZT-3TC-NVP<a name=\"ANCARVRxForMotherCS-AZT-3TC-NVP\"> </a></td><td>AZT-3TC-NVP</td></tr><tr><td style=\"white-space:nowrap\">AZT-3TC-EFV<a name=\"ANCARVRxForMotherCS-AZT-3TC-EFV\"> </a></td><td>AZT-3TC-EFV</td></tr><tr><td style=\"white-space:nowrap\">TDF-3TC-EFV<a name=\"ANCARVRxForMotherCS-TDF-3TC-EFV\"> </a></td><td>TDF-3TC-EFV</td></tr><tr><td style=\"white-space:nowrap\">TDF-FTC-NVP<a name=\"ANCARVRxForMotherCS-TDF-FTC-NVP\"> </a></td><td>TDF-FTC-NVP</td></tr><tr><td style=\"white-space:nowrap\">DF-3TC-DTG<a name=\"ANCARVRxForMotherCS-DF-3TC-DTG\"> </a></td><td>DF-3TC-DTG</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"ANCARVRxForMotherCS-other\"> </a></td><td>Other</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ANCARVRxForMotherCS"] ; # 
+  fhir:title [ fhir:v "ANC ARV Rx for Mother"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AZT-3TC-NVP" ] ;
+     fhir:display [ fhir:v "AZT-3TC-NVP" ]
+  ] [
+     fhir:code [ fhir:v "AZT-3TC-EFV" ] ;
+     fhir:display [ fhir:v "AZT-3TC-EFV" ]
+  ] [
+     fhir:code [ fhir:v "TDF-3TC-EFV" ] ;
+     fhir:display [ fhir:v "TDF-3TC-EFV" ]
+  ] [
+     fhir:code [ fhir:v "TDF-FTC-NVP" ] ;
+     fhir:display [ fhir:v "TDF-FTC-NVP" ]
+  ] [
+     fhir:code [ fhir:v "DF-3TC-DTG" ] ;
+     fhir:display [ fhir:v "DF-3TC-DTG" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

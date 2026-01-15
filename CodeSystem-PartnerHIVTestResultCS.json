@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PartnerHIVTestResultCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PartnerHIVTestResultCS</b></p><a name=\"PartnerHIVTestResultCS\"> </a><a name=\"hcPartnerHIVTestResultCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TR<a name=\"PartnerHIVTestResultCS-TR\"> </a></td><td>TR: Client counseled tested and results given HIV Neg</td></tr><tr><td style=\"white-space:nowrap\">TRR<a name=\"PartnerHIVTestResultCS-TRR\"> </a></td><td>TRR: Counseled, tested and results given; HIV Pos</td></tr><tr><td style=\"white-space:nowrap\">TRK<a name=\"PartnerHIVTestResultCS-TRK\"> </a></td><td>TRK: Male partner with a documented HIV -ve test result within 4 weeks prior to 1st ANC visit</td></tr><tr><td style=\"white-space:nowrap\">TRRK<a name=\"PartnerHIVTestResultCS-TRRK\"> </a></td><td>TRRK: Male partner with a documented HIV +ve test result prior to 1st ANC visit</td></tr><tr><td style=\"white-space:nowrap\">Unknown<a name=\"PartnerHIVTestResultCS-Unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS",
+  "version" : "0.1.0",
+  "name" : "PartnerHIVTestResultCS",
+  "title" : "Partner HIV test result",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "TR",
+    "display" : "TR: Client counseled tested and results given HIV Neg"
+  },
+  {
+    "code" : "TRR",
+    "display" : "TRR: Counseled, tested and results given; HIV Pos"
+  },
+  {
+    "code" : "TRK",
+    "display" : "TRK: Male partner with a documented HIV -ve test result within 4 weeks prior to 1st ANC visit"
+  },
+  {
+    "code" : "TRRK",
+    "display" : "TRRK: Male partner with a documented HIV +ve test result prior to 1st ANC visit"
+  },
+  {
+    "code" : "Unknown",
+    "display" : "Unknown"
+  }]
+}

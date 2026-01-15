@@ -1,0 +1,70 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ANCTBResultsCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANCTBResultsCS</b></p><a name=\"ANCTBResultsCS\"> </a><a name=\"hcANCTBResultsCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">No_signs<a name=\"ANCTBResultsCS-No_signs\"> </a></td><td>1. No signs</td></tr><tr><td style=\"white-space:nowrap\">Presumptive<a name=\"ANCTBResultsCS-Presumptive\"> </a></td><td>2. Presumptive (refer or sputum sent)</td></tr><tr><td style=\"white-space:nowrap\">Diagnosed clinically<a name=\"ANCTBResultsCS-Diagnosedclinically\"> </a></td><td>3C. TB diagnosed clinically</td></tr><tr><td style=\"white-space:nowrap\">Gene Xpert<a name=\"ANCTBResultsCS-GeneXpert\"> </a></td><td>3G. TB diagnosed Gene Xpert</td></tr><tr><td style=\"white-space:nowrap\">TB LAM<a name=\"ANCTBResultsCS-TBLAM\"> </a></td><td>3L. TB diagnosed TB LAM</td></tr><tr><td style=\"white-space:nowrap\">TB Microscopy<a name=\"ANCTBResultsCS-TBMicroscopy\"> </a></td><td>3M. TB diagnosed TB Microscopy</td></tr><tr><td style=\"white-space:nowrap\">Chest Xray<a name=\"ANCTBResultsCS-ChestXray\"> </a></td><td>3X. TB diagnosed Chest Xray</td></tr><tr><td style=\"white-space:nowrap\">Currently on medication<a name=\"ANCTBResultsCS-Currentlyonmedication\"> </a></td><td>4. Currently on TB medication</td></tr><tr><td style=\"white-space:nowrap\">Completed treatment<a name=\"ANCTBResultsCS-Completedtreatment\"> </a></td><td>5. Completed TB treatment</td></tr><tr><td style=\"white-space:nowrap\">Other TB result, specify<a name=\"ANCTBResultsCS-OtherTBresult.44specify\"> </a></td><td>3O. TB diagnosed Other specify</td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS",
+  "version" : "0.1.0",
+  "name" : "ANCTBResultsCS",
+  "title" : "ANC TB results",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "No_signs",
+    "display" : "1. No signs"
+  },
+  {
+    "code" : "Presumptive",
+    "display" : "2. Presumptive (refer or sputum sent)"
+  },
+  {
+    "code" : "Diagnosed clinically",
+    "display" : "3C. TB diagnosed clinically"
+  },
+  {
+    "code" : "Gene Xpert",
+    "display" : "3G. TB diagnosed Gene Xpert"
+  },
+  {
+    "code" : "TB LAM",
+    "display" : "3L. TB diagnosed TB LAM"
+  },
+  {
+    "code" : "TB Microscopy",
+    "display" : "3M. TB diagnosed TB Microscopy"
+  },
+  {
+    "code" : "Chest Xray",
+    "display" : "3X. TB diagnosed Chest Xray"
+  },
+  {
+    "code" : "Currently on medication",
+    "display" : "4. Currently on TB medication"
+  },
+  {
+    "code" : "Completed treatment",
+    "display" : "5. Completed TB treatment"
+  },
+  {
+    "code" : "Other TB result, specify",
+    "display" : "3O. TB diagnosed Other specify"
+  }]
+}

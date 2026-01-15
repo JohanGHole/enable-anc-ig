@@ -1,0 +1,836 @@
+<!-- get modelType -->
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Pregnancy outcome Questionnaire - JSON Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<!-- <link href="assets/css/colors.css" rel="stylesheet"/>! -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.11"}
+    h3,h4,h5,h6{--heading-prefix:"2.11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://dhis2.org/integration/fhir/">
+      <img height="60" alt="Project home" src="assets/images/dhis2.png"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="80" alt="FHIR website" src="assets/images/fhir.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Pregnancy outcome Questionnaire</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ANCRMNCAHAntenatalcareregistryANC - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hispethiopia.org/enable/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-PregnancyOutcomeQuestionnaire.html">Tree View</a>
+  </li>
+
+
+  <li>
+    <a href="Questionnaire-PregnancyOutcomeQuestionnaire-form.html">Form</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Questionnaire-PregnancyOutcomeQuestionnaire.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-PregnancyOutcomeQuestionnaire.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+<h2 id="root">Questionnaire: Questionnaire/PregnancyOutcomeQuestionnaire - JSON Profile</h2>
+
+<p>JSON representation of the PregnancyOutcomeQuestionnaire questionnaire.</p>
+
+<p><a href="Questionnaire-PregnancyOutcomeQuestionnaire.json" no-download="true">Raw json</a> | <a href="Questionnaire-PregnancyOutcomeQuestionnaire.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">resourceType</a>" : "Questionnaire",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Questionnaire.id">id</a>" : "PregnancyOutcomeQuestionnaire",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#Questionnaire.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Questionnaire PregnancyOutcomeQuestionnaire&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire\&quot;&gt; &lt;/a&gt;&lt;table border=\&quot;1\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;The linkID for the item\&quot;&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Text for the item\&quot;&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Minimum and Maximum # of times the item can appear in the instance\&quot;&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;The type of the item\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Additional information about the item\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_q_root.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;QuestionnaireRoot\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Questionnaire&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;https://hispethiopia.org/enable/Questionnaire/PregnancyOutcomeQuestionnaire#0.1.0&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\&quot; id=\&quot;item.pregnancyOutcomeGroup\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-group.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;group\&quot; class=\&quot;hierarchy\&quot;/&gt; pregnancyOutcomeGroup&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Pregnancy outcome&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\&quot;&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncEnd1PregnancyOutcome\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncEnd1PregnancyOutcome&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Pregnancy outcome&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_ANC.ReasonForPregnancyOutcomeVS.html\&quot;&gt;ANC. Reason for Pregnancy Outcome value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancBdGestationOfDeliveryWeeks\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-decimal.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;decimal\&quot; class=\&quot;hierarchy\&quot;/&gt; ancBdGestationOfDeliveryWeeks&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Gestation of delivery (weeks)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\&quot;&gt;decimal&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\&quot; id=\&quot;item.ancAndBdOtherReasonForPregnancyOutcome\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAndBdOtherReasonForPregnancyOutcome&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Other Reason for Pregnancy Outcome&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_BDOtherReasonForPregnancyOutcomeVS.html\&quot;&gt;BD-Other Reason for Pregnancy Outcome value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\&quot; id=\&quot;item.maternalOutcomesGroup\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-group.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;group\&quot; class=\&quot;hierarchy\&quot;/&gt; maternalOutcomesGroup&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Maternal outcomes&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\&quot;&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdDateAndTimeOfAdmission\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-datetime.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;dateTime\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdDateAndTimeOfAdmission&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Date and time of admission&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdManaged\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdManaged&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Managed&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdReferred\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdReferred&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Referred&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdEclampsiaAntepartumHemorrhage\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdEclampsiaAntepartumHemorrhage&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Eclampsia antepartum hemorrhage &lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdEclampsiaPostpartumHemorrhage\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdEclampsiaPostpartumHemorrhage&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Eclampsia postpartum hemorrhage &lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdPromSepsis\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdPromSepsis&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD PROM/Sepsis&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdRupturedUx\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdRupturedUx&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Ruptured Ux&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdRepaired\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdRepaired&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Repaired&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdHysterectomy\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdHysterectomy&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Hysterectomy &lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdObstProlgLabour\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdObstProlgLabour&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Obst/prolg labour&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\&quot; id=\&quot;item.ancAncBdArvRxForMothersByType\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;string\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdArvRxForMothersByType&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD ARV Rx for Mothers (by type)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\&quot; id=\&quot;item.birthOutcomesGroup\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-group.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;group\&quot; class=\&quot;hierarchy\&quot;/&gt; birthOutcomesGroup&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Birth outcomes&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\&quot;&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdDateAndTimeOfBirthChild\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-datetime.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;dateTime\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdDateAndTimeOfBirthChild&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Date and time of birth (Child)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdDeliveredByName\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;string\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdDeliveredByName&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Delivered by&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdDeliveredBySignature\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;string\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdDeliveredBySignature&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Delivered by&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdSingleOrMultiple\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdSingleOrMultiple&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Single or Multiple&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_ANCSingleOrMultipleVS.html\&quot;&gt;ANC- Single or multiple value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdSingleOrMultipleSpecifyNumber\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-integer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;integer\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdSingleOrMultipleSpecifyNumber&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Single or Multiple Specify number&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\&quot;&gt;integer&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdChildVitalStatus\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdChildVitalStatus&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Alive&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_VitalStatusOfChildVS.html\&quot;&gt;Vital status of child value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdApgarScore\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdApgarScore&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Apgar Score&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdSexOfChild\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdSexOfChild&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Sex of child&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_BDSexOfChildVS.html\&quot;&gt;BD-Sex of child value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdWeightAtBirth\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-decimal.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;decimal\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdWeightAtBirth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Weight at birth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\&quot;&gt;decimal&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdLengthAtBirth\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-decimal.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;decimal\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdLengthAtBirth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Lenght at birth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\&quot;&gt;decimal&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdTermOrPreterm\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdTermOrPreterm&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Preterm Birth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_TermOrPretermVS.html\&quot;&gt;Term or preterm value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdModeOfDelivery\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdModeOfDelivery&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Mode of delivery&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_ModeOfDeliveryVS.html\&quot;&gt;Mode of delivery value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdPlacenta\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdPlacenta&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Placenta&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_ANC.BDPlacentaVS.html\&quot;&gt;ANC.BD Placenta value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdBcgVaccine\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-date.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;date\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdBcgVaccine&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD BCG Vaccine&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBd0pvVaccine\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-date.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;date\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBd0pvVaccine&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD 0PV Vaccine&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdHbvBirthDose\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdHbvBirthDose&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD HBV birth dose&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdVitK\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdVitK&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Vit K&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdTtc\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdTtc&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD TTC&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdSkinToSkinContact\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-boolean.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;boolean\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdSkinToSkinContact&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Skin to Skin contact&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; id=\&quot;item.ancAncBdArvPxForNewBornByTypeHiv\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;string\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdArvPxForNewBornByTypeHiv&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD ARV Px for New Born (By type, HIV)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\&quot; id=\&quot;item.ancAncBdFeedingOption\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdFeedingOption&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Feeding option&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_ANC.BDFeedingOptionsVS.html\&quot;&gt;ANC.BD Feeding options value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\&quot; id=\&quot;item.fetalAndNewBornDeathsGroup\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-group.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;group\&quot; class=\&quot;hierarchy\&quot;/&gt; fetalAndNewBornDeathsGroup&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Fetal and new born deaths&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\&quot;&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\&quot; id=\&quot;item.ancAncBdStillBirth\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_blank.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-coding.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;coding\&quot; class=\&quot;hierarchy\&quot;/&gt; ancAncBdStillBirth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;ANC - ANC.BD Still Birth&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: &lt;a href=\&quot;ValueSet-PregnancyOutcomeQuestionnaire_ANC.BDStillBirthVS.html\&quot;&gt;ANC.BD Still Birth value set&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Contained Resources&lt;/h2&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #ANC.ReasonForPregnancyOutcomeVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/ANC.ReasonForPregnancyOutcomeVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/ANC.ReasonForPregnancyOutcomeVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-ANC.ReasonForPregnancyOutcomeCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #TermOrPretermVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/TermOrPretermVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/TermOrPretermVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-TermOrPretermCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #ModeOfDeliveryVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/ModeOfDeliveryVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/ModeOfDeliveryVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-ModeOfDeliveryCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #BDSexOfChildVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/BDSexOfChildVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/BDSexOfChildVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-BDSexOfChildCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #VitalStatusOfChildVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/VitalStatusOfChildVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/VitalStatusOfChildVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-VitalStatusOfChildCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #BDOtherReasonForPregnancyOutcomeVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/BDOtherReasonForPregnancyOutcomeVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/BDOtherReasonForPregnancyOutcomeVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-BDOtherReasonForPregnancyOutcomeCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #ANC.BDFeedingOptionsVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/ANC.BDFeedingOptionsVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/ANC.BDFeedingOptionsVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-ANC.BDFeedingOptionsCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #ANC.BDPlacentaVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/ANC.BDPlacentaVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/ANC.BDPlacentaVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-ANC.BDPlacentaCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #ANCSingleOrMultipleVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/ANCSingleOrMultipleVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/ANCSingleOrMultipleVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-ANCSingleOrMultipleCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;ValueSet #ANC.BDStillBirthVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PregnancyOutcomeQuestionnaire/ANC.BDStillBirthVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPregnancyOutcomeQuestionnaire/ANC.BDStillBirthVS\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-ANC.BDStillBirthCS.html\&quot;&gt;&lt;code&gt;https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">contained</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "ANC.ReasonForPregnancyOutcomeVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ANC.ReasonForPregnancyOutcomeVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ANC. Reason for Pregnancy Outcome value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "TermOrPretermVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/TermOrPretermVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "TermOrPretermVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Term or preterm value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "ModeOfDeliveryVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ModeOfDeliveryVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Mode of delivery value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "BDSexOfChildVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BDSexOfChildVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "BD-Sex of child value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "VitalStatusOfChildVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "VitalStatusOfChildVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Vital status of child value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "BDOtherReasonForPregnancyOutcomeVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BDOtherReasonForPregnancyOutcomeVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "BD-Other Reason for Pregnancy Outcome value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "ANC.BDFeedingOptionsVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ANC.BDFeedingOptionsVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ANC.BD Feeding options value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "ANC.BDPlacentaVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ANC.BDPlacentaVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ANC.BD Placenta value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "ANCSingleOrMultipleVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ANCSingleOrMultipleVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ANC- Single or multiple value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/valueset.html">resourceType</a>" : "ValueSet",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "ANC.BDStillBirthVS",
+      "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+          <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html" style="color: Maroon">&#x1F517;</a> ,
+          "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ANC.BDStillBirthVS",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ANC.BD Still Birth value set",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+      "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>" : "https://hispethiopia.org/enable/Questionnaire/PregnancyOutcomeQuestionnaire",
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">title</a>" : "Pregnancy outcome Questionnaire",
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a>" : "2026-01-15T10:57:51+00:00",
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">publisher</a>" : "HISP Ethiopia",
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HISP Ethiopia",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://hispethiopia.org/"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "pregnancyOutcomeGroup",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Pregnancy outcome",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncEnd1PregnancyOutcome",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Pregnancy outcome",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : true,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#ANC.ReasonForPregnancyOutcomeVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancBdGestationOfDeliveryWeeks",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Gestation of delivery (weeks)",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "decimal",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAndBdOtherReasonForPregnancyOutcome",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Other Reason for Pregnancy Outcome",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#BDOtherReasonForPregnancyOutcomeVS"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "maternalOutcomesGroup",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Maternal outcomes",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdDateAndTimeOfAdmission",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Date and time of admission",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "dateTime",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdManaged",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Managed",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdReferred",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Referred",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdEclampsiaAntepartumHemorrhage",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Eclampsia antepartum hemorrhage ",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdEclampsiaPostpartumHemorrhage",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Eclampsia postpartum hemorrhage ",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdPromSepsis",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD PROM/Sepsis",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdRupturedUx",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Ruptured Ux",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdRepaired",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Repaired",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdHysterectomy",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Hysterectomy ",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdObstProlgLabour",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Obst/prolg labour",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdArvRxForMothersByType",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD ARV Rx for Mothers (by type)",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "string",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "birthOutcomesGroup",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Birth outcomes",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdDateAndTimeOfBirthChild",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Date and time of birth (Child)",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "dateTime",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdDeliveredByName",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Delivered by",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "string",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdDeliveredBySignature",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Delivered by",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "string",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdSingleOrMultiple",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Single or Multiple",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#ANCSingleOrMultipleVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdSingleOrMultipleSpecifyNumber",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Single or Multiple Specify number",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "integer",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdChildVitalStatus",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Alive",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#VitalStatusOfChildVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdApgarScore",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Apgar Score",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdSexOfChild",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Sex of child",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#BDSexOfChildVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdWeightAtBirth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Weight at birth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "decimal",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdLengthAtBirth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Lenght at birth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "decimal",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdTermOrPreterm",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Preterm Birth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#TermOrPretermVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdModeOfDelivery",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Mode of delivery",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#ModeOfDeliveryVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdPlacenta",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Placenta",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#ANC.BDPlacentaVS"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdBcgVaccine",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD BCG Vaccine",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "date",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBd0pvVaccine",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD 0PV Vaccine",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "date",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdHbvBirthDose",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD HBV birth dose",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdVitK",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Vit K",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdTtc",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD TTC",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdSkinToSkinContact",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Skin to Skin contact",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdArvPxForNewBornByTypeHiv",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD ARV Px for New Born (By type, HIV)",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "string",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdFeedingOption",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Feeding option",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#ANC.BDFeedingOptionsVS"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "fetalAndNewBornDeathsGroup",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Fetal and new born deaths",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ancAncBdStillBirth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "ANC - ANC.BD Still Birth",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "#ANC.BDStillBirthVS"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hispethiopia.org/">HISP Ethiopia</a>.  Package enable.antenatal.care.registry#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 15, 2026 10:57+0000">2026-01-15</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="https://hispethiopia.org/enable/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

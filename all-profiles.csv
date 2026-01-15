@@ -1,0 +1,1030 @@
+"Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ANCExamination","ANCExamination","ANCExamination","","","",0,*,"","","","null {[]} {[]}
+","ANC Examination","ANC Examination","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ANCExamination","ANCExamination.bodyTemperature","ANCExamination.bodyTemperature","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. Body temperature","ANC - ANC.B8. Body temperature","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#L6Toy2TrHHq
+",,,,"ANCExamination.bodyTemperature",0,1,"",""
+"ANCExamination","ANCExamination.diastolicBloodPressure","ANCExamination.diastolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Diastolic blood pressure","ANC - ANC.B8. Diastolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dyYdfamSY2Z
+",,,,"ANCExamination.diastolicBloodPressure",0,1,"",""
+"ANCExamination","ANCExamination.fetalHeartbeatPresent","ANCExamination.fetalHeartbeatPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Fetal heartbeat present","ANC - ANC.B8. Fetal heartbeat present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#c6Cg8KgNu77
+",,,,"ANCExamination.fetalHeartbeatPresent",0,1,"",""
+"ANCExamination","ANCExamination.fetalHeartRate","ANCExamination.fetalHeartRate","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Fetal heart rate","ANC - ANC.B8. Fetal heart rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cY03odVgQqq
+",,,,"ANCExamination.fetalHeartRate",0,1,"",""
+"ANCExamination","ANCExamination.fetalPresentation","ANCExamination.fetalPresentation","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Fetal presentation","ANC - ANC.B8. Fetal presentation","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vPdXnmGWzfy
+",,,,"ANCExamination.fetalPresentation",0,1,"",""
+"ANCExamination","ANCExamination.oedemaLegSwelling","ANCExamination.oedemaLegSwelling","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Oedema Leg swelling","ANC - ANC.B8. Oedema Leg swelling","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rC2RDuM8wb2
+",,,,"ANCExamination.oedemaLegSwelling",0,1,"",""
+"ANCExamination","ANCExamination.symptomsOfPreEclampsiaPresent","ANCExamination.symptomsOfPreEclampsiaPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Symptoms of severe pre-eclampsia present","ANC - ANC.B8. Symptoms of severe pre-eclampsia present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YrtUVQtPngs
+",,,,"ANCExamination.symptomsOfPreEclampsiaPresent",0,1,"",""
+"ANCExamination","ANCExamination.numberOfFetuses","ANCExamination.numberOfFetuses","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Number of fetuses","ANC - ANC.B8. Number of fetuses","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PN6HcGjTraL
+",,,,"ANCExamination.numberOfFetuses",0,1,"",""
+"ANCExamination","ANCExamination.oedemaOfTheHandsAndFeet","ANCExamination.oedemaOfTheHandsAndFeet","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Oedema of the hands and feet","ANC - ANC.B8. Oedema of the hands and feet","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jETdi1M2DY9
+",,,,"ANCExamination.oedemaOfTheHandsAndFeet",0,1,"",""
+"ANCExamination","ANCExamination.oedemaPresent","ANCExamination.oedemaPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Oedema present","ANC - ANC.B8. Oedema present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ULV28awvMXH
+",,,,"ANCExamination.oedemaPresent",0,1,"",""
+"ANCExamination","ANCExamination.oedemaSeverity","ANCExamination.oedemaSeverity","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Oedema severity","ANC - ANC.B8. Oedema severity","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SrpLUqMjW97
+",,,,"ANCExamination.oedemaSeverity",0,1,"",""
+"ANCExamination","ANCExamination.pallorPresent","ANCExamination.pallorPresent","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Pallor present","ANC - ANC.B8. Pallor present","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EyfTU3ibMmJ
+",,,,"ANCExamination.pallorPresent",0,1,"",""
+"ANCExamination","ANCExamination.pelvicExamResultVisual","ANCExamination.pelvicExamResultVisual","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Pelvic exam result (visual)","ANC - ANC.B8. Pelvic exam result (visual)","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Q3s82wdeOZg
+",,,,"ANCExamination.pelvicExamResultVisual",0,1,"",""
+"ANCExamination","ANCExamination.pittingAnkleOedema","ANCExamination.pittingAnkleOedema","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Pitting ankle oedema","ANC - ANC.B8. Pitting ankle oedema","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#kNrTQqC1bgg
+",,,,"ANCExamination.pittingAnkleOedema",0,1,"",""
+"ANCExamination","ANCExamination.pittingLowerBackOedema","ANCExamination.pittingLowerBackOedema","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Pitting lower back oedema","ANC - ANC.B8. Pitting lower back oedema","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#yQyFSrY3S0q
+",,,,"ANCExamination.pittingLowerBackOedema",0,1,"",""
+"ANCExamination","ANCExamination.pulseRate","ANCExamination.pulseRate","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Pulse rate","ANC - ANC.B8. Pulse rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#C47wV4EBLaS
+",,,,"ANCExamination.pulseRate",0,1,"",""
+"ANCExamination","ANCExamination.repeatDiastolicBloodPressure","ANCExamination.repeatDiastolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Repeat diastolic blood pressure","ANC - ANC.B8. Repeat diastolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#MqZDsOZm4yD
+",,,,"ANCExamination.repeatDiastolicBloodPressure",0,1,"",""
+"ANCExamination","ANCExamination.repeatSystolicBloodPressure","ANCExamination.repeatSystolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Repeat systolic blood pressure","ANC - ANC.B8. Repeat systolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZkCYYlI4xe7
+",,,,"ANCExamination.repeatSystolicBloodPressure",0,1,"",""
+"ANCExamination","ANCExamination.symphysisFundalHeightSfh","ANCExamination.symphysisFundalHeightSfh","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Symphysis-fundal height (SFH)","ANC - ANC.B8. Symphysis-fundal height (SFH)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fjZ4KQpS1QS
+",,,,"ANCExamination.symphysisFundalHeightSfh",0,1,"",""
+"ANCExamination","ANCExamination.systolicBloodPressure","ANCExamination.systolicBloodPressure","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Systolic blood pressure","ANC - ANC.B8. Systolic blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#M4HEOoEFTAT
+",,,,"ANCExamination.systolicBloodPressure",0,1,"",""
+"ANCExamination","ANCExamination.signsConditionsForGbv","ANCExamination.signsConditionsForGbv","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8. Signs/conditions for GBV","ANC - ANC.B8. Signs/conditions for GBV","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VEFV1QayfzE
+",,,,"ANCExamination.signsConditionsForGbv",0,1,"",""
+"ANCExamination","ANCExamination.otherAbnormalPelvicVisualResultSpecify","ANCExamination.otherAbnormalPelvicVisualResultSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)","ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#d8vfOWb6SPd
+",,,,"ANCExamination.otherAbnormalPelvicVisualResultSpecify",0,1,"",""
+"ANCExamination","ANCExamination.previousScar1","ANCExamination.previousScar1","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 1","ANC - Previous scar 1","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vMVLu4hlDqx
+",,,,"ANCExamination.previousScar1",0,1,"",""
+"ANCExamination","ANCExamination.otherFetalPresentationSpecify","ANCExamination.otherFetalPresentationSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B8. Other fetal presentation (specify)","ANC - ANC.B8. Other fetal presentation (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#tsaVZFUAgkD
+",,,,"ANCExamination.otherFetalPresentationSpecify",0,1,"",""
+"ANCExamination","ANCExamination.previousScarYear1","ANCExamination.previousScarYear1","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 1","ANC - Previous scar year 1","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fDdSgAwUbtS
+",,,,"ANCExamination.previousScarYear1",0,1,"",""
+"ANCExamination","ANCExamination.previousScarIndication1","ANCExamination.previousScarIndication1","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 1","ANC - Previous Scar Indication 1","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UAwQzN7SMAi
+",,,,"ANCExamination.previousScarIndication1",0,1,"",""
+"ANCExamination","ANCExamination.previousScar2","ANCExamination.previousScar2","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 2","ANC - Previous scar 2","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#nN3JSNtFAo8
+",,,,"ANCExamination.previousScar2",0,1,"",""
+"ANCExamination","ANCExamination.previousScarYear2","ANCExamination.previousScarYear2","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 2","ANC - Previous scar year 2","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#b3qArrNwpz0
+",,,,"ANCExamination.previousScarYear2",0,1,"",""
+"ANCExamination","ANCExamination.previousScarIndication2","ANCExamination.previousScarIndication2","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 2","ANC - Previous Scar Indication 2","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#wha8HRwqFtD
+",,,,"ANCExamination.previousScarIndication2",0,1,"",""
+"ANCExamination","ANCExamination.experiencingCoughLastingMoreThan2Weeks","ANCExamination.experiencingCoughLastingMoreThan2Weeks","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks","ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hITbUr6ufTz
+",,,,"ANCExamination.experiencingCoughLastingMoreThan2Weeks",0,1,"",""
+"ANCExamination","ANCExamination.previousScar3","ANCExamination.previousScar3","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 3","ANC - Previous scar 3","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#a7gTKszpdVp
+",,,,"ANCExamination.previousScar3",0,1,"",""
+"ANCExamination","ANCExamination.hospitalisationForWhat","ANCExamination.hospitalisationForWhat","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B7. Hospitalisation for what","ANC - ANC.B7. Hospitalisation for what","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#WBBaer7NTFJ
+",,,,"ANCExamination.hospitalisationForWhat",0,1,"",""
+"ANCExamination","ANCExamination.previousScarYear3","ANCExamination.previousScarYear3","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 3","ANC - Previous scar year 3","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LSIsLB6epXX
+",,,,"ANCExamination.previousScarYear3",0,1,"",""
+"ANCExamination","ANCExamination.muac","ANCExamination.muac","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. MUAC","ANC - ANC.B8. MUAC","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ydqILDGfoRp
+",,,,"ANCExamination.muac",0,1,"",""
+"ANCExamination","ANCExamination.previousScarIndication3","ANCExamination.previousScarIndication3","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 3","ANC - Previous Scar Indication 3","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ytarRo3GlhD
+",,,,"ANCExamination.previousScarIndication3",0,1,"",""
+"ANCExamination","ANCExamination.previousScar4","ANCExamination.previousScar4","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Previous scar 4","ANC - Previous scar 4","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EFKE1hMUpkM
+",,,,"ANCExamination.previousScar4",0,1,"",""
+"ANCExamination","ANCExamination.muacColorCode","ANCExamination.muacColorCode","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. MUAC Color code","ANC - ANC.B8. MUAC Color code","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jhv8rdTd1sf
+",,,,"ANCExamination.muacColorCode",0,1,"",""
+"ANCExamination","ANCExamination.previousScarYear4","ANCExamination.previousScarYear4","","","",0,1,"","","","code {[]} {[]}
+","ANC - Previous scar year 4","ANC - Previous scar year 4","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/YearVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PIIZ3ngYzxf
+",,,,"ANCExamination.previousScarYear4",0,1,"",""
+"ANCExamination","ANCExamination.nutritionalStatus","ANCExamination.nutritionalStatus","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Nutritional status","ANC - ANC.B8. Nutritional status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#N2MadZlBXiJ
+",,,,"ANCExamination.nutritionalStatus",0,1,"",""
+"ANCExamination","ANCExamination.relationPresentingPart","ANCExamination.relationPresentingPart","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Relation presenting part","ANC - ANC.B8. Relation presenting part","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gnZ35nEqJmI
+",,,,"ANCExamination.relationPresentingPart",0,1,"",""
+"ANCExamination","ANCExamination.previousScarIndication4","ANCExamination.previousScarIndication4","","","",0,1,"","","","string {[]} {[]}
+","ANC - Previous Scar Indication 4","ANC - Previous Scar Indication 4","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xZ2QZYotcKT
+",,,,"ANCExamination.previousScarIndication4",0,1,"",""
+"ANCExamination","ANCExamination.experiencingContractions","ANCExamination.experiencingContractions","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Contractions","ANC - ANC.B7. Experiencing Contractions","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zZzZazs1DGi
+",,,,"ANCExamination.experiencingContractions",0,1,"",""
+"ANCExamination","ANCExamination.experiencingFever","ANCExamination.experiencingFever","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Fever","ANC - ANC.B7. Experiencing Fever","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#eF3VGluAlcm
+",,,,"ANCExamination.experiencingFever",0,1,"",""
+"ANCExamination","ANCExamination.experiencingSevereHeadache","ANCExamination.experiencingSevereHeadache","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Severe Headache","ANC - ANC.B7. Experiencing Severe Headache","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#QhijDzMdFNq
+",,,,"ANCExamination.experiencingSevereHeadache",0,1,"",""
+"ANCExamination","ANCExamination.secondFetalHeartRate","ANCExamination.secondFetalHeartRate","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Second fetal heart rate","ANC - ANC.B8. Second fetal heart rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VLcb1WBMTIH
+",,,,"ANCExamination.secondFetalHeartRate",0,1,"",""
+"ANCExamination","ANCExamination.experiencingVaginalBleeding","ANCExamination.experiencingVaginalBleeding","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Vaginal bleeding","ANC - ANC.B7. Experiencing Vaginal bleeding","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SM7dVOLQD8j
+",,,,"ANCExamination.experiencingVaginalBleeding",0,1,"",""
+"ANCExamination","ANCExamination.experiencingExcessiveVomiting","ANCExamination.experiencingExcessiveVomiting","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Experiencing Excessive Vomiting","ANC - ANC.B7. Experiencing Excessive Vomiting","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xa10dHKgRWa
+",,,,"ANCExamination.experiencingExcessiveVomiting",0,1,"",""
+"ANCExamination","ANCExamination.hasAbnormalVaginalDischargePhysiological","ANCExamination.hasAbnormalVaginalDischargePhysiological","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)","ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cPOXL8JV8Ee
+",,,,"ANCExamination.hasAbnormalVaginalDischargePhysiological",0,1,"",""
+"ANCExamination","ANCExamination.ancGestationalAgeAtVisitAnc","ANCExamination.ancGestationalAgeAtVisitAnc","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Gestational age at today's visit_ANC","ANC - ANC.B8. Gestational age at today's visit_ANC","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#syAvZ78FCls
+",,,,"ANCExamination.ancGestationalAgeAtVisitAnc",0,1,"",""
+"ANCExamination","ANCExamination.currentWeight","ANCExamination.currentWeight","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Current  weight","ANC - ANC.B8. Current  weight","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#H90qsZViPcS
+",,,,"ANCExamination.currentWeight",0,1,"",""
+"ANCExamination","ANCExamination.painExtremePelvicPainCannotWalk","ANCExamination.painExtremePelvicPainCannotWalk","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)","ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qmgotDEO8YI
+",,,,"ANCExamination.painExtremePelvicPainCannotWalk",0,1,"",""
+"ANCExamination","ANCExamination.totalWeightGainKg","ANCExamination.totalWeightGainKg","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. Total weight gain (kg)","ANC - ANC.B8. Total weight gain (kg)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#J3ijwQYXVSV
+",,,,"ANCExamination.totalWeightGainKg",0,1,"",""
+"ANCExamination","ANCExamination.painOther","ANCExamination.painOther","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B5. Pain –Other","ANC - ANC.B5. Pain –Other","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#WWGGsY8l88G
+",,,,"ANCExamination.painOther",0,1,"",""
+"ANCExamination","ANCExamination.ancVisitNumber","ANCExamination.ancVisitNumber","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC Visit Number","ANC - ANC Visit Number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bXVD2EMF7UW
+",,,,"ANCExamination.ancVisitNumber",0,1,"",""
+"ANCExamination","ANCExamination.noCurrentSymptomsOrComplications","ANCExamination.noCurrentSymptomsOrComplications","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. No physiological symptoms","ANC - ANC.B7. No physiological symptoms","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Kyw7NtFeW3B
+",,,,"ANCExamination.noCurrentSymptomsOrComplications",0,1,"",""
+"ANCExamination","ANCExamination.otherCurrentPhysiologicalSymptomsSpecify","ANCExamination.otherCurrentPhysiologicalSymptomsSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B7. Other current physiological symptoms (specify)","ANC - ANC.B7. Other current physiological symptoms (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KZT7yfzeP08
+",,,,"ANCExamination.otherCurrentPhysiologicalSymptomsSpecify",0,1,"",""
+"ANCExamination","ANCExamination.1stAncOrAScheduledVisit","ANCExamination.1stAncOrAScheduledVisit","","","",1,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B5. Regular ANC / Scheduled visit?","ANC - ANC.B5. Regular ANC / Scheduled visit?","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xb4Z245Bnej
+",,,,"ANCExamination.1stAncOrAScheduledVisit",1,1,"",""
+"ANCExamination","ANCExamination.fetalMovement","ANCExamination.fetalMovement","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B7. Fetal movement","ANC - ANC.B7. Fetal movement","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CORtBqRWjMG
+",,,,"ANCExamination.fetalMovement",0,1,"",""
+"ANCExamination","ANCExamination.specifyHealthConcern","ANCExamination.specifyHealthConcern","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B5. Specify health concern","ANC - ANC.B5. Specify health concern","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LI3bLtFxT8h
+",,,,"ANCExamination.specifyHealthConcern",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC","","","",0,*,"","","","null {[]} {[]}
+","ANC - RMNCAH - Antenatal care registry (ANC)","Mother program","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.ancUid","ANCRMNCAHAntenatalCareRegistryANC.ancUid","","","",0,1,"","","","string {[]} {[]}
+","Unique Identifier for ANC record","Unique Identifier for ANC record","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#eKyHEXO8dbK
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.ancUid",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.clientMrn","ANCRMNCAHAntenatalCareRegistryANC.clientMrn","","","",1,1,"","","","string {[]} {[]}
+","ANC ET MRN","ANC ET MRN","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#OYuDdqr2MvX
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.clientMrn",1,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName","ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName","","","",1,1,"","","","string {[]} {[]}
+","Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)","Grandfather's Name (in the case of other countries, Family name or last name of the patient of case.)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#ENRjVGxVL6l
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.grandfatherSName",1,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.firstName","ANCRMNCAHAntenatalCareRegistryANC.firstName","","","",1,1,"","","","string {[]} {[]}
+","First Name (in other countries, this may be Given Name)","First Name (in other countries, this may be Given Name)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#sB1IHYu2xQT
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.firstName",1,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth","ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth","","","",0,1,"","","","Age {[]} {[]}
+","Age/Date of birth","Age/Date of birth","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#Fgf497oYvSC
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.ancAgeDateOfBirth",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.ageYears","ANCRMNCAHAntenatalCareRegistryANC.ageYears","","","",0,1,"","","","unsignedInt {[]} {[]}
+","Age in years","Age in years","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#B6TnnFMgmCk
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.ageYears",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber","ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber","","","",0,1,"","","","string {[]} {[]}
+","Fayda National Alias Number","Fayda National Alias Number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#Amopa1NFvJy
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.ancFaydaNationalAliasNumber",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.mobileNumber","ANCRMNCAHAntenatalCareRegistryANC.mobileNumber","","","",0,1,"","","","string {[]} {[]}
+","Client's mobile phone number","Client's mobile phone number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#ciCR6BBvIT4
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.mobileNumber",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation","ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation","","","",0,1,"","","","code {[]} {[]}
+","ANC.B6. Occupation","ANC.B6. Occupation","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/OccupationVS","https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#pmhJhfpSkvR
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.ancB6Occupation",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.educationLevel","ANCRMNCAHAntenatalCareRegistryANC.educationLevel","","","",0,1,"","","","code {[]} {[]}
+","Education level
+","Education level","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B6.EducationLevelVS","https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#rLeZyocx3Zg
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.educationLevel",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel","ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel","","","",0,1,"","","","string {[]} {[]}
+","Specify other education level","Specify other education level","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#oZTIMpuQN3Z
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.specifyOtherEducationLevel",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.maritalStatus","ANCRMNCAHAntenatalCareRegistryANC.maritalStatus","","","",0,1,"","","","code {[]} {[]}
+","Marital Status","Marital Status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/MaritalStatusVS","https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#wW9OmWfCBnx
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.maritalStatus",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.addressDistrict","ANCRMNCAHAntenatalCareRegistryANC.addressDistrict","","","",0,1,"","","","string {[]} {[]}
+","District of current address of the patient or case.","District of current address of the patient or case.","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#A6Hb0Kvg4vb
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.addressDistrict",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.addressParish","ANCRMNCAHAntenatalCareRegistryANC.addressParish","","","",0,1,"","","","string {[]} {[]}
+","Kebele of current address of the patient","Kebele of current address of the patient","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#fzCzJ1yJaoR
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.addressParish",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.addressVillage","ANCRMNCAHAntenatalCareRegistryANC.addressVillage","","","",0,1,"","","","string {[]} {[]}
+","Village of current address of the patient","Village of current address of the patient","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#D9DHLcCh5YX
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.addressVillage",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.fatherSName","ANCRMNCAHAntenatalCareRegistryANC.fatherSName","","","",0,1,"","","","string {[]} {[]}
+","Father's name (in other countries, this may also refer to a woman's Maiden Names)","Father's name (in other countries, this may also refer to a woman's Maiden Names)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#ZtQqOYot5ut
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.fatherSName",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.otherNames","ANCRMNCAHAntenatalCareRegistryANC.otherNames","","","",0,1,"","","","string {[]} {[]}
+","Other names","Other names","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#ugxTfREw8iV
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.otherNames",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber","ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber","","","",0,1,"","","","string {[]} {[]}
+","Client's SMS mobile phone number","Client's SMS mobile phone number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs#RJxLa3nITB3
+",,,,"ANCRMNCAHAntenatalCareRegistryANC.smsMobileNumber",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory","ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory","","","",0,1,"","","","https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory {[]} {[]}
+","Woman's Profile and History","Woman's Profile and History","","","","","","","","","",,,,,"",,,,"ANCRMNCAHAntenatalCareRegistryANC.womanSProfileAndHistory",0,1,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.ancExamination","ANCRMNCAHAntenatalCareRegistryANC.ancExamination","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/ANCExamination {[]} {[]}
+","ANC Examination","ANC Examination","","","","","","","","","",,,,,"",,,,"ANCRMNCAHAntenatalCareRegistryANC.ancExamination",0,*,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging","ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging {[]} {[]}
+","Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy ","Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy","","","","","","","","","",,,,,"",,,,"ANCRMNCAHAntenatalCareRegistryANC.laboratoryTestsAndImaging",0,*,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment","ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/PromotionAndTreatment {[]} {[]}
+","Data elements for the counselling and treatment task of the workflow							","Data elements for the counselling and treatment task of the workflow","","","","","","","","","",,,,,"",,,,"ANCRMNCAHAntenatalCareRegistryANC.promotionAndTreatment",0,*,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome","ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/PregnancyOutcome {[]} {[]}
+","Pregnancy outcome","Pregnancy outcome","","","","","","","","","",,,,,"",,,,"ANCRMNCAHAntenatalCareRegistryANC.pregnancyOutcome",0,*,"",""
+"ANCRMNCAHAntenatalCareRegistryANC","ANCRMNCAHAntenatalCareRegistryANC.postpartum","ANCRMNCAHAntenatalCareRegistryANC.postpartum","","","",0,*,"","","","https://hispethiopia.org/enable/StructureDefinition/Postpartum {[]} {[]}
+","Postpartum","Postpartum","","","","","","","","","",,,,,"",,,,"ANCRMNCAHAntenatalCareRegistryANC.postpartum",0,*,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging","LaboratoryTestsAndImaging","","","",0,*,"","","","null {[]} {[]}
+","Laboratory Tests and Imaging ","Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.randomBloodSugarResult","LaboratoryTestsAndImaging.randomBloodSugarResult","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B9. Random blood sugar result","ANC - ANC.B9. Random blood sugar result","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#wi3jkKJNjr7
+",,,,"LaboratoryTestsAndImaging.randomBloodSugarResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.bloodHaemoglobinTestDate","LaboratoryTestsAndImaging.bloodHaemoglobinTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Blood haemoglobin test date","ANC - ANC.B9.  Blood haemoglobin test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#S3bsJ9ogxeN
+",,,,"LaboratoryTestsAndImaging.bloodHaemoglobinTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.bloodGroup","LaboratoryTestsAndImaging.bloodGroup","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Blood group","ANC - ANC.B9.  Blood group","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#eddQQbyYaEv
+",,,,"LaboratoryTestsAndImaging.bloodGroup",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.bloodScreeningTestDate","LaboratoryTestsAndImaging.bloodScreeningTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Blood screening test date","ANC - ANC.B9.  Blood screening test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Dp1hN6EwLnh
+",,,,"LaboratoryTestsAndImaging.bloodScreeningTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.hepatitisBTestDate","LaboratoryTestsAndImaging.hepatitisBTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B test date","ANC - ANC.B9.  Hepatitis B test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rEAO5q6BnSJ
+",,,,"LaboratoryTestsAndImaging.hepatitisBTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.hepatitisBTestResult","LaboratoryTestsAndImaging.hepatitisBTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B test result","ANC - ANC.B9.  Hepatitis B test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vDkIpVMAYPU
+",,,,"LaboratoryTestsAndImaging.hepatitisBTestResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ancEmtctTestDate","LaboratoryTestsAndImaging.ancEmtctTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9. eMTCT test date","ANC - ANC.B9. eMTCT test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YREFGI3SapQ
+",,,,"LaboratoryTestsAndImaging.ancEmtctTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.emtctCode","LaboratoryTestsAndImaging.emtctCode","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  eMTCT HIV test result","ANC - ANC.B9.  eMTCT HIV test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zo8VyJRKcmi
+",,,,"LaboratoryTestsAndImaging.emtctCode",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.tbScreeningIncompleteSymptomsOnly","LaboratoryTestsAndImaging.tbScreeningIncompleteSymptomsOnly","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  TB screening incomplete (symptoms only)","ANC - ANC.B9.  TB screening incomplete (symptoms only)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#liA7cL3lyMp
+",,,,"LaboratoryTestsAndImaging.tbScreeningIncompleteSymptomsOnly",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.otherTestSDate","LaboratoryTestsAndImaging.otherTestSDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Other test(s) date","ANC - ANC.B9.  Other test(s) date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xXuuXz5xfh6
+",,,,"LaboratoryTestsAndImaging.otherTestSDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.otherTestSName","LaboratoryTestsAndImaging.otherTestSName","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B9.  Other test(s) name","ANC - ANC.B9.  Other test(s) name","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HjA9hp3NCFA
+",,,,"LaboratoryTestsAndImaging.otherTestSName",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.otherTestSResultS","LaboratoryTestsAndImaging.otherTestSResultS","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B9.   Other test(s) result(s)","ANC - ANC.B9.   Other test(s) result(s)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UsM907MWnA5
+",,,,"LaboratoryTestsAndImaging.otherTestSResultS",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerHivTestDate","LaboratoryTestsAndImaging.partnerHivTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC -ANC.B9.  Partner HIV test date","ANC -ANC.B9.  Partner HIV test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ox8s78VJC1R
+",,,,"LaboratoryTestsAndImaging.partnerHivTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.labCd4Results","LaboratoryTestsAndImaging.labCd4Results","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - LAB CD4 results","ANC - LAB CD4 results","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ODqCU8tNjq5
+",,,,"LaboratoryTestsAndImaging.labCd4Results",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.viralLoadResults","LaboratoryTestsAndImaging.viralLoadResults","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - LAB Viral load results","ANC - LAB Viral load results","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZtpsckiEhGB
+",,,,"LaboratoryTestsAndImaging.viralLoadResults",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerHivTestResult","LaboratoryTestsAndImaging.partnerHivTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Partner HIV test result","ANC - ANC.B9.  Partner HIV test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#MhC6OCNIFOZ
+",,,,"LaboratoryTestsAndImaging.partnerHivTestResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.whoClinicalStage","LaboratoryTestsAndImaging.whoClinicalStage","","","",0,1,"","","","code {[]} {[]}
+","ANC - LAB WHO Clinical stage","ANC - LAB WHO Clinical stage","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#OAVexurF9i0
+",,,,"LaboratoryTestsAndImaging.whoClinicalStage",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.platelets","LaboratoryTestsAndImaging.platelets","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - ANC Platelets","ANC - ANC Platelets","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cBuumo9jGRc
+",,,,"LaboratoryTestsAndImaging.platelets",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.pwArtLink","LaboratoryTestsAndImaging.pwArtLink","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC LAB Pregnant woman linked to ART","ANC - ANC LAB Pregnant woman linked to ART","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fixliM4mt3T
+",,,,"LaboratoryTestsAndImaging.pwArtLink",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.artNumber","LaboratoryTestsAndImaging.artNumber","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC LAB Pregnant woman ART number","ANC - ANC LAB Pregnant woman ART number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SuC9foMX1Ea
+",,,,"LaboratoryTestsAndImaging.artNumber",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.artLocation","LaboratoryTestsAndImaging.artLocation","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC Lab Pregnant woman ART location","ANC - ANC Lab Pregnant woman ART location","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Yycea04JKAR
+",,,,"LaboratoryTestsAndImaging.artLocation",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.dateViralLoadSampleCollected","LaboratoryTestsAndImaging.dateViralLoadSampleCollected","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date Viral load sample collected","ANC - ANC LAB Date Viral load sample collected","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#I4OPKBwhGQ0
+",,,,"LaboratoryTestsAndImaging.dateViralLoadSampleCollected",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.dateViralLoadSampleReturned","LaboratoryTestsAndImaging.dateViralLoadSampleReturned","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date Viral load sample returned","ANC - ANC LAB Date Viral load sample returned","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#noAWcXSpCaP
+",,,,"LaboratoryTestsAndImaging.dateViralLoadSampleReturned",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.viralLoadStatus","LaboratoryTestsAndImaging.viralLoadStatus","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Viral load status","ANC - ANC LAB Viral load status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#GLFICGeB5Ap
+",,,,"LaboratoryTestsAndImaging.viralLoadStatus",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.dateCd4SampleCollected","LaboratoryTestsAndImaging.dateCd4SampleCollected","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date CD4 sample collected","ANC - ANC LAB Date CD4 sample collected","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#D40sUAJilcj
+",,,,"LaboratoryTestsAndImaging.dateCd4SampleCollected",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.symptomsOfComplicatedMalaria","LaboratoryTestsAndImaging.symptomsOfComplicatedMalaria","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - LAB Symptoms of complicated malaria","ANC - LAB Symptoms of complicated malaria","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SnHImni1u5k
+",,,,"LaboratoryTestsAndImaging.symptomsOfComplicatedMalaria",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.dateCd4SampleReturned","LaboratoryTestsAndImaging.dateCd4SampleReturned","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date CD4 sample returned","ANC - ANC LAB Date CD4 sample returned","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xem63QqjPNK
+",,,,"LaboratoryTestsAndImaging.dateCd4SampleReturned",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.rhFactor","LaboratoryTestsAndImaging.rhFactor","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Rh factor","ANC - ANC.B9.  Rh factor","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#p6wWb8I2jyo
+",,,,"LaboratoryTestsAndImaging.rhFactor",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.syphilisTestDate","LaboratoryTestsAndImaging.syphilisTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Syphilis test date","ANC - ANC.B9.  Syphilis test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#XST9vCca14R
+",,,,"LaboratoryTestsAndImaging.syphilisTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.syphilisTestResult","LaboratoryTestsAndImaging.syphilisTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Syphilis test result","ANC - ANC.B9.  Syphilis test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gueCJt1Cjru
+",,,,"LaboratoryTestsAndImaging.syphilisTestResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.tbTestDate","LaboratoryTestsAndImaging.tbTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  TB test date","ANC - ANC.B9.  TB test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jORfSq3dc0Z
+",,,,"LaboratoryTestsAndImaging.tbTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.tbTestResult","LaboratoryTestsAndImaging.tbTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  TB test result","ANC - ANC.B9.  TB test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vB0KLtHeSft
+",,,,"LaboratoryTestsAndImaging.tbTestResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ultrasoundScanDate","LaboratoryTestsAndImaging.ultrasoundScanDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Ultrasound scan date","ANC - ANC.B9.  Ultrasound scan date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#P0WhE9bsD1E
+",,,,"LaboratoryTestsAndImaging.ultrasoundScanDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.urineDipstickResultGlucose","LaboratoryTestsAndImaging.urineDipstickResultGlucose","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –glucose","ANC - ANC.B9.  Urine dipstick result –glucose","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZP8aN3M1U51
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultGlucose",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.urineDipstickResultLeukocytes","LaboratoryTestsAndImaging.urineDipstickResultLeukocytes","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –leukocytes","ANC - ANC.B9.  Urine dipstick result –leukocytes","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#n7ITb3GsUNi
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultLeukocytes",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.urineDipstickResultNitrites","LaboratoryTestsAndImaging.urineDipstickResultNitrites","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –nitrites","ANC - ANC.B9.  Urine dipstick result –nitrites","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#z1iDiVtSw43
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultNitrites",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.urineDipstickResultProtein","LaboratoryTestsAndImaging.urineDipstickResultProtein","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –protein","ANC - ANC.B9.  Urine dipstick result –protein","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PpxBOihc1Y6
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultProtein",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.bloodGlucoseTestDate","LaboratoryTestsAndImaging.bloodGlucoseTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Blood glucose test date","ANC - ANC.B9.  Blood glucose test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EnLWXRgiimk
+",,,,"LaboratoryTestsAndImaging.bloodGlucoseTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ancLabSickleCell","LaboratoryTestsAndImaging.ancLabSickleCell","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Sickle cell","ANC - ANC LAB Sickle cell","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pV0OABcFZCu
+",,,,"LaboratoryTestsAndImaging.ancLabSickleCell",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ancB6UltrasoundGa","LaboratoryTestsAndImaging.ancB6UltrasoundGa","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B6 Ultrasound GA","ANC - ANC.B6 Ultrasound GA","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Juv31inY35a
+",,,,"LaboratoryTestsAndImaging.ancB6UltrasoundGa",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerArtNumber","LaboratoryTestsAndImaging.partnerArtNumber","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC LAB Partner ART Number","ANC - ANC LAB Partner ART Number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pMYNlTxqieX
+",,,,"LaboratoryTestsAndImaging.partnerArtNumber",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerAge","LaboratoryTestsAndImaging.partnerAge","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC LAB Partner age","ANC - ANC LAB Partner age","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jHwhKRgeemY
+",,,,"LaboratoryTestsAndImaging.partnerAge",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerArtLink","LaboratoryTestsAndImaging.partnerArtLink","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC LAB Partner linked to ART ","ANC - ANC LAB Partner linked to ART","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#mXYhBhAPXJL
+",,,,"LaboratoryTestsAndImaging.partnerArtLink",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerArtLocation","LaboratoryTestsAndImaging.partnerArtLocation","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC Lab Partner ART location","ANC - ANC Lab Partner ART location","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ccy0efIWFb8
+",,,,"LaboratoryTestsAndImaging.partnerArtLocation",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.partnerSyphilisTestResult","LaboratoryTestsAndImaging.partnerSyphilisTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Partner Syphilis test result","ANC - ANC.B9.  Partner Syphilis test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dN6k6agVKUu
+",,,,"LaboratoryTestsAndImaging.partnerSyphilisTestResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate","LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC B9.DE Urine dipstick test date","ANC - ANC B9.DE Urine dipstick test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bUQy6eZfqFR
+",,,,"LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.malariaBS","LaboratoryTestsAndImaging.malariaBS","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Malaria B/S for MPs","ANC - ANC LAB Malaria B/S for MPs","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pnR1TFOb4xU
+",,,,"LaboratoryTestsAndImaging.malariaBS",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.pusCells","LaboratoryTestsAndImaging.pusCells","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Pus cells","ANC - ANC LAB Pus cells","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VrSrCgpxTT3
+",,,,"LaboratoryTestsAndImaging.pusCells",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.fastingBloodSugarResult","LaboratoryTestsAndImaging.fastingBloodSugarResult","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B9. Fasting blood sugar result","ANC - ANC.B9. Fasting blood sugar result","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#NUzZqwCQcms
+",,,,"LaboratoryTestsAndImaging.fastingBloodSugarResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.haemoglobinResult","LaboratoryTestsAndImaging.haemoglobinResult","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B9.  Blood haemoglobin result","ANC - ANC.B9.  Blood haemoglobin result","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qNSSCV58TD2
+",,,,"LaboratoryTestsAndImaging.haemoglobinResult",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.urineMicroscopyDate","LaboratoryTestsAndImaging.urineMicroscopyDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Urine Microscopy date","ANC - ANC LAB Urine Microscopy date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CqOqQVk2Vqw
+",,,,"LaboratoryTestsAndImaging.urineMicroscopyDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.malariaRdt","LaboratoryTestsAndImaging.malariaRdt","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Malaria RDT","ANC - ANC LAB Malaria RDT","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HJZAwP1vt7T
+",,,,"LaboratoryTestsAndImaging.malariaRdt",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.malariaTestDate","LaboratoryTestsAndImaging.malariaTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Malaria test date","ANC - ANC LAB Malaria test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#g2BFjUIJ5G9
+",,,,"LaboratoryTestsAndImaging.malariaTestDate",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab","LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Gestational age at todays visit_LAB","ANC - ANC.B8. Gestational age at todays visit_LAB","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CzjBxEJ6HrQ
+",,,,"LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.hivTestRecommended","LaboratoryTestsAndImaging.hivTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  HIV test recommended","ANC - ANC.B9.  HIV test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#e7cIfEBpsZb
+",,,,"LaboratoryTestsAndImaging.hivTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.hepatitisBTestRecommended","LaboratoryTestsAndImaging.hepatitisBTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B test recommended","ANC - ANC.B9.  Hepatitis B test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#RKjAsZ2EKa7
+",,,,"LaboratoryTestsAndImaging.hepatitisBTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.syphilisTestRecommended","LaboratoryTestsAndImaging.syphilisTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Syphilis test recommended","ANC - ANC.B9.  Syphilis test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KYxA0A2j8DB
+",,,,"LaboratoryTestsAndImaging.syphilisTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.ultrasoundRecommended","LaboratoryTestsAndImaging.ultrasoundRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Ultrasound recommended","ANC - ANC.B9.  Ultrasound recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#aKJK1ZXz2GP
+",,,,"LaboratoryTestsAndImaging.ultrasoundRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.urineTestRecommended","LaboratoryTestsAndImaging.urineTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9. Urine test recommended","ANC - ANC.B9. Urine test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rqMrshNZgg8
+",,,,"LaboratoryTestsAndImaging.urineTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.tbScreeningRecommended","LaboratoryTestsAndImaging.tbScreeningRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  TB screening recommended","ANC - ANC.B9.  TB screening recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#oOQvM7ZPnTj
+",,,,"LaboratoryTestsAndImaging.tbScreeningRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.haemoglobinTestRecommended","LaboratoryTestsAndImaging.haemoglobinTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Haemoglobin test recommended","ANC - ANC.B9.  Haemoglobin test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Y0MfiRhxr1a
+",,,,"LaboratoryTestsAndImaging.haemoglobinTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.bloodScreeningRecommended","LaboratoryTestsAndImaging.bloodScreeningRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Blood screening recommended","ANC - ANC.B9.  Blood screening recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Uxcgpc4oTCf
+",,,,"LaboratoryTestsAndImaging.bloodScreeningRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.malariaTestRecommended","LaboratoryTestsAndImaging.malariaTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9. Malaria test recommended","ANC - ANC.B9. Malaria test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#XJeRbkSaC1J
+",,,,"LaboratoryTestsAndImaging.malariaTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging.utrasoundComments","LaboratoryTestsAndImaging.utrasoundComments","","","",0,1,"","","","string {[]} {[]}
+","ANC - LAB Ultrasound comments","ANC - LAB Ultrasound comments","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#lkrEe3MT5KK
+",,,,"LaboratoryTestsAndImaging.utrasoundComments",0,1,"",""
+"Postpartum","Postpartum","Postpartum","","","",0,*,"","","","null {[]} {[]}
+","Postpartum","Postpartum","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Postpartum","Postpartum.dateOfPostpartumCare","Postpartum.dateOfPostpartumCare","","","",0,1,"","","","date {[]} {[]}
+","ANC - OUT_POST - Date of postpartum care ","ANC - OUT_POST - Date of postpartum care","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Vyok96daapr
+",,,,"Postpartum.dateOfPostpartumCare",0,1,"",""
+"Postpartum","Postpartum.bloodPressure","Postpartum.bloodPressure","","","",0,1,"","","","string {[]} {[]}
+","ANC - OUT_POST - Blood pressure","ANC - OUT_POST - Blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#iySWXP9NB26
+",,,,"Postpartum.bloodPressure",0,1,"",""
+"Postpartum","Postpartum.temperature","Postpartum.temperature","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST - Temperature","ANC - OUT_POST - Temperature","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jBAsZaO4oEt
+",,,,"Postpartum.temperature",0,1,"",""
+"Postpartum","Postpartum.pulseRate","Postpartum.pulseRate","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST - Pulse Rate","ANC - OUT_POST - Pulse Rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YSVwVatx6JR
+",,,,"Postpartum.pulseRate",0,1,"",""
+"Postpartum","Postpartum.pph","Postpartum.pph","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST -  PPH","ANC - OUT_POST -  PPH","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#u4E2vVGtxc5
+",,,,"Postpartum.pph",0,1,"",""
+"Postpartum","Postpartum.dribblingLeakingUrine","Postpartum.dribblingLeakingUrine","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Dribbling/leaking urine ","ANC - OUT_POST - Dribbling/leaking urine","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Q2iOrrIs8RO
+",,,,"Postpartum.dribblingLeakingUrine",0,1,"",""
+"Postpartum","Postpartum.anemia","Postpartum.anemia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Anemia","ANC - OUT_POST - Anemia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dNdQy42gyNN
+",,,,"Postpartum.anemia",0,1,"",""
+"Postpartum","Postpartum.vaginalDischargeAfter4WeeksOfDelivery","Postpartum.vaginalDischargeAfter4WeeksOfDelivery","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery","ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ONFttMEHeed
+",,,,"Postpartum.vaginalDischargeAfter4WeeksOfDelivery",0,1,"",""
+"Postpartum","Postpartum.pelvicExam","Postpartum.pelvicExam","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Pelvic exam ","ANC - OUT_POST - Pelvic exam","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#wVsbNnQVjuX
+",,,,"Postpartum.pelvicExam",0,1,"",""
+"Postpartum","Postpartum.breastExam","Postpartum.breastExam","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Breast exam ","ANC - OUT_POST - Breast exam","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xqC5R16ID4N
+",,,,"Postpartum.breastExam",0,1,"",""
+"Postpartum","Postpartum.ironFolicAcidIfaSupplementation","Postpartum.ironFolicAcidIfaSupplementation","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation","ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#oOENq0HVqnV
+",,,,"Postpartum.ironFolicAcidIfaSupplementation",0,1,"",""
+"Postpartum","Postpartum.counselingDangerSignsSymptoms","Postpartum.counselingDangerSignsSymptoms","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given","ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dDD0M9NxRiE
+",,,,"Postpartum.counselingDangerSignsSymptoms",0,1,"",""
+"Postpartum","Postpartum.babyBreathing","Postpartum.babyBreathing","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Baby breathing","ANC - OUT_POST - Baby breathing","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#N9NypL64c5O
+",,,,"Postpartum.babyBreathing",0,1,"",""
+"Postpartum","Postpartum.babyBreastfeeding","Postpartum.babyBreastfeeding","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Baby breastfeeding","ANC - OUT_POST - Baby breastfeeding","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#c1M2JMkm3En
+",,,,"Postpartum.babyBreastfeeding",0,1,"",""
+"Postpartum","Postpartum.babyWtGm","Postpartum.babyWtGm","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST - Baby wt (gm)","ANC - OUT_POST - Baby wt (gm)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bNwTnOIQpxB
+",,,,"Postpartum.babyWtGm",0,1,"",""
+"Postpartum","Postpartum.immunization","Postpartum.immunization","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST -  Immunization","ANC - OUT_POST -  Immunization","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UE5eXlAess0
+",,,,"Postpartum.immunization",0,1,"",""
+"Postpartum","Postpartum.hivTestedYN","Postpartum.hivTestedYN","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST -  HIV tested (Y/N)","ANC - OUT_POST -  HIV tested (Y/N)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#TFOKxMR2T5A
+",,,,"Postpartum.hivTestedYN",0,1,"",""
+"Postpartum","Postpartum.hivTestResult","Postpartum.hivTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST -  HIV test result","ANC - OUT_POST -  HIV test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#V6LHFJ2Kv9l
+",,,,"Postpartum.hivTestResult",0,1,"",""
+"Postpartum","Postpartum.arvRxForMotherByType","Postpartum.arvRxForMotherByType","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST - ARV Rx for mother (By type)","ANC - OUT_POST - ARV Rx for mother (By type)","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#mSjUMNDx0Z2
+",,,,"Postpartum.arvRxForMotherByType",0,1,"",""
+"Postpartum","Postpartum.arvPx","Postpartum.arvPx","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - ARV PX","ANC - OUT_POST - ARV PX","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#TlkMcrKmlIa
+",,,,"Postpartum.arvPx",0,1,"",""
+"Postpartum","Postpartum.feedingOptionEbfErf","Postpartum.feedingOptionEbfErf","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST -  Feeding option: EBF/ERF","ANC - OUT_POST -  Feeding option: EBF/ERF","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#OpRMziOVS8e
+",,,,"Postpartum.feedingOptionEbfErf",0,1,"",""
+"Postpartum","Postpartum.newbornReferredToChronicHivInfantCare","Postpartum.newbornReferredToChronicHivInfantCare","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Newborn referred to chronic HIV infant care ","ANC - OUT_POST - Newborn referred to chronic HIV infant care","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ghEssGDk4nx
+",,,,"Postpartum.newbornReferredToChronicHivInfantCare",0,1,"",""
+"Postpartum","Postpartum.familyPlanningCounseledAndProvidedByMethod","Postpartum.familyPlanningCounseledAndProvidedByMethod","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST - FP counseled and provided (by method)","ANC - OUT_POST - FP counseled and provided (by method)","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YeXm1Vvny9O
+",,,,"Postpartum.familyPlanningCounseledAndProvidedByMethod",0,1,"",""
+"Postpartum","Postpartum.actionsTaken","Postpartum.actionsTaken","","","",0,1,"","","","string {[]} {[]}
+","ANC - OUT_POST - Actions taken","ANC - OUT_POST - Actions taken","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KcFAQvkTXrW
+",,,,"Postpartum.actionsTaken",0,1,"",""
+"Postpartum","Postpartum.typeOfStay","Postpartum.typeOfStay","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_Post - Type of Stay","ANC - OUT_Post - Type of Stay","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#eCoVjkdihM9
+",,,,"Postpartum.typeOfStay",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome","PregnancyOutcome","","","",0,*,"","","","null {[]} {[]}
+","Pregnancy outcome","Pregnancy outcome","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PregnancyOutcome","PregnancyOutcome.ancEnd1PregnancyOutcome","PregnancyOutcome.ancEnd1PregnancyOutcome","","","",1,1,"","","","code {[]} {[]}
+","ANC - ANC.End1. Pregnancy outcome","ANC - ANC.End1. Pregnancy outcome","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VIEg1M2z5Vs
+",,,,"PregnancyOutcome.ancEnd1PregnancyOutcome",1,1,"",""
+"PregnancyOutcome","PregnancyOutcome.termOrPreterm","PregnancyOutcome.termOrPreterm","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD. Term or Preterm","ANC - ANC.BD. Term or Preterm","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/TermOrPretermVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CfVBzICA1og
+",,,,"PregnancyOutcome.termOrPreterm",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.dateAndTimeOfAdmission","PregnancyOutcome.dateAndTimeOfAdmission","","","",0,1,"","","","dateTime {[]} {[]}
+","ANC - ANC.BD-Date and time of admission","ANC - ANC.BD-Date and time of admission","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#DfHmC0s6JqV
+",,,,"PregnancyOutcome.dateAndTimeOfAdmission",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.singleOrMultipleSpecify","PregnancyOutcome.singleOrMultipleSpecify","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.BD Single or Multiple Specify number","ANC - ANC.BD Single or Multiple Specify number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zvJl9DSRNl7
+",,,,"PregnancyOutcome.singleOrMultipleSpecify",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.gestationOfDeliveryWeeks","PregnancyOutcome.gestationOfDeliveryWeeks","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - BD-Gestation of delivery (weeks)","ANC - BD-Gestation of delivery (weeks)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#h2xGlXziLV6
+",,,,"PregnancyOutcome.gestationOfDeliveryWeeks",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.modeOfDelivery","PregnancyOutcome.modeOfDelivery","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD-Mode of delivery","ANC - ANC.BD-Mode of delivery","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#elQef67mAgb
+",,,,"PregnancyOutcome.modeOfDelivery",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.sexOfChild","PregnancyOutcome.sexOfChild","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD-Sex of child","ANC - ANC.BD-Sex of child","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cCDntJeM21e
+",,,,"PregnancyOutcome.sexOfChild",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.dateAndTimeOfBirth","PregnancyOutcome.dateAndTimeOfBirth","","","",0,1,"","","","dateTime {[]} {[]}
+","ANC - ANC.BD-Date and time of birth (Child)","ANC - ANC.BD-Date and time of birth (Child)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#G38Z5FR4sv7
+",,,,"PregnancyOutcome.dateAndTimeOfBirth",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.weightAtBirth","PregnancyOutcome.weightAtBirth","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.BD Weight at birth","ANC - ANC.BD Weight at birth","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#quFsdF0GLrm
+",,,,"PregnancyOutcome.weightAtBirth",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.childVitalStatus","PregnancyOutcome.childVitalStatus","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD Child vital status","ANC - ANC.BD Child vital status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Gk5vKpilJJq
+",,,,"PregnancyOutcome.childVitalStatus",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutArvRxForMothersByType","PregnancyOutcome.ancOutArvRxForMothersByType","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.BD ARV Rx for Mothers (by type)","ANC - ANC.BD ARV Rx for Mothers (by type)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dxH6wzY9ll4
+",,,,"PregnancyOutcome.ancOutArvRxForMothersByType",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutObstProlgLabour","PregnancyOutcome.ancOutObstProlgLabour","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Obst/prolg labour","ANC - ANC.BD Obst/prolg labour","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dSeYEled4tX
+",,,,"PregnancyOutcome.ancOutObstProlgLabour",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutHysterectomy","PregnancyOutcome.ancOutHysterectomy","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Hysterectomy ","ANC - ANC.BD Hysterectomy","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#z2YaIoUs5eV
+",,,,"PregnancyOutcome.ancOutHysterectomy",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutManaged","PregnancyOutcome.ancOutManaged","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Managed","ANC - ANC.BD Managed","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#sYgW1IM4Gn5
+",,,,"PregnancyOutcome.ancOutManaged",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutPromSepsis","PregnancyOutcome.ancOutPromSepsis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD PROM/Sepsis","ANC - ANC.BD PROM/Sepsis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#c975NCuATNP
+",,,,"PregnancyOutcome.ancOutPromSepsis",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutReferred","PregnancyOutcome.ancOutReferred","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Referred","ANC - ANC.BD Referred","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#tQ4Sv6kQks9
+",,,,"PregnancyOutcome.ancOutReferred",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutRepaired","PregnancyOutcome.ancOutRepaired","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Repaired","ANC - ANC.BD Repaired","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hGXAH0H7oKs
+",,,,"PregnancyOutcome.ancOutRepaired",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.bdOtherReasonForPregnancyOutcome","PregnancyOutcome.bdOtherReasonForPregnancyOutcome","","","",0,1,"","","","code {[]} {[]}
+","ANC - AND.BD-Other Reason for Pregnancy Outcome","ANC - AND.BD-Other Reason for Pregnancy Outcome","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ROgwm1UaUjW
+",,,,"PregnancyOutcome.bdOtherReasonForPregnancyOutcome",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage","PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Eclampsia postpartum hemorrhage ","ANC - ANC.BD Eclampsia postpartum hemorrhage","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#JrSzUmBfKnO
+",,,,"PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutRupturedUx","PregnancyOutcome.ancOutRupturedUx","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Ruptured Ux","ANC - ANC.BD Ruptured Ux","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Mv4z2Sd5s8E
+",,,,"PregnancyOutcome.ancOutRupturedUx",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage","PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Eclampsia antepartum hemorrhage ","ANC - ANC.BD Eclampsia antepartum hemorrhage","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fvnZ3zRQUdQ
+",,,,"PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.0pvVaccine","PregnancyOutcome.0pvVaccine","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.BD 0PV Vaccine","ANC - ANC.BD 0PV Vaccine","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KQ34Vol6R3J
+",,,,"PregnancyOutcome.0pvVaccine",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.arvPxForNewBortn","PregnancyOutcome.arvPxForNewBortn","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.BD ARV Px for New Born (By type, HIV)","ANC - ANC.BD ARV Px for New Born (By type, HIV)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#U58bt6XckRq
+",,,,"PregnancyOutcome.arvPxForNewBortn",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.apgarScore","PregnancyOutcome.apgarScore","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Apgar Score","ANC - ANC.BD Apgar Score","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#p7e9CE7Hc0t
+",,,,"PregnancyOutcome.apgarScore",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.bcgVaccine","PregnancyOutcome.bcgVaccine","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.BD BCG Vaccine","ANC - ANC.BD BCG Vaccine","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#oMjZ429k9Fd
+",,,,"PregnancyOutcome.bcgVaccine",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.feedingOption","PregnancyOutcome.feedingOption","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD Feeding option","ANC - ANC.BD Feeding option","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#lWDnMWYvjm8
+",,,,"PregnancyOutcome.feedingOption",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.hbvBirthDose","PregnancyOutcome.hbvBirthDose","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD HBV birth dose","ANC - ANC.BD HBV birth dose","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qw4RPXf7cvO
+",,,,"PregnancyOutcome.hbvBirthDose",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.placenta","PregnancyOutcome.placenta","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD Placenta","ANC - ANC.BD Placenta","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#GIdnxfQDAFp
+",,,,"PregnancyOutcome.placenta",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.singleOrMultiple","PregnancyOutcome.singleOrMultiple","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD Single or Multiple","ANC - ANC.BD Single or Multiple","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#IdElg7sFPAN
+",,,,"PregnancyOutcome.singleOrMultiple",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.skinToSkin","PregnancyOutcome.skinToSkin","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Skin to Skin contact","ANC - ANC.BD Skin to Skin contact","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#x5AQxjEagnn
+",,,,"PregnancyOutcome.skinToSkin",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.ttc","PregnancyOutcome.ttc","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD TTC","ANC - ANC.BD TTC","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#iAZ4RM1pdpk
+",,,,"PregnancyOutcome.ttc",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.vitK","PregnancyOutcome.vitK","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.BD Vit K","ANC - ANC.BD Vit K","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dC098c6csBv
+",,,,"PregnancyOutcome.vitK",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.lenghtAtBirth","PregnancyOutcome.lenghtAtBirth","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.BD length at birth","ANC - ANC.BD length at birth","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#i5LaKr2e845
+",,,,"PregnancyOutcome.lenghtAtBirth",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.deliveredBy","PregnancyOutcome.deliveredBy","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.BD-Delivered by (Name)","ANC - ANC.BD-Delivered by (Name)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Og2D0fsxko1
+",,,,"PregnancyOutcome.deliveredBy",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.deliveredBySignature","PregnancyOutcome.deliveredBySignature","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.BD-Delivered by (Signature)","ANC - ANC.BD-Delivered by (Signature)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#QtETpPKw3Sa
+",,,,"PregnancyOutcome.deliveredBySignature",0,1,"",""
+"PregnancyOutcome","PregnancyOutcome.stillBirth","PregnancyOutcome.stillBirth","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.BD Still Birth","ANC - ANC.BD Still Birth","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#af54ISxXZEB
+",,,,"PregnancyOutcome.stillBirth",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment","PromotionAndTreatment","","","",0,*,"","","","null {[]} {[]}
+","Promotion and Treatment ","Data elements for the counselling and treatment task of the workflow							","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnBirthPreparednessAndCo","PromotionAndTreatment.counsellingConductedOnBirthPreparednessAndCo","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on birth preparedness and complications readiness","ANC - ANC.B10. Counselling conducted on birth preparedness and complications readiness","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qlR1FedtJRq
+",,,,"PromotionAndTreatment.counsellingConductedOnBirthPreparednessAndCo",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnBreastfeeding","PromotionAndTreatment.counsellingConductedOnBreastfeeding","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on breastfeeding","ANC - ANC.B10. Counselling conducted on breastfeeding","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#T2bfkalL2LC
+",,,,"PromotionAndTreatment.counsellingConductedOnBreastfeeding",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnHivRisk","PromotionAndTreatment.counsellingConductedOnHivRisk","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on HIV risk","ANC - ANC.B10. Counselling conducted on HIV risk","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jRo4KlnCKeX
+",,,,"PromotionAndTreatment.counsellingConductedOnHivRisk",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnRhFactorNegative","PromotionAndTreatment.counsellingConductedOnRhFactorNegative","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on Rh factor negative","ANC - ANC.B10. Counselling conducted on Rh factor negative","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#l066A1HPqRU
+",,,,"PromotionAndTreatment.counsellingConductedOnRhFactorNegative",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnSeekingCareWhenDanger","PromotionAndTreatment.counsellingConductedOnSeekingCareWhenDanger","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on seeking care when danger signs occur","ANC - ANC.B10. Counselling conducted on seeking care when danger signs occur","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#B2vmUDbtn9u
+",,,,"PromotionAndTreatment.counsellingConductedOnSeekingCareWhenDanger",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnAncContactScheduleConducted","PromotionAndTreatment.counsellingOnAncContactScheduleConducted","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on ANC contact schedule conducted","ANC - ANC.B10. Counselling on ANC contact schedule conducted","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#QZ00NKZNNHf
+",,,,"PromotionAndTreatment.counsellingOnAncContactScheduleConducted",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnPostpartumFamilyPlanningConducte","PromotionAndTreatment.counsellingOnPostpartumFamilyPlanningConducte","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on postpartum family planning conducted","ANC - ANC.B10. Counselling on postpartum family planning conducted","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vI7Bj0uD9rO
+",,,,"PromotionAndTreatment.counsellingOnPostpartumFamilyPlanningConducte",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.hepatitisB1ImmunizationDate","PromotionAndTreatment.hepatitisB1ImmunizationDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B10. Hepatitis B-1 immunization Date","ANC - ANC.B10. Hepatitis B-1 immunization Date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hGRDCZ9eyEK
+",,,,"PromotionAndTreatment.hepatitisB1ImmunizationDate",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.tetanusDiptheriaTd1ImmunizationDate","PromotionAndTreatment.tetanusDiptheriaTd1ImmunizationDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization Date","ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization Date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fQcLrBqBS40
+",,,,"PromotionAndTreatment.tetanusDiptheriaTd1ImmunizationDate",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.dateIptpSpDoseWasProvided","PromotionAndTreatment.dateIptpSpDoseWasProvided","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B10. Date IPTp-SP dose was provided","ANC - ANC.B10. Date IPTp-SP dose was provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#mkH2mlYqWqB
+",,,,"PromotionAndTreatment.dateIptpSpDoseWasProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnRiskOfGdm","PromotionAndTreatment.counsellingOnRiskOfGdm","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on risk of gestational diabetes mellitus (GDM)","ANC - ANC.B10. Counselling on risk of gestational diabetes mellitus (GDM)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#maAtPdJhov5
+",,,,"PromotionAndTreatment.counsellingOnRiskOfGdm",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.simpleMalariaTreatmentProvided","PromotionAndTreatment.simpleMalariaTreatmentProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT. Simple Malaria Treatment Provided","ANC - PAT. Simple Malaria Treatment Provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cwUiNQdsXCd
+",,,,"PromotionAndTreatment.simpleMalariaTreatmentProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnRiskOfPreEclampsia","PromotionAndTreatment.counsellingOnRiskOfPreEclampsia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on risk of pre-eclampsia","ANC - ANC.B10. Counselling on risk of pre-eclampsia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#tSzje3cW2hQ
+",,,,"PromotionAndTreatment.counsellingOnRiskOfPreEclampsia",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.folicAcidFaProvidedAtleast30Tablets","PromotionAndTreatment.folicAcidFaProvidedAtleast30Tablets","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Folic acid (FA) provided. Atleast 30 tablets","ANC - ANC.B7. Folic acid (FA) provided. Atleast 30 tablets","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pBclCe2kriA
+",,,,"PromotionAndTreatment.folicAcidFaProvidedAtleast30Tablets",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referHcivHsptlSevereAnaemiaHaemoglobin","PromotionAndTreatment.referHcivHsptlSevereAnaemiaHaemoglobin","","","",0,1,"","","","boolean {[]} {[]}
+","ANC -  Refer to HCIV or Hospital for Severe Anaemia treatment due to haemoglobin","ANC -  Refer to HCIV or Hospital for Severe Anaemia treatment due to haemoglobin","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#BEcBoTxdJxW
+",,,,"PromotionAndTreatment.referHcivHsptlSevereAnaemiaHaemoglobin",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referHcivhsptlComplicatedMalariaTreatment","PromotionAndTreatment.referHcivhsptlComplicatedMalariaTreatment","","","",0,1,"","","","boolean {[]} {[]}
+","ANC -  Refer to HCIV or Hospital for complicated malaria treatment","ANC -  Refer to HCIV or Hospital for complicated malaria treatment","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HM1Gwr6X8M3
+",,,,"PromotionAndTreatment.referHcivhsptlComplicatedMalariaTreatment",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.tetanusDiptheriaTd1ImmunizationProvided","PromotionAndTreatment.tetanusDiptheriaTd1ImmunizationProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization provided","ANC - ANC.B10. Tetanus-Diptheria (TD) 1 immunization provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Euy7gjx9HQQ
+",,,,"PromotionAndTreatment.tetanusDiptheriaTd1ImmunizationProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referToHcivhospitalForHepatitisBTreatment","PromotionAndTreatment.referToHcivhospitalForHepatitisBTreatment","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Refer to HCIV or Hospital for Hepatitis B treatment","ANC - Refer to HCIV or Hospital for Hepatitis B treatment","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#g9g5XVMRMhg
+",,,,"PromotionAndTreatment.referToHcivhospitalForHepatitisBTreatment",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.diabetesInPregnancyDiagnosis","PromotionAndTreatment.diabetesInPregnancyDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Diabetes in Pregnancy Diagnosis","ANC - PAT Diabetes in Pregnancy Diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gGcxEhV4uET
+",,,,"PromotionAndTreatment.diabetesInPregnancyDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referForFollowUpMedicationHyperglycemia","PromotionAndTreatment.referForFollowUpMedicationHyperglycemia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Refer to HCIV or Hospital for follow-up and medication due to Hyperglycemia","ANC - PAT Refer to HCIV or Hospital for follow-up and medication due to Hyperglycemia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#v2vCvy9JR71
+",,,,"PromotionAndTreatment.referForFollowUpMedicationHyperglycemia",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.elevatedFastingBloodSugar","PromotionAndTreatment.elevatedFastingBloodSugar","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Elevated fasting blood sugar Diagnosis","ANC - PAT Elevated fasting blood sugar Diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZJ1mIPM587W
+",,,,"PromotionAndTreatment.elevatedFastingBloodSugar",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referForTreatmentAndSupportToFindingsOfGbv","PromotionAndTreatment.referForTreatmentAndSupportToFindingsOfGbv","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Refer for treatment and support according to findings of GBV","ANC - PAT Refer for treatment and support according to findings of GBV","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zKHV3Gf8lf0
+",,,,"PromotionAndTreatment.referForTreatmentAndSupportToFindingsOfGbv",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.syphilisTreatmentProvided","PromotionAndTreatment.syphilisTreatmentProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Syphilis Treatment Provided","ANC - PAT Syphilis Treatment Provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#XH5mvacs4fh
+",,,,"PromotionAndTreatment.syphilisTreatmentProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.tetanusDiptheriaTd2ImmunizationDate","PromotionAndTreatment.tetanusDiptheriaTd2ImmunizationDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization Date","ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization Date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cLaqvVnoNQW
+",,,,"PromotionAndTreatment.tetanusDiptheriaTd2ImmunizationDate",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.tetanusDiptheriaTd2ImmunizationProvided","PromotionAndTreatment.tetanusDiptheriaTd2ImmunizationProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization provided","ANC - ANC.B10. Tetanus-Diptheria (TD) 2 immunization provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#QljEpD4ZXqQ
+",,,,"PromotionAndTreatment.tetanusDiptheriaTd2ImmunizationProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnHospDeliveryPrevAssistDelivery","PromotionAndTreatment.counsellingOnHospDeliveryPrevAssistDelivery","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAM Counselling on hospital delivery due to previous assisted delivery","ANC - PAM Counselling on hospital delivery due to previous assisted delivery","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LwXs0S8eD64
+",,,,"PromotionAndTreatment.counsellingOnHospDeliveryPrevAssistDelivery",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnRiskOfEclampsia","PromotionAndTreatment.counsellingOnRiskOfEclampsia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Counselling on risk of eclampsia","ANC - PAT Counselling on risk of eclampsia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vcFw7qq0EyN
+",,,,"PromotionAndTreatment.counsellingOnRiskOfEclampsia",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingPreviousPerinealTear34thDegree","PromotionAndTreatment.counsellingPreviousPerinealTear34thDegree","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Counselling on hospital delivery due to previous perineal tear (3rd or 4th degree) ","ANC - PAT Counselling on hospital delivery due to previous perineal tear (3rd or 4th degree)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#RmYIDSTh06Y
+",,,,"PromotionAndTreatment.counsellingPreviousPerinealTear34thDegree",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingDueToPreviousNeonatalDeath","PromotionAndTreatment.counsellingDueToPreviousNeonatalDeath","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Counselling on hospital delivery due to previous neonatal death","ANC - PAT Counselling on hospital delivery due to previous neonatal death","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LWDjK29CquZ
+",,,,"PromotionAndTreatment.counsellingDueToPreviousNeonatalDeath",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.patReferToCemoncFacilityForLabour","PromotionAndTreatment.patReferToCemoncFacilityForLabour","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Refer to CEMONC facility for labour","ANC - PAT Refer to CEMONC facility for labour","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ID6RhUJutpq
+",,,,"PromotionAndTreatment.patReferToCemoncFacilityForLabour",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.kidneyDiseaseChronicRenalFailureDiagnosis","PromotionAndTreatment.kidneyDiseaseChronicRenalFailureDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC Kidney disease (Chronic Renal Failure) Diagnosis","ANC - ANC Kidney disease (Chronic Renal Failure) Diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CuCWAVnu94F
+",,,,"PromotionAndTreatment.kidneyDiseaseChronicRenalFailureDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnAnaemia","PromotionAndTreatment.counsellingConductedOnAnaemia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on anaemia","ANC - ANC.B10. Counselling conducted on anaemia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#nskowTcgnS3
+",,,,"PromotionAndTreatment.counsellingConductedOnAnaemia",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counselIncreasedRiskDevPreEclampsiaDueCrf","PromotionAndTreatment.counselIncreasedRiskDevPreEclampsiaDueCrf","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Counsel on the increased risk of developing pre-eclampsia due to CRF","ANC - PAT Counsel on the increased risk of developing pre-eclampsia due to CRF","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HDQ8F5bQ5GB
+",,,,"PromotionAndTreatment.counselIncreasedRiskDevPreEclampsiaDueCrf",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnDiabetesMellitusDm","PromotionAndTreatment.counsellingConductedOnDiabetesMellitusDm","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on diabetes mellitus (DM)","ANC - ANC.B10. Counselling conducted on diabetes mellitus (DM)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZgVJiTpBIAa
+",,,,"PromotionAndTreatment.counsellingConductedOnDiabetesMellitusDm",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.cardiacConditionDiagnosis","PromotionAndTreatment.cardiacConditionDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC Cardiac condition Diagnosis","ANC - ANC Cardiac condition Diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#GKRmoIpVWBV
+",,,,"PromotionAndTreatment.cardiacConditionDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.chronicAsthmaDiagnosis","PromotionAndTreatment.chronicAsthmaDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC Chronic asthma Diagnosis","ANC - ANC Chronic asthma Diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Lzfcin802uv
+",,,,"PromotionAndTreatment.chronicAsthmaDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnGestationalDiabetesMell","PromotionAndTreatment.counsellingConductedOnGestationalDiabetesMell","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on gestational diabetes mellitus (GDM)","ANC - ANC.B10. Counselling conducted on gestational diabetes mellitus (GDM)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hnUK7METcNT
+",,,,"PromotionAndTreatment.counsellingConductedOnGestationalDiabetesMell",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.thrombocytopeniaDiagnosis","PromotionAndTreatment.thrombocytopeniaDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAM Thrombocytopenia Diagnosis","ANC - PAM Thrombocytopenia Diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#kpNsJv2MJgQ
+",,,,"PromotionAndTreatment.thrombocytopeniaDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnHepatitisBPositive","PromotionAndTreatment.counsellingConductedOnHepatitisBPositive","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on hepatitis B positive","ANC - ANC.B10. Counselling conducted on hepatitis B positive","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#FlYho8YA6gK
+",,,,"PromotionAndTreatment.counsellingConductedOnHepatitisBPositive",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referForFollowupOfElevatedFastingBloodSugar","PromotionAndTreatment.referForFollowupOfElevatedFastingBloodSugar","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Refer to HC IV/Hospital for follow-up of elevated fasting blood sugar","ANC - PAT Refer to HC IV/Hospital for follow-up of elevated fasting blood sugar","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CceCy8lgwJr
+",,,,"PromotionAndTreatment.referForFollowupOfElevatedFastingBloodSugar",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referHcivHospDueToNoFetalHeartBeatPresent","PromotionAndTreatment.referHcivHospDueToNoFetalHeartBeatPresent","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Refer to HCIV or Hospital due to no Fetal Heart beat present","ANC - PAT Refer to HCIV or Hospital due to no Fetal Heart beat present","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ONaCQGKKt0u
+",,,,"PromotionAndTreatment.referHcivHospDueToNoFetalHeartBeatPresent",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnHivPositive","PromotionAndTreatment.counsellingConductedOnHivPositive","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on HIV positive","ANC - ANC.B10. Counselling conducted on HIV positive","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zO1T2OyE5nV
+",,,,"PromotionAndTreatment.counsellingConductedOnHivPositive",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referToHfForFollowupOfElevatedRandomBsugar","PromotionAndTreatment.referToHfForFollowupOfElevatedRandomBsugar","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - Refer to HC IV/Hospital for follow-up of elevated random blood sugar","ANC - Refer to HC IV/Hospital for follow-up of elevated random blood sugar","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pdogMM7UXWz
+",,,,"PromotionAndTreatment.referToHfForFollowupOfElevatedRandomBsugar",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnHypertension","PromotionAndTreatment.counsellingConductedOnHypertension","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on hypertension","ANC - ANC.B10. Counselling conducted on hypertension","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#msP5WbYKajH
+",,,,"PromotionAndTreatment.counsellingConductedOnHypertension",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnTbScreeningPositive","PromotionAndTreatment.counsellingConductedOnTbScreeningPositive","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on TB screening positive","ANC - ANC.B10. Counselling conducted on TB screening positive","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Llteev2Flio
+",,,,"PromotionAndTreatment.counsellingConductedOnTbScreeningPositive",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.sickleCellScreeningFolicAcid5mgDaily","PromotionAndTreatment.sickleCellScreeningFolicAcid5mgDaily","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAM Sickle cell screening Folic acid 5mg/daily","ANC - PAM Sickle cell screening Folic acid 5mg/daily","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#sWoYKdJWtLO
+",,,,"PromotionAndTreatment.sickleCellScreeningFolicAcid5mgDaily",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnAlcoholUse","PromotionAndTreatment.counsellingOnAlcoholUse","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on alcohol use","ANC - ANC.B10. Counselling on alcohol use","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qMWTQTWNm0K
+",,,,"PromotionAndTreatment.counsellingOnAlcoholUse",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referToASickleCellClinicIfNotYetReg","PromotionAndTreatment.referToASickleCellClinicIfNotYetReg","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAM Sickle cell screening Refer to a sickle-cell clinic, if not yet registered","ANC - PAM Sickle cell screening Refer to a sickle-cell clinic, if not yet registered","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#M7xOHyaG1XR
+",,,,"PromotionAndTreatment.referToASickleCellClinicIfNotYetReg",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counselBasedOnFindingsMonitorHbEveryVisit","PromotionAndTreatment.counselBasedOnFindingsMonitorHbEveryVisit","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAM Counselling on Sickle cell screening based on findings; monitor Hb at every visit","ANC - PAM Counselling on Sickle cell screening based on findings; monitor Hb at every visit","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YOjc3CiFMku
+",,,,"PromotionAndTreatment.counselBasedOnFindingsMonitorHbEveryVisit",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.admitToHospitalForSsIfComplicationsDevelop","PromotionAndTreatment.admitToHospitalForSsIfComplicationsDevelop","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAM Sickle cell screening Admit to hospital if complications develop","ANC - PAM Sickle cell screening Admit to hospital if complications develop","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YU9wbp4XiOO
+",,,,"PromotionAndTreatment.admitToHospitalForSsIfComplicationsDevelop",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnCondomUse","PromotionAndTreatment.counsellingOnCondomUse","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on condom use","ANC - ANC.B10. Counselling on condom use","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YFu1oMAst5N
+",,,,"PromotionAndTreatment.counsellingOnCondomUse",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.hepatitisB2ImmunizationDate","PromotionAndTreatment.hepatitisB2ImmunizationDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B10. Hepatitis B-2 immunization Date","ANC - ANC.B10. Hepatitis B-2 immunization Date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EcAoMGJs9BB
+",,,,"PromotionAndTreatment.hepatitisB2ImmunizationDate",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.iptpCtxDoseProvided","PromotionAndTreatment.iptpCtxDoseProvided","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B10a. IPTp-CTX dose provided","ANC - ANC.B10a. IPTp-CTX dose provided","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/IptpDose112VS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#sw43UG2v6Wk
+",,,,"PromotionAndTreatment.iptpCtxDoseProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.dateIptpCtxDoseWasProvided","PromotionAndTreatment.dateIptpCtxDoseWasProvided","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B10a. Date IPTp-CTX dose was provided","ANC - ANC.B10a. Date IPTp-CTX dose was provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Jnlp0lDaPSe
+",,,,"PromotionAndTreatment.dateIptpCtxDoseWasProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnHealthyEatingPhysicallyActive","PromotionAndTreatment.counsellingOnHealthyEatingPhysicallyActive","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on healthy eating and keeping physically active","ANC - ANC.B10. Counselling on healthy eating and keeping physically active","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#G6qtfHN4Vy1
+",,,,"PromotionAndTreatment.counsellingOnHealthyEatingPhysicallyActive",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.arvProphylaxisForTheUnBornInfantsProvided","PromotionAndTreatment.arvProphylaxisForTheUnBornInfantsProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT ARV prophylaxis for the un born infants provided","ANC - PAT ARV prophylaxis for the un born infants provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#O2SnmbwvwOb
+",,,,"PromotionAndTreatment.arvProphylaxisForTheUnBornInfantsProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.malePartnerSelfTestingKitProvided","PromotionAndTreatment.malePartnerSelfTestingKitProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC LAB Male partner self testing kit provided","ANC - ANC LAB Male partner self testing kit provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pB9VLth3i2W
+",,,,"PromotionAndTreatment.malePartnerSelfTestingKitProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.malePartnerSelfTestingKitResults","PromotionAndTreatment.malePartnerSelfTestingKitResults","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Male Partner self testing kit results","ANC - ANC LAB Male Partner self testing kit results","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLABMalePartnerSelfTestingKitResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#GjOg2r7Wvm1
+",,,,"PromotionAndTreatment.malePartnerSelfTestingKitResults",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.hepatitisBTreatmentProvided","PromotionAndTreatment.hepatitisBTreatmentProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Hepatitis B Treatment Provided","ANC - PAT Hepatitis B Treatment Provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#MXOfQmqSgS8
+",,,,"PromotionAndTreatment.hepatitisBTreatmentProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnMaternalNutrition","PromotionAndTreatment.counsellingOnMaternalNutrition","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on maternal nutrition","ANC - ANC.B10. Counselling on maternal nutrition","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VhlH1sYU9fv
+",,,,"PromotionAndTreatment.counsellingOnMaternalNutrition",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingInfantFeeding","PromotionAndTreatment.counsellingInfantFeeding","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling infant feeding","ANC - ANC.B10. Counselling infant feeding","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zfF0dZSKfvj
+",,,,"PromotionAndTreatment.counsellingInfantFeeding",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnTobaccoCessation","PromotionAndTreatment.counsellingOnTobaccoCessation","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on tobacco cessation","ANC - ANC.B10. Counselling on tobacco cessation","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Ok9OQpitjQr
+",,,,"PromotionAndTreatment.counsellingOnTobaccoCessation",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.hypertensionDiagnosis","PromotionAndTreatment.hypertensionDiagnosis","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B10. Hypertension diagnosis","ANC - ANC.B10. Hypertension diagnosis","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLABAnaemiaDiagnosisVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VJh6Dw6KcfB
+",,,,"PromotionAndTreatment.hypertensionDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.preEclampsiaDiagnosis","PromotionAndTreatment.preEclampsiaDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Pre-eclampsia diagnosis","ANC - ANC.B10. Pre-eclampsia diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LKNervGK4jq
+",,,,"PromotionAndTreatment.preEclampsiaDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.iptpSpDoseProvided","PromotionAndTreatment.iptpSpDoseProvided","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B10. IPTp-SP dose provided","ANC - ANC.B10. IPTp-SP dose provided","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/IptpDose112VS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#a0ZYAtqVHCx
+",,,,"PromotionAndTreatment.iptpSpDoseProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.anaemiaDiagnosis","PromotionAndTreatment.anaemiaDiagnosis","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Anaemia diagnosis","ANC - ANC.B9.  Anaemia diagnosis","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLABAnaemiaDiagnosisVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#W5AuILld5eW
+",,,,"PromotionAndTreatment.anaemiaDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.malariaDiagnosis","PromotionAndTreatment.malariaDiagnosis","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC. Malaria diagnosis","ANC - ANC. Malaria diagnosis","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLABMalariaDiagnosisVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gmbQ72pvjVd
+",,,,"PromotionAndTreatment.malariaDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.admitDeliver","PromotionAndTreatment.admitDeliver","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC Admit and Deliver","ANC - ANC Admit and Deliver","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xYKSnQRs6Fq
+",,,,"PromotionAndTreatment.admitDeliver",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.catMagnesiumSulphate","PromotionAndTreatment.catMagnesiumSulphate","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - CAT Magnesium Sulphate provided","ANC - CAT Magnesium Sulphate provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rMyGldvXWsQ
+",,,,"PromotionAndTreatment.catMagnesiumSulphate",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.hypertensiveTreatmentProvided","PromotionAndTreatment.hypertensiveTreatmentProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - PAT Hypertensive Treatment Provided","ANC - PAT Hypertensive Treatment Provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#e2bRsC2xpto
+",,,,"PromotionAndTreatment.hypertensiveTreatmentProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.catFollowUpProvided","PromotionAndTreatment.catFollowUpProvided","","","",0,1,"","","","code {[]} {[]}
+","ANC - CAT Follow up provided","ANC - CAT Follow up provided","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/FollowUpFrequencyVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gwytRk2Uwr6
+",,,,"PromotionAndTreatment.catFollowUpProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.catFollowUpSpecify","PromotionAndTreatment.catFollowUpSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - CAT Follow up frequency specify","ANC - CAT Follow up frequency specify","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#yoyL0k3CfgO
+",,,,"PromotionAndTreatment.catFollowUpSpecify",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.preventiveAntihelminthicTreatmentProvided","PromotionAndTreatment.preventiveAntihelminthicTreatmentProvided","","","",0,1,"","","","code {[]} {[]}
+","ANC -ANC.B10. Preventive deworming antihelminthic treatment provided","ANC -ANC.B10. Preventive deworming antihelminthic treatment provided","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xZvctiDTfmn
+",,,,"PromotionAndTreatment.preventiveAntihelminthicTreatmentProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.prophylacticIfaProvidedAtLeast30Tablets","PromotionAndTreatment.prophylacticIfaProvidedAtLeast30Tablets","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B7. Prophylactic Iron and folic acid (IFA) provided. At least 30 tablets","ANC - ANC.B7. Prophylactic Iron and folic acid (IFA) provided. At least 30 tablets","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#f1KQDCMUyno
+",,,,"PromotionAndTreatment.prophylacticIfaProvidedAtLeast30Tablets",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.hepatitisBDiagnosis","PromotionAndTreatment.hepatitisBDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B diagnosis","ANC - ANC.B9.  Hepatitis B diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ppiuaHJLXhv
+",,,,"PromotionAndTreatment.hepatitisBDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.syphilisDiagnosis","PromotionAndTreatment.syphilisDiagnosis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Syphilis diagnosis","ANC - ANC.B9.  Syphilis diagnosis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#lja34jS4kHc
+",,,,"PromotionAndTreatment.syphilisDiagnosis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingBalancedEnergyProteinSupplement","PromotionAndTreatment.counsellingBalancedEnergyProteinSupplement","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on balanced energy and protein dietary supplementation","ANC - ANC.B10. Counselling on balanced energy and protein dietary supplementation","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vdPettzpAjK
+",,,,"PromotionAndTreatment.counsellingBalancedEnergyProteinSupplement",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.highRiskForHiv","PromotionAndTreatment.highRiskForHiv","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  High risk for HIV","ANC - ANC.B9.  High risk for HIV","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#G8eAMYZaXnH
+",,,,"PromotionAndTreatment.highRiskForHiv",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.admitAndMonitor","PromotionAndTreatment.admitAndMonitor","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC CAT Admit and Monitor","ANC - ANC CAT Admit and Monitor","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jDoejOIyb3a
+",,,,"PromotionAndTreatment.admitAndMonitor",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.receivedAsReferral","PromotionAndTreatment.receivedAsReferral","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B11. Received as Referral","ANC - ANC.B11. Received as Referral","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#RrkI8hPNjmb
+",,,,"PromotionAndTreatment.receivedAsReferral",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.ifReceivedAsReferral","PromotionAndTreatment.ifReceivedAsReferral","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B11. If yes, received as referral from","ANC - ANC.B11. If yes, received as referral from","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PregnantWomanReceivedAsReferralFromVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#LRwXvqpnLAb
+",,,,"PromotionAndTreatment.ifReceivedAsReferral",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.llinsProvided","PromotionAndTreatment.llinsProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. LLINs provided","ANC - ANC.B10. LLINs provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Izr0L8qbpax
+",,,,"PromotionAndTreatment.llinsProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingConductedOnSyphilis","PromotionAndTreatment.counsellingConductedOnSyphilis","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling conducted on syphilis","ANC - ANC.B10. Counselling conducted on syphilis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#C04Rrelub1N
+",,,,"PromotionAndTreatment.counsellingConductedOnSyphilis",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.an27cMalePartnerSyphilisTreatmentProvided","PromotionAndTreatment.an27cMalePartnerSyphilisTreatmentProvided","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - AN27c. Male Partner syphilis treatment provided","ANC - AN27c. Male Partner syphilis treatment provided","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HBFvfu6dT1k
+",,,,"PromotionAndTreatment.an27cMalePartnerSyphilisTreatmentProvided",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.counsellingOnMalariaPrevention","PromotionAndTreatment.counsellingOnMalariaPrevention","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B10. Counselling on malaria prevention","ANC - ANC.B10. Counselling on malaria prevention","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#V90TnwOPzNm
+",,,,"PromotionAndTreatment.counsellingOnMalariaPrevention",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.referredToHigherLevelClinicOnIndication","PromotionAndTreatment.referredToHigherLevelClinicOnIndication","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B11. Referred to higher level clinic on indication","ANC - ANC.B11. Referred to higher level clinic on indication","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#G1smYf2TE5w
+",,,,"PromotionAndTreatment.referredToHigherLevelClinicOnIndication",0,1,"",""
+"PromotionAndTreatment","PromotionAndTreatment.ancGestationalAgeAtVisitCat","PromotionAndTreatment.ancGestationalAgeAtVisitCat","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Gestational age at todays visit_CAT","ANC - ANC.B8. Gestational age at todays visit_CAT","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KjLdMpXvJNm
+",,,,"PromotionAndTreatment.ancGestationalAgeAtVisitCat",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory","WomanSProfileAndHistory","","","",0,*,"","","","null {[]} {[]}
+","Woman's Profile and History","Woman's Profile and History","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.alcohol","WomanSProfileAndHistory.alcohol","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Alcohol","ANC - ANC.B6. Alcohol","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#w1XaGkyql1u
+",,,,"WomanSProfileAndHistory.alcohol",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth","WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)","ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xSKiFlohuQd
+",,,,"WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.diabetes","WomanSProfileAndHistory.diabetes","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Diabetes","ANC - ANC.B6. Diabetes","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cCp43HMY3br
+",,,,"WomanSProfileAndHistory.diabetes",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.eclampsiaConvulsions","WomanSProfileAndHistory.eclampsiaConvulsions","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Eclampsia/Convulsions","ANC - ANC.B6. Eclampsia/Convulsions","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#oeojmvdEY9S
+",,,,"WomanSProfileAndHistory.eclampsiaConvulsions",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.expectedDateOfDeliveryEdd","WomanSProfileAndHistory.expectedDateOfDeliveryEdd","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B6. Expected date of delivery (EDD)","ANC - ANC.B6. Expected date of delivery (EDD)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Ru01omP2WCQ
+",,,,"WomanSProfileAndHistory.expectedDateOfDeliveryEdd",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.ancGestationalAge","WomanSProfileAndHistory.ancGestationalAge","","","",1,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B6. Gestational age","ANC - ANC.B6. Gestational age","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#w9p8MQDRyMr
+",,,,"WomanSProfileAndHistory.ancGestationalAge",1,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg","WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC History of big baby delivery ( > 4 kg)","ANC - ANC History of big baby delivery ( > 4 kg)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#XhGh2s0tPTr
+",,,,"WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.hivStatusProfile","WomanSProfileAndHistory.hivStatusProfile","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B6. HIV status profile","ANC - ANC.B6. HIV status profile","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#lYE2KzWQGkW
+",,,,"WomanSProfileAndHistory.hivStatusProfile",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.myomectomy","WomanSProfileAndHistory.myomectomy","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC Myomectomy","ANC - ANC Myomectomy","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#iboAokLxCIh
+",,,,"WomanSProfileAndHistory.myomectomy",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.hypertension","WomanSProfileAndHistory.hypertension","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Hypertension","ANC - ANC.B6. Hypertension","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#QqTuhQQgpcp
+",,,,"WomanSProfileAndHistory.hypertension",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.cardiacCondition","WomanSProfileAndHistory.cardiacCondition","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC Cardiac condition","ANC - ANC Cardiac condition","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fuEUJqslhPb
+",,,,"WomanSProfileAndHistory.cardiacCondition",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure","WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Kidney disease (Chronic Renal Failure)","ANC - ANC.B6. Kidney disease (Chronic Renal Failure)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KPN571DvV4D
+",,,,"WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.lnmpDate","WomanSProfileAndHistory.lnmpDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B6. Last normal menstrual period (LNMP) date","ANC - ANC.B6. Last normal menstrual period (LNMP) date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#w4ky6EkVahL
+",,,,"WomanSProfileAndHistory.lnmpDate",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate","WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date","ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#joirdYETe8d
+",,,,"WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine","WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)","ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#l7Jh3IoeEIa
+",,,,"WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.ancPara","WomanSProfileAndHistory.ancPara","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - ANC.B6. Para","ANC - ANC.B6. Para","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#I7dvwZGNgE8
+",,,,"WomanSProfileAndHistory.ancPara",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.numberOfPregnanciesGravida","WomanSProfileAndHistory.numberOfPregnanciesGravida","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B6. Number of pregnancies (gravida)","ANC - ANC.B6. Number of pregnancies (gravida)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PuiTfPfSf86
+",,,,"WomanSProfileAndHistory.numberOfPregnanciesGravida",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.ancB6UltrasoundGa","WomanSProfileAndHistory.ancB6UltrasoundGa","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B6 Ultrasound GA","ANC - ANC.B6 Ultrasound GA","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Juv31inY35a
+",,,,"WomanSProfileAndHistory.ancB6UltrasoundGa",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.noAlcoholAndOrSubstances","WomanSProfileAndHistory.noAlcoholAndOrSubstances","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. No alcohol and/or substances","ANC - ANC.B6. No alcohol and/or substances","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#DPZ6kIgtiIA
+",,,,"WomanSProfileAndHistory.noAlcoholAndOrSubstances",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.noChronicOrPastHealthConditions","WomanSProfileAndHistory.noChronicOrPastHealthConditions","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. No chronic or past health conditions","ANC - ANC.B6. No chronic or past health conditions","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#snqxJUEWgkb
+",,,,"WomanSProfileAndHistory.noChronicOrPastHealthConditions",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.noKnownAllergies","WomanSProfileAndHistory.noKnownAllergies","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. No known allergies","ANC - ANC.B6. No known allergies","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#V16g2TRV7MB
+",,,,"WomanSProfileAndHistory.noKnownAllergies",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.noKnownPastSurgeries","WomanSProfileAndHistory.noKnownPastSurgeries","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. No known past surgeries","ANC - ANC.B6. No known past surgeries","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#DSAooZSxopi
+",,,,"WomanSProfileAndHistory.noKnownPastSurgeries",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.noMedications","WomanSProfileAndHistory.noMedications","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. No medications","ANC - ANC.B6. No medications","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hpXvhGzaVld
+",,,,"WomanSProfileAndHistory.noMedications",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.noPastPregnancyComplications","WomanSProfileAndHistory.noPastPregnancyComplications","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. No past pregnancy complications","ANC - ANC.B6. No past pregnancy complications","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#GWxtXap1Guk
+",,,,"WomanSProfileAndHistory.noPastPregnancyComplications",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.numberOfCaesareanSections","WomanSProfileAndHistory.numberOfCaesareanSections","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - ANC.B6. Number of caesarean sections","ANC - ANC.B6. Number of caesarean sections","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#j3lxVBnaXmy
+",,,,"WomanSProfileAndHistory.numberOfCaesareanSections",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.numberOfAbortions","WomanSProfileAndHistory.numberOfAbortions","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - ANC.B6. Number of abortions","ANC - ANC.B6. Number of abortions","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#p4e5Y0GQIxv
+",,,,"WomanSProfileAndHistory.numberOfAbortions",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd","WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)","ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fpPtP8xrU1s
+",,,,"WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.otherAllergiesSpecify","WomanSProfileAndHistory.otherAllergiesSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Other allergies (specify)","ANC - ANC.B6. Other allergies (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vpxAELVdkqn
+",,,,"WomanSProfileAndHistory.otherAllergiesSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.otherGynecologicalProceduresSpecify","WomanSProfileAndHistory.otherGynecologicalProceduresSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Other gynecological procedures (specify)","ANC - ANC.B6. Other gynecological procedures (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hz94MekJLYe
+",,,,"WomanSProfileAndHistory.otherGynecologicalProceduresSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.medicationsSpecify","WomanSProfileAndHistory.medicationsSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Medications (specify)","ANC - ANC.B6. Medications (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#kyOjlg4co4z
+",,,,"WomanSProfileAndHistory.medicationsSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify","WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Other past pregnancy problems (specify)","ANC - ANC.B6. Other past pregnancy problems (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rF7OJIP7fhp
+",,,,"WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.otherConditionsSpecify","WomanSProfileAndHistory.otherConditionsSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Other (specify)","ANC - ANC.B6. Other (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#lbmrnYizavt
+",,,,"WomanSProfileAndHistory.otherConditionsSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.otherSubstanceUseSpecify","WomanSProfileAndHistory.otherSubstanceUseSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Other substance use (specify)","ANC - ANC.B6. Other substance use (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UZ6Re4zVePj
+",,,,"WomanSProfileAndHistory.otherSubstanceUseSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.otherSurgeriesSpecify","WomanSProfileAndHistory.otherSurgeriesSpecify","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B6. Other surgeries (specify)","ANC - ANC.B6. Other surgeries (specify)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#S6O8strHi1p
+",,,,"WomanSProfileAndHistory.otherSurgeriesSpecify",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.preEclampsia","WomanSProfileAndHistory.preEclampsia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Pre-eclampsia","ANC - ANC.B6. Pre-eclampsia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#TGcfgzv8mQA
+",,,,"WomanSProfileAndHistory.preEclampsia",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.sourceOfGestationalAge","WomanSProfileAndHistory.sourceOfGestationalAge","","","",1,1,"","","","code {[]} {[]}
+","ANC - ANC.B6. Source of gestational age","ANC - ANC.B6. Source of gestational age","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#RPSgZF1i0hk
+",,,,"WomanSProfileAndHistory.sourceOfGestationalAge",1,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.tobaccoUse","WomanSProfileAndHistory.tobaccoUse","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B6. Tobacco use","ANC - ANC.B6. Tobacco use","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HvfStK1Mfo5
+",,,,"WomanSProfileAndHistory.tobaccoUse",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.ultrasoundDate","WomanSProfileAndHistory.ultrasoundDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B6. Ultrasound date","ANC - ANC.B6. Ultrasound date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PrDdlt8U65H
+",,,,"WomanSProfileAndHistory.ultrasoundDate",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.clinicallyEstimatedGestationalAge","WomanSProfileAndHistory.clinicallyEstimatedGestationalAge","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC.B6. Clinically estimated gestational age","ANC.B6. Clinically estimated gestational age","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YKXci7Sm0Zq
+",,,,"WomanSProfileAndHistory.clinicallyEstimatedGestationalAge",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.ancHeight","WomanSProfileAndHistory.ancHeight","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. Height","ANC - ANC.B8. Height","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#TcOkQ8Qqmlt
+",,,,"WomanSProfileAndHistory.ancHeight",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.preGestationalWeight","WomanSProfileAndHistory.preGestationalWeight","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. Pre-gestational weight","ANC - ANC.B8. Pre-gestational weight","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#kFwQfziJLEt
+",,,,"WomanSProfileAndHistory.preGestationalWeight",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.bmi","WomanSProfileAndHistory.bmi","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B8. BMI","ANC - ANC.B8. BMI","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UZnz5QLRvcr
+",,,,"WomanSProfileAndHistory.bmi",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.weightCategory","WomanSProfileAndHistory.weightCategory","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Weight category","ANC - ANC.B8. Weight category","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UsYtsHtuvwQ
+",,,,"WomanSProfileAndHistory.weightCategory",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.reviewAndConfirmComputedBmi","WomanSProfileAndHistory.reviewAndConfirmComputedBmi","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B8a. Review and confirm computed BMI","ANC - ANC.B8a. Review and confirm computed BMI","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bzupYCgg4m6
+",,,,"WomanSProfileAndHistory.reviewAndConfirmComputedBmi",0,1,"",""
+"WomanSProfileAndHistory","WomanSProfileAndHistory.expectedWeightGain","WomanSProfileAndHistory.expectedWeightGain","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B8. Expected weight gain","ANC - ANC.B8. Expected weight gain","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ztZwHRN9iPM
+",,,,"WomanSProfileAndHistory.expectedWeightGain",0,1,"",""

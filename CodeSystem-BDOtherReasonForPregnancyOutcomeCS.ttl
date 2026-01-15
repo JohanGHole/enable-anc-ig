@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BDOtherReasonForPregnancyOutcomeCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BDOtherReasonForPregnancyOutcomeCS</b></p><a name=\"BDOtherReasonForPregnancyOutcomeCS\"> </a><a name=\"hcBDOtherReasonForPregnancyOutcomeCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Abortion/miscarriage<a name=\"BDOtherReasonForPregnancyOutcomeCS-Abortion.47miscarriage\"> </a></td></tr><tr><td style=\"white-space:nowrap\">False pregnancy<a name=\"BDOtherReasonForPregnancyOutcomeCS-Falsepregnancy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Moved away<a name=\"BDOtherReasonForPregnancyOutcomeCS-Movedaway\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BDOtherReasonForPregnancyOutcomeCS"] ; # 
+  fhir:title [ fhir:v "BD-Other Reason for Pregnancy Outcome"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Abortion/miscarriage" ] ;
+     fhir:display [ fhir:v "Abortion/miscarriage" ]
+  ] [
+     fhir:code [ fhir:v "False pregnancy" ] ;
+     fhir:display [ fhir:v "False pregnancy" ]
+  ] [
+     fhir:code [ fhir:v "Moved away" ] ;
+     fhir:display [ fhir:v "Moved away" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

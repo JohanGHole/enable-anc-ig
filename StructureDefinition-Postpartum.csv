@@ -1,0 +1,78 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Postpartum","Postpartum","","","",0,*,"","","","null {[]} {[]}
+","Postpartum","Postpartum","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Postpartum.dateOfPostpartumCare","Postpartum.dateOfPostpartumCare","","","",0,1,"","","","date {[]} {[]}
+","ANC - OUT_POST - Date of postpartum care ","ANC - OUT_POST - Date of postpartum care","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Vyok96daapr
+",,,,"Postpartum.dateOfPostpartumCare",0,1,"",""
+"Postpartum.bloodPressure","Postpartum.bloodPressure","","","",0,1,"","","","string {[]} {[]}
+","ANC - OUT_POST - Blood pressure","ANC - OUT_POST - Blood pressure","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#iySWXP9NB26
+",,,,"Postpartum.bloodPressure",0,1,"",""
+"Postpartum.temperature","Postpartum.temperature","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST - Temperature","ANC - OUT_POST - Temperature","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jBAsZaO4oEt
+",,,,"Postpartum.temperature",0,1,"",""
+"Postpartum.pulseRate","Postpartum.pulseRate","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST - Pulse Rate","ANC - OUT_POST - Pulse Rate","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YSVwVatx6JR
+",,,,"Postpartum.pulseRate",0,1,"",""
+"Postpartum.pph","Postpartum.pph","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST -  PPH","ANC - OUT_POST -  PPH","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#u4E2vVGtxc5
+",,,,"Postpartum.pph",0,1,"",""
+"Postpartum.dribblingLeakingUrine","Postpartum.dribblingLeakingUrine","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Dribbling/leaking urine ","ANC - OUT_POST - Dribbling/leaking urine","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Q2iOrrIs8RO
+",,,,"Postpartum.dribblingLeakingUrine",0,1,"",""
+"Postpartum.anemia","Postpartum.anemia","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Anemia","ANC - OUT_POST - Anemia","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dNdQy42gyNN
+",,,,"Postpartum.anemia",0,1,"",""
+"Postpartum.vaginalDischargeAfter4WeeksOfDelivery","Postpartum.vaginalDischargeAfter4WeeksOfDelivery","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery","ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ONFttMEHeed
+",,,,"Postpartum.vaginalDischargeAfter4WeeksOfDelivery",0,1,"",""
+"Postpartum.pelvicExam","Postpartum.pelvicExam","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Pelvic exam ","ANC - OUT_POST - Pelvic exam","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#wVsbNnQVjuX
+",,,,"Postpartum.pelvicExam",0,1,"",""
+"Postpartum.breastExam","Postpartum.breastExam","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Breast exam ","ANC - OUT_POST - Breast exam","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xqC5R16ID4N
+",,,,"Postpartum.breastExam",0,1,"",""
+"Postpartum.ironFolicAcidIfaSupplementation","Postpartum.ironFolicAcidIfaSupplementation","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation","ANC - OUT_POST - Iron & Folic Acid (IFA) supplementation","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#oOENq0HVqnV
+",,,,"Postpartum.ironFolicAcidIfaSupplementation",0,1,"",""
+"Postpartum.counselingDangerSignsSymptoms","Postpartum.counselingDangerSignsSymptoms","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given","ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dDD0M9NxRiE
+",,,,"Postpartum.counselingDangerSignsSymptoms",0,1,"",""
+"Postpartum.babyBreathing","Postpartum.babyBreathing","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Baby breathing","ANC - OUT_POST - Baby breathing","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#N9NypL64c5O
+",,,,"Postpartum.babyBreathing",0,1,"",""
+"Postpartum.babyBreastfeeding","Postpartum.babyBreastfeeding","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Baby breastfeeding","ANC - OUT_POST - Baby breastfeeding","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#c1M2JMkm3En
+",,,,"Postpartum.babyBreastfeeding",0,1,"",""
+"Postpartum.babyWtGm","Postpartum.babyWtGm","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - OUT_POST - Baby wt (gm)","ANC - OUT_POST - Baby wt (gm)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bNwTnOIQpxB
+",,,,"Postpartum.babyWtGm",0,1,"",""
+"Postpartum.immunization","Postpartum.immunization","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST -  Immunization","ANC - OUT_POST -  Immunization","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UE5eXlAess0
+",,,,"Postpartum.immunization",0,1,"",""
+"Postpartum.hivTestedYN","Postpartum.hivTestedYN","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST -  HIV tested (Y/N)","ANC - OUT_POST -  HIV tested (Y/N)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#TFOKxMR2T5A
+",,,,"Postpartum.hivTestedYN",0,1,"",""
+"Postpartum.hivTestResult","Postpartum.hivTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST -  HIV test result","ANC - OUT_POST -  HIV test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#V6LHFJ2Kv9l
+",,,,"Postpartum.hivTestResult",0,1,"",""
+"Postpartum.arvRxForMotherByType","Postpartum.arvRxForMotherByType","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST - ARV Rx for mother (By type)","ANC - OUT_POST - ARV Rx for mother (By type)","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#mSjUMNDx0Z2
+",,,,"Postpartum.arvRxForMotherByType",0,1,"",""
+"Postpartum.arvPx","Postpartum.arvPx","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - ARV PX","ANC - OUT_POST - ARV PX","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#TlkMcrKmlIa
+",,,,"Postpartum.arvPx",0,1,"",""
+"Postpartum.feedingOptionEbfErf","Postpartum.feedingOptionEbfErf","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST -  Feeding option: EBF/ERF","ANC - OUT_POST -  Feeding option: EBF/ERF","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#OpRMziOVS8e
+",,,,"Postpartum.feedingOptionEbfErf",0,1,"",""
+"Postpartum.newbornReferredToChronicHivInfantCare","Postpartum.newbornReferredToChronicHivInfantCare","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - OUT_POST - Newborn referred to chronic HIV infant care ","ANC - OUT_POST - Newborn referred to chronic HIV infant care","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ghEssGDk4nx
+",,,,"Postpartum.newbornReferredToChronicHivInfantCare",0,1,"",""
+"Postpartum.familyPlanningCounseledAndProvidedByMethod","Postpartum.familyPlanningCounseledAndProvidedByMethod","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_POST - FP counseled and provided (by method)","ANC - OUT_POST - FP counseled and provided (by method)","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YeXm1Vvny9O
+",,,,"Postpartum.familyPlanningCounseledAndProvidedByMethod",0,1,"",""
+"Postpartum.actionsTaken","Postpartum.actionsTaken","","","",0,1,"","","","string {[]} {[]}
+","ANC - OUT_POST - Actions taken","ANC - OUT_POST - Actions taken","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KcFAQvkTXrW
+",,,,"Postpartum.actionsTaken",0,1,"",""
+"Postpartum.typeOfStay","Postpartum.typeOfStay","","","",0,1,"","","","code {[]} {[]}
+","ANC - OUT_Post - Type of Stay","ANC - OUT_Post - Type of Stay","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#eCoVjkdihM9
+",,,,"Postpartum.typeOfStay",0,1,"",""

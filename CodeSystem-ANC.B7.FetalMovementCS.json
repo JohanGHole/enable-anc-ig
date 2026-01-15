@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ANC.B7.FetalMovementCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANC.B7.FetalMovementCS</b></p><a name=\"ANC.B7.FetalMovementCS\"> </a><a name=\"hcANC.B7.FetalMovementCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Normal fetal movement<a name=\"ANC.B7.FetalMovementCS-Normalfetalmovement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Reduced or poor fetal movement<a name=\"ANC.B7.FetalMovementCS-Reducedorpoorfetalmovement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">No fetal movement<a name=\"ANC.B7.FetalMovementCS-Nofetalmovement\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS",
+  "version" : "0.1.0",
+  "name" : "ANC.B7.FetalMovementCS",
+  "title" : "ANC.B7. Fetal movement",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Normal fetal movement",
+    "display" : "Normal fetal movement"
+  },
+  {
+    "code" : "Reduced or poor fetal movement",
+    "display" : "Reduced or poor fetal movement"
+  },
+  {
+    "code" : "No fetal movement",
+    "display" : "No fetal movement"
+  }]
+}

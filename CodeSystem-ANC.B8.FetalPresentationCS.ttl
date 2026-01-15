@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ANC.B8.FetalPresentationCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANC.B8.FetalPresentationCS</b></p><a name=\"ANC.B8.FetalPresentationCS\"> </a><a name=\"hcANC.B8.FetalPresentationCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Unknown<a name=\"ANC.B8.FetalPresentationCS-Unknown\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">Cephalic<a name=\"ANC.B8.FetalPresentationCS-Cephalic\"> </a></td><td>Cephalic</td></tr><tr><td style=\"white-space:nowrap\">Pelvic/Breech<a name=\"ANC.B8.FetalPresentationCS-Pelvic.47Breech\"> </a></td><td>Pelvic/Breech</td></tr><tr><td style=\"white-space:nowrap\">Transverse<a name=\"ANC.B8.FetalPresentationCS-Transverse\"> </a></td><td>Transverse</td></tr><tr><td style=\"white-space:nowrap\">Other fetal presentation (specify)<a name=\"ANC.B8.FetalPresentationCS-Otherfetalpresentation.40specify.41\"> </a></td><td>Other (specify)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ANC.B8.FetalPresentationCS"] ; # 
+  fhir:title [ fhir:v "ANC.B8. Fetal presentation"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ]
+  ] [
+     fhir:code [ fhir:v "Cephalic" ] ;
+     fhir:display [ fhir:v "Cephalic" ]
+  ] [
+     fhir:code [ fhir:v "Pelvic/Breech" ] ;
+     fhir:display [ fhir:v "Pelvic/Breech" ]
+  ] [
+     fhir:code [ fhir:v "Transverse" ] ;
+     fhir:display [ fhir:v "Transverse" ]
+  ] [
+     fhir:code [ fhir:v "Other fetal presentation (specify)" ] ;
+     fhir:display [ fhir:v "Other (specify)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

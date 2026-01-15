@@ -1,0 +1,436 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS",
+      "title" : "ANC.B10. Preventive deworming antihelminthic treatment provided",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B6.EducationLevelCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B6.EducationLevelCS",
+      "title" : "ANC.B6. Education level",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B6.SourceOfGestationalAgeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B6.SourceOfGestationalAgeCS",
+      "title" : "ANC.B6. Source of gestational age",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B7.FetalMovementCS",
+      "title" : "ANC.B7. Fetal movement",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.ExpectedWeightGainCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.ExpectedWeightGainCS",
+      "title" : "ANC.B8. Expected weight gain",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.FetalPresentationCS",
+      "title" : "ANC.B8. Fetal presentation",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.LABPLUS14CS",
+      "title" : "ANC.B8. LAB PLUS 1-4",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.NutritionalStatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.NutritionalStatusCS",
+      "title" : "ANC.B8. Nutritional status",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.PelvicExamResultVisualCS",
+      "title" : "ANC.B8. Pelvic exam result (visual)",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.WeightCategoryCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.WeightCategoryCS",
+      "title" : "ANC.B8. Weight category",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8NumberOfFetusesCS",
+      "title" : "ANC.B8 Number of fetuses",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.BloodTypeCS",
+      "title" : "ANC.B9. Blood type",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultGlucoseCS",
+      "title" : "ANC.B9. Urine dipstick result glucose",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultLeukocytesCS",
+      "title" : "ANC.B9. Urine dipstick result leukocytes",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultNitritesCS",
+      "title" : "ANC.B9. Urine dipstick result nitrites",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultProteinCS",
+      "title" : "ANC.B9. Urine dipstick result protein",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BD.FeedingOptionCS",
+      "title" : "ANC. BD. Feeding Option",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BDFeedingOptionsCS",
+      "title" : "ANC.BD Feeding options",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BDPlacentaCS",
+      "title" : "ANC.BD Placenta",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BDStillBirthCS",
+      "title" : "ANC.BD Still Birth",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.ReasonForPregnancyOutcomeCS",
+      "title" : "ANC. Reason for Pregnancy Outcome",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCARVRxForMotherCS",
+      "title" : "ANC ARV Rx for Mother",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABAnaemiaDiagnosisCS",
+      "title" : "ANC LAB Anaemia diagnosis",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABMalariaDiagnosisCS",
+      "title" : "ANC LAB Malaria diagnosis",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABMalariaMpsCS",
+      "title" : "ANC LAB Malaria mps",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalePartnerSelfTestingKitResultsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABMalePartnerSelfTestingKitResultsCS",
+      "title" : "ANC LAB Male Partner self testing kit results",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLabEMTCTCodesCS",
+      "title" : "ANC Lab EMTCT Codes",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCMUACColorCodeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCMUACColorCodeCS",
+      "title" : "ANC MUAC color code",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCOUTPOSTFamilyPlanningCS",
+      "title" : "ANC - OUT_POST - Family Planning",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCPostpartumCheckTimingCS",
+      "title" : "ANC - postpartum check timing",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCRelationPresentingPartBrimOfPelvicCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCRelationPresentingPartBrimOfPelvicCS",
+      "title" : "ANC Relation Presenting Part/Brim of pelvic",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCSickleCellCS",
+      "title" : "ANC Sickle cell",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCSingleOrMultipleCS",
+      "title" : "ANC- Single or multiple",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCSyphilisHepatitisResultsCS",
+      "title" : "ANC Syphilis Hepatitis results",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCTBResultsCS",
+      "title" : "ANC TB results",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BDOtherReasonForPregnancyOutcomeCS",
+      "title" : "BD-Other Reason for Pregnancy Outcome",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BDSexOfChildCS",
+      "title" : "BD-Sex of child",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FollowUpFrequencyCS",
+      "title" : "Follow-up frequency",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/HIVStatusProfileCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HIVStatusProfileCS",
+      "title" : "HIV status Profile",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/IptpDose112CS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IptpDose112CS",
+      "title" : "IPTp dose 1-12",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LABViralLoadStatusCS",
+      "title" : "LAB Viral load status",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/MaritalStatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MaritalStatusCS",
+      "title" : "Marital Status",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfDeliveryCS",
+      "title" : "Mode of delivery",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/OccupationCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OccupationCS",
+      "title" : "Occupation",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PartnerHIVTestResultCS",
+      "title" : "Partner HIV test result",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PositiveNegativeUnknownCS",
+      "title" : "Positive/Negative/Unknown",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/PregnantWomanReceivedAsReferralFromCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PregnantWomanReceivedAsReferralFromCS",
+      "title" : "Pregnant Woman Received as Referral from",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TermOrPretermCS",
+      "title" : "Term or preterm",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VitalStatusOfChildCS",
+      "title" : "Vital status of child",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "WHOClinicalStageCS",
+      "title" : "WHO Clinical stage",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/YearCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "YearCS",
+      "title" : "Year",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "YesNoUnknownCS",
+      "title" : "Yes/No/Unknown",
+      "description" : ""
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Dhis2DataElementsCS",
+      "title" : "DHIS2 Data Elements",
+      "description" : "Code system for 315 unique DHIS2 data elements from all selected programs"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Dhis2TrackedEntityAttributesCS",
+      "title" : "DHIS2 Tracked Entity Attributes",
+      "description" : "Code system for 18 unique DHIS2 tracked entity attributes"
+    }
+  ]
+}

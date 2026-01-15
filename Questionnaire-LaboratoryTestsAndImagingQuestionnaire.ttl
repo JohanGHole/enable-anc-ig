@@ -1,0 +1,1044 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/Questionnaire/LaboratoryTestsAndImagingQuestionnaire> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LaboratoryTestsAndImagingQuestionnaire"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire LaboratoryTestsAndImagingQuestionnaire</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire\"> </a><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://hispethiopia.org/enable/Questionnaire/LaboratoryTestsAndImagingQuestionnaire#0.1.0</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.todaySVisitGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> todaySVisitGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Today's visit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB8GestationalAgeAtTodaysVisitLab\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> ancAncB8GestationalAgeAtTodaysVisitLab</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Gestational age at today's visit (Auto-calculated)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9UltrasoundRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9UltrasoundRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9BloodScreeningRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9BloodScreeningRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood screening recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9HaemoglobinTestRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9HaemoglobinTestRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Haemoglobin test recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9HepatitisBTestRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9HepatitisBTestRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Hepatitis B test recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9SyphilisTestRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9SyphilisTestRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Syphilis test recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9MalariaTestRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9MalariaTestRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Malaria test recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9HivTestRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9HivTestRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV test recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9UrineTestRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9UrineTestRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Urine test recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9TbScreeningRecommended\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9TbScreeningRecommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB screening recommended</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.ultrasoundScanGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> ultrasoundScanGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound scan </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9UltrasoundScanDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9UltrasoundScanDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound scan date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB6UltrasoundGa\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> ancAncB6UltrasoundGa</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound-based Gestational Age</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancLabUltrasoundComments\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancLabUltrasoundComments</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ultrasound comments</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.bloodScreeningGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> bloodScreeningGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood Screening</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9BloodScreeningTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9BloodScreeningTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood screening test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9BloodGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9BloodGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood group</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.BloodTypeVS.html\">ANC.B9. Blood type value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9RhFactor\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9RhFactor</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Rh factor</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_PositiveNegativeUnknownVS.html\">Positive/Negative/Unknown value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncLabSickleCell\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncLabSickleCell</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Sickle cell screening</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCSickleCellVS.html\">ANC Sickle cell value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.haemoglobinGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> haemoglobinGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Haemoglobin</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9BloodHaemoglobinTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9BloodHaemoglobinTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Haemoglobin test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9BloodHaemoglobinResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancAncB9BloodHaemoglobinResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Haemoglobin result (CBC or Haemoglobinometer) g/dL</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.completeBloodCountCbcGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> completeBloodCountCbcGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Complete blood count (CBC)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncPlatelets\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> ancAncPlatelets</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Platelets</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.hepatitisBVirusGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> hepatitisBVirusGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Hepatitis B virus </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9HepatitisBTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9HepatitisBTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Hepatitis B test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9HepatitisBTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9HepatitisBTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Hepatitis B result</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_PositiveNegativeUnknownVS.html\">Positive/Negative/Unknown value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.bloodSugarGlucoseGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> bloodSugarGlucoseGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood sugar/glucose </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9BloodGlucoseTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9BloodGlucoseTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Blood sugar test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9RandomBloodSugarResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancAncB9RandomBloodSugarResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Random blood sugar result (mg/dL)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9FastingBloodSugarResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancAncB9FastingBloodSugarResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Fasting blood sugar result (mg/dL)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.syphilisGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> syphilisGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Syphilis</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9SyphilisTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9SyphilisTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Syphilis test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9SyphilisTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9SyphilisTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Syphilis test result</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCSyphilisHepatitisResultsVS.html\">ANC Syphilis Hepatitis results value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9PartnerSyphilisTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9PartnerSyphilisTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner Syphilis test result</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCSyphilisHepatitisResultsVS.html\">ANC Syphilis Hepatitis results value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.malariaGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> malariaGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Malaria</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabMalariaTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncLabMalariaTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Malaria test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabMalariaRdt\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncLabMalariaRdt</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Malaria RDT</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_PositiveNegativeUnknownVS.html\">Positive/Negative/Unknown value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancLabSymptomsOfComplicatedMalaria\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancLabSymptomsOfComplicatedMalaria</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symptoms of complicated malaria (extreme fatigue, confusion, convulsions, high fever, little/no urine, jaundice, excessive vomitting)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncLabMalariaBSForMps\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncLabMalariaBSForMps</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Malaria B/S for MPs</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCLABMalariaMpsVS.html\">ANC LAB Malaria mps value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.emtctGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> emtctGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">eMTCT</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9EmtctTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9EmtctTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">eMTCT test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9EmtctHivTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9EmtctHivTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">eMTCT code</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCLabEMTCTCodesVS.html\">ANC Lab EMTCT Codes value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabDateViralLoadSampleCollected\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncLabDateViralLoadSampleCollected</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date Viral load sample collected</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabDateViralLoadSampleReturned\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncLabDateViralLoadSampleReturned</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date Viral load sample returned</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancLabViralLoadResults\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> ancLabViralLoadResults</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Viral Load</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabDateCd4SampleCollected\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncLabDateCd4SampleCollected</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date CD4 sample collected</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabDateCd4SampleReturned\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncLabDateCd4SampleReturned</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date CD4 sample returned</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabViralLoadStatus\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncLabViralLoadStatus</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Viral load status</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_LABViralLoadStatusVS.html\">LAB Viral load status value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancLabCd4Results\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> ancLabCd4Results</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">CD4 results</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancLabWhoClinicalStage\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancLabWhoClinicalStage</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">WHO Clinical stage</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_WHOClinicalStageVS.html\">WHO Clinical stage value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabPregnantWomanLinkedToArt\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncLabPregnantWomanLinkedToArt</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Linked to ART?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabPregnantWomanArtNumber\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancAncLabPregnantWomanArtNumber</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ART number</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabPregnantWomanArtLocation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancAncLabPregnantWomanArtLocation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ART location</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9PartnerHivTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9PartnerHivTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner HIV test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabPartnerAge\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> ancAncLabPartnerAge</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner Age</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9PartnerHivTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9PartnerHivTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner HIV test result</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_PartnerHIVTestResultVS.html\">Partner HIV test result value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabPartnerLinkedToArt\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncLabPartnerLinkedToArt</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner linked to ART?</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabPartnerArtNumber\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancAncLabPartnerArtNumber</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner ART Number</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncLabPartnerArtLocation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancAncLabPartnerArtLocation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner ART location</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.urineDipstickGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> urineDipstickGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Urine Dipstick</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9DeUrineDipstickTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9DeUrineDipstickTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Urine dipstick test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9UrineDipstickResultGlucose\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9UrineDipstickResultGlucose</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Glucose</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultGlucoseVS.html\">ANC.B9. Urine dipstick result glucose value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9UrineDipstickResultLeukocytes\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9UrineDipstickResultLeukocytes</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Leukocytes</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultLeukocytesVS.html\">ANC.B9. Urine dipstick result leukocytes value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9UrineDipstickResultNitrites\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9UrineDipstickResultNitrites</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nitrites</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultNitritesVS.html\">ANC.B9. Urine dipstick result nitrites value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9UrineDipstickResultProtein\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9UrineDipstickResultProtein</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Protein</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultProteinVS.html\">ANC.B9. Urine dipstick result protein value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.urineMicroscopyGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> urineMicroscopyGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Urine Microscopy</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncLabUrineMicroscopyDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncLabUrineMicroscopyDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Urine Microscopy date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncLabPusCells\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncLabPusCells</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pus cells</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B8.LABPLUS14VS.html\">ANC.B8. LAB PLUS 1-4 value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.tuberculosisTbGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> tuberculosisTbGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Tuberculosis (TB)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9TbTestDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9TbTestDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB test date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancAncB9TbTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancAncB9TbTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB test result</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCTBResultsVS.html\">ANC TB results value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancAncB9TbScreeningIncompleteSymptomsOnly\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancAncB9TbScreeningIncompleteSymptomsOnly</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB screening incomplete (symptoms only)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.otherTestsConductedGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> otherTestsConductedGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other tests conducted</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.ancAncB9OtherTestSName\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancAncB9OtherTestSName</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other test(s) name</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.ancAncB9OtherTestSDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> ancAncB9OtherTestSDate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other test(s) date</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.ancAncB9OtherTestSResultS\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancAncB9OtherTestSResultS</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other test(s) result(s)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><h2>Contained Resources</h2><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.B9.BloodTypeVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANC.B9.BloodTypeVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANC.B9.BloodTypeVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.B9.BloodTypeCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #PositiveNegativeUnknownVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/PositiveNegativeUnknownVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/PositiveNegativeUnknownVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-PositiveNegativeUnknownCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCLabEMTCTCodesVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANCLabEMTCTCodesVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANCLabEMTCTCodesVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCLabEMTCTCodesCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #PartnerHIVTestResultVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/PartnerHIVTestResultVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/PartnerHIVTestResultVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-PartnerHIVTestResultCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #WHOClinicalStageVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/WHOClinicalStageVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/WHOClinicalStageVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-WHOClinicalStageCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #LABViralLoadStatusVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/LABViralLoadStatusVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/LABViralLoadStatusVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-LABViralLoadStatusCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCSyphilisHepatitisResultsVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANCSyphilisHepatitisResultsVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANCSyphilisHepatitisResultsVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCSyphilisHepatitisResultsCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCTBResultsVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANCTBResultsVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANCTBResultsVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCTBResultsCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.B9.UrineDipstickResultGlucoseVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultGlucoseVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultGlucoseVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.B9.UrineDipstickResultGlucoseCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.B9.UrineDipstickResultLeukocytesVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultLeukocytesVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultLeukocytesVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.B9.UrineDipstickResultLeukocytesCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.B9.UrineDipstickResultNitritesVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultNitritesVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultNitritesVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.B9.UrineDipstickResultNitritesCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.B9.UrineDipstickResultProteinVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultProteinVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANC.B9.UrineDipstickResultProteinVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.B9.UrineDipstickResultProteinCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCSickleCellVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANCSickleCellVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANCSickleCellVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCSickleCellCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCLABMalariaMpsVS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANCLABMalariaMpsVS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANCLABMalariaMpsVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCLABMalariaMpsCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.B8.LABPLUS14VS</b></p><a name=\"LaboratoryTestsAndImagingQuestionnaire/ANC.B8.LABPLUS14VS\"> </a><a name=\"hcLaboratoryTestsAndImagingQuestionnaire/ANC.B8.LABPLUS14VS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.B8.LABPLUS14CS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:contained ( [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.B9.BloodTypeVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.B9.BloodTypeVS" ] ;
+     fhir:title [ fhir:v "ANC.B9. Blood type value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "PositiveNegativeUnknownVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "PositiveNegativeUnknownVS" ] ;
+     fhir:title [ fhir:v "Positive/Negative/Unknown value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCLabEMTCTCodesVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCLabEMTCTCodesVS" ] ;
+     fhir:title [ fhir:v "ANC Lab EMTCT Codes value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "PartnerHIVTestResultVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "PartnerHIVTestResultVS" ] ;
+     fhir:title [ fhir:v "Partner HIV test result value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "WHOClinicalStageVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "WHOClinicalStageVS" ] ;
+     fhir:title [ fhir:v "WHO Clinical stage value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "LABViralLoadStatusVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "LABViralLoadStatusVS" ] ;
+     fhir:title [ fhir:v "LAB Viral load status value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCSyphilisHepatitisResultsVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCSyphilisHepatitisResultsVS" ] ;
+     fhir:title [ fhir:v "ANC Syphilis Hepatitis results value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCTBResultsVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCTBResultsVS" ] ;
+     fhir:title [ fhir:v "ANC TB results value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.B9.UrineDipstickResultGlucoseVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.B9.UrineDipstickResultGlucoseVS" ] ;
+     fhir:title [ fhir:v "ANC.B9. Urine dipstick result glucose value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.B9.UrineDipstickResultLeukocytesVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.B9.UrineDipstickResultLeukocytesVS" ] ;
+     fhir:title [ fhir:v "ANC.B9. Urine dipstick result leukocytes value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.B9.UrineDipstickResultNitritesVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.B9.UrineDipstickResultNitritesVS" ] ;
+     fhir:title [ fhir:v "ANC.B9. Urine dipstick result nitrites value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.B9.UrineDipstickResultProteinVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.B9.UrineDipstickResultProteinVS" ] ;
+     fhir:title [ fhir:v "ANC.B9. Urine dipstick result protein value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCSickleCellVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCSickleCellVS" ] ;
+     fhir:title [ fhir:v "ANC Sickle cell value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCLABMalariaMpsVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCLABMalariaMpsVS" ] ;
+     fhir:title [ fhir:v "ANC LAB Malaria mps value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.B8.LABPLUS14VS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.B8.LABPLUS14VS" ] ;
+     fhir:title [ fhir:v "ANC.B8. LAB PLUS 1-4 value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/Questionnaire/LaboratoryTestsAndImagingQuestionnaire"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/Questionnaire/LaboratoryTestsAndImagingQuestionnaire>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Laboratory Tests and Imaging  Questionnaire"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "] ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "todaySVisitGroup" ] ;
+     fhir:text [ fhir:v "Today's visit" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB8GestationalAgeAtTodaysVisitLab" ] ;
+       fhir:text [ fhir:v "Gestational age at today's visit (Auto-calculated)" ] ;
+       fhir:type [ fhir:v "integer" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9UltrasoundRecommended" ] ;
+       fhir:text [ fhir:v "Ultrasound recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9BloodScreeningRecommended" ] ;
+       fhir:text [ fhir:v "Blood screening recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9HaemoglobinTestRecommended" ] ;
+       fhir:text [ fhir:v "Haemoglobin test recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9HepatitisBTestRecommended" ] ;
+       fhir:text [ fhir:v "Hepatitis B test recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9SyphilisTestRecommended" ] ;
+       fhir:text [ fhir:v "Syphilis test recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9MalariaTestRecommended" ] ;
+       fhir:text [ fhir:v "Malaria test recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9HivTestRecommended" ] ;
+       fhir:text [ fhir:v "HIV test recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9UrineTestRecommended" ] ;
+       fhir:text [ fhir:v "Urine test recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9TbScreeningRecommended" ] ;
+       fhir:text [ fhir:v "TB screening recommended" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "ultrasoundScanGroup" ] ;
+     fhir:text [ fhir:v "Ultrasound scan " ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9UltrasoundScanDate" ] ;
+       fhir:text [ fhir:v "Ultrasound scan date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB6UltrasoundGa" ] ;
+       fhir:text [ fhir:v "Ultrasound-based Gestational Age" ] ;
+       fhir:type [ fhir:v "integer" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancLabUltrasoundComments" ] ;
+       fhir:text [ fhir:v "Ultrasound comments" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "bloodScreeningGroup" ] ;
+     fhir:text [ fhir:v "Blood Screening" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9BloodScreeningTestDate" ] ;
+       fhir:text [ fhir:v "Blood screening test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9BloodGroup" ] ;
+       fhir:text [ fhir:v "Blood group" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.B9.BloodTypeVS"^^xsd:anyURI ;
+         fhir:l <#ANC.B9.BloodTypeVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9RhFactor" ] ;
+       fhir:text [ fhir:v "Rh factor" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#PositiveNegativeUnknownVS"^^xsd:anyURI ;
+         fhir:l <#PositiveNegativeUnknownVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabSickleCell" ] ;
+       fhir:text [ fhir:v "Sickle cell screening" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCSickleCellVS"^^xsd:anyURI ;
+         fhir:l <#ANCSickleCellVS>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "haemoglobinGroup" ] ;
+     fhir:text [ fhir:v "Haemoglobin" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9BloodHaemoglobinTestDate" ] ;
+       fhir:text [ fhir:v "Haemoglobin test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9BloodHaemoglobinResult" ] ;
+       fhir:text [ fhir:v "Haemoglobin result (CBC or Haemoglobinometer) g/dL" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "completeBloodCountCbcGroup" ] ;
+     fhir:text [ fhir:v "Complete blood count (CBC)" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncPlatelets" ] ;
+       fhir:text [ fhir:v "Platelets" ] ;
+       fhir:type [ fhir:v "integer" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "hepatitisBVirusGroup" ] ;
+     fhir:text [ fhir:v "Hepatitis B virus " ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9HepatitisBTestDate" ] ;
+       fhir:text [ fhir:v "Hepatitis B test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9HepatitisBTestResult" ] ;
+       fhir:text [ fhir:v "Hepatitis B result" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#PositiveNegativeUnknownVS"^^xsd:anyURI ;
+         fhir:l <#PositiveNegativeUnknownVS>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "bloodSugarGlucoseGroup" ] ;
+     fhir:text [ fhir:v "Blood sugar/glucose " ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9BloodGlucoseTestDate" ] ;
+       fhir:text [ fhir:v "Blood sugar test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9RandomBloodSugarResult" ] ;
+       fhir:text [ fhir:v "Random blood sugar result (mg/dL)" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9FastingBloodSugarResult" ] ;
+       fhir:text [ fhir:v "Fasting blood sugar result (mg/dL)" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "syphilisGroup" ] ;
+     fhir:text [ fhir:v "Syphilis" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9SyphilisTestDate" ] ;
+       fhir:text [ fhir:v "Syphilis test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9SyphilisTestResult" ] ;
+       fhir:text [ fhir:v "Syphilis test result" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCSyphilisHepatitisResultsVS"^^xsd:anyURI ;
+         fhir:l <#ANCSyphilisHepatitisResultsVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9PartnerSyphilisTestResult" ] ;
+       fhir:text [ fhir:v "Partner Syphilis test result" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCSyphilisHepatitisResultsVS"^^xsd:anyURI ;
+         fhir:l <#ANCSyphilisHepatitisResultsVS>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "malariaGroup" ] ;
+     fhir:text [ fhir:v "Malaria" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncLabMalariaTestDate" ] ;
+       fhir:text [ fhir:v "Malaria test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabMalariaRdt" ] ;
+       fhir:text [ fhir:v "Malaria RDT" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#PositiveNegativeUnknownVS"^^xsd:anyURI ;
+         fhir:l <#PositiveNegativeUnknownVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancLabSymptomsOfComplicatedMalaria" ] ;
+       fhir:text [ fhir:v "Symptoms of complicated malaria (extreme fatigue, confusion, convulsions, high fever, little/no urine, jaundice, excessive vomitting)" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabMalariaBSForMps" ] ;
+       fhir:text [ fhir:v "Malaria B/S for MPs" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCLABMalariaMpsVS"^^xsd:anyURI ;
+         fhir:l <#ANCLABMalariaMpsVS>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "emtctGroup" ] ;
+     fhir:text [ fhir:v "eMTCT" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9EmtctTestDate" ] ;
+       fhir:text [ fhir:v "eMTCT test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9EmtctHivTestResult" ] ;
+       fhir:text [ fhir:v "eMTCT code" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCLabEMTCTCodesVS"^^xsd:anyURI ;
+         fhir:l <#ANCLabEMTCTCodesVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabDateViralLoadSampleCollected" ] ;
+       fhir:text [ fhir:v "Date Viral load sample collected" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabDateViralLoadSampleReturned" ] ;
+       fhir:text [ fhir:v "Date Viral load sample returned" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancLabViralLoadResults" ] ;
+       fhir:text [ fhir:v "Viral Load" ] ;
+       fhir:type [ fhir:v "integer" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabDateCd4SampleCollected" ] ;
+       fhir:text [ fhir:v "Date CD4 sample collected" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabDateCd4SampleReturned" ] ;
+       fhir:text [ fhir:v "Date CD4 sample returned" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabViralLoadStatus" ] ;
+       fhir:text [ fhir:v "Viral load status" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#LABViralLoadStatusVS"^^xsd:anyURI ;
+         fhir:l <#LABViralLoadStatusVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancLabCd4Results" ] ;
+       fhir:text [ fhir:v "CD4 results" ] ;
+       fhir:type [ fhir:v "integer" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancLabWhoClinicalStage" ] ;
+       fhir:text [ fhir:v "WHO Clinical stage" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#WHOClinicalStageVS"^^xsd:anyURI ;
+         fhir:l <#WHOClinicalStageVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPregnantWomanLinkedToArt" ] ;
+       fhir:text [ fhir:v "Linked to ART?" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPregnantWomanArtNumber" ] ;
+       fhir:text [ fhir:v "ART number" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPregnantWomanArtLocation" ] ;
+       fhir:text [ fhir:v "ART location" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9PartnerHivTestDate" ] ;
+       fhir:text [ fhir:v "Partner HIV test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPartnerAge" ] ;
+       fhir:text [ fhir:v "Partner Age" ] ;
+       fhir:type [ fhir:v "integer" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9PartnerHivTestResult" ] ;
+       fhir:text [ fhir:v "Partner HIV test result" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#PartnerHIVTestResultVS"^^xsd:anyURI ;
+         fhir:l <#PartnerHIVTestResultVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPartnerLinkedToArt" ] ;
+       fhir:text [ fhir:v "Partner linked to ART?" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPartnerArtNumber" ] ;
+       fhir:text [ fhir:v "Partner ART Number" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPartnerArtLocation" ] ;
+       fhir:text [ fhir:v "Partner ART location" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "urineDipstickGroup" ] ;
+     fhir:text [ fhir:v "Urine Dipstick" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9DeUrineDipstickTestDate" ] ;
+       fhir:text [ fhir:v "Urine dipstick test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9UrineDipstickResultGlucose" ] ;
+       fhir:text [ fhir:v "Glucose" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.B9.UrineDipstickResultGlucoseVS"^^xsd:anyURI ;
+         fhir:l <#ANC.B9.UrineDipstickResultGlucoseVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9UrineDipstickResultLeukocytes" ] ;
+       fhir:text [ fhir:v "Leukocytes" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.B9.UrineDipstickResultLeukocytesVS"^^xsd:anyURI ;
+         fhir:l <#ANC.B9.UrineDipstickResultLeukocytesVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9UrineDipstickResultNitrites" ] ;
+       fhir:text [ fhir:v "Nitrites" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.B9.UrineDipstickResultNitritesVS"^^xsd:anyURI ;
+         fhir:l <#ANC.B9.UrineDipstickResultNitritesVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9UrineDipstickResultProtein" ] ;
+       fhir:text [ fhir:v "Protein" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.B9.UrineDipstickResultProteinVS"^^xsd:anyURI ;
+         fhir:l <#ANC.B9.UrineDipstickResultProteinVS>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "urineMicroscopyGroup" ] ;
+     fhir:text [ fhir:v "Urine Microscopy" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncLabUrineMicroscopyDate" ] ;
+       fhir:text [ fhir:v "Urine Microscopy date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncLabPusCells" ] ;
+       fhir:text [ fhir:v "Pus cells" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.B8.LABPLUS14VS"^^xsd:anyURI ;
+         fhir:l <#ANC.B8.LABPLUS14VS>
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "tuberculosisTbGroup" ] ;
+     fhir:text [ fhir:v "Tuberculosis (TB)" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9TbTestDate" ] ;
+       fhir:text [ fhir:v "TB test date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9TbTestResult" ] ;
+       fhir:text [ fhir:v "TB test result" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCTBResultsVS"^^xsd:anyURI ;
+         fhir:l <#ANCTBResultsVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9TbScreeningIncompleteSymptomsOnly" ] ;
+       fhir:text [ fhir:v "TB screening incomplete (symptoms only)" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "otherTestsConductedGroup" ] ;
+     fhir:text [ fhir:v "Other tests conducted" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancAncB9OtherTestSName" ] ;
+       fhir:text [ fhir:v "Other test(s) name" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9OtherTestSDate" ] ;
+       fhir:text [ fhir:v "Other test(s) date" ] ;
+       fhir:type [ fhir:v "date" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancAncB9OtherTestSResultS" ] ;
+       fhir:text [ fhir:v "Other test(s) result(s)" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

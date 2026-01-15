@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="OccupationCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem OccupationCS</b></p><a name="OccupationCS"> </a><a name="hcOccupationCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/OccupationCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Student<a name="OccupationCS-Student"> </a></td></tr><tr><td style="white-space:nowrap">In and out of school<a name="OccupationCS-Inandoutofschool"> </a></td></tr><tr><td style="white-space:nowrap">Employed<a name="OccupationCS-Employed"> </a></td></tr><tr><td style="white-space:nowrap">Self-employed/Business person<a name="OccupationCS-Self-employed.47Businessperson"> </a></td></tr><tr><td style="white-space:nowrap">Unemployed<a name="OccupationCS-Unemployed"> </a></td></tr><tr><td style="white-space:nowrap">Peasant<a name="OccupationCS-Peasant"> </a></td></tr><tr><td style="white-space:nowrap">Other<a name="OccupationCS-Other"> </a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/OccupationCS"/>
+  <version value="0.1.0"/>
+  <name value="OccupationCS"/>
+  <title value="Occupation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="Student"/>
+    <display value="Student"/>
+  </concept>
+  <concept>
+    <code value="In and out of school"/>
+    <display value="In and out of school"/>
+  </concept>
+  <concept>
+    <code value="Employed"/>
+    <display value="Employed"/>
+  </concept>
+  <concept>
+    <code value="Self-employed/Business person"/>
+    <display value="Self-employed/Business person"/>
+  </concept>
+  <concept>
+    <code value="Unemployed"/>
+    <display value="Unemployed"/>
+  </concept>
+  <concept>
+    <code value="Peasant"/>
+    <display value="Peasant"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

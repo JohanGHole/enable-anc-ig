@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PregnancyOutcome"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition PregnancyOutcome</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome" title="Pregnancy outcome">PregnancyOutcome</a><a name="PregnancyOutcome"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pregnancy outcome</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancEnd1PregnancyOutcome" title="ANC - ANC.End1. Pregnancy outcome">ancEnd1PregnancyOutcome</a><a name="PregnancyOutcome.ancEnd1PregnancyOutcome"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.End1. Pregnancy outcome<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.ReasonForPregnancyOutcomeVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS" class="binding">ANC. Reason for Pregnancy Outcome value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.termOrPreterm" title="ANC - ANC.BD. Term or Preterm">termOrPreterm</a><a name="PregnancyOutcome.termOrPreterm"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD. Term or Preterm<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-TermOrPretermVS.html" title="https://hispethiopia.org/enable/ValueSet/TermOrPretermVS" class="binding">Term or preterm value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.dateAndTimeOfAdmission" title="ANC - ANC.BD-Date and time of admission">dateAndTimeOfAdmission</a><a name="PregnancyOutcome.dateAndTimeOfAdmission"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD-Date and time of admission</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.singleOrMultipleSpecify" title="ANC - ANC.BD Single or Multiple Specify number">singleOrMultipleSpecify</a><a name="PregnancyOutcome.singleOrMultipleSpecify"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Single or Multiple Specify number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.gestationOfDeliveryWeeks" title="ANC - BD-Gestation of delivery (weeks)">gestationOfDeliveryWeeks</a><a name="PregnancyOutcome.gestationOfDeliveryWeeks"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - BD-Gestation of delivery (weeks)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.modeOfDelivery" title="ANC - ANC.BD-Mode of delivery">modeOfDelivery</a><a name="PregnancyOutcome.modeOfDelivery"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD-Mode of delivery<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ModeOfDeliveryVS.html" title="https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS" class="binding">Mode of delivery value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.sexOfChild" title="ANC - ANC.BD-Sex of child">sexOfChild</a><a name="PregnancyOutcome.sexOfChild"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD-Sex of child<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-BDSexOfChildVS.html" title="https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS" class="binding">BD-Sex of child value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.dateAndTimeOfBirth" title="ANC - ANC.BD-Date and time of birth (Child)">dateAndTimeOfBirth</a><a name="PregnancyOutcome.dateAndTimeOfBirth"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD-Date and time of birth (Child)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.weightAtBirth" title="ANC - ANC.BD Weight at birth">weightAtBirth</a><a name="PregnancyOutcome.weightAtBirth"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Weight at birth</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.childVitalStatus" title="ANC - ANC.BD Child vital status">childVitalStatus</a><a name="PregnancyOutcome.childVitalStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Child vital status<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-VitalStatusOfChildVS.html" title="https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS" class="binding">Vital status of child value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutArvRxForMothersByType" title="ANC - ANC.BD ARV Rx for Mothers (by type)">ancOutArvRxForMothersByType</a><a name="PregnancyOutcome.ancOutArvRxForMothersByType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD ARV Rx for Mothers (by type)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutObstProlgLabour" title="ANC - ANC.BD Obst/prolg labour">ancOutObstProlgLabour</a><a name="PregnancyOutcome.ancOutObstProlgLabour"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Obst/prolg labour</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutHysterectomy" title="ANC - ANC.BD Hysterectomy ">ancOutHysterectomy</a><a name="PregnancyOutcome.ancOutHysterectomy"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Hysterectomy </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutManaged" title="ANC - ANC.BD Managed">ancOutManaged</a><a name="PregnancyOutcome.ancOutManaged"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Managed</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutPromSepsis" title="ANC - ANC.BD PROM/Sepsis">ancOutPromSepsis</a><a name="PregnancyOutcome.ancOutPromSepsis"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD PROM/Sepsis</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutReferred" title="ANC - ANC.BD Referred">ancOutReferred</a><a name="PregnancyOutcome.ancOutReferred"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Referred</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutRepaired" title="ANC - ANC.BD Repaired">ancOutRepaired</a><a name="PregnancyOutcome.ancOutRepaired"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Repaired</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.bdOtherReasonForPregnancyOutcome" title="ANC - AND.BD-Other Reason for Pregnancy Outcome">bdOtherReasonForPregnancyOutcome</a><a name="PregnancyOutcome.bdOtherReasonForPregnancyOutcome"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - AND.BD-Other Reason for Pregnancy Outcome<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-BDOtherReasonForPregnancyOutcomeVS.html" title="https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS" class="binding">BD-Other Reason for Pregnancy Outcome value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage" title="ANC - ANC.BD Eclampsia postpartum hemorrhage ">ancOutEclampsiaPostpartumHemorrhage</a><a name="PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Eclampsia postpartum hemorrhage </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutRupturedUx" title="ANC - ANC.BD Ruptured Ux">ancOutRupturedUx</a><a name="PregnancyOutcome.ancOutRupturedUx"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Ruptured Ux</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage" title="ANC - ANC.BD Eclampsia antepartum hemorrhage ">ancOutEclampsiaAntepartumHemorrhage</a><a name="PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Eclampsia antepartum hemorrhage </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.0pvVaccine" title="ANC - ANC.BD 0PV Vaccine">0pvVaccine</a><a name="PregnancyOutcome.0pvVaccine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD 0PV Vaccine</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.arvPxForNewBortn" title="ANC - ANC.BD ARV Px for New Born (By type, HIV)">arvPxForNewBortn</a><a name="PregnancyOutcome.arvPxForNewBortn"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD ARV Px for New Born (By type, HIV)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.apgarScore" title="ANC - ANC.BD Apgar Score">apgarScore</a><a name="PregnancyOutcome.apgarScore"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Apgar Score</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.bcgVaccine" title="ANC - ANC.BD BCG Vaccine">bcgVaccine</a><a name="PregnancyOutcome.bcgVaccine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD BCG Vaccine</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.feedingOption" title="ANC - ANC.BD Feeding option">feedingOption</a><a name="PregnancyOutcome.feedingOption"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Feeding option<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.BDFeedingOptionsVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS" class="binding">ANC.BD Feeding options value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.hbvBirthDose" title="ANC - ANC.BD HBV birth dose">hbvBirthDose</a><a name="PregnancyOutcome.hbvBirthDose"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD HBV birth dose</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.placenta" title="ANC - ANC.BD Placenta">placenta</a><a name="PregnancyOutcome.placenta"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Placenta<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.BDPlacentaVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS" class="binding">ANC.BD Placenta value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.singleOrMultiple" title="ANC - ANC.BD Single or Multiple">singleOrMultiple</a><a name="PregnancyOutcome.singleOrMultiple"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Single or Multiple<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANCSingleOrMultipleVS.html" title="https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS" class="binding">ANC- Single or multiple value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.skinToSkin" title="ANC - ANC.BD Skin to Skin contact">skinToSkin</a><a name="PregnancyOutcome.skinToSkin"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Skin to Skin contact</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.ttc" title="ANC - ANC.BD TTC">ttc</a><a name="PregnancyOutcome.ttc"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD TTC</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.vitK" title="ANC - ANC.BD Vit K">vitK</a><a name="PregnancyOutcome.vitK"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Vit K</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.lenghtAtBirth" title="ANC - ANC.BD length at birth">lenghtAtBirth</a><a name="PregnancyOutcome.lenghtAtBirth"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD length at birth</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.deliveredBy" title="ANC - ANC.BD-Delivered by (Name)">deliveredBy</a><a name="PregnancyOutcome.deliveredBy"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD-Delivered by (Name)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.deliveredBySignature" title="ANC - ANC.BD-Delivered by (Signature)">deliveredBySignature</a><a name="PregnancyOutcome.deliveredBySignature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD-Delivered by (Signature)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PregnancyOutcome-definitions.html#PregnancyOutcome.stillBirth" title="ANC - ANC.BD Still Birth">stillBirth</a><a name="PregnancyOutcome.stillBirth"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.BD Still Birth<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.BDStillBirthVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS" class="binding">ANC.BD Still Birth value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/StructureDefinition/PregnancyOutcome"/>
+  <version value="0.1.0"/>
+  <name value="PregnancyOutcome"/>
+  <title value="Pregnancy outcome"/>
+  <status value="draft"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://hispethiopia.org/enable/StructureDefinition/PregnancyOutcome"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="PregnancyOutcome">
+      <path value="PregnancyOutcome"/>
+      <short value="Pregnancy outcome"/>
+      <definition value="Pregnancy outcome"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="PregnancyOutcome.ancEnd1PregnancyOutcome">
+      <path value="PregnancyOutcome.ancEnd1PregnancyOutcome"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="VIEg1M2z5Vs"/>
+      </code>
+      <short value="ANC - ANC.End1. Pregnancy outcome"/>
+      <definition value="ANC - ANC.End1. Pregnancy outcome"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancEnd1PregnancyOutcome"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.termOrPreterm">
+      <path value="PregnancyOutcome.termOrPreterm"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="CfVBzICA1og"/>
+      </code>
+      <short value="ANC - ANC.BD. Term or Preterm"/>
+      <definition value="ANC - ANC.BD. Term or Preterm"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.termOrPreterm"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/TermOrPretermVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.dateAndTimeOfAdmission">
+      <path value="PregnancyOutcome.dateAndTimeOfAdmission"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="DfHmC0s6JqV"/>
+      </code>
+      <short value="ANC - ANC.BD-Date and time of admission"/>
+      <definition value="ANC - ANC.BD-Date and time of admission"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.dateAndTimeOfAdmission"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.singleOrMultipleSpecify">
+      <path value="PregnancyOutcome.singleOrMultipleSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="zvJl9DSRNl7"/>
+      </code>
+      <short value="ANC - ANC.BD Single or Multiple Specify number"/>
+      <definition value="ANC - ANC.BD Single or Multiple Specify number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.singleOrMultipleSpecify"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.gestationOfDeliveryWeeks">
+      <path value="PregnancyOutcome.gestationOfDeliveryWeeks"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="h2xGlXziLV6"/>
+      </code>
+      <short value="ANC - BD-Gestation of delivery (weeks)"/>
+      <definition value="ANC - BD-Gestation of delivery (weeks)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.gestationOfDeliveryWeeks"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.modeOfDelivery">
+      <path value="PregnancyOutcome.modeOfDelivery"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="elQef67mAgb"/>
+      </code>
+      <short value="ANC - ANC.BD-Mode of delivery"/>
+      <definition value="ANC - ANC.BD-Mode of delivery"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.modeOfDelivery"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.sexOfChild">
+      <path value="PregnancyOutcome.sexOfChild"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="cCDntJeM21e"/>
+      </code>
+      <short value="ANC - ANC.BD-Sex of child"/>
+      <definition value="ANC - ANC.BD-Sex of child"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.sexOfChild"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.dateAndTimeOfBirth">
+      <path value="PregnancyOutcome.dateAndTimeOfBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="G38Z5FR4sv7"/>
+      </code>
+      <short value="ANC - ANC.BD-Date and time of birth (Child)"/>
+      <definition value="ANC - ANC.BD-Date and time of birth (Child)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.dateAndTimeOfBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.weightAtBirth">
+      <path value="PregnancyOutcome.weightAtBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="quFsdF0GLrm"/>
+      </code>
+      <short value="ANC - ANC.BD Weight at birth"/>
+      <definition value="ANC - ANC.BD Weight at birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.weightAtBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.childVitalStatus">
+      <path value="PregnancyOutcome.childVitalStatus"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Gk5vKpilJJq"/>
+      </code>
+      <short value="ANC - ANC.BD Child vital status"/>
+      <definition value="ANC - ANC.BD Child vital status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.childVitalStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.ancOutArvRxForMothersByType">
+      <path value="PregnancyOutcome.ancOutArvRxForMothersByType"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dxH6wzY9ll4"/>
+      </code>
+      <short value="ANC - ANC.BD ARV Rx for Mothers (by type)"/>
+      <definition value="ANC - ANC.BD ARV Rx for Mothers (by type)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutArvRxForMothersByType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutObstProlgLabour">
+      <path value="PregnancyOutcome.ancOutObstProlgLabour"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dSeYEled4tX"/>
+      </code>
+      <short value="ANC - ANC.BD Obst/prolg labour"/>
+      <definition value="ANC - ANC.BD Obst/prolg labour"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutObstProlgLabour"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutHysterectomy">
+      <path value="PregnancyOutcome.ancOutHysterectomy"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="z2YaIoUs5eV"/>
+      </code>
+      <short value="ANC - ANC.BD Hysterectomy "/>
+      <definition value="ANC - ANC.BD Hysterectomy"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutHysterectomy"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutManaged">
+      <path value="PregnancyOutcome.ancOutManaged"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="sYgW1IM4Gn5"/>
+      </code>
+      <short value="ANC - ANC.BD Managed"/>
+      <definition value="ANC - ANC.BD Managed"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutManaged"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutPromSepsis">
+      <path value="PregnancyOutcome.ancOutPromSepsis"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="c975NCuATNP"/>
+      </code>
+      <short value="ANC - ANC.BD PROM/Sepsis"/>
+      <definition value="ANC - ANC.BD PROM/Sepsis"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutPromSepsis"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutReferred">
+      <path value="PregnancyOutcome.ancOutReferred"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="tQ4Sv6kQks9"/>
+      </code>
+      <short value="ANC - ANC.BD Referred"/>
+      <definition value="ANC - ANC.BD Referred"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutReferred"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutRepaired">
+      <path value="PregnancyOutcome.ancOutRepaired"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="hGXAH0H7oKs"/>
+      </code>
+      <short value="ANC - ANC.BD Repaired"/>
+      <definition value="ANC - ANC.BD Repaired"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutRepaired"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.bdOtherReasonForPregnancyOutcome">
+      <path value="PregnancyOutcome.bdOtherReasonForPregnancyOutcome"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ROgwm1UaUjW"/>
+      </code>
+      <short value="ANC - AND.BD-Other Reason for Pregnancy Outcome"/>
+      <definition value="ANC - AND.BD-Other Reason for Pregnancy Outcome"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.bdOtherReasonForPregnancyOutcome"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage">
+      <path value="PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="JrSzUmBfKnO"/>
+      </code>
+      <short value="ANC - ANC.BD Eclampsia postpartum hemorrhage "/>
+      <definition value="ANC - ANC.BD Eclampsia postpartum hemorrhage"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutRupturedUx">
+      <path value="PregnancyOutcome.ancOutRupturedUx"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Mv4z2Sd5s8E"/>
+      </code>
+      <short value="ANC - ANC.BD Ruptured Ux"/>
+      <definition value="ANC - ANC.BD Ruptured Ux"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutRupturedUx"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage">
+      <path value="PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="fvnZ3zRQUdQ"/>
+      </code>
+      <short value="ANC - ANC.BD Eclampsia antepartum hemorrhage "/>
+      <definition value="ANC - ANC.BD Eclampsia antepartum hemorrhage"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.0pvVaccine">
+      <path value="PregnancyOutcome.0pvVaccine"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="KQ34Vol6R3J"/>
+      </code>
+      <short value="ANC - ANC.BD 0PV Vaccine"/>
+      <definition value="ANC - ANC.BD 0PV Vaccine"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.0pvVaccine"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.arvPxForNewBortn">
+      <path value="PregnancyOutcome.arvPxForNewBortn"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="U58bt6XckRq"/>
+      </code>
+      <short value="ANC - ANC.BD ARV Px for New Born (By type, HIV)"/>
+      <definition value="ANC - ANC.BD ARV Px for New Born (By type, HIV)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.arvPxForNewBortn"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.apgarScore">
+      <path value="PregnancyOutcome.apgarScore"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="p7e9CE7Hc0t"/>
+      </code>
+      <short value="ANC - ANC.BD Apgar Score"/>
+      <definition value="ANC - ANC.BD Apgar Score"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.apgarScore"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.bcgVaccine">
+      <path value="PregnancyOutcome.bcgVaccine"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="oMjZ429k9Fd"/>
+      </code>
+      <short value="ANC - ANC.BD BCG Vaccine"/>
+      <definition value="ANC - ANC.BD BCG Vaccine"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.bcgVaccine"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.feedingOption">
+      <path value="PregnancyOutcome.feedingOption"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="lWDnMWYvjm8"/>
+      </code>
+      <short value="ANC - ANC.BD Feeding option"/>
+      <definition value="ANC - ANC.BD Feeding option"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.feedingOption"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.hbvBirthDose">
+      <path value="PregnancyOutcome.hbvBirthDose"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="qw4RPXf7cvO"/>
+      </code>
+      <short value="ANC - ANC.BD HBV birth dose"/>
+      <definition value="ANC - ANC.BD HBV birth dose"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.hbvBirthDose"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.placenta">
+      <path value="PregnancyOutcome.placenta"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="GIdnxfQDAFp"/>
+      </code>
+      <short value="ANC - ANC.BD Placenta"/>
+      <definition value="ANC - ANC.BD Placenta"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.placenta"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.singleOrMultiple">
+      <path value="PregnancyOutcome.singleOrMultiple"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="IdElg7sFPAN"/>
+      </code>
+      <short value="ANC - ANC.BD Single or Multiple"/>
+      <definition value="ANC - ANC.BD Single or Multiple"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.singleOrMultiple"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.skinToSkin">
+      <path value="PregnancyOutcome.skinToSkin"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="x5AQxjEagnn"/>
+      </code>
+      <short value="ANC - ANC.BD Skin to Skin contact"/>
+      <definition value="ANC - ANC.BD Skin to Skin contact"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.skinToSkin"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ttc">
+      <path value="PregnancyOutcome.ttc"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="iAZ4RM1pdpk"/>
+      </code>
+      <short value="ANC - ANC.BD TTC"/>
+      <definition value="ANC - ANC.BD TTC"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.ttc"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.vitK">
+      <path value="PregnancyOutcome.vitK"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dC098c6csBv"/>
+      </code>
+      <short value="ANC - ANC.BD Vit K"/>
+      <definition value="ANC - ANC.BD Vit K"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.vitK"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.lenghtAtBirth">
+      <path value="PregnancyOutcome.lenghtAtBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="i5LaKr2e845"/>
+      </code>
+      <short value="ANC - ANC.BD length at birth"/>
+      <definition value="ANC - ANC.BD length at birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.lenghtAtBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.deliveredBy">
+      <path value="PregnancyOutcome.deliveredBy"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Og2D0fsxko1"/>
+      </code>
+      <short value="ANC - ANC.BD-Delivered by (Name)"/>
+      <definition value="ANC - ANC.BD-Delivered by (Name)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.deliveredBy"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.deliveredBySignature">
+      <path value="PregnancyOutcome.deliveredBySignature"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="QtETpPKw3Sa"/>
+      </code>
+      <short value="ANC - ANC.BD-Delivered by (Signature)"/>
+      <definition value="ANC - ANC.BD-Delivered by (Signature)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.deliveredBySignature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.stillBirth">
+      <path value="PregnancyOutcome.stillBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="af54ISxXZEB"/>
+      </code>
+      <short value="ANC - ANC.BD Still Birth"/>
+      <definition value="ANC - ANC.BD Still Birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PregnancyOutcome.stillBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS"/>
+      </binding>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PregnancyOutcome">
+      <path value="PregnancyOutcome"/>
+      <short value="Pregnancy outcome"/>
+      <definition value="Pregnancy outcome"/>
+    </element>
+    <element id="PregnancyOutcome.ancEnd1PregnancyOutcome">
+      <path value="PregnancyOutcome.ancEnd1PregnancyOutcome"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="VIEg1M2z5Vs"/>
+      </code>
+      <short value="ANC - ANC.End1. Pregnancy outcome"/>
+      <definition value="ANC - ANC.End1. Pregnancy outcome"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.termOrPreterm">
+      <path value="PregnancyOutcome.termOrPreterm"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="CfVBzICA1og"/>
+      </code>
+      <short value="ANC - ANC.BD. Term or Preterm"/>
+      <definition value="ANC - ANC.BD. Term or Preterm"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/TermOrPretermVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.dateAndTimeOfAdmission">
+      <path value="PregnancyOutcome.dateAndTimeOfAdmission"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="DfHmC0s6JqV"/>
+      </code>
+      <short value="ANC - ANC.BD-Date and time of admission"/>
+      <definition value="ANC - ANC.BD-Date and time of admission"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.singleOrMultipleSpecify">
+      <path value="PregnancyOutcome.singleOrMultipleSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="zvJl9DSRNl7"/>
+      </code>
+      <short value="ANC - ANC.BD Single or Multiple Specify number"/>
+      <definition value="ANC - ANC.BD Single or Multiple Specify number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.gestationOfDeliveryWeeks">
+      <path value="PregnancyOutcome.gestationOfDeliveryWeeks"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="h2xGlXziLV6"/>
+      </code>
+      <short value="ANC - BD-Gestation of delivery (weeks)"/>
+      <definition value="ANC - BD-Gestation of delivery (weeks)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.modeOfDelivery">
+      <path value="PregnancyOutcome.modeOfDelivery"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="elQef67mAgb"/>
+      </code>
+      <short value="ANC - ANC.BD-Mode of delivery"/>
+      <definition value="ANC - ANC.BD-Mode of delivery"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.sexOfChild">
+      <path value="PregnancyOutcome.sexOfChild"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="cCDntJeM21e"/>
+      </code>
+      <short value="ANC - ANC.BD-Sex of child"/>
+      <definition value="ANC - ANC.BD-Sex of child"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.dateAndTimeOfBirth">
+      <path value="PregnancyOutcome.dateAndTimeOfBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="G38Z5FR4sv7"/>
+      </code>
+      <short value="ANC - ANC.BD-Date and time of birth (Child)"/>
+      <definition value="ANC - ANC.BD-Date and time of birth (Child)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.weightAtBirth">
+      <path value="PregnancyOutcome.weightAtBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="quFsdF0GLrm"/>
+      </code>
+      <short value="ANC - ANC.BD Weight at birth"/>
+      <definition value="ANC - ANC.BD Weight at birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.childVitalStatus">
+      <path value="PregnancyOutcome.childVitalStatus"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Gk5vKpilJJq"/>
+      </code>
+      <short value="ANC - ANC.BD Child vital status"/>
+      <definition value="ANC - ANC.BD Child vital status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.ancOutArvRxForMothersByType">
+      <path value="PregnancyOutcome.ancOutArvRxForMothersByType"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dxH6wzY9ll4"/>
+      </code>
+      <short value="ANC - ANC.BD ARV Rx for Mothers (by type)"/>
+      <definition value="ANC - ANC.BD ARV Rx for Mothers (by type)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutObstProlgLabour">
+      <path value="PregnancyOutcome.ancOutObstProlgLabour"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dSeYEled4tX"/>
+      </code>
+      <short value="ANC - ANC.BD Obst/prolg labour"/>
+      <definition value="ANC - ANC.BD Obst/prolg labour"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutHysterectomy">
+      <path value="PregnancyOutcome.ancOutHysterectomy"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="z2YaIoUs5eV"/>
+      </code>
+      <short value="ANC - ANC.BD Hysterectomy "/>
+      <definition value="ANC - ANC.BD Hysterectomy "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutManaged">
+      <path value="PregnancyOutcome.ancOutManaged"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="sYgW1IM4Gn5"/>
+      </code>
+      <short value="ANC - ANC.BD Managed"/>
+      <definition value="ANC - ANC.BD Managed"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutPromSepsis">
+      <path value="PregnancyOutcome.ancOutPromSepsis"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="c975NCuATNP"/>
+      </code>
+      <short value="ANC - ANC.BD PROM/Sepsis"/>
+      <definition value="ANC - ANC.BD PROM/Sepsis"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutReferred">
+      <path value="PregnancyOutcome.ancOutReferred"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="tQ4Sv6kQks9"/>
+      </code>
+      <short value="ANC - ANC.BD Referred"/>
+      <definition value="ANC - ANC.BD Referred"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutRepaired">
+      <path value="PregnancyOutcome.ancOutRepaired"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="hGXAH0H7oKs"/>
+      </code>
+      <short value="ANC - ANC.BD Repaired"/>
+      <definition value="ANC - ANC.BD Repaired"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.bdOtherReasonForPregnancyOutcome">
+      <path value="PregnancyOutcome.bdOtherReasonForPregnancyOutcome"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ROgwm1UaUjW"/>
+      </code>
+      <short value="ANC - AND.BD-Other Reason for Pregnancy Outcome"/>
+      <definition value="ANC - AND.BD-Other Reason for Pregnancy Outcome"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage">
+      <path value="PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="JrSzUmBfKnO"/>
+      </code>
+      <short value="ANC - ANC.BD Eclampsia postpartum hemorrhage "/>
+      <definition value="ANC - ANC.BD Eclampsia postpartum hemorrhage "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutRupturedUx">
+      <path value="PregnancyOutcome.ancOutRupturedUx"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Mv4z2Sd5s8E"/>
+      </code>
+      <short value="ANC - ANC.BD Ruptured Ux"/>
+      <definition value="ANC - ANC.BD Ruptured Ux"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage">
+      <path value="PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="fvnZ3zRQUdQ"/>
+      </code>
+      <short value="ANC - ANC.BD Eclampsia antepartum hemorrhage "/>
+      <definition value="ANC - ANC.BD Eclampsia antepartum hemorrhage "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.0pvVaccine">
+      <path value="PregnancyOutcome.0pvVaccine"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="KQ34Vol6R3J"/>
+      </code>
+      <short value="ANC - ANC.BD 0PV Vaccine"/>
+      <definition value="ANC - ANC.BD 0PV Vaccine"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.arvPxForNewBortn">
+      <path value="PregnancyOutcome.arvPxForNewBortn"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="U58bt6XckRq"/>
+      </code>
+      <short value="ANC - ANC.BD ARV Px for New Born (By type, HIV)"/>
+      <definition value="ANC - ANC.BD ARV Px for New Born (By type, HIV)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.apgarScore">
+      <path value="PregnancyOutcome.apgarScore"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="p7e9CE7Hc0t"/>
+      </code>
+      <short value="ANC - ANC.BD Apgar Score"/>
+      <definition value="ANC - ANC.BD Apgar Score"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.bcgVaccine">
+      <path value="PregnancyOutcome.bcgVaccine"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="oMjZ429k9Fd"/>
+      </code>
+      <short value="ANC - ANC.BD BCG Vaccine"/>
+      <definition value="ANC - ANC.BD BCG Vaccine"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.feedingOption">
+      <path value="PregnancyOutcome.feedingOption"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="lWDnMWYvjm8"/>
+      </code>
+      <short value="ANC - ANC.BD Feeding option"/>
+      <definition value="ANC - ANC.BD Feeding option"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.hbvBirthDose">
+      <path value="PregnancyOutcome.hbvBirthDose"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="qw4RPXf7cvO"/>
+      </code>
+      <short value="ANC - ANC.BD HBV birth dose"/>
+      <definition value="ANC - ANC.BD HBV birth dose"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.placenta">
+      <path value="PregnancyOutcome.placenta"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="GIdnxfQDAFp"/>
+      </code>
+      <short value="ANC - ANC.BD Placenta"/>
+      <definition value="ANC - ANC.BD Placenta"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.singleOrMultiple">
+      <path value="PregnancyOutcome.singleOrMultiple"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="IdElg7sFPAN"/>
+      </code>
+      <short value="ANC - ANC.BD Single or Multiple"/>
+      <definition value="ANC - ANC.BD Single or Multiple"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS"/>
+      </binding>
+    </element>
+    <element id="PregnancyOutcome.skinToSkin">
+      <path value="PregnancyOutcome.skinToSkin"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="x5AQxjEagnn"/>
+      </code>
+      <short value="ANC - ANC.BD Skin to Skin contact"/>
+      <definition value="ANC - ANC.BD Skin to Skin contact"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.ttc">
+      <path value="PregnancyOutcome.ttc"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="iAZ4RM1pdpk"/>
+      </code>
+      <short value="ANC - ANC.BD TTC"/>
+      <definition value="ANC - ANC.BD TTC"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.vitK">
+      <path value="PregnancyOutcome.vitK"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dC098c6csBv"/>
+      </code>
+      <short value="ANC - ANC.BD Vit K"/>
+      <definition value="ANC - ANC.BD Vit K"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.lenghtAtBirth">
+      <path value="PregnancyOutcome.lenghtAtBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="i5LaKr2e845"/>
+      </code>
+      <short value="ANC - ANC.BD length at birth"/>
+      <definition value="ANC - ANC.BD length at birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.deliveredBy">
+      <path value="PregnancyOutcome.deliveredBy"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Og2D0fsxko1"/>
+      </code>
+      <short value="ANC - ANC.BD-Delivered by (Name)"/>
+      <definition value="ANC - ANC.BD-Delivered by (Name)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.deliveredBySignature">
+      <path value="PregnancyOutcome.deliveredBySignature"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="QtETpPKw3Sa"/>
+      </code>
+      <short value="ANC - ANC.BD-Delivered by (Signature)"/>
+      <definition value="ANC - ANC.BD-Delivered by (Signature)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PregnancyOutcome.stillBirth">
+      <path value="PregnancyOutcome.stillBirth"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="af54ISxXZEB"/>
+      </code>
+      <short value="ANC - ANC.BD Still Birth"/>
+      <definition value="ANC - ANC.BD Still Birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "WHOClinicalStageCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem WHOClinicalStageCS</b></p><a name=\"WHOClinicalStageCS\"> </a><a name=\"hcWHOClinicalStageCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Stage 1 - Asymptomatic<a name=\"WHOClinicalStageCS-Stage1-Asymptomatic\"> </a></td><td>Stage 1 - Asymptomatic</td></tr><tr><td style=\"white-space:nowrap\">Stage 2 - Mild Symptoms<a name=\"WHOClinicalStageCS-Stage2-MildSymptoms\"> </a></td><td>Stage 2 - Mild Symptoms</td></tr><tr><td style=\"white-space:nowrap\">Stage 3 - Advanced Symptoms<a name=\"WHOClinicalStageCS-Stage3-AdvancedSymptoms\"> </a></td><td>Stage 3 - Advanced Symptoms</td></tr><tr><td style=\"white-space:nowrap\">Stage 3 - Severe Symptoms<a name=\"WHOClinicalStageCS-Stage3-SevereSymptoms\"> </a></td><td>Stage 4- Severe Symptom</td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS",
+  "version" : "0.1.0",
+  "name" : "WHOClinicalStageCS",
+  "title" : "WHO Clinical stage",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "Stage 1 - Asymptomatic",
+    "display" : "Stage 1 - Asymptomatic"
+  },
+  {
+    "code" : "Stage 2 - Mild Symptoms",
+    "display" : "Stage 2 - Mild Symptoms"
+  },
+  {
+    "code" : "Stage 3 - Advanced Symptoms",
+    "display" : "Stage 3 - Advanced Symptoms"
+  },
+  {
+    "code" : "Stage 3 - Severe Symptoms",
+    "display" : "Stage 4- Severe Symptom"
+  }]
+}

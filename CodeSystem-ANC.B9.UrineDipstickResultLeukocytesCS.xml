@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ANC.B9.UrineDipstickResultLeukocytesCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ANC.B9.UrineDipstickResultLeukocytesCS</b></p><a name="ANC.B9.UrineDipstickResultLeukocytesCS"> </a><a name="hcANC.B9.UrineDipstickResultLeukocytesCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">No abnormalities (leukocytes)<a name="ANC.B9.UrineDipstickResultLeukocytesCS-Noabnormalities.40leukocytes.41"> </a></td><td>No abnormalities</td></tr><tr><td style="white-space:nowrap">PLUS<a name="ANC.B9.UrineDipstickResultLeukocytesCS-PLUS"> </a></td><td>+</td></tr><tr><td style="white-space:nowrap">2PLUS<a name="ANC.B9.UrineDipstickResultLeukocytesCS-2PLUS"> </a></td><td>++</td></tr><tr><td style="white-space:nowrap">4PLUS<a name="ANC.B9.UrineDipstickResultLeukocytesCS-4PLUS"> </a></td><td>+++</td></tr><tr><td style="white-space:nowrap">4PLUSPLUS<a name="ANC.B9.UrineDipstickResultLeukocytesCS-4PLUSPLUS"> </a></td><td>++++</td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS"/>
+  <version value="0.1.0"/>
+  <name value="ANC.B9.UrineDipstickResultLeukocytesCS"/>
+  <title value="ANC.B9. Urine dipstick result leukocytes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="No abnormalities (leukocytes)"/>
+    <display value="No abnormalities"/>
+  </concept>
+  <concept>
+    <code value="PLUS"/>
+    <display value="+"/>
+  </concept>
+  <concept>
+    <code value="2PLUS"/>
+    <display value="++"/>
+  </concept>
+  <concept>
+    <code value="4PLUS"/>
+    <display value="+++"/>
+  </concept>
+  <concept>
+    <code value="4PLUSPLUS"/>
+    <display value="++++"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,381 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/Questionnaire/PostpartumQuestionnaire> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PostpartumQuestionnaire"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire PostpartumQuestionnaire</b></p><a name=\"PostpartumQuestionnaire\"> </a><a name=\"hcPostpartumQuestionnaire\"> </a><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://hispethiopia.org/enable/Questionnaire/PostpartumQuestionnaire#0.1.0</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.maternalAssesmentGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> maternalAssesmentGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Maternal Assesment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostTypeOfStay\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancOutPostTypeOfStay</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Timing of postpartum check up</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-PostpartumQuestionnaire_ANCPostpartumCheckTimingVS.html\">ANC - postpartum check timing value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostBloodPressure\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancOutPostBloodPressure</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"> Blood pressure</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostTemperature\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancOutPostTemperature</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Temperature</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostPulseRate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancOutPostPulseRate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pulse rate</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostPph\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancOutPostPph</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Postpartum hemorrhage (PPH)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostAnemia\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostAnemia</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Anemia</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostVaginalDischargeAfter4WeeksOfDelivery\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostVaginalDischargeAfter4WeeksOfDelivery</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaginal discharge after 4 weeks of delivery</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostPelvicExam\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostPelvicExam</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pelvic exam (only if vaginal discharge)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostDribblingLeakingUrine\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostDribblingLeakingUrine</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dribbling/leaking urine </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostBreastExam\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostBreastExam</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Breast exam </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostIronFolicAcidIfaSupplementation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostIronFolicAcidIfaSupplementation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"> Iron &amp; Folic Acid (IFA) supplementation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancOutPostCounselingDangerSignsSymptomsFpHygieneNutritionEpiUseOfInsecticideTreatedNetItnBreastfeedingEtcGiven\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostCounselingDangerSignsSymptomsFpHygieneNutritionEpiUseOfInsecticideTreatedNetItnBreastfeedingEtcGiven</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Counseling provided on:  danger signs, family planning, hygiene, nutrition, immunization, the use of insecticide-treated nets, and breastfeeding</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.newbornAssesmentGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> newbornAssesmentGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Newborn Assesment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostBabyBreathing\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostBabyBreathing</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Baby breathing</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostBabyBreastfeeding\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostBabyBreastfeeding</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Baby breastfeeding</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostBabyWtGm\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-decimal.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"decimal\" class=\"hierarchy\"/> ancOutPostBabyWtGm</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Baby weight (gm)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancOutPostImmunization\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostImmunization</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"> Immunizations received (birth doses)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.hivPmtctAssessmentGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> hivPmtctAssessmentGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV / PMTCT Assessment</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostHivTestedYN\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostHivTestedYN</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV tested (Y/N)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostHivTestResult\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancOutPostHivTestResult</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV test result: P/N</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-PostpartumQuestionnaire_PositiveNegativeUnknownVS.html\">Positive/Negative/Unknown value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostArvRxForMotherByType\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancOutPostArvRxForMotherByType</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Antiretroviral (ARV) treatment regimen for mother</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-PostpartumQuestionnaire_ANCARVRxForMotherVS.html\">ANC ARV Rx for Mother value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostArvPx\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostArvPx</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Newborn received the standard ARV prophylaxis (ARV Px):  AZT + NVP for 6 weeks, then NVP only for 6 weeks - total 12 weeks </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ancOutPostFeedingOptionEbfErf\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancOutPostFeedingOptionEbfErf</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeding option:  Exclusive Breastfeeding (EBF)/ Exclusive replacement feeding (ERF)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-PostpartumQuestionnaire_ANC.BD.FeedingOptionVS.html\">ANC. BD. Feeding Option value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.ancOutPostNewbornReferredToChronicHivInfantCare\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> ancOutPostNewbornReferredToChronicHivInfantCare</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Newborn referred to chronic HIV infant care </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.planActionTakenGroup\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> planActionTakenGroup</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Plan / Action taken</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.ancOutPostFpCounseledAndProvidedByMethod\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> ancOutPostFpCounseledAndProvidedByMethod</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Family planning counseling provided</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-PostpartumQuestionnaire_ANCOUTPOSTFamilyPlanningVS.html\">ANC - OUT_POST - Family Planning value set</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.ancOutPostActionsTaken\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> ancOutPostActionsTaken</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Actions taken</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><h2>Contained Resources</h2><hr/><p class=\"res-header-id\"><b>ValueSet #PositiveNegativeUnknownVS</b></p><a name=\"PostpartumQuestionnaire/PositiveNegativeUnknownVS\"> </a><a name=\"hcPostpartumQuestionnaire/PositiveNegativeUnknownVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-PositiveNegativeUnknownCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCARVRxForMotherVS</b></p><a name=\"PostpartumQuestionnaire/ANCARVRxForMotherVS\"> </a><a name=\"hcPostpartumQuestionnaire/ANCARVRxForMotherVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCARVRxForMotherCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANC.BD.FeedingOptionVS</b></p><a name=\"PostpartumQuestionnaire/ANC.BD.FeedingOptionVS\"> </a><a name=\"hcPostpartumQuestionnaire/ANC.BD.FeedingOptionVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANC.BD.FeedingOptionCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCOUTPOSTFamilyPlanningVS</b></p><a name=\"PostpartumQuestionnaire/ANCOUTPOSTFamilyPlanningVS\"> </a><a name=\"hcPostpartumQuestionnaire/ANCOUTPOSTFamilyPlanningVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCOUTPOSTFamilyPlanningCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul><hr/><p class=\"res-header-id\"><b>ValueSet #ANCPostpartumCheckTimingVS</b></p><a name=\"PostpartumQuestionnaire/ANCPostpartumCheckTimingVS\"> </a><a name=\"hcPostpartumQuestionnaire/ANCPostpartumCheckTimingVS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-ANCPostpartumCheckTimingCS.html\"><code>https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:contained ( [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "PositiveNegativeUnknownVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "PositiveNegativeUnknownVS" ] ;
+     fhir:title [ fhir:v "Positive/Negative/Unknown value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCARVRxForMotherVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCARVRxForMotherVS" ] ;
+     fhir:title [ fhir:v "ANC ARV Rx for Mother value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANC.BD.FeedingOptionVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANC.BD.FeedingOptionVS" ] ;
+     fhir:title [ fhir:v "ANC. BD. Feeding Option value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCOUTPOSTFamilyPlanningVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCOUTPOSTFamilyPlanningVS" ] ;
+     fhir:title [ fhir:v "ANC - OUT_POST - Family Planning value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS>
+         ]
+       ] )
+     ]
+  ] [
+     a fhir:ValueSet ;
+     fhir:id [ fhir:v "ANCPostpartumCheckTimingVS" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+       ] )
+     ] ;
+     fhir:url [
+       fhir:v "https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS"^^xsd:anyURI ;
+       fhir:l <https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS>
+     ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
+     fhir:name [ fhir:v "ANCPostpartumCheckTimingVS" ] ;
+     fhir:title [ fhir:v "ANC - postpartum check timing value set" ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:experimental [ fhir:v false ] ;
+     fhir:compose [
+       fhir:include ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/Questionnaire/PostpartumQuestionnaire"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/Questionnaire/PostpartumQuestionnaire>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Postpartum Questionnaire"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "maternalAssesmentGroup" ] ;
+     fhir:text [ fhir:v "Maternal Assesment" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancOutPostTypeOfStay" ] ;
+       fhir:text [ fhir:v "Timing of postpartum check up" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCPostpartumCheckTimingVS"^^xsd:anyURI ;
+         fhir:l <#ANCPostpartumCheckTimingVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostBloodPressure" ] ;
+       fhir:text [ fhir:v " Blood pressure" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostTemperature" ] ;
+       fhir:text [ fhir:v "Temperature" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostPulseRate" ] ;
+       fhir:text [ fhir:v "Pulse rate" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostPph" ] ;
+       fhir:text [ fhir:v "Postpartum hemorrhage (PPH)" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostAnemia" ] ;
+       fhir:text [ fhir:v "Anemia" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostVaginalDischargeAfter4WeeksOfDelivery" ] ;
+       fhir:text [ fhir:v "Vaginal discharge after 4 weeks of delivery" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostPelvicExam" ] ;
+       fhir:text [ fhir:v "Pelvic exam (only if vaginal discharge)" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostDribblingLeakingUrine" ] ;
+       fhir:text [ fhir:v "Dribbling/leaking urine " ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostBreastExam" ] ;
+       fhir:text [ fhir:v "Breast exam " ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostIronFolicAcidIfaSupplementation" ] ;
+       fhir:text [ fhir:v " Iron & Folic Acid (IFA) supplementation" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostCounselingDangerSignsSymptomsFpHygieneNutritionEpiUseOfInsecticideTreatedNetItnBreastfeedingEtcGiven" ] ;
+       fhir:text [ fhir:v "Counseling provided on:  danger signs, family planning, hygiene, nutrition, immunization, the use of insecticide-treated nets, and breastfeeding" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "newbornAssesmentGroup" ] ;
+     fhir:text [ fhir:v "Newborn Assesment" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancOutPostBabyBreathing" ] ;
+       fhir:text [ fhir:v "Baby breathing" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostBabyBreastfeeding" ] ;
+       fhir:text [ fhir:v "Baby breastfeeding" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostBabyWtGm" ] ;
+       fhir:text [ fhir:v "Baby weight (gm)" ] ;
+       fhir:type [ fhir:v "decimal" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostImmunization" ] ;
+       fhir:text [ fhir:v " Immunizations received (birth doses)" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "hivPmtctAssessmentGroup" ] ;
+     fhir:text [ fhir:v "HIV / PMTCT Assessment" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancOutPostHivTestedYN" ] ;
+       fhir:text [ fhir:v "HIV tested (Y/N)" ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostHivTestResult" ] ;
+       fhir:text [ fhir:v "HIV test result: P/N" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#PositiveNegativeUnknownVS"^^xsd:anyURI ;
+         fhir:l <#PositiveNegativeUnknownVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostArvRxForMotherByType" ] ;
+       fhir:text [ fhir:v "Antiretroviral (ARV) treatment regimen for mother" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCARVRxForMotherVS"^^xsd:anyURI ;
+         fhir:l <#ANCARVRxForMotherVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostArvPx" ] ;
+       fhir:text [ fhir:v "Newborn received the standard ARV prophylaxis (ARV Px):  AZT + NVP for 6 weeks, then NVP only for 6 weeks - total 12 weeks " ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostFeedingOptionEbfErf" ] ;
+       fhir:text [ fhir:v "Feeding option:  Exclusive Breastfeeding (EBF)/ Exclusive replacement feeding (ERF)" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANC.BD.FeedingOptionVS"^^xsd:anyURI ;
+         fhir:l <#ANC.BD.FeedingOptionVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostNewbornReferredToChronicHivInfantCare" ] ;
+       fhir:text [ fhir:v "Newborn referred to chronic HIV infant care " ] ;
+       fhir:type [ fhir:v "boolean" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "planActionTakenGroup" ] ;
+     fhir:text [ fhir:v "Plan / Action taken" ] ;
+     fhir:type [ fhir:v "group" ] ;
+     fhir:item ( [
+       fhir:linkId [ fhir:v "ancOutPostFpCounseledAndProvidedByMethod" ] ;
+       fhir:text [ fhir:v "Family planning counseling provided" ] ;
+       fhir:type [ fhir:v "choice" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ] ;
+       fhir:answerValueSet [
+         fhir:v "#ANCOUTPOSTFamilyPlanningVS"^^xsd:anyURI ;
+         fhir:l <#ANCOUTPOSTFamilyPlanningVS>
+       ]
+     ] [
+       fhir:linkId [ fhir:v "ancOutPostActionsTaken" ] ;
+       fhir:text [ fhir:v "Actions taken" ] ;
+       fhir:type [ fhir:v "string" ] ;
+       fhir:required [ fhir:v false ] ;
+       fhir:repeats [ fhir:v false ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

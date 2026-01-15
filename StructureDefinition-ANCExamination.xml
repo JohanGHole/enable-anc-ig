@@ -1,0 +1,2164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCExamination"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ANCExamination</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination" title="ANC Examination">ANCExamination</a><a name="ANCExamination"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC Examination</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.bodyTemperature" title="ANC - ANC.B8. Body temperature">bodyTemperature</a><a name="ANCExamination.bodyTemperature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Body temperature</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.diastolicBloodPressure" title="ANC - ANC.B8. Diastolic blood pressure">diastolicBloodPressure</a><a name="ANCExamination.diastolicBloodPressure"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Diastolic blood pressure</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.fetalHeartbeatPresent" title="ANC - ANC.B8. Fetal heartbeat present">fetalHeartbeatPresent</a><a name="ANCExamination.fetalHeartbeatPresent"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Fetal heartbeat present</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.fetalHeartRate" title="ANC - ANC.B8. Fetal heart rate">fetalHeartRate</a><a name="ANCExamination.fetalHeartRate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Fetal heart rate</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.fetalPresentation" title="ANC - ANC.B8. Fetal presentation">fetalPresentation</a><a name="ANCExamination.fetalPresentation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Fetal presentation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B8.FetalPresentationVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS" class="binding">ANC.B8. Fetal presentation value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.oedemaLegSwelling" title="ANC - ANC.B8. Oedema Leg swelling">oedemaLegSwelling</a><a name="ANCExamination.oedemaLegSwelling"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Oedema Leg swelling</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.symptomsOfPreEclampsiaPresent" title="ANC - ANC.B8. Symptoms of severe pre-eclampsia present">symptomsOfPreEclampsiaPresent</a><a name="ANCExamination.symptomsOfPreEclampsiaPresent"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Symptoms of severe pre-eclampsia present</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.numberOfFetuses" title="ANC - ANC.B8. Number of fetuses">numberOfFetuses</a><a name="ANCExamination.numberOfFetuses"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Number of fetuses<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B8NumberOfFetusesVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS" class="binding">ANC.B8 Number of fetuses value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.oedemaOfTheHandsAndFeet" title="ANC - ANC.B8. Oedema of the hands and feet">oedemaOfTheHandsAndFeet</a><a name="ANCExamination.oedemaOfTheHandsAndFeet"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Oedema of the hands and feet</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.oedemaPresent" title="ANC - ANC.B8. Oedema present">oedemaPresent</a><a name="ANCExamination.oedemaPresent"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Oedema present</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.oedemaSeverity" title="ANC - ANC.B8. Oedema severity">oedemaSeverity</a><a name="ANCExamination.oedemaSeverity"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Oedema severity<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B8.LABPLUS14VS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS" class="binding">ANC.B8. LAB PLUS 1-4 value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.pallorPresent" title="ANC - ANC.B8. Pallor present">pallorPresent</a><a name="ANCExamination.pallorPresent"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Pallor present<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-YesNoUnknownVS.html" title="https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS" class="binding">Yes/No/Unknown value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.pelvicExamResultVisual" title="ANC - ANC.B8. Pelvic exam result (visual)">pelvicExamResultVisual</a><a name="ANCExamination.pelvicExamResultVisual"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Pelvic exam result (visual)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B8.PelvicExamResultVisualVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS" class="binding">ANC.B8. Pelvic exam result (visual) value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.pittingAnkleOedema" title="ANC - ANC.B8. Pitting ankle oedema">pittingAnkleOedema</a><a name="ANCExamination.pittingAnkleOedema"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Pitting ankle oedema</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.pittingLowerBackOedema" title="ANC - ANC.B8. Pitting lower back oedema">pittingLowerBackOedema</a><a name="ANCExamination.pittingLowerBackOedema"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Pitting lower back oedema</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.pulseRate" title="ANC - ANC.B8. Pulse rate">pulseRate</a><a name="ANCExamination.pulseRate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Pulse rate</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.repeatDiastolicBloodPressure" title="ANC - ANC.B8. Repeat diastolic blood pressure">repeatDiastolicBloodPressure</a><a name="ANCExamination.repeatDiastolicBloodPressure"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Repeat diastolic blood pressure</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.repeatSystolicBloodPressure" title="ANC - ANC.B8. Repeat systolic blood pressure">repeatSystolicBloodPressure</a><a name="ANCExamination.repeatSystolicBloodPressure"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Repeat systolic blood pressure</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.symphysisFundalHeightSfh" title="ANC - ANC.B8. Symphysis-fundal height (SFH)">symphysisFundalHeightSfh</a><a name="ANCExamination.symphysisFundalHeightSfh"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Symphysis-fundal height (SFH)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.systolicBloodPressure" title="ANC - ANC.B8. Systolic blood pressure">systolicBloodPressure</a><a name="ANCExamination.systolicBloodPressure"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Systolic blood pressure</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.signsConditionsForGbv" title="ANC - ANC.B8. Signs/conditions for GBV">signsConditionsForGbv</a><a name="ANCExamination.signsConditionsForGbv"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Signs/conditions for GBV</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.otherAbnormalPelvicVisualResultSpecify" title="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)">otherAbnormalPelvicVisualResultSpecify</a><a name="ANCExamination.otherAbnormalPelvicVisualResultSpecify"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScar1" title="ANC - Previous scar 1">previousScar1</a><a name="ANCExamination.previousScar1"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar 1</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.otherFetalPresentationSpecify" title="ANC - ANC.B8. Other fetal presentation (specify)">otherFetalPresentationSpecify</a><a name="ANCExamination.otherFetalPresentationSpecify"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Other fetal presentation (specify)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarYear1" title="ANC - Previous scar year 1">previousScarYear1</a><a name="ANCExamination.previousScarYear1"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar year 1<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-YearVS.html" title="https://hispethiopia.org/enable/ValueSet/YearVS" class="binding">Year value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarIndication1" title="ANC - Previous Scar Indication 1">previousScarIndication1</a><a name="ANCExamination.previousScarIndication1"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous Scar Indication 1</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScar2" title="ANC - Previous scar 2">previousScar2</a><a name="ANCExamination.previousScar2"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar 2</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarYear2" title="ANC - Previous scar year 2">previousScarYear2</a><a name="ANCExamination.previousScarYear2"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar year 2<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-YearVS.html" title="https://hispethiopia.org/enable/ValueSet/YearVS" class="binding">Year value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarIndication2" title="ANC - Previous Scar Indication 2">previousScarIndication2</a><a name="ANCExamination.previousScarIndication2"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous Scar Indication 2</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.experiencingCoughLastingMoreThan2Weeks" title="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks">experiencingCoughLastingMoreThan2Weeks</a><a name="ANCExamination.experiencingCoughLastingMoreThan2Weeks"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScar3" title="ANC - Previous scar 3">previousScar3</a><a name="ANCExamination.previousScar3"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar 3</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.hospitalisationForWhat" title="ANC - ANC.B7. Hospitalisation for what">hospitalisationForWhat</a><a name="ANCExamination.hospitalisationForWhat"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Hospitalisation for what</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarYear3" title="ANC - Previous scar year 3">previousScarYear3</a><a name="ANCExamination.previousScarYear3"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar year 3<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-YearVS.html" title="https://hispethiopia.org/enable/ValueSet/YearVS" class="binding">Year value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.muac" title="ANC - ANC.B8. MUAC">muac</a><a name="ANCExamination.muac"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. MUAC</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarIndication3" title="ANC - Previous Scar Indication 3">previousScarIndication3</a><a name="ANCExamination.previousScarIndication3"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous Scar Indication 3</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScar4" title="ANC - Previous scar 4">previousScar4</a><a name="ANCExamination.previousScar4"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar 4</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.muacColorCode" title="ANC - ANC.B8. MUAC Color code">muacColorCode</a><a name="ANCExamination.muacColorCode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. MUAC Color code<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANCMUACColorCodeVS.html" title="https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS" class="binding">ANC MUAC color code value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarYear4" title="ANC - Previous scar year 4">previousScarYear4</a><a name="ANCExamination.previousScarYear4"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous scar year 4<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-YearVS.html" title="https://hispethiopia.org/enable/ValueSet/YearVS" class="binding">Year value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.nutritionalStatus" title="ANC - ANC.B8. Nutritional status">nutritionalStatus</a><a name="ANCExamination.nutritionalStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Nutritional status<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B8.NutritionalStatusVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS" class="binding">ANC.B8. Nutritional status value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.relationPresentingPart" title="ANC - ANC.B8. Relation presenting part">relationPresentingPart</a><a name="ANCExamination.relationPresentingPart"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Relation presenting part<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANCRelationPresentingPartBrimOfPelvicVS.html" title="https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS" class="binding">ANC Relation Presenting Part/Brim of pelvic value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.previousScarIndication4" title="ANC - Previous Scar Indication 4">previousScarIndication4</a><a name="ANCExamination.previousScarIndication4"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - Previous Scar Indication 4</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.experiencingContractions" title="ANC - ANC.B7. Experiencing Contractions">experiencingContractions</a><a name="ANCExamination.experiencingContractions"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Experiencing Contractions</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.experiencingFever" title="ANC - ANC.B7. Experiencing Fever">experiencingFever</a><a name="ANCExamination.experiencingFever"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Experiencing Fever</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.experiencingSevereHeadache" title="ANC - ANC.B7. Experiencing Severe Headache">experiencingSevereHeadache</a><a name="ANCExamination.experiencingSevereHeadache"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Experiencing Severe Headache</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.secondFetalHeartRate" title="ANC - ANC.B8. Second fetal heart rate">secondFetalHeartRate</a><a name="ANCExamination.secondFetalHeartRate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Second fetal heart rate</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.experiencingVaginalBleeding" title="ANC - ANC.B7. Experiencing Vaginal bleeding">experiencingVaginalBleeding</a><a name="ANCExamination.experiencingVaginalBleeding"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Experiencing Vaginal bleeding</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.experiencingExcessiveVomiting" title="ANC - ANC.B7. Experiencing Excessive Vomiting">experiencingExcessiveVomiting</a><a name="ANCExamination.experiencingExcessiveVomiting"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Experiencing Excessive Vomiting</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.hasAbnormalVaginalDischargePhysiological" title="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)">hasAbnormalVaginalDischargePhysiological</a><a name="ANCExamination.hasAbnormalVaginalDischargePhysiological"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.ancGestationalAgeAtVisitAnc" title="ANC - ANC.B8. Gestational age at today's visit_ANC">ancGestationalAgeAtVisitAnc</a><a name="ANCExamination.ancGestationalAgeAtVisitAnc"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Gestational age at today's visit_ANC</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.currentWeight" title="ANC - ANC.B8. Current  weight">currentWeight</a><a name="ANCExamination.currentWeight"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Current  weight</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.painExtremePelvicPainCannotWalk" title="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)">painExtremePelvicPainCannotWalk</a><a name="ANCExamination.painExtremePelvicPainCannotWalk"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.totalWeightGainKg" title="ANC - ANC.B8. Total weight gain (kg)">totalWeightGainKg</a><a name="ANCExamination.totalWeightGainKg"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B8. Total weight gain (kg)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.painOther" title="ANC - ANC.B5. Pain –Other">painOther</a><a name="ANCExamination.painOther"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B5. Pain –Other</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.ancVisitNumber" title="ANC - ANC Visit Number">ancVisitNumber</a><a name="ANCExamination.ancVisitNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC Visit Number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.noCurrentSymptomsOrComplications" title="ANC - ANC.B7. No physiological symptoms">noCurrentSymptomsOrComplications</a><a name="ANCExamination.noCurrentSymptomsOrComplications"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. No physiological symptoms</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.otherCurrentPhysiologicalSymptomsSpecify" title="ANC - ANC.B7. Other current physiological symptoms (specify)">otherCurrentPhysiologicalSymptomsSpecify</a><a name="ANCExamination.otherCurrentPhysiologicalSymptomsSpecify"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Other current physiological symptoms (specify)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.1stAncOrAScheduledVisit" title="ANC - ANC.B5. Regular ANC / Scheduled visit?">1stAncOrAScheduledVisit</a><a name="ANCExamination.1stAncOrAScheduledVisit"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B5. Regular ANC / Scheduled visit?</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.fetalMovement" title="ANC - ANC.B7. Fetal movement">fetalMovement</a><a name="ANCExamination.fetalMovement"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B7. Fetal movement<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.B7.FetalMovementVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS" class="binding">ANC.B7. Fetal movement value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ANCExamination-definitions.html#ANCExamination.specifyHealthConcern" title="ANC - ANC.B5. Specify health concern">specifyHealthConcern</a><a name="ANCExamination.specifyHealthConcern"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - ANC.B5. Specify health concern</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/StructureDefinition/ANCExamination"/>
+  <version value="0.1.0"/>
+  <name value="ANCExamination"/>
+  <title value="ANC Examination"/>
+  <status value="draft"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://hispethiopia.org/enable/StructureDefinition/ANCExamination"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="ANCExamination">
+      <path value="ANCExamination"/>
+      <short value="ANC Examination"/>
+      <definition value="ANC Examination"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="ANCExamination.bodyTemperature">
+      <path value="ANCExamination.bodyTemperature"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="L6Toy2TrHHq"/>
+      </code>
+      <short value="ANC - ANC.B8. Body temperature"/>
+      <definition value="ANC - ANC.B8. Body temperature"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.bodyTemperature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="ANCExamination.diastolicBloodPressure">
+      <path value="ANCExamination.diastolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dyYdfamSY2Z"/>
+      </code>
+      <short value="ANC - ANC.B8. Diastolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Diastolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.diastolicBloodPressure"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalHeartbeatPresent">
+      <path value="ANCExamination.fetalHeartbeatPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="c6Cg8KgNu77"/>
+      </code>
+      <short value="ANC - ANC.B8. Fetal heartbeat present"/>
+      <definition value="ANC - ANC.B8. Fetal heartbeat present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.fetalHeartbeatPresent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalHeartRate">
+      <path value="ANCExamination.fetalHeartRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="cY03odVgQqq"/>
+      </code>
+      <short value="ANC - ANC.B8. Fetal heart rate"/>
+      <definition value="ANC - ANC.B8. Fetal heart rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.fetalHeartRate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalPresentation">
+      <path value="ANCExamination.fetalPresentation"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="vPdXnmGWzfy"/>
+      </code>
+      <short value="ANC - ANC.B8. Fetal presentation"/>
+      <definition value="ANC - ANC.B8. Fetal presentation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.fetalPresentation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.oedemaLegSwelling">
+      <path value="ANCExamination.oedemaLegSwelling"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="rC2RDuM8wb2"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema Leg swelling"/>
+      <definition value="ANC - ANC.B8. Oedema Leg swelling"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.oedemaLegSwelling"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.symptomsOfPreEclampsiaPresent">
+      <path value="ANCExamination.symptomsOfPreEclampsiaPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="YrtUVQtPngs"/>
+      </code>
+      <short value="ANC - ANC.B8. Symptoms of severe pre-eclampsia present"/>
+      <definition value="ANC - ANC.B8. Symptoms of severe pre-eclampsia present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.symptomsOfPreEclampsiaPresent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.numberOfFetuses">
+      <path value="ANCExamination.numberOfFetuses"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="PN6HcGjTraL"/>
+      </code>
+      <short value="ANC - ANC.B8. Number of fetuses"/>
+      <definition value="ANC - ANC.B8. Number of fetuses"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.numberOfFetuses"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.oedemaOfTheHandsAndFeet">
+      <path value="ANCExamination.oedemaOfTheHandsAndFeet"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="jETdi1M2DY9"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema of the hands and feet"/>
+      <definition value="ANC - ANC.B8. Oedema of the hands and feet"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.oedemaOfTheHandsAndFeet"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.oedemaPresent">
+      <path value="ANCExamination.oedemaPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ULV28awvMXH"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema present"/>
+      <definition value="ANC - ANC.B8. Oedema present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.oedemaPresent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.oedemaSeverity">
+      <path value="ANCExamination.oedemaSeverity"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="SrpLUqMjW97"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema severity"/>
+      <definition value="ANC - ANC.B8. Oedema severity"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.oedemaSeverity"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.pallorPresent">
+      <path value="ANCExamination.pallorPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="EyfTU3ibMmJ"/>
+      </code>
+      <short value="ANC - ANC.B8. Pallor present"/>
+      <definition value="ANC - ANC.B8. Pallor present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.pallorPresent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.pelvicExamResultVisual">
+      <path value="ANCExamination.pelvicExamResultVisual"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Q3s82wdeOZg"/>
+      </code>
+      <short value="ANC - ANC.B8. Pelvic exam result (visual)"/>
+      <definition value="ANC - ANC.B8. Pelvic exam result (visual)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.pelvicExamResultVisual"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.pittingAnkleOedema">
+      <path value="ANCExamination.pittingAnkleOedema"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="kNrTQqC1bgg"/>
+      </code>
+      <short value="ANC - ANC.B8. Pitting ankle oedema"/>
+      <definition value="ANC - ANC.B8. Pitting ankle oedema"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.pittingAnkleOedema"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.pittingLowerBackOedema">
+      <path value="ANCExamination.pittingLowerBackOedema"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="yQyFSrY3S0q"/>
+      </code>
+      <short value="ANC - ANC.B8. Pitting lower back oedema"/>
+      <definition value="ANC - ANC.B8. Pitting lower back oedema"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.pittingLowerBackOedema"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.pulseRate">
+      <path value="ANCExamination.pulseRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="C47wV4EBLaS"/>
+      </code>
+      <short value="ANC - ANC.B8. Pulse rate"/>
+      <definition value="ANC - ANC.B8. Pulse rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.pulseRate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.repeatDiastolicBloodPressure">
+      <path value="ANCExamination.repeatDiastolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="MqZDsOZm4yD"/>
+      </code>
+      <short value="ANC - ANC.B8. Repeat diastolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Repeat diastolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.repeatDiastolicBloodPressure"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.repeatSystolicBloodPressure">
+      <path value="ANCExamination.repeatSystolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ZkCYYlI4xe7"/>
+      </code>
+      <short value="ANC - ANC.B8. Repeat systolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Repeat systolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.repeatSystolicBloodPressure"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.symphysisFundalHeightSfh">
+      <path value="ANCExamination.symphysisFundalHeightSfh"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="fjZ4KQpS1QS"/>
+      </code>
+      <short value="ANC - ANC.B8. Symphysis-fundal height (SFH)"/>
+      <definition value="ANC - ANC.B8. Symphysis-fundal height (SFH)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.symphysisFundalHeightSfh"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.systolicBloodPressure">
+      <path value="ANCExamination.systolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="M4HEOoEFTAT"/>
+      </code>
+      <short value="ANC - ANC.B8. Systolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Systolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.systolicBloodPressure"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.signsConditionsForGbv">
+      <path value="ANCExamination.signsConditionsForGbv"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="VEFV1QayfzE"/>
+      </code>
+      <short value="ANC - ANC.B8. Signs/conditions for GBV"/>
+      <definition value="ANC - ANC.B8. Signs/conditions for GBV"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.signsConditionsForGbv"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.otherAbnormalPelvicVisualResultSpecify">
+      <path value="ANCExamination.otherAbnormalPelvicVisualResultSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="d8vfOWb6SPd"/>
+      </code>
+      <short value="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"/>
+      <definition value="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.otherAbnormalPelvicVisualResultSpecify"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar1">
+      <path value="ANCExamination.previousScar1"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="vMVLu4hlDqx"/>
+      </code>
+      <short value="ANC - Previous scar 1"/>
+      <definition value="ANC - Previous scar 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScar1"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.otherFetalPresentationSpecify">
+      <path value="ANCExamination.otherFetalPresentationSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="tsaVZFUAgkD"/>
+      </code>
+      <short value="ANC - ANC.B8. Other fetal presentation (specify)"/>
+      <definition value="ANC - ANC.B8. Other fetal presentation (specify)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.otherFetalPresentationSpecify"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarYear1">
+      <path value="ANCExamination.previousScarYear1"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="fDdSgAwUbtS"/>
+      </code>
+      <short value="ANC - Previous scar year 1"/>
+      <definition value="ANC - Previous scar year 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarYear1"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarIndication1">
+      <path value="ANCExamination.previousScarIndication1"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="UAwQzN7SMAi"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 1"/>
+      <definition value="ANC - Previous Scar Indication 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarIndication1"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar2">
+      <path value="ANCExamination.previousScar2"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="nN3JSNtFAo8"/>
+      </code>
+      <short value="ANC - Previous scar 2"/>
+      <definition value="ANC - Previous scar 2"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScar2"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarYear2">
+      <path value="ANCExamination.previousScarYear2"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="b3qArrNwpz0"/>
+      </code>
+      <short value="ANC - Previous scar year 2"/>
+      <definition value="ANC - Previous scar year 2"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarYear2"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarIndication2">
+      <path value="ANCExamination.previousScarIndication2"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="wha8HRwqFtD"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 2"/>
+      <definition value="ANC - Previous Scar Indication 2"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarIndication2"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingCoughLastingMoreThan2Weeks">
+      <path value="ANCExamination.experiencingCoughLastingMoreThan2Weeks"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="hITbUr6ufTz"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks"/>
+      <definition value="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.experiencingCoughLastingMoreThan2Weeks"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar3">
+      <path value="ANCExamination.previousScar3"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="a7gTKszpdVp"/>
+      </code>
+      <short value="ANC - Previous scar 3"/>
+      <definition value="ANC - Previous scar 3"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScar3"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.hospitalisationForWhat">
+      <path value="ANCExamination.hospitalisationForWhat"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="WBBaer7NTFJ"/>
+      </code>
+      <short value="ANC - ANC.B7. Hospitalisation for what"/>
+      <definition value="ANC - ANC.B7. Hospitalisation for what"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.hospitalisationForWhat"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarYear3">
+      <path value="ANCExamination.previousScarYear3"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="LSIsLB6epXX"/>
+      </code>
+      <short value="ANC - Previous scar year 3"/>
+      <definition value="ANC - Previous scar year 3"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarYear3"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.muac">
+      <path value="ANCExamination.muac"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ydqILDGfoRp"/>
+      </code>
+      <short value="ANC - ANC.B8. MUAC"/>
+      <definition value="ANC - ANC.B8. MUAC"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.muac"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarIndication3">
+      <path value="ANCExamination.previousScarIndication3"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ytarRo3GlhD"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 3"/>
+      <definition value="ANC - Previous Scar Indication 3"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarIndication3"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar4">
+      <path value="ANCExamination.previousScar4"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="EFKE1hMUpkM"/>
+      </code>
+      <short value="ANC - Previous scar 4"/>
+      <definition value="ANC - Previous scar 4"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScar4"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.muacColorCode">
+      <path value="ANCExamination.muacColorCode"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="jhv8rdTd1sf"/>
+      </code>
+      <short value="ANC - ANC.B8. MUAC Color code"/>
+      <definition value="ANC - ANC.B8. MUAC Color code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.muacColorCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarYear4">
+      <path value="ANCExamination.previousScarYear4"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="PIIZ3ngYzxf"/>
+      </code>
+      <short value="ANC - Previous scar year 4"/>
+      <definition value="ANC - Previous scar year 4"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarYear4"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.nutritionalStatus">
+      <path value="ANCExamination.nutritionalStatus"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="N2MadZlBXiJ"/>
+      </code>
+      <short value="ANC - ANC.B8. Nutritional status"/>
+      <definition value="ANC - ANC.B8. Nutritional status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.nutritionalStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.relationPresentingPart">
+      <path value="ANCExamination.relationPresentingPart"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="gnZ35nEqJmI"/>
+      </code>
+      <short value="ANC - ANC.B8. Relation presenting part"/>
+      <definition value="ANC - ANC.B8. Relation presenting part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.relationPresentingPart"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarIndication4">
+      <path value="ANCExamination.previousScarIndication4"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xZ2QZYotcKT"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 4"/>
+      <definition value="ANC - Previous Scar Indication 4"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.previousScarIndication4"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingContractions">
+      <path value="ANCExamination.experiencingContractions"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="zZzZazs1DGi"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Contractions"/>
+      <definition value="ANC - ANC.B7. Experiencing Contractions"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.experiencingContractions"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingFever">
+      <path value="ANCExamination.experiencingFever"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="eF3VGluAlcm"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Fever"/>
+      <definition value="ANC - ANC.B7. Experiencing Fever"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.experiencingFever"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingSevereHeadache">
+      <path value="ANCExamination.experiencingSevereHeadache"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="QhijDzMdFNq"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Severe Headache"/>
+      <definition value="ANC - ANC.B7. Experiencing Severe Headache"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.experiencingSevereHeadache"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.secondFetalHeartRate">
+      <path value="ANCExamination.secondFetalHeartRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="VLcb1WBMTIH"/>
+      </code>
+      <short value="ANC - ANC.B8. Second fetal heart rate"/>
+      <definition value="ANC - ANC.B8. Second fetal heart rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.secondFetalHeartRate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingVaginalBleeding">
+      <path value="ANCExamination.experiencingVaginalBleeding"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="SM7dVOLQD8j"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Vaginal bleeding"/>
+      <definition value="ANC - ANC.B7. Experiencing Vaginal bleeding"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.experiencingVaginalBleeding"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingExcessiveVomiting">
+      <path value="ANCExamination.experiencingExcessiveVomiting"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xa10dHKgRWa"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Excessive Vomiting"/>
+      <definition value="ANC - ANC.B7. Experiencing Excessive Vomiting"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.experiencingExcessiveVomiting"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.hasAbnormalVaginalDischargePhysiological">
+      <path value="ANCExamination.hasAbnormalVaginalDischargePhysiological"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="cPOXL8JV8Ee"/>
+      </code>
+      <short value="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"/>
+      <definition value="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.hasAbnormalVaginalDischargePhysiological"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.ancGestationalAgeAtVisitAnc">
+      <path value="ANCExamination.ancGestationalAgeAtVisitAnc"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="syAvZ78FCls"/>
+      </code>
+      <short value="ANC - ANC.B8. Gestational age at today's visit_ANC"/>
+      <definition value="ANC - ANC.B8. Gestational age at today's visit_ANC"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.ancGestationalAgeAtVisitAnc"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.currentWeight">
+      <path value="ANCExamination.currentWeight"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="H90qsZViPcS"/>
+      </code>
+      <short value="ANC - ANC.B8. Current  weight"/>
+      <definition value="ANC - ANC.B8. Current  weight"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.currentWeight"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.painExtremePelvicPainCannotWalk">
+      <path value="ANCExamination.painExtremePelvicPainCannotWalk"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="qmgotDEO8YI"/>
+      </code>
+      <short value="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"/>
+      <definition value="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.painExtremePelvicPainCannotWalk"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.totalWeightGainKg">
+      <path value="ANCExamination.totalWeightGainKg"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="J3ijwQYXVSV"/>
+      </code>
+      <short value="ANC - ANC.B8. Total weight gain (kg)"/>
+      <definition value="ANC - ANC.B8. Total weight gain (kg)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.totalWeightGainKg"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="ANCExamination.painOther">
+      <path value="ANCExamination.painOther"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="WWGGsY8l88G"/>
+      </code>
+      <short value="ANC - ANC.B5. Pain –Other"/>
+      <definition value="ANC - ANC.B5. Pain –Other"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.painOther"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.ancVisitNumber">
+      <path value="ANCExamination.ancVisitNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="bXVD2EMF7UW"/>
+      </code>
+      <short value="ANC - ANC Visit Number"/>
+      <definition value="ANC - ANC Visit Number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.ancVisitNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.noCurrentSymptomsOrComplications">
+      <path value="ANCExamination.noCurrentSymptomsOrComplications"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Kyw7NtFeW3B"/>
+      </code>
+      <short value="ANC - ANC.B7. No physiological symptoms"/>
+      <definition value="ANC - ANC.B7. No physiological symptoms"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.noCurrentSymptomsOrComplications"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.otherCurrentPhysiologicalSymptomsSpecify">
+      <path value="ANCExamination.otherCurrentPhysiologicalSymptomsSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="KZT7yfzeP08"/>
+      </code>
+      <short value="ANC - ANC.B7. Other current physiological symptoms (specify)"/>
+      <definition value="ANC - ANC.B7. Other current physiological symptoms (specify)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.otherCurrentPhysiologicalSymptomsSpecify"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.1stAncOrAScheduledVisit">
+      <path value="ANCExamination.1stAncOrAScheduledVisit"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xb4Z245Bnej"/>
+      </code>
+      <short value="ANC - ANC.B5. Regular ANC / Scheduled visit?"/>
+      <definition value="ANC - ANC.B5. Regular ANC / Scheduled visit?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.1stAncOrAScheduledVisit"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalMovement">
+      <path value="ANCExamination.fetalMovement"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="CORtBqRWjMG"/>
+      </code>
+      <short value="ANC - ANC.B7. Fetal movement"/>
+      <definition value="ANC - ANC.B7. Fetal movement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.fetalMovement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.specifyHealthConcern">
+      <path value="ANCExamination.specifyHealthConcern"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="LI3bLtFxT8h"/>
+      </code>
+      <short value="ANC - ANC.B5. Specify health concern"/>
+      <definition value="ANC - ANC.B5. Specify health concern"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANCExamination.specifyHealthConcern"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ANCExamination">
+      <path value="ANCExamination"/>
+      <short value="ANC Examination"/>
+      <definition value="ANC Examination"/>
+    </element>
+    <element id="ANCExamination.bodyTemperature">
+      <path value="ANCExamination.bodyTemperature"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="L6Toy2TrHHq"/>
+      </code>
+      <short value="ANC - ANC.B8. Body temperature"/>
+      <definition value="ANC - ANC.B8. Body temperature"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="ANCExamination.diastolicBloodPressure">
+      <path value="ANCExamination.diastolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dyYdfamSY2Z"/>
+      </code>
+      <short value="ANC - ANC.B8. Diastolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Diastolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalHeartbeatPresent">
+      <path value="ANCExamination.fetalHeartbeatPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="c6Cg8KgNu77"/>
+      </code>
+      <short value="ANC - ANC.B8. Fetal heartbeat present"/>
+      <definition value="ANC - ANC.B8. Fetal heartbeat present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalHeartRate">
+      <path value="ANCExamination.fetalHeartRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="cY03odVgQqq"/>
+      </code>
+      <short value="ANC - ANC.B8. Fetal heart rate"/>
+      <definition value="ANC - ANC.B8. Fetal heart rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalPresentation">
+      <path value="ANCExamination.fetalPresentation"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="vPdXnmGWzfy"/>
+      </code>
+      <short value="ANC - ANC.B8. Fetal presentation"/>
+      <definition value="ANC - ANC.B8. Fetal presentation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.oedemaLegSwelling">
+      <path value="ANCExamination.oedemaLegSwelling"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="rC2RDuM8wb2"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema Leg swelling"/>
+      <definition value="ANC - ANC.B8. Oedema Leg swelling"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.symptomsOfPreEclampsiaPresent">
+      <path value="ANCExamination.symptomsOfPreEclampsiaPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="YrtUVQtPngs"/>
+      </code>
+      <short value="ANC - ANC.B8. Symptoms of severe pre-eclampsia present"/>
+      <definition value="ANC - ANC.B8. Symptoms of severe pre-eclampsia present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.numberOfFetuses">
+      <path value="ANCExamination.numberOfFetuses"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="PN6HcGjTraL"/>
+      </code>
+      <short value="ANC - ANC.B8. Number of fetuses"/>
+      <definition value="ANC - ANC.B8. Number of fetuses"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.oedemaOfTheHandsAndFeet">
+      <path value="ANCExamination.oedemaOfTheHandsAndFeet"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="jETdi1M2DY9"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema of the hands and feet"/>
+      <definition value="ANC - ANC.B8. Oedema of the hands and feet"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.oedemaPresent">
+      <path value="ANCExamination.oedemaPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ULV28awvMXH"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema present"/>
+      <definition value="ANC - ANC.B8. Oedema present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.oedemaSeverity">
+      <path value="ANCExamination.oedemaSeverity"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="SrpLUqMjW97"/>
+      </code>
+      <short value="ANC - ANC.B8. Oedema severity"/>
+      <definition value="ANC - ANC.B8. Oedema severity"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.pallorPresent">
+      <path value="ANCExamination.pallorPresent"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="EyfTU3ibMmJ"/>
+      </code>
+      <short value="ANC - ANC.B8. Pallor present"/>
+      <definition value="ANC - ANC.B8. Pallor present"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.pelvicExamResultVisual">
+      <path value="ANCExamination.pelvicExamResultVisual"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Q3s82wdeOZg"/>
+      </code>
+      <short value="ANC - ANC.B8. Pelvic exam result (visual)"/>
+      <definition value="ANC - ANC.B8. Pelvic exam result (visual)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.pittingAnkleOedema">
+      <path value="ANCExamination.pittingAnkleOedema"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="kNrTQqC1bgg"/>
+      </code>
+      <short value="ANC - ANC.B8. Pitting ankle oedema"/>
+      <definition value="ANC - ANC.B8. Pitting ankle oedema"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.pittingLowerBackOedema">
+      <path value="ANCExamination.pittingLowerBackOedema"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="yQyFSrY3S0q"/>
+      </code>
+      <short value="ANC - ANC.B8. Pitting lower back oedema"/>
+      <definition value="ANC - ANC.B8. Pitting lower back oedema"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.pulseRate">
+      <path value="ANCExamination.pulseRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="C47wV4EBLaS"/>
+      </code>
+      <short value="ANC - ANC.B8. Pulse rate"/>
+      <definition value="ANC - ANC.B8. Pulse rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.repeatDiastolicBloodPressure">
+      <path value="ANCExamination.repeatDiastolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="MqZDsOZm4yD"/>
+      </code>
+      <short value="ANC - ANC.B8. Repeat diastolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Repeat diastolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.repeatSystolicBloodPressure">
+      <path value="ANCExamination.repeatSystolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ZkCYYlI4xe7"/>
+      </code>
+      <short value="ANC - ANC.B8. Repeat systolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Repeat systolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.symphysisFundalHeightSfh">
+      <path value="ANCExamination.symphysisFundalHeightSfh"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="fjZ4KQpS1QS"/>
+      </code>
+      <short value="ANC - ANC.B8. Symphysis-fundal height (SFH)"/>
+      <definition value="ANC - ANC.B8. Symphysis-fundal height (SFH)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.systolicBloodPressure">
+      <path value="ANCExamination.systolicBloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="M4HEOoEFTAT"/>
+      </code>
+      <short value="ANC - ANC.B8. Systolic blood pressure"/>
+      <definition value="ANC - ANC.B8. Systolic blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.signsConditionsForGbv">
+      <path value="ANCExamination.signsConditionsForGbv"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="VEFV1QayfzE"/>
+      </code>
+      <short value="ANC - ANC.B8. Signs/conditions for GBV"/>
+      <definition value="ANC - ANC.B8. Signs/conditions for GBV"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.otherAbnormalPelvicVisualResultSpecify">
+      <path value="ANCExamination.otherAbnormalPelvicVisualResultSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="d8vfOWb6SPd"/>
+      </code>
+      <short value="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"/>
+      <definition value="ANC - ANC.B8. Other abnormal pelvic exam (visual) result (specify)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar1">
+      <path value="ANCExamination.previousScar1"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="vMVLu4hlDqx"/>
+      </code>
+      <short value="ANC - Previous scar 1"/>
+      <definition value="ANC - Previous scar 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.otherFetalPresentationSpecify">
+      <path value="ANCExamination.otherFetalPresentationSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="tsaVZFUAgkD"/>
+      </code>
+      <short value="ANC - ANC.B8. Other fetal presentation (specify)"/>
+      <definition value="ANC - ANC.B8. Other fetal presentation (specify)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarYear1">
+      <path value="ANCExamination.previousScarYear1"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="fDdSgAwUbtS"/>
+      </code>
+      <short value="ANC - Previous scar year 1"/>
+      <definition value="ANC - Previous scar year 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarIndication1">
+      <path value="ANCExamination.previousScarIndication1"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="UAwQzN7SMAi"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 1"/>
+      <definition value="ANC - Previous Scar Indication 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar2">
+      <path value="ANCExamination.previousScar2"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="nN3JSNtFAo8"/>
+      </code>
+      <short value="ANC - Previous scar 2"/>
+      <definition value="ANC - Previous scar 2"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarYear2">
+      <path value="ANCExamination.previousScarYear2"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="b3qArrNwpz0"/>
+      </code>
+      <short value="ANC - Previous scar year 2"/>
+      <definition value="ANC - Previous scar year 2"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarIndication2">
+      <path value="ANCExamination.previousScarIndication2"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="wha8HRwqFtD"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 2"/>
+      <definition value="ANC - Previous Scar Indication 2"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingCoughLastingMoreThan2Weeks">
+      <path value="ANCExamination.experiencingCoughLastingMoreThan2Weeks"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="hITbUr6ufTz"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks"/>
+      <definition value="ANC - ANC.B7. Experiencing Cough lasting more than 2 weeks"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar3">
+      <path value="ANCExamination.previousScar3"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="a7gTKszpdVp"/>
+      </code>
+      <short value="ANC - Previous scar 3"/>
+      <definition value="ANC - Previous scar 3"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.hospitalisationForWhat">
+      <path value="ANCExamination.hospitalisationForWhat"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="WBBaer7NTFJ"/>
+      </code>
+      <short value="ANC - ANC.B7. Hospitalisation for what"/>
+      <definition value="ANC - ANC.B7. Hospitalisation for what"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarYear3">
+      <path value="ANCExamination.previousScarYear3"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="LSIsLB6epXX"/>
+      </code>
+      <short value="ANC - Previous scar year 3"/>
+      <definition value="ANC - Previous scar year 3"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.muac">
+      <path value="ANCExamination.muac"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ydqILDGfoRp"/>
+      </code>
+      <short value="ANC - ANC.B8. MUAC"/>
+      <definition value="ANC - ANC.B8. MUAC"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScarIndication3">
+      <path value="ANCExamination.previousScarIndication3"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ytarRo3GlhD"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 3"/>
+      <definition value="ANC - Previous Scar Indication 3"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.previousScar4">
+      <path value="ANCExamination.previousScar4"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="EFKE1hMUpkM"/>
+      </code>
+      <short value="ANC - Previous scar 4"/>
+      <definition value="ANC - Previous scar 4"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.muacColorCode">
+      <path value="ANCExamination.muacColorCode"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="jhv8rdTd1sf"/>
+      </code>
+      <short value="ANC - ANC.B8. MUAC Color code"/>
+      <definition value="ANC - ANC.B8. MUAC Color code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarYear4">
+      <path value="ANCExamination.previousScarYear4"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="PIIZ3ngYzxf"/>
+      </code>
+      <short value="ANC - Previous scar year 4"/>
+      <definition value="ANC - Previous scar year 4"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/YearVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.nutritionalStatus">
+      <path value="ANCExamination.nutritionalStatus"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="N2MadZlBXiJ"/>
+      </code>
+      <short value="ANC - ANC.B8. Nutritional status"/>
+      <definition value="ANC - ANC.B8. Nutritional status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.relationPresentingPart">
+      <path value="ANCExamination.relationPresentingPart"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="gnZ35nEqJmI"/>
+      </code>
+      <short value="ANC - ANC.B8. Relation presenting part"/>
+      <definition value="ANC - ANC.B8. Relation presenting part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.previousScarIndication4">
+      <path value="ANCExamination.previousScarIndication4"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xZ2QZYotcKT"/>
+      </code>
+      <short value="ANC - Previous Scar Indication 4"/>
+      <definition value="ANC - Previous Scar Indication 4"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingContractions">
+      <path value="ANCExamination.experiencingContractions"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="zZzZazs1DGi"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Contractions"/>
+      <definition value="ANC - ANC.B7. Experiencing Contractions"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingFever">
+      <path value="ANCExamination.experiencingFever"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="eF3VGluAlcm"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Fever"/>
+      <definition value="ANC - ANC.B7. Experiencing Fever"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingSevereHeadache">
+      <path value="ANCExamination.experiencingSevereHeadache"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="QhijDzMdFNq"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Severe Headache"/>
+      <definition value="ANC - ANC.B7. Experiencing Severe Headache"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.secondFetalHeartRate">
+      <path value="ANCExamination.secondFetalHeartRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="VLcb1WBMTIH"/>
+      </code>
+      <short value="ANC - ANC.B8. Second fetal heart rate"/>
+      <definition value="ANC - ANC.B8. Second fetal heart rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingVaginalBleeding">
+      <path value="ANCExamination.experiencingVaginalBleeding"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="SM7dVOLQD8j"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Vaginal bleeding"/>
+      <definition value="ANC - ANC.B7. Experiencing Vaginal bleeding"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.experiencingExcessiveVomiting">
+      <path value="ANCExamination.experiencingExcessiveVomiting"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xa10dHKgRWa"/>
+      </code>
+      <short value="ANC - ANC.B7. Experiencing Excessive Vomiting"/>
+      <definition value="ANC - ANC.B7. Experiencing Excessive Vomiting"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.hasAbnormalVaginalDischargePhysiological">
+      <path value="ANCExamination.hasAbnormalVaginalDischargePhysiological"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="cPOXL8JV8Ee"/>
+      </code>
+      <short value="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"/>
+      <definition value="ANC - ANC.B7. Has abnormal vaginal discharge (physiological) (foul smelling) (curd like)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.ancGestationalAgeAtVisitAnc">
+      <path value="ANCExamination.ancGestationalAgeAtVisitAnc"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="syAvZ78FCls"/>
+      </code>
+      <short value="ANC - ANC.B8. Gestational age at today's visit_ANC"/>
+      <definition value="ANC - ANC.B8. Gestational age at today's visit_ANC"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.currentWeight">
+      <path value="ANCExamination.currentWeight"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="H90qsZViPcS"/>
+      </code>
+      <short value="ANC - ANC.B8. Current  weight"/>
+      <definition value="ANC - ANC.B8. Current  weight"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.painExtremePelvicPainCannotWalk">
+      <path value="ANCExamination.painExtremePelvicPainCannotWalk"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="qmgotDEO8YI"/>
+      </code>
+      <short value="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"/>
+      <definition value="ANC - ANC.B5. Pain –Extreme pelvic pain/cannot walk (symphysis pubis dysfunction)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.totalWeightGainKg">
+      <path value="ANCExamination.totalWeightGainKg"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="J3ijwQYXVSV"/>
+      </code>
+      <short value="ANC - ANC.B8. Total weight gain (kg)"/>
+      <definition value="ANC - ANC.B8. Total weight gain (kg)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="ANCExamination.painOther">
+      <path value="ANCExamination.painOther"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="WWGGsY8l88G"/>
+      </code>
+      <short value="ANC - ANC.B5. Pain –Other"/>
+      <definition value="ANC - ANC.B5. Pain –Other"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.ancVisitNumber">
+      <path value="ANCExamination.ancVisitNumber"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="bXVD2EMF7UW"/>
+      </code>
+      <short value="ANC - ANC Visit Number"/>
+      <definition value="ANC - ANC Visit Number"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="ANCExamination.noCurrentSymptomsOrComplications">
+      <path value="ANCExamination.noCurrentSymptomsOrComplications"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Kyw7NtFeW3B"/>
+      </code>
+      <short value="ANC - ANC.B7. No physiological symptoms"/>
+      <definition value="ANC - ANC.B7. No physiological symptoms"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.otherCurrentPhysiologicalSymptomsSpecify">
+      <path value="ANCExamination.otherCurrentPhysiologicalSymptomsSpecify"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="KZT7yfzeP08"/>
+      </code>
+      <short value="ANC - ANC.B7. Other current physiological symptoms (specify)"/>
+      <definition value="ANC - ANC.B7. Other current physiological symptoms (specify)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ANCExamination.1stAncOrAScheduledVisit">
+      <path value="ANCExamination.1stAncOrAScheduledVisit"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xb4Z245Bnej"/>
+      </code>
+      <short value="ANC - ANC.B5. Regular ANC / Scheduled visit?"/>
+      <definition value="ANC - ANC.B5. Regular ANC / Scheduled visit?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="ANCExamination.fetalMovement">
+      <path value="ANCExamination.fetalMovement"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="CORtBqRWjMG"/>
+      </code>
+      <short value="ANC - ANC.B7. Fetal movement"/>
+      <definition value="ANC - ANC.B7. Fetal movement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS"/>
+      </binding>
+    </element>
+    <element id="ANCExamination.specifyHealthConcern">
+      <path value="ANCExamination.specifyHealthConcern"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="LI3bLtFxT8h"/>
+      </code>
+      <short value="ANC - ANC.B5. Specify health concern"/>
+      <definition value="ANC - ANC.B5. Specify health concern"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,195 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"LaboratoryTestsAndImaging","LaboratoryTestsAndImaging","","","",0,*,"","","","null {[]} {[]}
+","Laboratory Tests and Imaging ","Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"LaboratoryTestsAndImaging.randomBloodSugarResult","LaboratoryTestsAndImaging.randomBloodSugarResult","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B9. Random blood sugar result","ANC - ANC.B9. Random blood sugar result","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#wi3jkKJNjr7
+",,,,"LaboratoryTestsAndImaging.randomBloodSugarResult",0,1,"",""
+"LaboratoryTestsAndImaging.bloodHaemoglobinTestDate","LaboratoryTestsAndImaging.bloodHaemoglobinTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Blood haemoglobin test date","ANC - ANC.B9.  Blood haemoglobin test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#S3bsJ9ogxeN
+",,,,"LaboratoryTestsAndImaging.bloodHaemoglobinTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.bloodGroup","LaboratoryTestsAndImaging.bloodGroup","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Blood group","ANC - ANC.B9.  Blood group","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#eddQQbyYaEv
+",,,,"LaboratoryTestsAndImaging.bloodGroup",0,1,"",""
+"LaboratoryTestsAndImaging.bloodScreeningTestDate","LaboratoryTestsAndImaging.bloodScreeningTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Blood screening test date","ANC - ANC.B9.  Blood screening test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Dp1hN6EwLnh
+",,,,"LaboratoryTestsAndImaging.bloodScreeningTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.hepatitisBTestDate","LaboratoryTestsAndImaging.hepatitisBTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B test date","ANC - ANC.B9.  Hepatitis B test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rEAO5q6BnSJ
+",,,,"LaboratoryTestsAndImaging.hepatitisBTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.hepatitisBTestResult","LaboratoryTestsAndImaging.hepatitisBTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B test result","ANC - ANC.B9.  Hepatitis B test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vDkIpVMAYPU
+",,,,"LaboratoryTestsAndImaging.hepatitisBTestResult",0,1,"",""
+"LaboratoryTestsAndImaging.ancEmtctTestDate","LaboratoryTestsAndImaging.ancEmtctTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9. eMTCT test date","ANC - ANC.B9. eMTCT test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#YREFGI3SapQ
+",,,,"LaboratoryTestsAndImaging.ancEmtctTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.emtctCode","LaboratoryTestsAndImaging.emtctCode","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  eMTCT HIV test result","ANC - ANC.B9.  eMTCT HIV test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#zo8VyJRKcmi
+",,,,"LaboratoryTestsAndImaging.emtctCode",0,1,"",""
+"LaboratoryTestsAndImaging.tbScreeningIncompleteSymptomsOnly","LaboratoryTestsAndImaging.tbScreeningIncompleteSymptomsOnly","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  TB screening incomplete (symptoms only)","ANC - ANC.B9.  TB screening incomplete (symptoms only)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#liA7cL3lyMp
+",,,,"LaboratoryTestsAndImaging.tbScreeningIncompleteSymptomsOnly",0,1,"",""
+"LaboratoryTestsAndImaging.otherTestSDate","LaboratoryTestsAndImaging.otherTestSDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Other test(s) date","ANC - ANC.B9.  Other test(s) date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xXuuXz5xfh6
+",,,,"LaboratoryTestsAndImaging.otherTestSDate",0,1,"",""
+"LaboratoryTestsAndImaging.otherTestSName","LaboratoryTestsAndImaging.otherTestSName","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B9.  Other test(s) name","ANC - ANC.B9.  Other test(s) name","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HjA9hp3NCFA
+",,,,"LaboratoryTestsAndImaging.otherTestSName",0,1,"",""
+"LaboratoryTestsAndImaging.otherTestSResultS","LaboratoryTestsAndImaging.otherTestSResultS","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC.B9.   Other test(s) result(s)","ANC - ANC.B9.   Other test(s) result(s)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#UsM907MWnA5
+",,,,"LaboratoryTestsAndImaging.otherTestSResultS",0,1,"",""
+"LaboratoryTestsAndImaging.partnerHivTestDate","LaboratoryTestsAndImaging.partnerHivTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC -ANC.B9.  Partner HIV test date","ANC -ANC.B9.  Partner HIV test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ox8s78VJC1R
+",,,,"LaboratoryTestsAndImaging.partnerHivTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.labCd4Results","LaboratoryTestsAndImaging.labCd4Results","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - LAB CD4 results","ANC - LAB CD4 results","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ODqCU8tNjq5
+",,,,"LaboratoryTestsAndImaging.labCd4Results",0,1,"",""
+"LaboratoryTestsAndImaging.viralLoadResults","LaboratoryTestsAndImaging.viralLoadResults","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - LAB Viral load results","ANC - LAB Viral load results","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZtpsckiEhGB
+",,,,"LaboratoryTestsAndImaging.viralLoadResults",0,1,"",""
+"LaboratoryTestsAndImaging.partnerHivTestResult","LaboratoryTestsAndImaging.partnerHivTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Partner HIV test result","ANC - ANC.B9.  Partner HIV test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#MhC6OCNIFOZ
+",,,,"LaboratoryTestsAndImaging.partnerHivTestResult",0,1,"",""
+"LaboratoryTestsAndImaging.whoClinicalStage","LaboratoryTestsAndImaging.whoClinicalStage","","","",0,1,"","","","code {[]} {[]}
+","ANC - LAB WHO Clinical stage","ANC - LAB WHO Clinical stage","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#OAVexurF9i0
+",,,,"LaboratoryTestsAndImaging.whoClinicalStage",0,1,"",""
+"LaboratoryTestsAndImaging.platelets","LaboratoryTestsAndImaging.platelets","","","",0,1,"","","","unsignedInt {[]} {[]}
+","ANC - ANC Platelets","ANC - ANC Platelets","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#cBuumo9jGRc
+",,,,"LaboratoryTestsAndImaging.platelets",0,1,"",""
+"LaboratoryTestsAndImaging.pwArtLink","LaboratoryTestsAndImaging.pwArtLink","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC LAB Pregnant woman linked to ART","ANC - ANC LAB Pregnant woman linked to ART","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fixliM4mt3T
+",,,,"LaboratoryTestsAndImaging.pwArtLink",0,1,"",""
+"LaboratoryTestsAndImaging.artNumber","LaboratoryTestsAndImaging.artNumber","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC LAB Pregnant woman ART number","ANC - ANC LAB Pregnant woman ART number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SuC9foMX1Ea
+",,,,"LaboratoryTestsAndImaging.artNumber",0,1,"",""
+"LaboratoryTestsAndImaging.artLocation","LaboratoryTestsAndImaging.artLocation","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC Lab Pregnant woman ART location","ANC - ANC Lab Pregnant woman ART location","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Yycea04JKAR
+",,,,"LaboratoryTestsAndImaging.artLocation",0,1,"",""
+"LaboratoryTestsAndImaging.dateViralLoadSampleCollected","LaboratoryTestsAndImaging.dateViralLoadSampleCollected","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date Viral load sample collected","ANC - ANC LAB Date Viral load sample collected","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#I4OPKBwhGQ0
+",,,,"LaboratoryTestsAndImaging.dateViralLoadSampleCollected",0,1,"",""
+"LaboratoryTestsAndImaging.dateViralLoadSampleReturned","LaboratoryTestsAndImaging.dateViralLoadSampleReturned","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date Viral load sample returned","ANC - ANC LAB Date Viral load sample returned","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#noAWcXSpCaP
+",,,,"LaboratoryTestsAndImaging.dateViralLoadSampleReturned",0,1,"",""
+"LaboratoryTestsAndImaging.viralLoadStatus","LaboratoryTestsAndImaging.viralLoadStatus","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Viral load status","ANC - ANC LAB Viral load status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#GLFICGeB5Ap
+",,,,"LaboratoryTestsAndImaging.viralLoadStatus",0,1,"",""
+"LaboratoryTestsAndImaging.dateCd4SampleCollected","LaboratoryTestsAndImaging.dateCd4SampleCollected","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date CD4 sample collected","ANC - ANC LAB Date CD4 sample collected","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#D40sUAJilcj
+",,,,"LaboratoryTestsAndImaging.dateCd4SampleCollected",0,1,"",""
+"LaboratoryTestsAndImaging.symptomsOfComplicatedMalaria","LaboratoryTestsAndImaging.symptomsOfComplicatedMalaria","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - LAB Symptoms of complicated malaria","ANC - LAB Symptoms of complicated malaria","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#SnHImni1u5k
+",,,,"LaboratoryTestsAndImaging.symptomsOfComplicatedMalaria",0,1,"",""
+"LaboratoryTestsAndImaging.dateCd4SampleReturned","LaboratoryTestsAndImaging.dateCd4SampleReturned","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Date CD4 sample returned","ANC - ANC LAB Date CD4 sample returned","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#xem63QqjPNK
+",,,,"LaboratoryTestsAndImaging.dateCd4SampleReturned",0,1,"",""
+"LaboratoryTestsAndImaging.rhFactor","LaboratoryTestsAndImaging.rhFactor","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Rh factor","ANC - ANC.B9.  Rh factor","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#p6wWb8I2jyo
+",,,,"LaboratoryTestsAndImaging.rhFactor",0,1,"",""
+"LaboratoryTestsAndImaging.syphilisTestDate","LaboratoryTestsAndImaging.syphilisTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Syphilis test date","ANC - ANC.B9.  Syphilis test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#XST9vCca14R
+",,,,"LaboratoryTestsAndImaging.syphilisTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.syphilisTestResult","LaboratoryTestsAndImaging.syphilisTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Syphilis test result","ANC - ANC.B9.  Syphilis test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#gueCJt1Cjru
+",,,,"LaboratoryTestsAndImaging.syphilisTestResult",0,1,"",""
+"LaboratoryTestsAndImaging.tbTestDate","LaboratoryTestsAndImaging.tbTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  TB test date","ANC - ANC.B9.  TB test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jORfSq3dc0Z
+",,,,"LaboratoryTestsAndImaging.tbTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.tbTestResult","LaboratoryTestsAndImaging.tbTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  TB test result","ANC - ANC.B9.  TB test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#vB0KLtHeSft
+",,,,"LaboratoryTestsAndImaging.tbTestResult",0,1,"",""
+"LaboratoryTestsAndImaging.ultrasoundScanDate","LaboratoryTestsAndImaging.ultrasoundScanDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Ultrasound scan date","ANC - ANC.B9.  Ultrasound scan date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#P0WhE9bsD1E
+",,,,"LaboratoryTestsAndImaging.ultrasoundScanDate",0,1,"",""
+"LaboratoryTestsAndImaging.urineDipstickResultGlucose","LaboratoryTestsAndImaging.urineDipstickResultGlucose","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –glucose","ANC - ANC.B9.  Urine dipstick result –glucose","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ZP8aN3M1U51
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultGlucose",0,1,"",""
+"LaboratoryTestsAndImaging.urineDipstickResultLeukocytes","LaboratoryTestsAndImaging.urineDipstickResultLeukocytes","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –leukocytes","ANC - ANC.B9.  Urine dipstick result –leukocytes","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#n7ITb3GsUNi
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultLeukocytes",0,1,"",""
+"LaboratoryTestsAndImaging.urineDipstickResultNitrites","LaboratoryTestsAndImaging.urineDipstickResultNitrites","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –nitrites","ANC - ANC.B9.  Urine dipstick result –nitrites","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#z1iDiVtSw43
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultNitrites",0,1,"",""
+"LaboratoryTestsAndImaging.urineDipstickResultProtein","LaboratoryTestsAndImaging.urineDipstickResultProtein","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Urine dipstick result –protein","ANC - ANC.B9.  Urine dipstick result –protein","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#PpxBOihc1Y6
+",,,,"LaboratoryTestsAndImaging.urineDipstickResultProtein",0,1,"",""
+"LaboratoryTestsAndImaging.bloodGlucoseTestDate","LaboratoryTestsAndImaging.bloodGlucoseTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC.B9.  Blood glucose test date","ANC - ANC.B9.  Blood glucose test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#EnLWXRgiimk
+",,,,"LaboratoryTestsAndImaging.bloodGlucoseTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.ancLabSickleCell","LaboratoryTestsAndImaging.ancLabSickleCell","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Sickle cell","ANC - ANC LAB Sickle cell","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pV0OABcFZCu
+",,,,"LaboratoryTestsAndImaging.ancLabSickleCell",0,1,"",""
+"LaboratoryTestsAndImaging.ancB6UltrasoundGa","LaboratoryTestsAndImaging.ancB6UltrasoundGa","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B6 Ultrasound GA","ANC - ANC.B6 Ultrasound GA","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Juv31inY35a
+",,,,"LaboratoryTestsAndImaging.ancB6UltrasoundGa",0,1,"",""
+"LaboratoryTestsAndImaging.partnerArtNumber","LaboratoryTestsAndImaging.partnerArtNumber","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC LAB Partner ART Number","ANC - ANC LAB Partner ART Number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pMYNlTxqieX
+",,,,"LaboratoryTestsAndImaging.partnerArtNumber",0,1,"",""
+"LaboratoryTestsAndImaging.partnerAge","LaboratoryTestsAndImaging.partnerAge","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC LAB Partner age","ANC - ANC LAB Partner age","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#jHwhKRgeemY
+",,,,"LaboratoryTestsAndImaging.partnerAge",0,1,"",""
+"LaboratoryTestsAndImaging.partnerArtLink","LaboratoryTestsAndImaging.partnerArtLink","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC LAB Partner linked to ART ","ANC - ANC LAB Partner linked to ART","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#mXYhBhAPXJL
+",,,,"LaboratoryTestsAndImaging.partnerArtLink",0,1,"",""
+"LaboratoryTestsAndImaging.partnerArtLocation","LaboratoryTestsAndImaging.partnerArtLocation","","","",0,1,"","","","string {[]} {[]}
+","ANC - ANC Lab Partner ART location","ANC - ANC Lab Partner ART location","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ccy0efIWFb8
+",,,,"LaboratoryTestsAndImaging.partnerArtLocation",0,1,"",""
+"LaboratoryTestsAndImaging.partnerSyphilisTestResult","LaboratoryTestsAndImaging.partnerSyphilisTestResult","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC.B9.  Partner Syphilis test result","ANC - ANC.B9.  Partner Syphilis test result","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dN6k6agVKUu
+",,,,"LaboratoryTestsAndImaging.partnerSyphilisTestResult",0,1,"",""
+"LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate","LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC B9.DE Urine dipstick test date","ANC - ANC B9.DE Urine dipstick test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bUQy6eZfqFR
+",,,,"LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.malariaBS","LaboratoryTestsAndImaging.malariaBS","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Malaria B/S for MPs","ANC - ANC LAB Malaria B/S for MPs","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#pnR1TFOb4xU
+",,,,"LaboratoryTestsAndImaging.malariaBS",0,1,"",""
+"LaboratoryTestsAndImaging.pusCells","LaboratoryTestsAndImaging.pusCells","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Pus cells","ANC - ANC LAB Pus cells","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VrSrCgpxTT3
+",,,,"LaboratoryTestsAndImaging.pusCells",0,1,"",""
+"LaboratoryTestsAndImaging.fastingBloodSugarResult","LaboratoryTestsAndImaging.fastingBloodSugarResult","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B9. Fasting blood sugar result","ANC - ANC.B9. Fasting blood sugar result","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#NUzZqwCQcms
+",,,,"LaboratoryTestsAndImaging.fastingBloodSugarResult",0,1,"",""
+"LaboratoryTestsAndImaging.haemoglobinResult","LaboratoryTestsAndImaging.haemoglobinResult","","","",0,1,"","","","decimal {[]} {[]}
+","ANC - ANC.B9.  Blood haemoglobin result","ANC - ANC.B9.  Blood haemoglobin result","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#qNSSCV58TD2
+",,,,"LaboratoryTestsAndImaging.haemoglobinResult",0,1,"",""
+"LaboratoryTestsAndImaging.urineMicroscopyDate","LaboratoryTestsAndImaging.urineMicroscopyDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Urine Microscopy date","ANC - ANC LAB Urine Microscopy date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CqOqQVk2Vqw
+",,,,"LaboratoryTestsAndImaging.urineMicroscopyDate",0,1,"",""
+"LaboratoryTestsAndImaging.malariaRdt","LaboratoryTestsAndImaging.malariaRdt","","","",0,1,"","","","code {[]} {[]}
+","ANC - ANC LAB Malaria RDT","ANC - ANC LAB Malaria RDT","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#HJZAwP1vt7T
+",,,,"LaboratoryTestsAndImaging.malariaRdt",0,1,"",""
+"LaboratoryTestsAndImaging.malariaTestDate","LaboratoryTestsAndImaging.malariaTestDate","","","",0,1,"","","","date {[]} {[]}
+","ANC - ANC LAB Malaria test date","ANC - ANC LAB Malaria test date","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#g2BFjUIJ5G9
+",,,,"LaboratoryTestsAndImaging.malariaTestDate",0,1,"",""
+"LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab","LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab","","","",0,1,"","","","positiveInt {[]} {[]}
+","ANC - ANC.B8. Gestational age at todays visit_LAB","ANC - ANC.B8. Gestational age at todays visit_LAB","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CzjBxEJ6HrQ
+",,,,"LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab",0,1,"",""
+"LaboratoryTestsAndImaging.hivTestRecommended","LaboratoryTestsAndImaging.hivTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  HIV test recommended","ANC - ANC.B9.  HIV test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#e7cIfEBpsZb
+",,,,"LaboratoryTestsAndImaging.hivTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.hepatitisBTestRecommended","LaboratoryTestsAndImaging.hepatitisBTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Hepatitis B test recommended","ANC - ANC.B9.  Hepatitis B test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#RKjAsZ2EKa7
+",,,,"LaboratoryTestsAndImaging.hepatitisBTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.syphilisTestRecommended","LaboratoryTestsAndImaging.syphilisTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Syphilis test recommended","ANC - ANC.B9.  Syphilis test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KYxA0A2j8DB
+",,,,"LaboratoryTestsAndImaging.syphilisTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.ultrasoundRecommended","LaboratoryTestsAndImaging.ultrasoundRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Ultrasound recommended","ANC - ANC.B9.  Ultrasound recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#aKJK1ZXz2GP
+",,,,"LaboratoryTestsAndImaging.ultrasoundRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.urineTestRecommended","LaboratoryTestsAndImaging.urineTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9. Urine test recommended","ANC - ANC.B9. Urine test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#rqMrshNZgg8
+",,,,"LaboratoryTestsAndImaging.urineTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.tbScreeningRecommended","LaboratoryTestsAndImaging.tbScreeningRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  TB screening recommended","ANC - ANC.B9.  TB screening recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#oOQvM7ZPnTj
+",,,,"LaboratoryTestsAndImaging.tbScreeningRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.haemoglobinTestRecommended","LaboratoryTestsAndImaging.haemoglobinTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Haemoglobin test recommended","ANC - ANC.B9.  Haemoglobin test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Y0MfiRhxr1a
+",,,,"LaboratoryTestsAndImaging.haemoglobinTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.bloodScreeningRecommended","LaboratoryTestsAndImaging.bloodScreeningRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9.  Blood screening recommended","ANC - ANC.B9.  Blood screening recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Uxcgpc4oTCf
+",,,,"LaboratoryTestsAndImaging.bloodScreeningRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.malariaTestRecommended","LaboratoryTestsAndImaging.malariaTestRecommended","","","",0,1,"","","","boolean {[]} {[]}
+","ANC - ANC.B9. Malaria test recommended","ANC - ANC.B9. Malaria test recommended","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#XJeRbkSaC1J
+",,,,"LaboratoryTestsAndImaging.malariaTestRecommended",0,1,"",""
+"LaboratoryTestsAndImaging.utrasoundComments","LaboratoryTestsAndImaging.utrasoundComments","","","",0,1,"","","","string {[]} {[]}
+","ANC - LAB Ultrasound comments","ANC - LAB Ultrasound comments","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#lkrEe3MT5KK
+",,,,"LaboratoryTestsAndImaging.utrasoundComments",0,1,"",""

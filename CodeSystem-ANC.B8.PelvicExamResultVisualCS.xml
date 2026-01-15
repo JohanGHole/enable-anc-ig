@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ANC.B8.PelvicExamResultVisualCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ANC.B8.PelvicExamResultVisualCS</b></p><a name="ANC.B8.PelvicExamResultVisualCS"> </a><a name="hcANC.B8.PelvicExamResultVisualCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Normal pelvic exam (visual) result<a name="ANC.B8.PelvicExamResultVisualCS-Normalpelvicexam.40visual.41result"> </a></td></tr><tr><td style="white-space:nowrap">Pelvic exam (visual) not done<a name="ANC.B8.PelvicExamResultVisualCS-Pelvicexam.40visual.41notdone"> </a></td></tr><tr><td style="white-space:nowrap">Abnormal vaginal discharge<a name="ANC.B8.PelvicExamResultVisualCS-Abnormalvaginaldischarge"> </a></td></tr><tr><td style="white-space:nowrap">Vesicles<a name="ANC.B8.PelvicExamResultVisualCS-Vesicles"> </a></td></tr><tr><td style="white-space:nowrap">Genital ulcer<a name="ANC.B8.PelvicExamResultVisualCS-Genitalulcer"> </a></td></tr><tr><td style="white-space:nowrap">Evidence of amniotic fluid<a name="ANC.B8.PelvicExamResultVisualCS-Evidenceofamnioticfluid"> </a></td></tr><tr><td style="white-space:nowrap">Other abnormal pelvic exam (visual) result (specify)<a name="ANC.B8.PelvicExamResultVisualCS-Otherabnormalpelvicexam.40visual.41result.40specify.41"> </a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS"/>
+  <version value="0.1.0"/>
+  <name value="ANC.B8.PelvicExamResultVisualCS"/>
+  <title value="ANC.B8. Pelvic exam result (visual)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="Normal pelvic exam (visual) result"/>
+    <display value="Normal pelvic exam (visual) result"/>
+  </concept>
+  <concept>
+    <code value="Pelvic exam (visual) not done"/>
+    <display value="Pelvic exam (visual) not done"/>
+  </concept>
+  <concept>
+    <code value="Abnormal vaginal discharge"/>
+    <display value="Abnormal vaginal discharge"/>
+  </concept>
+  <concept>
+    <code value="Vesicles"/>
+    <display value="Vesicles"/>
+  </concept>
+  <concept>
+    <code value="Genital ulcer"/>
+    <display value="Genital ulcer"/>
+  </concept>
+  <concept>
+    <code value="Evidence of amniotic fluid"/>
+    <display value="Evidence of amniotic fluid"/>
+  </concept>
+  <concept>
+    <code value="Other abnormal pelvic exam (visual) result (specify)"/>
+    <display value="Other abnormal pelvic exam (visual) result (specify)"/>
+  </concept>
+</CodeSystem>

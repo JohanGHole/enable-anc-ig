@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ANCOUTPOSTFamilyPlanningCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ANCOUTPOSTFamilyPlanningCS</b></p><a name="ANCOUTPOSTFamilyPlanningCS"> </a><a name="hcANCOUTPOSTFamilyPlanningCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">condom<a name="ANCOUTPOSTFamilyPlanningCS-condom"> </a></td><td>Condom</td></tr><tr><td style="white-space:nowrap">oral contraceptive<a name="ANCOUTPOSTFamilyPlanningCS-oralcontraceptive"> </a></td><td>Oral contraceptive</td></tr><tr><td style="white-space:nowrap">injectable<a name="ANCOUTPOSTFamilyPlanningCS-injectable"> </a></td><td>Injectable</td></tr><tr><td style="white-space:nowrap">implant<a name="ANCOUTPOSTFamilyPlanningCS-implant"> </a></td><td>Implant</td></tr><tr><td style="white-space:nowrap">IUD<a name="ANCOUTPOSTFamilyPlanningCS-IUD"> </a></td><td>Intrauterine device</td></tr><tr><td style="white-space:nowrap">others<a name="ANCOUTPOSTFamilyPlanningCS-others"> </a></td><td>Others</td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS"/>
+  <version value="0.1.0"/>
+  <name value="ANCOUTPOSTFamilyPlanningCS"/>
+  <title value="ANC - OUT_POST - Family Planning"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="condom"/>
+    <display value="Condom"/>
+  </concept>
+  <concept>
+    <code value="oral contraceptive"/>
+    <display value="Oral contraceptive"/>
+  </concept>
+  <concept>
+    <code value="injectable"/>
+    <display value="Injectable"/>
+  </concept>
+  <concept>
+    <code value="implant"/>
+    <display value="Implant"/>
+  </concept>
+  <concept>
+    <code value="IUD"/>
+    <display value="Intrauterine device"/>
+  </concept>
+  <concept>
+    <code value="others"/>
+    <display value="Others"/>
+  </concept>
+</CodeSystem>

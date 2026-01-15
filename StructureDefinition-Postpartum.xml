@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Postpartum"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition Postpartum</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum" title="Postpartum">Postpartum</a><a name="Postpartum"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Postpartum</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.dateOfPostpartumCare" title="ANC - OUT_POST - Date of postpartum care ">dateOfPostpartumCare</a><a name="Postpartum.dateOfPostpartumCare"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Date of postpartum care </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.bloodPressure" title="ANC - OUT_POST - Blood pressure">bloodPressure</a><a name="Postpartum.bloodPressure"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Blood pressure</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.temperature" title="ANC - OUT_POST - Temperature">temperature</a><a name="Postpartum.temperature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Temperature</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.pulseRate" title="ANC - OUT_POST - Pulse Rate">pulseRate</a><a name="Postpartum.pulseRate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Pulse Rate</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.pph" title="ANC - OUT_POST -  PPH">pph</a><a name="Postpartum.pph"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST -  PPH</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.dribblingLeakingUrine" title="ANC - OUT_POST - Dribbling/leaking urine ">dribblingLeakingUrine</a><a name="Postpartum.dribblingLeakingUrine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Dribbling/leaking urine </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.anemia" title="ANC - OUT_POST - Anemia">anemia</a><a name="Postpartum.anemia"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Anemia</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.vaginalDischargeAfter4WeeksOfDelivery" title="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery">vaginalDischargeAfter4WeeksOfDelivery</a><a name="Postpartum.vaginalDischargeAfter4WeeksOfDelivery"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.pelvicExam" title="ANC - OUT_POST - Pelvic exam ">pelvicExam</a><a name="Postpartum.pelvicExam"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Pelvic exam </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.breastExam" title="ANC - OUT_POST - Breast exam ">breastExam</a><a name="Postpartum.breastExam"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Breast exam </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.ironFolicAcidIfaSupplementation" title="ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation">ironFolicAcidIfaSupplementation</a><a name="Postpartum.ironFolicAcidIfaSupplementation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.counselingDangerSignsSymptoms" title="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given">counselingDangerSignsSymptoms</a><a name="Postpartum.counselingDangerSignsSymptoms"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.babyBreathing" title="ANC - OUT_POST - Baby breathing">babyBreathing</a><a name="Postpartum.babyBreathing"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Baby breathing</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.babyBreastfeeding" title="ANC - OUT_POST - Baby breastfeeding">babyBreastfeeding</a><a name="Postpartum.babyBreastfeeding"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Baby breastfeeding</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.babyWtGm" title="ANC - OUT_POST - Baby wt (gm)">babyWtGm</a><a name="Postpartum.babyWtGm"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Baby wt (gm)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.immunization" title="ANC - OUT_POST -  Immunization">immunization</a><a name="Postpartum.immunization"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST -  Immunization</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.hivTestedYN" title="ANC - OUT_POST -  HIV tested (Y/N)">hivTestedYN</a><a name="Postpartum.hivTestedYN"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST -  HIV tested (Y/N)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.hivTestResult" title="ANC - OUT_POST -  HIV test result">hivTestResult</a><a name="Postpartum.hivTestResult"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST -  HIV test result<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-PositiveNegativeUnknownVS.html" title="https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS" class="binding">Positive/Negative/Unknown value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.arvRxForMotherByType" title="ANC - OUT_POST - ARV Rx for mother (By type)">arvRxForMotherByType</a><a name="Postpartum.arvRxForMotherByType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - ARV Rx for mother (By type)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANCARVRxForMotherVS.html" title="https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS" class="binding">ANC ARV Rx for Mother value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.arvPx" title="ANC - OUT_POST - ARV PX">arvPx</a><a name="Postpartum.arvPx"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - ARV PX</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.feedingOptionEbfErf" title="ANC - OUT_POST -  Feeding option: EBF/ERF">feedingOptionEbfErf</a><a name="Postpartum.feedingOptionEbfErf"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST -  Feeding option: EBF/ERF<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANC.BD.FeedingOptionVS.html" title="https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS" class="binding">ANC. BD. Feeding Option value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.newbornReferredToChronicHivInfantCare" title="ANC - OUT_POST - Newborn referred to chronic HIV infant care ">newbornReferredToChronicHivInfantCare</a><a name="Postpartum.newbornReferredToChronicHivInfantCare"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Newborn referred to chronic HIV infant care </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.familyPlanningCounseledAndProvidedByMethod" title="ANC - OUT_POST - FP counseled and provided (by method)">familyPlanningCounseledAndProvidedByMethod</a><a name="Postpartum.familyPlanningCounseledAndProvidedByMethod"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - FP counseled and provided (by method)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANCOUTPOSTFamilyPlanningVS.html" title="https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS" class="binding">ANC - OUT_POST - Family Planning value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.actionsTaken" title="ANC - OUT_POST - Actions taken">actionsTaken</a><a name="Postpartum.actionsTaken"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_POST - Actions taken</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Postpartum-definitions.html#Postpartum.typeOfStay" title="ANC - OUT_Post - Type of Stay">typeOfStay</a><a name="Postpartum.typeOfStay"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ANC - OUT_Post - Type of Stay<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ANCPostpartumCheckTimingVS.html" title="https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS" class="binding">ANC - postpartum check timing value set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/StructureDefinition/Postpartum"/>
+  <version value="0.1.0"/>
+  <name value="Postpartum"/>
+  <title value="Postpartum"/>
+  <status value="draft"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://hispethiopia.org/enable/StructureDefinition/Postpartum"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="Postpartum">
+      <path value="Postpartum"/>
+      <short value="Postpartum"/>
+      <definition value="Postpartum"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="Postpartum.dateOfPostpartumCare">
+      <path value="Postpartum.dateOfPostpartumCare"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Vyok96daapr"/>
+      </code>
+      <short value="ANC - OUT_POST - Date of postpartum care "/>
+      <definition value="ANC - OUT_POST - Date of postpartum care"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.dateOfPostpartumCare"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Postpartum.bloodPressure">
+      <path value="Postpartum.bloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="iySWXP9NB26"/>
+      </code>
+      <short value="ANC - OUT_POST - Blood pressure"/>
+      <definition value="ANC - OUT_POST - Blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.bloodPressure"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Postpartum.temperature">
+      <path value="Postpartum.temperature"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="jBAsZaO4oEt"/>
+      </code>
+      <short value="ANC - OUT_POST - Temperature"/>
+      <definition value="ANC - OUT_POST - Temperature"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.temperature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.pulseRate">
+      <path value="Postpartum.pulseRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="YSVwVatx6JR"/>
+      </code>
+      <short value="ANC - OUT_POST - Pulse Rate"/>
+      <definition value="ANC - OUT_POST - Pulse Rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.pulseRate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.pph">
+      <path value="Postpartum.pph"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="u4E2vVGtxc5"/>
+      </code>
+      <short value="ANC - OUT_POST -  PPH"/>
+      <definition value="ANC - OUT_POST -  PPH"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.pph"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.dribblingLeakingUrine">
+      <path value="Postpartum.dribblingLeakingUrine"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Q2iOrrIs8RO"/>
+      </code>
+      <short value="ANC - OUT_POST - Dribbling/leaking urine "/>
+      <definition value="ANC - OUT_POST - Dribbling/leaking urine"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.dribblingLeakingUrine"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.anemia">
+      <path value="Postpartum.anemia"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dNdQy42gyNN"/>
+      </code>
+      <short value="ANC - OUT_POST - Anemia"/>
+      <definition value="ANC - OUT_POST - Anemia"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.anemia"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.vaginalDischargeAfter4WeeksOfDelivery">
+      <path value="Postpartum.vaginalDischargeAfter4WeeksOfDelivery"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ONFttMEHeed"/>
+      </code>
+      <short value="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery"/>
+      <definition value="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.vaginalDischargeAfter4WeeksOfDelivery"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.pelvicExam">
+      <path value="Postpartum.pelvicExam"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="wVsbNnQVjuX"/>
+      </code>
+      <short value="ANC - OUT_POST - Pelvic exam "/>
+      <definition value="ANC - OUT_POST - Pelvic exam"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.pelvicExam"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.breastExam">
+      <path value="Postpartum.breastExam"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xqC5R16ID4N"/>
+      </code>
+      <short value="ANC - OUT_POST - Breast exam "/>
+      <definition value="ANC - OUT_POST - Breast exam"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.breastExam"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.ironFolicAcidIfaSupplementation">
+      <path value="Postpartum.ironFolicAcidIfaSupplementation"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="oOENq0HVqnV"/>
+      </code>
+      <short value="ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation"/>
+      <definition value="ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.ironFolicAcidIfaSupplementation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.counselingDangerSignsSymptoms">
+      <path value="Postpartum.counselingDangerSignsSymptoms"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dDD0M9NxRiE"/>
+      </code>
+      <short value="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given"/>
+      <definition value="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.counselingDangerSignsSymptoms"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.babyBreathing">
+      <path value="Postpartum.babyBreathing"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="N9NypL64c5O"/>
+      </code>
+      <short value="ANC - OUT_POST - Baby breathing"/>
+      <definition value="ANC - OUT_POST - Baby breathing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.babyBreathing"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.babyBreastfeeding">
+      <path value="Postpartum.babyBreastfeeding"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="c1M2JMkm3En"/>
+      </code>
+      <short value="ANC - OUT_POST - Baby breastfeeding"/>
+      <definition value="ANC - OUT_POST - Baby breastfeeding"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.babyBreastfeeding"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.babyWtGm">
+      <path value="Postpartum.babyWtGm"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="bNwTnOIQpxB"/>
+      </code>
+      <short value="ANC - OUT_POST - Baby wt (gm)"/>
+      <definition value="ANC - OUT_POST - Baby wt (gm)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.babyWtGm"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.immunization">
+      <path value="Postpartum.immunization"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="UE5eXlAess0"/>
+      </code>
+      <short value="ANC - OUT_POST -  Immunization"/>
+      <definition value="ANC - OUT_POST -  Immunization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.immunization"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.hivTestedYN">
+      <path value="Postpartum.hivTestedYN"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="TFOKxMR2T5A"/>
+      </code>
+      <short value="ANC - OUT_POST -  HIV tested (Y/N)"/>
+      <definition value="ANC - OUT_POST -  HIV tested (Y/N)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.hivTestedYN"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.hivTestResult">
+      <path value="Postpartum.hivTestResult"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="V6LHFJ2Kv9l"/>
+      </code>
+      <short value="ANC - OUT_POST -  HIV test result"/>
+      <definition value="ANC - OUT_POST -  HIV test result"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.hivTestResult"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.arvRxForMotherByType">
+      <path value="Postpartum.arvRxForMotherByType"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="mSjUMNDx0Z2"/>
+      </code>
+      <short value="ANC - OUT_POST - ARV Rx for mother (By type)"/>
+      <definition value="ANC - OUT_POST - ARV Rx for mother (By type)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.arvRxForMotherByType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.arvPx">
+      <path value="Postpartum.arvPx"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="TlkMcrKmlIa"/>
+      </code>
+      <short value="ANC - OUT_POST - ARV PX"/>
+      <definition value="ANC - OUT_POST - ARV PX"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.arvPx"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.feedingOptionEbfErf">
+      <path value="Postpartum.feedingOptionEbfErf"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="OpRMziOVS8e"/>
+      </code>
+      <short value="ANC - OUT_POST -  Feeding option: EBF/ERF"/>
+      <definition value="ANC - OUT_POST -  Feeding option: EBF/ERF"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.feedingOptionEbfErf"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.newbornReferredToChronicHivInfantCare">
+      <path value="Postpartum.newbornReferredToChronicHivInfantCare"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ghEssGDk4nx"/>
+      </code>
+      <short value="ANC - OUT_POST - Newborn referred to chronic HIV infant care "/>
+      <definition value="ANC - OUT_POST - Newborn referred to chronic HIV infant care"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.newbornReferredToChronicHivInfantCare"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.familyPlanningCounseledAndProvidedByMethod">
+      <path value="Postpartum.familyPlanningCounseledAndProvidedByMethod"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="YeXm1Vvny9O"/>
+      </code>
+      <short value="ANC - OUT_POST - FP counseled and provided (by method)"/>
+      <definition value="ANC - OUT_POST - FP counseled and provided (by method)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.familyPlanningCounseledAndProvidedByMethod"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.actionsTaken">
+      <path value="Postpartum.actionsTaken"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="KcFAQvkTXrW"/>
+      </code>
+      <short value="ANC - OUT_POST - Actions taken"/>
+      <definition value="ANC - OUT_POST - Actions taken"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.actionsTaken"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Postpartum.typeOfStay">
+      <path value="Postpartum.typeOfStay"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="eCoVjkdihM9"/>
+      </code>
+      <short value="ANC - OUT_Post - Type of Stay"/>
+      <definition value="ANC - OUT_Post - Type of Stay"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Postpartum.typeOfStay"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS"/>
+      </binding>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Postpartum">
+      <path value="Postpartum"/>
+      <short value="Postpartum"/>
+      <definition value="Postpartum"/>
+    </element>
+    <element id="Postpartum.dateOfPostpartumCare">
+      <path value="Postpartum.dateOfPostpartumCare"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Vyok96daapr"/>
+      </code>
+      <short value="ANC - OUT_POST - Date of postpartum care "/>
+      <definition value="ANC - OUT_POST - Date of postpartum care "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Postpartum.bloodPressure">
+      <path value="Postpartum.bloodPressure"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="iySWXP9NB26"/>
+      </code>
+      <short value="ANC - OUT_POST - Blood pressure"/>
+      <definition value="ANC - OUT_POST - Blood pressure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Postpartum.temperature">
+      <path value="Postpartum.temperature"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="jBAsZaO4oEt"/>
+      </code>
+      <short value="ANC - OUT_POST - Temperature"/>
+      <definition value="ANC - OUT_POST - Temperature"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.pulseRate">
+      <path value="Postpartum.pulseRate"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="YSVwVatx6JR"/>
+      </code>
+      <short value="ANC - OUT_POST - Pulse Rate"/>
+      <definition value="ANC - OUT_POST - Pulse Rate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.pph">
+      <path value="Postpartum.pph"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="u4E2vVGtxc5"/>
+      </code>
+      <short value="ANC - OUT_POST -  PPH"/>
+      <definition value="ANC - OUT_POST -  PPH"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.dribblingLeakingUrine">
+      <path value="Postpartum.dribblingLeakingUrine"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="Q2iOrrIs8RO"/>
+      </code>
+      <short value="ANC - OUT_POST - Dribbling/leaking urine "/>
+      <definition value="ANC - OUT_POST - Dribbling/leaking urine "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.anemia">
+      <path value="Postpartum.anemia"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dNdQy42gyNN"/>
+      </code>
+      <short value="ANC - OUT_POST - Anemia"/>
+      <definition value="ANC - OUT_POST - Anemia"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.vaginalDischargeAfter4WeeksOfDelivery">
+      <path value="Postpartum.vaginalDischargeAfter4WeeksOfDelivery"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ONFttMEHeed"/>
+      </code>
+      <short value="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery"/>
+      <definition value="ANC - OUT_POST - Vaginal discharge after 4 weeks of delivery"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.pelvicExam">
+      <path value="Postpartum.pelvicExam"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="wVsbNnQVjuX"/>
+      </code>
+      <short value="ANC - OUT_POST - Pelvic exam "/>
+      <definition value="ANC - OUT_POST - Pelvic exam "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.breastExam">
+      <path value="Postpartum.breastExam"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="xqC5R16ID4N"/>
+      </code>
+      <short value="ANC - OUT_POST - Breast exam "/>
+      <definition value="ANC - OUT_POST - Breast exam "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.ironFolicAcidIfaSupplementation">
+      <path value="Postpartum.ironFolicAcidIfaSupplementation"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="oOENq0HVqnV"/>
+      </code>
+      <short value="ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation"/>
+      <definition value="ANC - OUT_POST - Iron &amp; Folic Acid (IFA) supplementation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.counselingDangerSignsSymptoms">
+      <path value="Postpartum.counselingDangerSignsSymptoms"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="dDD0M9NxRiE"/>
+      </code>
+      <short value="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given"/>
+      <definition value="ANC - OUT_POST - Counseling danger signs/symptoms, FP, hygiene, nutrition, EPI, use of insecticide-treated net (ITN), breastfeeding, etc. given"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.babyBreathing">
+      <path value="Postpartum.babyBreathing"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="N9NypL64c5O"/>
+      </code>
+      <short value="ANC - OUT_POST - Baby breathing"/>
+      <definition value="ANC - OUT_POST - Baby breathing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.babyBreastfeeding">
+      <path value="Postpartum.babyBreastfeeding"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="c1M2JMkm3En"/>
+      </code>
+      <short value="ANC - OUT_POST - Baby breastfeeding"/>
+      <definition value="ANC - OUT_POST - Baby breastfeeding"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.babyWtGm">
+      <path value="Postpartum.babyWtGm"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="bNwTnOIQpxB"/>
+      </code>
+      <short value="ANC - OUT_POST - Baby wt (gm)"/>
+      <definition value="ANC - OUT_POST - Baby wt (gm)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="Postpartum.immunization">
+      <path value="Postpartum.immunization"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="UE5eXlAess0"/>
+      </code>
+      <short value="ANC - OUT_POST -  Immunization"/>
+      <definition value="ANC - OUT_POST -  Immunization"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.hivTestedYN">
+      <path value="Postpartum.hivTestedYN"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="TFOKxMR2T5A"/>
+      </code>
+      <short value="ANC - OUT_POST -  HIV tested (Y/N)"/>
+      <definition value="ANC - OUT_POST -  HIV tested (Y/N)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.hivTestResult">
+      <path value="Postpartum.hivTestResult"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="V6LHFJ2Kv9l"/>
+      </code>
+      <short value="ANC - OUT_POST -  HIV test result"/>
+      <definition value="ANC - OUT_POST -  HIV test result"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.arvRxForMotherByType">
+      <path value="Postpartum.arvRxForMotherByType"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="mSjUMNDx0Z2"/>
+      </code>
+      <short value="ANC - OUT_POST - ARV Rx for mother (By type)"/>
+      <definition value="ANC - OUT_POST - ARV Rx for mother (By type)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.arvPx">
+      <path value="Postpartum.arvPx"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="TlkMcrKmlIa"/>
+      </code>
+      <short value="ANC - OUT_POST - ARV PX"/>
+      <definition value="ANC - OUT_POST - ARV PX"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.feedingOptionEbfErf">
+      <path value="Postpartum.feedingOptionEbfErf"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="OpRMziOVS8e"/>
+      </code>
+      <short value="ANC - OUT_POST -  Feeding option: EBF/ERF"/>
+      <definition value="ANC - OUT_POST -  Feeding option: EBF/ERF"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.newbornReferredToChronicHivInfantCare">
+      <path value="Postpartum.newbornReferredToChronicHivInfantCare"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="ghEssGDk4nx"/>
+      </code>
+      <short value="ANC - OUT_POST - Newborn referred to chronic HIV infant care "/>
+      <definition value="ANC - OUT_POST - Newborn referred to chronic HIV infant care "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Postpartum.familyPlanningCounseledAndProvidedByMethod">
+      <path value="Postpartum.familyPlanningCounseledAndProvidedByMethod"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="YeXm1Vvny9O"/>
+      </code>
+      <short value="ANC - OUT_POST - FP counseled and provided (by method)"/>
+      <definition value="ANC - OUT_POST - FP counseled and provided (by method)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS"/>
+      </binding>
+    </element>
+    <element id="Postpartum.actionsTaken">
+      <path value="Postpartum.actionsTaken"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="KcFAQvkTXrW"/>
+      </code>
+      <short value="ANC - OUT_POST - Actions taken"/>
+      <definition value="ANC - OUT_POST - Actions taken"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Postpartum.typeOfStay">
+      <path value="Postpartum.typeOfStay"/>
+      <code>
+        <system value="https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"/>
+        <code value="eCoVjkdihM9"/>
+      </code>
+      <short value="ANC - OUT_Post - Type of Stay"/>
+      <definition value="ANC - OUT_Post - Type of Stay"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<!-- <link href="assets/css/colors.css" rel="stylesheet"/>! -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://dhis2.org/integration/fhir/">
+      <img height="60" alt="Project home" src="assets/images/dhis2.png"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="80" alt="FHIR website" src="assets/images/fhir.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ANCRMNCAHAntenatalcareregistryANC - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hispethiopia.org/enable/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html"
+                  title="StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC">ANC - RMNCAH - Antenatal care registry (ANC)</a>
+            </td>
+            <td>
+<p>Mother program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ANCExamination.html"
+                  title="StructureDefinition/ANCExamination">ANC Examination</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LaboratoryTestsAndImaging.html"
+                  title="StructureDefinition/LaboratoryTestsAndImaging">Laboratory Tests and Imaging </a>
+            </td>
+            <td>
+<p>Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Postpartum.html"
+                  title="StructureDefinition/Postpartum">Postpartum</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PregnancyOutcome.html"
+                  title="StructureDefinition/PregnancyOutcome">Pregnancy outcome</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PromotionAndTreatment.html"
+                  title="StructureDefinition/PromotionAndTreatment">Promotion and Treatment </a>
+            </td>
+            <td>
+<p>Data elements for the counselling and treatment task of the workflow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-WomanSProfileAndHistory.html"
+                  title="StructureDefinition/WomanSProfileAndHistory">Woman's Profile and History</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ANCExaminationQuestionnaire.html"
+                  title="Questionnaire/ANCExaminationQuestionnaire">ANC Examination Questionnaire</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-LaboratoryTestsAndImagingQuestionnaire.html"
+                  title="Questionnaire/LaboratoryTestsAndImagingQuestionnaire">Laboratory Tests and Imaging  Questionnaire</a>
+            </td>
+            <td>
+<p>Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PostpartumQuestionnaire.html"
+                  title="Questionnaire/PostpartumQuestionnaire">Postpartum Questionnaire</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PregnancyOutcomeQuestionnaire.html"
+                  title="Questionnaire/PregnancyOutcomeQuestionnaire">Pregnancy outcome Questionnaire</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PromotionAndTreatmentQuestionnaire.html"
+                  title="Questionnaire/PromotionAndTreatmentQuestionnaire">Promotion and Treatment  Questionnaire</a>
+            </td>
+            <td>
+<p>Data elements for the counselling and treatment task of the workflow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-WomanSProfileAndHistoryQuestionnaire.html"
+                  title="Questionnaire/WomanSProfileAndHistoryQuestionnaire">Woman's Profile and History Questionnaire</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCOUTPOSTFamilyPlanningVS.html"
+                  title="ValueSet/ANCOUTPOSTFamilyPlanningVS">ANC - OUT_POST - Family Planning value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCPostpartumCheckTimingVS.html"
+                  title="ValueSet/ANCPostpartumCheckTimingVS">ANC - postpartum check timing value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCARVRxForMotherVS.html"
+                  title="ValueSet/ANCARVRxForMotherVS">ANC ARV Rx for Mother value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCLABAnaemiaDiagnosisVS.html"
+                  title="ValueSet/ANCLABAnaemiaDiagnosisVS">ANC LAB Anaemia diagnosis value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCLABMalariaDiagnosisVS.html"
+                  title="ValueSet/ANCLABMalariaDiagnosisVS">ANC LAB Malaria diagnosis value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCLABMalariaMpsVS.html"
+                  title="ValueSet/ANCLABMalariaMpsVS">ANC LAB Malaria mps value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCLABMalePartnerSelfTestingKitResultsVS.html"
+                  title="ValueSet/ANCLABMalePartnerSelfTestingKitResultsVS">ANC LAB Male Partner self testing kit results value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCLabEMTCTCodesVS.html"
+                  title="ValueSet/ANCLabEMTCTCodesVS">ANC Lab EMTCT Codes value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCMUACColorCodeVS.html"
+                  title="ValueSet/ANCMUACColorCodeVS">ANC MUAC color code value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCRelationPresentingPartBrimOfPelvicVS.html"
+                  title="ValueSet/ANCRelationPresentingPartBrimOfPelvicVS">ANC Relation Presenting Part/Brim of pelvic value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCSickleCellVS.html" title="ValueSet/ANCSickleCellVS">ANC Sickle cell value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCSyphilisHepatitisResultsVS.html"
+                  title="ValueSet/ANCSyphilisHepatitisResultsVS">ANC Syphilis Hepatitis results value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCTBResultsVS.html" title="ValueSet/ANCTBResultsVS">ANC TB results value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANCSingleOrMultipleVS.html"
+                  title="ValueSet/ANCSingleOrMultipleVS">ANC- Single or multiple value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.BD.FeedingOptionVS.html"
+                  title="ValueSet/ANC.BD.FeedingOptionVS">ANC. BD. Feeding Option value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.ReasonForPregnancyOutcomeVS.html"
+                  title="ValueSet/ANC.ReasonForPregnancyOutcomeVS">ANC. Reason for Pregnancy Outcome value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS.html"
+                  title="ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS">ANC.B10. Preventive deworming antihelminthic treatment provided value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B6.EducationLevelVS.html"
+                  title="ValueSet/ANC.B6.EducationLevelVS">ANC.B6. Education level value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B6.SourceOfGestationalAgeVS.html"
+                  title="ValueSet/ANC.B6.SourceOfGestationalAgeVS">ANC.B6. Source of gestational age value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B7.FetalMovementVS.html"
+                  title="ValueSet/ANC.B7.FetalMovementVS">ANC.B7. Fetal movement value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8NumberOfFetusesVS.html"
+                  title="ValueSet/ANC.B8NumberOfFetusesVS">ANC.B8 Number of fetuses value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8.ExpectedWeightGainVS.html"
+                  title="ValueSet/ANC.B8.ExpectedWeightGainVS">ANC.B8. Expected weight gain value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8.FetalPresentationVS.html"
+                  title="ValueSet/ANC.B8.FetalPresentationVS">ANC.B8. Fetal presentation value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8.LABPLUS14VS.html"
+                  title="ValueSet/ANC.B8.LABPLUS14VS">ANC.B8. LAB PLUS 1-4 value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8.NutritionalStatusVS.html"
+                  title="ValueSet/ANC.B8.NutritionalStatusVS">ANC.B8. Nutritional status value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8.PelvicExamResultVisualVS.html"
+                  title="ValueSet/ANC.B8.PelvicExamResultVisualVS">ANC.B8. Pelvic exam result (visual) value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B8.WeightCategoryVS.html"
+                  title="ValueSet/ANC.B8.WeightCategoryVS">ANC.B8. Weight category value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B9.BloodTypeVS.html"
+                  title="ValueSet/ANC.B9.BloodTypeVS">ANC.B9. Blood type value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B9.UrineDipstickResultGlucoseVS.html"
+                  title="ValueSet/ANC.B9.UrineDipstickResultGlucoseVS">ANC.B9. Urine dipstick result glucose value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B9.UrineDipstickResultLeukocytesVS.html"
+                  title="ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS">ANC.B9. Urine dipstick result leukocytes value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B9.UrineDipstickResultNitritesVS.html"
+                  title="ValueSet/ANC.B9.UrineDipstickResultNitritesVS">ANC.B9. Urine dipstick result nitrites value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.B9.UrineDipstickResultProteinVS.html"
+                  title="ValueSet/ANC.B9.UrineDipstickResultProteinVS">ANC.B9. Urine dipstick result protein value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.BDFeedingOptionsVS.html"
+                  title="ValueSet/ANC.BDFeedingOptionsVS">ANC.BD Feeding options value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.BDPlacentaVS.html" title="ValueSet/ANC.BDPlacentaVS">ANC.BD Placenta value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ANC.BDStillBirthVS.html"
+                  title="ValueSet/ANC.BDStillBirthVS">ANC.BD Still Birth value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-BDOtherReasonForPregnancyOutcomeVS.html"
+                  title="ValueSet/BDOtherReasonForPregnancyOutcomeVS">BD-Other Reason for Pregnancy Outcome value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-BDSexOfChildVS.html" title="ValueSet/BDSexOfChildVS">BD-Sex of child value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FollowUpFrequencyVS.html"
+                  title="ValueSet/FollowUpFrequencyVS">Follow-up frequency value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-HIVStatusProfileVS.html"
+                  title="ValueSet/HIVStatusProfileVS">HIV status Profile value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-IptpDose112VS.html" title="ValueSet/IptpDose112VS">IPTp dose 1-12 value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-LABViralLoadStatusVS.html"
+                  title="ValueSet/LABViralLoadStatusVS">LAB Viral load status value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MaritalStatusVS.html" title="ValueSet/MaritalStatusVS">Marital Status value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ModeOfDeliveryVS.html" title="ValueSet/ModeOfDeliveryVS">Mode of delivery value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-OccupationVS.html" title="ValueSet/OccupationVS">Occupation value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PartnerHIVTestResultVS.html"
+                  title="ValueSet/PartnerHIVTestResultVS">Partner HIV test result value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PositiveNegativeUnknownVS.html"
+                  title="ValueSet/PositiveNegativeUnknownVS">Positive/Negative/Unknown value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PregnantWomanReceivedAsReferralFromVS.html"
+                  title="ValueSet/PregnantWomanReceivedAsReferralFromVS">Pregnant Woman Received as Referral from value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-TermOrPretermVS.html" title="ValueSet/TermOrPretermVS">Term or preterm value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-VitalStatusOfChildVS.html"
+                  title="ValueSet/VitalStatusOfChildVS">Vital status of child value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-WHOClinicalStageVS.html"
+                  title="ValueSet/WHOClinicalStageVS">WHO Clinical stage value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-YearVS.html" title="ValueSet/YearVS">Year value set</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-YesNoUnknownVS.html" title="ValueSet/YesNoUnknownVS">Yes/No/Unknown value set</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCOUTPOSTFamilyPlanningCS.html"
+                  title="CodeSystem/ANCOUTPOSTFamilyPlanningCS">ANC - OUT_POST - Family Planning</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCPostpartumCheckTimingCS.html"
+                  title="CodeSystem/ANCPostpartumCheckTimingCS">ANC - postpartum check timing</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCARVRxForMotherCS.html"
+                  title="CodeSystem/ANCARVRxForMotherCS">ANC ARV Rx for Mother</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCLABAnaemiaDiagnosisCS.html"
+                  title="CodeSystem/ANCLABAnaemiaDiagnosisCS">ANC LAB Anaemia diagnosis</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCLABMalariaDiagnosisCS.html"
+                  title="CodeSystem/ANCLABMalariaDiagnosisCS">ANC LAB Malaria diagnosis</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCLABMalariaMpsCS.html"
+                  title="CodeSystem/ANCLABMalariaMpsCS">ANC LAB Malaria mps</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCLABMalePartnerSelfTestingKitResultsCS.html"
+                  title="CodeSystem/ANCLABMalePartnerSelfTestingKitResultsCS">ANC LAB Male Partner self testing kit results</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCLabEMTCTCodesCS.html"
+                  title="CodeSystem/ANCLabEMTCTCodesCS">ANC Lab EMTCT Codes</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCMUACColorCodeCS.html"
+                  title="CodeSystem/ANCMUACColorCodeCS">ANC MUAC color code</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCRelationPresentingPartBrimOfPelvicCS.html"
+                  title="CodeSystem/ANCRelationPresentingPartBrimOfPelvicCS">ANC Relation Presenting Part/Brim of pelvic</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCSickleCellCS.html"
+                  title="CodeSystem/ANCSickleCellCS">ANC Sickle cell</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCSyphilisHepatitisResultsCS.html"
+                  title="CodeSystem/ANCSyphilisHepatitisResultsCS">ANC Syphilis Hepatitis results</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCTBResultsCS.html" title="CodeSystem/ANCTBResultsCS">ANC TB results</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANCSingleOrMultipleCS.html"
+                  title="CodeSystem/ANCSingleOrMultipleCS">ANC- Single or multiple</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.BD.FeedingOptionCS.html"
+                  title="CodeSystem/ANC.BD.FeedingOptionCS">ANC. BD. Feeding Option</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.ReasonForPregnancyOutcomeCS.html"
+                  title="CodeSystem/ANC.ReasonForPregnancyOutcomeCS">ANC. Reason for Pregnancy Outcome</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS.html"
+                  title="CodeSystem/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS">ANC.B10. Preventive deworming antihelminthic treatment provided</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B6.EducationLevelCS.html"
+                  title="CodeSystem/ANC.B6.EducationLevelCS">ANC.B6. Education level</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B6.SourceOfGestationalAgeCS.html"
+                  title="CodeSystem/ANC.B6.SourceOfGestationalAgeCS">ANC.B6. Source of gestational age</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B7.FetalMovementCS.html"
+                  title="CodeSystem/ANC.B7.FetalMovementCS">ANC.B7. Fetal movement</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8NumberOfFetusesCS.html"
+                  title="CodeSystem/ANC.B8NumberOfFetusesCS">ANC.B8 Number of fetuses</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8.ExpectedWeightGainCS.html"
+                  title="CodeSystem/ANC.B8.ExpectedWeightGainCS">ANC.B8. Expected weight gain</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8.FetalPresentationCS.html"
+                  title="CodeSystem/ANC.B8.FetalPresentationCS">ANC.B8. Fetal presentation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8.LABPLUS14CS.html"
+                  title="CodeSystem/ANC.B8.LABPLUS14CS">ANC.B8. LAB PLUS 1-4</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8.NutritionalStatusCS.html"
+                  title="CodeSystem/ANC.B8.NutritionalStatusCS">ANC.B8. Nutritional status</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8.PelvicExamResultVisualCS.html"
+                  title="CodeSystem/ANC.B8.PelvicExamResultVisualCS">ANC.B8. Pelvic exam result (visual)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B8.WeightCategoryCS.html"
+                  title="CodeSystem/ANC.B8.WeightCategoryCS">ANC.B8. Weight category</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B9.BloodTypeCS.html"
+                  title="CodeSystem/ANC.B9.BloodTypeCS">ANC.B9. Blood type</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B9.UrineDipstickResultGlucoseCS.html"
+                  title="CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS">ANC.B9. Urine dipstick result glucose</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B9.UrineDipstickResultLeukocytesCS.html"
+                  title="CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS">ANC.B9. Urine dipstick result leukocytes</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B9.UrineDipstickResultNitritesCS.html"
+                  title="CodeSystem/ANC.B9.UrineDipstickResultNitritesCS">ANC.B9. Urine dipstick result nitrites</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.B9.UrineDipstickResultProteinCS.html"
+                  title="CodeSystem/ANC.B9.UrineDipstickResultProteinCS">ANC.B9. Urine dipstick result protein</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.BDFeedingOptionsCS.html"
+                  title="CodeSystem/ANC.BDFeedingOptionsCS">ANC.BD Feeding options</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.BDPlacentaCS.html"
+                  title="CodeSystem/ANC.BDPlacentaCS">ANC.BD Placenta</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ANC.BDStillBirthCS.html"
+                  title="CodeSystem/ANC.BDStillBirthCS">ANC.BD Still Birth</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-BDOtherReasonForPregnancyOutcomeCS.html"
+                  title="CodeSystem/BDOtherReasonForPregnancyOutcomeCS">BD-Other Reason for Pregnancy Outcome</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-BDSexOfChildCS.html" title="CodeSystem/BDSexOfChildCS">BD-Sex of child</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dhis2-data-elements-cs.html"
+                  title="CodeSystem/dhis2-data-elements-cs">DHIS2 Data Elements</a>
+            </td>
+            <td>
+<p>Code system for 315 unique DHIS2 data elements from all selected programs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dhis2-tracked-entity-attributes-cs.html"
+                  title="CodeSystem/dhis2-tracked-entity-attributes-cs">DHIS2 Tracked Entity Attributes</a>
+            </td>
+            <td>
+<p>Code system for 18 unique DHIS2 tracked entity attributes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-FollowUpFrequencyCS.html"
+                  title="CodeSystem/FollowUpFrequencyCS">Follow-up frequency</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-HIVStatusProfileCS.html"
+                  title="CodeSystem/HIVStatusProfileCS">HIV status Profile</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-IptpDose112CS.html" title="CodeSystem/IptpDose112CS">IPTp dose 1-12</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-LABViralLoadStatusCS.html"
+                  title="CodeSystem/LABViralLoadStatusCS">LAB Viral load status</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-MaritalStatusCS.html"
+                  title="CodeSystem/MaritalStatusCS">Marital Status</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ModeOfDeliveryCS.html"
+                  title="CodeSystem/ModeOfDeliveryCS">Mode of delivery</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-OccupationCS.html" title="CodeSystem/OccupationCS">Occupation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-PartnerHIVTestResultCS.html"
+                  title="CodeSystem/PartnerHIVTestResultCS">Partner HIV test result</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-PositiveNegativeUnknownCS.html"
+                  title="CodeSystem/PositiveNegativeUnknownCS">Positive/Negative/Unknown</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-PregnantWomanReceivedAsReferralFromCS.html"
+                  title="CodeSystem/PregnantWomanReceivedAsReferralFromCS">Pregnant Woman Received as Referral from</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-TermOrPretermCS.html"
+                  title="CodeSystem/TermOrPretermCS">Term or preterm</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-VitalStatusOfChildCS.html"
+                  title="CodeSystem/VitalStatusOfChildCS">Vital status of child</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-WHOClinicalStageCS.html"
+                  title="CodeSystem/WHOClinicalStageCS">WHO Clinical stage</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-YearCS.html" title="CodeSystem/YearCS">Year</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-YesNoUnknownCS.html" title="CodeSystem/YesNoUnknownCS">Yes/No/Unknown</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hispethiopia.org/">HISP Ethiopia</a>.  Package enable.antenatal.care.registry#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 15, 2026 10:57+0000">2026-01-15</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="https://hispethiopia.org/enable/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

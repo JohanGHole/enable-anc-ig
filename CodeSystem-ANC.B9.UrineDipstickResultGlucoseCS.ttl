@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ANC.B9.UrineDipstickResultGlucoseCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANC.B9.UrineDipstickResultGlucoseCS</b></p><a name=\"ANC.B9.UrineDipstickResultGlucoseCS\"> </a><a name=\"hcANC.B9.UrineDipstickResultGlucoseCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">No abnormalities (glucose)<a name=\"ANC.B9.UrineDipstickResultGlucoseCS-Noabnormalities.40glucose.41\"> </a></td><td>No abnormalities</td></tr><tr><td style=\"white-space:nowrap\">PLUS<a name=\"ANC.B9.UrineDipstickResultGlucoseCS-PLUS\"> </a></td><td>+</td></tr><tr><td style=\"white-space:nowrap\">2PLUS<a name=\"ANC.B9.UrineDipstickResultGlucoseCS-2PLUS\"> </a></td><td>++</td></tr><tr><td style=\"white-space:nowrap\">4PLUS<a name=\"ANC.B9.UrineDipstickResultGlucoseCS-4PLUS\"> </a></td><td>+++</td></tr><tr><td style=\"white-space:nowrap\">4PLUSPLUS<a name=\"ANC.B9.UrineDipstickResultGlucoseCS-4PLUSPLUS\"> </a></td><td>++++</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ANC.B9.UrineDipstickResultGlucoseCS"] ; # 
+  fhir:title [ fhir:v "ANC.B9. Urine dipstick result glucose"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "No abnormalities (glucose)" ] ;
+     fhir:display [ fhir:v "No abnormalities" ]
+  ] [
+     fhir:code [ fhir:v "PLUS" ] ;
+     fhir:display [ fhir:v "+" ]
+  ] [
+     fhir:code [ fhir:v "2PLUS" ] ;
+     fhir:display [ fhir:v "++" ]
+  ] [
+     fhir:code [ fhir:v "4PLUS" ] ;
+     fhir:display [ fhir:v "+++" ]
+  ] [
+     fhir:code [ fhir:v "4PLUSPLUS" ] ;
+     fhir:display [ fhir:v "++++" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

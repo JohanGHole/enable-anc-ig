@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ANCTBResultsCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ANCTBResultsCS</b></p><a name="ANCTBResultsCS"> </a><a name="hcANCTBResultsCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">No_signs<a name="ANCTBResultsCS-No_signs"> </a></td><td>1. No signs</td></tr><tr><td style="white-space:nowrap">Presumptive<a name="ANCTBResultsCS-Presumptive"> </a></td><td>2. Presumptive (refer or sputum sent)</td></tr><tr><td style="white-space:nowrap">Diagnosed clinically<a name="ANCTBResultsCS-Diagnosedclinically"> </a></td><td>3C. TB diagnosed clinically</td></tr><tr><td style="white-space:nowrap">Gene Xpert<a name="ANCTBResultsCS-GeneXpert"> </a></td><td>3G. TB diagnosed Gene Xpert</td></tr><tr><td style="white-space:nowrap">TB LAM<a name="ANCTBResultsCS-TBLAM"> </a></td><td>3L. TB diagnosed TB LAM</td></tr><tr><td style="white-space:nowrap">TB Microscopy<a name="ANCTBResultsCS-TBMicroscopy"> </a></td><td>3M. TB diagnosed TB Microscopy</td></tr><tr><td style="white-space:nowrap">Chest Xray<a name="ANCTBResultsCS-ChestXray"> </a></td><td>3X. TB diagnosed Chest Xray</td></tr><tr><td style="white-space:nowrap">Currently on medication<a name="ANCTBResultsCS-Currentlyonmedication"> </a></td><td>4. Currently on TB medication</td></tr><tr><td style="white-space:nowrap">Completed treatment<a name="ANCTBResultsCS-Completedtreatment"> </a></td><td>5. Completed TB treatment</td></tr><tr><td style="white-space:nowrap">Other TB result, specify<a name="ANCTBResultsCS-OtherTBresult.44specify"> </a></td><td>3O. TB diagnosed Other specify</td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS"/>
+  <version value="0.1.0"/>
+  <name value="ANCTBResultsCS"/>
+  <title value="ANC TB results"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="No_signs"/>
+    <display value="1. No signs"/>
+  </concept>
+  <concept>
+    <code value="Presumptive"/>
+    <display value="2. Presumptive (refer or sputum sent)"/>
+  </concept>
+  <concept>
+    <code value="Diagnosed clinically"/>
+    <display value="3C. TB diagnosed clinically"/>
+  </concept>
+  <concept>
+    <code value="Gene Xpert"/>
+    <display value="3G. TB diagnosed Gene Xpert"/>
+  </concept>
+  <concept>
+    <code value="TB LAM"/>
+    <display value="3L. TB diagnosed TB LAM"/>
+  </concept>
+  <concept>
+    <code value="TB Microscopy"/>
+    <display value="3M. TB diagnosed TB Microscopy"/>
+  </concept>
+  <concept>
+    <code value="Chest Xray"/>
+    <display value="3X. TB diagnosed Chest Xray"/>
+  </concept>
+  <concept>
+    <code value="Currently on medication"/>
+    <display value="4. Currently on TB medication"/>
+  </concept>
+  <concept>
+    <code value="Completed treatment"/>
+    <display value="5. Completed TB treatment"/>
+  </concept>
+  <concept>
+    <code value="Other TB result, specify"/>
+    <display value="3O. TB diagnosed Other specify"/>
+  </concept>
+</CodeSystem>

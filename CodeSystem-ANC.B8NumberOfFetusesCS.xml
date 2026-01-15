@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ANC.B8NumberOfFetusesCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ANC.B8NumberOfFetusesCS</b></p><a name="ANC.B8NumberOfFetusesCS"> </a><a name="hcANC.B8NumberOfFetusesCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Unknown<a name="ANC.B8NumberOfFetusesCS-Unknown"> </a></td></tr><tr><td style="white-space:nowrap">1<a name="ANC.B8NumberOfFetusesCS-1"> </a></td></tr><tr><td style="white-space:nowrap">2<a name="ANC.B8NumberOfFetusesCS-2"> </a></td></tr><tr><td style="white-space:nowrap">3<a name="ANC.B8NumberOfFetusesCS-3"> </a></td></tr><tr><td style="white-space:nowrap">4<a name="ANC.B8NumberOfFetusesCS-4"> </a></td></tr><tr><td style="white-space:nowrap">5<a name="ANC.B8NumberOfFetusesCS-5"> </a></td></tr><tr><td style="white-space:nowrap">6<a name="ANC.B8NumberOfFetusesCS-6"> </a></td></tr><tr><td style="white-space:nowrap">7<a name="ANC.B8NumberOfFetusesCS-7"> </a></td></tr><tr><td style="white-space:nowrap">8<a name="ANC.B8NumberOfFetusesCS-8"> </a></td></tr><tr><td style="white-space:nowrap">9<a name="ANC.B8NumberOfFetusesCS-9"> </a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS"/>
+  <version value="0.1.0"/>
+  <name value="ANC.B8NumberOfFetusesCS"/>
+  <title value="ANC.B8 Number of fetuses"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="Unknown"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="1"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="2"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="3"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="4"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="5"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="6"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="7"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="8"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="9"/>
+  </concept>
+</CodeSystem>

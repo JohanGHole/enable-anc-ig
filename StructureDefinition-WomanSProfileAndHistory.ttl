@@ -1,0 +1,2162 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "WomanSProfileAndHistory"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition WomanSProfileAndHistory</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory\" title=\"Woman's Profile and History\">WomanSProfileAndHistory</a><a name=\"WomanSProfileAndHistory\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Woman's Profile and History</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.alcohol\" title=\"ANC - ANC.B6. Alcohol\">alcohol</a><a name=\"WomanSProfileAndHistory.alcohol\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Alcohol</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth\" title=\"ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)\">historyEarlyNeonatalDeathBtwn07daysofbirth</a><a name=\"WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.diabetes\" title=\"ANC - ANC.B6. Diabetes\">diabetes</a><a name=\"WomanSProfileAndHistory.diabetes\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Diabetes</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.eclampsiaConvulsions\" title=\"ANC - ANC.B6. Eclampsia/Convulsions\">eclampsiaConvulsions</a><a name=\"WomanSProfileAndHistory.eclampsiaConvulsions\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Eclampsia/Convulsions</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.expectedDateOfDeliveryEdd\" title=\"ANC - ANC.B6. Expected date of delivery (EDD)\">expectedDateOfDeliveryEdd</a><a name=\"WomanSProfileAndHistory.expectedDateOfDeliveryEdd\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Expected date of delivery (EDD)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.ancGestationalAge\" title=\"ANC - ANC.B6. Gestational age\">ancGestationalAge</a><a name=\"WomanSProfileAndHistory.ancGestationalAge\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Gestational age</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg\" title=\"ANC - ANC History of big baby delivery ( > 4 kg)\">historyOfBigBabyDelivery4Kg</a><a name=\"WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC History of big baby delivery ( &gt; 4 kg)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.hivStatusProfile\" title=\"ANC - ANC.B6. HIV status profile\">hivStatusProfile</a><a name=\"WomanSProfileAndHistory.hivStatusProfile\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. HIV status profile<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIVStatusProfileVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS\" class=\"binding\">HIV status Profile value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.myomectomy\" title=\"ANC - ANC Myomectomy\">myomectomy</a><a name=\"WomanSProfileAndHistory.myomectomy\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC Myomectomy</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.hypertension\" title=\"ANC - ANC.B6. Hypertension\">hypertension</a><a name=\"WomanSProfileAndHistory.hypertension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Hypertension</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.cardiacCondition\" title=\"ANC - ANC Cardiac condition\">cardiacCondition</a><a name=\"WomanSProfileAndHistory.cardiacCondition\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC Cardiac condition</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure\" title=\"ANC - ANC.B6. Kidney disease (Chronic Renal Failure)\">kidneyDiseaseChronicRenalFailure</a><a name=\"WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Kidney disease (Chronic Renal Failure)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.lnmpDate\" title=\"ANC - ANC.B6. Last normal menstrual period (LNMP) date\">lnmpDate</a><a name=\"WomanSProfileAndHistory.lnmpDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Last normal menstrual period (LNMP) date</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate\" title=\"ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date\">clinicalEstimationPalpationFundalHeightDate</a><a name=\"WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine\" title=\"ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)\">malariaMedicationSulfadoxinePyrimethamine</a><a name=\"WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.ancPara\" title=\"ANC - ANC.B6. Para\">ancPara</a><a name=\"WomanSProfileAndHistory.ancPara\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Para</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.numberOfPregnanciesGravida\" title=\"ANC - ANC.B6. Number of pregnancies (gravida)\">numberOfPregnanciesGravida</a><a name=\"WomanSProfileAndHistory.numberOfPregnanciesGravida\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of pregnancies (gravida)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.ancB6UltrasoundGa\" title=\"ANC - ANC.B6 Ultrasound GA\">ancB6UltrasoundGa</a><a name=\"WomanSProfileAndHistory.ancB6UltrasoundGa\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6 Ultrasound GA</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.noAlcoholAndOrSubstances\" title=\"ANC - ANC.B6. No alcohol and/or substances\">noAlcoholAndOrSubstances</a><a name=\"WomanSProfileAndHistory.noAlcoholAndOrSubstances\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No alcohol and/or substances</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.noChronicOrPastHealthConditions\" title=\"ANC - ANC.B6. No chronic or past health conditions\">noChronicOrPastHealthConditions</a><a name=\"WomanSProfileAndHistory.noChronicOrPastHealthConditions\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No chronic or past health conditions</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.noKnownAllergies\" title=\"ANC - ANC.B6. No known allergies\">noKnownAllergies</a><a name=\"WomanSProfileAndHistory.noKnownAllergies\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No known allergies</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.noKnownPastSurgeries\" title=\"ANC - ANC.B6. No known past surgeries\">noKnownPastSurgeries</a><a name=\"WomanSProfileAndHistory.noKnownPastSurgeries\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No known past surgeries</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.noMedications\" title=\"ANC - ANC.B6. No medications\">noMedications</a><a name=\"WomanSProfileAndHistory.noMedications\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No medications</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.noPastPregnancyComplications\" title=\"ANC - ANC.B6. No past pregnancy complications\">noPastPregnancyComplications</a><a name=\"WomanSProfileAndHistory.noPastPregnancyComplications\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. No past pregnancy complications</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.numberOfCaesareanSections\" title=\"ANC - ANC.B6. Number of caesarean sections\">numberOfCaesareanSections</a><a name=\"WomanSProfileAndHistory.numberOfCaesareanSections\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of caesarean sections</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.numberOfAbortions\" title=\"ANC - ANC.B6. Number of abortions\">numberOfAbortions</a><a name=\"WomanSProfileAndHistory.numberOfAbortions\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of abortions</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd\" title=\"ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)\">numberOfStillbirthsFsdAndOrMsd</a><a name=\"WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.otherAllergiesSpecify\" title=\"ANC - ANC.B6. Other allergies (specify)\">otherAllergiesSpecify</a><a name=\"WomanSProfileAndHistory.otherAllergiesSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other allergies (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.otherGynecologicalProceduresSpecify\" title=\"ANC - ANC.B6. Other gynecological procedures (specify)\">otherGynecologicalProceduresSpecify</a><a name=\"WomanSProfileAndHistory.otherGynecologicalProceduresSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other gynecological procedures (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.medicationsSpecify\" title=\"ANC - ANC.B6. Medications (specify)\">medicationsSpecify</a><a name=\"WomanSProfileAndHistory.medicationsSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Medications (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify\" title=\"ANC - ANC.B6. Other past pregnancy problems (specify)\">otherPastPregnancyProblemsSpecify</a><a name=\"WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other past pregnancy problems (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.otherConditionsSpecify\" title=\"ANC - ANC.B6. Other (specify)\">otherConditionsSpecify</a><a name=\"WomanSProfileAndHistory.otherConditionsSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.otherSubstanceUseSpecify\" title=\"ANC - ANC.B6. Other substance use (specify)\">otherSubstanceUseSpecify</a><a name=\"WomanSProfileAndHistory.otherSubstanceUseSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other substance use (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.otherSurgeriesSpecify\" title=\"ANC - ANC.B6. Other surgeries (specify)\">otherSurgeriesSpecify</a><a name=\"WomanSProfileAndHistory.otherSurgeriesSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Other surgeries (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.preEclampsia\" title=\"ANC - ANC.B6. Pre-eclampsia\">preEclampsia</a><a name=\"WomanSProfileAndHistory.preEclampsia\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Pre-eclampsia</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.sourceOfGestationalAge\" title=\"ANC - ANC.B6. Source of gestational age\">sourceOfGestationalAge</a><a name=\"WomanSProfileAndHistory.sourceOfGestationalAge\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Source of gestational age<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.B6.SourceOfGestationalAgeVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS\" class=\"binding\">ANC.B6. Source of gestational age value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.tobaccoUse\" title=\"ANC - ANC.B6. Tobacco use\">tobaccoUse</a><a name=\"WomanSProfileAndHistory.tobaccoUse\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Tobacco use</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.ultrasoundDate\" title=\"ANC - ANC.B6. Ultrasound date\">ultrasoundDate</a><a name=\"WomanSProfileAndHistory.ultrasoundDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B6. Ultrasound date</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.clinicallyEstimatedGestationalAge\" title=\"ANC.B6. Clinically estimated gestational age\">clinicallyEstimatedGestationalAge</a><a name=\"WomanSProfileAndHistory.clinicallyEstimatedGestationalAge\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC.B6. Clinically estimated gestational age</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.ancHeight\" title=\"ANC - ANC.B8. Height\">ancHeight</a><a name=\"WomanSProfileAndHistory.ancHeight\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Height</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.preGestationalWeight\" title=\"ANC - ANC.B8. Pre-gestational weight\">preGestationalWeight</a><a name=\"WomanSProfileAndHistory.preGestationalWeight\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Pre-gestational weight</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.bmi\" title=\"ANC - ANC.B8. BMI\">bmi</a><a name=\"WomanSProfileAndHistory.bmi\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. BMI</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.weightCategory\" title=\"ANC - ANC.B8. Weight category\">weightCategory</a><a name=\"WomanSProfileAndHistory.weightCategory\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Weight category<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.B8.WeightCategoryVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS\" class=\"binding\">ANC.B8. Weight category value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.reviewAndConfirmComputedBmi\" title=\"ANC - ANC.B8a. Review and confirm computed BMI\">reviewAndConfirmComputedBmi</a><a name=\"WomanSProfileAndHistory.reviewAndConfirmComputedBmi\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8a. Review and confirm computed BMI</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-WomanSProfileAndHistory-definitions.html#WomanSProfileAndHistory.expectedWeightGain\" title=\"ANC - ANC.B8. Expected weight gain\">expectedWeightGain</a><a name=\"WomanSProfileAndHistory.expectedWeightGain\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ANC - ANC.B8. Expected weight gain<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ANC.B8.ExpectedWeightGainVS.html\" title=\"https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS\" class=\"binding\">ANC.B8. Expected weight gain value set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "WomanSProfileAndHistory"] ; # 
+  fhir:title [ fhir:v "Woman's Profile and History"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v false] ; # 
+  fhir:type [
+     fhir:v "https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory>
+  ] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "4.0.1"
+       ]
+     ] ) ;
+     fhir:element ( [
+       fhir:id [ fhir:v "WomanSProfileAndHistory" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory" ] ;
+       fhir:short [ fhir:v "Woman's Profile and History" ] ;
+       fhir:definition [ fhir:v "Woman's Profile and History" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v false ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.alcohol" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.alcohol" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "w1XaGkyql1u" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Alcohol" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Alcohol" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.alcohol" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "xSKiFlohuQd" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.diabetes" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.diabetes" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "cCp43HMY3br" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Diabetes" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Diabetes" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.diabetes" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.eclampsiaConvulsions" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.eclampsiaConvulsions" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "oeojmvdEY9S" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Eclampsia/Convulsions" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Eclampsia/Convulsions" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.eclampsiaConvulsions" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.expectedDateOfDeliveryEdd" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.expectedDateOfDeliveryEdd" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Ru01omP2WCQ" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Expected date of delivery (EDD)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Expected date of delivery (EDD)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.expectedDateOfDeliveryEdd" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancGestationalAge" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancGestationalAge" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "w9p8MQDRyMr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Gestational age" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Gestational age" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.ancGestationalAge" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "XhGh2s0tPTr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC History of big baby delivery ( > 4 kg)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC History of big baby delivery ( > 4 kg)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.hivStatusProfile" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.hivStatusProfile" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "lYE2KzWQGkW" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. HIV status profile" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. HIV status profile" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.hivStatusProfile" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.myomectomy" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.myomectomy" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "iboAokLxCIh" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC Myomectomy" ] ;
+       fhir:definition [ fhir:v "ANC - ANC Myomectomy" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.myomectomy" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.hypertension" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.hypertension" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "QqTuhQQgpcp" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Hypertension" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Hypertension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.hypertension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.cardiacCondition" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.cardiacCondition" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "fuEUJqslhPb" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC Cardiac condition" ] ;
+       fhir:definition [ fhir:v "ANC - ANC Cardiac condition" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.cardiacCondition" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "KPN571DvV4D" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.lnmpDate" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.lnmpDate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "w4ky6EkVahL" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Last normal menstrual period (LNMP) date" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Last normal menstrual period (LNMP) date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.lnmpDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "joirdYETe8d" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "l7Jh3IoeEIa" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancPara" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancPara" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "I7dvwZGNgE8" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Para" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Para" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.ancPara" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfPregnanciesGravida" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfPregnanciesGravida" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "PuiTfPfSf86" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of pregnancies (gravida)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of pregnancies (gravida)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfPregnanciesGravida" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancB6UltrasoundGa" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancB6UltrasoundGa" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Juv31inY35a" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6 Ultrasound GA" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6 Ultrasound GA" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.ancB6UltrasoundGa" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noAlcoholAndOrSubstances" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noAlcoholAndOrSubstances" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "DPZ6kIgtiIA" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No alcohol and/or substances" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No alcohol and/or substances" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.noAlcoholAndOrSubstances" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noChronicOrPastHealthConditions" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noChronicOrPastHealthConditions" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "snqxJUEWgkb" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No chronic or past health conditions" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No chronic or past health conditions" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.noChronicOrPastHealthConditions" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noKnownAllergies" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noKnownAllergies" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "V16g2TRV7MB" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No known allergies" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No known allergies" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.noKnownAllergies" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noKnownPastSurgeries" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noKnownPastSurgeries" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "DSAooZSxopi" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No known past surgeries" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No known past surgeries" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.noKnownPastSurgeries" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noMedications" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noMedications" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "hpXvhGzaVld" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No medications" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No medications" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.noMedications" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noPastPregnancyComplications" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noPastPregnancyComplications" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "GWxtXap1Guk" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No past pregnancy complications" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No past pregnancy complications" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.noPastPregnancyComplications" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfCaesareanSections" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfCaesareanSections" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "j3lxVBnaXmy" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of caesarean sections" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of caesarean sections" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfCaesareanSections" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfAbortions" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfAbortions" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "p4e5Y0GQIxv" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of abortions" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of abortions" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfAbortions" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "fpPtP8xrU1s" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherAllergiesSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherAllergiesSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "vpxAELVdkqn" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other allergies (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other allergies (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.otherAllergiesSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherGynecologicalProceduresSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherGynecologicalProceduresSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "hz94MekJLYe" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other gynecological procedures (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other gynecological procedures (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.otherGynecologicalProceduresSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.medicationsSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.medicationsSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "kyOjlg4co4z" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Medications (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Medications (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.medicationsSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "rF7OJIP7fhp" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other past pregnancy problems (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other past pregnancy problems (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherConditionsSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherConditionsSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "lbmrnYizavt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.otherConditionsSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherSubstanceUseSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherSubstanceUseSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UZ6Re4zVePj" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other substance use (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other substance use (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.otherSubstanceUseSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherSurgeriesSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherSurgeriesSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "S6O8strHi1p" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other surgeries (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other surgeries (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.otherSurgeriesSpecify" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.preEclampsia" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.preEclampsia" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TGcfgzv8mQA" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Pre-eclampsia" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Pre-eclampsia" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.preEclampsia" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.sourceOfGestationalAge" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.sourceOfGestationalAge" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "RPSgZF1i0hk" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Source of gestational age" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Source of gestational age" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.sourceOfGestationalAge" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.tobaccoUse" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.tobaccoUse" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "HvfStK1Mfo5" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Tobacco use" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Tobacco use" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.tobaccoUse" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ultrasoundDate" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ultrasoundDate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "PrDdlt8U65H" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Ultrasound date" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Ultrasound date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.ultrasoundDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.clinicallyEstimatedGestationalAge" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.clinicallyEstimatedGestationalAge" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "YKXci7Sm0Zq" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC.B6. Clinically estimated gestational age" ] ;
+       fhir:definition [ fhir:v "ANC.B6. Clinically estimated gestational age" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.clinicallyEstimatedGestationalAge" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancHeight" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancHeight" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TcOkQ8Qqmlt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Height" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Height" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.ancHeight" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.preGestationalWeight" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.preGestationalWeight" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "kFwQfziJLEt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Pre-gestational weight" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Pre-gestational weight" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.preGestationalWeight" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.bmi" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.bmi" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UZnz5QLRvcr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. BMI" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. BMI" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.bmi" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.weightCategory" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.weightCategory" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UsYtsHtuvwQ" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Weight category" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Weight category" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.weightCategory" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.reviewAndConfirmComputedBmi" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.reviewAndConfirmComputedBmi" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "bzupYCgg4m6" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8a. Review and confirm computed BMI" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8a. Review and confirm computed BMI" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.reviewAndConfirmComputedBmi" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.expectedWeightGain" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.expectedWeightGain" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "ztZwHRN9iPM" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Expected weight gain" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Expected weight gain" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "WomanSProfileAndHistory.expectedWeightGain" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS>
+         ]
+       ]
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "WomanSProfileAndHistory" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory" ] ;
+       fhir:short [ fhir:v "Woman's Profile and History" ] ;
+       fhir:definition [ fhir:v "Woman's Profile and History" ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.alcohol" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.alcohol" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "w1XaGkyql1u" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Alcohol" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Alcohol" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.historyEarlyNeonatalDeathBtwn07daysofbirth" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "xSKiFlohuQd" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. History of Early Neonatal Death (between 0 and 7 days of birth)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.diabetes" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.diabetes" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "cCp43HMY3br" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Diabetes" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Diabetes" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.eclampsiaConvulsions" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.eclampsiaConvulsions" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "oeojmvdEY9S" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Eclampsia/Convulsions" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Eclampsia/Convulsions" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.expectedDateOfDeliveryEdd" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.expectedDateOfDeliveryEdd" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Ru01omP2WCQ" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Expected date of delivery (EDD)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Expected date of delivery (EDD)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancGestationalAge" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancGestationalAge" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "w9p8MQDRyMr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Gestational age" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Gestational age" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.historyOfBigBabyDelivery4Kg" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "XhGh2s0tPTr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC History of big baby delivery ( > 4 kg)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC History of big baby delivery ( > 4 kg)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.hivStatusProfile" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.hivStatusProfile" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "lYE2KzWQGkW" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. HIV status profile" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. HIV status profile" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.myomectomy" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.myomectomy" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "iboAokLxCIh" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC Myomectomy" ] ;
+       fhir:definition [ fhir:v "ANC - ANC Myomectomy" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.hypertension" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.hypertension" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "QqTuhQQgpcp" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Hypertension" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Hypertension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.cardiacCondition" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.cardiacCondition" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "fuEUJqslhPb" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC Cardiac condition" ] ;
+       fhir:definition [ fhir:v "ANC - ANC Cardiac condition" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.kidneyDiseaseChronicRenalFailure" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "KPN571DvV4D" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Kidney disease (Chronic Renal Failure)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.lnmpDate" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.lnmpDate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "w4ky6EkVahL" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Last normal menstrual period (LNMP) date" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Last normal menstrual period (LNMP) date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.clinicalEstimationPalpationFundalHeightDate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "joirdYETe8d" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Clinical estimation (Palpation/fundal height) date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.malariaMedicationSulfadoxinePyrimethamine" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "l7Jh3IoeEIa" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Malaria medication (sulfadoxine-pyrimethamine)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancPara" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancPara" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "I7dvwZGNgE8" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Para" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Para" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfPregnanciesGravida" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfPregnanciesGravida" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "PuiTfPfSf86" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of pregnancies (gravida)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of pregnancies (gravida)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancB6UltrasoundGa" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancB6UltrasoundGa" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "Juv31inY35a" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6 Ultrasound GA" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6 Ultrasound GA" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noAlcoholAndOrSubstances" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noAlcoholAndOrSubstances" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "DPZ6kIgtiIA" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No alcohol and/or substances" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No alcohol and/or substances" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noChronicOrPastHealthConditions" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noChronicOrPastHealthConditions" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "snqxJUEWgkb" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No chronic or past health conditions" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No chronic or past health conditions" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noKnownAllergies" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noKnownAllergies" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "V16g2TRV7MB" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No known allergies" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No known allergies" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noKnownPastSurgeries" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noKnownPastSurgeries" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "DSAooZSxopi" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No known past surgeries" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No known past surgeries" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noMedications" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noMedications" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "hpXvhGzaVld" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No medications" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No medications" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.noPastPregnancyComplications" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.noPastPregnancyComplications" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "GWxtXap1Guk" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. No past pregnancy complications" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. No past pregnancy complications" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfCaesareanSections" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfCaesareanSections" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "j3lxVBnaXmy" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of caesarean sections" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of caesarean sections" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfAbortions" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfAbortions" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "p4e5Y0GQIxv" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of abortions" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of abortions" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.numberOfStillbirthsFsdAndOrMsd" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "fpPtP8xrU1s" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Number of stillbirths (FSD and/or MSD)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherAllergiesSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherAllergiesSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "vpxAELVdkqn" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other allergies (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other allergies (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherGynecologicalProceduresSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherGynecologicalProceduresSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "hz94MekJLYe" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other gynecological procedures (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other gynecological procedures (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.medicationsSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.medicationsSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "kyOjlg4co4z" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Medications (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Medications (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherPastPregnancyProblemsSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "rF7OJIP7fhp" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other past pregnancy problems (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other past pregnancy problems (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherConditionsSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherConditionsSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "lbmrnYizavt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherSubstanceUseSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherSubstanceUseSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UZ6Re4zVePj" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other substance use (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other substance use (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.otherSurgeriesSpecify" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.otherSurgeriesSpecify" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "S6O8strHi1p" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Other surgeries (specify)" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Other surgeries (specify)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.preEclampsia" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.preEclampsia" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TGcfgzv8mQA" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Pre-eclampsia" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Pre-eclampsia" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.sourceOfGestationalAge" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.sourceOfGestationalAge" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "RPSgZF1i0hk" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Source of gestational age" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Source of gestational age" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.tobaccoUse" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.tobaccoUse" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "HvfStK1Mfo5" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Tobacco use" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Tobacco use" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ultrasoundDate" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ultrasoundDate" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "PrDdlt8U65H" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B6. Ultrasound date" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B6. Ultrasound date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.clinicallyEstimatedGestationalAge" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.clinicallyEstimatedGestationalAge" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "YKXci7Sm0Zq" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC.B6. Clinically estimated gestational age" ] ;
+       fhir:definition [ fhir:v "ANC.B6. Clinically estimated gestational age" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.ancHeight" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.ancHeight" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "TcOkQ8Qqmlt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Height" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Height" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.preGestationalWeight" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.preGestationalWeight" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "kFwQfziJLEt" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Pre-gestational weight" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Pre-gestational weight" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.bmi" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.bmi" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UZnz5QLRvcr" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. BMI" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. BMI" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.weightCategory" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.weightCategory" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "UsYtsHtuvwQ" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Weight category" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Weight category" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.reviewAndConfirmComputedBmi" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.reviewAndConfirmComputedBmi" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "bzupYCgg4m6" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8a. Review and confirm computed BMI" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8a. Review and confirm computed BMI" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "WomanSProfileAndHistory.expectedWeightGain" ] ;
+       fhir:path [ fhir:v "WomanSProfileAndHistory.expectedWeightGain" ] ;
+       fhir:code ( [
+         fhir:system [
+           fhir:v "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs>
+         ] ;
+         fhir:code [ fhir:v "ztZwHRN9iPM" ]
+       ] ) ;
+       fhir:short [ fhir:v "ANC - ANC.B8. Expected weight gain" ] ;
+       fhir:definition [ fhir:v "ANC - ANC.B8. Expected weight gain" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS"^^xsd:anyURI ;
+           fhir:l <https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS>
+         ]
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

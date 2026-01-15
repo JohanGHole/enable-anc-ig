@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="YearCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem YearCS</b></p><a name="YearCS"> </a><a name="hcYearCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/YearCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">2024<a name="YearCS-2024"> </a></td></tr><tr><td style="white-space:nowrap">2023<a name="YearCS-2023"> </a></td></tr><tr><td style="white-space:nowrap">2022<a name="YearCS-2022"> </a></td></tr><tr><td style="white-space:nowrap">2021<a name="YearCS-2021"> </a></td></tr><tr><td style="white-space:nowrap">2020<a name="YearCS-2020"> </a></td></tr><tr><td style="white-space:nowrap">2019<a name="YearCS-2019"> </a></td></tr><tr><td style="white-space:nowrap">2018<a name="YearCS-2018"> </a></td></tr><tr><td style="white-space:nowrap">2017<a name="YearCS-2017"> </a></td></tr><tr><td style="white-space:nowrap">2016<a name="YearCS-2016"> </a></td></tr><tr><td style="white-space:nowrap">2015<a name="YearCS-2015"> </a></td></tr><tr><td style="white-space:nowrap">2014<a name="YearCS-2014"> </a></td></tr><tr><td style="white-space:nowrap">2013<a name="YearCS-2013"> </a></td></tr><tr><td style="white-space:nowrap">2012<a name="YearCS-2012"> </a></td></tr><tr><td style="white-space:nowrap">2011<a name="YearCS-2011"> </a></td></tr><tr><td style="white-space:nowrap">2010<a name="YearCS-2010"> </a></td></tr><tr><td style="white-space:nowrap">2009<a name="YearCS-2009"> </a></td></tr><tr><td style="white-space:nowrap">2008<a name="YearCS-2008"> </a></td></tr><tr><td style="white-space:nowrap">2007<a name="YearCS-2007"> </a></td></tr><tr><td style="white-space:nowrap">2006<a name="YearCS-2006"> </a></td></tr><tr><td style="white-space:nowrap">2005<a name="YearCS-2005"> </a></td></tr><tr><td style="white-space:nowrap">2004<a name="YearCS-2004"> </a></td></tr><tr><td style="white-space:nowrap">2003<a name="YearCS-2003"> </a></td></tr><tr><td style="white-space:nowrap">2002<a name="YearCS-2002"> </a></td></tr><tr><td style="white-space:nowrap">2001<a name="YearCS-2001"> </a></td></tr><tr><td style="white-space:nowrap">2000<a name="YearCS-2000"> </a></td></tr><tr><td style="white-space:nowrap">1999<a name="YearCS-1999"> </a></td></tr><tr><td style="white-space:nowrap">1998<a name="YearCS-1998"> </a></td></tr><tr><td style="white-space:nowrap">1997<a name="YearCS-1997"> </a></td></tr><tr><td style="white-space:nowrap">1996<a name="YearCS-1996"> </a></td></tr><tr><td style="white-space:nowrap">1995<a name="YearCS-1995"> </a></td></tr><tr><td style="white-space:nowrap">1994<a name="YearCS-1994"> </a></td></tr><tr><td style="white-space:nowrap">1993<a name="YearCS-1993"> </a></td></tr><tr><td style="white-space:nowrap">1992<a name="YearCS-1992"> </a></td></tr><tr><td style="white-space:nowrap">1991<a name="YearCS-1991"> </a></td></tr><tr><td style="white-space:nowrap">1990<a name="YearCS-1990"> </a></td></tr><tr><td style="white-space:nowrap">1989<a name="YearCS-1989"> </a></td></tr><tr><td style="white-space:nowrap">1988<a name="YearCS-1988"> </a></td></tr><tr><td style="white-space:nowrap">1987<a name="YearCS-1987"> </a></td></tr><tr><td style="white-space:nowrap">1986<a name="YearCS-1986"> </a></td></tr><tr><td style="white-space:nowrap">1985<a name="YearCS-1985"> </a></td></tr><tr><td style="white-space:nowrap">1984<a name="YearCS-1984"> </a></td></tr><tr><td style="white-space:nowrap">1983<a name="YearCS-1983"> </a></td></tr><tr><td style="white-space:nowrap">1982<a name="YearCS-1982"> </a></td></tr><tr><td style="white-space:nowrap">1981<a name="YearCS-1981"> </a></td></tr><tr><td style="white-space:nowrap">1980<a name="YearCS-1980"> </a></td></tr><tr><td style="white-space:nowrap">1979<a name="YearCS-1979"> </a></td></tr><tr><td style="white-space:nowrap">1978<a name="YearCS-1978"> </a></td></tr><tr><td style="white-space:nowrap">1977<a name="YearCS-1977"> </a></td></tr><tr><td style="white-space:nowrap">1976<a name="YearCS-1976"> </a></td></tr><tr><td style="white-space:nowrap">1975<a name="YearCS-1975"> </a></td></tr><tr><td style="white-space:nowrap">1974<a name="YearCS-1974"> </a></td></tr><tr><td style="white-space:nowrap">1973<a name="YearCS-1973"> </a></td></tr><tr><td style="white-space:nowrap">1972<a name="YearCS-1972"> </a></td></tr><tr><td style="white-space:nowrap">1971<a name="YearCS-1971"> </a></td></tr><tr><td style="white-space:nowrap">1970<a name="YearCS-1970"> </a></td></tr></table></div>
+  </text>
+  <url value="https://hispethiopia.org/enable/CodeSystem/YearCS"/>
+  <version value="0.1.0"/>
+  <name value="YearCS"/>
+  <title value="Year"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-01-15T10:57:51+00:00"/>
+  <publisher value="HISP Ethiopia"/>
+  <contact>
+    <name value="HISP Ethiopia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hispethiopia.org/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="55"/>
+  <concept>
+    <code value="2024"/>
+    <display value="2024"/>
+  </concept>
+  <concept>
+    <code value="2023"/>
+    <display value="2023"/>
+  </concept>
+  <concept>
+    <code value="2022"/>
+    <display value="2022"/>
+  </concept>
+  <concept>
+    <code value="2021"/>
+    <display value="2021"/>
+  </concept>
+  <concept>
+    <code value="2020"/>
+    <display value="2020"/>
+  </concept>
+  <concept>
+    <code value="2019"/>
+    <display value="2019"/>
+  </concept>
+  <concept>
+    <code value="2018"/>
+    <display value="2018"/>
+  </concept>
+  <concept>
+    <code value="2017"/>
+    <display value="2017"/>
+  </concept>
+  <concept>
+    <code value="2016"/>
+    <display value="2016"/>
+  </concept>
+  <concept>
+    <code value="2015"/>
+    <display value="2015"/>
+  </concept>
+  <concept>
+    <code value="2014"/>
+    <display value="2014"/>
+  </concept>
+  <concept>
+    <code value="2013"/>
+    <display value="2013"/>
+  </concept>
+  <concept>
+    <code value="2012"/>
+    <display value="2012"/>
+  </concept>
+  <concept>
+    <code value="2011"/>
+    <display value="2011"/>
+  </concept>
+  <concept>
+    <code value="2010"/>
+    <display value="2010"/>
+  </concept>
+  <concept>
+    <code value="2009"/>
+    <display value="2009"/>
+  </concept>
+  <concept>
+    <code value="2008"/>
+    <display value="2008"/>
+  </concept>
+  <concept>
+    <code value="2007"/>
+    <display value="2007"/>
+  </concept>
+  <concept>
+    <code value="2006"/>
+    <display value="2006"/>
+  </concept>
+  <concept>
+    <code value="2005"/>
+    <display value="2005"/>
+  </concept>
+  <concept>
+    <code value="2004"/>
+    <display value="2004"/>
+  </concept>
+  <concept>
+    <code value="2003"/>
+    <display value="2003"/>
+  </concept>
+  <concept>
+    <code value="2002"/>
+    <display value="2002"/>
+  </concept>
+  <concept>
+    <code value="2001"/>
+    <display value="2001"/>
+  </concept>
+  <concept>
+    <code value="2000"/>
+    <display value="2000"/>
+  </concept>
+  <concept>
+    <code value="1999"/>
+    <display value="1999"/>
+  </concept>
+  <concept>
+    <code value="1998"/>
+    <display value="1998"/>
+  </concept>
+  <concept>
+    <code value="1997"/>
+    <display value="1997"/>
+  </concept>
+  <concept>
+    <code value="1996"/>
+    <display value="1996"/>
+  </concept>
+  <concept>
+    <code value="1995"/>
+    <display value="1995"/>
+  </concept>
+  <concept>
+    <code value="1994"/>
+    <display value="1994"/>
+  </concept>
+  <concept>
+    <code value="1993"/>
+    <display value="1993"/>
+  </concept>
+  <concept>
+    <code value="1992"/>
+    <display value="1992"/>
+  </concept>
+  <concept>
+    <code value="1991"/>
+    <display value="1991"/>
+  </concept>
+  <concept>
+    <code value="1990"/>
+    <display value="1990"/>
+  </concept>
+  <concept>
+    <code value="1989"/>
+    <display value="1989"/>
+  </concept>
+  <concept>
+    <code value="1988"/>
+    <display value="1988"/>
+  </concept>
+  <concept>
+    <code value="1987"/>
+    <display value="1987"/>
+  </concept>
+  <concept>
+    <code value="1986"/>
+    <display value="1986"/>
+  </concept>
+  <concept>
+    <code value="1985"/>
+    <display value="1985"/>
+  </concept>
+  <concept>
+    <code value="1984"/>
+    <display value="1984"/>
+  </concept>
+  <concept>
+    <code value="1983"/>
+    <display value="1983"/>
+  </concept>
+  <concept>
+    <code value="1982"/>
+    <display value="1982"/>
+  </concept>
+  <concept>
+    <code value="1981"/>
+    <display value="1981"/>
+  </concept>
+  <concept>
+    <code value="1980"/>
+    <display value="1980"/>
+  </concept>
+  <concept>
+    <code value="1979"/>
+    <display value="1979"/>
+  </concept>
+  <concept>
+    <code value="1978"/>
+    <display value="1978"/>
+  </concept>
+  <concept>
+    <code value="1977"/>
+    <display value="1977"/>
+  </concept>
+  <concept>
+    <code value="1976"/>
+    <display value="1976"/>
+  </concept>
+  <concept>
+    <code value="1975"/>
+    <display value="1975"/>
+  </concept>
+  <concept>
+    <code value="1974"/>
+    <display value="1974"/>
+  </concept>
+  <concept>
+    <code value="1973"/>
+    <display value="1973"/>
+  </concept>
+  <concept>
+    <code value="1972"/>
+    <display value="1972"/>
+  </concept>
+  <concept>
+    <code value="1971"/>
+    <display value="1971"/>
+  </concept>
+  <concept>
+    <code value="1970"/>
+    <display value="1970"/>
+  </concept>
+</CodeSystem>

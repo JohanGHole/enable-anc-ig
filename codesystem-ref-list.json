@@ -1,0 +1,627 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS",
+      "title" : "ANC.B10. Preventive deworming antihelminthic treatment provided",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PromotionAndTreatmentQuestionnaire_ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS.html" : "ANC.B10. Preventive deworming antihelminthic treatment provided value set",
+      "ValueSet-ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS.html" : "ANC.B10. Preventive deworming antihelminthic treatment provided value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B6.EducationLevelCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B6.EducationLevelCS",
+      "title" : "ANC.B6. Education level",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANC.B6.EducationLevelVS.html" : "ANC.B6. Education level value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B6.SourceOfGestationalAgeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B6.SourceOfGestationalAgeCS",
+      "title" : "ANC.B6. Source of gestational age",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-WomanSProfileAndHistoryQuestionnaire_ANC.B6.SourceOfGestationalAgeVS.html" : "ANC.B6. Source of gestational age value set",
+      "ValueSet-ANC.B6.SourceOfGestationalAgeVS.html" : "ANC.B6. Source of gestational age value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B7.FetalMovementCS",
+      "title" : "ANC.B7. Fetal movement",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANC.B7.FetalMovementVS.html" : "ANC.B7. Fetal movement value set",
+      "ValueSet-ANCExaminationQuestionnaire_ANC.B7.FetalMovementVS.html" : "ANC.B7. Fetal movement value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.ExpectedWeightGainCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.ExpectedWeightGainCS",
+      "title" : "ANC.B8. Expected weight gain",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-WomanSProfileAndHistoryQuestionnaire_ANC.B8.ExpectedWeightGainVS.html" : "ANC.B8. Expected weight gain value set",
+      "ValueSet-ANC.B8.ExpectedWeightGainVS.html" : "ANC.B8. Expected weight gain value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.FetalPresentationCS",
+      "title" : "ANC.B8. Fetal presentation",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANC.B8.FetalPresentationVS.html" : "ANC.B8. Fetal presentation value set",
+      "ValueSet-ANCExaminationQuestionnaire_ANC.B8.FetalPresentationVS.html" : "ANC.B8. Fetal presentation value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.LABPLUS14CS",
+      "title" : "ANC.B8. LAB PLUS 1-4",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCExaminationQuestionnaire_ANC.B8.LABPLUS14VS.html" : "ANC.B8. LAB PLUS 1-4 value set",
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B8.LABPLUS14VS.html" : "ANC.B8. LAB PLUS 1-4 value set",
+      "ValueSet-ANC.B8.LABPLUS14VS.html" : "ANC.B8. LAB PLUS 1-4 value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.NutritionalStatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.NutritionalStatusCS",
+      "title" : "ANC.B8. Nutritional status",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANC.B8.NutritionalStatusVS.html" : "ANC.B8. Nutritional status value set",
+      "ValueSet-ANCExaminationQuestionnaire_ANC.B8.NutritionalStatusVS.html" : "ANC.B8. Nutritional status value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.PelvicExamResultVisualCS",
+      "title" : "ANC.B8. Pelvic exam result (visual)",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCExaminationQuestionnaire_ANC.B8.PelvicExamResultVisualVS.html" : "ANC.B8. Pelvic exam result (visual) value set",
+      "ValueSet-ANC.B8.PelvicExamResultVisualVS.html" : "ANC.B8. Pelvic exam result (visual) value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.WeightCategoryCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8.WeightCategoryCS",
+      "title" : "ANC.B8. Weight category",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-WomanSProfileAndHistoryQuestionnaire_ANC.B8.WeightCategoryVS.html" : "ANC.B8. Weight category value set",
+      "ValueSet-ANC.B8.WeightCategoryVS.html" : "ANC.B8. Weight category value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B8NumberOfFetusesCS",
+      "title" : "ANC.B8 Number of fetuses",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCExaminationQuestionnaire_ANC.B8NumberOfFetusesVS.html" : "ANC.B8 Number of fetuses value set",
+      "ValueSet-ANC.B8NumberOfFetusesVS.html" : "ANC.B8 Number of fetuses value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.BloodTypeCS",
+      "title" : "ANC.B9. Blood type",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANC.B9.BloodTypeVS.html" : "ANC.B9. Blood type value set",
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.BloodTypeVS.html" : "ANC.B9. Blood type value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultGlucoseCS",
+      "title" : "ANC.B9. Urine dipstick result glucose",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultGlucoseVS.html" : "ANC.B9. Urine dipstick result glucose value set",
+      "ValueSet-ANC.B9.UrineDipstickResultGlucoseVS.html" : "ANC.B9. Urine dipstick result glucose value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultLeukocytesCS",
+      "title" : "ANC.B9. Urine dipstick result leukocytes",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultLeukocytesVS.html" : "ANC.B9. Urine dipstick result leukocytes value set",
+      "ValueSet-ANC.B9.UrineDipstickResultLeukocytesVS.html" : "ANC.B9. Urine dipstick result leukocytes value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultNitritesCS",
+      "title" : "ANC.B9. Urine dipstick result nitrites",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultNitritesVS.html" : "ANC.B9. Urine dipstick result nitrites value set",
+      "ValueSet-ANC.B9.UrineDipstickResultNitritesVS.html" : "ANC.B9. Urine dipstick result nitrites value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.B9.UrineDipstickResultProteinCS",
+      "title" : "ANC.B9. Urine dipstick result protein",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANC.B9.UrineDipstickResultProteinVS.html" : "ANC.B9. Urine dipstick result protein value set",
+      "ValueSet-ANC.B9.UrineDipstickResultProteinVS.html" : "ANC.B9. Urine dipstick result protein value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BD.FeedingOptionCS",
+      "title" : "ANC. BD. Feeding Option",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PostpartumQuestionnaire_ANC.BD.FeedingOptionVS.html" : "ANC. BD. Feeding Option value set",
+      "ValueSet-ANC.BD.FeedingOptionVS.html" : "ANC. BD. Feeding Option value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BDFeedingOptionsCS",
+      "title" : "ANC.BD Feeding options",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PregnancyOutcomeQuestionnaire_ANC.BDFeedingOptionsVS.html" : "ANC.BD Feeding options value set",
+      "ValueSet-ANC.BDFeedingOptionsVS.html" : "ANC.BD Feeding options value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BDPlacentaCS",
+      "title" : "ANC.BD Placenta",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANC.BDPlacentaVS.html" : "ANC.BD Placenta value set",
+      "ValueSet-PregnancyOutcomeQuestionnaire_ANC.BDPlacentaVS.html" : "ANC.BD Placenta value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.BDStillBirthCS",
+      "title" : "ANC.BD Still Birth",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PregnancyOutcomeQuestionnaire_ANC.BDStillBirthVS.html" : "ANC.BD Still Birth value set",
+      "ValueSet-ANC.BDStillBirthVS.html" : "ANC.BD Still Birth value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANC.ReasonForPregnancyOutcomeCS",
+      "title" : "ANC. Reason for Pregnancy Outcome",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PregnancyOutcomeQuestionnaire_ANC.ReasonForPregnancyOutcomeVS.html" : "ANC. Reason for Pregnancy Outcome value set",
+      "ValueSet-ANC.ReasonForPregnancyOutcomeVS.html" : "ANC. Reason for Pregnancy Outcome value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCARVRxForMotherCS",
+      "title" : "ANC ARV Rx for Mother",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCARVRxForMotherVS.html" : "ANC ARV Rx for Mother value set",
+      "ValueSet-PostpartumQuestionnaire_ANCARVRxForMotherVS.html" : "ANC ARV Rx for Mother value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABAnaemiaDiagnosisCS",
+      "title" : "ANC LAB Anaemia diagnosis",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCLABAnaemiaDiagnosisVS.html" : "ANC LAB Anaemia diagnosis value set",
+      "ValueSet-PromotionAndTreatmentQuestionnaire_ANCLABAnaemiaDiagnosisVS.html" : "ANC LAB Anaemia diagnosis value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABMalariaDiagnosisCS",
+      "title" : "ANC LAB Malaria diagnosis",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PromotionAndTreatmentQuestionnaire_ANCLABMalariaDiagnosisVS.html" : "ANC LAB Malaria diagnosis value set",
+      "ValueSet-ANCLABMalariaDiagnosisVS.html" : "ANC LAB Malaria diagnosis value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABMalariaMpsCS",
+      "title" : "ANC LAB Malaria mps",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCLABMalariaMpsVS.html" : "ANC LAB Malaria mps value set",
+      "ValueSet-ANCLABMalariaMpsVS.html" : "ANC LAB Malaria mps value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalePartnerSelfTestingKitResultsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLABMalePartnerSelfTestingKitResultsCS",
+      "title" : "ANC LAB Male Partner self testing kit results",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PromotionAndTreatmentQuestionnaire_ANCLABMalePartnerSelfTestingKitResultsVS.html" : "ANC LAB Male Partner self testing kit results value set",
+      "ValueSet-ANCLABMalePartnerSelfTestingKitResultsVS.html" : "ANC LAB Male Partner self testing kit results value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCLabEMTCTCodesCS",
+      "title" : "ANC Lab EMTCT Codes",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCLabEMTCTCodesVS.html" : "ANC Lab EMTCT Codes value set",
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCLabEMTCTCodesVS.html" : "ANC Lab EMTCT Codes value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCMUACColorCodeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCMUACColorCodeCS",
+      "title" : "ANC MUAC color code",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCExaminationQuestionnaire_ANCMUACColorCodeVS.html" : "ANC MUAC color code value set",
+      "ValueSet-ANCMUACColorCodeVS.html" : "ANC MUAC color code value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCOUTPOSTFamilyPlanningCS",
+      "title" : "ANC - OUT_POST - Family Planning",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCOUTPOSTFamilyPlanningVS.html" : "ANC - OUT_POST - Family Planning value set",
+      "ValueSet-PostpartumQuestionnaire_ANCOUTPOSTFamilyPlanningVS.html" : "ANC - OUT_POST - Family Planning value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCPostpartumCheckTimingCS",
+      "title" : "ANC - postpartum check timing",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCPostpartumCheckTimingVS.html" : "ANC - postpartum check timing value set",
+      "ValueSet-PostpartumQuestionnaire_ANCPostpartumCheckTimingVS.html" : "ANC - postpartum check timing value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCRelationPresentingPartBrimOfPelvicCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCRelationPresentingPartBrimOfPelvicCS",
+      "title" : "ANC Relation Presenting Part/Brim of pelvic",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCRelationPresentingPartBrimOfPelvicVS.html" : "ANC Relation Presenting Part/Brim of pelvic value set",
+      "ValueSet-ANCExaminationQuestionnaire_ANCRelationPresentingPartBrimOfPelvicVS.html" : "ANC Relation Presenting Part/Brim of pelvic value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCSickleCellCS",
+      "title" : "ANC Sickle cell",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCSickleCellVS.html" : "ANC Sickle cell value set",
+      "ValueSet-ANCSickleCellVS.html" : "ANC Sickle cell value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCSingleOrMultipleCS",
+      "title" : "ANC- Single or multiple",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PregnancyOutcomeQuestionnaire_ANCSingleOrMultipleVS.html" : "ANC- Single or multiple value set",
+      "ValueSet-ANCSingleOrMultipleVS.html" : "ANC- Single or multiple value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCSyphilisHepatitisResultsCS",
+      "title" : "ANC Syphilis Hepatitis results",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCSyphilisHepatitisResultsVS.html" : "ANC Syphilis Hepatitis results value set",
+      "ValueSet-ANCSyphilisHepatitisResultsVS.html" : "ANC Syphilis Hepatitis results value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ANCTBResultsCS",
+      "title" : "ANC TB results",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCTBResultsVS.html" : "ANC TB results value set",
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_ANCTBResultsVS.html" : "ANC TB results value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BDOtherReasonForPregnancyOutcomeCS",
+      "title" : "BD-Other Reason for Pregnancy Outcome",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-BDOtherReasonForPregnancyOutcomeVS.html" : "BD-Other Reason for Pregnancy Outcome value set",
+      "ValueSet-PregnancyOutcomeQuestionnaire_BDOtherReasonForPregnancyOutcomeVS.html" : "BD-Other Reason for Pregnancy Outcome value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BDSexOfChildCS",
+      "title" : "BD-Sex of child",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PregnancyOutcomeQuestionnaire_BDSexOfChildVS.html" : "BD-Sex of child value set",
+      "ValueSet-BDSexOfChildVS.html" : "BD-Sex of child value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FollowUpFrequencyCS",
+      "title" : "Follow-up frequency",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PromotionAndTreatmentQuestionnaire_FollowUpFrequencyVS.html" : "Follow-up frequency value set",
+      "ValueSet-FollowUpFrequencyVS.html" : "Follow-up frequency value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/HIVStatusProfileCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HIVStatusProfileCS",
+      "title" : "HIV status Profile",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-HIVStatusProfileVS.html" : "HIV status Profile value set",
+      "ValueSet-WomanSProfileAndHistoryQuestionnaire_HIVStatusProfileVS.html" : "HIV status Profile value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/IptpDose112CS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IptpDose112CS",
+      "title" : "IPTp dose 1-12",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-IptpDose112VS.html" : "IPTp dose 1-12 value set",
+      "ValueSet-PromotionAndTreatmentQuestionnaire_IptpDose112VS.html" : "IPTp dose 1-12 value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LABViralLoadStatusCS",
+      "title" : "LAB Viral load status",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_LABViralLoadStatusVS.html" : "LAB Viral load status value set",
+      "ValueSet-LABViralLoadStatusVS.html" : "LAB Viral load status value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/MaritalStatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MaritalStatusCS",
+      "title" : "Marital Status",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-MaritalStatusVS.html" : "Marital Status value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ModeOfDeliveryCS",
+      "title" : "Mode of delivery",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PregnancyOutcomeQuestionnaire_ModeOfDeliveryVS.html" : "Mode of delivery value set",
+      "ValueSet-ModeOfDeliveryVS.html" : "Mode of delivery value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/OccupationCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OccupationCS",
+      "title" : "Occupation",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-OccupationVS.html" : "Occupation value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PartnerHIVTestResultCS",
+      "title" : "Partner HIV test result",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_PartnerHIVTestResultVS.html" : "Partner HIV test result value set",
+      "ValueSet-PartnerHIVTestResultVS.html" : "Partner HIV test result value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PositiveNegativeUnknownCS",
+      "title" : "Positive/Negative/Unknown",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PostpartumQuestionnaire_PositiveNegativeUnknownVS.html" : "Positive/Negative/Unknown value set",
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_PositiveNegativeUnknownVS.html" : "Positive/Negative/Unknown value set",
+      "ValueSet-PositiveNegativeUnknownVS.html" : "Positive/Negative/Unknown value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/PregnantWomanReceivedAsReferralFromCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PregnantWomanReceivedAsReferralFromCS",
+      "title" : "Pregnant Woman Received as Referral from",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-PromotionAndTreatmentQuestionnaire_PregnantWomanReceivedAsReferralFromVS.html" : "Pregnant Woman Received as Referral from value set",
+      "ValueSet-PregnantWomanReceivedAsReferralFromVS.html" : "Pregnant Woman Received as Referral from value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TermOrPretermCS",
+      "title" : "Term or preterm",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-TermOrPretermVS.html" : "Term or preterm value set",
+      "ValueSet-PregnancyOutcomeQuestionnaire_TermOrPretermVS.html" : "Term or preterm value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VitalStatusOfChildCS",
+      "title" : "Vital status of child",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-VitalStatusOfChildVS.html" : "Vital status of child value set",
+      "ValueSet-PregnancyOutcomeQuestionnaire_VitalStatusOfChildVS.html" : "Vital status of child value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "WHOClinicalStageCS",
+      "title" : "WHO Clinical stage",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-WHOClinicalStageVS.html" : "WHO Clinical stage value set",
+      "ValueSet-LaboratoryTestsAndImagingQuestionnaire_WHOClinicalStageVS.html" : "WHO Clinical stage value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/YearCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "YearCS",
+      "title" : "Year",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCExaminationQuestionnaire_YearVS.html" : "Year value set",
+      "ValueSet-YearVS.html" : "Year value set"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "YesNoUnknownCS",
+      "title" : "Yes/No/Unknown",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-ANCExaminationQuestionnaire_YesNoUnknownVS.html" : "Yes/No/Unknown value set",
+      "ValueSet-YesNoUnknownVS.html" : "Yes/No/Unknown value set"
+    }
+  ]
+}

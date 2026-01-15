@@ -1,0 +1,1263 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",
+      "title" : "ANC.B10. Preventive deworming antihelminthic treatment provided value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",
+      "title" : "ANC.B10. Preventive deworming antihelminthic treatment provided value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.EducationLevelVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B6.EducationLevelVS",
+      "title" : "ANC.B6. Education level value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B6.EducationLevelCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B6.SourceOfGestationalAgeVS",
+      "title" : "ANC.B6. Source of gestational age value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B6.SourceOfGestationalAgeCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B6.SourceOfGestationalAgeVS",
+      "title" : "ANC.B6. Source of gestational age value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B6.SourceOfGestationalAgeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B7.FetalMovementVS",
+      "title" : "ANC.B7. Fetal movement value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B7.FetalMovementVS",
+      "title" : "ANC.B7. Fetal movement value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.ExpectedWeightGainVS",
+      "title" : "ANC.B8. Expected weight gain value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.ExpectedWeightGainCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8.ExpectedWeightGainVS",
+      "title" : "ANC.B8. Expected weight gain value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.ExpectedWeightGainCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.FetalPresentationVS",
+      "title" : "ANC.B8. Fetal presentation value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8.FetalPresentationVS",
+      "title" : "ANC.B8. Fetal presentation value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.LABPLUS14VS",
+      "title" : "ANC.B8. LAB PLUS 1-4 value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.LABPLUS14VS",
+      "title" : "ANC.B8. LAB PLUS 1-4 value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8.LABPLUS14VS",
+      "title" : "ANC.B8. LAB PLUS 1-4 value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination",
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.NutritionalStatusVS",
+      "title" : "ANC.B8. Nutritional status value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.NutritionalStatusCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8.NutritionalStatusVS",
+      "title" : "ANC.B8. Nutritional status value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.NutritionalStatusCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.PelvicExamResultVisualVS",
+      "title" : "ANC.B8. Pelvic exam result (visual) value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8.PelvicExamResultVisualVS",
+      "title" : "ANC.B8. Pelvic exam result (visual) value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8.WeightCategoryVS",
+      "title" : "ANC.B8. Weight category value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.WeightCategoryCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8.WeightCategoryVS",
+      "title" : "ANC.B8. Weight category value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8.WeightCategoryCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B8NumberOfFetusesVS",
+      "title" : "ANC.B8 Number of fetuses value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B8NumberOfFetusesVS",
+      "title" : "ANC.B8 Number of fetuses value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B9.BloodTypeVS",
+      "title" : "ANC.B9. Blood type value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B9.BloodTypeVS",
+      "title" : "ANC.B9. Blood type value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultGlucoseVS",
+      "title" : "ANC.B9. Urine dipstick result glucose value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultGlucoseVS",
+      "title" : "ANC.B9. Urine dipstick result glucose value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultLeukocytesVS",
+      "title" : "ANC.B9. Urine dipstick result leukocytes value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultLeukocytesVS",
+      "title" : "ANC.B9. Urine dipstick result leukocytes value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultNitritesVS",
+      "title" : "ANC.B9. Urine dipstick result nitrites value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultNitritesVS",
+      "title" : "ANC.B9. Urine dipstick result nitrites value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultProteinVS",
+      "title" : "ANC.B9. Urine dipstick result protein value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.B9.UrineDipstickResultProteinVS",
+      "title" : "ANC.B9. Urine dipstick result protein value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.BD.FeedingOptionVS",
+      "title" : "ANC. BD. Feeding Option value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.BD.FeedingOptionVS",
+      "title" : "ANC. BD. Feeding Option value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Postpartum.html" : "Postpartum"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.BDFeedingOptionsVS",
+      "title" : "ANC.BD Feeding options value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.BDFeedingOptionsVS",
+      "title" : "ANC.BD Feeding options value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.BDPlacentaVS",
+      "title" : "ANC.BD Placenta value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.BDPlacentaVS",
+      "title" : "ANC.BD Placenta value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.BDStillBirthVS",
+      "title" : "ANC.BD Still Birth value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.BDStillBirthVS",
+      "title" : "ANC.BD Still Birth value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANC.ReasonForPregnancyOutcomeVS",
+      "title" : "ANC. Reason for Pregnancy Outcome value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANC.ReasonForPregnancyOutcomeVS",
+      "title" : "ANC. Reason for Pregnancy Outcome value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCARVRxForMotherVS",
+      "title" : "ANC ARV Rx for Mother value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCARVRxForMotherVS",
+      "title" : "ANC ARV Rx for Mother value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Postpartum.html" : "Postpartum"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABAnaemiaDiagnosisVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCLABAnaemiaDiagnosisVS",
+      "title" : "ANC LAB Anaemia diagnosis value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABAnaemiaDiagnosisVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCLABAnaemiaDiagnosisVS",
+      "title" : "ANC LAB Anaemia diagnosis value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaDiagnosisVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCLABMalariaDiagnosisVS",
+      "title" : "ANC LAB Malaria diagnosis value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaDiagnosisVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCLABMalariaDiagnosisVS",
+      "title" : "ANC LAB Malaria diagnosis value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCLABMalariaMpsVS",
+      "title" : "ANC LAB Malaria mps value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCLABMalariaMpsVS",
+      "title" : "ANC LAB Malaria mps value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalePartnerSelfTestingKitResultsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCLABMalePartnerSelfTestingKitResultsVS",
+      "title" : "ANC LAB Male Partner self testing kit results value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABMalePartnerSelfTestingKitResultsCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalePartnerSelfTestingKitResultsVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCLABMalePartnerSelfTestingKitResultsVS",
+      "title" : "ANC LAB Male Partner self testing kit results value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLABMalePartnerSelfTestingKitResultsCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCLabEMTCTCodesVS",
+      "title" : "ANC Lab EMTCT Codes value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCLabEMTCTCodesVS",
+      "title" : "ANC Lab EMTCT Codes value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCMUACColorCodeVS",
+      "title" : "ANC MUAC color code value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCMUACColorCodeCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCMUACColorCodeVS",
+      "title" : "ANC MUAC color code value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCMUACColorCodeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCOUTPOSTFamilyPlanningVS",
+      "title" : "ANC - OUT_POST - Family Planning value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCOUTPOSTFamilyPlanningVS",
+      "title" : "ANC - OUT_POST - Family Planning value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Postpartum.html" : "Postpartum"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCPostpartumCheckTimingVS",
+      "title" : "ANC - postpartum check timing value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCPostpartumCheckTimingVS",
+      "title" : "ANC - postpartum check timing value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Postpartum.html" : "Postpartum"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCRelationPresentingPartBrimOfPelvicVS",
+      "title" : "ANC Relation Presenting Part/Brim of pelvic value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCRelationPresentingPartBrimOfPelvicCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCRelationPresentingPartBrimOfPelvicVS",
+      "title" : "ANC Relation Presenting Part/Brim of pelvic value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCRelationPresentingPartBrimOfPelvicCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCSickleCellVS",
+      "title" : "ANC Sickle cell value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCSickleCellVS",
+      "title" : "ANC Sickle cell value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS"],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCSingleOrMultipleVS",
+      "title" : "ANC- Single or multiple value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCSingleOrMultipleVS",
+      "title" : "ANC- Single or multiple value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCSyphilisHepatitisResultsVS",
+      "title" : "ANC Syphilis Hepatitis results value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCSyphilisHepatitisResultsVS",
+      "title" : "ANC Syphilis Hepatitis results value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCTBResultsVS",
+      "title" : "ANC TB results value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ANCTBResultsVS",
+      "title" : "ANC TB results value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS"],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BDOtherReasonForPregnancyOutcomeVS",
+      "title" : "BD-Other Reason for Pregnancy Outcome value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "BDOtherReasonForPregnancyOutcomeVS",
+      "title" : "BD-Other Reason for Pregnancy Outcome value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BDSexOfChildVS",
+      "title" : "BD-Sex of child value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "BDSexOfChildVS",
+      "title" : "BD-Sex of child value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS"],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/FollowUpFrequencyVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "FollowUpFrequencyVS",
+      "title" : "Follow-up frequency value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/FollowUpFrequencyVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "FollowUpFrequencyVS",
+      "title" : "Follow-up frequency value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "HIVStatusProfileVS",
+      "title" : "HIV status Profile value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/HIVStatusProfileCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "HIVStatusProfileVS",
+      "title" : "HIV status Profile value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/HIVStatusProfileCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-WomanSProfileAndHistory.html" : "Woman's Profile and History"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/IptpDose112VS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IptpDose112VS",
+      "title" : "IPTp dose 1-12 value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/IptpDose112CS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/IptpDose112VS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IptpDose112VS",
+      "title" : "IPTp dose 1-12 value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/IptpDose112CS"],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "LABViralLoadStatusVS",
+      "title" : "LAB Viral load status value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "LABViralLoadStatusVS",
+      "title" : "LAB Viral load status value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/MaritalStatusVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "MaritalStatusVS",
+      "title" : "Marital Status value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/MaritalStatusCS"],
+      "uses" : {
+      },
+      "StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ModeOfDeliveryVS",
+      "title" : "Mode of delivery value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ModeOfDeliveryVS",
+      "title" : "Mode of delivery value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/OccupationVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "OccupationVS",
+      "title" : "Occupation value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/OccupationCS"],
+      "uses" : {
+      },
+      "StructureDefinition-ANCRMNCAHAntenatalCareRegistryANC.html" : "ANC - RMNCAH - Antenatal care registry (ANC)"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PartnerHIVTestResultVS",
+      "title" : "Partner HIV test result value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PartnerHIVTestResultVS",
+      "title" : "Partner HIV test result value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PositiveNegativeUnknownVS",
+      "title" : "Positive/Negative/Unknown value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PositiveNegativeUnknownVS",
+      "title" : "Positive/Negative/Unknown value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PositiveNegativeUnknownVS",
+      "title" : "Positive/Negative/Unknown value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Postpartum.html" : "Postpartum",
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PregnantWomanReceivedAsReferralFromVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnantWomanReceivedAsReferralFromVS",
+      "title" : "Pregnant Woman Received as Referral from value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PregnantWomanReceivedAsReferralFromCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/PregnantWomanReceivedAsReferralFromVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PregnantWomanReceivedAsReferralFromVS",
+      "title" : "Pregnant Woman Received as Referral from value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/PregnantWomanReceivedAsReferralFromCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PromotionAndTreatment.html" : "Promotion and Treatment "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/TermOrPretermVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TermOrPretermVS",
+      "title" : "Term or preterm value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/TermOrPretermVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TermOrPretermVS",
+      "title" : "Term or preterm value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS"],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VitalStatusOfChildVS",
+      "title" : "Vital status of child value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VitalStatusOfChildVS",
+      "title" : "Vital status of child value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PregnancyOutcome.html" : "Pregnancy outcome"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "WHOClinicalStageVS",
+      "title" : "WHO Clinical stage value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS"
+      ]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "WHOClinicalStageVS",
+      "title" : "WHO Clinical stage value set",
+      "description" : "",
+      "systems" : [
+        "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/YearVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "YearVS",
+      "title" : "Year value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/YearCS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/YearVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "YearVS",
+      "title" : "Year value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/YearCS"],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "YesNoUnknownVS",
+      "title" : "Yes/No/Unknown value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS"]
+    },
+    {
+      "url" : "https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "YesNoUnknownVS",
+      "title" : "Yes/No/Unknown value set",
+      "description" : "",
+      "systems" : ["https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS"],
+      "uses" : {
+      },
+      "StructureDefinition-ANCExamination.html" : "ANC Examination"
+    }
+  ]
+}

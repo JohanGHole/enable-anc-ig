@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "YesNoUnknownCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem YesNoUnknownCS</b></p><a name=\"YesNoUnknownCS\"> </a><a name=\"hcYesNoUnknownCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Yes<a name=\"YesNoUnknownCS-Yes\"> </a></td></tr><tr><td style=\"white-space:nowrap\">No<a name=\"YesNoUnknownCS-No\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Unknown<a name=\"YesNoUnknownCS-Unknown\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS",
+  "version" : "0.1.0",
+  "name" : "YesNoUnknownCS",
+  "title" : "Yes/No/Unknown",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Yes",
+    "display" : "Yes"
+  },
+  {
+    "code" : "No",
+    "display" : "No"
+  },
+  {
+    "code" : "Unknown",
+    "display" : "Unknown"
+  }]
+}

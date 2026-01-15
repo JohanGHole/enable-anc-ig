@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ANCTBResultsCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANCTBResultsCS</b></p><a name=\"ANCTBResultsCS\"> </a><a name=\"hcANCTBResultsCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">No_signs<a name=\"ANCTBResultsCS-No_signs\"> </a></td><td>1. No signs</td></tr><tr><td style=\"white-space:nowrap\">Presumptive<a name=\"ANCTBResultsCS-Presumptive\"> </a></td><td>2. Presumptive (refer or sputum sent)</td></tr><tr><td style=\"white-space:nowrap\">Diagnosed clinically<a name=\"ANCTBResultsCS-Diagnosedclinically\"> </a></td><td>3C. TB diagnosed clinically</td></tr><tr><td style=\"white-space:nowrap\">Gene Xpert<a name=\"ANCTBResultsCS-GeneXpert\"> </a></td><td>3G. TB diagnosed Gene Xpert</td></tr><tr><td style=\"white-space:nowrap\">TB LAM<a name=\"ANCTBResultsCS-TBLAM\"> </a></td><td>3L. TB diagnosed TB LAM</td></tr><tr><td style=\"white-space:nowrap\">TB Microscopy<a name=\"ANCTBResultsCS-TBMicroscopy\"> </a></td><td>3M. TB diagnosed TB Microscopy</td></tr><tr><td style=\"white-space:nowrap\">Chest Xray<a name=\"ANCTBResultsCS-ChestXray\"> </a></td><td>3X. TB diagnosed Chest Xray</td></tr><tr><td style=\"white-space:nowrap\">Currently on medication<a name=\"ANCTBResultsCS-Currentlyonmedication\"> </a></td><td>4. Currently on TB medication</td></tr><tr><td style=\"white-space:nowrap\">Completed treatment<a name=\"ANCTBResultsCS-Completedtreatment\"> </a></td><td>5. Completed TB treatment</td></tr><tr><td style=\"white-space:nowrap\">Other TB result, specify<a name=\"ANCTBResultsCS-OtherTBresult.44specify\"> </a></td><td>3O. TB diagnosed Other specify</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS"^^xsd:anyURI ;
+     fhir:l <https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ANCTBResultsCS"] ; # 
+  fhir:title [ fhir:v "ANC TB results"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-15T10:57:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HISP Ethiopia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://hispethiopia.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "No_signs" ] ;
+     fhir:display [ fhir:v "1. No signs" ]
+  ] [
+     fhir:code [ fhir:v "Presumptive" ] ;
+     fhir:display [ fhir:v "2. Presumptive (refer or sputum sent)" ]
+  ] [
+     fhir:code [ fhir:v "Diagnosed clinically" ] ;
+     fhir:display [ fhir:v "3C. TB diagnosed clinically" ]
+  ] [
+     fhir:code [ fhir:v "Gene Xpert" ] ;
+     fhir:display [ fhir:v "3G. TB diagnosed Gene Xpert" ]
+  ] [
+     fhir:code [ fhir:v "TB LAM" ] ;
+     fhir:display [ fhir:v "3L. TB diagnosed TB LAM" ]
+  ] [
+     fhir:code [ fhir:v "TB Microscopy" ] ;
+     fhir:display [ fhir:v "3M. TB diagnosed TB Microscopy" ]
+  ] [
+     fhir:code [ fhir:v "Chest Xray" ] ;
+     fhir:display [ fhir:v "3X. TB diagnosed Chest Xray" ]
+  ] [
+     fhir:code [ fhir:v "Currently on medication" ] ;
+     fhir:display [ fhir:v "4. Currently on TB medication" ]
+  ] [
+     fhir:code [ fhir:v "Completed treatment" ] ;
+     fhir:display [ fhir:v "5. Completed TB treatment" ]
+  ] [
+     fhir:code [ fhir:v "Other TB result, specify" ] ;
+     fhir:display [ fhir:v "3O. TB diagnosed Other specify" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

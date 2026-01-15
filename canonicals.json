@@ -1,0 +1,836 @@
+[
+  {
+    "id" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS"
+  },
+  {
+    "id" : "ANC.B6.EducationLevelCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B6.EducationLevelCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B6.EducationLevelCS"
+  },
+  {
+    "id" : "ANC.B6.SourceOfGestationalAgeCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B6.SourceOfGestationalAgeCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B6.SourceOfGestationalAgeCS"
+  },
+  {
+    "id" : "ANC.B7.FetalMovementCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B7.FetalMovementCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B7.FetalMovementCS"
+  },
+  {
+    "id" : "ANC.B8.ExpectedWeightGainCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.ExpectedWeightGainCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.ExpectedWeightGainCS"
+  },
+  {
+    "id" : "ANC.B8.FetalPresentationCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.FetalPresentationCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.FetalPresentationCS"
+  },
+  {
+    "id" : "ANC.B8.LABPLUS14CS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.LABPLUS14CS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.LABPLUS14CS"
+  },
+  {
+    "id" : "ANC.B8.NutritionalStatusCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.NutritionalStatusCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.NutritionalStatusCS"
+  },
+  {
+    "id" : "ANC.B8.PelvicExamResultVisualCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.PelvicExamResultVisualCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.PelvicExamResultVisualCS"
+  },
+  {
+    "id" : "ANC.B8.WeightCategoryCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8.WeightCategoryCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.WeightCategoryCS"
+  },
+  {
+    "id" : "ANC.B8NumberOfFetusesCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B8NumberOfFetusesCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8NumberOfFetusesCS"
+  },
+  {
+    "id" : "ANC.B9.BloodTypeCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.BloodTypeCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.BloodTypeCS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultGlucoseCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultGlucoseCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultGlucoseCS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultLeukocytesCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultLeukocytesCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultLeukocytesCS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultNitritesCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultNitritesCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultNitritesCS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultProteinCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.B9.UrineDipstickResultProteinCS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultProteinCS"
+  },
+  {
+    "id" : "ANC.BD.FeedingOptionCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BD.FeedingOptionCS",
+    "version" : "0.1.0",
+    "name" : "ANC.BD.FeedingOptionCS"
+  },
+  {
+    "id" : "ANC.BDFeedingOptionsCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDFeedingOptionsCS",
+    "version" : "0.1.0",
+    "name" : "ANC.BDFeedingOptionsCS"
+  },
+  {
+    "id" : "ANC.BDPlacentaCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDPlacentaCS",
+    "version" : "0.1.0",
+    "name" : "ANC.BDPlacentaCS"
+  },
+  {
+    "id" : "ANC.BDStillBirthCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.BDStillBirthCS",
+    "version" : "0.1.0",
+    "name" : "ANC.BDStillBirthCS"
+  },
+  {
+    "id" : "ANC.ReasonForPregnancyOutcomeCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANC.ReasonForPregnancyOutcomeCS",
+    "version" : "0.1.0",
+    "name" : "ANC.ReasonForPregnancyOutcomeCS"
+  },
+  {
+    "id" : "ANCARVRxForMotherCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCARVRxForMotherCS",
+    "version" : "0.1.0",
+    "name" : "ANCARVRxForMotherCS"
+  },
+  {
+    "id" : "ANCLABAnaemiaDiagnosisCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS",
+    "version" : "0.1.0",
+    "name" : "ANCLABAnaemiaDiagnosisCS"
+  },
+  {
+    "id" : "ANCLABMalariaDiagnosisCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaDiagnosisCS",
+    "version" : "0.1.0",
+    "name" : "ANCLABMalariaDiagnosisCS"
+  },
+  {
+    "id" : "ANCLABMalariaMpsCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalariaMpsCS",
+    "version" : "0.1.0",
+    "name" : "ANCLABMalariaMpsCS"
+  },
+  {
+    "id" : "ANCLABMalePartnerSelfTestingKitResultsCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABMalePartnerSelfTestingKitResultsCS",
+    "version" : "0.1.0",
+    "name" : "ANCLABMalePartnerSelfTestingKitResultsCS"
+  },
+  {
+    "id" : "ANCLabEMTCTCodesCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLabEMTCTCodesCS",
+    "version" : "0.1.0",
+    "name" : "ANCLabEMTCTCodesCS"
+  },
+  {
+    "id" : "ANCMUACColorCodeCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCMUACColorCodeCS",
+    "version" : "0.1.0",
+    "name" : "ANCMUACColorCodeCS"
+  },
+  {
+    "id" : "ANCOUTPOSTFamilyPlanningCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCOUTPOSTFamilyPlanningCS",
+    "version" : "0.1.0",
+    "name" : "ANCOUTPOSTFamilyPlanningCS"
+  },
+  {
+    "id" : "ANCPostpartumCheckTimingCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCPostpartumCheckTimingCS",
+    "version" : "0.1.0",
+    "name" : "ANCPostpartumCheckTimingCS"
+  },
+  {
+    "id" : "ANCRelationPresentingPartBrimOfPelvicCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCRelationPresentingPartBrimOfPelvicCS",
+    "version" : "0.1.0",
+    "name" : "ANCRelationPresentingPartBrimOfPelvicCS"
+  },
+  {
+    "id" : "ANCSickleCellCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS",
+    "version" : "0.1.0",
+    "name" : "ANCSickleCellCS"
+  },
+  {
+    "id" : "ANCSingleOrMultipleCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSingleOrMultipleCS",
+    "version" : "0.1.0",
+    "name" : "ANCSingleOrMultipleCS"
+  },
+  {
+    "id" : "ANCSyphilisHepatitisResultsCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCSyphilisHepatitisResultsCS",
+    "version" : "0.1.0",
+    "name" : "ANCSyphilisHepatitisResultsCS"
+  },
+  {
+    "id" : "ANCTBResultsCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS",
+    "version" : "0.1.0",
+    "name" : "ANCTBResultsCS"
+  },
+  {
+    "id" : "BDOtherReasonForPregnancyOutcomeCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/BDOtherReasonForPregnancyOutcomeCS",
+    "version" : "0.1.0",
+    "name" : "BDOtherReasonForPregnancyOutcomeCS"
+  },
+  {
+    "id" : "BDSexOfChildCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/BDSexOfChildCS",
+    "version" : "0.1.0",
+    "name" : "BDSexOfChildCS"
+  },
+  {
+    "id" : "FollowUpFrequencyCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/FollowUpFrequencyCS",
+    "version" : "0.1.0",
+    "name" : "FollowUpFrequencyCS"
+  },
+  {
+    "id" : "HIVStatusProfileCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/HIVStatusProfileCS",
+    "version" : "0.1.0",
+    "name" : "HIVStatusProfileCS"
+  },
+  {
+    "id" : "IptpDose112CS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/IptpDose112CS",
+    "version" : "0.1.0",
+    "name" : "IptpDose112CS"
+  },
+  {
+    "id" : "LABViralLoadStatusCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/LABViralLoadStatusCS",
+    "version" : "0.1.0",
+    "name" : "LABViralLoadStatusCS"
+  },
+  {
+    "id" : "MaritalStatusCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/MaritalStatusCS",
+    "version" : "0.1.0",
+    "name" : "MaritalStatusCS"
+  },
+  {
+    "id" : "ModeOfDeliveryCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/ModeOfDeliveryCS",
+    "version" : "0.1.0",
+    "name" : "ModeOfDeliveryCS"
+  },
+  {
+    "id" : "OccupationCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/OccupationCS",
+    "version" : "0.1.0",
+    "name" : "OccupationCS"
+  },
+  {
+    "id" : "PartnerHIVTestResultCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/PartnerHIVTestResultCS",
+    "version" : "0.1.0",
+    "name" : "PartnerHIVTestResultCS"
+  },
+  {
+    "id" : "PositiveNegativeUnknownCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/PositiveNegativeUnknownCS",
+    "version" : "0.1.0",
+    "name" : "PositiveNegativeUnknownCS"
+  },
+  {
+    "id" : "PregnantWomanReceivedAsReferralFromCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/PregnantWomanReceivedAsReferralFromCS",
+    "version" : "0.1.0",
+    "name" : "PregnantWomanReceivedAsReferralFromCS"
+  },
+  {
+    "id" : "TermOrPretermCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/TermOrPretermCS",
+    "version" : "0.1.0",
+    "name" : "TermOrPretermCS"
+  },
+  {
+    "id" : "VitalStatusOfChildCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/VitalStatusOfChildCS",
+    "version" : "0.1.0",
+    "name" : "VitalStatusOfChildCS"
+  },
+  {
+    "id" : "WHOClinicalStageCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/WHOClinicalStageCS",
+    "version" : "0.1.0",
+    "name" : "WHOClinicalStageCS"
+  },
+  {
+    "id" : "YearCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/YearCS",
+    "version" : "0.1.0",
+    "name" : "YearCS"
+  },
+  {
+    "id" : "YesNoUnknownCS",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/YesNoUnknownCS",
+    "version" : "0.1.0",
+    "name" : "YesNoUnknownCS"
+  },
+  {
+    "id" : "dhis2-data-elements-cs",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
+    "version" : "0.1.0",
+    "name" : "Dhis2DataElementsCS"
+  },
+  {
+    "id" : "dhis2-tracked-entity-attributes-cs",
+    "type" : "CodeSystem",
+    "url" : "https://hispethiopia.org/enable/CodeSystem/dhis2-tracked-entity-attributes-cs",
+    "version" : "0.1.0",
+    "name" : "Dhis2TrackedEntityAttributesCS"
+  },
+  {
+    "id" : "enable.antenatal.care.registry",
+    "type" : "ImplementationGuide",
+    "url" : "https://hispethiopia.org/enable/ImplementationGuide/enable.antenatal.care.registry",
+    "version" : "0.1.0",
+    "name" : "ANCRMNCAHAntenatalcareregistryANC"
+  },
+  {
+    "id" : "ANCExaminationQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://hispethiopia.org/enable/Questionnaire/ANCExaminationQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "LaboratoryTestsAndImagingQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://hispethiopia.org/enable/Questionnaire/LaboratoryTestsAndImagingQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "PostpartumQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://hispethiopia.org/enable/Questionnaire/PostpartumQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "PregnancyOutcomeQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://hispethiopia.org/enable/Questionnaire/PregnancyOutcomeQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "PromotionAndTreatmentQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://hispethiopia.org/enable/Questionnaire/PromotionAndTreatmentQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "WomanSProfileAndHistoryQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://hispethiopia.org/enable/Questionnaire/WomanSProfileAndHistoryQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "ANCExamination",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/ANCExamination",
+    "version" : "0.1.0",
+    "name" : "ANCExamination"
+  },
+  {
+    "id" : "ANCRMNCAHAntenatalCareRegistryANC",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/ANCRMNCAHAntenatalCareRegistryANC",
+    "version" : "0.1.0",
+    "name" : "ANCRMNCAHAntenatalCareRegistryANC"
+  },
+  {
+    "id" : "LaboratoryTestsAndImaging",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging",
+    "version" : "0.1.0",
+    "name" : "LaboratoryTestsAndImaging"
+  },
+  {
+    "id" : "Postpartum",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/Postpartum",
+    "version" : "0.1.0",
+    "name" : "Postpartum"
+  },
+  {
+    "id" : "PregnancyOutcome",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/PregnancyOutcome",
+    "version" : "0.1.0",
+    "name" : "PregnancyOutcome"
+  },
+  {
+    "id" : "PromotionAndTreatment",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/PromotionAndTreatment",
+    "version" : "0.1.0",
+    "name" : "PromotionAndTreatment"
+  },
+  {
+    "id" : "WomanSProfileAndHistory",
+    "type" : "StructureDefinition",
+    "url" : "https://hispethiopia.org/enable/StructureDefinition/WomanSProfileAndHistory",
+    "version" : "0.1.0",
+    "name" : "WomanSProfileAndHistory"
+  },
+  {
+    "id" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedVS"
+  },
+  {
+    "id" : "ANC.B6.EducationLevelVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.EducationLevelVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B6.EducationLevelVS"
+  },
+  {
+    "id" : "ANC.B6.SourceOfGestationalAgeVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B6.SourceOfGestationalAgeVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B6.SourceOfGestationalAgeVS"
+  },
+  {
+    "id" : "ANC.B7.FetalMovementVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B7.FetalMovementVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B7.FetalMovementVS"
+  },
+  {
+    "id" : "ANC.B8.ExpectedWeightGainVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.ExpectedWeightGainVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.ExpectedWeightGainVS"
+  },
+  {
+    "id" : "ANC.B8.FetalPresentationVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.FetalPresentationVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.FetalPresentationVS"
+  },
+  {
+    "id" : "ANC.B8.LABPLUS14VS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.LABPLUS14VS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.LABPLUS14VS"
+  },
+  {
+    "id" : "ANC.B8.NutritionalStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.NutritionalStatusVS"
+  },
+  {
+    "id" : "ANC.B8.PelvicExamResultVisualVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.PelvicExamResultVisualVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.PelvicExamResultVisualVS"
+  },
+  {
+    "id" : "ANC.B8.WeightCategoryVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.WeightCategoryVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8.WeightCategoryVS"
+  },
+  {
+    "id" : "ANC.B8NumberOfFetusesVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8NumberOfFetusesVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B8NumberOfFetusesVS"
+  },
+  {
+    "id" : "ANC.B9.BloodTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.BloodTypeVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.BloodTypeVS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultGlucoseVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultGlucoseVS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultLeukocytesVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultLeukocytesVS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultNitritesVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultNitritesVS"
+  },
+  {
+    "id" : "ANC.B9.UrineDipstickResultProteinVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS",
+    "version" : "0.1.0",
+    "name" : "ANC.B9.UrineDipstickResultProteinVS"
+  },
+  {
+    "id" : "ANC.BD.FeedingOptionVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS",
+    "version" : "0.1.0",
+    "name" : "ANC.BD.FeedingOptionVS"
+  },
+  {
+    "id" : "ANC.BDFeedingOptionsVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDFeedingOptionsVS",
+    "version" : "0.1.0",
+    "name" : "ANC.BDFeedingOptionsVS"
+  },
+  {
+    "id" : "ANC.BDPlacentaVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDPlacentaVS",
+    "version" : "0.1.0",
+    "name" : "ANC.BDPlacentaVS"
+  },
+  {
+    "id" : "ANC.BDStillBirthVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BDStillBirthVS",
+    "version" : "0.1.0",
+    "name" : "ANC.BDStillBirthVS"
+  },
+  {
+    "id" : "ANC.ReasonForPregnancyOutcomeVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS",
+    "version" : "0.1.0",
+    "name" : "ANC.ReasonForPregnancyOutcomeVS"
+  },
+  {
+    "id" : "ANCARVRxForMotherVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCARVRxForMotherVS",
+    "version" : "0.1.0",
+    "name" : "ANCARVRxForMotherVS"
+  },
+  {
+    "id" : "ANCLABAnaemiaDiagnosisVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABAnaemiaDiagnosisVS",
+    "version" : "0.1.0",
+    "name" : "ANCLABAnaemiaDiagnosisVS"
+  },
+  {
+    "id" : "ANCLABMalariaDiagnosisVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaDiagnosisVS",
+    "version" : "0.1.0",
+    "name" : "ANCLABMalariaDiagnosisVS"
+  },
+  {
+    "id" : "ANCLABMalariaMpsVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalariaMpsVS",
+    "version" : "0.1.0",
+    "name" : "ANCLABMalariaMpsVS"
+  },
+  {
+    "id" : "ANCLABMalePartnerSelfTestingKitResultsVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalePartnerSelfTestingKitResultsVS",
+    "version" : "0.1.0",
+    "name" : "ANCLABMalePartnerSelfTestingKitResultsVS"
+  },
+  {
+    "id" : "ANCLabEMTCTCodesVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCLabEMTCTCodesVS",
+    "version" : "0.1.0",
+    "name" : "ANCLabEMTCTCodesVS"
+  },
+  {
+    "id" : "ANCMUACColorCodeVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS",
+    "version" : "0.1.0",
+    "name" : "ANCMUACColorCodeVS"
+  },
+  {
+    "id" : "ANCOUTPOSTFamilyPlanningVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCOUTPOSTFamilyPlanningVS",
+    "version" : "0.1.0",
+    "name" : "ANCOUTPOSTFamilyPlanningVS"
+  },
+  {
+    "id" : "ANCPostpartumCheckTimingVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCPostpartumCheckTimingVS",
+    "version" : "0.1.0",
+    "name" : "ANCPostpartumCheckTimingVS"
+  },
+  {
+    "id" : "ANCRelationPresentingPartBrimOfPelvicVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCRelationPresentingPartBrimOfPelvicVS",
+    "version" : "0.1.0",
+    "name" : "ANCRelationPresentingPartBrimOfPelvicVS"
+  },
+  {
+    "id" : "ANCSickleCellVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCSickleCellVS",
+    "version" : "0.1.0",
+    "name" : "ANCSickleCellVS"
+  },
+  {
+    "id" : "ANCSingleOrMultipleVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS",
+    "version" : "0.1.0",
+    "name" : "ANCSingleOrMultipleVS"
+  },
+  {
+    "id" : "ANCSyphilisHepatitisResultsVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCSyphilisHepatitisResultsVS",
+    "version" : "0.1.0",
+    "name" : "ANCSyphilisHepatitisResultsVS"
+  },
+  {
+    "id" : "ANCTBResultsVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS",
+    "version" : "0.1.0",
+    "name" : "ANCTBResultsVS"
+  },
+  {
+    "id" : "BDOtherReasonForPregnancyOutcomeVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS",
+    "version" : "0.1.0",
+    "name" : "BDOtherReasonForPregnancyOutcomeVS"
+  },
+  {
+    "id" : "BDSexOfChildVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/BDSexOfChildVS",
+    "version" : "0.1.0",
+    "name" : "BDSexOfChildVS"
+  },
+  {
+    "id" : "FollowUpFrequencyVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/FollowUpFrequencyVS",
+    "version" : "0.1.0",
+    "name" : "FollowUpFrequencyVS"
+  },
+  {
+    "id" : "HIVStatusProfileVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/HIVStatusProfileVS",
+    "version" : "0.1.0",
+    "name" : "HIVStatusProfileVS"
+  },
+  {
+    "id" : "IptpDose112VS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/IptpDose112VS",
+    "version" : "0.1.0",
+    "name" : "IptpDose112VS"
+  },
+  {
+    "id" : "LABViralLoadStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/LABViralLoadStatusVS",
+    "version" : "0.1.0",
+    "name" : "LABViralLoadStatusVS"
+  },
+  {
+    "id" : "MaritalStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/MaritalStatusVS",
+    "version" : "0.1.0",
+    "name" : "MaritalStatusVS"
+  },
+  {
+    "id" : "ModeOfDeliveryVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/ModeOfDeliveryVS",
+    "version" : "0.1.0",
+    "name" : "ModeOfDeliveryVS"
+  },
+  {
+    "id" : "OccupationVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/OccupationVS",
+    "version" : "0.1.0",
+    "name" : "OccupationVS"
+  },
+  {
+    "id" : "PartnerHIVTestResultVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/PartnerHIVTestResultVS",
+    "version" : "0.1.0",
+    "name" : "PartnerHIVTestResultVS"
+  },
+  {
+    "id" : "PositiveNegativeUnknownVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS",
+    "version" : "0.1.0",
+    "name" : "PositiveNegativeUnknownVS"
+  },
+  {
+    "id" : "PregnantWomanReceivedAsReferralFromVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/PregnantWomanReceivedAsReferralFromVS",
+    "version" : "0.1.0",
+    "name" : "PregnantWomanReceivedAsReferralFromVS"
+  },
+  {
+    "id" : "TermOrPretermVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/TermOrPretermVS",
+    "version" : "0.1.0",
+    "name" : "TermOrPretermVS"
+  },
+  {
+    "id" : "VitalStatusOfChildVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS",
+    "version" : "0.1.0",
+    "name" : "VitalStatusOfChildVS"
+  },
+  {
+    "id" : "WHOClinicalStageVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/WHOClinicalStageVS",
+    "version" : "0.1.0",
+    "name" : "WHOClinicalStageVS"
+  },
+  {
+    "id" : "YearVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/YearVS",
+    "version" : "0.1.0",
+    "name" : "YearVS"
+  },
+  {
+    "id" : "YesNoUnknownVS",
+    "type" : "ValueSet",
+    "url" : "https://hispethiopia.org/enable/ValueSet/YesNoUnknownVS",
+    "version" : "0.1.0",
+    "name" : "YesNoUnknownVS"
+  }
+]

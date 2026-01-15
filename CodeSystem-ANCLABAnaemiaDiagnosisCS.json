@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ANCLABAnaemiaDiagnosisCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ANCLABAnaemiaDiagnosisCS</b></p><a name=\"ANCLABAnaemiaDiagnosisCS\"> </a><a name=\"hcANCLABAnaemiaDiagnosisCS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Mild<a name=\"ANCLABAnaemiaDiagnosisCS-Mild\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Moderate<a name=\"ANCLABAnaemiaDiagnosisCS-Moderate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Severe<a name=\"ANCLABAnaemiaDiagnosisCS-Severe\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Due to Pallor<a name=\"ANCLABAnaemiaDiagnosisCS-DuetoPallor\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://hispethiopia.org/enable/CodeSystem/ANCLABAnaemiaDiagnosisCS",
+  "version" : "0.1.0",
+  "name" : "ANCLABAnaemiaDiagnosisCS",
+  "title" : "ANC LAB Anaemia diagnosis",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-15T10:57:51+00:00",
+  "publisher" : "HISP Ethiopia",
+  "contact" : [{
+    "name" : "HISP Ethiopia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hispethiopia.org/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "Mild",
+    "display" : "Mild"
+  },
+  {
+    "code" : "Moderate",
+    "display" : "Moderate"
+  },
+  {
+    "code" : "Severe",
+    "display" : "Severe"
+  },
+  {
+    "code" : "Due to Pallor",
+    "display" : "Due to Pallor"
+  }]
+}
