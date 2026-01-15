@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
   "name" : "PregnancyOutcome",
   "title" : "Pregnancy outcome",
   "status" : "draft",
-  "date" : "2026-01-15T13:05:29+00:00",
+  "date" : "2026-01-15T13:53:47+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -66,8 +66,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         "definition" : "Pregnancy outcome"
       },
       {
-        "id" : "PregnancyOutcome.ancEnd1PregnancyOutcome",
-        "path" : "PregnancyOutcome.ancEnd1PregnancyOutcome",
+        "id" : "PregnancyOutcome.pregnancyOutcome",
+        "path" : "PregnancyOutcome.pregnancyOutcome",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -276,8 +276,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         }
       },
       {
-        "id" : "PregnancyOutcome.ancOutArvRxForMothersByType",
-        "path" : "PregnancyOutcome.ancOutArvRxForMothersByType",
+        "id" : "PregnancyOutcome.arvRxForMothersByType",
+        "path" : "PregnancyOutcome.arvRxForMothersByType",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -295,8 +295,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutObstProlgLabour",
-        "path" : "PregnancyOutcome.ancOutObstProlgLabour",
+        "id" : "PregnancyOutcome.obstProlgLabour",
+        "path" : "PregnancyOutcome.obstProlgLabour",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -314,8 +314,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutHysterectomy",
-        "path" : "PregnancyOutcome.ancOutHysterectomy",
+        "id" : "PregnancyOutcome.hysterectomy",
+        "path" : "PregnancyOutcome.hysterectomy",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -333,8 +333,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutManaged",
-        "path" : "PregnancyOutcome.ancOutManaged",
+        "id" : "PregnancyOutcome.managed",
+        "path" : "PregnancyOutcome.managed",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -352,8 +352,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutPromSepsis",
-        "path" : "PregnancyOutcome.ancOutPromSepsis",
+        "id" : "PregnancyOutcome.promSepsis",
+        "path" : "PregnancyOutcome.promSepsis",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -371,8 +371,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutReferred",
-        "path" : "PregnancyOutcome.ancOutReferred",
+        "id" : "PregnancyOutcome.referred",
+        "path" : "PregnancyOutcome.referred",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -390,8 +390,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutRepaired",
-        "path" : "PregnancyOutcome.ancOutRepaired",
+        "id" : "PregnancyOutcome.repaired",
+        "path" : "PregnancyOutcome.repaired",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -409,8 +409,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.bdOtherReasonForPregnancyOutcome",
-        "path" : "PregnancyOutcome.bdOtherReasonForPregnancyOutcome",
+        "id" : "PregnancyOutcome.otherReasonForPregnancyOutcome",
+        "path" : "PregnancyOutcome.otherReasonForPregnancyOutcome",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -432,8 +432,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         }
       },
       {
-        "id" : "PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage",
-        "path" : "PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage",
+        "id" : "PregnancyOutcome.eclampsiaPostpartumHemorrhage",
+        "path" : "PregnancyOutcome.eclampsiaPostpartumHemorrhage",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -451,8 +451,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutRupturedUx",
-        "path" : "PregnancyOutcome.ancOutRupturedUx",
+        "id" : "PregnancyOutcome.rupturedUx",
+        "path" : "PregnancyOutcome.rupturedUx",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -470,8 +470,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage",
-        "path" : "PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage",
+        "id" : "PregnancyOutcome.eclampsiaAntepartumHemorrhage",
+        "path" : "PregnancyOutcome.eclampsiaAntepartumHemorrhage",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -508,8 +508,8 @@ Other representations of profile: [CSV](StructureDefinition-PregnancyOutcome.csv
         ]
       },
       {
-        "id" : "PregnancyOutcome.arvPxForNewBortn",
-        "path" : "PregnancyOutcome.arvPxForNewBortn",
+        "id" : "PregnancyOutcome.pxForNewBortn",
+        "path" : "PregnancyOutcome.pxForNewBortn",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",

@@ -259,6 +259,6 @@
 "PromotionAndTreatment.referredToHigherLevelClinicOnIndication","PromotionAndTreatment.referredToHigherLevelClinicOnIndication","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.B11. Referred to higher level clinic on indication","ANC - ANC.B11. Referred to higher level clinic on indication","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#G1smYf2TE5w
 ",,,,"PromotionAndTreatment.referredToHigherLevelClinicOnIndication",0,1,"",""
-"PromotionAndTreatment.ancGestationalAgeAtVisitCat","PromotionAndTreatment.ancGestationalAgeAtVisitCat","","","",0,1,"","","","positiveInt {[]} {[]}
+"PromotionAndTreatment.gestationalAgeAtVisitCat","PromotionAndTreatment.gestationalAgeAtVisitCat","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC.B8. Gestational age at todays visit_CAT","ANC - ANC.B8. Gestational age at todays visit_CAT","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KjLdMpXvJNm
-",,,,"PromotionAndTreatment.ancGestationalAgeAtVisitCat",0,1,"",""
+",,,,"PromotionAndTreatment.gestationalAgeAtVisitCat",0,1,"",""

@@ -1,9 +1,9 @@
 ANCRMNCAHAntenatalcareregistryANC : Validation Results
 =========================================
 
-err = 206, warn = 361, info = 670
+err = 206, warn = 357, info = 670
 IG Publisher Version: 2.0.29
-Generated Thu Jan 15 13:07:54 UTC 2026. FHIR version 4.0.1 for enable.antenatal.care.registry#0.1.0 (canonical = https://hispethiopia.org/enable)
+Generated Thu Jan 15 13:56:31 UTC 2026. FHIR version 4.0.1 for enable.antenatal.care.registry#0.1.0 (canonical = https://hispethiopia.org/enable)
  Build Errors : 0 / 116 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-ANC.B10.PreventiveDewormingAntihelminthicTreatmentProvidedCS : 1 / 2 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-ANC.B6.EducationLevelCS : 1 / 2 / 4
@@ -59,7 +59,7 @@ Generated Thu Jan 15 13:07:54 UTC 2026. FHIR version 4.0.1 for enable.antenatal.
  /github/workspace/fsh-generated/resources/CodeSystem-YesNoUnknownCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-dhis2-data-elements-cs : 0 / 22 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-dhis2-tracked-entity-attributes-cs : 0 / 3 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-enable.antenatal.care.registry : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-enable.antenatal.care.registry : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-ANCExaminationQuestionnaire : 20 / 7 / 41
  /github/workspace/fsh-generated/resources/Questionnaire-LaboratoryTestsAndImagingQuestionnaire : 30 / 9 / 61
  /github/workspace/fsh-generated/resources/Questionnaire-PostpartumQuestionnaire : 10 / 8 / 21
@@ -68,7 +68,7 @@ Generated Thu Jan 15 13:07:54 UTC 2026. FHIR version 4.0.1 for enable.antenatal.
  /github/workspace/fsh-generated/resources/Questionnaire-WomanSProfileAndHistoryQuestionnaire : 8 / 3 / 17
  /github/workspace/fsh-generated/resources/StructureDefinition-ANCExamination : 0 / 0 / 119
  /github/workspace/fsh-generated/resources/StructureDefinition-ANCRegistry : 0 / 4 / 37
- /github/workspace/fsh-generated/resources/StructureDefinition-LaboratoryTestsAndImaging : 0 / 5 / 129
+ /github/workspace/fsh-generated/resources/StructureDefinition-LaboratoryTestsAndImaging : 0 / 2 / 129
  /github/workspace/fsh-generated/resources/StructureDefinition-Postpartum : 0 / 10 / 51
  /github/workspace/fsh-generated/resources/StructureDefinition-PregnancyOutcome : 0 / 8 / 73
  /github/workspace/fsh-generated/resources/StructureDefinition-PromotionAndTreatment : 0 / 5 / 175
@@ -450,7 +450,6 @@ INFORMATION: CodeSystem/dhis2-tracked-entity-attributes-cs: CodeSystem: CodeSyst
 WARNING: CodeSystem/dhis2-tracked-entity-attributes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/dhis2-tracked-entity-attributes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-enable.antenatal.care.registry.json ==
-WARNING: ImplementationGuide/enable.antenatal.care.registry: ImplementationGuide.definition.resource[87].name: value should not start or finish with whitespace 'Laboratory Tests and Imaging '
 WARNING: ImplementationGuide/enable.antenatal.care.registry: ImplementationGuide.definition.resource[105].name: value should not start or finish with whitespace 'Promotion and Treatment '
 == fsh-generated/resources/Questionnaire-ANCExaminationQuestionnaire.json ==
 WARNING: Questionnaire/ANCExaminationQuestionnaire: Questionnaire.contained[0]/*ValueSet/ANC.B8.FetalPresentationVS*/: Constraint failed: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
@@ -761,8 +760,6 @@ INFORMATION: StructureDefinition/ANCRegistry: StructureDefinition.differential.e
 WARNING: StructureDefinition/ANCRegistry: StructureDefinition.differential.element[21].short: value should not start or finish with whitespace 'Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy '
 WARNING: StructureDefinition/ANCRegistry: StructureDefinition.differential.element[22].short: value should not start or finish with whitespace 'Data elements for the counselling and treatment task of the workflow\t\t\t\t\t\t\t'
 == fsh-generated/resources/StructureDefinition-LaboratoryTestsAndImaging.json ==
-WARNING: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.title: value should not start or finish with whitespace 'Laboratory Tests and Imaging '
-WARNING: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace 'Laboratory Tests and Imaging '
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[2].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[3].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
@@ -828,7 +825,6 @@ INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[62].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[63].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.snapshot.element[64].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
-WARNING: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Laboratory Tests and Imaging '
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.differential.element[1].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.differential.element[2].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0
 INFORMATION: StructureDefinition/LaboratoryTestsAndImaging: StructureDefinition.differential.element[3].code[0]: Reference to draft CodeSystem https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs|0.1.0

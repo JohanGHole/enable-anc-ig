@@ -1,9 +1,9 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "PregnancyOutcome","PregnancyOutcome","","","",0,*,"","","","null {[]} {[]}
 ","Pregnancy outcome","Pregnancy outcome","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"PregnancyOutcome.ancEnd1PregnancyOutcome","PregnancyOutcome.ancEnd1PregnancyOutcome","","","",1,1,"","","","code {[]} {[]}
+"PregnancyOutcome.pregnancyOutcome","PregnancyOutcome.pregnancyOutcome","","","",1,1,"","","","code {[]} {[]}
 ","ANC - ANC.End1. Pregnancy outcome","ANC - ANC.End1. Pregnancy outcome","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/ANC.ReasonForPregnancyOutcomeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#VIEg1M2z5Vs
-",,,,"PregnancyOutcome.ancEnd1PregnancyOutcome",1,1,"",""
+",,,,"PregnancyOutcome.pregnancyOutcome",1,1,"",""
 "PregnancyOutcome.termOrPreterm","PregnancyOutcome.termOrPreterm","","","",0,1,"","","","code {[]} {[]}
 ","ANC - ANC.BD. Term or Preterm","ANC - ANC.BD. Term or Preterm","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/TermOrPretermVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#CfVBzICA1og
 ",,,,"PregnancyOutcome.termOrPreterm",0,1,"",""
@@ -31,45 +31,45 @@
 "PregnancyOutcome.childVitalStatus","PregnancyOutcome.childVitalStatus","","","",0,1,"","","","code {[]} {[]}
 ","ANC - ANC.BD Child vital status","ANC - ANC.BD Child vital status","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/VitalStatusOfChildVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Gk5vKpilJJq
 ",,,,"PregnancyOutcome.childVitalStatus",0,1,"",""
-"PregnancyOutcome.ancOutArvRxForMothersByType","PregnancyOutcome.ancOutArvRxForMothersByType","","","",0,1,"","","","string {[]} {[]}
+"PregnancyOutcome.arvRxForMothersByType","PregnancyOutcome.arvRxForMothersByType","","","",0,1,"","","","string {[]} {[]}
 ","ANC - ANC.BD ARV Rx for Mothers (by type)","ANC - ANC.BD ARV Rx for Mothers (by type)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dxH6wzY9ll4
-",,,,"PregnancyOutcome.ancOutArvRxForMothersByType",0,1,"",""
-"PregnancyOutcome.ancOutObstProlgLabour","PregnancyOutcome.ancOutObstProlgLabour","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.arvRxForMothersByType",0,1,"",""
+"PregnancyOutcome.obstProlgLabour","PregnancyOutcome.obstProlgLabour","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Obst/prolg labour","ANC - ANC.BD Obst/prolg labour","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#dSeYEled4tX
-",,,,"PregnancyOutcome.ancOutObstProlgLabour",0,1,"",""
-"PregnancyOutcome.ancOutHysterectomy","PregnancyOutcome.ancOutHysterectomy","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.obstProlgLabour",0,1,"",""
+"PregnancyOutcome.hysterectomy","PregnancyOutcome.hysterectomy","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Hysterectomy ","ANC - ANC.BD Hysterectomy","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#z2YaIoUs5eV
-",,,,"PregnancyOutcome.ancOutHysterectomy",0,1,"",""
-"PregnancyOutcome.ancOutManaged","PregnancyOutcome.ancOutManaged","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.hysterectomy",0,1,"",""
+"PregnancyOutcome.managed","PregnancyOutcome.managed","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Managed","ANC - ANC.BD Managed","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#sYgW1IM4Gn5
-",,,,"PregnancyOutcome.ancOutManaged",0,1,"",""
-"PregnancyOutcome.ancOutPromSepsis","PregnancyOutcome.ancOutPromSepsis","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.managed",0,1,"",""
+"PregnancyOutcome.promSepsis","PregnancyOutcome.promSepsis","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD PROM/Sepsis","ANC - ANC.BD PROM/Sepsis","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#c975NCuATNP
-",,,,"PregnancyOutcome.ancOutPromSepsis",0,1,"",""
-"PregnancyOutcome.ancOutReferred","PregnancyOutcome.ancOutReferred","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.promSepsis",0,1,"",""
+"PregnancyOutcome.referred","PregnancyOutcome.referred","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Referred","ANC - ANC.BD Referred","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#tQ4Sv6kQks9
-",,,,"PregnancyOutcome.ancOutReferred",0,1,"",""
-"PregnancyOutcome.ancOutRepaired","PregnancyOutcome.ancOutRepaired","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.referred",0,1,"",""
+"PregnancyOutcome.repaired","PregnancyOutcome.repaired","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Repaired","ANC - ANC.BD Repaired","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#hGXAH0H7oKs
-",,,,"PregnancyOutcome.ancOutRepaired",0,1,"",""
-"PregnancyOutcome.bdOtherReasonForPregnancyOutcome","PregnancyOutcome.bdOtherReasonForPregnancyOutcome","","","",0,1,"","","","code {[]} {[]}
+",,,,"PregnancyOutcome.repaired",0,1,"",""
+"PregnancyOutcome.otherReasonForPregnancyOutcome","PregnancyOutcome.otherReasonForPregnancyOutcome","","","",0,1,"","","","code {[]} {[]}
 ","ANC - AND.BD-Other Reason for Pregnancy Outcome","ANC - AND.BD-Other Reason for Pregnancy Outcome","","","","","","","","","",,"required","","https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS","https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#ROgwm1UaUjW
-",,,,"PregnancyOutcome.bdOtherReasonForPregnancyOutcome",0,1,"",""
-"PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage","PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.otherReasonForPregnancyOutcome",0,1,"",""
+"PregnancyOutcome.eclampsiaPostpartumHemorrhage","PregnancyOutcome.eclampsiaPostpartumHemorrhage","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Eclampsia postpartum hemorrhage ","ANC - ANC.BD Eclampsia postpartum hemorrhage","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#JrSzUmBfKnO
-",,,,"PregnancyOutcome.ancOutEclampsiaPostpartumHemorrhage",0,1,"",""
-"PregnancyOutcome.ancOutRupturedUx","PregnancyOutcome.ancOutRupturedUx","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.eclampsiaPostpartumHemorrhage",0,1,"",""
+"PregnancyOutcome.rupturedUx","PregnancyOutcome.rupturedUx","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Ruptured Ux","ANC - ANC.BD Ruptured Ux","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Mv4z2Sd5s8E
-",,,,"PregnancyOutcome.ancOutRupturedUx",0,1,"",""
-"PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage","PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage","","","",0,1,"","","","boolean {[]} {[]}
+",,,,"PregnancyOutcome.rupturedUx",0,1,"",""
+"PregnancyOutcome.eclampsiaAntepartumHemorrhage","PregnancyOutcome.eclampsiaAntepartumHemorrhage","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Eclampsia antepartum hemorrhage ","ANC - ANC.BD Eclampsia antepartum hemorrhage","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#fvnZ3zRQUdQ
-",,,,"PregnancyOutcome.ancOutEclampsiaAntepartumHemorrhage",0,1,"",""
+",,,,"PregnancyOutcome.eclampsiaAntepartumHemorrhage",0,1,"",""
 "PregnancyOutcome.0pvVaccine","PregnancyOutcome.0pvVaccine","","","",0,1,"","","","date {[]} {[]}
 ","ANC - ANC.BD 0PV Vaccine","ANC - ANC.BD 0PV Vaccine","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#KQ34Vol6R3J
 ",,,,"PregnancyOutcome.0pvVaccine",0,1,"",""
-"PregnancyOutcome.arvPxForNewBortn","PregnancyOutcome.arvPxForNewBortn","","","",0,1,"","","","string {[]} {[]}
+"PregnancyOutcome.pxForNewBortn","PregnancyOutcome.pxForNewBortn","","","",0,1,"","","","string {[]} {[]}
 ","ANC - ANC.BD ARV Px for New Born (By type, HIV)","ANC - ANC.BD ARV Px for New Born (By type, HIV)","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#U58bt6XckRq
-",,,,"PregnancyOutcome.arvPxForNewBortn",0,1,"",""
+",,,,"PregnancyOutcome.pxForNewBortn",0,1,"",""
 "PregnancyOutcome.apgarScore","PregnancyOutcome.apgarScore","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.BD Apgar Score","ANC - ANC.BD Apgar Score","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#p7e9CE7Hc0t
 ",,,,"PregnancyOutcome.apgarScore",0,1,"",""

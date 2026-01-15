@@ -26,7 +26,7 @@ Feel free to modify this index page with your own content.
   "version" : "0.1.0",
   "name" : "ANCRMNCAHAntenatalcareregistryANC",
   "status" : "draft",
-  "date" : "2026-01-15T13:05:29+00:00",
+  "date" : "2026-01-15T13:53:47+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -1876,7 +1876,7 @@ Feel free to modify this index page with your own content.
         "reference" : {
           "reference" : "StructureDefinition/LaboratoryTestsAndImaging"
         },
-        "name" : "Laboratory Tests and Imaging ",
+        "name" : "Laboratory Tests and Imaging",
         "description" : "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy",
         "exampleBoolean" : false
       },

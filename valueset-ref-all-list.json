@@ -174,7 +174,7 @@
       "uses" : {
       },
       "StructureDefinition-ANCExamination.html" : "ANC Examination",
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B8.NutritionalStatusVS",
@@ -299,7 +299,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultGlucoseVS",
@@ -324,7 +324,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultLeukocytesVS",
@@ -349,7 +349,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultNitritesVS",
@@ -374,7 +374,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.B9.UrineDipstickResultProteinVS",
@@ -399,7 +399,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANC.BD.FeedingOptionVS",
@@ -624,7 +624,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANCLABMalePartnerSelfTestingKitResultsVS",
@@ -674,7 +674,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANCMUACColorCodeVS",
@@ -795,7 +795,7 @@
       "systems" : ["https://hispethiopia.org/enable/CodeSystem/ANCSickleCellCS"],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANCSingleOrMultipleVS",
@@ -845,7 +845,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/ANCTBResultsVS",
@@ -866,7 +866,7 @@
       "systems" : ["https://hispethiopia.org/enable/CodeSystem/ANCTBResultsCS"],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/BDOtherReasonForPregnancyOutcomeVS",
@@ -1008,7 +1008,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/MaritalStatusVS",
@@ -1082,7 +1082,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/PositiveNegativeUnknownVS",
@@ -1119,7 +1119,7 @@
       "uses" : {
       },
       "StructureDefinition-Postpartum.html" : "Postpartum",
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/PregnantWomanReceivedAsReferralFromVS",
@@ -1215,7 +1215,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging "
+      "StructureDefinition-LaboratoryTestsAndImaging.html" : "Laboratory Tests and Imaging"
     },
     {
       "url" : "https://hispethiopia.org/enable/ValueSet/YearVS",

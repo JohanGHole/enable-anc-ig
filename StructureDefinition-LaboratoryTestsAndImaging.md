@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
   "url" : "https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging",
   "version" : "0.1.0",
   "name" : "LaboratoryTestsAndImaging",
-  "title" : "Laboratory Tests and Imaging ",
+  "title" : "Laboratory Tests and Imaging",
   "status" : "draft",
-  "date" : "2026-01-15T13:05:29+00:00",
+  "date" : "2026-01-15T13:53:47+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
       {
         "id" : "LaboratoryTestsAndImaging",
         "path" : "LaboratoryTestsAndImaging",
-        "short" : "Laboratory Tests and Imaging ",
+        "short" : "Laboratory Tests and Imaging",
         "definition" : "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy "
       },
       {
@@ -253,8 +253,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         ]
       },
       {
-        "id" : "LaboratoryTestsAndImaging.otherTestSDate",
-        "path" : "LaboratoryTestsAndImaging.otherTestSDate",
+        "id" : "LaboratoryTestsAndImaging.otherTestsDate",
+        "path" : "LaboratoryTestsAndImaging.otherTestsDate",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -272,8 +272,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         ]
       },
       {
-        "id" : "LaboratoryTestsAndImaging.otherTestSName",
-        "path" : "LaboratoryTestsAndImaging.otherTestSName",
+        "id" : "LaboratoryTestsAndImaging.otherTestsName",
+        "path" : "LaboratoryTestsAndImaging.otherTestsName",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -291,8 +291,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         ]
       },
       {
-        "id" : "LaboratoryTestsAndImaging.otherTestSResultS",
-        "path" : "LaboratoryTestsAndImaging.otherTestSResultS",
+        "id" : "LaboratoryTestsAndImaging.otherTestsResults",
+        "path" : "LaboratoryTestsAndImaging.otherTestsResults",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -844,8 +844,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         ]
       },
       {
-        "id" : "LaboratoryTestsAndImaging.ancLabSickleCell",
-        "path" : "LaboratoryTestsAndImaging.ancLabSickleCell",
+        "id" : "LaboratoryTestsAndImaging.labSickleCell",
+        "path" : "LaboratoryTestsAndImaging.labSickleCell",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -867,8 +867,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         }
       },
       {
-        "id" : "LaboratoryTestsAndImaging.ancB6UltrasoundGa",
-        "path" : "LaboratoryTestsAndImaging.ancB6UltrasoundGa",
+        "id" : "LaboratoryTestsAndImaging.ultrasoundGa",
+        "path" : "LaboratoryTestsAndImaging.ultrasoundGa",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -985,8 +985,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         }
       },
       {
-        "id" : "LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate",
-        "path" : "LaboratoryTestsAndImaging.ancB9DeUrineDipstickTestDate",
+        "id" : "LaboratoryTestsAndImaging.urineDipstickTestDate",
+        "path" : "LaboratoryTestsAndImaging.urineDipstickTestDate",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
@@ -1149,8 +1149,8 @@ Other representations of profile: [CSV](StructureDefinition-LaboratoryTestsAndIm
         ]
       },
       {
-        "id" : "LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab",
-        "path" : "LaboratoryTestsAndImaging.ancGestationalAgeAtVisitLab",
+        "id" : "LaboratoryTestsAndImaging.gestationalAgeAtVisitLab",
+        "path" : "LaboratoryTestsAndImaging.gestationalAgeAtVisitLab",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",

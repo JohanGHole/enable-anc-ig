@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PromotionAndTreatmen
   "name" : "PromotionAndTreatment",
   "title" : "Promotion and Treatment ",
   "status" : "draft",
-  "date" : "2026-01-15T13:05:29+00:00",
+  "date" : "2026-01-15T13:53:47+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -1740,8 +1740,8 @@ Other representations of profile: [CSV](StructureDefinition-PromotionAndTreatmen
         ]
       },
       {
-        "id" : "PromotionAndTreatment.ancGestationalAgeAtVisitCat",
-        "path" : "PromotionAndTreatment.ancGestationalAgeAtVisitCat",
+        "id" : "PromotionAndTreatment.gestationalAgeAtVisitCat",
+        "path" : "PromotionAndTreatment.gestationalAgeAtVisitCat",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",

@@ -160,9 +160,9 @@
 "ANCExamination.painOther","ANCExamination.painOther","","","",0,1,"","","","string {[]} {[]}
 ","ANC - ANC.B5. Pain –Other","ANC - ANC.B5. Pain –Other","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#WWGGsY8l88G
 ",,,,"ANCExamination.painOther",0,1,"",""
-"ANCExamination.ancVisitNumber","ANCExamination.ancVisitNumber","","","",0,1,"","","","positiveInt {[]} {[]}
+"ANCExamination.visitNumber","ANCExamination.visitNumber","","","",0,1,"","","","positiveInt {[]} {[]}
 ","ANC - ANC Visit Number","ANC - ANC Visit Number","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#bXVD2EMF7UW
-",,,,"ANCExamination.ancVisitNumber",0,1,"",""
+",,,,"ANCExamination.visitNumber",0,1,"",""
 "ANCExamination.noCurrentSymptomsOrComplications","ANCExamination.noCurrentSymptomsOrComplications","","","",0,1,"","","","boolean {[]} {[]}
 ","ANC - ANC.B7. No physiological symptoms","ANC - ANC.B7. No physiological symptoms","","","","","","","","","",,,,,"https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs#Kyw7NtFeW3B
 ",,,,"ANCExamination.noCurrentSymptomsOrComplications",0,1,"",""

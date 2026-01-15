@@ -226,7 +226,7 @@
 
 * [ANC Examination](StructureDefinition-ANCExamination.md)
 * [ANC - RMNCAH - Antenatal care registry (ANC)](StructureDefinition-ANCRegistry.md)
-* [Laboratory Tests and Imaging ](StructureDefinition-LaboratoryTestsAndImaging.md)
+* [Laboratory Tests and Imaging](StructureDefinition-LaboratoryTestsAndImaging.md)
 * [Postpartum](StructureDefinition-Postpartum.md)
 * [Pregnancy outcome](StructureDefinition-PregnancyOutcome.md)
 * [Promotion and Treatment ](StructureDefinition-PromotionAndTreatment.md)

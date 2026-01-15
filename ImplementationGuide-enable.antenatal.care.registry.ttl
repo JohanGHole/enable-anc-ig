@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ANCRMNCAHAntenatalcareregistryANC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-15T13:05:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-15T13:53:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HISP Ethiopia"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HISP Ethiopia" ] ;
@@ -3046,7 +3046,7 @@
          fhir:l <https://hispethiopia.org/enable/StructureDefinition/LaboratoryTestsAndImaging> ;
          fhir:reference [ fhir:v "StructureDefinition/LaboratoryTestsAndImaging" ]
        ] ;
-       fhir:name [ fhir:v "Laboratory Tests and Imaging " ] ;
+       fhir:name [ fhir:v "Laboratory Tests and Imaging" ] ;
        fhir:description [ fhir:v "Information regarding various laboratory tests and  imaging conducted for diagnostic and curative services the current pregnancy" ] ;
        fhir:example [
          a fhir:Boolean ;

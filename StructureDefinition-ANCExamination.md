@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
   "name" : "ANCExamination",
   "title" : "ANC Examination",
   "status" : "draft",
-  "date" : "2026-01-15T13:05:29+00:00",
+  "date" : "2026-01-15T13:53:47+00:00",
   "publisher" : "HISP Ethiopia",
   "contact" : [
     {
@@ -1121,8 +1121,8 @@ Other representations of profile: [CSV](StructureDefinition-ANCExamination.csv),
         ]
       },
       {
-        "id" : "ANCExamination.ancVisitNumber",
-        "path" : "ANCExamination.ancVisitNumber",
+        "id" : "ANCExamination.visitNumber",
+        "path" : "ANCExamination.visitNumber",
         "code" : [
           {
             "system" : "https://hispethiopia.org/enable/CodeSystem/dhis2-data-elements-cs",
