@@ -1,0 +1,127 @@
+{
+  "_comment_boilerplate_by_design": "This template is intentionally boilerplate. All the FHIR plumbing (resource types, codes, systems, references between resources) is already filled in for you. Your mapping only needs to REPLACE the <REPLACE_ME | ... > placeholders with the data-element values from your EMR — do not change anything else. Delete every '_comment_...' line before sending.",
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://fhi.no/enable/identifier/mrn",
+            "value": "<REPLACE_ME | string | from PulseTech key: pnt_mrn>"
+          }
+        ],
+        "_comment_optional_name": "OPTIONAL: only send name if your site's data-sharing rules permit; DELETE this whole 'name' block if not.",
+        "name": [
+          { "given": [ "<REPLACE_ME | string | from PulseTech: patient name (OPTIONAL)>" ] }
+        ],
+        "gender": "<REPLACE_ME | code: male|female|other|unknown | from PulseTech: gender (OPTIONAL)>",
+        "birthDate": "<REPLACE_ME | date YYYY-MM-DD | from PulseTech key: pnt_date_birth>",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "<REPLACE_ME | string 251xxxxxxxxx | from PulseTech key: pnt_phone>",
+            "use": "mobile"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:facility-1",
+      "_comment_field": "REQUIRED: the facility. identifier.value = your site's DHIS2 organisation-unit code from the master facility list.",
+      "resource": {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "system": "http://fhi.no/enable/identifier/dhis2-orgunit-code",
+            "value": "<REPLACE_ME | string | DHIS2 org-unit code for this PulseTech site (site-configured)>",
+            "use": "official"
+          }
+        ],
+        "name": "<REPLACE_ME | string | Human-readable facility name>"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:encounter-visit",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "AMB" },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "period": {
+          "start": "<REPLACE_ME | date YYYY-MM-DD | from PulseTech key: opdanc_exam_date>"
+        },
+        "serviceProvider": { "reference": "urn:uuid:facility-1" }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:encounter-next",
+      "_comment_optional": "OPTIONAL: the next scheduled visit. PulseTech does not export this yet; add an appointment-date field to the export, or DELETE this whole entry.",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "planned",
+        "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "AMB" },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "period": {
+          "start": "<REPLACE_ME | date YYYY-MM-DD | from PulseTech: appointment date (NOT YET IN EXPORT)>"
+        },
+        "serviceProvider": { "reference": "urn:uuid:facility-1" }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-ga",
+      "_comment_scope": "VISIT-LEVEL: one per finished Encounter. If you have multiple visits, duplicate this entry per Encounter and update the encounter reference and value.",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes", "code": "ANC.B6.DE17" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueQuantity": {
+          "value": "<REPLACE_ME | integer, REMOVE the surrounding quotes | from PulseTech key: opdanc_gest_age>",
+          "unit": "weeks",
+          "system": "http://unitsofmeasure.org",
+          "code": "wk"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-edd",
+      "_comment_scope": "PREGNANCY-LEVEL: one per Bundle. Do NOT duplicate per visit.",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes", "code": "ANC.B6.DE22" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueDateTime": "<REPLACE_ME | date YYYY-MM-DD | from PulseTech key: opdanc_edd>"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-lmp",
+      "_comment_scope": "PREGNANCY-LEVEL: one per Bundle. Do NOT duplicate per visit.",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes", "code": "ANC.B6.DE14" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueDateTime": "<REPLACE_ME | date YYYY-MM-DD | from PulseTech key: opdanc_lmp>"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-visitno",
+      "_comment_scope": "VISIT-LEVEL: one per finished Encounter. If you have multiple visits, duplicate this entry per Encounter and update the encounter reference and value.",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://fhi.no/enable/anc/CodeSystem/enable-et-anc", "code": "ET-ANC-051" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueInteger": "<REPLACE_ME | integer, REMOVE the surrounding quotes | from PulseTech: follow-up number (NOT YET IN EXPORT)>"
+      }
+    }
+  ]
+}

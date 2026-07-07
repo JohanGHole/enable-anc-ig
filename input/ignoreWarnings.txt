@@ -1,0 +1,42 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# Expected: this is a standalone IG that references WHO ANC / LOINC / SNOMED codes
+# without depending on those packages or a terminology server, so codes can't be
+# validated offline. This is by design (see index page).
+%regex%.*running without terminology services.*
+%regex%.*could not be found, so the code cannot be validated.*
+%regex%.*A definition for CodeSystem .http://smart.who.int/anc/CodeSystem/anc-custom-codes. could not be found.*
+
+# Draft IG published under a canonical with no version history yet.
+%regex%.*Unable to (find version history|compare with previous version).*
+
+# The Observation profiles in this IG intentionally do not require Observation.performer
+# because the facility (Organization) is already reachable via Encounter.serviceProvider.
+# Suppress the "should have a performer" best-practice hint.
+%regex%.*In general, all observations should have a performer.*
+
+# The ENABLE Ethiopia-local CodeSystem is intentionally marked experimental for this
+# early-iteration IG. Suppress the "Reference to experimental CodeSystem" info.
+%regex%.*Reference to experimental CodeSystem http://fhi.no/enable/anc/CodeSystem/enable-et-anc.*
+
+# The `urn:ietf:bcp:47` language code system is a standard system that has no
+# machine-readable CodeSystem resource; validators can't check it. Expected.
+%regex%.*A definition for CodeSystem .urn:ietf:bcp:47. could not be found.*
+
+# OID assignment is a nice-to-have for potential CDA re-use; not applicable here.
+%regex%.*could usefully have an OID assigned.*
+%regex%.*should have an OID assigned to cater for possible use with OID based terminology.*
+
+# The template auto-inserts a small script into StructureDefinition snapshot tables.
+# It is a template concern, not a content concern.
+%regex%.*The <script> containing the javascript.*is illegal and not allowed on the HL7 ci-build.*
+
+# Boilerplate IG-template fragments this IG does not use.
+%regex%.*The HTML fragment .ip-statements.xhtml. is not included anywhere.*
+%regex%.*An HTML fragment from the set \[cross-version-analysis.*
+%regex%.*An HTML fragment from the set \[dependency-table.*
+%regex%.*The HTML fragment .globals-table.xhtml. is not included anywhere.*

@@ -1,0 +1,94 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          { "system": "http://fhi.no/enable/identifier/mrn", "value": "BAH-000718642" }
+        ],
+        "gender": "female",
+        "birthDate": "1995-08-07",
+        "telecom": [ { "system": "phone", "value": "251911234567", "use": "mobile" } ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:facility-1",
+      "resource": {
+        "resourceType": "Organization",
+        "identifier": [
+          { "system": "http://fhi.no/enable/identifier/dhis2-orgunit-code", "value": "1057888", "use": "official" }
+        ],
+        "name": "Felege Mels Health Center"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:encounter-visit",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "AMB" },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "period": { "start": "2026-06-15" },
+        "serviceProvider": { "reference": "urn:uuid:facility-1" }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:encounter-next",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "planned",
+        "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "AMB" },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "period": { "start": "2026-07-13" },
+        "serviceProvider": { "reference": "urn:uuid:facility-1" }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-ga",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes", "code": "ANC.B6.DE17" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueQuantity": { "value": 12, "unit": "weeks", "system": "http://unitsofmeasure.org", "code": "wk" }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-edd",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes", "code": "ANC.B6.DE22" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueDateTime": "2026-12-28"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-lmp",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://smart.who.int/anc/CodeSystem/anc-custom-codes", "code": "ANC.B6.DE14" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueDateTime": "2026-03-23"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-visitno",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "coding": [ { "system": "http://fhi.no/enable/anc/CodeSystem/enable-et-anc", "code": "ET-ANC-051" } ] },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "encounter": { "reference": "urn:uuid:encounter-visit" },
+        "valueInteger": 1
+      }
+    }
+  ]
+}
