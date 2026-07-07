@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "enable-et-anc",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem enable-et-anc</b></p><a name=\"enable-et-anc\"> </a><a name=\"hcenable-et-anc\"> </a><p>This case-sensitive code system <code>http://fhi.no/enable/anc/CodeSystem/enable-et-anc</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-002<a name=\"enable-et-anc-ET-ANC-002\"> </a></td><td>Client MRN</td><td>ANC ET medical record number (tracked-entity attribute).</td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-005<a name=\"enable-et-anc-ET-ANC-005\"> </a></td><td>Date of birth</td><td>Woman's date of birth (tracked-entity attribute).</td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-015<a name=\"enable-et-anc-ET-ANC-015\"> </a></td><td>SMS phone number</td><td>Phone number used for SMS notifications (format 251xxxxxxxxx).</td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-051<a name=\"enable-et-anc-ET-ANC-051\"> </a></td><td>ANC visit number</td><td>Sequential number of this ANC visit.</td></tr></table></div>"
+  },
+  "url" : "http://fhi.no/enable/anc/CodeSystem/enable-et-anc",
+  "version" : "0.2.0",
+  "name" : "EnableEtAncCS",
+  "title" : "ENABLE Ethiopia-local ANC codes",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-07T16:14:48+00:00",
+  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "contact" : [{
+    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhi.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "johan@devotta.no"
+    }]
+  }],
+  "description" : "Ethiopia-local ANC data elements that have no WHO ANC DAK code. Codes mirror the DHIS2 ENABLE ANC metadata.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "ET",
+      "display" : "Ethiopia"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "ET-ANC-002",
+    "display" : "Client MRN",
+    "definition" : "ANC ET medical record number (tracked-entity attribute)."
+  },
+  {
+    "code" : "ET-ANC-005",
+    "display" : "Date of birth",
+    "definition" : "Woman's date of birth (tracked-entity attribute)."
+  },
+  {
+    "code" : "ET-ANC-015",
+    "display" : "SMS phone number",
+    "definition" : "Phone number used for SMS notifications (format 251xxxxxxxxx)."
+  },
+  {
+    "code" : "ET-ANC-051",
+    "display" : "ANC visit number",
+    "definition" : "Sequential number of this ANC visit."
+  }]
+}

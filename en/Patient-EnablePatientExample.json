@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Patient",
+  "id" : "EnablePatientExample",
+  "meta" : {
+    "profile" : ["http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient EnablePatientExample</b></p><a name=\"EnablePatientExample\"> </a><a name=\"hcEnablePatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-patient.html\">ENABLE ANC Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">ph: 251911234567(Mobile)</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhi.no/enable/identifier/mrn",
+    "value" : "ANC-000718642"
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "251911234567",
+    "use" : "mobile"
+  }],
+  "gender" : "female",
+  "birthDate" : "1995-08-07"
+}

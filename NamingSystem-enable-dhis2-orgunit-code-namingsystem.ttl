@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "enable-dhis2-orgunit-code-namingsystem"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem enable-dhis2-orgunit-code-namingsystem</b></p><a name=\"enable-dhis2-orgunit-code-namingsystem\"> </a><a name=\"hcenable-dhis2-orgunit-code-namingsystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>EnableDhis2OrgUnitCode</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.</p>\n</div></td></tr><tr><td>Publisher</td><td>Norwegian Institute of Public Health (NIPH)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhi.no/enable/identifier/dhis2-orgunit-code</td><td>true</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
+     fhir:Extension.valueString [ fhir:value "0.2.0" ]
+  ] ;
+  fhir:NamingSystem.name [ fhir:value "EnableDhis2OrgUnitCode"] ;
+  fhir:NamingSystem.status [ fhir:value "active"] ;
+  fhir:NamingSystem.kind [ fhir:value "identifier"] ;
+  fhir:NamingSystem.date [ fhir:value "2026-07-07"^^xsd:date] ;
+  fhir:NamingSystem.publisher [ fhir:value "Norwegian Institute of Public Health (NIPH)"] ;
+  fhir:NamingSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Norwegian Institute of Public Health (NIPH)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhi.no/" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "johan@devotta.no" ]
+     ]
+  ] ;
+  fhir:NamingSystem.description [ fhir:value "Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list."] ;
+  fhir:NamingSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "ET" ] ;
+       fhir:Coding.display [ fhir:value "Ethiopia" ]
+     ]
+  ] ;
+  fhir:NamingSystem.uniqueId [
+     fhir:index 0 ;
+     fhir:NamingSystem.uniqueId.type [ fhir:value "uri" ] ;
+     fhir:NamingSystem.uniqueId.value [ fhir:value "http://fhi.no/enable/identifier/dhis2-orgunit-code" ] ;
+     fhir:NamingSystem.uniqueId.preferred [ fhir:value "true"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

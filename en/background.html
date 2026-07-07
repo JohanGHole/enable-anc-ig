@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Background &amp; Use Case - ENABLE ANC Interoperability IG v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ENABLE ANC Interoperability IG</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Ethiopia flag" src="../assets/images/eth.svg" height="16" title="Ethiopia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li>
+    <a href="contract.html">The Contract</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping Guide</a>
+  </li>
+  <li>
+    <a href="mapping-scripts.html">Mapping Scripts</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quickstart</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Background &amp; Use Case</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ENABLE ANC Interoperability IG - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhi.no/enable/anc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Background &amp; Use Case</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#why-enable-exists" id="markdown-toc-why-enable-exists">Why ENABLE exists</a></li>
+  <li><a href="#one-bundle-per-woman" id="markdown-toc-one-bundle-per-woman">One Bundle per woman</a></li>
+  <li><a href="#why-fhir" id="markdown-toc-why-fhir">Why FHIR</a></li>
+  <li><a href="#the-sms-slice" id="markdown-toc-the-sms-slice">The SMS slice</a></li>
+  <li><a href="#out-of-scope-for-iteration-1" id="markdown-toc-out-of-scope-for-iteration-1">Out of scope for iteration 1</a></li>
+  <li><a href="#standards" id="markdown-toc-standards">Standards</a></li>
+</ul>
+
+</div>
+<h3 id="why-enable-exists">Why ENABLE exists</h3>
+
+<p>The ENABLE programme sends SMS reminders and lifestyle messages to pregnant women in Ethiopia. DHIS2 is the system of record and drives the SMS gateway. Most EMRs do not speak DHIS2 tracker, so ENABLE runs a <strong>FHIR-native middleware in front of DHIS2</strong>: EMRs POST a FHIR Bundle in the shape defined by this IG, the middleware translates it into DHIS2 tracker calls.</p>
+
+<h3 id="one-bundle-per-woman">One Bundle per woman</h3>
+
+<p>The unit of exchange is a single <a href="StructureDefinition-enable-anc-bundle.html">ENABLE ANC Bundle</a> grouped around one patient. A <strong>Bundle</strong> is FHIR's container for a group of related resources — think of it as one envelope holding everything about one woman. It contains one Patient, one Organization (the facility), one or more Encounters (finished ANC visits, plus optionally a planned next visit), and the Observations for those visits. Observations come in two flavours: <strong>pregnancy-level</strong> (LMP and EDD, once per Bundle — they describe this pregnancy, not a specific visit) and <strong>visit-level</strong> (Gestational Age and ANC Visit Number, once per finished Encounter). A woman with three visits is bundled in one payload with three finished Encounters, one LMP, one EDD, three GA and three Visit Number Observations — not three separate payloads. See the <a href="Bundle-ExampleAncBundleMultiVisit.html">multi-visit example</a> for the plural case.</p>
+
+<p>To push multiple women in a single HTTP request, concatenate their Bundles with newlines and send as <a href="quickstart.html#4-post">NDJSON</a> — see the <a href="quickstart.html">Quickstart</a> for the exact call.</p>
+
+<h3 id="why-fhir">Why FHIR</h3>
+
+<ul>
+  <li><strong>Multiple EMRs, one DHIS2.</strong> Every EMR that joins ENABLE has to solve the same DHIS2 tracker mapping. Solving it once at the FHIR layer means every new EMR only ever maps to <em>this</em> IG — never to DHIS2 directly. The DHIS2 side stays stable no matter who joins next.</li>
+  <li><strong>Future-proof by construction.</strong> FHIR is the common language most modern EMRs already know how to emit. Using it at the conformance level keeps the integration tidy: if DHIS2 is ever swapped for another backend, the EMRs never notice.</li>
+  <li><strong>Portable side benefit.</strong> Any other consumer of ANC data (a research warehouse, another SMS platform, a national dashboard) can read the same Bundles without needing to understand DHIS2 semantics.</li>
+</ul>
+
+<h3 id="the-sms-slice">The SMS slice</h3>
+
+<p>The SMS slice contains 11 fields which is the scope for iteration 1.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Field</th>
+      <th>FHIR location</th>
+      <th>DHIS2 code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Client MRN</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.identifier</code></td>
+      <td>ET-ANC-002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Date of birth</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.birthDate</code></td>
+      <td>ET-ANC-005</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SMS phone number</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.telecom</code></td>
+      <td>ET-ANC-015</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Facility identifier</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization.identifier</code></td>
+      <td><code class="language-plaintext highlighter-rouge">orgUnit</code> (structural)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Facility name</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization.name</code></td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Visit date</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter[finished].period.start</code></td>
+      <td><code class="language-plaintext highlighter-rouge">event.occurredAt</code></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Next scheduled visit</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter[planned].period.start</code></td>
+      <td><code class="language-plaintext highlighter-rouge">event.scheduledAt</code></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Gestational age</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code></td>
+      <td>ANC.B6.DE17</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Expected delivery date</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueDateTime</code></td>
+      <td>ANC.B6.DE22</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Last menstrual period</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueDateTime</code></td>
+      <td>ANC.B6.DE14</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>ANC visit number</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueInteger</code></td>
+      <td>ET-ANC-051</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">Patient.name</code> is left optional. Some EMR sites may not be permitted to push names outside their clinical system, so this IG never requires it.</p>
+
+<h3 id="out-of-scope-for-iteration-1">Out of scope for iteration 1</h3>
+
+<p>Full clinical observations (weight, BP, urine, HIV status, delivery outcome), multi-facility referral, and physical-site detail (Location resource). See the <a href="changes.html">Change Log</a> for the roadmap.</p>
+
+<h3 id="standards">Standards</h3>
+
+<p>FHIR R4 · WHO SMART Guidelines ANC (DAK) codes as the primary Observation codes· LOINC and SNOMED as optional cross-mappings · <a href="CodeSystem-enable-et-anc.html">ENABLE Ethiopia-local codes</a> for the four fields with no WHO DAK code by design (MRN, DoB, phone, visit number).</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-07 16:14:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

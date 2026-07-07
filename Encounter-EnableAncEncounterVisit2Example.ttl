@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit2Example> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EnableAncEncounterVisit2Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter EnableAncEncounterVisit2Example</b></p><a name=\"EnableAncEncounterVisit2Example\"> </a><a name=\"hcEnableAncEncounterVisit2Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-encounter.html\">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-07-13 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-ExampleFacility.html\">Organization Felege Mels Health Center</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-07-13"^^xsd:date ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://fhi.no/enable/anc/Organization/ExampleFacility> ;
+     fhir:Reference.reference [ fhir:value "Organization/ExampleFacility" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit2Example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Observation/EnableAncVisitNumberVisit2Example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EnableAncVisitNumberVisit2Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableAncVisitNumberVisit2Example</b></p><a name=\"EnableAncVisitNumberVisit2Example\"> </a><a name=\"hcEnableAncVisitNumberVisit2Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-visit-number.html\">ENABLE ANC Visit Number</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}\">ANC visit number</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit2Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-07-13 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-07-13</p><p><b>value</b>: 2</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://fhi.no/enable/anc/CodeSystem/enable-et-anc" ] ;
+       fhir:Coding.code [ fhir:value "ET-ANC-051" ] ;
+       fhir:Coding.display [ fhir:value "ANC visit number" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit2Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit2Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-07-13"^^xsd:date] ;
+  fhir:Observation.valueInteger [ fhir:value "2"^^xsd:integer] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Observation/EnableAncVisitNumberVisit2Example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

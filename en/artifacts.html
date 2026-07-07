@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - ENABLE ANC Interoperability IG v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ENABLE ANC Interoperability IG</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Ethiopia flag" src="../assets/images/eth.svg" height="16" title="Ethiopia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li>
+    <a href="contract.html">The Contract</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping Guide</a>
+  </li>
+  <li>
+    <a href="mapping-scripts.html">Mapping Scripts</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quickstart</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ENABLE ANC Interoperability IG - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhi.no/enable/anc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc"
+     data-fhir="generated">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     data-fhir="generated">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-anc-bundle.html"
+                  title="StructureDefinition/enable-anc-bundle">
+                  <span title="StructureDefinition/enable-anc-bundle">ENABLE ANC Bundle
+</span>
+               </a>
+            </td>
+            <td>
+<p>The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.
+It contains exactly one Patient, exactly one Organization (the facility),
+one or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,
+once per Bundle) and the visit-level Observations (Gestational Age and
+ANC Visit Number, once per finished Encounter). type = collection (a
+container; the middleware maps it to the DHIS2 tracker model — Patient -&gt;
+TrackedEntity, Encounter(finished) -&gt; Event, Encounter(planned) -&gt;
+scheduled Event, Organization -&gt; orgUnit on enrollment + every event).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-anc-encounter.html"
+                  title="StructureDefinition/enable-anc-encounter">
+                  <span title="StructureDefinition/enable-anc-encounter">ENABLE ANC Encounter (visit)
+</span>
+               </a>
+            </td>
+            <td>
+<p>One ANC visit for the woman. status = finished for a visit that happened; status = planned for the next scheduled visit. period.start carries the date. serviceProvider references the facility (used by the middleware to derive the DHIS2 orgUnit for the enrolment and every event).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-anc-patient.html"
+                  title="StructureDefinition/enable-anc-patient">
+                  <span title="StructureDefinition/enable-anc-patient">ENABLE ANC Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>The pregnant woman. Carries the identity and contact details the ANC tracker and the SMS gateway need.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-anc-visit-number.html"
+                  title="StructureDefinition/enable-anc-visit-number">
+                  <span title="StructureDefinition/enable-anc-visit-number">ENABLE ANC Visit Number
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sequential number of this ANC visit. Visit-level: one per finished Encounter. Ethiopia-local code ET-ANC-051 (no WHO DAK code).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-expected-delivery-date.html"
+                  title="StructureDefinition/enable-expected-delivery-date">
+                  <span title="StructureDefinition/enable-expected-delivery-date">ENABLE Expected Date of Delivery (EDD)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Estimated/expected date of delivery. Pregnancy-level: one per Bundle. DHIS2 ANC.B6.DE22.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-gestational-age.html"
+                  title="StructureDefinition/enable-gestational-age">
+                  <span title="StructureDefinition/enable-gestational-age">ENABLE Gestational Age
+</span>
+               </a>
+            </td>
+            <td>
+<p>Gestational age in completed weeks at the ANC visit. Visit-level: one per finished Encounter. DHIS2 ANC.B6.DE17.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-organization.html"
+                  title="StructureDefinition/enable-organization">
+                  <span title="StructureDefinition/enable-organization">ENABLE Health Facility (Organization)
+</span>
+               </a>
+            </td>
+            <td>
+<p>The health facility that provided the ANC visit. The identifier value is the facility's DHIS2 organisation-unit code, drawn from the deployment's master facility list, so the middleware can match this facility to the correct DHIS2 org unit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enable-last-menstrual-period.html"
+                  title="StructureDefinition/enable-last-menstrual-period">
+                  <span title="StructureDefinition/enable-last-menstrual-period">ENABLE Last Normal Menstrual Period (LNMP) date
+</span>
+               </a>
+            </td>
+            <td>
+<p>Date of the last normal menstrual period. Pregnancy-level: one per Bundle. DHIS2 ANC.B6.DE14.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-enable-et-anc.html" title="CodeSystem/enable-et-anc">
+                  <span title="CodeSystem/enable-et-anc">ENABLE Ethiopia-local ANC codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Ethiopia-local ANC data elements that have no WHO ANC DAK code. Codes mirror the DHIS2 ENABLE ANC metadata.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-enable-mrn-namingsystem.html"
+                  title="NamingSystem/enable-mrn-namingsystem">
+                  <span title="NamingSystem/enable-mrn-namingsystem">ENABLE Client MRN identifier system
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifier system for the ENABLE ANC Client MRN (DHIS2 attribute ET-ANC-002).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-enable-dhis2-orgunit-code-namingsystem.html"
+                  title="NamingSystem/enable-dhis2-orgunit-code-namingsystem">
+                  <span title="NamingSystem/enable-dhis2-orgunit-code-namingsystem">ENABLE DHIS2 organisation-unit code identifier system
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ExampleAncBundleMultiVisit.html"
+                  title="Bundle/ExampleAncBundleMultiVisit">
+                  <span title="Bundle/ExampleAncBundleMultiVisit">ENABLE ANC Bundle — multi-visit example
+</span>
+               </a>
+            </td>
+            <td>
+<p>A payload for one patient with three finished ANC visits and one planned next visit. Pregnancy-level Observations (LMP, EDD) appear once; visit-level Observations (Gestational Age, ANC Visit Number) appear once per finished Encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ExampleAncBundleSingleVisit.html"
+                  title="Bundle/ExampleAncBundleSingleVisit">
+                  <span title="Bundle/ExampleAncBundleSingleVisit">ENABLE ANC Bundle — single-visit example
+</span>
+               </a>
+            </td>
+            <td>
+<p>A complete first-ANC-visit payload for one patient: Patient + Facility + a finished and a planned Encounter + pregnancy-level Observations (LMP, EDD) + visit-level Observations (GA, Visit Number) for that finished visit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EnableAncEncounterVisit1Example.html"
+                  title="Encounter/EnableAncEncounterVisit1Example">
+                  <span title="Encounter/EnableAncEncounterVisit1Example">ENABLE ANC Encounter — first visit (finished)
+</span>
+               </a>
+            </td>
+            <td>
+<p>The first ANC visit that took place. Its date is also the enrolment date.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EnablePlannedEncounterExample.html"
+                  title="Encounter/EnablePlannedEncounterExample">
+                  <span title="Encounter/EnablePlannedEncounterExample">ENABLE ANC Encounter — next visit (planned)
+</span>
+               </a>
+            </td>
+            <td>
+<p>The next scheduled visit. Its date drives the appointment-reminder SMS. Optional.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EnableAncEncounterVisit2Example.html"
+                  title="Encounter/EnableAncEncounterVisit2Example">
+                  <span title="Encounter/EnableAncEncounterVisit2Example">ENABLE ANC Encounter — second visit (finished)
+</span>
+               </a>
+            </td>
+            <td>
+<p>The second ANC visit for the same woman, about a month after the first.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EnableAncEncounterVisit3Example.html"
+                  title="Encounter/EnableAncEncounterVisit3Example">
+                  <span title="Encounter/EnableAncEncounterVisit3Example">ENABLE ANC Encounter — third visit (finished)
+</span>
+               </a>
+            </td>
+            <td>
+<p>The third ANC visit for the same woman.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-EnablePatientExample.html"
+                  title="Patient/EnablePatientExample">
+                  <span title="Patient/EnablePatientExample">ENABLE ANC Patient — example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example woman enrolled at her first ANC visit. Name is populated here for readability but is OPTIONAL in the contract.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableAncVisitNumberExample.html"
+                  title="Observation/EnableAncVisitNumberExample">
+                  <span title="Observation/EnableAncVisitNumberExample">ENABLE ANC Visit Number — example
+</span>
+               </a>
+            </td>
+            <td>
+<p>First ANC visit (visit number 1).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableAncVisitNumberVisit2Example.html"
+                  title="Observation/EnableAncVisitNumberVisit2Example">
+                  <span title="Observation/EnableAncVisitNumberVisit2Example">ENABLE ANC Visit Number — visit 2 example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Second ANC visit (visit number 2).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableAncVisitNumberVisit3Example.html"
+                  title="Observation/EnableAncVisitNumberVisit3Example">
+                  <span title="Observation/EnableAncVisitNumberVisit3Example">ENABLE ANC Visit Number — visit 3 example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Third ANC visit (visit number 3).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableExpectedDeliveryDateExample.html"
+                  title="Observation/EnableExpectedDeliveryDateExample">
+                  <span title="Observation/EnableExpectedDeliveryDateExample">ENABLE Expected Date of Delivery — example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Expected date of delivery derived from the LNMP.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableGestationalAgeExample.html"
+                  title="Observation/EnableGestationalAgeExample">
+                  <span title="Observation/EnableGestationalAgeExample">ENABLE Gestational Age — example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Gestational age of 12 weeks at the first ANC visit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableGestationalAgeVisit2Example.html"
+                  title="Observation/EnableGestationalAgeVisit2Example">
+                  <span title="Observation/EnableGestationalAgeVisit2Example">ENABLE Gestational Age — visit 2 example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Gestational age of 16 weeks at the second ANC visit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableGestationalAgeVisit3Example.html"
+                  title="Observation/EnableGestationalAgeVisit3Example">
+                  <span title="Observation/EnableGestationalAgeVisit3Example">ENABLE Gestational Age — visit 3 example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Gestational age of 20 weeks at the third ANC visit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-ExampleFacility.html"
+                  title="Organization/ExampleFacility">
+                  <span title="Organization/ExampleFacility">ENABLE Health Facility — example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Example health facility. identifier.value is the DHIS2 organisation-unit code from the deployment's master facility list.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-EnableLastMenstrualPeriodExample.html"
+                  title="Observation/EnableLastMenstrualPeriodExample">
+                  <span title="Observation/EnableLastMenstrualPeriodExample">ENABLE Last Normal Menstrual Period — example
+</span>
+               </a>
+            </td>
+            <td>
+<p>Date of the last normal menstrual period.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-07 16:14:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

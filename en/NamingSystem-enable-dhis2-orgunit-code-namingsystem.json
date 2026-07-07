@@ -1,0 +1,46 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "enable-dhis2-orgunit-code-namingsystem",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem enable-dhis2-orgunit-code-namingsystem</b></p><a name=\"enable-dhis2-orgunit-code-namingsystem\"> </a><a name=\"hcenable-dhis2-orgunit-code-namingsystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>EnableDhis2OrgUnitCode</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.</p>\n</div></td></tr><tr><td>Publisher</td><td>Norwegian Institute of Public Health (NIPH)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhi.no/enable/identifier/dhis2-orgunit-code</td><td>true</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.2.0"
+  }],
+  "name" : "EnableDhis2OrgUnitCode",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2026-07-07",
+  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "contact" : [{
+    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhi.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "johan@devotta.no"
+    }]
+  }],
+  "description" : "Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "ET",
+      "display" : "Ethiopia"
+    }]
+  }],
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://fhi.no/enable/identifier/dhis2-orgunit-code",
+    "preferred" : true
+  }]
+}

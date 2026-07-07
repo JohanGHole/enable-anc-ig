@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhi.no/enable/anc/CodeSystem/enable-et-anc> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "enable-et-anc"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem enable-et-anc</b></p><a name=\"enable-et-anc\"> </a><a name=\"hcenable-et-anc\"> </a><p>This case-sensitive code system <code>http://fhi.no/enable/anc/CodeSystem/enable-et-anc</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-002<a name=\"enable-et-anc-ET-ANC-002\"> </a></td><td>Client MRN</td><td>ANC ET medical record number (tracked-entity attribute).</td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-005<a name=\"enable-et-anc-ET-ANC-005\"> </a></td><td>Date of birth</td><td>Woman's date of birth (tracked-entity attribute).</td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-015<a name=\"enable-et-anc-ET-ANC-015\"> </a></td><td>SMS phone number</td><td>Phone number used for SMS notifications (format 251xxxxxxxxx).</td></tr><tr><td style=\"white-space:nowrap\">ET-ANC-051<a name=\"enable-et-anc-ET-ANC-051\"> </a></td><td>ANC visit number</td><td>Sequential number of this ANC visit.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://fhi.no/enable/anc/CodeSystem/enable-et-anc"] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "EnableEtAncCS"] ;
+  fhir:CodeSystem.title [ fhir:value "ENABLE Ethiopia-local ANC codes"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-07T16:14:48+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Norwegian Institute of Public Health (NIPH)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Norwegian Institute of Public Health (NIPH)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhi.no/" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "johan@devotta.no" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Ethiopia-local ANC data elements that have no WHO ANC DAK code. Codes mirror the DHIS2 ENABLE ANC metadata."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "ET" ] ;
+       fhir:Coding.display [ fhir:value "Ethiopia" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ET-ANC-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Client MRN" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ANC ET medical record number (tracked-entity attribute)." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ET-ANC-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Date of birth" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Woman's date of birth (tracked-entity attribute)." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ET-ANC-015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SMS phone number" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Phone number used for SMS notifications (format 251xxxxxxxxx)." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ET-ANC-051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ANC visit number" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sequential number of this ANC visit." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhi.no/enable/anc/CodeSystem/enable-et-anc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

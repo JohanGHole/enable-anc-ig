@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="EnableAncVisitNumberVisit3Example"/>
+  <meta>
+    <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation EnableAncVisitNumberVisit3Example</b></p><a name="EnableAncVisitNumberVisit3Example"> </a><a name="hcEnableAncVisitNumberVisit3Example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-anc-visit-number.html">ENABLE ANC Visit Number</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}">ANC visit number</span></p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href="Encounter-EnableAncEncounterVisit3Example.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-08-10 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-08-10</p><p><b>value</b>: 3</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://fhi.no/enable/anc/CodeSystem/enable-et-anc"/>
+      <code value="ET-ANC-051"/>
+      <display value="ANC visit number"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/EnablePatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EnableAncEncounterVisit3Example"/>
+  </encounter>
+  <effectiveDateTime value="2026-08-10"/>
+  <valueInteger value="3"/>
+</Observation>

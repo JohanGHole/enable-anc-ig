@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Observation",
+  "id" : "EnableExpectedDeliveryDateExample",
+  "meta" : {
+    "profile" : ["http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableExpectedDeliveryDateExample</b></p><a name=\"EnableExpectedDeliveryDateExample\"> </a><a name=\"hcEnableExpectedDeliveryDateExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-expected-delivery-date.html\">ENABLE Expected Date of Delivery (EDD)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE22}, {http://loinc.org 11778-8}, {http://snomed.info/sct 161714006}\">Expected date of delivery (EDD)</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit1Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 2026-12-28</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+      "code" : "ANC.B6.DE22",
+      "display" : "Expected date of delivery (EDD)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11778-8",
+      "display" : "Delivery date Estimated"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "161714006",
+      "display" : "Expected date of delivery (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/EnablePatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/EnableAncEncounterVisit1Example"
+  },
+  "effectiveDateTime" : "2026-06-15",
+  "valueDateTime" : "2026-12-28"
+}

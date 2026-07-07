@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Mapping Script Recipes - ENABLE ANC Interoperability IG v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ENABLE ANC Interoperability IG</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Ethiopia flag" src="../assets/images/eth.svg" height="16" title="Ethiopia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li>
+    <a href="contract.html">The Contract</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping Guide</a>
+  </li>
+  <li>
+    <a href="mapping-scripts.html">Mapping Scripts</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quickstart</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mapping Script Recipes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ENABLE ANC Interoperability IG - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhi.no/enable/anc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Mapping Script Recipes</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mapping-script-recipes" id="markdown-toc-mapping-script-recipes">Mapping Script Recipes</a></li>
+  <li><a href="#jsonata--sketch" id="markdown-toc-jsonata--sketch">JSONata — sketch</a></li>
+  <li><a href="#deployment-loop" id="markdown-toc-deployment-loop">Deployment loop</a></li>
+  <li><a href="#testing" id="markdown-toc-testing">Testing</a></li>
+  <li><a href="#credentials" id="markdown-toc-credentials">Credentials</a></li>
+</ul>
+
+</div>
+<h3 id="mapping-script-recipes">Mapping Script Recipes</h3>
+
+<p>Your integration is a small script that runs on a schedule (cron, systemd timer, Kubernetes CronJob), fetches new ANC rows from your local system, shapes each row into an <a href="StructureDefinition-enable-anc-bundle.html">ENABLE ANC Bundle</a>, and POSTs it to the middleware over HTTPS with a per-site API key.</p>
+
+<p>The "shape" step is the interesting part. Pick whichever tool your team can maintain.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>When</th>
+      <th>Runtime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>JSONata</strong> — declarative JSON→JSON</td>
+      <td>JSON in, JSON out, simple mapping</td>
+      <td>Node.js, JVM, Python, browser</td>
+    </tr>
+    <tr>
+      <td><strong>DataSonnet</strong> — typed JVM template</td>
+      <td>Existing Java / Mule / Camel stack</td>
+      <td>JVM</td>
+    </tr>
+    <tr>
+      <td><strong>Python</strong> — plain dicts + <code class="language-plaintext highlighter-rouge">requests</code></td>
+      <td>You already run Python ETL</td>
+      <td>Python 3</td>
+    </tr>
+    <tr>
+      <td><strong>jq</strong> — shell filter</td>
+      <td>Proof-of-concept</td>
+      <td>Any Unix</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All four produce the same conformant Bundle. Recommended default: JSONata (declarative, tiny library, <a href="https://try.jsonata.org/">live playground</a>).</p>
+
+<h3 id="jsonata--sketch">JSONata — sketch</h3>
+
+<pre><code class="language-jsonata">{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    { "fullUrl": "urn:uuid:patient-1", "resource": {
+        "resourceType": "Patient",
+        "identifier": [{ "system": "http://fhi.no/enable/identifier/mrn", "value": pnt_mrn }],
+        "birthDate": pnt_date_birth,
+        "telecom": [{ "system": "phone", "value": pnt_phone, "use": "mobile" }]
+    }},
+    { "fullUrl": "urn:uuid:facility-1", "resource": {
+        "resourceType": "Organization",
+        "identifier": [{ "system": "http://fhi.no/enable/identifier/dhis2-orgunit-code",
+                         "value": $FACILITY_CODE, "use": "official" }],
+        "name": $FACILITY_NAME
+    }},
+    { "fullUrl": "urn:uuid:encounter-visit", "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "AMB" },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "period": { "start": opdanc_exam_date },
+        "serviceProvider": { "reference": "urn:uuid:facility-1" }
+    }}
+    /* … four Observations follow the same shape … */
+  ]
+}
+</code></pre>
+
+<p>Bind <code class="language-plaintext highlighter-rouge">$FACILITY_CODE</code> and <code class="language-plaintext highlighter-rouge">$FACILITY_NAME</code> at evaluation time from your site config. Use <code class="language-plaintext highlighter-rouge">$number(...)</code> on integer fields so they are not quoted in the output.</p>
+
+<p>For DataSonnet, Python and jq recipes see the tool's own documentation — the mapping shape is identical, only the syntax differs. Copy the JSON in the <a href="downloads.html">samples</a> as your target.</p>
+
+<h3 id="deployment-loop">Deployment loop</h3>
+
+<ol>
+  <li><strong>Cron</strong> — schedule per SMS latency requirement.</li>
+  <li><strong>Fetch delta</strong> — query rows newer than your last watermark.</li>
+  <li><strong>Shape</strong> — run the mapping template. Produce one Bundle per woman.</li>
+  <li><strong>POST</strong> — one of two modes:
+    <ul>
+      <li><strong>One patient per request</strong> — <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+json</code>, body is the Bundle. Simple, one HTTP round-trip per woman.</li>
+      <li><strong>Many patients in one request (recommended for batches)</strong> — <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+ndjson</code>, body is the per-patient Bundles concatenated with newlines (one Bundle per line, no wrapper array). FHIR-standard bulk shape; the middleware processes and reports per line.</li>
+    </ul>
+  </li>
+  <li><strong>Handle response</strong> — 2xx → mark sent; 4xx → log <code class="language-plaintext highlighter-rouge">OperationOutcome.issue[*].diagnostics</code> and alert; 5xx → exponential backoff. For NDJSON, the middleware returns per-line status.</li>
+  <li><strong>Idempotency</strong> — the middleware keys on <code class="language-plaintext highlighter-rouge">Patient.identifier</code> (MRN), so re-POSTing the same Bundle updates rather than duplicates.</li>
+</ol>
+
+<h3 id="testing">Testing</h3>
+
+<ul>
+  <li>Paste the output into <a href="https://validator.fhir.org/">https://validator.fhir.org/</a> and validate against <code class="language-plaintext highlighter-rouge">enable.anc.ig#0.2.0</code>.</li>
+  <li>Smoke-test against the staging middleware endpoint before pointing cron at production.</li>
+</ul>
+
+<h3 id="credentials">Credentials</h3>
+
+<p>One API key per EMR site, issued by the ENABLE team. Store in an env var or secret manager, never in the mapping template. All traffic HTTPS.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-07 16:14:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

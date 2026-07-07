@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ExampleFacility",
+  "meta" : {
+    "profile" : ["http://fhi.no/enable/anc/StructureDefinition/enable-organization"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ExampleFacility</b></p><a name=\"ExampleFacility\"> </a><a name=\"hcExampleFacility\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-organization.html\">ENABLE Health Facility (Organization)</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-enable-dhis2-orgunit-code-namingsystem.html\" title=\"Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.\">EnableDhis2OrgUnitCode</a>/1057888\u00a0(use:\u00a0official,\u00a0)</p><p><b>name</b>: Felege Mels Health Center</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://fhi.no/enable/identifier/dhis2-orgunit-code",
+    "value" : "1057888"
+  }],
+  "name" : "Felege Mels Health Center"
+}

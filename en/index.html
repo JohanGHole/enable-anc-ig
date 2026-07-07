@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - ENABLE ANC Interoperability IG v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ENABLE ANC Interoperability IG</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Ethiopia flag" src="../assets/images/eth.svg" height="16" title="Ethiopia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li>
+    <a href="contract.html">The Contract</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping Guide</a>
+  </li>
+  <li>
+    <a href="mapping-scripts.html">Mapping Scripts</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quickstart</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ENABLE ANC Interoperability IG - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhi.no/enable/anc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig|0.2.0"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            as of 
+2026-07-07
+
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">EnableAncIG</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#enable-anc-interoperability" id="markdown-toc-enable-anc-interoperability">ENABLE ANC Interoperability</a></li>
+  <li><a href="#what-the-ig-describes" id="markdown-toc-what-the-ig-describes">What the IG describes</a></li>
+  <li><a href="#scope-of-iteration-1" id="markdown-toc-scope-of-iteration-1">Scope of iteration 1</a></li>
+  <li><a href="#for-emr-implementers" id="markdown-toc-for-emr-implementers">For EMR implementers</a></li>
+</ul>
+
+</div>
+<h3 id="enable-anc-interoperability">ENABLE ANC Interoperability</h3>
+
+<p>This Implementation Guide defines <strong>the structure of the FHIR payload an EMR must send</strong> to the ENABLE middleware so that a woman's antenatal-care (ANC) visits flow into DHIS2 and drive the SMS reminder programme.</p>
+
+<p>The first draft contains a minimum viable payload, not a clinical guide. If your EMR can produce the Bundle described here, the middleware will be able to process the payload and push it to DHIS2.</p>
+
+<h3 id="what-the-ig-describes">What the IG describes</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   EMR                        ENABLE FHIR-native middleware              DHIS2 tracker
+   (Bahmni /                  (sits in front of DHIS2)                   (SMS gateway
+    PulseTech)                                                            downstream)
+   ┌───────────┐              ┌────────────────────────────┐             ┌─────────────┐
+   │ your data │ ── FHIR ───► │  Accepts Bundles that      │ ── DHIS2 ─► │  enrollment │
+   │ (any      │   Bundle     │  conform to THIS IG.       │   tracker   │  + events   │
+   │  format)  │              │              │   API       │  + SMS      │
+   └───────────┘              └────────────────────────────┘             └─────────────┘
+</code></pre></div></div>
+
+<ul>
+  <li>The <strong>EMR side</strong> is out of scope for this IG. Each EMR maps once from its own data model into the Bundle shape described here.</li>
+  <li>The <strong>middleware</strong> is a FHIR-native service that ENABLE operates in front of the DHIS2 server. It accepts POSTed FHIR Bundles that follow this IG and translates them into DHIS2 tracker calls.</li>
+  <li>The <strong>DHIS2 side</strong> is invisible to the EMR. The middleware owns that translation.</li>
+</ul>
+
+<h3 id="scope-of-iteration-1">Scope of iteration 1</h3>
+
+<p>This IG covers the <strong>SMS-slice</strong>: the minimum data the SMS reminder programme needs. That is:</p>
+
+<ul>
+  <li>One pregnant woman (Patient) with MRN, date of birth, phone number.</li>
+  <li>One health <strong>facility</strong> (Organization) whose identifier matches a DHIS2 organisation-unit code.</li>
+  <li>One or more ANC <strong>visits</strong> (Encounters). Finished visits plus an optional planned next visit.</li>
+  <li>Two pregnancy-level dates recorded once: last menstrual period date and expected delivery date.</li>
+  <li>Two measurements per finished visit: gestational age and ANC visit number.</li>
+</ul>
+
+<p>Full clinical ANC data (weight, BP, urine tests, HIV status, delivery outcome, etc.) is deliberately out of scope for this iteration and will be added incrementally.</p>
+
+<h3 id="for-emr-implementers">For EMR implementers</h3>
+
+<p>Read these pages, in order, to get an overview of the expected data structure:</p>
+
+<ol>
+  <li><strong><a href="background.html">Background &amp; Use Case</a></strong></li>
+  <li><strong><a href="contract.html">The Contract</a></strong> The Bundle profile, the field table, and a complete worked JSON.</li>
+  <li><strong><a href="mapping.html">EMR Mapping Guide</a></strong> — Your EMR's fields ↔ FHIR paths (Bahmni and PulseTech).</li>
+  <li><strong><a href="quickstart.html">Implementer Quickstart</a></strong></li>
+  <li><strong><a href="downloads.html">Downloads &amp; Templates</a></strong>  Click-to-download JSON templates and samples.</li>
+</ol>
+
+<p>Everything you need to send a conformant payload to the middleware is included here in this published IG. You should not need to download and build this IG locally.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-07 16:14:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

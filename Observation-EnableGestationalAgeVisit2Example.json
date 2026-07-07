@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Observation",
+  "id" : "EnableGestationalAgeVisit2Example",
+  "meta" : {
+    "profile" : ["http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableGestationalAgeVisit2Example</b></p><a name=\"EnableGestationalAgeVisit2Example\"> </a><a name=\"hcEnableGestationalAgeVisit2Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-gestational-age.html\">ENABLE Gestational Age</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE17}, {http://loinc.org 18185-9}, {http://snomed.info/sct 57036006}\">Gestational age</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit2Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-07-13 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-07-13</p><p><b>value</b>: 16 weeks<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://smart.who.int/anc/CodeSystem/anc-custom-codes",
+      "code" : "ANC.B6.DE17",
+      "display" : "Gestational age"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18185-9",
+      "display" : "Gestational age Estimated"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "57036006",
+      "display" : "Gestational age (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/EnablePatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/EnableAncEncounterVisit2Example"
+  },
+  "effectiveDateTime" : "2026-07-13",
+  "valueQuantity" : {
+    "value" : 16,
+    "unit" : "weeks",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "wk"
+  }
+}

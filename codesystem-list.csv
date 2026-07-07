@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://fhi.no/enable/anc/CodeSystem/enable-et-anc,0.2.0,draft,,EnableEtAncCS,ENABLE Ethiopia-local ANC codes,"Ethiopia-local ANC data elements that have no WHO ANC DAK code. Codes mirror the DHIS2 ENABLE ANC metadata.",

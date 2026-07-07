@@ -1,0 +1,84 @@
+[{
+  "id" : "enable-et-anc",
+  "type" : "CodeSystem",
+  "url" : "http://fhi.no/enable/anc/CodeSystem/enable-et-anc",
+  "version" : "0.2.0",
+  "name" : "EnableEtAncCS"
+},
+{
+  "id" : "enable.anc.ig",
+  "type" : "ImplementationGuide",
+  "url" : "http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig",
+  "version" : "0.2.0",
+  "name" : "EnableAncIG"
+},
+{
+  "id" : "enable-dhis2-orgunit-code-namingsystem",
+  "type" : "NamingSystem",
+  "url" : "http://fhi.no/enable/anc/NamingSystem/enable-dhis2-orgunit-code-namingsystem",
+  "version" : "0.2.0",
+  "name" : "EnableDhis2OrgUnitCode"
+},
+{
+  "id" : "enable-mrn-namingsystem",
+  "type" : "NamingSystem",
+  "url" : "http://fhi.no/enable/anc/NamingSystem/enable-mrn-namingsystem",
+  "version" : "0.2.0",
+  "name" : "EnableClientMrn"
+},
+{
+  "id" : "enable-anc-bundle",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle",
+  "version" : "0.2.0",
+  "name" : "EnableAncBundle"
+},
+{
+  "id" : "enable-anc-encounter",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter",
+  "version" : "0.2.0",
+  "name" : "EnableAncEncounter"
+},
+{
+  "id" : "enable-anc-patient",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient",
+  "version" : "0.2.0",
+  "name" : "EnableAncPatient"
+},
+{
+  "id" : "enable-anc-visit-number",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number",
+  "version" : "0.2.0",
+  "name" : "EnableAncVisitNumber"
+},
+{
+  "id" : "enable-expected-delivery-date",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date",
+  "version" : "0.2.0",
+  "name" : "EnableExpectedDeliveryDate"
+},
+{
+  "id" : "enable-gestational-age",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age",
+  "version" : "0.2.0",
+  "name" : "EnableGestationalAge"
+},
+{
+  "id" : "enable-last-menstrual-period",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period",
+  "version" : "0.2.0",
+  "name" : "EnableLastMenstrualPeriod"
+},
+{
+  "id" : "enable-organization",
+  "type" : "StructureDefinition",
+  "url" : "http://fhi.no/enable/anc/StructureDefinition/enable-organization",
+  "version" : "0.2.0",
+  "name" : "EnableOrganization"
+}]

@@ -1,0 +1,596 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Bundle/ExampleAncBundleMultiVisit> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ExampleAncBundleMultiVisit"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle>
+     ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "collection"] ;
+  fhir:Bundle.entry [
+     fhir:index 0 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Patient/EnablePatientExample" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Patient/EnablePatientExample>
+  ], [
+     fhir:index 1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Organization/ExampleFacility" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Organization/ExampleFacility>
+  ], [
+     fhir:index 2 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Encounter/EnableAncEncounterVisit1Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Encounter/EnableAncEncounterVisit1Example>
+  ], [
+     fhir:index 3 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Encounter/EnableAncEncounterVisit2Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Encounter/EnableAncEncounterVisit2Example>
+  ], [
+     fhir:index 4 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Encounter/EnableAncEncounterVisit3Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Encounter/EnableAncEncounterVisit3Example>
+  ], [
+     fhir:index 5 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Encounter/EnablePlannedEncounterExample" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Encounter/EnablePlannedEncounterExample>
+  ], [
+     fhir:index 6 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableLastMenstrualPeriodExample" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableLastMenstrualPeriodExample>
+  ], [
+     fhir:index 7 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableExpectedDeliveryDateExample" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableExpectedDeliveryDateExample>
+  ], [
+     fhir:index 8 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableGestationalAgeExample" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableGestationalAgeExample>
+  ], [
+     fhir:index 9 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableGestationalAgeVisit2Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableGestationalAgeVisit2Example>
+  ], [
+     fhir:index 10 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableGestationalAgeVisit3Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableGestationalAgeVisit3Example>
+  ], [
+     fhir:index 11 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableAncVisitNumberExample" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableAncVisitNumberExample>
+  ], [
+     fhir:index 12 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableAncVisitNumberVisit2Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableAncVisitNumberVisit2Example>
+  ], [
+     fhir:index 13 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://fhi.no/enable/Observation/EnableAncVisitNumberVisit3Example" ] ;
+     fhir:Bundle.entry.resource <http://fhi.no/enable/Observation/EnableAncVisitNumberVisit3Example>
+  ] .
+
+<http://fhi.no/enable/Patient/EnablePatientExample> a fhir:Patient ;
+  fhir:Resource.id [ fhir:value "EnablePatientExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_EnablePatientExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient EnablePatientExample</b></p><a name=\"EnablePatientExample\"> </a><a name=\"hcEnablePatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-patient.html\">ENABLE ANC Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">ph: 251911234567(Mobile)</td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://fhi.no/enable/identifier/mrn" ] ;
+     fhir:Identifier.value [ fhir:value "ANC-000718642" ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "251911234567" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1995-08-07"^^xsd:date] .
+
+<http://fhi.no/enable/Organization/ExampleFacility> a fhir:Organization ;
+  fhir:Resource.id [ fhir:value "ExampleFacility"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-organization" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-organization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_ExampleFacility\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization ExampleFacility</b></p><a name=\"ExampleFacility\"> </a><a name=\"hcExampleFacility\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-organization.html\">ENABLE Health Facility (Organization)</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-enable-dhis2-orgunit-code-namingsystem.html\" title=\"Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.\">EnableDhis2OrgUnitCode</a>/1057888 (use: official, )</p><p><b>name</b>: Felege Mels Health Center</p></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://fhi.no/enable/identifier/dhis2-orgunit-code" ] ;
+     fhir:Identifier.value [ fhir:value "1057888" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Felege Mels Health Center"] .
+
+<http://fhi.no/enable/Encounter/EnableAncEncounterVisit1Example> a fhir:Encounter ;
+  fhir:Resource.id [ fhir:value "EnableAncEncounterVisit1Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_EnableAncEncounterVisit1Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter EnableAncEncounterVisit1Example</b></p><a name=\"EnableAncEncounterVisit1Example\"> </a><a name=\"hcEnableAncEncounterVisit1Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-encounter.html\">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-06-15 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-ExampleFacility.html\">Organization Felege Mels Health Center</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-06-15"^^xsd:date ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://fhi.no/enable/anc/Organization/ExampleFacility> ;
+     fhir:Reference.reference [ fhir:value "Organization/ExampleFacility" ]
+  ] .
+
+<http://fhi.no/enable/Encounter/EnableAncEncounterVisit2Example> a fhir:Encounter ;
+  fhir:Resource.id [ fhir:value "EnableAncEncounterVisit2Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_EnableAncEncounterVisit2Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter EnableAncEncounterVisit2Example</b></p><a name=\"EnableAncEncounterVisit2Example\"> </a><a name=\"hcEnableAncEncounterVisit2Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-encounter.html\">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-07-13 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-ExampleFacility.html\">Organization Felege Mels Health Center</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-07-13"^^xsd:date ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://fhi.no/enable/anc/Organization/ExampleFacility> ;
+     fhir:Reference.reference [ fhir:value "Organization/ExampleFacility" ]
+  ] .
+
+<http://fhi.no/enable/Encounter/EnableAncEncounterVisit3Example> a fhir:Encounter ;
+  fhir:Resource.id [ fhir:value "EnableAncEncounterVisit3Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_EnableAncEncounterVisit3Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter EnableAncEncounterVisit3Example</b></p><a name=\"EnableAncEncounterVisit3Example\"> </a><a name=\"hcEnableAncEncounterVisit3Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-encounter.html\">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-08-10 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-ExampleFacility.html\">Organization Felege Mels Health Center</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-08-10"^^xsd:date ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://fhi.no/enable/anc/Organization/ExampleFacility> ;
+     fhir:Reference.reference [ fhir:value "Organization/ExampleFacility" ]
+  ] .
+
+<http://fhi.no/enable/Encounter/EnablePlannedEncounterExample> a fhir:Encounter ;
+  fhir:Resource.id [ fhir:value "EnablePlannedEncounterExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_EnablePlannedEncounterExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter EnablePlannedEncounterExample</b></p><a name=\"EnablePlannedEncounterExample\"> </a><a name=\"hcEnablePlannedEncounterExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-encounter.html\">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Planned</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-09-07 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-ExampleFacility.html\">Organization Felege Mels Health Center</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "planned"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-09-07"^^xsd:date ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://fhi.no/enable/anc/Organization/ExampleFacility> ;
+     fhir:Reference.reference [ fhir:value "Organization/ExampleFacility" ]
+  ] .
+
+<http://fhi.no/enable/Observation/EnableLastMenstrualPeriodExample> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableLastMenstrualPeriodExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableLastMenstrualPeriodExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableLastMenstrualPeriodExample</b></p><a name=\"EnableLastMenstrualPeriodExample\"> </a><a name=\"hcEnableLastMenstrualPeriodExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-last-menstrual-period.html\">ENABLE Last Normal Menstrual Period (LNMP) date</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE14}, {http://loinc.org 8665-2}, {http://snomed.info/sct 21840007}\">Last menstrual period (LMP) date</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit1Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 2026-03-23</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://smart.who.int/anc/CodeSystem/anc-custom-codes" ] ;
+       fhir:Coding.code [ fhir:value "ANC.B6.DE14" ] ;
+       fhir:Coding.display [ fhir:value "Last menstrual period (LMP) date" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:8665-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "8665-2" ] ;
+       fhir:Coding.display [ fhir:value "Last menstrual period start date" ]
+     ], [
+       fhir:index 2 ;
+       a sct:21840007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "21840007" ] ;
+       fhir:Coding.display [ fhir:value "Date of last menstrual period (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit1Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit1Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-06-15"^^xsd:date] ;
+  fhir:Observation.valueDateTime [ fhir:value "2026-03-23"^^xsd:date] .
+
+<http://fhi.no/enable/Observation/EnableExpectedDeliveryDateExample> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableExpectedDeliveryDateExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableExpectedDeliveryDateExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableExpectedDeliveryDateExample</b></p><a name=\"EnableExpectedDeliveryDateExample\"> </a><a name=\"hcEnableExpectedDeliveryDateExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-expected-delivery-date.html\">ENABLE Expected Date of Delivery (EDD)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE22}, {http://loinc.org 11778-8}, {http://snomed.info/sct 161714006}\">Expected date of delivery (EDD)</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit1Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 2026-12-28</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://smart.who.int/anc/CodeSystem/anc-custom-codes" ] ;
+       fhir:Coding.code [ fhir:value "ANC.B6.DE22" ] ;
+       fhir:Coding.display [ fhir:value "Expected date of delivery (EDD)" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:11778-8 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11778-8" ] ;
+       fhir:Coding.display [ fhir:value "Delivery date Estimated" ]
+     ], [
+       fhir:index 2 ;
+       a sct:161714006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "161714006" ] ;
+       fhir:Coding.display [ fhir:value "Expected date of delivery (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit1Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit1Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-06-15"^^xsd:date] ;
+  fhir:Observation.valueDateTime [ fhir:value "2026-12-28"^^xsd:date] .
+
+<http://fhi.no/enable/Observation/EnableGestationalAgeExample> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableGestationalAgeExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableGestationalAgeExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableGestationalAgeExample</b></p><a name=\"EnableGestationalAgeExample\"> </a><a name=\"hcEnableGestationalAgeExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-gestational-age.html\">ENABLE Gestational Age</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE17}, {http://loinc.org 18185-9}, {http://snomed.info/sct 57036006}\">Gestational age</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit1Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 12 weeks<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://smart.who.int/anc/CodeSystem/anc-custom-codes" ] ;
+       fhir:Coding.code [ fhir:value "ANC.B6.DE17" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:18185-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "18185-9" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age Estimated" ]
+     ], [
+       fhir:index 2 ;
+       a sct:57036006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "57036006" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit1Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit1Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-06-15"^^xsd:date] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "12"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "weeks" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "wk" ]
+  ] .
+
+<http://fhi.no/enable/Observation/EnableGestationalAgeVisit2Example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableGestationalAgeVisit2Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableGestationalAgeVisit2Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableGestationalAgeVisit2Example</b></p><a name=\"EnableGestationalAgeVisit2Example\"> </a><a name=\"hcEnableGestationalAgeVisit2Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-gestational-age.html\">ENABLE Gestational Age</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE17}, {http://loinc.org 18185-9}, {http://snomed.info/sct 57036006}\">Gestational age</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit2Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-07-13 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-07-13</p><p><b>value</b>: 16 weeks<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://smart.who.int/anc/CodeSystem/anc-custom-codes" ] ;
+       fhir:Coding.code [ fhir:value "ANC.B6.DE17" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:18185-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "18185-9" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age Estimated" ]
+     ], [
+       fhir:index 2 ;
+       a sct:57036006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "57036006" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit2Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit2Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-07-13"^^xsd:date] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "16"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "weeks" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "wk" ]
+  ] .
+
+<http://fhi.no/enable/Observation/EnableGestationalAgeVisit3Example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableGestationalAgeVisit3Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableGestationalAgeVisit3Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableGestationalAgeVisit3Example</b></p><a name=\"EnableGestationalAgeVisit3Example\"> </a><a name=\"hcEnableGestationalAgeVisit3Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-gestational-age.html\">ENABLE Gestational Age</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE17}, {http://loinc.org 18185-9}, {http://snomed.info/sct 57036006}\">Gestational age</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit3Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-08-10 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-08-10</p><p><b>value</b>: 20 weeks<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://smart.who.int/anc/CodeSystem/anc-custom-codes" ] ;
+       fhir:Coding.code [ fhir:value "ANC.B6.DE17" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:18185-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "18185-9" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age Estimated" ]
+     ], [
+       fhir:index 2 ;
+       a sct:57036006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "57036006" ] ;
+       fhir:Coding.display [ fhir:value "Gestational age (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit3Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit3Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-08-10"^^xsd:date] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "weeks" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "wk" ]
+  ] .
+
+<http://fhi.no/enable/Observation/EnableAncVisitNumberExample> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableAncVisitNumberExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableAncVisitNumberExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableAncVisitNumberExample</b></p><a name=\"EnableAncVisitNumberExample\"> </a><a name=\"hcEnableAncVisitNumberExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-visit-number.html\">ENABLE ANC Visit Number</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}\">ANC visit number</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit1Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 1</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://fhi.no/enable/anc/CodeSystem/enable-et-anc" ] ;
+       fhir:Coding.code [ fhir:value "ET-ANC-051" ] ;
+       fhir:Coding.display [ fhir:value "ANC visit number" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit1Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit1Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-06-15"^^xsd:date] ;
+  fhir:Observation.valueInteger [ fhir:value "1"^^xsd:integer] .
+
+<http://fhi.no/enable/Observation/EnableAncVisitNumberVisit2Example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableAncVisitNumberVisit2Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableAncVisitNumberVisit2Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableAncVisitNumberVisit2Example</b></p><a name=\"EnableAncVisitNumberVisit2Example\"> </a><a name=\"hcEnableAncVisitNumberVisit2Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-visit-number.html\">ENABLE ANC Visit Number</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}\">ANC visit number</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit2Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-07-13 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-07-13</p><p><b>value</b>: 2</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://fhi.no/enable/anc/CodeSystem/enable-et-anc" ] ;
+       fhir:Coding.code [ fhir:value "ET-ANC-051" ] ;
+       fhir:Coding.display [ fhir:value "ANC visit number" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit2Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit2Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-07-13"^^xsd:date] ;
+  fhir:Observation.valueInteger [ fhir:value "2"^^xsd:integer] .
+
+<http://fhi.no/enable/Observation/EnableAncVisitNumberVisit3Example> a fhir:Observation ;
+  fhir:Resource.id [ fhir:value "EnableAncVisitNumberVisit3Example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EnableAncVisitNumberVisit3Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableAncVisitNumberVisit3Example</b></p><a name=\"EnableAncVisitNumberVisit3Example\"> </a><a name=\"hcEnableAncVisitNumberVisit3Example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-anc-visit-number.html\">ENABLE ANC Visit Number</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}\">ANC visit number</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit3Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-08-10 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-08-10</p><p><b>value</b>: 3</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://fhi.no/enable/anc/CodeSystem/enable-et-anc" ] ;
+       fhir:Coding.code [ fhir:value "ET-ANC-051" ] ;
+       fhir:Coding.display [ fhir:value "ANC visit number" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit3Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit3Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-08-10"^^xsd:date] ;
+  fhir:Observation.valueInteger [ fhir:value "3"^^xsd:integer] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Bundle/ExampleAncBundleMultiVisit.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

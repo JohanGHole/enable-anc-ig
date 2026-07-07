@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Implementer Quickstart - ENABLE ANC Interoperability IG v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ENABLE ANC Interoperability IG</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Ethiopia flag" src="../assets/images/eth.svg" height="16" title="Ethiopia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li>
+    <a href="contract.html">The Contract</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping Guide</a>
+  </li>
+  <li>
+    <a href="mapping-scripts.html">Mapping Scripts</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quickstart</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Implementer Quickstart</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ENABLE ANC Interoperability IG - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhi.no/enable/anc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Implementer Quickstart</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#implementer-quickstart" id="markdown-toc-implementer-quickstart">Implementer Quickstart</a></li>
+  <li><a href="#1-pick-a-template" id="markdown-toc-1-pick-a-template">1. Pick a template</a></li>
+  <li><a href="#2-fill-it-in" id="markdown-toc-2-fill-it-in">2. Fill it in</a></li>
+  <li><a href="#3-validate" id="markdown-toc-3-validate">3. Validate</a></li>
+  <li><a href="#4-post" id="markdown-toc-4-post">4. POST</a></li>
+  <li><a href="#5-automate" id="markdown-toc-5-automate">5. Automate</a></li>
+  <li><a href="#pre-flight-checklist" id="markdown-toc-pre-flight-checklist">Pre-flight checklist</a></li>
+</ul>
+
+</div>
+<h3 id="implementer-quickstart">Implementer Quickstart</h3>
+
+<p>You need three things: the middleware URL and API key (from the ENABLE team), your site's DHIS2 organisation-unit code from the <a href="contract.html#organization---the-facility">master facility list</a> (also from the ENABLE team, set up once at onboarding), and about 15 minutes.</p>
+
+<h3 id="1-pick-a-template">1. Pick a template</h3>
+
+<ul>
+  <li><a href="EnableAncBundle-bahmni-template.json">EnableAncBundle-bahmni-template.json</a></li>
+  <li><a href="EnableAncBundle-pulsetech-template.json">EnableAncBundle-pulsetech-template.json</a></li>
+</ul>
+
+<p><strong>The templates are boilerplate by design.</strong> All the FHIR plumbing — resource types, codes, systems, the references that tie Patient/Encounter/Observation together — is already filled in. Your only job is to plug in your EMR's data-element values in the placeholders. Don't change anything else.</p>
+
+<p>Each placeholder tells you whether the field is REQUIRED or OPTIONAL, the type, and the source field in your EMR (per the <a href="mapping.html">Mapping Guide</a>).</p>
+
+<h3 id="2-fill-it-in">2. Fill it in</h3>
+
+<ul>
+  <li>Replace every <code class="language-plaintext highlighter-rouge">&lt;REPLACE_ME | ... | ...&gt;</code> with your value.</li>
+  <li><strong>Integers are unquoted</strong> — gestational age and ANC visit number: <code class="language-plaintext highlighter-rouge">12</code>, not <code class="language-plaintext highlighter-rouge">"12"</code>.</li>
+  <li>All dates in <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>. Phone in <code class="language-plaintext highlighter-rouge">251xxxxxxxxx</code>.</li>
+  <li><strong>Facility identifier</strong> is your site's DHIS2 organisation-unit code (e.g. <code class="language-plaintext highlighter-rouge">1057888</code>) — same value for every Bundle from that site.</li>
+  <li>Delete the optional <code class="language-plaintext highlighter-rouge">encounter-next</code> entry if you have no scheduled next visit.</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">Patient.name</code> if your site's data-sharing rules do not permit sending patient names.</li>
+  <li>Remove every <code class="language-plaintext highlighter-rouge">"_comment_..."</code> line before sending — they are guidance, not valid FHIR.</li>
+</ul>
+
+<h3 id="3-validate">3. Validate</h3>
+
+<p>Paste your Bundle into <a href="https://validator.fhir.org/">https://validator.fhir.org/</a> and validate against <code class="language-plaintext highlighter-rouge">enable.anc.ig#0.2.0</code>. Fix anything the validator flags. No local tooling needed.</p>
+
+<h3 id="4-post">4. POST</h3>
+
+<p><strong>One patient:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="s2">"&lt;middleware-base-url&gt;/api/anc-contact"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/fhir+json"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"x-api-key: &lt;YOUR_API_KEY&gt;"</span> <span class="se">\</span>
+  <span class="nt">--data</span> @your-bundle.json
+</code></pre></div></div>
+
+<p><strong>Many patients in one request</strong> — concatenate the per-patient Bundles with a newline between each (one Bundle per line, no trailing comma, no wrapper array) and send as <strong>NDJSON</strong>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="s2">"&lt;middleware-base-url&gt;/api/anc-contact"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/fhir+ndjson"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"x-api-key: &lt;YOUR_API_KEY&gt;"</span> <span class="se">\</span>
+  <span class="nt">--data-binary</span> @your-batch.ndjson
+</code></pre></div></div>
+
+<p>NDJSON is the FHIR-standard shape for bulk transfer: each line is one full Bundle in the same shape as the single-patient POST. The middleware processes each line independently and reports per-line success or failure.</p>
+
+<p>The response is a FHIR <code class="language-plaintext highlighter-rouge">OperationOutcome</code> (FHIR's status envelope). On failure, <code class="language-plaintext highlighter-rouge">issue[*].diagnostics</code> names the rule that failed and where in your Bundle. Fix and resend.</p>
+
+<h3 id="5-automate">5. Automate</h3>
+
+<p>Wire steps 1–4 into a script running on a schedule (cron, systemd timer, Kubernetes CronJob). See <a href="mapping-scripts.html">Mapping Script Recipes</a> for JSONata / Python / DataSonnet / jq patterns.</p>
+
+<h3 id="pre-flight-checklist">Pre-flight checklist</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="language-plaintext highlighter-rouge">Bundle.type = collection</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />one Patient with MRN + birthDate + phone</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />one Organization with the DHIS2 org-unit code from the master facility list</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />at least one Encounter, <code class="language-plaintext highlighter-rouge">status = finished</code>, <code class="language-plaintext highlighter-rouge">period.start</code>, <code class="language-plaintext highlighter-rouge">serviceProvider</code> → Organization</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />one LMP and one EDD Observation for the pregnancy, each with <code class="language-plaintext highlighter-rouge">subject</code> (<code class="language-plaintext highlighter-rouge">encounter</code> optional)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />one Gestational Age and one ANC Visit Number Observation per finished Encounter, each with <code class="language-plaintext highlighter-rouge">subject</code> and <code class="language-plaintext highlighter-rouge">encounter</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />dates <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>, phone <code class="language-plaintext highlighter-rouge">251xxxxxxxxx</code>, integer fields unquoted</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Observation <code class="language-plaintext highlighter-rouge">code</code> values unchanged</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />no <code class="language-plaintext highlighter-rouge">&lt;REPLACE_ME&gt;</code> or <code class="language-plaintext highlighter-rouge">_comment_*</code> left in the JSON</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />batching multiple patients? one Bundle per line, <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+ndjson</code></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-07 16:14:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

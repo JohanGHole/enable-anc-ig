@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Observation/EnableExpectedDeliveryDateExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EnableExpectedDeliveryDateExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date" ;
+       fhir:index 0 ;
+       fhir:link <http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation EnableExpectedDeliveryDateExample</b></p><a name=\"EnableExpectedDeliveryDateExample\"> </a><a name=\"hcEnableExpectedDeliveryDateExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-enable-expected-delivery-date.html\">ENABLE Expected Date of Delivery (EDD)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE22}, {http://loinc.org 11778-8}, {http://snomed.info/sct 161714006}\">Expected date of delivery (EDD)</span></p><p><b>subject</b>: <a href=\"Patient-EnablePatientExample.html\">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href=\"Encounter-EnableAncEncounterVisit1Example.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 2026-12-28</p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://smart.who.int/anc/CodeSystem/anc-custom-codes" ] ;
+       fhir:Coding.code [ fhir:value "ANC.B6.DE22" ] ;
+       fhir:Coding.display [ fhir:value "Expected date of delivery (EDD)" ]
+     ], [
+       fhir:index 1 ;
+       a loinc:11778-8 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11778-8" ] ;
+       fhir:Coding.display [ fhir:value "Delivery date Estimated" ]
+     ], [
+       fhir:index 2 ;
+       a sct:161714006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "161714006" ] ;
+       fhir:Coding.display [ fhir:value "Expected date of delivery (observable entity)" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit1Example> ;
+     fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit1Example" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-06-15"^^xsd:date] ;
+  fhir:Observation.valueDateTime [ fhir:value "2026-12-28"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhi.no/enable/anc/Observation/EnableExpectedDeliveryDateExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

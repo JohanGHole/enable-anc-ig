@@ -1,0 +1,595 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ENABLE ANC Bundle — single-visit example - XML Representation - ENABLE ANC Interoperability IG v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11.13"}
+    h3,h4,h5,h6{--heading-prefix:"11.13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">ENABLE ANC Interoperability IG</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="Ethiopia flag" src="../assets/images/eth.svg" height="16" title="Ethiopia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li>
+    <a href="contract.html">The Contract</a>
+  </li>
+  <li>
+    <a href="mapping.html">Mapping Guide</a>
+  </li>
+  <li>
+    <a href="mapping-scripts.html">Mapping Scripts</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quickstart</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ENABLE ANC Bundle — single-visit example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ENABLE ANC Interoperability IG - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://fhi.no/enable/anc/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-ExampleAncBundleSingleVisit.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-ExampleAncBundleSingleVisit.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-ExampleAncBundleSingleVisit.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: ENABLE ANC Bundle — single-visit example</h2>
+
+
+<p><a href="Bundle-ExampleAncBundleSingleVisit.xml" no-download="true">Raw xml</a> | <a href="Bundle-ExampleAncBundleSingleVisit.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ExampleAncBundleSingleVisit&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;collection&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Patient/EnablePatientExample&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnablePatientExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Patient_EnablePatientExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Patient EnablePatientExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnablePatientExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnablePatientExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-anc-patient.html&quot;&gt;ENABLE ANC Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Ways to contact the Patient&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;ph: 251911234567(Mobile)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/identifier/mrn&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANC-000718642&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;251911234567&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mobile&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;female&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1995-08-07&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Organization/ExampleFacility&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ExampleFacility&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-organization&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Organization.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Organization.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Organization_ExampleFacility&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Organization ExampleFacility&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ExampleFacility&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExampleFacility&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-organization.html&quot;&gt;ENABLE Health Facility (Organization)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=&quot;NamingSystem-enable-dhis2-orgunit-code-namingsystem.html&quot; title=&quot;Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.&quot;&gt;EnableDhis2OrgUnitCode&lt;/a&gt;/1057888 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Felege Mels Health Center&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Organization.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/identifier/dhis2-orgunit-code&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1057888&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Felege Mels Health Center&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Encounter/EnableAncEncounterVisit1Example&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnableAncEncounterVisit1Example&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Encounter_EnableAncEncounterVisit1Example&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Encounter EnableAncEncounterVisit1Example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnableAncEncounterVisit1Example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnableAncEncounterVisit1Example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-anc-encounter.html&quot;&gt;ENABLE ANC Encounter (visit)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=&quot;http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB&quot;&gt;ActCode: AMB&lt;/a&gt; (ambulatory)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-EnablePatientExample.html&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2026-06-15 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=&quot;Organization-ExampleFacility.html&quot;&gt;Organization Felege Mels Health Center&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;finished&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;AMB&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ambulatory&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;<a href="Patient-EnablePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/EnablePatientExample&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-06-15&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;<a href="Organization-ExampleFacility.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/ExampleFacility&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Encounter/EnablePlannedEncounterExample&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnablePlannedEncounterExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Encounter_EnablePlannedEncounterExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Encounter EnablePlannedEncounterExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnablePlannedEncounterExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnablePlannedEncounterExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-anc-encounter.html&quot;&gt;ENABLE ANC Encounter (visit)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Planned&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=&quot;http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB&quot;&gt;ActCode: AMB&lt;/a&gt; (ambulatory)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-EnablePatientExample.html&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2026-09-07 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=&quot;Organization-ExampleFacility.html&quot;&gt;Organization Felege Mels Health Center&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;planned&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;AMB&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ambulatory&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;<a href="Patient-EnablePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/EnablePatientExample&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-07&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;<a href="Organization-ExampleFacility.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/ExampleFacility&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Observation/EnableLastMenstrualPeriodExample&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnableLastMenstrualPeriodExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_EnableLastMenstrualPeriodExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation EnableLastMenstrualPeriodExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnableLastMenstrualPeriodExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnableLastMenstrualPeriodExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-last-menstrual-period.html&quot;&gt;ENABLE Last Normal Menstrual Period (LNMP) date&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE14}, {http://loinc.org 8665-2}, {http://snomed.info/sct 21840007}&quot;&gt;Last menstrual period (LMP) date&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-EnablePatientExample.html&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=&quot;Encounter-EnableAncEncounterVisit1Example.html&quot;&gt;Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2026-06-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2026-03-23&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/anc/CodeSystem/anc-custom-codes&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ANC.B6.DE14&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Last menstrual period (LMP) date&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;8665-2&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Last menstrual period start date&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;21840007&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Date of last menstrual period (observable entity)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;<a href="Patient-EnablePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/EnablePatientExample&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;<a href="Encounter-EnableAncEncounterVisit1Example.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/EnableAncEncounterVisit1Example&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-06-15&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-03-23&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Observation/EnableExpectedDeliveryDateExample&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnableExpectedDeliveryDateExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_EnableExpectedDeliveryDateExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation EnableExpectedDeliveryDateExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnableExpectedDeliveryDateExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnableExpectedDeliveryDateExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-expected-delivery-date.html&quot;&gt;ENABLE Expected Date of Delivery (EDD)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE22}, {http://loinc.org 11778-8}, {http://snomed.info/sct 161714006}&quot;&gt;Expected date of delivery (EDD)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-EnablePatientExample.html&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=&quot;Encounter-EnableAncEncounterVisit1Example.html&quot;&gt;Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2026-06-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2026-12-28&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/anc/CodeSystem/anc-custom-codes&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ANC.B6.DE22&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Expected date of delivery (EDD)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11778-8&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Delivery date Estimated&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;161714006&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Expected date of delivery (observable entity)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;<a href="Patient-EnablePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/EnablePatientExample&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;<a href="Encounter-EnableAncEncounterVisit1Example.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/EnableAncEncounterVisit1Example&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-06-15&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-12-28&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Observation/EnableGestationalAgeExample&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnableGestationalAgeExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_EnableGestationalAgeExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation EnableGestationalAgeExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnableGestationalAgeExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnableGestationalAgeExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-gestational-age.html&quot;&gt;ENABLE Gestational Age&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE17}, {http://loinc.org 18185-9}, {http://snomed.info/sct 57036006}&quot;&gt;Gestational age&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-EnablePatientExample.html&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=&quot;Encounter-EnableAncEncounterVisit1Example.html&quot;&gt;Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2026-06-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 12 weeks&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  codewk = 'wk')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/anc/CodeSystem/anc-custom-codes&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ANC.B6.DE17&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Gestational age&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;18185-9&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Gestational age Estimated&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;57036006&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Gestational age (observable entity)&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;<a href="Patient-EnablePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/EnablePatientExample&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;<a href="Encounter-EnableAncEncounterVisit1Example.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/EnableAncEncounterVisit1Example&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-06-15&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;12&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;weeks&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wk&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/Observation/EnableAncVisitNumberExample&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;EnableAncVisitNumberExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Observation_EnableAncVisitNumberExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation EnableAncVisitNumberExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;EnableAncVisitNumberExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcEnableAncVisitNumberExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-enable-anc-visit-number.html&quot;&gt;ENABLE ANC Visit Number&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}&quot;&gt;ANC visit number&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-EnablePatientExample.html&quot;&gt;Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=&quot;Encounter-EnableAncEncounterVisit1Example.html&quot;&gt;Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2026-06-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhi.no/enable/anc/CodeSystem/enable-et-anc&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ET-ANC-051&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANC visit number&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;<a href="Patient-EnablePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/EnablePatientExample&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;<a href="Encounter-EnableAncEncounterVisit1Example.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/EnableAncEncounterVisit1Example&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.encounter">encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-06-15&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-07 16:14:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

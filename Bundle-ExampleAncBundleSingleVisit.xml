@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ExampleAncBundleSingleVisit"/>
+  <meta>
+    <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Patient/EnablePatientExample"/>
+    <resource>
+      <Patient>
+        <id value="EnablePatientExample"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_EnablePatientExample"> </a><p class="res-header-id"><b>Generated Narrative: Patient EnablePatientExample</b></p><a name="EnablePatientExample"> </a><a name="hcEnablePatientExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-anc-patient.html">ENABLE ANC Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">ph: 251911234567(Mobile)</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="http://fhi.no/enable/identifier/mrn"/>
+          <value value="ANC-000718642"/>
+        </identifier>
+        <telecom>
+          <system value="phone"/>
+          <value value="251911234567"/>
+          <use value="mobile"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1995-08-07"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Organization/ExampleFacility"/>
+    <resource>
+      <Organization>
+        <id value="ExampleFacility"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_ExampleFacility"> </a><p class="res-header-id"><b>Generated Narrative: Organization ExampleFacility</b></p><a name="ExampleFacility"> </a><a name="hcExampleFacility"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-organization.html">ENABLE Health Facility (Organization)</a></p></div><p><b>identifier</b>: <a href="NamingSystem-enable-dhis2-orgunit-code-namingsystem.html" title="Identifier system for the DHIS2 organisation-unit code that identifies the health facility. The value is the facility's DHIS2 org-unit code drawn from the deployment's master facility list.">EnableDhis2OrgUnitCode</a>/1057888 (use: official, )</p><p><b>name</b>: Felege Mels Health Center</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="http://fhi.no/enable/identifier/dhis2-orgunit-code"/>
+          <value value="1057888"/>
+        </identifier>
+        <name value="Felege Mels Health Center"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Encounter/EnableAncEncounterVisit1Example"/>
+    <resource>
+      <Encounter>
+        <id value="EnableAncEncounterVisit1Example"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_EnableAncEncounterVisit1Example"> </a><p class="res-header-id"><b>Generated Narrative: Encounter EnableAncEncounterVisit1Example</b></p><a name="EnableAncEncounterVisit1Example"> </a><a name="hcEnableAncEncounterVisit1Example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-anc-encounter.html">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-06-15 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href="Organization-ExampleFacility.html">Organization Felege Mels Health Center</a></p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="AMB"/>
+          <display value="ambulatory"/>
+        </class>
+        <subject>
+          <reference value="Patient/EnablePatientExample"/>
+        </subject>
+        <period>
+          <start value="2026-06-15"/>
+        </period>
+        <serviceProvider>
+          <reference value="Organization/ExampleFacility"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Encounter/EnablePlannedEncounterExample"/>
+    <resource>
+      <Encounter>
+        <id value="EnablePlannedEncounterExample"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_EnablePlannedEncounterExample"> </a><p class="res-header-id"><b>Generated Narrative: Encounter EnablePlannedEncounterExample</b></p><a name="EnablePlannedEncounterExample"> </a><a name="hcEnablePlannedEncounterExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-anc-encounter.html">ENABLE ANC Encounter (visit)</a></p></div><p><b>status</b>: Planned</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>period</b>: 2026-09-07 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href="Organization-ExampleFacility.html">Organization Felege Mels Health Center</a></p></div>
+        </text>
+        <status value="planned"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="AMB"/>
+          <display value="ambulatory"/>
+        </class>
+        <subject>
+          <reference value="Patient/EnablePatientExample"/>
+        </subject>
+        <period>
+          <start value="2026-09-07"/>
+        </period>
+        <serviceProvider>
+          <reference value="Organization/ExampleFacility"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Observation/EnableLastMenstrualPeriodExample"/>
+    <resource>
+      <Observation>
+        <id value="EnableLastMenstrualPeriodExample"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_EnableLastMenstrualPeriodExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation EnableLastMenstrualPeriodExample</b></p><a name="EnableLastMenstrualPeriodExample"> </a><a name="hcEnableLastMenstrualPeriodExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-last-menstrual-period.html">ENABLE Last Normal Menstrual Period (LNMP) date</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE14}, {http://loinc.org 8665-2}, {http://snomed.info/sct 21840007}">Last menstrual period (LMP) date</span></p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href="Encounter-EnableAncEncounterVisit1Example.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 2026-03-23</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://smart.who.int/anc/CodeSystem/anc-custom-codes"/>
+            <code value="ANC.B6.DE14"/>
+            <display value="Last menstrual period (LMP) date"/>
+          </coding>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8665-2"/>
+            <display value="Last menstrual period start date"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="21840007"/>
+            <display value="Date of last menstrual period (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/EnablePatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/EnableAncEncounterVisit1Example"/>
+        </encounter>
+        <effectiveDateTime value="2026-06-15"/>
+        <valueDateTime value="2026-03-23"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Observation/EnableExpectedDeliveryDateExample"/>
+    <resource>
+      <Observation>
+        <id value="EnableExpectedDeliveryDateExample"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_EnableExpectedDeliveryDateExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation EnableExpectedDeliveryDateExample</b></p><a name="EnableExpectedDeliveryDateExample"> </a><a name="hcEnableExpectedDeliveryDateExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-expected-delivery-date.html">ENABLE Expected Date of Delivery (EDD)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE22}, {http://loinc.org 11778-8}, {http://snomed.info/sct 161714006}">Expected date of delivery (EDD)</span></p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href="Encounter-EnableAncEncounterVisit1Example.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 2026-12-28</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://smart.who.int/anc/CodeSystem/anc-custom-codes"/>
+            <code value="ANC.B6.DE22"/>
+            <display value="Expected date of delivery (EDD)"/>
+          </coding>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11778-8"/>
+            <display value="Delivery date Estimated"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="161714006"/>
+            <display value="Expected date of delivery (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/EnablePatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/EnableAncEncounterVisit1Example"/>
+        </encounter>
+        <effectiveDateTime value="2026-06-15"/>
+        <valueDateTime value="2026-12-28"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Observation/EnableGestationalAgeExample"/>
+    <resource>
+      <Observation>
+        <id value="EnableGestationalAgeExample"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_EnableGestationalAgeExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation EnableGestationalAgeExample</b></p><a name="EnableGestationalAgeExample"> </a><a name="hcEnableGestationalAgeExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-gestational-age.html">ENABLE Gestational Age</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://smart.who.int/anc/CodeSystem/anc-custom-codes ANC.B6.DE17}, {http://loinc.org 18185-9}, {http://snomed.info/sct 57036006}">Gestational age</span></p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href="Encounter-EnableAncEncounterVisit1Example.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 12 weeks<span style="background: LightGoldenRodYellow"> (Details: UCUM  codewk = 'wk')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://smart.who.int/anc/CodeSystem/anc-custom-codes"/>
+            <code value="ANC.B6.DE17"/>
+            <display value="Gestational age"/>
+          </coding>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="18185-9"/>
+            <display value="Gestational age Estimated"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="57036006"/>
+            <display value="Gestational age (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/EnablePatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/EnableAncEncounterVisit1Example"/>
+        </encounter>
+        <effectiveDateTime value="2026-06-15"/>
+        <valueQuantity>
+          <value value="12"/>
+          <unit value="weeks"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="wk"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhi.no/enable/Observation/EnableAncVisitNumberExample"/>
+    <resource>
+      <Observation>
+        <id value="EnableAncVisitNumberExample"/>
+        <meta>
+          <profile value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_EnableAncVisitNumberExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation EnableAncVisitNumberExample</b></p><a name="EnableAncVisitNumberExample"> </a><a name="hcEnableAncVisitNumberExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-enable-anc-visit-number.html">ENABLE ANC Visit Number</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhi.no/enable/anc/CodeSystem/enable-et-anc ET-ANC-051}">ANC visit number</span></p><p><b>subject</b>: <a href="Patient-EnablePatientExample.html">Anonymous Patient Female, DoB: 1995-08-07 ( http://fhi.no/enable/identifier/mrn#EnableClientMrn#ANC-000718642)</a></p><p><b>encounter</b>: <a href="Encounter-EnableAncEncounterVisit1Example.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2026-06-15 --&gt; (ongoing)</a></p><p><b>effective</b>: 2026-06-15</p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhi.no/enable/anc/CodeSystem/enable-et-anc"/>
+            <code value="ET-ANC-051"/>
+            <display value="ANC visit number"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/EnablePatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/EnableAncEncounterVisit1Example"/>
+        </encounter>
+        <effectiveDateTime value="2026-06-15"/>
+        <valueInteger value="1"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
