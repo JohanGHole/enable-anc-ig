@@ -1,5 +1,5 @@
 {
-  "_comment_boilerplate_by_design": "This template is intentionally boilerplate. All the FHIR plumbing (resource types, codes, systems, references between resources) is already filled in for you. Your mapping only needs to REPLACE the <REPLACE_ME | ... > placeholders with the data-element values from your EMR — do not change anything else. Delete every '_comment_...' line before sending.",
+  "_comment_boilerplate_by_design": "This template is intentionally boilerplate. All the FHIR plumbing (resource types, codes, systems, references between resources) is already filled in for you. Your mapping only needs to REPLACE the <REPLACE_ME | ... > placeholders with the data-element values from your EMR. Do not change anything else. Delete every '_comment_...' line before sending.",
   "resourceType": "Bundle",
   "type": "collection",
   "entry": [

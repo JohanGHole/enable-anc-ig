@@ -1,6 +1,6 @@
-# ENABLE ANC Bundle — single-visit example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE ANC Bundle: single-visit example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Bundle: ENABLE ANC Bundle — single-visit example
+## Example Bundle: ENABLE ANC Bundle: single-visit example
 
 
 

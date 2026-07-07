@@ -225,7 +225,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The EMR <strong>SHALL</strong> send exactly one <a href="StructureDefinition-enable-anc-bundle.html">ENABLE ANC Bundle</a> per woman, containing one <a href="StructureDefinition-enable-anc-patient.html">Patient</a>, one <a href="StructureDefinition-enable-organization.html">Organization</a>, one <a href="StructureDefinition-enable-last-menstrual-period.html">LMP</a> Observation, one <a href="StructureDefinition-enable-expected-delivery-date.html">EDD</a> Observation, at least one finished <a href="StructureDefinition-enable-anc-encounter.html">Encounter</a> and, for every finished Encounter, one <a href="StructureDefinition-enable-gestational-age.html">Gestational Age</a> and one <a href="StructureDefinition-enable-anc-visit-number.html">ANC Visit Number</a> Observation. See <a href="contract.html">The Contract</a> for exact cardinalities.</p>
 
-<p>The EMR <strong>SHOULD</strong> send a <code class="language-plaintext highlighter-rouge">planned</code> Encounter for the next scheduled visit whenever known — this is what drives the appointment-reminder SMS.</p>
+<p>The EMR <strong>SHOULD</strong> send a <code class="language-plaintext highlighter-rouge">planned</code> Encounter for the next scheduled visit whenever known. This is what drives the appointment-reminder SMS.</p>
 
 <p>The EMR <strong>SHOULD NOT</strong> send <code class="language-plaintext highlighter-rouge">Patient.name</code> unless the site's data-sharing rules permit it.</p>
 
@@ -235,7 +235,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The middleware <strong>SHALL</strong> validate every incoming Bundle against this IG, resolve <code class="language-plaintext highlighter-rouge">Encounter.serviceProvider → Organization.identifier</code> to derive the DHIS2 org-unit code, and respond with an <code class="language-plaintext highlighter-rouge">OperationOutcome</code> that names the failing rule on rejection.</p>
 
-<p>The middleware <strong>SHOULD</strong> treat re-POSTs keyed on <code class="language-plaintext highlighter-rouge">Patient.identifier</code> (MRN) as idempotent updates — never as duplicates.</p>
+<p>The middleware <strong>SHOULD</strong> treat re-POSTs keyed on <code class="language-plaintext highlighter-rouge">Patient.identifier</code> (MRN) as idempotent updates, never as duplicates.</p>
 
 <p>The middleware <strong>SHALL NOT</strong> silently accept resources outside the profiles in this IG.</p>
 
@@ -264,10 +264,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 

@@ -185,7 +185,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#mapping-script-recipes" id="markdown-toc-mapping-script-recipes">Mapping Script Recipes</a></li>
-  <li><a href="#jsonata--sketch" id="markdown-toc-jsonata--sketch">JSONata — sketch</a></li>
+  <li><a href="#jsonata-sketch" id="markdown-toc-jsonata-sketch">JSONata sketch</a></li>
   <li><a href="#deployment-loop" id="markdown-toc-deployment-loop">Deployment loop</a></li>
   <li><a href="#testing" id="markdown-toc-testing">Testing</a></li>
   <li><a href="#credentials" id="markdown-toc-credentials">Credentials</a></li>
@@ -202,28 +202,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>Tool</th>
+      <th>Description</th>
       <th>When</th>
       <th>Runtime</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>JSONata</strong> — declarative JSON→JSON</td>
+      <td><strong>JSONata</strong></td>
+      <td>Declarative JSON→JSON</td>
       <td>JSON in, JSON out, simple mapping</td>
       <td>Node.js, JVM, Python, browser</td>
     </tr>
     <tr>
-      <td><strong>DataSonnet</strong> — typed JVM template</td>
+      <td><strong>DataSonnet</strong></td>
+      <td>Typed JVM template</td>
       <td>Existing Java / Mule / Camel stack</td>
       <td>JVM</td>
     </tr>
     <tr>
-      <td><strong>Python</strong> — plain dicts + <code class="language-plaintext highlighter-rouge">requests</code></td>
+      <td><strong>Python</strong></td>
+      <td>Plain dicts + <code class="language-plaintext highlighter-rouge">requests</code></td>
       <td>You already run Python ETL</td>
       <td>Python 3</td>
     </tr>
     <tr>
-      <td><strong>jq</strong> — shell filter</td>
+      <td><strong>jq</strong></td>
+      <td>Shell filter</td>
       <td>Proof-of-concept</td>
       <td>Any Unix</td>
     </tr>
@@ -232,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>All four produce the same conformant Bundle. Recommended default: JSONata (declarative, tiny library, <a href="https://try.jsonata.org/">live playground</a>).</p>
 
-<h3 id="jsonata--sketch">JSONata — sketch</h3>
+<h3 id="jsonata-sketch">JSONata sketch</h3>
 
 <pre><code class="language-jsonata">{
   "resourceType": "Bundle",
@@ -265,29 +270,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Bind <code class="language-plaintext highlighter-rouge">$FACILITY_CODE</code> and <code class="language-plaintext highlighter-rouge">$FACILITY_NAME</code> at evaluation time from your site config. Use <code class="language-plaintext highlighter-rouge">$number(...)</code> on integer fields so they are not quoted in the output.</p>
 
-<p>For DataSonnet, Python and jq recipes see the tool's own documentation — the mapping shape is identical, only the syntax differs. Copy the JSON in the <a href="downloads.html">samples</a> as your target.</p>
+<p>For DataSonnet, Python and jq recipes see the tool's own documentation; the mapping shape is identical, only the syntax differs. Copy the JSON in the <a href="downloads.html">samples</a> as your target.</p>
 
 <h3 id="deployment-loop">Deployment loop</h3>
 
 <ol>
-  <li><strong>Cron</strong> — schedule per SMS latency requirement.</li>
-  <li><strong>Fetch delta</strong> — query rows newer than your last watermark.</li>
-  <li><strong>Shape</strong> — run the mapping template. Produce one Bundle per woman.</li>
-  <li><strong>POST</strong> — one of two modes:
+  <li><strong>Cron.</strong> Schedule per SMS latency requirement.</li>
+  <li><strong>Fetch delta.</strong> Query rows newer than your last watermark.</li>
+  <li><strong>Shape.</strong> Run the mapping template. Produce one Bundle per woman.</li>
+  <li><strong>POST.</strong> One of two modes:
     <ul>
-      <li><strong>One patient per request</strong> — <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+json</code>, body is the Bundle. Simple, one HTTP round-trip per woman.</li>
-      <li><strong>Many patients in one request (recommended for batches)</strong> — <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+ndjson</code>, body is the per-patient Bundles concatenated with newlines (one Bundle per line, no wrapper array). FHIR-standard bulk shape; the middleware processes and reports per line.</li>
+      <li><strong>One patient per request:</strong> <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+json</code>, body is the Bundle. Simple, one HTTP round-trip per woman.</li>
+      <li><strong>Many patients in one request (recommended for batches):</strong> <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+ndjson</code>, body is the per-patient Bundles concatenated with newlines (one Bundle per line, no wrapper array). FHIR-standard bulk shape; the middleware processes and reports per line.</li>
     </ul>
   </li>
-  <li><strong>Handle response</strong> — 2xx → mark sent; 4xx → log <code class="language-plaintext highlighter-rouge">OperationOutcome.issue[*].diagnostics</code> and alert; 5xx → exponential backoff. For NDJSON, the middleware returns per-line status.</li>
-  <li><strong>Idempotency</strong> — the middleware keys on <code class="language-plaintext highlighter-rouge">Patient.identifier</code> (MRN), so re-POSTing the same Bundle updates rather than duplicates.</li>
+  <li><strong>Handle response.</strong> 2xx → mark sent; 4xx → log <code class="language-plaintext highlighter-rouge">OperationOutcome.issue[*].diagnostics</code> and alert; 5xx → exponential backoff. For NDJSON, the middleware returns per-line status.</li>
+  <li><strong>Idempotency.</strong> The middleware keys on <code class="language-plaintext highlighter-rouge">Patient.identifier</code> (MRN), so re-POSTing the same Bundle updates rather than duplicates.</li>
 </ol>
 
 <h3 id="testing">Testing</h3>
 
 <ul>
-  <li>Paste the output into <a href="https://validator.fhir.org/">https://validator.fhir.org/</a> and validate against <code class="language-plaintext highlighter-rouge">enable.anc.ig#0.2.0</code>.</li>
-  <li>Smoke-test against the staging middleware endpoint before pointing cron at production.</li>
+  <li>Paste the output into <a href="https://validator.fhir.org/">https://validator.fhir.org/</a> and validate. See the <a href="quickstart.html#3-validate">Quickstart, step 3</a> for the exact fields (IG package URL + Bundle profile canonical).</li>
+  <li>Smoke-test against the staging middleware endpoint before pointing cron at production (endpoint provisioned by the ENABLE team once integration testing starts).</li>
 </ul>
 
 <h3 id="credentials">Credentials</h3>
@@ -319,10 +324,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 

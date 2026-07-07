@@ -17,22 +17,22 @@
   fhir:StructureDefinition.name [ fhir:value "EnableAncBundle"] ;
   fhir:StructureDefinition.title [ fhir:value "ENABLE ANC Bundle"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-07T16:14:48+00:00"^^xsd:dateTime] ;
-  fhir:StructureDefinition.publisher [ fhir:value "Norwegian Institute of Public Health (NIPH)"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-07T17:20:37+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Devotta"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
-     fhir:ContactDetail.name [ fhir:value "Norwegian Institute of Public Health (NIPH)" ] ;
+     fhir:ContactDetail.name [ fhir:value "Devotta" ] ;
      fhir:ContactDetail.telecom [
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.fhi.no/" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.devotta.no/" ]
      ], [
        fhir:index 1 ;
        fhir:ContactPoint.system [ fhir:value "email" ] ;
        fhir:ContactPoint.value [ fhir:value "johan@devotta.no" ]
      ]
   ] ;
-  fhir:StructureDefinition.description [ fhir:value "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model — Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event)."] ;
+  fhir:StructureDefinition.description [ fhir:value "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model: Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event)."] ;
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0 ;
      fhir:CodeableConcept.coding [

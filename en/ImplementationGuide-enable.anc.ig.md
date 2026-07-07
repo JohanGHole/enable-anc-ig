@@ -14,20 +14,20 @@
   "name" : "EnableAncIG",
   "title" : "ENABLE ANC Interoperability IG",
   "status" : "draft",
-  "date" : "2026-07-07T16:14:48+00:00",
-  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "date" : "2026-07-07T17:20:37+00:00",
+  "publisher" : "Devotta",
   "contact" : [{
-    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "name" : "Devotta",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.fhi.no/"
+      "value" : "https://www.devotta.no/"
     },
     {
       "system" : "email",
       "value" : "johan@devotta.no"
     }]
   }],
-  "description" : "A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations — so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.",
+  "description" : "A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations, so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -644,7 +644,7 @@
         "reference" : "StructureDefinition/enable-anc-bundle"
       },
       "name" : "ENABLE ANC Bundle",
-      "description" : "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model — Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event).",
+      "description" : "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model: Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event).",
       "exampleBoolean" : false
     },
     {
@@ -655,7 +655,7 @@
       "reference" : {
         "reference" : "Bundle/ExampleAncBundleMultiVisit"
       },
-      "name" : "ENABLE ANC Bundle — multi-visit example",
+      "name" : "ENABLE ANC Bundle: multi-visit example",
       "description" : "A payload for one patient with three finished ANC visits and one planned next visit. Pregnancy-level Observations (LMP, EDD) appear once; visit-level Observations (Gestational Age, ANC Visit Number) appear once per finished Encounter.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle"
     },
@@ -667,7 +667,7 @@
       "reference" : {
         "reference" : "Bundle/ExampleAncBundleSingleVisit"
       },
-      "name" : "ENABLE ANC Bundle — single-visit example",
+      "name" : "ENABLE ANC Bundle: single-visit example",
       "description" : "A complete first-ANC-visit payload for one patient: Patient + Facility + a finished and a planned Encounter + pregnancy-level Observations (LMP, EDD) + visit-level Observations (GA, Visit Number) for that finished visit.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle"
     },
@@ -691,7 +691,7 @@
       "reference" : {
         "reference" : "Encounter/EnableAncEncounterVisit1Example"
       },
-      "name" : "ENABLE ANC Encounter — first visit (finished)",
+      "name" : "ENABLE ANC Encounter: first visit (finished)",
       "description" : "The first ANC visit that took place. Its date is also the enrolment date.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"
     },
@@ -703,7 +703,7 @@
       "reference" : {
         "reference" : "Encounter/EnablePlannedEncounterExample"
       },
-      "name" : "ENABLE ANC Encounter — next visit (planned)",
+      "name" : "ENABLE ANC Encounter: next visit (planned)",
       "description" : "The next scheduled visit. Its date drives the appointment-reminder SMS. Optional.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"
     },
@@ -715,7 +715,7 @@
       "reference" : {
         "reference" : "Encounter/EnableAncEncounterVisit2Example"
       },
-      "name" : "ENABLE ANC Encounter — second visit (finished)",
+      "name" : "ENABLE ANC Encounter: second visit (finished)",
       "description" : "The second ANC visit for the same woman, about a month after the first.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"
     },
@@ -727,7 +727,7 @@
       "reference" : {
         "reference" : "Encounter/EnableAncEncounterVisit3Example"
       },
-      "name" : "ENABLE ANC Encounter — third visit (finished)",
+      "name" : "ENABLE ANC Encounter: third visit (finished)",
       "description" : "The third ANC visit for the same woman.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"
     },
@@ -751,7 +751,7 @@
       "reference" : {
         "reference" : "Patient/EnablePatientExample"
       },
-      "name" : "ENABLE ANC Patient — example",
+      "name" : "ENABLE ANC Patient: example",
       "description" : "Example woman enrolled at her first ANC visit. Name is populated here for readability but is OPTIONAL in the contract.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient"
     },
@@ -775,7 +775,7 @@
       "reference" : {
         "reference" : "Observation/EnableAncVisitNumberExample"
       },
-      "name" : "ENABLE ANC Visit Number — example",
+      "name" : "ENABLE ANC Visit Number: example",
       "description" : "First ANC visit (visit number 1).",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"
     },
@@ -787,7 +787,7 @@
       "reference" : {
         "reference" : "Observation/EnableAncVisitNumberVisit2Example"
       },
-      "name" : "ENABLE ANC Visit Number — visit 2 example",
+      "name" : "ENABLE ANC Visit Number: visit 2 example",
       "description" : "Second ANC visit (visit number 2).",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"
     },
@@ -799,7 +799,7 @@
       "reference" : {
         "reference" : "Observation/EnableAncVisitNumberVisit3Example"
       },
-      "name" : "ENABLE ANC Visit Number — visit 3 example",
+      "name" : "ENABLE ANC Visit Number: visit 3 example",
       "description" : "Third ANC visit (visit number 3).",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"
     },
@@ -859,7 +859,7 @@
       "reference" : {
         "reference" : "Observation/EnableExpectedDeliveryDateExample"
       },
-      "name" : "ENABLE Expected Date of Delivery — example",
+      "name" : "ENABLE Expected Date of Delivery: example",
       "description" : "Expected date of delivery derived from the LNMP.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date"
     },
@@ -883,7 +883,7 @@
       "reference" : {
         "reference" : "Observation/EnableGestationalAgeExample"
       },
-      "name" : "ENABLE Gestational Age — example",
+      "name" : "ENABLE Gestational Age: example",
       "description" : "Gestational age of 12 weeks at the first ANC visit.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"
     },
@@ -895,7 +895,7 @@
       "reference" : {
         "reference" : "Observation/EnableGestationalAgeVisit2Example"
       },
-      "name" : "ENABLE Gestational Age — visit 2 example",
+      "name" : "ENABLE Gestational Age: visit 2 example",
       "description" : "Gestational age of 16 weeks at the second ANC visit.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"
     },
@@ -907,7 +907,7 @@
       "reference" : {
         "reference" : "Observation/EnableGestationalAgeVisit3Example"
       },
-      "name" : "ENABLE Gestational Age — visit 3 example",
+      "name" : "ENABLE Gestational Age: visit 3 example",
       "description" : "Gestational age of 20 weeks at the third ANC visit.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"
     },
@@ -931,7 +931,7 @@
       "reference" : {
         "reference" : "Organization/ExampleFacility"
       },
-      "name" : "ENABLE Health Facility — example",
+      "name" : "ENABLE Health Facility: example",
       "description" : "Example health facility. identifier.value is the DHIS2 organisation-unit code from the deployment's master facility list.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-organization"
     },
@@ -955,7 +955,7 @@
       "reference" : {
         "reference" : "Observation/EnableLastMenstrualPeriodExample"
       },
-      "name" : "ENABLE Last Normal Menstrual Period — example",
+      "name" : "ENABLE Last Normal Menstrual Period: example",
       "description" : "Date of the last normal menstrual period.",
       "exampleCanonical" : "http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period"
     }],

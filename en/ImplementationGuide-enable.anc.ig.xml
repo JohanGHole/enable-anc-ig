@@ -4,7 +4,7 @@
   <id value="enable.anc.ig"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide enable.anc.ig</b></p><a name="enable.anc.ig"> </a><a name="hcenable.anc.ig"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>EnableAncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig</pre><div><p>A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations — so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.</p>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide enable.anc.ig</b></p><a name="enable.anc.ig"> </a><a name="hcenable.anc.ig"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>EnableAncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig</pre><div><p>A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations, so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.</p>
 </div></div>
   </text>
   <url value="http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig"/>
@@ -12,20 +12,20 @@
   <name value="EnableAncIG"/>
   <title value="ENABLE ANC Interoperability IG"/>
   <status value="draft"/>
-  <date value="2026-07-07T16:14:48+00:00"/>
-  <publisher value="Norwegian Institute of Public Health (NIPH)"/>
+  <date value="2026-07-07T17:20:37+00:00"/>
+  <publisher value="Devotta"/>
   <contact>
-    <name value="Norwegian Institute of Public Health (NIPH)"/>
+    <name value="Devotta"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.fhi.no/"/>
+      <value value="https://www.devotta.no/"/>
     </telecom>
     <telecom>
       <system value="email"/>
       <value value="johan@devotta.no"/>
     </telecom>
   </contact>
-  <description value="A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations — so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG."/>
+  <description value="A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations, so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -480,7 +480,7 @@
         <reference value="StructureDefinition/enable-anc-bundle"/>
       </reference>
       <name value="ENABLE ANC Bundle"/>
-      <description value="The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.&#xA;It contains exactly one Patient, exactly one Organization (the facility),&#xA;one or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,&#xA;once per Bundle) and the visit-level Observations (Gestational Age and&#xA;ANC Visit Number, once per finished Encounter). type = collection (a&#xA;container; the middleware maps it to the DHIS2 tracker model — Patient -&gt;&#xA;TrackedEntity, Encounter(finished) -&gt; Event, Encounter(planned) -&gt;&#xA;scheduled Event, Organization -&gt; orgUnit on enrollment + every event)."/>
+      <description value="The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.&#xA;It contains exactly one Patient, exactly one Organization (the facility),&#xA;one or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,&#xA;once per Bundle) and the visit-level Observations (Gestational Age and&#xA;ANC Visit Number, once per finished Encounter). type = collection (a&#xA;container; the middleware maps it to the DHIS2 tracker model: Patient -&gt;&#xA;TrackedEntity, Encounter(finished) -&gt; Event, Encounter(planned) -&gt;&#xA;scheduled Event, Organization -&gt; orgUnit on enrollment + every event)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -490,7 +490,7 @@
       <reference>
         <reference value="Bundle/ExampleAncBundleMultiVisit"/>
       </reference>
-      <name value="ENABLE ANC Bundle — multi-visit example"/>
+      <name value="ENABLE ANC Bundle: multi-visit example"/>
       <description value="A payload for one patient with three finished ANC visits and one planned next visit. Pregnancy-level Observations (LMP, EDD) appear once; visit-level Observations (Gestational Age, ANC Visit Number) appear once per finished Encounter."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle"/>
     </resource>
@@ -501,7 +501,7 @@
       <reference>
         <reference value="Bundle/ExampleAncBundleSingleVisit"/>
       </reference>
-      <name value="ENABLE ANC Bundle — single-visit example"/>
+      <name value="ENABLE ANC Bundle: single-visit example"/>
       <description value="A complete first-ANC-visit payload for one patient: Patient + Facility + a finished and a planned Encounter + pregnancy-level Observations (LMP, EDD) + visit-level Observations (GA, Visit Number) for that finished visit."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle"/>
     </resource>
@@ -523,7 +523,7 @@
       <reference>
         <reference value="Encounter/EnableAncEncounterVisit1Example"/>
       </reference>
-      <name value="ENABLE ANC Encounter — first visit (finished)"/>
+      <name value="ENABLE ANC Encounter: first visit (finished)"/>
       <description value="The first ANC visit that took place. Its date is also the enrolment date."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"/>
     </resource>
@@ -534,7 +534,7 @@
       <reference>
         <reference value="Encounter/EnablePlannedEncounterExample"/>
       </reference>
-      <name value="ENABLE ANC Encounter — next visit (planned)"/>
+      <name value="ENABLE ANC Encounter: next visit (planned)"/>
       <description value="The next scheduled visit. Its date drives the appointment-reminder SMS. Optional."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"/>
     </resource>
@@ -545,7 +545,7 @@
       <reference>
         <reference value="Encounter/EnableAncEncounterVisit2Example"/>
       </reference>
-      <name value="ENABLE ANC Encounter — second visit (finished)"/>
+      <name value="ENABLE ANC Encounter: second visit (finished)"/>
       <description value="The second ANC visit for the same woman, about a month after the first."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"/>
     </resource>
@@ -556,7 +556,7 @@
       <reference>
         <reference value="Encounter/EnableAncEncounterVisit3Example"/>
       </reference>
-      <name value="ENABLE ANC Encounter — third visit (finished)"/>
+      <name value="ENABLE ANC Encounter: third visit (finished)"/>
       <description value="The third ANC visit for the same woman."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter"/>
     </resource>
@@ -578,7 +578,7 @@
       <reference>
         <reference value="Patient/EnablePatientExample"/>
       </reference>
-      <name value="ENABLE ANC Patient — example"/>
+      <name value="ENABLE ANC Patient: example"/>
       <description value="Example woman enrolled at her first ANC visit. Name is populated here for readability but is OPTIONAL in the contract."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient"/>
     </resource>
@@ -600,7 +600,7 @@
       <reference>
         <reference value="Observation/EnableAncVisitNumberExample"/>
       </reference>
-      <name value="ENABLE ANC Visit Number — example"/>
+      <name value="ENABLE ANC Visit Number: example"/>
       <description value="First ANC visit (visit number 1)."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"/>
     </resource>
@@ -611,7 +611,7 @@
       <reference>
         <reference value="Observation/EnableAncVisitNumberVisit2Example"/>
       </reference>
-      <name value="ENABLE ANC Visit Number — visit 2 example"/>
+      <name value="ENABLE ANC Visit Number: visit 2 example"/>
       <description value="Second ANC visit (visit number 2)."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"/>
     </resource>
@@ -622,7 +622,7 @@
       <reference>
         <reference value="Observation/EnableAncVisitNumberVisit3Example"/>
       </reference>
-      <name value="ENABLE ANC Visit Number — visit 3 example"/>
+      <name value="ENABLE ANC Visit Number: visit 3 example"/>
       <description value="Third ANC visit (visit number 3)."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number"/>
     </resource>
@@ -677,7 +677,7 @@
       <reference>
         <reference value="Observation/EnableExpectedDeliveryDateExample"/>
       </reference>
-      <name value="ENABLE Expected Date of Delivery — example"/>
+      <name value="ENABLE Expected Date of Delivery: example"/>
       <description value="Expected date of delivery derived from the LNMP."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date"/>
     </resource>
@@ -699,7 +699,7 @@
       <reference>
         <reference value="Observation/EnableGestationalAgeExample"/>
       </reference>
-      <name value="ENABLE Gestational Age — example"/>
+      <name value="ENABLE Gestational Age: example"/>
       <description value="Gestational age of 12 weeks at the first ANC visit."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"/>
     </resource>
@@ -710,7 +710,7 @@
       <reference>
         <reference value="Observation/EnableGestationalAgeVisit2Example"/>
       </reference>
-      <name value="ENABLE Gestational Age — visit 2 example"/>
+      <name value="ENABLE Gestational Age: visit 2 example"/>
       <description value="Gestational age of 16 weeks at the second ANC visit."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"/>
     </resource>
@@ -721,7 +721,7 @@
       <reference>
         <reference value="Observation/EnableGestationalAgeVisit3Example"/>
       </reference>
-      <name value="ENABLE Gestational Age — visit 3 example"/>
+      <name value="ENABLE Gestational Age: visit 3 example"/>
       <description value="Gestational age of 20 weeks at the third ANC visit."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age"/>
     </resource>
@@ -743,7 +743,7 @@
       <reference>
         <reference value="Organization/ExampleFacility"/>
       </reference>
-      <name value="ENABLE Health Facility — example"/>
+      <name value="ENABLE Health Facility: example"/>
       <description value="Example health facility. identifier.value is the DHIS2 organisation-unit code from the deployment's master facility list."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-organization"/>
     </resource>
@@ -765,7 +765,7 @@
       <reference>
         <reference value="Observation/EnableLastMenstrualPeriodExample"/>
       </reference>
-      <name value="ENABLE Last Normal Menstrual Period — example"/>
+      <name value="ENABLE Last Normal Menstrual Period: example"/>
       <description value="Date of the last normal menstrual period."/>
       <exampleCanonical value="http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period"/>
     </resource>

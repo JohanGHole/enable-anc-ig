@@ -1,6 +1,6 @@
-# ENABLE Gestational Age — example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE Gestational Age: example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Observation: ENABLE Gestational Age — example
+## Example Observation: ENABLE Gestational Age: example
 
 Profile: [ENABLE Gestational Age](StructureDefinition-enable-gestational-age.md)
 

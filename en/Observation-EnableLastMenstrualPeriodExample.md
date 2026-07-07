@@ -1,6 +1,6 @@
-# ENABLE Last Normal Menstrual Period — example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE Last Normal Menstrual Period: example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Observation: ENABLE Last Normal Menstrual Period — example
+## Example Observation: ENABLE Last Normal Menstrual Period: example
 
 Profile: [ENABLE Last Normal Menstrual Period (LNMP) date](StructureDefinition-enable-last-menstrual-period.md)
 

@@ -1,6 +1,6 @@
-# ENABLE Health Facility — example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE Health Facility: example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Organization: ENABLE Health Facility — example
+## Example Organization: ENABLE Health Facility: example
 
 Profile: [ENABLE Health Facility (Organization)](StructureDefinition-enable-organization.md)
 

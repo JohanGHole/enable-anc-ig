@@ -188,7 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#what-is-in-the-bundle" id="markdown-toc-what-is-in-the-bundle">What is in the Bundle</a></li>
   <li><a href="#patient---the-woman" id="markdown-toc-patient---the-woman">Patient - the woman</a></li>
   <li><a href="#organization---the-facility" id="markdown-toc-organization---the-facility">Organization - the facility</a></li>
-  <li><a href="#encounter--one-per-visit" id="markdown-toc-encounter--one-per-visit">Encounter — one per visit</a></li>
+  <li><a href="#encounter-one-per-visit" id="markdown-toc-encounter-one-per-visit">Encounter: one per visit</a></li>
   <li><a href="#observations" id="markdown-toc-observations">Observations</a></li>
   <li><a href="#sending-more-than-one-patient" id="markdown-toc-sending-more-than-one-patient">Sending more than one patient</a></li>
   <li><a href="#worked-payloads" id="markdown-toc-worked-payloads">Worked payloads</a></li>
@@ -204,9 +204,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The Bundle carries data at three scopes:</p>
 
 <ul>
-  <li><strong>Patient-level</strong> — who the woman is and where she is being seen. One <code class="language-plaintext highlighter-rouge">Patient</code> and one <code class="language-plaintext highlighter-rouge">Organization</code> (facility) per Bundle.</li>
-  <li><strong>Pregnancy-level</strong> — values that describe <em>this pregnancy</em> and do not change from visit to visit. <code class="language-plaintext highlighter-rouge">LMP</code> and <code class="language-plaintext highlighter-rouge">EDD</code> are sent once per Bundle.</li>
-  <li><strong>Visit-level</strong> — one <code class="language-plaintext highlighter-rouge">Encounter</code> per ANC visit, with <code class="language-plaintext highlighter-rouge">Gestational Age</code> and <code class="language-plaintext highlighter-rouge">ANC Visit Number</code> attached to that Encounter. GA is the weeks-at-that-visit; visit number increments.</li>
+  <li><strong>Patient-level</strong>: Who the woman is and where she is being seen. One <code class="language-plaintext highlighter-rouge">Patient</code> and one <code class="language-plaintext highlighter-rouge">Organization</code> (facility) per Bundle.</li>
+  <li><strong>Pregnancy-level</strong>: Values that describe <em>this pregnancy</em> and do not change from visit to visit. <code class="language-plaintext highlighter-rouge">LMP</code> and <code class="language-plaintext highlighter-rouge">EDD</code> are sent once per Bundle.</li>
+  <li><strong>Visit-level</strong>: One <code class="language-plaintext highlighter-rouge">Encounter</code> per ANC visit, with <code class="language-plaintext highlighter-rouge">Gestational Age</code> and <code class="language-plaintext highlighter-rouge">ANC Visit Number</code> attached to that Encounter. GA is the weeks-at-that-visit; visit number increments.</li>
 </ul>
 
 <p>EMRs capture these differently. In DHIS2 the pregnancy-level values live in the <em>Woman's Profile and History</em> stage (recorded once, typically at the first visit); visit-level values live in the <em>ANC Examination</em> stage. Other EMRs may capture them elsewhere. The Bundle carries the same information as one flat collection either way.</p>
@@ -263,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Every Observation references the Patient (<code class="language-plaintext highlighter-rouge">subject</code>). Visit-level Observations (Gestational Age, ANC Visit Number) also reference the Encounter they belong to (<code class="language-plaintext highlighter-rouge">encounter</code>). LMP and EDD are pregnancy-scoped — <code class="language-plaintext highlighter-rouge">encounter</code> may be omitted, or set to the first finished Encounter. Every Encounter references the Patient (<code class="language-plaintext highlighter-rouge">subject</code>) and the Organization (<code class="language-plaintext highlighter-rouge">serviceProvider</code>).</p>
+<p>Every Observation references the Patient (<code class="language-plaintext highlighter-rouge">subject</code>). Visit-level Observations (Gestational Age, ANC Visit Number) also reference the Encounter they belong to (<code class="language-plaintext highlighter-rouge">encounter</code>). LMP and EDD are pregnancy-scoped: <code class="language-plaintext highlighter-rouge">encounter</code> may be omitted, or set to the first finished Encounter. Every Encounter references the Patient (<code class="language-plaintext highlighter-rouge">subject</code>) and the Organization (<code class="language-plaintext highlighter-rouge">serviceProvider</code>).</p>
 
 <h3 id="patient---the-woman">Patient - the woman</h3>
 
@@ -318,7 +318,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="organization---the-facility">Organization - the facility</h3>
 
-<p>The facility identifier is the DHIS2 organisation-unit <strong>code</strong> drawn from the deployment's <strong>master facility list</strong> — each EMR site is configured once with its facility code during onboarding. That same code must appear on every Bundle the site sends.</p>
+<p>The facility identifier is the DHIS2 organisation-unit <strong>code</strong> drawn from the deployment's <strong>master facility list</strong>. Each EMR site is configured once with its facility code during onboarding. That same code must appear on every Bundle the site sends.</p>
 
 <table>
   <thead>
@@ -362,7 +362,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="encounter--one-per-visit">Encounter — one per visit</h3>
+<h3 id="encounter-one-per-visit">Encounter: one per visit</h3>
 
 <table>
   <thead>
@@ -415,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="observations">Observations</h3>
 
-<p>Each Observation carries <code class="language-plaintext highlighter-rouge">status</code> (usually <code class="language-plaintext highlighter-rouge">final</code>), the fixed <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code> (→ Patient), its value, and — for visit-level Observations — <code class="language-plaintext highlighter-rouge">encounter</code> (→ Encounter). The middleware maps on the primary code. LOINC / SNOMED extra codings are optional.</p>
+<p>Each Observation carries <code class="language-plaintext highlighter-rouge">status</code> (usually <code class="language-plaintext highlighter-rouge">final</code>), the fixed <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code> (→ Patient), its value, and, for visit-level Observations, <code class="language-plaintext highlighter-rouge">encounter</code> (→ Encounter). The middleware maps on the primary code. LOINC / SNOMED extra codings are optional.</p>
 
 <table>
   <thead>
@@ -463,13 +463,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="sending-more-than-one-patient">Sending more than one patient</h3>
 
-<p>Each Bundle is one woman. To push several women in a single HTTP request, concatenate the per-patient Bundles with newlines (one Bundle per line) and send with <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+ndjson</code>. This is the FHIR-standard bulk-data pattern; the middleware processes each line independently and returns a per-line status. See <a href="quickstart.html#4-post">the Quickstart</a> for the exact <code class="language-plaintext highlighter-rouge">curl</code> invocation.</p>
+<p>Each Bundle is one woman. To push several women in a single request, concatenate the per-patient Bundles with newlines (one Bundle per line) and send with <code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+ndjson</code>. This is the FHIR-standard bulk-data pattern; the middleware processes each line independently and returns a per-line status. See <a href="quickstart.html#4-post">the Quickstart</a> for the exact <code class="language-plaintext highlighter-rouge">curl</code> invocation.</p>
 
 <h3 id="worked-payloads">Worked payloads</h3>
 
 <ul>
-  <li>Single-visit: <a href="Bundle-ExampleAncBundleSingleVisit.html">Bundle — single-visit example</a></li>
-  <li>Multi-visit: <a href="Bundle-ExampleAncBundleMultiVisit.html">Bundle — multi-visit example</a></li>
+  <li>Single-visit: <a href="Bundle-ExampleAncBundleSingleVisit.html">Bundle: single-visit example</a></li>
+  <li>Multi-visit: <a href="Bundle-ExampleAncBundleMultiVisit.html">Bundle: multi-visit example</a></li>
   <li>Click-to-download templates &amp; samples: <a href="downloads.html">Downloads</a></li>
 </ul>
 
@@ -498,10 +498,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 

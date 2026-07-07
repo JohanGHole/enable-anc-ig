@@ -195,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Which of your fields goes into which FHIR path. Source columns come straight from the ANC/DAK crosswalk <code class="language-plaintext highlighter-rouge">SMS_slice</code>, <code class="language-plaintext highlighter-rouge">EMR_Bahmni</code> and <code class="language-plaintext highlighter-rouge">EMR_PulseTech</code> tabs.</p>
 
-<p>You only need to produce the value in the <strong>FHIR path</strong> column. The DHIS2 code column is informational — the middleware maps to it for you.</p>
+<p>You only need to produce the value in the <strong>FHIR path</strong> column. The DHIS2 code column is informational; the middleware maps to it for you.</p>
 
 <table>
   <thead>
@@ -233,7 +233,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">Organization.name</code></td>
-      <td>—</td>
+      <td>(none)</td>
       <td>Facility display name</td>
       <td>Facility display name</td>
     </tr>
@@ -247,7 +247,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><code class="language-plaintext highlighter-rouge">Encounter[planned].period.start</code></td>
       <td><code class="language-plaintext highlighter-rouge">scheduledAt</code></td>
       <td>Next Date</td>
-      <td><em>appointment date — not yet in export</em></td>
+      <td><em>appointment date (not yet in export)</em></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">Encounter.serviceProvider</code></td>
@@ -277,7 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Visit-number <code class="language-plaintext highlighter-rouge">Observation.valueInteger</code></td>
       <td>ET-ANC-051</td>
       <td>Visit Number</td>
-      <td><em>follow-up number — not yet in export</em></td>
+      <td><em>follow-up number (not yet in export)</em></td>
     </tr>
   </tbody>
 </table>
@@ -285,9 +285,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="fields-the-two-teams-currently-need-to-start-emitting">Fields the two teams currently need to start emitting</h3>
 
 <ul>
-  <li><strong>Facility DHIS2 code</strong> — both EMRs. Each site is configured once at onboarding with its DHIS2 organisation-unit code from the master facility list; that same code must appear on every Bundle. No lookup or translation on the EMR side.</li>
-  <li><strong>Next scheduled visit date</strong> — PulseTech only. Bahmni already has "Next Date".</li>
-  <li><strong>ANC follow-up / visit number</strong> — PulseTech only. Bahmni already has "Visit Number".</li>
+  <li><strong>Facility DHIS2 code</strong>: both EMRs. Each site is configured once at onboarding with its DHIS2 organisation-unit code from the master facility list; that same code must appear on every Bundle. No lookup or translation on the EMR side.</li>
+  <li><strong>Next scheduled visit date</strong>: PulseTech only. Bahmni already has "Next Date".</li>
+  <li><strong>ANC follow-up / visit number</strong>: PulseTech only. Bahmni already has "Visit Number".</li>
 </ul>
 
 <h3 id="templates-and-samples">Templates and samples</h3>
@@ -327,10 +327,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 

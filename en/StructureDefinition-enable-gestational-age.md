@@ -33,13 +33,13 @@ Other representations of profile: [CSV](../StructureDefinition-enable-gestationa
   "name" : "EnableGestationalAge",
   "title" : "ENABLE Gestational Age",
   "status" : "draft",
-  "date" : "2026-07-07T16:14:48+00:00",
-  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "date" : "2026-07-07T17:20:37+00:00",
+  "publisher" : "Devotta",
   "contact" : [{
-    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "name" : "Devotta",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.fhi.no/"
+      "value" : "https://www.devotta.no/"
     },
     {
       "system" : "email",

@@ -25,12 +25,12 @@ Identifier system for the ENABLE ANC Client MRN (DHIS2 attribute ET-ANC-002).
   "status" : "active",
   "kind" : "identifier",
   "date" : "2026-07-01",
-  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "publisher" : "Devotta",
   "contact" : [{
-    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "name" : "Devotta",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.fhi.no/"
+      "value" : "https://www.devotta.no/"
     },
     {
       "system" : "email",

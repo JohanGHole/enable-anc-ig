@@ -191,17 +191,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="change-log">Change Log</h3>
 
-<h4 id="020--2026-07-07">0.2.0 — 2026-07-07</h4>
+<h4 id="020-2026-07-07">0.2.0 (2026-07-07)</h4>
 
 <p><strong>Added</strong></p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">EnableOrganization</code> profile — the facility. Carries the DHIS2 organisation-unit <strong>code</strong> from the deployment's master facility list on <code class="language-plaintext highlighter-rouge">identifier.value</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">EnableOrganization</code> profile: the facility. Carries the DHIS2 organisation-unit <strong>code</strong> from the deployment's master facility list on <code class="language-plaintext highlighter-rouge">identifier.value</code>.</li>
   <li><code class="language-plaintext highlighter-rouge">Encounter.serviceProvider</code> is now required (<code class="language-plaintext highlighter-rouge">1..1 MS</code>) on <code class="language-plaintext highlighter-rouge">EnableAncEncounter</code>; every Encounter references the single in-Bundle Organization.</li>
-  <li>Bundle entry slicing — the Bundle now enforces the presence of one Patient, one Organization, at least one Encounter, one LMP and one EDD Observation per Bundle, and one Gestational Age and one ANC Visit Number Observation per finished Encounter.</li>
-  <li>New page structure: Home, Background, Actors, The Contract, Mapping Guide, Mapping Scripts, Quickstart, Downloads, Examples, Change Log — following the FHIR IG SOP.</li>
+  <li>Bundle entry slicing: the Bundle now enforces the presence of one Patient, one Organization, at least one Encounter, one LMP and one EDD Observation per Bundle, and one Gestational Age and one ANC Visit Number Observation per finished Encounter.</li>
+  <li>New page structure: Home, Background, Actors, The Contract, Mapping Guide, Mapping Scripts, Quickstart, Downloads, Examples, Change Log, following the FHIR IG SOP.</li>
   <li>Downloadable templates and samples hosted inside the IG (see <a href="downloads.html">Downloads</a>).</li>
-  <li>Multi-visit worked example: <a href="Bundle-ExampleAncBundleMultiVisit.html">Bundle — multi-visit example</a>.</li>
+  <li>Multi-visit worked example: <a href="Bundle-ExampleAncBundleMultiVisit.html">Bundle: multi-visit example</a>.</li>
 </ul>
 
 <p><strong>Changed</strong></p>
@@ -214,20 +214,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><strong>Confirmed (unchanged, but explicit)</strong></p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Patient.name</code> remains <code class="language-plaintext highlighter-rouge">0..*</code> — some EMR sites may not be permitted to push names outside their clinical system.</li>
+  <li><code class="language-plaintext highlighter-rouge">Patient.name</code> remains <code class="language-plaintext highlighter-rouge">0..*</code>; some EMR sites may not be permitted to push names outside their clinical system.</li>
 </ul>
 
-<h4 id="010--2026-07-01">0.1.0 — 2026-07-01</h4>
+<h4 id="010-2026-07-01">0.1.0 (2026-07-01)</h4>
 
 <p>Initial version. Patient + Encounter + four Observations (gestational age, EDD, LMP, ANC visit number). No facility resource. Three-page site (home, how-to, mappings). Templates hosted outside the IG in a sibling <code class="language-plaintext highlighter-rouge">templates/</code> folder.</p>
 
 <h3 id="roadmap">Roadmap</h3>
 
 <ul>
-  <li><strong>Multi-facility referral</strong> — allow more than one Organization per Bundle for referred visits.</li>
-  <li><strong>Location resource</strong> — add physical-site detail (rooms/wards) if a future use case requires it.</li>
-  <li><strong>Full ANC events</strong> — expand Observations to the full clinical ANC data set (weight, blood pressure, urine tests, HIV status, danger signs, treatments).</li>
-  <li><strong>PNC and delivery outcome</strong> — extend the contract to cover postnatal visits and pregnancy outcome.</li>
+  <li><strong>Multi-facility referral</strong>: allow more than one Organization per Bundle for referred visits.</li>
+  <li><strong>Location resource</strong>: add physical-site detail (rooms/wards) if a future use case requires it.</li>
+  <li><strong>Full ANC events</strong>: expand Observations to the full clinical ANC data set (weight, blood pressure, urine tests, HIV status, danger signs, treatments).</li>
+  <li><strong>PNC and delivery outcome</strong>: extend the contract to cover postnatal visits and pregnancy outcome.</li>
 </ul>
 
 
@@ -255,10 +255,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 

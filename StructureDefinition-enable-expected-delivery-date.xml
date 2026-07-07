@@ -21,13 +21,13 @@
   <name value="EnableExpectedDeliveryDate"/>
   <title value="ENABLE Expected Date of Delivery (EDD)"/>
   <status value="draft"/>
-  <date value="2026-07-07T16:14:48+00:00"/>
-  <publisher value="Norwegian Institute of Public Health (NIPH)"/>
+  <date value="2026-07-07T17:20:37+00:00"/>
+  <publisher value="Devotta"/>
   <contact>
-    <name value="Norwegian Institute of Public Health (NIPH)"/>
+    <name value="Devotta"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.fhi.no/"/>
+      <value value="https://www.devotta.no/"/>
     </telecom>
     <telecom>
       <system value="email"/>

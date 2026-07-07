@@ -1,6 +1,6 @@
-# ENABLE ANC Encounter — next visit (planned) - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE ANC Encounter: next visit (planned) - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Encounter: ENABLE ANC Encounter — next visit (planned)
+## Example Encounter: ENABLE ANC Encounter: next visit (planned)
 
 Profile: [ENABLE ANC Encounter (visit)](StructureDefinition-enable-anc-encounter.md)
 

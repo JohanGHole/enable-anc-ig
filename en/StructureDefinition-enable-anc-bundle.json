@@ -11,20 +11,20 @@
   "name" : "EnableAncBundle",
   "title" : "ENABLE ANC Bundle",
   "status" : "draft",
-  "date" : "2026-07-07T16:14:48+00:00",
-  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "date" : "2026-07-07T17:20:37+00:00",
+  "publisher" : "Devotta",
   "contact" : [{
-    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "name" : "Devotta",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.fhi.no/"
+      "value" : "https://www.devotta.no/"
     },
     {
       "system" : "email",
       "value" : "johan@devotta.no"
     }]
   }],
-  "description" : "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model — Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event).",
+  "description" : "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model: Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

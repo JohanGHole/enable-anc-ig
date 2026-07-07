@@ -3,7 +3,7 @@ EnableAncIG : Validation Results
 
 err = 66, warn = 44, info = 29
 IG Publisher Version: 2.2.10
-Generated Tue Jul 07 16:16:42 UTC 2026. FHIR version 4.0.1 for enable.anc.ig#0.2.0 (canonical = http://fhi.no/enable/anc)
+Generated Tue Jul 07 17:22:12 UTC 2026. FHIR version 4.0.1 for enable.anc.ig#0.2.0 (canonical = http://fhi.no/enable/anc)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-ExampleAncBundleMultiVisit : 42 / 13 / 43
  /github/workspace/fsh-generated/resources/Bundle-ExampleAncBundleSingleVisit : 24 / 7 / 25

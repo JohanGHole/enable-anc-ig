@@ -1,6 +1,6 @@
-# ENABLE ANC Patient — example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE ANC Patient: example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Patient: ENABLE ANC Patient — example
+## Example Patient: ENABLE ANC Patient: example
 
 Profile: [ENABLE ANC Patient](StructureDefinition-enable-anc-patient.md)
 

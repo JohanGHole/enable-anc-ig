@@ -11,29 +11,29 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide enable.anc.ig</b></p><a name=\"enable.anc.ig\"> </a><a name=\"hcenable.anc.ig\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EnableAncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig</pre><div><p>A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations — so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.</p>\n</div></div>"
+     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide enable.anc.ig</b></p><a name=\"enable.anc.ig\"> </a><a name=\"hcenable.anc.ig\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EnableAncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig</pre><div><p>A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations, so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig"] ;
   fhir:ImplementationGuide.version [ fhir:value "0.2.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "EnableAncIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "ENABLE ANC Interoperability IG"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-07T16:14:48+00:00"^^xsd:dateTime] ;
-  fhir:ImplementationGuide.publisher [ fhir:value "Norwegian Institute of Public Health (NIPH)"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-07T17:20:37+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "Devotta"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
-     fhir:ContactDetail.name [ fhir:value "Norwegian Institute of Public Health (NIPH)" ] ;
+     fhir:ContactDetail.name [ fhir:value "Devotta" ] ;
      fhir:ContactDetail.telecom [
        fhir:index -1 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.fhi.no/" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.devotta.no/" ]
      ], [
        fhir:index -1 ;
        fhir:ContactPoint.system [ fhir:value "email" ] ;
        fhir:ContactPoint.value [ fhir:value "johan@devotta.no" ]
      ]
   ] ;
-  fhir:ImplementationGuide.description [ fhir:value "A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations — so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG."] ;
+  fhir:ImplementationGuide.description [ fhir:value "A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations, so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG."] ;
   fhir:ImplementationGuide.jurisdiction [
      fhir:index -1 ;
      fhir:CodeableConcept.coding [
@@ -720,7 +720,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/enable-anc-bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Bundle" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model — Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.\nIt contains exactly one Patient, exactly one Organization (the facility),\none or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,\nonce per Bundle) and the visit-level Observations (Gestational Age and\nANC Visit Number, once per finished Encounter). type = collection (a\ncontainer; the middleware maps it to the DHIS2 tracker model: Patient ->\nTrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->\nscheduled Event, Organization -> orgUnit on enrollment + every event)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -733,7 +733,7 @@
          fhir:link <http://fhi.no/enable/anc/Bundle/ExampleAncBundleMultiVisit> ;
          fhir:Reference.reference [ fhir:value "Bundle/ExampleAncBundleMultiVisit" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Bundle — multi-visit example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Bundle: multi-visit example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A payload for one patient with three finished ANC visits and one planned next visit. Pregnancy-level Observations (LMP, EDD) appear once; visit-level Observations (Gestational Age, ANC Visit Number) appear once per finished Encounter." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle" ;
@@ -750,7 +750,7 @@
          fhir:link <http://fhi.no/enable/anc/Bundle/ExampleAncBundleSingleVisit> ;
          fhir:Reference.reference [ fhir:value "Bundle/ExampleAncBundleSingleVisit" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Bundle — single-visit example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Bundle: single-visit example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A complete first-ANC-visit payload for one patient: Patient + Facility + a finished and a planned Encounter + pregnancy-level Observations (LMP, EDD) + visit-level Observations (GA, Visit Number) for that finished visit." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle" ;
@@ -781,7 +781,7 @@
          fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit1Example> ;
          fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit1Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter — first visit (finished)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter: first visit (finished)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The first ANC visit that took place. Its date is also the enrolment date." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
@@ -798,7 +798,7 @@
          fhir:link <http://fhi.no/enable/anc/Encounter/EnablePlannedEncounterExample> ;
          fhir:Reference.reference [ fhir:value "Encounter/EnablePlannedEncounterExample" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter — next visit (planned)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter: next visit (planned)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The next scheduled visit. Its date drives the appointment-reminder SMS. Optional." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
@@ -815,7 +815,7 @@
          fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit2Example> ;
          fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit2Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter — second visit (finished)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter: second visit (finished)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The second ANC visit for the same woman, about a month after the first." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
@@ -832,7 +832,7 @@
          fhir:link <http://fhi.no/enable/anc/Encounter/EnableAncEncounterVisit3Example> ;
          fhir:Reference.reference [ fhir:value "Encounter/EnableAncEncounterVisit3Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter — third visit (finished)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Encounter: third visit (finished)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The third ANC visit for the same woman." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-encounter" ;
@@ -863,7 +863,7 @@
          fhir:link <http://fhi.no/enable/anc/Patient/EnablePatientExample> ;
          fhir:Reference.reference [ fhir:value "Patient/EnablePatientExample" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Patient — example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Patient: example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example woman enrolled at her first ANC visit. Name is populated here for readability but is OPTIONAL in the contract." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-patient" ;
@@ -894,7 +894,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableAncVisitNumberExample> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableAncVisitNumberExample" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Visit Number — example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Visit Number: example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "First ANC visit (visit number 1)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
@@ -911,7 +911,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableAncVisitNumberVisit2Example> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableAncVisitNumberVisit2Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Visit Number — visit 2 example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Visit Number: visit 2 example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Second ANC visit (visit number 2)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
@@ -928,7 +928,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableAncVisitNumberVisit3Example> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableAncVisitNumberVisit3Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Visit Number — visit 3 example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE ANC Visit Number: visit 3 example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Third ANC visit (visit number 3)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-anc-visit-number" ;
@@ -1001,7 +1001,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableExpectedDeliveryDateExample> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableExpectedDeliveryDateExample" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Expected Date of Delivery — example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Expected Date of Delivery: example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Expected date of delivery derived from the LNMP." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-expected-delivery-date" ;
@@ -1032,7 +1032,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableGestationalAgeExample> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableGestationalAgeExample" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Gestational Age — example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Gestational Age: example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gestational age of 12 weeks at the first ANC visit." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age" ;
@@ -1049,7 +1049,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableGestationalAgeVisit2Example> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableGestationalAgeVisit2Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Gestational Age — visit 2 example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Gestational Age: visit 2 example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gestational age of 16 weeks at the second ANC visit." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age" ;
@@ -1066,7 +1066,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableGestationalAgeVisit3Example> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableGestationalAgeVisit3Example" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Gestational Age — visit 3 example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Gestational Age: visit 3 example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gestational age of 20 weeks at the third ANC visit." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-gestational-age" ;
@@ -1097,7 +1097,7 @@
          fhir:link <http://fhi.no/enable/anc/Organization/ExampleFacility> ;
          fhir:Reference.reference [ fhir:value "Organization/ExampleFacility" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Health Facility — example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Health Facility: example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example health facility. identifier.value is the DHIS2 organisation-unit code from the deployment's master facility list." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-organization" ;
@@ -1128,7 +1128,7 @@
          fhir:link <http://fhi.no/enable/anc/Observation/EnableLastMenstrualPeriodExample> ;
          fhir:Reference.reference [ fhir:value "Observation/EnableLastMenstrualPeriodExample" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Last Normal Menstrual Period — example" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ENABLE Last Normal Menstrual Period: example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date of the last normal menstrual period." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhi.no/enable/anc/StructureDefinition/enable-last-menstrual-period" ;

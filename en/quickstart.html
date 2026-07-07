@@ -196,7 +196,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="implementer-quickstart">Implementer Quickstart</h3>
 
-<p>You need three things: the middleware URL and API key (from the ENABLE team), your site's DHIS2 organisation-unit code from the <a href="contract.html#organization---the-facility">master facility list</a> (also from the ENABLE team, set up once at onboarding), and about 15 minutes.</p>
+<p>You need three things: your site's DHIS2 organisation-unit code from the <a href="contract.html#organization---the-facility">master facility list</a> (from the ENABLE team, set up once at onboarding), the middleware URL and per-site API key (also from the ENABLE team), and about 15 minutes.</p>
+
+<p><strong>Status.</strong> The middleware endpoint and API keys are not yet live; they will be provisioned when integration testing starts. Steps 1–3 (pick a template, fill it in, validate) you can do today. Step 4 (POST) shows the eventual call shape so you can prototype your script in advance; it will return a connection error until the endpoint is stood up.</p>
 
 <h3 id="1-pick-a-template">1. Pick a template</h3>
 
@@ -205,7 +207,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="EnableAncBundle-pulsetech-template.json">EnableAncBundle-pulsetech-template.json</a></li>
 </ul>
 
-<p><strong>The templates are boilerplate by design.</strong> All the FHIR plumbing — resource types, codes, systems, the references that tie Patient/Encounter/Observation together — is already filled in. Your only job is to plug in your EMR's data-element values in the placeholders. Don't change anything else.</p>
+<p><strong>The templates are boilerplate by design.</strong> All the FHIR plumbing related to the resource types, codes, systems, the references that tie Patient/Encounter/Observation together is already filled in. Your only job is to plug in your EMR's data-element values in the placeholders, using the mapping language of your choice.</p>
 
 <p>Each placeholder tells you whether the field is REQUIRED or OPTIONAL, the type, and the source field in your EMR (per the <a href="mapping.html">Mapping Guide</a>).</p>
 
@@ -213,19 +215,75 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>Replace every <code class="language-plaintext highlighter-rouge">&lt;REPLACE_ME | ... | ...&gt;</code> with your value.</li>
-  <li><strong>Integers are unquoted</strong> — gestational age and ANC visit number: <code class="language-plaintext highlighter-rouge">12</code>, not <code class="language-plaintext highlighter-rouge">"12"</code>.</li>
+  <li><strong>Integers are unquoted</strong>: gestational age and ANC visit number: <code class="language-plaintext highlighter-rouge">12</code>, not <code class="language-plaintext highlighter-rouge">"12"</code>.</li>
   <li>All dates in <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>. Phone in <code class="language-plaintext highlighter-rouge">251xxxxxxxxx</code>.</li>
-  <li><strong>Facility identifier</strong> is your site's DHIS2 organisation-unit code (e.g. <code class="language-plaintext highlighter-rouge">1057888</code>) — same value for every Bundle from that site.</li>
+  <li><strong>Facility identifier</strong> is your site's DHIS2 organisation-unit code (e.g. <code class="language-plaintext highlighter-rouge">1057888</code>), same value for every Bundle from that site.</li>
   <li>Delete the optional <code class="language-plaintext highlighter-rouge">encounter-next</code> entry if you have no scheduled next visit.</li>
   <li>Delete <code class="language-plaintext highlighter-rouge">Patient.name</code> if your site's data-sharing rules do not permit sending patient names.</li>
-  <li>Remove every <code class="language-plaintext highlighter-rouge">"_comment_..."</code> line before sending — they are guidance, not valid FHIR.</li>
+  <li>Remove every <code class="language-plaintext highlighter-rouge">"_comment_..."</code> line before sending; they are guidance, not valid FHIR.</li>
 </ul>
 
 <h3 id="3-validate">3. Validate</h3>
 
-<p>Paste your Bundle into <a href="https://validator.fhir.org/">https://validator.fhir.org/</a> and validate against <code class="language-plaintext highlighter-rouge">enable.anc.ig#0.2.0</code>. Fix anything the validator flags. No local tooling needed.</p>
+<p>Use the public FHIR validator at <a href="https://validator.fhir.org/">https://validator.fhir.org/</a>. No local tooling required.</p>
+
+<ol>
+  <li>Open <a href="https://validator.fhir.org/">https://validator.fhir.org/</a>.</li>
+  <li>Paste your Bundle JSON into the source text area (or use the file-upload button and pick your <code class="language-plaintext highlighter-rouge">.json</code>).</li>
+  <li>Set the FHIR <strong>version</strong> to R4 (<code class="language-plaintext highlighter-rouge">4.0.1</code>).</li>
+  <li>
+    <p>In the <strong>Implementation Guides</strong> field (sometimes labelled "IGs" or "Additional IGs"; expand the options panel if you don't see it), paste this URL. It points at the compiled package for this IG:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://johanghole.github.io/enable-anc-ig/package.tgz
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In the <strong>Profile</strong> field, paste the canonical URL of the ENABLE ANC Bundle profile:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://fhi.no/enable/anc/StructureDefinition/enable-anc-bundle
+</code></pre></div>    </div>
+  </li>
+  <li>Click <strong>Validate</strong>.</li>
+</ol>
+
+<p>The validator returns a FHIR <code class="language-plaintext highlighter-rouge">OperationOutcome</code> with one issue per finding. Fix every issue whose severity is <code class="language-plaintext highlighter-rouge">error</code>; <code class="language-plaintext highlighter-rouge">warning</code> and <code class="language-plaintext highlighter-rouge">information</code> are advisory. What the common errors mean:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message fragment</th>
+      <th>What went wrong</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>"slice matching failed"</em> / <em>"could not match slice"</em></td>
+      <td>An Observation has the wrong <code class="language-plaintext highlighter-rouge">code</code>, or a required slot (Patient / Organization / LMP / EDD / GA / Visit Number) is missing.</td>
+    </tr>
+    <tr>
+      <td><em>"Cardinality Rule … failed"</em></td>
+      <td>Too few or too many entries in a slot (e.g. two LMP Observations, or zero Gestational Age Observations).</td>
+    </tr>
+    <tr>
+      <td><em>"does not match fixed value"</em></td>
+      <td>A fixed field has the wrong content, usually <code class="language-plaintext highlighter-rouge">Organization.identifier.system</code> or an Observation <code class="language-plaintext highlighter-rouge">code.coding.code</code>.</td>
+    </tr>
+    <tr>
+      <td><em>"encounter must be present"</em> / <em>"minimum required = 1"</em> on <code class="language-plaintext highlighter-rouge">Observation.encounter</code></td>
+      <td>A visit-level Observation (Gestational Age or Visit Number) is missing its <code class="language-plaintext highlighter-rouge">encounter</code> reference.</td>
+    </tr>
+    <tr>
+      <td><em>"value must be a whole number of weeks"</em></td>
+      <td>Gestational Age was sent as a decimal (e.g. <code class="language-plaintext highlighter-rouge">12.5</code>); it must be an integer.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Anything still flagged <code class="language-plaintext highlighter-rouge">error</code> when you finish this step is exactly what the middleware will reject once it goes live.</p>
 
 <h3 id="4-post">4. POST</h3>
+
+<p><strong>Not live yet.</strong> The middleware endpoint and API keys will be provisioned by the ENABLE team when integration testing starts. The curl examples below are the eventual call shape. Wire your script up against them now and you will only need to fill in the base URL and key later.</p>
 
 <p><strong>One patient:</strong></p>
 
@@ -235,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <span class="nt">--data</span> @your-bundle.json
 </code></pre></div></div>
 
-<p><strong>Many patients in one request</strong> — concatenate the per-patient Bundles with a newline between each (one Bundle per line, no trailing comma, no wrapper array) and send as <strong>NDJSON</strong>:</p>
+<p><strong>Many patients in one request:</strong> concatenate the per-patient Bundles with a newline between each (one Bundle per line, no trailing comma, no wrapper array) and send as <strong>NDJSON</strong>:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="s2">"&lt;middleware-base-url&gt;/api/anc-contact"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Content-Type: application/fhir+ndjson"</span> <span class="se">\</span>
@@ -291,10 +349,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 

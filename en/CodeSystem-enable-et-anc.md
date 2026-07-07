@@ -27,13 +27,13 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "ENABLE Ethiopia-local ANC codes",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T16:14:48+00:00",
-  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "date" : "2026-07-07T17:20:37+00:00",
+  "publisher" : "Devotta",
   "contact" : [{
-    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "name" : "Devotta",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.fhi.no/"
+      "value" : "https://www.devotta.no/"
     },
     {
       "system" : "email",

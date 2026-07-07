@@ -1,6 +1,6 @@
-# ENABLE Expected Date of Delivery — example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE Expected Date of Delivery: example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Observation: ENABLE Expected Date of Delivery — example
+## Example Observation: ENABLE Expected Date of Delivery: example
 
 Profile: [ENABLE Expected Date of Delivery (EDD)](StructureDefinition-enable-expected-delivery-date.md)
 

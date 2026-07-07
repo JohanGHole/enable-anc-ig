@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "enable-mrn-namingsystem"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem enable-mrn-namingsystem</b></p><a name=\"enable-mrn-namingsystem\"> </a><a name=\"hcenable-mrn-namingsystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhi.no/enable/anc/NamingSystem/enable-mrn-namingsystem</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>EnableClientMrn</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifier system for the ENABLE ANC Client MRN (DHIS2 attribute ET-ANC-002).</p>\n</div></td></tr><tr><td>Publisher</td><td>Norwegian Institute of Public Health (NIPH)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhi.no/enable/identifier/mrn</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem enable-mrn-namingsystem</b></p><a name=\"enable-mrn-namingsystem\"> </a><a name=\"hcenable-mrn-namingsystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhi.no/enable/anc/NamingSystem/enable-mrn-namingsystem</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>EnableClientMrn</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifier system for the ENABLE ANC Client MRN (DHIS2 attribute ET-ANC-002).</p>\n</div></td></tr><tr><td>Publisher</td><td>Devotta</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhi.no/enable/identifier/mrn</td><td>true</td></tr></table></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -25,14 +25,14 @@
   fhir:NamingSystem.status [ fhir:value "active"] ;
   fhir:NamingSystem.kind [ fhir:value "identifier"] ;
   fhir:NamingSystem.date [ fhir:value "2026-07-01"^^xsd:date] ;
-  fhir:NamingSystem.publisher [ fhir:value "Norwegian Institute of Public Health (NIPH)"] ;
+  fhir:NamingSystem.publisher [ fhir:value "Devotta"] ;
   fhir:NamingSystem.contact [
      fhir:index 0 ;
-     fhir:ContactDetail.name [ fhir:value "Norwegian Institute of Public Health (NIPH)" ] ;
+     fhir:ContactDetail.name [ fhir:value "Devotta" ] ;
      fhir:ContactDetail.telecom [
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.fhi.no/" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.devotta.no/" ]
      ], [
        fhir:index 1 ;
        fhir:ContactPoint.system [ fhir:value "email" ] ;

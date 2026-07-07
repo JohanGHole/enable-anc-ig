@@ -1,6 +1,6 @@
-# ENABLE ANC Visit Number — visit 3 example - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE ANC Visit Number: visit 3 example - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Observation: ENABLE ANC Visit Number — visit 3 example
+## Example Observation: ENABLE ANC Visit Number: visit 3 example
 
 Profile: [ENABLE ANC Visit Number](StructureDefinition-enable-anc-visit-number.md)
 

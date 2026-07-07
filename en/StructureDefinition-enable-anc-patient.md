@@ -34,13 +34,13 @@ Other representations of profile: [CSV](../StructureDefinition-enable-anc-patien
   "name" : "EnableAncPatient",
   "title" : "ENABLE ANC Patient",
   "status" : "draft",
-  "date" : "2026-07-07T16:14:48+00:00",
-  "publisher" : "Norwegian Institute of Public Health (NIPH)",
+  "date" : "2026-07-07T17:20:37+00:00",
+  "publisher" : "Devotta",
   "contact" : [{
-    "name" : "Norwegian Institute of Public Health (NIPH)",
+    "name" : "Devotta",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.fhi.no/"
+      "value" : "https://www.devotta.no/"
     },
     {
       "system" : "email",
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](../StructureDefinition-enable-anc-patien
     {
       "id" : "Patient.name",
       "path" : "Patient.name",
-      "short" : "Optional. Send ONLY if your data-sharing rules permit — the middleware and SMS gateway do not require a name.",
+      "short" : "Optional. Send ONLY if your data-sharing rules permit; the middleware and SMS gateway do not require a name.",
       "mustSupport" : true
     },
     {

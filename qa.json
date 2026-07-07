@@ -2,12 +2,12 @@
   "url" : "http://fhi.no/enable/anc/ImplementationGuide/enable.anc.ig",
   "name" : "EnableAncIG",
   "title" : "ENABLE ANC Interoperability IG",
-  "description" : "A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations — so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.",
+  "description" : "A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC Encounters, and a small set of Observations, so a woman's ANC visits flow into the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a clinical IG.",
   "status" : "draft",
   "package-id" : "enable.anc.ig",
   "ig-ver" : "0.2.0",
-  "date" : "Tue, 07 Jul, 2026 16:14:48 +0000",
-  "dateISO8601" : "2026-07-07T16:14:48+00:00",
+  "date" : "Tue, 07 Jul, 2026 17:20:37 +0000",
+  "dateISO8601" : "2026-07-07T17:20:37+00:00",
   "errs" : 66,
   "warnings" : 44,
   "hints" : 29,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1091268040
+  "maxMemory" : 992616928
 }

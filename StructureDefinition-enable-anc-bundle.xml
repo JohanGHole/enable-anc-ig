@@ -27,20 +27,20 @@
   <name value="EnableAncBundle"/>
   <title value="ENABLE ANC Bundle"/>
   <status value="draft"/>
-  <date value="2026-07-07T16:14:48+00:00"/>
-  <publisher value="Norwegian Institute of Public Health (NIPH)"/>
+  <date value="2026-07-07T17:20:37+00:00"/>
+  <publisher value="Devotta"/>
   <contact>
-    <name value="Norwegian Institute of Public Health (NIPH)"/>
+    <name value="Devotta"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.fhi.no/"/>
+      <value value="https://www.devotta.no/"/>
     </telecom>
     <telecom>
       <system value="email"/>
       <value value="johan@devotta.no"/>
     </telecom>
   </contact>
-  <description value="The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.&#xA;It contains exactly one Patient, exactly one Organization (the facility),&#xA;one or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,&#xA;once per Bundle) and the visit-level Observations (Gestational Age and&#xA;ANC Visit Number, once per finished Encounter). type = collection (a&#xA;container; the middleware maps it to the DHIS2 tracker model — Patient -&gt;&#xA;TrackedEntity, Encounter(finished) -&gt; Event, Encounter(planned) -&gt;&#xA;scheduled Event, Organization -&gt; orgUnit on enrollment + every event)."/>
+  <description value="The unit of exchange the ENABLE middleware expects: ONE Bundle per patient.&#xA;It contains exactly one Patient, exactly one Organization (the facility),&#xA;one or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,&#xA;once per Bundle) and the visit-level Observations (Gestational Age and&#xA;ANC Visit Number, once per finished Encounter). type = collection (a&#xA;container; the middleware maps it to the DHIS2 tracker model: Patient -&gt;&#xA;TrackedEntity, Encounter(finished) -&gt; Event, Encounter(planned) -&gt;&#xA;scheduled Event, Organization -&gt; orgUnit on enrollment + every event)."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

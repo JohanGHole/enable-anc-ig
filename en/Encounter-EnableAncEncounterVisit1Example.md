@@ -1,6 +1,6 @@
-# ENABLE ANC Encounter — first visit (finished) - ENABLE ANC Interoperability IG v0.2.0
+# ENABLE ANC Encounter: first visit (finished) - ENABLE ANC Interoperability IG v0.2.0
 
-## Example Encounter: ENABLE ANC Encounter — first visit (finished)
+## Example Encounter: ENABLE ANC Encounter: first visit (finished)
 
 Profile: [ENABLE ANC Encounter (visit)](StructureDefinition-enable-anc-encounter.md)
 

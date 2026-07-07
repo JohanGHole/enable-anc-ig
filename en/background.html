@@ -199,14 +199,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="one-bundle-per-woman">One Bundle per woman</h3>
 
-<p>The unit of exchange is a single <a href="StructureDefinition-enable-anc-bundle.html">ENABLE ANC Bundle</a> grouped around one patient. A <strong>Bundle</strong> is FHIR's container for a group of related resources — think of it as one envelope holding everything about one woman. It contains one Patient, one Organization (the facility), one or more Encounters (finished ANC visits, plus optionally a planned next visit), and the Observations for those visits. Observations come in two flavours: <strong>pregnancy-level</strong> (LMP and EDD, once per Bundle — they describe this pregnancy, not a specific visit) and <strong>visit-level</strong> (Gestational Age and ANC Visit Number, once per finished Encounter). A woman with three visits is bundled in one payload with three finished Encounters, one LMP, one EDD, three GA and three Visit Number Observations — not three separate payloads. See the <a href="Bundle-ExampleAncBundleMultiVisit.html">multi-visit example</a> for the plural case.</p>
+<p>The unit of exchange is a single <a href="StructureDefinition-enable-anc-bundle.html">ENABLE ANC Bundle</a> grouped around one patient. A <strong>Bundle</strong> is FHIR's container for a group of related resources; think of it as one envelope holding everything about one woman. It contains one Patient, one Organization (the facility), one or more Encounters (finished ANC visits, plus optionally a planned next visit), and the Observations for those visits. Observations come in two flavours: <strong>pregnancy-level</strong> (LMP and EDD, once per Bundle; they describe this pregnancy, not a specific visit) and <strong>visit-level</strong> (Gestational Age and ANC Visit Number, once per finished Encounter). A woman with three visits is bundled in one payload with three finished Encounters, one LMP, one EDD, three GA and three Visit Number Observations, not three separate payloads. See the <a href="Bundle-ExampleAncBundleMultiVisit.html">multi-visit example</a> for the plural case.</p>
 
-<p>To push multiple women in a single HTTP request, concatenate their Bundles with newlines and send as <a href="quickstart.html#4-post">NDJSON</a> — see the <a href="quickstart.html">Quickstart</a> for the exact call.</p>
+<p>To push multiple women in a single HTTP request, concatenate their Bundles with newlines and send as <a href="quickstart.html#4-post">NDJSON</a>; see the <a href="quickstart.html">Quickstart</a> for the exact call.</p>
 
 <h3 id="why-fhir">Why FHIR</h3>
 
 <ul>
-  <li><strong>Multiple EMRs, one DHIS2.</strong> Every EMR that joins ENABLE has to solve the same DHIS2 tracker mapping. Solving it once at the FHIR layer means every new EMR only ever maps to <em>this</em> IG — never to DHIS2 directly. The DHIS2 side stays stable no matter who joins next.</li>
+  <li><strong>Multiple EMRs, one DHIS2.</strong> Every EMR that joins ENABLE has to solve the same DHIS2 tracker mapping. Solving it once at the FHIR layer means every new EMR only ever maps to <em>this</em> IG, never to DHIS2 directly. The DHIS2 side stays stable no matter who joins next.</li>
   <li><strong>Future-proof by construction.</strong> FHIR is the common language most modern EMRs already know how to emit. Using it at the conformance level keeps the integration tidy: if DHIS2 is ever swapped for another backend, the EMRs never notice.</li>
   <li><strong>Portable side benefit.</strong> Any other consumer of ANC data (a research warehouse, another SMS platform, a national dashboard) can read the same Bundles without needing to understand DHIS2 semantics.</li>
 </ul>
@@ -253,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>5</td>
       <td>Facility name</td>
       <td><code class="language-plaintext highlighter-rouge">Organization.name</code></td>
-      <td>—</td>
+      <td>(none)</td>
     </tr>
     <tr>
       <td>6</td>
@@ -329,10 +329,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fhi.no/">Norwegian Institute of Public Health (NIPH)</a>.  
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.devotta.no/">Devotta</a>.  
           Package enable.anc.ig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-07 16:14:00 +0000">
+  <span title="2026-07-07 17:20:00 +0000">
     2026-07-07
   </span>
 
