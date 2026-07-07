@@ -13,7 +13,7 @@ The first draft contains a minimum viable payload, not a clinical guide. If your
    ┌───────────┐              ┌────────────────────────────┐             ┌─────────────┐
    │ your data │ ── FHIR ───► │  Accepts Bundles that      │ ── DHIS2 ─► │  enrollment │
    │ (any      │   Bundle     │  conform to THIS IG.       │   tracker   │  + events   │
-   │  format)  │              │              │   API       │  + SMS      │
+   │  format)  │              │                            │  + SMS      │             │
    └───────────┘              └────────────────────────────┘             └─────────────┘
 ```
 
@@ -39,7 +39,7 @@ Read these pages, in order, to get an overview of the expected data structure:
 
 1. **[Background & Use Case](background.html)**
 2. **[The Contract](contract.html)** The Bundle profile, the field table, and a complete worked JSON.
-3. **[EMR Mapping Guide](mapping.html)** — Your EMR's fields ↔ FHIR paths (Bahmni and PulseTech).
+3. **[EMR Mapping Guide](mapping.html)** Your EMR's fields ↔ FHIR paths (Bahmni and PulseTech).
 4. **[Implementer Quickstart](quickstart.html)** 
 5. **[Downloads & Templates](downloads.html)**  Click-to-download JSON templates and samples.
 

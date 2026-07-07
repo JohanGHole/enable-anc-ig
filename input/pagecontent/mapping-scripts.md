@@ -4,16 +4,16 @@ Your integration is a small script that runs on a schedule (cron, systemd timer,
 
 The "shape" step is the interesting part. Pick whichever tool your team can maintain.
 
-| Tool | When | Runtime |
-|---|---|---|
-| **JSONata** — declarative JSON→JSON | JSON in, JSON out, simple mapping | Node.js, JVM, Python, browser |
-| **DataSonnet** — typed JVM template | Existing Java / Mule / Camel stack | JVM |
-| **Python** — plain dicts + `requests` | You already run Python ETL | Python 3 |
-| **jq** — shell filter | Proof-of-concept | Any Unix |
+| Tool | Description | When | Runtime |
+|---|---|---|---|
+| **JSONata** | Declarative JSON→JSON | JSON in, JSON out, simple mapping | Node.js, JVM, Python, browser |
+| **DataSonnet** | Typed JVM template | Existing Java / Mule / Camel stack | JVM |
+| **Python** | Plain dicts + `requests` | You already run Python ETL | Python 3 |
+| **jq** | Shell filter | Proof-of-concept | Any Unix |
 
 All four produce the same conformant Bundle. Recommended default: JSONata (declarative, tiny library, [live playground](https://try.jsonata.org/)).
 
-### JSONata — sketch
+### JSONata sketch
 
 ```jsonata
 {
@@ -47,23 +47,23 @@ All four produce the same conformant Bundle. Recommended default: JSONata (decla
 
 Bind `$FACILITY_CODE` and `$FACILITY_NAME` at evaluation time from your site config. Use `$number(...)` on integer fields so they are not quoted in the output.
 
-For DataSonnet, Python and jq recipes see the tool's own documentation — the mapping shape is identical, only the syntax differs. Copy the JSON in the [samples](downloads.html) as your target.
+For DataSonnet, Python and jq recipes see the tool's own documentation; the mapping shape is identical, only the syntax differs. Copy the JSON in the [samples](downloads.html) as your target.
 
 ### Deployment loop
 
-1. **Cron** — schedule per SMS latency requirement.
-2. **Fetch delta** — query rows newer than your last watermark.
-3. **Shape** — run the mapping template. Produce one Bundle per woman.
-4. **POST** — one of two modes:
-   - **One patient per request** — `Content-Type: application/fhir+json`, body is the Bundle. Simple, one HTTP round-trip per woman.
-   - **Many patients in one request (recommended for batches)** — `Content-Type: application/fhir+ndjson`, body is the per-patient Bundles concatenated with newlines (one Bundle per line, no wrapper array). FHIR-standard bulk shape; the middleware processes and reports per line.
-5. **Handle response** — 2xx → mark sent; 4xx → log `OperationOutcome.issue[*].diagnostics` and alert; 5xx → exponential backoff. For NDJSON, the middleware returns per-line status.
-6. **Idempotency** — the middleware keys on `Patient.identifier` (MRN), so re-POSTing the same Bundle updates rather than duplicates.
+1. **Cron.** Schedule per SMS latency requirement.
+2. **Fetch delta.** Query rows newer than your last watermark.
+3. **Shape.** Run the mapping template. Produce one Bundle per woman.
+4. **POST.** One of two modes:
+   - **One patient per request:** `Content-Type: application/fhir+json`, body is the Bundle. Simple, one HTTP round-trip per woman.
+   - **Many patients in one request (recommended for batches):** `Content-Type: application/fhir+ndjson`, body is the per-patient Bundles concatenated with newlines (one Bundle per line, no wrapper array). FHIR-standard bulk shape; the middleware processes and reports per line.
+5. **Handle response.** 2xx → mark sent; 4xx → log `OperationOutcome.issue[*].diagnostics` and alert; 5xx → exponential backoff. For NDJSON, the middleware returns per-line status.
+6. **Idempotency.** The middleware keys on `Patient.identifier` (MRN), so re-POSTing the same Bundle updates rather than duplicates.
 
 ### Testing
 
-- Paste the output into <https://validator.fhir.org/> and validate against `enable.anc.ig#0.2.0`.
-- Smoke-test against the staging middleware endpoint before pointing cron at production.
+- Paste the output into <https://validator.fhir.org/> and validate. See the [Quickstart, step 3](quickstart.html#3-validate) for the exact fields (IG package URL + Bundle profile canonical).
+- Smoke-test against the staging middleware endpoint before pointing cron at production (endpoint provisioned by the ENABLE team once integration testing starts).
 
 ### Credentials
 

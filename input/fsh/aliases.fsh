@@ -1,5 +1,5 @@
 // =====================================================================
-//  Aliases — shared across the whole IG (project-wide in SUSHI)
+//  Aliases: shared across the whole IG (project-wide in SUSHI)
 // =====================================================================
 
 // WHO SMART Guidelines ANC "custom codes" (the DAK data-element codes).

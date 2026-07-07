@@ -5,7 +5,7 @@
 //   1. A CodeSystem for the Ethiopia-local ANC data-element codes that
 //      have no WHO DAK code by design (MRN, DoB, phone, visit number).
 //   2. NamingSystems declaring the identifier systems this IG uses on
-//      Patient.identifier and Organization.identifier — so they render
+//      Patient.identifier and Organization.identifier: so they render
 //      in the IG artifacts index and implementers can point at a URL.
 // =====================================================================
 

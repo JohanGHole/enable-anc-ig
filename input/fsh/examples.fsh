@@ -1,8 +1,8 @@
 // =====================================================================
-//  Worked examples — complete ANC Bundles for one patient.
+//  Worked examples: complete ANC Bundles for one patient.
 //  These are the "reference bundles" an EMR sends to the ENABLE middleware.
-//    * ExampleAncBundleSingleVisit — first ANC visit + planned next visit
-//    * ExampleAncBundleMultiVisit  — three finished visits + one planned
+//    * ExampleAncBundleSingleVisit: first ANC visit + planned next visit
+//    * ExampleAncBundleMultiVisit : three finished visits + one planned
 // =====================================================================
 
 
@@ -10,7 +10,7 @@
 Instance: EnablePatientExample
 InstanceOf: EnableAncPatient
 Usage: #example
-Title: "ENABLE ANC Patient — example"
+Title: "ENABLE ANC Patient: example"
 Description: "Example woman enrolled at her first ANC visit. Name is populated here for readability but is OPTIONAL in the contract."
 * identifier.system = "http://fhi.no/enable/identifier/mrn"
 * identifier.value = "ANC-000718642"
@@ -25,7 +25,7 @@ Description: "Example woman enrolled at her first ANC visit. Name is populated h
 Instance: ExampleFacility
 InstanceOf: EnableOrganization
 Usage: #example
-Title: "ENABLE Health Facility — example"
+Title: "ENABLE Health Facility: example"
 Description: "Example health facility. identifier.value is the DHIS2 organisation-unit code from the deployment's master facility list."
 * identifier.system = "http://fhi.no/enable/identifier/dhis2-orgunit-code"
 * identifier.value = "1057888"
@@ -37,7 +37,7 @@ Description: "Example health facility. identifier.value is the DHIS2 organisatio
 Instance: EnableAncEncounterVisit1Example
 InstanceOf: EnableAncEncounter
 Usage: #example
-Title: "ENABLE ANC Encounter — first visit (finished)"
+Title: "ENABLE ANC Encounter: first visit (finished)"
 Description: "The first ANC visit that took place. Its date is also the enrolment date."
 * status = #finished
 * class = $EncounterClass#AMB "ambulatory"
@@ -49,7 +49,7 @@ Description: "The first ANC visit that took place. Its date is also the enrolmen
 Instance: EnableAncEncounterVisit2Example
 InstanceOf: EnableAncEncounter
 Usage: #example
-Title: "ENABLE ANC Encounter — second visit (finished)"
+Title: "ENABLE ANC Encounter: second visit (finished)"
 Description: "The second ANC visit for the same woman, about a month after the first."
 * status = #finished
 * class = $EncounterClass#AMB "ambulatory"
@@ -61,7 +61,7 @@ Description: "The second ANC visit for the same woman, about a month after the f
 Instance: EnableAncEncounterVisit3Example
 InstanceOf: EnableAncEncounter
 Usage: #example
-Title: "ENABLE ANC Encounter — third visit (finished)"
+Title: "ENABLE ANC Encounter: third visit (finished)"
 Description: "The third ANC visit for the same woman."
 * status = #finished
 * class = $EncounterClass#AMB "ambulatory"
@@ -73,7 +73,7 @@ Description: "The third ANC visit for the same woman."
 Instance: EnablePlannedEncounterExample
 InstanceOf: EnableAncEncounter
 Usage: #example
-Title: "ENABLE ANC Encounter — next visit (planned)"
+Title: "ENABLE ANC Encounter: next visit (planned)"
 Description: "The next scheduled visit. Its date drives the appointment-reminder SMS. Optional."
 * status = #planned
 * class = $EncounterClass#AMB "ambulatory"
@@ -86,7 +86,7 @@ Description: "The next scheduled visit. Its date drives the appointment-reminder
 Instance: EnableGestationalAgeExample
 InstanceOf: EnableGestationalAge
 Usage: #example
-Title: "ENABLE Gestational Age — example"
+Title: "ENABLE Gestational Age: example"
 Description: "Gestational age of 12 weeks at the first ANC visit."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -104,7 +104,7 @@ Description: "Gestational age of 12 weeks at the first ANC visit."
 Instance: EnableExpectedDeliveryDateExample
 InstanceOf: EnableExpectedDeliveryDate
 Usage: #example
-Title: "ENABLE Expected Date of Delivery — example"
+Title: "ENABLE Expected Date of Delivery: example"
 Description: "Expected date of delivery derived from the LNMP."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -119,7 +119,7 @@ Description: "Expected date of delivery derived from the LNMP."
 Instance: EnableLastMenstrualPeriodExample
 InstanceOf: EnableLastMenstrualPeriod
 Usage: #example
-Title: "ENABLE Last Normal Menstrual Period — example"
+Title: "ENABLE Last Normal Menstrual Period: example"
 Description: "Date of the last normal menstrual period."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -134,7 +134,7 @@ Description: "Date of the last normal menstrual period."
 Instance: EnableAncVisitNumberExample
 InstanceOf: EnableAncVisitNumber
 Usage: #example
-Title: "ENABLE ANC Visit Number — example"
+Title: "ENABLE ANC Visit Number: example"
 Description: "First ANC visit (visit number 1)."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -148,7 +148,7 @@ Description: "First ANC visit (visit number 1)."
 Instance: EnableGestationalAgeVisit2Example
 InstanceOf: EnableGestationalAge
 Usage: #example
-Title: "ENABLE Gestational Age — visit 2 example"
+Title: "ENABLE Gestational Age: visit 2 example"
 Description: "Gestational age of 16 weeks at the second ANC visit."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -166,7 +166,7 @@ Description: "Gestational age of 16 weeks at the second ANC visit."
 Instance: EnableAncVisitNumberVisit2Example
 InstanceOf: EnableAncVisitNumber
 Usage: #example
-Title: "ENABLE ANC Visit Number — visit 2 example"
+Title: "ENABLE ANC Visit Number: visit 2 example"
 Description: "Second ANC visit (visit number 2)."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -179,7 +179,7 @@ Description: "Second ANC visit (visit number 2)."
 Instance: EnableGestationalAgeVisit3Example
 InstanceOf: EnableGestationalAge
 Usage: #example
-Title: "ENABLE Gestational Age — visit 3 example"
+Title: "ENABLE Gestational Age: visit 3 example"
 Description: "Gestational age of 20 weeks at the third ANC visit."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -197,7 +197,7 @@ Description: "Gestational age of 20 weeks at the third ANC visit."
 Instance: EnableAncVisitNumberVisit3Example
 InstanceOf: EnableAncVisitNumber
 Usage: #example
-Title: "ENABLE ANC Visit Number — visit 3 example"
+Title: "ENABLE ANC Visit Number: visit 3 example"
 Description: "Third ANC visit (visit number 3)."
 * status = #final
 * subject = Reference(EnablePatientExample)
@@ -208,7 +208,7 @@ Description: "Third ANC visit (visit number 3)."
 
 
 // ---------------------------------------------------------------------
-// Bundle 1 — single-visit contract Bundle
+// Bundle 1: single-visit contract Bundle
 //   Patient + Facility + 1 finished Encounter + 1 planned Encounter +
 //   pregnancy-level LMP and EDD + visit-level GA and Visit Number for
 //   the finished visit.
@@ -216,7 +216,7 @@ Description: "Third ANC visit (visit number 3)."
 Instance: ExampleAncBundleSingleVisit
 InstanceOf: EnableAncBundle
 Usage: #example
-Title: "ENABLE ANC Bundle — single-visit example"
+Title: "ENABLE ANC Bundle: single-visit example"
 Description: "A complete first-ANC-visit payload for one patient: Patient + Facility + a finished and a planned Encounter + pregnancy-level Observations (LMP, EDD) + visit-level Observations (GA, Visit Number) for that finished visit."
 * type = #collection
 * entry[patient].fullUrl = "http://fhi.no/enable/Patient/EnablePatientExample"
@@ -238,16 +238,16 @@ Description: "A complete first-ANC-visit payload for one patient: Patient + Faci
 
 
 // ---------------------------------------------------------------------
-// Bundle 2 — multi-visit contract Bundle
+// Bundle 2: multi-visit contract Bundle
 //   Same patient, same facility, THREE finished ANC visits + ONE planned.
 //   Pregnancy-level Observations (LMP, EDD) appear once. Visit-level
 //   Observations (Gestational Age, ANC Visit Number) appear once per
-//   finished visit — three of each.
+//   finished visit: three of each.
 // ---------------------------------------------------------------------
 Instance: ExampleAncBundleMultiVisit
 InstanceOf: EnableAncBundle
 Usage: #example
-Title: "ENABLE ANC Bundle — multi-visit example"
+Title: "ENABLE ANC Bundle: multi-visit example"
 Description: "A payload for one patient with three finished ANC visits and one planned next visit. Pregnancy-level Observations (LMP, EDD) appear once; visit-level Observations (Gestational Age, ANC Visit Number) appear once per finished Encounter."
 * type = #collection
 * entry[patient].fullUrl = "http://fhi.no/enable/Patient/EnablePatientExample"

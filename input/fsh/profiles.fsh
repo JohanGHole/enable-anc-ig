@@ -1,14 +1,14 @@
 // =====================================================================
-//  ENABLE ANC interoperability contract — profiles
+//  ENABLE ANC interoperability contract: profiles
 //
 //  This is the CONTRACT the ENABLE middleware expects as input. An EMR
 //  (Bahmni, PulseTech, ...) sends ONE Bundle per patient containing:
-//     * 1 Patient           — who she is
-//     * 1 Organization      — the facility (matches a DHIS2 org unit)
-//     * 1..* Encounter      — the ANC visit(s); at least the first one
-//     * Pregnancy-level obs — LMP + EDD, once per Bundle (describe THIS
+//     * 1 Patient           : who she is
+//     * 1 Organization      : the facility (matches a DHIS2 org unit)
+//     * 1..* Encounter      : the ANC visit(s); at least the first one
+//     * Pregnancy-level obs : LMP + EDD, once per Bundle (describe THIS
 //                             pregnancy, not a specific visit)
-//     * Visit-level obs     — Gestational Age + ANC Visit Number, once
+//     * Visit-level obs     : Gestational Age + ANC Visit Number, once
 //                             per finished Encounter
 //
 //  Deliberately minimal. Profiles are STANDALONE (parented on base FHIR),
@@ -19,7 +19,7 @@
 
 
 // ---------------------------------------------------------------------
-// Patient — the woman (DHIS2 tracked entity + enrolment attributes)
+// Patient: the woman (DHIS2 tracked entity + enrolment attributes)
 //   Client MRN (ET-ANC-002), Date of birth (ET-ANC-005),
 //   SMS phone (ET-ANC-015).
 //   Name is INTENTIONALLY optional. Some EMR sites may not be permitted
@@ -36,7 +36,7 @@ Description: "The pregnant woman. Carries the identity and contact details the A
 * identifier.value 1..1 MS
 * identifier ^short = "Client MRN. Use system http://fhi.no/enable/identifier/mrn"
 * name 0..* MS
-* name ^short = "Optional. Send ONLY if your data-sharing rules permit — the middleware and SMS gateway do not require a name."
+* name ^short = "Optional. Send ONLY if your data-sharing rules permit; the middleware and SMS gateway do not require a name."
 * birthDate 1..1 MS
 * gender 0..1 MS
 * telecom 1..* MS
@@ -46,7 +46,7 @@ Description: "The pregnant woman. Carries the identity and contact details the A
 
 
 // ---------------------------------------------------------------------
-// Organization — the health facility
+// Organization: the health facility
 //   Carries the facility's DHIS2 organisation-unit CODE (drawn from
 //   the deployment's master facility list) so the middleware can match
 //   the facility to the correct DHIS2 org unit at tracker-import time.
@@ -68,7 +68,7 @@ Description: "The health facility that provided the ANC visit. The identifier va
 
 
 // ---------------------------------------------------------------------
-// Encounter — one ANC visit (a DHIS2 program-stage event)
+// Encounter: one ANC visit (a DHIS2 program-stage event)
 //   Encounter.period.start = the visit (event) date.
 //   The FIRST (finished) visit date also serves as the enrolment date.
 //   A future/next visit is an Encounter with status = planned, whose
@@ -123,7 +123,7 @@ RuleSet: AncVisitObs
 
 
 // ---------------------------------------------------------------------
-// Gestational age — DHIS2 ANC.B6.DE17 (INTEGER_POSITIVE, weeks)
+// Gestational age: DHIS2 ANC.B6.DE17 (INTEGER_POSITIVE, weeks)
 //   Coded: WHO ANC (primary) + LOINC 18185-9 + SNOMED 57036006
 // ---------------------------------------------------------------------
 Invariant: enable-ga-integer-weeks
@@ -148,7 +148,7 @@ Description: "Gestational age in completed weeks at the ANC visit. Visit-level: 
 
 
 // ---------------------------------------------------------------------
-// Expected date of delivery (EDD) — DHIS2 ANC.B6.DE22 (DATE)
+// Expected date of delivery (EDD): DHIS2 ANC.B6.DE22 (DATE)
 //   Coded: WHO ANC (primary) + LOINC 11778-8 + SNOMED 161714006
 // ---------------------------------------------------------------------
 Profile: EnableExpectedDeliveryDate
@@ -163,7 +163,7 @@ Description: "Estimated/expected date of delivery. Pregnancy-level: one per Bund
 
 
 // ---------------------------------------------------------------------
-// Last normal menstrual period (LNMP) date — DHIS2 ANC.B6.DE14 (DATE)
+// Last normal menstrual period (LNMP) date: DHIS2 ANC.B6.DE14 (DATE)
 //   Coded: WHO ANC (primary) + LOINC 8665-2 + SNOMED 21840007
 // ---------------------------------------------------------------------
 Profile: EnableLastMenstrualPeriod
@@ -178,7 +178,7 @@ Description: "Date of the last normal menstrual period. Pregnancy-level: one per
 
 
 // ---------------------------------------------------------------------
-// ANC visit number — DHIS2 ET-ANC-051 (INTEGER_POSITIVE, local code)
+// ANC visit number: DHIS2 ET-ANC-051 (INTEGER_POSITIVE, local code)
 // ---------------------------------------------------------------------
 Profile: EnableAncVisitNumber
 Parent: Observation
@@ -192,7 +192,7 @@ Description: "Sequential number of this ANC visit. Visit-level: one per finished
 
 
 // ---------------------------------------------------------------------
-// The contract Bundle — one per patient, grouped around that patient
+// The contract Bundle: one per patient, grouped around that patient
 //   Flat collection (no Composition). Entries are sliced so the shape
 //   is explicit: 1 Patient, 1 Organization, 1..* Encounter, 1..* Observation.
 // ---------------------------------------------------------------------
@@ -206,7 +206,7 @@ It contains exactly one Patient, exactly one Organization (the facility),
 one or more ANC Encounters, the pregnancy-level Observations (LMP and EDD,
 once per Bundle) and the visit-level Observations (Gestational Age and
 ANC Visit Number, once per finished Encounter). type = collection (a
-container; the middleware maps it to the DHIS2 tracker model — Patient ->
+container; the middleware maps it to the DHIS2 tracker model: Patient ->
 TrackedEntity, Encounter(finished) -> Event, Encounter(planned) ->
 scheduled Event, Organization -> orgUnit on enrollment + every event).
 """

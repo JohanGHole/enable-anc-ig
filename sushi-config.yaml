@@ -10,9 +10,9 @@ title: "ENABLE ANC Interoperability IG"
 description: >-
   A deliberately minimal FHIR contract for the ENABLE programme. It defines exactly
   what an EMR (Bahmni, PulseTech, ...) must send to the ENABLE FHIR-native middleware
-  that sits in front of DHIS2 — one Bundle per patient, with an ANC Patient, the
+  that sits in front of DHIS2: one Bundle per patient, with an ANC Patient, the
   facility (Organization) whose identifier maps to a DHIS2 org unit, one or more ANC
-  Encounters, and a small set of Observations — so a woman's ANC visits flow into
+  Encounters, and a small set of Observations, so a woman's ANC visits flow into
   the DHIS2 ANC tracker and drive the SMS gateway. Standalone profiles reference
   WHO SMART ANC (DAK) codes plus LOINC and SNOMED. Integration contract, not a
   clinical IG.
@@ -24,8 +24,8 @@ releaseLabel: ci-build
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#ET "Ethiopia" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Norwegian Institute of Public Health (NIPH)
-  url: https://www.fhi.no/
+  name: Devotta
+  url: https://www.devotta.no/
   email: johan@devotta.no
 
 # The dependencies property corresponds to IG.dependsOn. The key is the

@@ -1,8 +1,6 @@
 ### Downloads & Templates
 
-Every file on this page is hosted by the IG itself — click to open, right-click to save.
-
-**The templates are deliberately boilerplate.** All the FHIR plumbing (resource types, codes, systems, cross-references) is already filled in for you. Your mapping only needs to plug in the data-element values from your EMR — don't change anything else.
+**The templates are deliberately boilerplate.** All the FHIR plumbing (resource types, codes, systems, cross-references) is already filled in for you. Your mapping only needs to plug in the data-element values from your EMR. You don't need to change anything else.
 
 ### Templates (fill-in-the-blanks)
 
@@ -19,7 +17,7 @@ Every file on this page is hosted by the IG itself — click to open, right-clic
 | PulseTech | [EnableAncBundle-pulsetech-sample.json](EnableAncBundle-pulsetech-sample.json) | Smallest valid payload: 1 patient, 1 facility, 1 finished visit, 4 Observations (no planned visit). |
 | Multi-visit | [EnableAncBundle-multivisit-sample.json](EnableAncBundle-multivisit-sample.json) | Same patient, three finished ANC visits + one planned, at the same facility. |
 
-Each sample passes IG validation as-is — use one for smoke-testing before wiring your own data.
+Each sample passes IG validation as-is; use one for smoke-testing before wiring your own data.
 
 ### IG package + full download
 
@@ -28,4 +26,4 @@ Each sample passes IG validation as-is — use one for smoke-testing before wiri
 
 ### Validation
 
-Paste any of the samples above into <https://validator.fhir.org/> with `enable.anc.ig#0.2.0` selected — expect a green pass.
+Paste any of the samples above into <https://validator.fhir.org/> and follow the walkthrough in the [Quickstart, step 3](quickstart.html#3-validate) (paste the IG package URL and the Bundle profile canonical). Expect a clean pass.
